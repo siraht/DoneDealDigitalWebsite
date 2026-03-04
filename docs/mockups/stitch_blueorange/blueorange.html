@@ -64,234 +64,240 @@
         }
     </style>
 </head>
-<body class="bg-background-light font-dmsans text-navy">
-<header class="sticky top-0 z-50 bg-white border-b-2 border-navy">
-<div class="max-w-[1440px] mx-auto flex items-center justify-between">
-<div class="flex items-center gap-2 px-6 py-5">
-<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
-<h1 class="font-bebas bebas-heavy text-3xl tracking-wide text-navy">DONE DEAL DIGITAL</h1>
+<body id="page-home" class="page page--home bg-background-light font-dmsans text-navy">
+<header id="site-header" class="site-header site-header--sticky sticky top-0 z-50 bg-white border-b-2 border-navy">
+<div class="site-header__inner max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="site-header__brand flex items-center gap-2 px-6 py-5">
+<span class="site-header__brand-icon material-symbols-outlined text-primary text-3xl">handshake</span>
+<h1 class="site-header__brand-title font-bebas bebas-heavy text-3xl tracking-wide text-navy">DONE DEAL DIGITAL</h1>
 </div>
-<nav class="hidden md:flex items-center h-full">
-<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Services</a>
-<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Portfolio</a>
-<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Reviews</a>
-<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors" href="#">Contact</a>
+<nav id="site-nav" class="site-header__nav hidden md:flex items-center h-full">
+<a class="site-header__nav-link px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#services">Services</a>
+<a class="site-header__nav-link px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#process">Process</a>
+<a class="site-header__nav-link px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#proof">Proof</a>
+<a class="site-header__nav-link px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors" href="#contact">Contact</a>
 </nav>
-<div class="px-6">
-<button class="bg-primary hover:bg-orange-600 text-white px-8 py-3 font-bold text-sm uppercase tracking-widest transition-all border-2 border-navy block-shadow">
+<div class="site-header__actions px-6">
+<button id="site-cta" class="site-header__cta bg-primary hover:bg-orange-600 text-white px-8 py-3 font-bold text-sm uppercase tracking-widest transition-all border-2 border-navy block-shadow">
                 Get a Free Quote
             </button>
 </div>
 </div>
 </header>
-<section class="relative bg-navy overflow-hidden border-b-2 border-navy">
-<div class="absolute inset-0 graph-paper opacity-40"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 py-24 lg:py-32 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
-<div class="flex flex-col items-start gap-8">
-<h1 class="font-bebas bebas-heavy text-7xl md:text-8xl text-white leading-[0.85] uppercase">
+<section id="hero" class="home-hero relative bg-navy overflow-hidden border-b-2 border-navy">
+<div class="home-hero__bg absolute inset-0 graph-paper opacity-40"></div>
+<div class="home-hero__inner max-w-7xl mx-auto px-6 lg:px-20 py-24 lg:py-32 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+<div class="home-hero__content flex flex-col items-start gap-8">
+<h1 class="home-hero__headline font-bebas bebas-heavy text-7xl md:text-8xl text-white leading-[0.85] uppercase">
                 WE BUILD WEBSITES THAT <span class="text-primary">WORK AS HARD</span> AS YOU DO.
             </h1>
-<p class="text-concrete text-xl md:text-2xl max-w-lg leading-relaxed font-medium">
+<p class="home-hero__copy text-concrete text-xl md:text-2xl max-w-lg leading-relaxed font-medium">
                 Digital marketing and web design for the trades. No fluff, just more leads for plumbers, roofers, and HVAC pros.
             </p>
-<div class="flex flex-wrap gap-6 mt-4">
-<button class="bg-primary hover:bg-orange-600 text-white px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow-orange">
+<div class="home-hero__actions flex flex-wrap gap-6 mt-4">
+<button class="home-hero__cta home-hero__cta--primary bg-primary hover:bg-orange-600 text-white px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow-orange">
                     Start Your Project
                 </button>
-<button class="bg-white hover:bg-concrete text-navy px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow">
+<button class="home-hero__cta home-hero__cta--secondary bg-white hover:bg-concrete text-navy px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow">
                     View Our Work
                 </button>
 </div>
 </div>
-<div class="relative">
-<div class="border-2 border-navy bg-navy block-shadow-orange">
-<div class="relative group">
-<img alt="Professional electrician working" class="w-full h-full object-cover bw-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQuKBUbvbDTfbjUT2ZSf2ttnd_NQ_Bnzh4GTmGjrQ_vjNFFmWfjNqvpxdtIgurxkO41Ms1uAIYKk90rC1Vg8wZ-Vk7hJTuy_n0KNBrtOgyEGvaCHAftAD4GLhzK1_HprKZVjxGAs73lhzWP46pgIY5G0_fjckrc2j0hnSSd5f0RQGEqnmrRgVcT8EL_i1raG-Su5xOM4HCjjToRVmSBmG5gyxxSZRXcQqCYz5g6HM7x8rl8InYWQDLRfxBG6B-cQN9rC6HFJfyeBo"/>
-<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<div class="home-hero__media relative">
+<div class="home-hero__media-frame border-2 border-navy bg-navy block-shadow-orange">
+<div class="home-hero__media-inner relative group">
+<img alt="Professional electrician working" class="home-hero__image w-full h-full object-cover bw-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQuKBUbvbDTfbjUT2ZSf2ttnd_NQ_Bnzh4GTmGjrQ_vjNFFmWfjNqvpxdtIgurxkO41Ms1uAIYKk90rC1Vg8wZ-Vk7hJTuy_n0KNBrtOgyEGvaCHAftAD4GLhzK1_HprKZVjxGAs73lhzWP46pgIY5G0_fjckrc2j0hnSSd5f0RQGEqnmrRgVcT8EL_i1raG-Su5xOM4HCjjToRVmSBmG5gyxxSZRXcQqCYz5g6HM7x8rl8InYWQDLRfxBG6B-cQN9rC6HFJfyeBo"/>
+<div class="home-hero__media-overlay absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
 </div>
 </div>
-<div class="absolute -bottom-8 -left-8 bg-white border-2 border-navy p-6 block-shadow hidden md:block">
-<p class="text-navy font-bebas bebas-heavy text-4xl">EST. 2018</p>
-<p class="text-navy/60 text-xs font-bold uppercase tracking-widest">Digital Blue Collar</p>
+<div class="home-hero__badge absolute -bottom-8 -left-8 bg-white border-2 border-navy p-6 block-shadow hidden md:block">
+<p class="home-hero__badge-title text-navy font-bebas bebas-heavy text-4xl">EST. 2018</p>
+<p class="home-hero__badge-copy text-navy/60 text-xs font-bold uppercase tracking-widest">Digital Blue Collar</p>
 </div>
 </div>
-</div>
-</section>
-<section class="bg-white border-b-2 border-navy py-12">
-<div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-12">
-<div class="flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
-<span class="material-symbols-outlined text-primary">architecture</span> ACCREDITED
-        </div>
-<div class="w-px h-8 bg-navy/20 hidden lg:block"></div>
-<div class="flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
-<span class="material-symbols-outlined text-primary">verified</span> GOOGLE PARTNER
-        </div>
-<div class="w-px h-8 bg-navy/20 hidden lg:block"></div>
-<div class="flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
-<span class="material-symbols-outlined text-primary">plumbing</span> TRADES ALLIANCE
-        </div>
-<div class="w-px h-8 bg-navy/20 hidden lg:block"></div>
-<div class="flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
-<span class="material-symbols-outlined text-primary">roofing</span> ROOFING ASSOC
-        </div>
-<div class="w-px h-8 bg-navy/20 hidden lg:block"></div>
-<div class="flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
-<span class="material-symbols-outlined text-primary">build</span> MASTER BUILDERS
-        </div>
 </div>
 </section>
-<section class="max-w-7xl mx-auto px-6 lg:px-20 py-24">
-<div class="flex items-center gap-6 mb-16">
-<h2 class="font-bebas bebas-heavy text-6xl text-navy">NO FLUFF. JUST RESULTS.</h2>
-<div class="flex-grow h-1 bg-navy"></div>
+<section id="credibility" class="cred-strip bg-white border-b-2 border-navy py-12">
+<div class="cred-strip__inner max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-12">
+<div class="cred-strip__item flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
+<span class="cred-strip__icon material-symbols-outlined text-primary">architecture</span>
+            <span class="cred-strip__text">ACCREDITED</span>
+        </div>
+<div class="cred-strip__divider w-px h-8 bg-navy/20 hidden lg:block"></div>
+<div class="cred-strip__item flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
+<span class="cred-strip__icon material-symbols-outlined text-primary">verified</span>
+            <span class="cred-strip__text">GOOGLE PARTNER</span>
+        </div>
+<div class="cred-strip__divider w-px h-8 bg-navy/20 hidden lg:block"></div>
+<div class="cred-strip__item flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
+<span class="cred-strip__icon material-symbols-outlined text-primary">plumbing</span>
+            <span class="cred-strip__text">TRADES ALLIANCE</span>
+        </div>
+<div class="cred-strip__divider w-px h-8 bg-navy/20 hidden lg:block"></div>
+<div class="cred-strip__item flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
+<span class="cred-strip__icon material-symbols-outlined text-primary">roofing</span>
+            <span class="cred-strip__text">ROOFING ASSOC</span>
+        </div>
+<div class="cred-strip__divider w-px h-8 bg-navy/20 hidden lg:block"></div>
+<div class="cred-strip__item flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">
+<span class="cred-strip__icon material-symbols-outlined text-primary">build</span>
+            <span class="cred-strip__text">MASTER BUILDERS</span>
+        </div>
 </div>
-<div class="grid md:grid-cols-3 gap-10">
-<div class="bg-white p-10 border-2 border-navy block-shadow hover:-translate-y-1 transition-transform">
-<div class="bg-navy text-primary w-16 h-16 flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-4xl">monitor</span>
+</section>
+<section id="services" class="services max-w-7xl mx-auto px-6 lg:px-20 py-24">
+<div class="services__heading flex items-center gap-6 mb-16">
+<h2 class="services__title font-bebas bebas-heavy text-6xl text-navy">NO FLUFF. JUST RESULTS.</h2>
+<div class="services__rule flex-grow h-1 bg-navy"></div>
 </div>
-<h3 class="font-bebas bebas-heavy text-4xl mb-4 uppercase">WEB DESIGN</h3>
-<p class="text-slate-600 mb-8 leading-relaxed font-medium">
+<div class="services__list grid md:grid-cols-3 gap-10">
+<div class="services-card services-card--one bg-white p-10 border-2 border-navy block-shadow hover:-translate-y-1 transition-transform">
+<div class="services-card__icon-wrap bg-navy text-primary w-16 h-16 flex items-center justify-center mb-8">
+<span class="services-card__icon material-symbols-outlined text-4xl">monitor</span>
+</div>
+<h3 class="services-card__title font-bebas bebas-heavy text-4xl mb-4 uppercase">WEB DESIGN</h3>
+<p class="services-card__description text-slate-600 mb-8 leading-relaxed font-medium">
                 Custom-built websites designed to convert visitors into phone calls. Optimized for mobile so guys on the job site can find you fast.
             </p>
-<ul class="space-y-4 text-sm font-bold text-navy uppercase tracking-widest border-t-2 border-navy/10 pt-8">
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> Fast Loading</li>
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> Mobile First</li>
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> Lead Capture</li>
+<ul class="services-card__list space-y-4 text-sm font-bold text-navy uppercase tracking-widest border-t-2 border-navy/10 pt-8">
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> Fast Loading</li>
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> Mobile First</li>
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> Lead Capture</li>
 </ul>
 </div>
-<div class="bg-white p-10 border-2 border-navy block-shadow-orange hover:-translate-y-1 transition-transform">
-<div class="bg-navy text-primary w-16 h-16 flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-4xl">trending_up</span>
+<div class="services-card services-card--two bg-white p-10 border-2 border-navy block-shadow-orange hover:-translate-y-1 transition-transform">
+<div class="services-card__icon-wrap bg-navy text-primary w-16 h-16 flex items-center justify-center mb-8">
+<span class="services-card__icon material-symbols-outlined text-4xl">trending_up</span>
 </div>
-<h3 class="font-bebas bebas-heavy text-4xl mb-4 uppercase">LOCAL SEO</h3>
-<p class="text-slate-600 mb-8 leading-relaxed font-medium">
+<h3 class="services-card__title font-bebas bebas-heavy text-4xl mb-4 uppercase">LOCAL SEO</h3>
+<p class="services-card__description text-slate-600 mb-8 leading-relaxed font-medium">
                 Dominate the "near me" searches. We get your business on the first page of Google and the top of the map pack.
             </p>
-<ul class="space-y-4 text-sm font-bold text-navy uppercase tracking-widest border-t-2 border-navy/10 pt-8">
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> GMB Optimization</li>
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> Local Keywords</li>
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> Citation Building</li>
+<ul class="services-card__list space-y-4 text-sm font-bold text-navy uppercase tracking-widest border-t-2 border-navy/10 pt-8">
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> GMB Optimization</li>
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> Local Keywords</li>
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> Citation Building</li>
 </ul>
 </div>
-<div class="bg-white p-10 border-2 border-navy block-shadow hover:-translate-y-1 transition-transform">
-<div class="bg-navy text-primary w-16 h-16 flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-4xl">target</span>
+<div class="services-card services-card--three bg-white p-10 border-2 border-navy block-shadow hover:-translate-y-1 transition-transform">
+<div class="services-card__icon-wrap bg-navy text-primary w-16 h-16 flex items-center justify-center mb-8">
+<span class="services-card__icon material-symbols-outlined text-4xl">target</span>
 </div>
-<h3 class="font-bebas bebas-heavy text-4xl mb-4 uppercase">LEAD GEN</h3>
-<p class="text-slate-600 mb-8 leading-relaxed font-medium">
+<h3 class="services-card__title font-bebas bebas-heavy text-4xl mb-4 uppercase">LEAD GEN</h3>
+<p class="services-card__description text-slate-600 mb-8 leading-relaxed font-medium">
                 We manage your paid ads and lead funnels so you can focus on the job. High-intent leads that actually close.
             </p>
-<ul class="space-y-4 text-sm font-bold text-navy uppercase tracking-widest border-t-2 border-navy/10 pt-8">
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> Google Ads</li>
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> LSA Management</li>
-<li class="flex items-center gap-3"><span class="w-2 h-2 bg-primary"></span> ROI Reporting</li>
+<ul class="services-card__list space-y-4 text-sm font-bold text-navy uppercase tracking-widest border-t-2 border-navy/10 pt-8">
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> Google Ads</li>
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> LSA Management</li>
+<li class="services-card__list-item flex items-center gap-3"><span class="services-card__bullet w-2 h-2 bg-primary"></span> ROI Reporting</li>
 </ul>
 </div>
 </div>
 </section>
-<section class="bg-navy py-24 relative border-y-2 border-navy">
-<div class="absolute inset-0 diagonal-stripes opacity-10"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
-<div class="grid lg:grid-cols-2 gap-20 items-center">
-<div>
-<h2 class="font-bebas bebas-heavy text-6xl text-white mb-12">THE DONE DEAL PROCESS</h2>
-<div class="space-y-10">
-<div class="flex gap-8 items-start group">
-<div class="flex-shrink-0 w-16 h-16 bg-primary border-2 border-white flex items-center justify-center font-bebas bebas-heavy text-3xl text-white">01</div>
-<div>
-<h4 class="text-white text-2xl font-bold uppercase mb-3 tracking-wider">CONSULTATION</h4>
-<p class="text-concrete text-lg leading-relaxed">We analyze your current digital presence and your local competitors to build a custom roadmap.</p>
+<section id="process" class="process bg-navy py-24 relative border-y-2 border-navy">
+<span id="proof" class="sr-only"></span>
+<div class="process__overlay absolute inset-0 diagonal-stripes opacity-10"></div>
+<div class="process__inner max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
+<div class="process__grid grid lg:grid-cols-2 gap-20 items-center">
+<div class="process__copy">
+<h2 class="process__title font-bebas bebas-heavy text-6xl text-white mb-12">THE DONE DEAL PROCESS</h2>
+<div class="process__steps space-y-10">
+<div class="process-step flex gap-8 items-start group">
+<div class="process-step__number flex-shrink-0 w-16 h-16 bg-primary border-2 border-white flex items-center justify-center font-bebas bebas-heavy text-3xl text-white">01</div>
+<div class="process-step__body">
+<h4 class="process-step__title text-white text-2xl font-bold uppercase mb-3 tracking-wider">CONSULTATION</h4>
+<p class="process-step__copy text-concrete text-lg leading-relaxed">We analyze your current digital presence and your local competitors to build a custom roadmap.</p>
 </div>
 </div>
-<div class="flex gap-8 items-start group">
-<div class="flex-shrink-0 w-16 h-16 bg-primary border-2 border-white flex items-center justify-center font-bebas bebas-heavy text-3xl text-white">02</div>
-<div>
-<h4 class="text-white text-2xl font-bold uppercase mb-3 tracking-wider">STRUCTURED BUILD</h4>
-<p class="text-concrete text-lg leading-relaxed">Our team builds your high-converting assets and launches your targeted marketing campaigns.</p>
+<div class="process-step flex gap-8 items-start group">
+<div class="process-step__number flex-shrink-0 w-16 h-16 bg-primary border-2 border-white flex items-center justify-center font-bebas bebas-heavy text-3xl text-white">02</div>
+<div class="process-step__body">
+<h4 class="process-step__title text-white text-2xl font-bold uppercase mb-3 tracking-wider">STRUCTURED BUILD</h4>
+<p class="process-step__copy text-concrete text-lg leading-relaxed">Our team builds your high-converting assets and launches your targeted marketing campaigns.</p>
 </div>
 </div>
-<div class="flex gap-8 items-start group">
-<div class="flex-shrink-0 w-16 h-16 bg-primary border-2 border-white flex items-center justify-center font-bebas bebas-heavy text-3xl text-white">03</div>
-<div>
-<h4 class="text-white text-2xl font-bold uppercase mb-3 tracking-wider">SCALED GROWTH</h4>
-<p class="text-concrete text-lg leading-relaxed">We optimize monthly, tracking every lead and phone call to ensure your phone never stops ringing.</p>
+<div class="process-step flex gap-8 items-start group">
+<div class="process-step__number flex-shrink-0 w-16 h-16 bg-primary border-2 border-white flex items-center justify-center font-bebas bebas-heavy text-3xl text-white">03</div>
+<div class="process-step__body">
+<h4 class="process-step__title text-white text-2xl font-bold uppercase mb-3 tracking-wider">SCALED GROWTH</h4>
+<p class="process-step__copy text-concrete text-lg leading-relaxed">We optimize monthly, tracking every lead and phone call to ensure your phone never stops ringing.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="grid grid-cols-2 gap-6">
-<div class="border-2 border-white p-2">
-<div class="relative overflow-hidden h-80">
-<img alt="HVAC technician" class="w-full h-full object-cover bw-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp_gOZtrpGI8YFT12b7cezFByoLUrfqkjMp1MqjubNpzt7Fj_47ZKM-ju99RBfjdjSM83wzjvky4mRDEXxX9OXadl1ubIQLe9tFoI-fLMq5PhWpT7XYHhaKhsSqdaxhOpPDH7zZAsijxv_HiVqZRThBpChlmSSAX-Ge947hOrtz5U7AsVpkRToDvF-cNxE6kgpY88ZPP99ygXjrccU6zkhUF7NdPUF1Q-_M-fCsoLr5P1BUAH76YtsqX5XqtcKeUJSA0wT28J9iqo"/>
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="process__gallery grid grid-cols-2 gap-6">
+<div class="process-gallery__cell border-2 border-white p-2">
+<div class="process-gallery__frame relative overflow-hidden h-80">
+<img alt="HVAC technician" class="process-gallery__image w-full h-full object-cover bw-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp_gOZtrpGI8YFT12b7cezFByoLUrfqkjMp1MqjubNpzt7Fj_47ZKM-ju99RBfjdjSM83wzjvky4mRDEXxX9OXadl1ubIQLe9tFoI-fLMq5PhWpT7XYHhaKhsSqdaxhOpPDH7zZAsijxv_HiVqZRThBpChlmSSAX-Ge947hOrtz5U7AsVpkRToDvF-cNxE6kgpY88ZPP99ygXjrccU6zkhUF7NdPUF1Q-_M-fCsoLr5P1BUAH76YtsqX5XqtcKeUJSA0wT28J9iqo"/>
+<div class="process-gallery__overlay absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
 </div>
 </div>
-<div class="border-2 border-white p-2 mt-16">
-<div class="relative overflow-hidden h-80">
-<img alt="Plumber fixing a pipe" class="w-full h-full object-cover bw-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvzbGD4sfP-zVtaAOH-CYdMZw-j3js9me1pbdgFIVI5f4O4DC4mGrI3X4GGHAMuW4b3LsuHCKwIEn2Rciq-TMeqw6sG1dk1mrmEdzlzsHdPNWoVRHl_PV9Ayju-tyw9dext6rBFzQsZh-7lQKkk1N2M0xkmXtQPsMxx7aEep86JE811korQYvfpuMMsEJ2HVZWR0cLedUs9gYKWAUYVrFHSneMljDH8IrCTIpcyUKr8oX1tOSRLWDQCc_GNyHIt0DksyOKUlN2B9Y"/>
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="process-gallery__cell process-gallery__cell--offset border-2 border-white p-2 mt-16">
+<div class="process-gallery__frame relative overflow-hidden h-80">
+<img alt="Plumber fixing a pipe" class="process-gallery__image w-full h-full object-cover bw-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvzbGD4sfP-zVtaAOH-CYdMZw-j3js9me1pbdgFIVI5f4O4DC4mGrI3X4GGHAMuW4b3LsuHCKwIEn2Rciq-TMeqw6sG1dk1mrmEdzlzsHdPNWoVRHl_PV9Ayju-tyw9dext6rBFzQsZh-7lQKkk1N2M0xkmXtQPsMxx7aEep86JE811korQYvfpuMMsEJ2HVZWR0cLedUs9gYKWAUYVrFHSneMljDH8IrCTIpcyUKr8oX1tOSRLWDQCc_GNyHIt0DksyOKUlN2B9Y"/>
+<div class="process-gallery__overlay absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-24 bg-white border-b-2 border-navy">
-<div class="max-w-5xl mx-auto px-6">
-<div class="border-4 border-navy p-12 relative">
-<div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-primary px-6 py-2 border-2 border-navy">
-<span class="text-white font-bebas bebas-heavy text-xl uppercase tracking-widest">GET STARTED</span>
+<section id="contact" class="final-cta py-24 bg-white border-b-2 border-navy">
+<div class="final-cta__wrap max-w-5xl mx-auto px-6">
+<div class="final-cta__panel border-4 border-navy p-12 relative">
+<div class="final-cta__eyebrow absolute -top-6 left-1/2 -translate-x-1/2 bg-primary px-6 py-2 border-2 border-navy">
+<span class="final-cta__eyebrow-text text-white font-bebas bebas-heavy text-xl uppercase tracking-widest">GET STARTED</span>
 </div>
-<div class="text-center">
-<h2 class="font-bebas bebas-heavy text-7xl text-navy mb-6">READY TO SCALE YOUR CREW?</h2>
-<p class="text-2xl text-slate-600 mb-12 max-w-2xl mx-auto">Stop wasting money on leads that don't convert. Get a professional setup that pays for itself.</p>
-<div class="flex flex-col md:flex-row items-center justify-center gap-8">
-<button class="bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-navy block-shadow-orange w-full md:w-auto">
+<div class="final-cta__text text-center">
+<h2 class="final-cta__title font-bebas bebas-heavy text-7xl text-navy mb-6">READY TO SCALE YOUR CREW?</h2>
+<p class="final-cta__copy text-2xl text-slate-600 mb-12 max-w-2xl mx-auto">Stop wasting money on leads that don't convert. Get a professional setup that pays for itself.</p>
+<div class="final-cta__actions flex flex-col md:flex-row items-center justify-center gap-8">
+<button class="final-cta__button bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-navy block-shadow-orange w-full md:w-auto">
                         Get My Free Audit
                     </button>
-<div class="flex items-center gap-4 text-navy font-bold text-xl">
+<div class="final-cta__phone flex items-center gap-4 text-navy font-bold text-xl">
 <span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
-<span>CALL: (555) 123-4567</span>
+<span class="final-cta__phone-text">CALL: (555) 123-4567</span>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<footer class="bg-navy py-16">
-<div class="max-w-7xl mx-auto px-6 lg:px-20 grid md:grid-cols-4 gap-12">
-<div class="col-span-2">
-<div class="flex items-center gap-3 mb-8 border-l-4 border-primary pl-6">
-<h2 class="font-bebas bebas-heavy text-4xl tracking-wide text-white">DONE DEAL DIGITAL</h2>
+<footer id="site-footer" class="site-footer bg-navy py-16">
+<div class="site-footer__top max-w-7xl mx-auto px-6 lg:px-20 grid md:grid-cols-4 gap-12">
+<div class="site-footer__brand col-span-2">
+<div class="site-footer__brand-heading flex items-center gap-3 mb-8 border-l-4 border-primary pl-6">
+<h2 class="site-footer__brand-title font-bebas bebas-heavy text-4xl tracking-wide text-white">DONE DEAL DIGITAL</h2>
 </div>
-<p class="text-concrete/60 max-w-sm text-lg leading-relaxed">
+<p class="site-footer__description text-concrete/60 max-w-sm text-lg leading-relaxed">
                 The #1 choice for tradesmen who want a digital partner that understands the grit and grind of the service industry.
             </p>
 </div>
-<div>
-<h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Services</h4>
-<ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
-<li><a class="hover:text-white transition-colors" href="#">Web Design</a></li>
-<li><a class="hover:text-white transition-colors" href="#">SEO for Trades</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Lead Generation</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Logo Design</a></li>
+<div class="site-footer__col">
+<h4 class="site-footer__col-title text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Services</h4>
+<ul class="site-footer__list text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
+<li class="site-footer__list-item"><a class="site-footer__link hover:text-white transition-colors" href="#">Web Design</a></li>
+<li class="site-footer__list-item"><a class="site-footer__link hover:text-white transition-colors" href="#">SEO for Trades</a></li>
+<li class="site-footer__list-item"><a class="site-footer__link hover:text-white transition-colors" href="#">Lead Generation</a></li>
+<li class="site-footer__list-item"><a class="site-footer__link hover:text-white transition-colors" href="#">Logo Design</a></li>
 </ul>
 </div>
-<div>
-<h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Legal</h4>
-<ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
-<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Cookie Policy</a></li>
+<div class="site-footer__col">
+<h4 class="site-footer__col-title text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Legal</h4>
+<ul class="site-footer__list text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
+<li class="site-footer__list-item"><a class="site-footer__link hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li class="site-footer__list-item"><a class="site-footer__link hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li class="site-footer__list-item"><a class="site-footer__link hover:text-white transition-colors" href="#">Cookie Policy</a></li>
 </ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 mt-16 pt-12 border-t-2 border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="text-concrete/30 font-bold text-xs tracking-widest uppercase">
+<div class="site-footer__bottom max-w-7xl mx-auto px-6 lg:px-20 mt-16 pt-12 border-t-2 border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="site-footer__copyright text-concrete/30 font-bold text-xs tracking-widest uppercase">
             © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
         </div>
-<div class="text-primary font-bebas text-xl tracking-widest">
+<div class="site-footer__tagline text-primary font-bebas text-xl tracking-widest">
             BUILT FOR THE BOLD.
         </div>
 </div>
