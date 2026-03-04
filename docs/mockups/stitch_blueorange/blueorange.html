@@ -94,83 +94,52 @@
                 min-width: 1px;
             }
             .final-cta__panel {
-                overflow: hidden;
-            }
-            .final-cta__flair {
-                position: absolute;
-                top: -1.6rem;
-                left: clamp(1.5rem, 4vw, 2.5rem);
-                width: min(30rem, 65%);
-                height: 2.35rem;
-                border: 2px solid var(--navy, #0B1D33);
-                background: linear-gradient(120deg, #ff7b00 0%, #ff9d3d 100%);
-                transform: skew(-11deg);
-                box-shadow: 6px 6px 0 0 var(--navy, #0B1D33);
-                pointer-events: none;
-                z-index: 1;
-            }
-            .final-cta__flair::before {
-                content: "";
-                position: absolute;
-                inset: 0.35rem 0.45rem;
-                border: 1px solid rgba(11, 29, 51, 0.18);
-                transform: skew(11deg);
-            }
-            .final-cta__flair::after {
-                content: "";
-                position: absolute;
-                right: -1.75rem;
-                top: -0.05rem;
-                width: 1.85rem;
-                height: 100%;
-                border-top: 2px solid var(--navy, #0B1D33);
-                border-right: 2px solid var(--navy, #0B1D33);
-                background: #ff9d3d;
+                position: relative;
             }
             .cta-swap {
-                --cta-offset: 0.75rem;
-                --cta-duration: 260ms;
-                --cta-ease: cubic-bezier(0.22, 1, 0.36, 1);
-                --cta-front: #ff7b00;
-                --cta-back: #0b1d33;
+                --cta-offset-x: 0.75rem;
+                --cta-offset-y: 0.75rem;
+                --cta-duration: 280ms;
+                --cta-ease: cubic-bezier(0.19, 1, 0.22, 1);
+                --cta-hover-bg: #ff9c3e;
                 position: relative;
                 isolation: isolate;
                 overflow: hidden;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
                 min-width: 18rem;
                 transform: translateZ(0);
                 will-change: transform;
                 transition: transform var(--cta-duration) var(--cta-ease);
             }
-            .cta-swap:hover,
-            .cta-swap:focus-visible {
-                transform: translateY(-1px);
-            }
-            .cta-swap::after {
+            .cta-swap::before {
                 content: "";
                 position: absolute;
                 inset: 0;
-                background: var(--cta-back);
-                border: 2px solid var(--cta-back);
-                transform: translate3d(var(--cta-offset), var(--cta-offset), 0);
-                transition: transform var(--cta-duration) var(--cta-ease), box-shadow var(--cta-duration) var(--cta-ease);
-                z-index: -2;
+                background: var(--cta-hover-bg);
+                transform: translate3d(var(--cta-offset-x), var(--cta-offset-y), 0);
+                transition: transform var(--cta-duration) var(--cta-ease);
+                z-index: 0;
+                pointer-events: none;
+                border: 2px solid rgba(11, 29, 51, 0.1);
             }
-            .cta-swap:hover::after,
-            .cta-swap:focus-visible::after {
+            .cta-swap:hover::before,
+            .cta-swap:focus-visible::before {
                 transform: translate3d(0, 0, 0);
             }
             .cta-swap__label {
                 position: relative;
-                z-index: 2;
+                z-index: 1;
                 transition: opacity var(--cta-duration) var(--cta-ease), transform var(--cta-duration) var(--cta-ease);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
             }
             .cta-swap__label--hover {
                 position: absolute;
+                inset: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 opacity: 0;
-                transform: translateY(0.35rem);
+                transform: translateY(0.45rem);
                 pointer-events: none;
             }
             .cta-swap:hover .cta-swap__label--hover,
@@ -181,23 +150,15 @@
             .cta-swap:hover .cta-swap__label,
             .cta-swap:focus-visible .cta-swap__label {
                 opacity: 0;
-                transform: translateY(-0.3rem);
+                transform: translateY(-0.2rem);
             }
             .cta-swap:focus-visible {
                 outline: 3px solid #ffb347;
                 outline-offset: 4px;
             }
-            .cta-swap__label--hover,
-            .cta-swap__label {
-                text-transform: uppercase;
-                letter-spacing: 0.08em;
-            }
-            .cta-swap__label--hover {
-                font-size: inherit;
-            }
             @media (prefers-reduced-motion: reduce) {
                 .cta-swap,
-                .cta-swap::after,
+                .cta-swap::before,
                 .cta-swap__label,
                 .cta-swap__label--hover {
                     transition-duration: 1ms;
@@ -384,12 +345,11 @@
 <section id="contact" class="final-cta py-24 bg-white border-b-2 border-navy">
 <div class="final-cta__wrap max-w-5xl mx-auto px-6">
 <div class="final-cta__panel border-4 border-navy p-12 relative">
-<div class="final-cta__flair" aria-hidden="true"></div>
 <div class="final-cta__text text-center">
 <h2 class="final-cta__title font-bebas bebas-heavy text-7xl text-navy mb-6">READY TO SCALE YOUR CREW?</h2>
 <p class="final-cta__copy text-2xl text-slate-600 mb-12 max-w-2xl mx-auto">Stop wasting money on leads that don't convert. Get a professional setup that pays for itself.</p>
 <div class="final-cta__actions flex justify-center">
-<button class="final-cta__button cta-swap bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-navy w-full md:w-auto" type="button" data-modal-open="contact-modal" aria-controls="contact-modal" aria-expanded="false" aria-label="Open contact modal">
+<button class="final-cta__button cta-swap bg-primary text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-navy w-full md:w-auto block-shadow-orange" type="button" data-modal-open="contact-modal" aria-controls="contact-modal" aria-expanded="false" aria-label="Open contact modal">
 <span class="cta-swap__label">Get My Free Audit</span>
 <span class="cta-swap__label cta-swap__label--hover">Let's go!</span>
                     </button>
