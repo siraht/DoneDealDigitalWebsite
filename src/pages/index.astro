@@ -1,0 +1,275 @@
+---
+import "../styles/tokens.css";
+import "../styles/global.css";
+
+const services = [
+  {
+    icon: 'monitor',
+    title: 'Web Design',
+    description:
+      'Custom-built websites designed to convert visitors into phone calls. Optimized for mobile so guys on the job site can find you fast.',
+    bullets: ['Fast Loading', 'Mobile First', 'Lead Capture'],
+  },
+  {
+    icon: 'trending_up',
+    title: 'Local SEO',
+    description:
+      'Dominate the "near me" searches. We get your business on the first page of Google and the top of the map pack.',
+    bullets: ['GMB Optimization', 'Local Keywords', 'Citation Building'],
+  },
+  {
+    icon: 'target',
+    title: 'Lead Gen',
+    description:
+      'We manage your paid ads and lead funnels so you can focus on the job. High-intent leads that actually close.',
+    bullets: ['Google Ads', 'LSA Management', 'ROI Reporting'],
+  },
+];
+
+const credibility = [
+  { icon: 'trending_up', label: 'Leads, Not Likes' },
+  { icon: 'calendar_month', label: 'Weekly Updates' },
+  { icon: 'dashboard', label: 'All In One' },
+  { icon: 'bolt', label: 'Fast Turnarounds' },
+];
+
+const process = [
+  {
+    number: '01',
+    title: 'Consultation',
+    body: 'We analyze your current digital presence and your local competitors to build a custom roadmap.',
+  },
+  {
+    number: '02',
+    title: 'Build',
+    body: 'Our team builds your high-converting assets and launches your targeted marketing campaigns.',
+  },
+  {
+    number: '03',
+    title: 'Growth',
+    body:
+      'We continually monitor and optimize your campaigns, sharing weekly and monthly reports so you always know what’s working and what to improve.',
+  },
+];
+
+const nav = ['Services', 'Process', 'Proof', 'Contact'];
+
+const footerServices = ['Web Design', 'SEO for Trades', 'Lead Generation', 'Logo Design'];
+const footerLegal = ['Privacy Policy', 'Terms of Service', 'Cookie Policy'];
+
+const heroImage = '/images/Gemini_Generated_Image_dvy1dodvy1dodvy1.png';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Done Deal Digital | Websites for the Trades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
+  </head>
+  <body id="page-home" class="page">
+    <header id="site-header" class="site-header">
+      <div class="site-container site-header__inner">
+        <a class="site-header__brand" href="#page-home" aria-label="Done Deal Digital home">
+          <span class="site-header__brand-icon material-symbols-outlined" aria-hidden="true">handshake</span>
+          <h1 class="site-header__brand-title">Done Deal Digital</h1>
+        </a>
+
+        <nav id="site-nav" class="site-header__nav" aria-label="Primary navigation">
+          {nav.map((item) => {
+            const linkTarget = item.toLowerCase().replace(' ', '-');
+            return (
+              <a class="site-header__nav-link" href={`#${linkTarget}`}>{item}</a>
+            );
+          })}
+        </nav>
+
+        <div class="site-header__actions">
+          <button class="cta cta--primary" type="button">Get a Free Quote</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <span class="graph-paper" aria-hidden="true"></span>
+        <div class="site-container hero__content-wrap">
+          <div class="hero__content">
+            <h2 class="hero__headline">
+              WE BUILD WEBSITES THAT <span class="hero__headline-accent">WORK AS HARD</span> AS YOU DO.
+            </h2>
+            <p class="hero__copy">
+              Digital marketing and web design for the trades. No fluff, just more leads for plumbers, roofers, and HVAC pros.
+            </p>
+            <div class="hero__actions">
+              <button class="cta cta--accent" type="button">Start Your Project</button>
+              <button class="cta cta--secondary" type="button">View Our Work</button>
+            </div>
+          </div>
+
+          <div class="hero__media">
+            <div class="hero__media-frame">
+              <div class="hero__media-image-wrap">
+                <img
+                  class="hero__media-image"
+                  src={heroImage}
+                  alt="Electrician installing a new breaker panel"
+                />
+                <span class="hero__media-overlay" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="hero__badge" aria-hidden="true">
+              <p class="hero__badge-copy">Consider it...</p>
+              <p class="hero__badge-title">Done.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proof" class="cred-strip">
+        <div class="cred-strip__inner">
+          {credibility.map((item, index) => (
+            <>
+              <p class="cred-strip__item" key={`cred-${index}`}>
+                <span class="material-symbols-outlined" aria-hidden="true">{item.icon}</span>
+                <span>{item.label}</span>
+              </p>
+              {index < credibility.length - 1 && <span class="cred-strip__divider" aria-hidden="true"></span>}
+            </>
+          ))}
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="site-container">
+          <div class="section__heading">
+            <h2 class="section__title">NO FLUFF. JUST RESULTS.</h2>
+            <div class="section__rule" aria-hidden="true"></div>
+          </div>
+
+          <div class="services__grid">
+            {services.map((service) => (
+              <article class="card" aria-label={service.title}>
+                <span class="card__icon" aria-hidden="true">
+                  <span class="card__icon-symbol material-symbols-outlined">{service.icon}</span>
+                </span>
+                <h3 class="card__title">{service.title}</h3>
+                <p class="card__description">{service.description}</p>
+                <ul class="card__list" aria-label={`${service.title} capabilities`}>
+                  {service.bullets.map((bullet) => (
+                    <li class="card__list-item">{bullet}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section process">
+        <div class="site-container process__inner">
+          <div class="process__steps-wrap">
+            <h2 class="section__title section__title--light">The Done Deal Process</h2>
+            <div class="process__steps">
+              {process.map((step) => (
+                <article class="process__step" aria-label={step.title}>
+                  <span class="process__step-number" aria-hidden="true">{step.number}</span>
+                  <div>
+                    <h3 class="process__step-title">{step.title}</h3>
+                    <p class="process__step-copy">{step.body}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div class="process__gallery" aria-label="project examples">
+            <figure class="process__gallery-cell">
+              <div class="process__gallery-image-wrap">
+                <img
+                  class="process__gallery-image"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp_gOZtrpGI8YFT12b7cezFByoLUrfqkjMp1MqjubNpzt7Fj_47ZKM-ju99RBfjdjSM83wzjvky4mRDEXxX9OXadl1ubIQLe9tFoI-fLMq5PhWpT7XYHhaKhsSqdaxhOpPDH7zZAsijxv_HiVqZRThBpChlmSSAX-Ge947hOrtz5U7AsVpkRToDvF-cNxE6kgpY88ZPP99ygXjrccU6zkhUF7NdPUF1Q-_M-fCsoLr5P1BUAH76YtsqX5XqtcKeUJSA0wT28J9iqo"
+                  alt="HVAC technician at work"
+                />
+                <span class="process__gallery-overlay" aria-hidden="true"></span>
+              </div>
+            </figure>
+            <figure class="process__gallery-cell process__gallery-cell--offset">
+              <div class="process__gallery-image-wrap">
+                <img
+                  class="process__gallery-image"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvzbGD4sfP-zVtaAOH-CYdMZw-j3js9me1pbdgFIVI5f4O4DC4mGrI3X4GGHAMuW4b3LsuHCKwIEn2Rciq-TMeqw6sG1dk1mrmEdzlzsHdPNWoVRHl_PV9Ayju-tyw9dext6rBFzQsZh-7lQKkk1N2M0xkmXtQPsMxx7aEep86JE811korQYvfpuMMsEJ2HVZWR0cLedUs9gYKWAUYVrFHSneMljDH8IrCTIpcyUKr8oX1tOSRLWDQCc_GNyHIt0DksyOKUlN2B9Y"
+                  alt="Plumber repairing a pipe"
+                />
+                <span class="process__gallery-overlay" aria-hidden="true"></span>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section final-cta">
+        <div class="site-container">
+          <div class="final-cta__panel">
+            <div class="final-cta__body">
+              <h2 class="final-cta__title">Ready to Grow?</h2>
+              <p class="final-cta__copy">
+                Stop wasting money on marketing that doesn't convert. Build an automated system that pays for itself.
+              </p>
+              <div class="final-cta__actions">
+                <button class="cta cta--accent" type="button">Get My Free Audit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="footer">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-bar">
+            <h2 class="footer__brand-title">Done Deal Digital</h2>
+          </div>
+          <p class="footer__description">
+            The #1 choice for tradesmen who want a digital partner that understands the grit and grind of the service
+            industry.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">Services</h3>
+          <ul class="footer__list">
+            {footerServices.map((item) => (
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">{item}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">Legal</h3>
+          <ul class="footer__list">
+            {footerLegal.map((item) => (
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">{item}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 Done Deal Digital. All Rights Reserved.</p>
+        <p class="footer__tagline">Built for the Bold.</p>
+      </div>
+    </footer>
+  </body>
+</html>

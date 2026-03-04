@@ -139,7 +139,8 @@ button {
   transition: background-color 120ms ease, color 120ms ease;
 }
 
-.cta:where(.cta--primary, .cta--accent) {
+.cta--primary,
+.cta--accent {
   background: var(--color-primary);
   color: var(--color-white);
 }
@@ -148,9 +149,26 @@ button {
   box-shadow: var(--shadow-accent);
 }
 
+.cta--secondary {
+  background: var(--color-white);
+  color: var(--color-navy);
+  box-shadow: var(--shadow-primary);
+}
+
 .cta:hover,
 .cta:focus-visible {
   background: color-mix(in srgb, var(--color-primary) 85%, #000 15%);
+  color: var(--color-white);
+}
+
+.cta--secondary:hover,
+.cta--secondary:focus-visible {
+  background: var(--color-concrete);
+  color: var(--color-navy);
+}
+
+.services__grid .card:nth-child(2) {
+  box-shadow: var(--shadow-accent);
 }
 
 .hero {
