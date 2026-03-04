@@ -1,0 +1,41 @@
+:root {
+  --font-display: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Bebas Neue", "Arial Black", sans-serif;
+  --font-body: "DM Sans", "Inter", system-ui, sans-serif;
+
+  --color-navy: #0b1d33;
+  --color-primary: #ff7b00;
+  --color-concrete: #e2e8f0;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #0b1d33;
+  --color-grid: rgb(255 255 255 / 5%);
+  --color-white: #ffffff;
+  --color-slate: #475569;
+  --color-slate-soft: rgb(71 85 105 / 60%);
+
+  --shadow-primary: 6px 6px 0 0 var(--color-navy);
+  --shadow-accent: 6px 6px 0 0 var(--color-primary);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-28: 7rem;
+
+  --container-max: 80rem;
+  --container-padding: clamp(1.5rem, 4vw, 5rem);
+
+  --radius-none: 0;
+  --radius-pill: 9999px;
+  --border-width-heavy: 3px;
+  --focus-outline: 3px solid rgb(255 255 255 / 85%);
+}
