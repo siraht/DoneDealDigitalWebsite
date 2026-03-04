@@ -22,3 +22,21 @@ Single source-of-truth is `CONTRACT.md`.
 
 ## Keep in sync
 Update this AGENTS file (and `CONTRACT.md`) when structure or build rules change.
+
+## Commit-message standard for agent changes
+Use one commit per logical change set and include clear intent in the subject.
+
+1. Message template: `[scope]: [what changed]`
+2. Include a short body with:
+   - files changed
+   - sections/components affected
+   - why it was changed (goal)
+   - side effects/risk (if any)
+
+Example:
+`content: refactor homepage hero copy and remove obsolete badge border`
+
+Body:
+`- docs/mockups/stitch_blueorange/blueorange.html: header, hero`
+`- Removes decorative border around logo cluster to match updated logo lockup direction`
+`- No behavior changes; only markup classes/structure`
