@@ -39,6 +39,7 @@ This repository uses **Astro + CloudCannon Bookshop** to implement the mockup in
    - `STYLEGUIDE.md` (spacing, type, buttons, hover/focus, tokens usage)
    - `COMPONENTS.md` (component inventory + prop signatures)
 3. Every page work must reuse this contract and the component inventory; do not invent new visual patterns without adding to the inventory first.
+4. Do not keep legacy selector aliases for the same component family. Migrate to one canonical class namespace and remove duplicates during each conversion phase.
 
 ## Gemini 3 Pro conversion protocol
 For each mockup pass, explicitly require this output:
@@ -47,9 +48,10 @@ For each mockup pass, explicitly require this output:
 3. `COMPONENTS.md`
 4. `tailwind.config.*` (optional)
 5. Include only tokenized styling, spacing scale discipline, and explicit accessibility constraints.
+   - `CONTRACT`: all typography, spacing, border, shadow, radius, and state values in `src/styles/global.css` must map to `src/styles/tokens.css` variables.
 
 Required prompt skeleton:
-> Produce design tokens and a layout spec for a {industry} site. Output: (1) tokens.css variables, (2) type scale, (3) spacing scale, (4) component inventory with props, (5) accessibility requirements (focus rings, contrast), (6) do-not-violate rules: only token colors, only spacing scale, no inline styles.
+> Produce design tokens and a layout spec for a {industry} site. Output: (1) tokens.css variables, (2) type scale, (3) spacing scale, (4) component inventory with props, (5) accessibility requirements (focus rings, contrast), (6) do-not-violate rules: only token colors/typography/borders/shadows/radii, one canonical component namespace, no inline scale overrides.
 
 ## Page construction rules
 1. Each page first becomes a one-file prototype:
@@ -74,6 +76,7 @@ Required prompt skeleton:
 3. Run screenshot/visual regression checks where practical.
 4. Re-run Bookshop generation after any `.bookshop.yml` change.
 5. Do not hand-edit generated files.
+6. Before moving from Astro to Bookshop, complete the "design-system coherence" checklist in `docs/astro-bookshop-mockup-conversion-checklist.md`.
 
 ## Repo structure required for this workflow
 - src/styles/tokens.css

@@ -4,17 +4,18 @@ This style guide is the second source of style truth after `src/styles/tokens.cs
 
 ## 1) Principles
 
-- Style system is utility-first with a token backbone.
+- Style system is token-first with one canonical component API.
 - All reusable, cross-cutting values come from `src/styles/tokens.css`.
-- New components should not invent colors, spacing, shadows, or font sizes inline.
+- New components should not invent colors, spacing, typography, shadows, borders, radii, or z-index inline.
+- Avoid legacy alias classes for component families.
 - Prefer semantic components over page-specific ad hoc styles.
 - Keep contrast and focus behavior visible for all interactive elements.
 
 ## 2) Token usage
 
 - Import order: `tokens.css` is the source for design values.
-- `global.css` should reference token variables; avoid hardcoded `rgb/rgba/#`.
-- Tailwind utility classes remain the first line of styling, with component scope classes only for composition.
+- `global.css` must consume token variables for all reusable decisions on spacing, typography, borders, shadows, radii, and motion.
+- Tailwind utility classes should only be used for temporary prototypes and layout primitives, not for reusable typography/spacing rules.
 
 ## 3) Core scales
 
@@ -26,12 +27,20 @@ This style guide is the second source of style truth after `src/styles/tokens.cs
 
 ### Spacing
 - Use spacing tokens from `src/styles/tokens.css`:
-  `--space-1` through `--space-28`
+  `--space-*` plus derived layout tokens (`--space-container-gutter`, `--space-section-top`)
 - Use container controls: `--container-max`, `--container-padding`
 
 ### Typography
 - Font families: `--font-display`, `--font-heading`, `--font-body`
-- Keep heading and CTA sizing in class utilities (`text-*`, `leading-*`) unless component-level rhythm requires a shared rule.
+- Keep heading and CTA sizing in token variables:
+  `--type-size-*` and `--leading-*`.
+- Do not introduce `text-*`/`leading-*`/`gap-*`/`p-*`/`m-*` utilities for reusable component structure.
+
+### Coherence checks
+
+- If three or more styles share a tokenized value, no inline or utility-surface-scale fallback is allowed.
+- Shared typography, spacing, and border behavior must be driven through `tokens.css` and inherited by `global.css`.
+- Component classes are canonical; there is one active selector family per component.
 
 ### Elevation
 - Shadow tokens: `--shadow-primary`, `--shadow-accent`
@@ -47,5 +56,6 @@ This style guide is the second source of style truth after `src/styles/tokens.cs
 
 - No new hardcoded color values outside tokens.
 - No inline style attributes for global layout or branding.
+- No utility classes for reusable typography, spacing, or border values (`text-*`, `leading-*`, `gap-*`, `p-*`, `m-*`, `w-*`, `h-*`, `space-*`, `border-*`).
 - Reused sections remain in component classes or existing utility patterns.
 - Any new section-level override gets a short comment or a component-level token mapping.

@@ -8,12 +8,12 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [x] Existing one-page mockup identified
   - [x] Baseline page identified: `docs/mockups/stitch_blueorange/blueorange.html`
   - [x] Current build issues logged
-    - [ ] Header alignment does not match mockup
-    - [ ] Site container width appears narrower than mockup
-    - [ ] Body text appears smaller than mockup
-    - [ ] Cred strip borders/icons have visual drift
-    - [ ] Process gallery images have reduced size
-    - [ ] “Get My Free Audit” button is smaller than mockup
+    - [x] Header alignment does not match mockup
+    - [x] Site container width appears narrower than mockup
+    - [x] Body text appears smaller than mockup
+    - [x] Cred strip borders/icons have visual drift
+    - [x] Process gallery images have reduced size
+    - [x] “Get My Free Audit” button is smaller than mockup
 - [ ] 1) Scope locked for this cycle
   - [x] Astro conversion first (live reload)
   - [x] Bookshop deferred until Astro visual parity is stable
@@ -65,7 +65,8 @@ Use this checklist to track the single-page conversion from static mockup to liv
 - [x] Style wiring
   - [x] Keep site-specific token file in `src/styles/tokens.css`
   - [x] Keep global style layer in `src/styles/global.css`
-  - [x] Ensure all page-specific utility classes from the original mockup are represented
+  - [x] Remove legacy selector aliases and keep one canonical namespace
+  - [x] Ensure all page-specific utility classes from the original mockup are represented as shared component style rules
   - [x] Confirm class structure maps to tokenized values
   - [x] Confirm no ad-hoc inline/component-local token bypasses
 
@@ -92,6 +93,31 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [x] Mockup implemented as Astro page
   - [x] Open visual issues resolved or moved into explicit follow-up checklist items
   - [x] Remaining work is itemized for Bookshop component extraction
+
+## Phase 1b — Design-system coherence hardening (before Bookshop)
+
+- [x] Add tokenized design scales
+  - [x] Extend `src/styles/tokens.css` with `type-size-*`, `leading-*`, and spacing cohesion tokens
+  - [x] Replace typography and spacing utility drift with semantic token references
+  - [x] Remove hardcoded border, shadow, and container-size values from shared section component rules
+
+- [x] Consolidate to one canonical selector family
+  - [x] Normalize hero styles to `hero__*`
+  - [x] Normalize card styles to `services-card__*`
+  - [x] Normalize process step/gallery styles to `process-step__*` and `process-gallery__*`
+  - [x] Remove duplicate legacy aliases from `src/styles/global.css`
+
+- [x] Final parity verification checklist
+  - [x] Header, nav, CTA, and hero typography scale align to source baseline
+  - [x] Container widths use `--container-max` consistently
+  - [x] Credibility strip border and icon rhythm aligns with visual baseline
+  - [x] Process gallery image sizing and offsets match prior layout
+  - [x] Final CTA and footer copy/button scales match prior visual hierarchy
+
+- [x] Governance hardening
+  - [x] `STYLEGUIDE.md` updated with anti-drift token rules
+  - [x] `CONTRACT.md` updated with anti-legacy, no-inline-scale requirements
+  - [x] `COMPONENTS.md` selector family mappings updated for canonical hero naming
 
 ## Phase 2 — Convert to Bookshop (editable component system)
 

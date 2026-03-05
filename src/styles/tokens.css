@@ -20,6 +20,7 @@
   --color-navy-10: hsl(214 53% 11% / 0.10);
   --color-navy-20: hsl(214 53% 11% / 0.20);
   --color-navy-60: hsl(214 53% 11% / 0.60);
+  --color-white-5: hsl(0 0% 100% / 0.05);
   --color-white-10: hsl(0 0% 100% / 0.10);
   --color-white-30: hsl(0 0% 100% / 0.30);
   --color-white-60: hsl(0 0% 100% / 0.60);
@@ -29,11 +30,11 @@
   --focus-outline-color: var(--color-white);
   --focus-outline: 3px solid var(--focus-outline-color);
   --focus-outline-offset: 2px;
+  --focus-outline-width: 3px;
 
   --shadow-navy: 6px 6px 0 0 var(--color-navy);
   --shadow-primary: var(--shadow-navy);
   --shadow-accent: 6px 6px 0 0 var(--color-primary);
-
   --surface-elevation: var(--shadow-primary);
   --shadow-hover-primary: color-mix(in srgb, var(--color-primary) 85%, var(--color-black) 15%);
   --hero-overlay: color-mix(in srgb, var(--color-primary) 22%, transparent);
@@ -45,21 +46,82 @@
   --space-4: 1rem;
   --space-5: 1.25rem;
   --space-6: 1.5rem;
+  --space-7: 1.75rem;
   --space-8: 2rem;
+  --space-9: 2.25rem;
   --space-10: 2.5rem;
+  --space-11: 2.75rem;
   --space-12: 3rem;
   --space-14: 3.5rem;
+  --space-15: 3.75rem;
   --space-16: 4rem;
   --space-20: 5rem;
   --space-24: 6rem;
   --space-28: 7rem;
+  --space-30: 7.5rem;
+  --space-grid: 40px;
+  --space-grid-gap: 10px;
 
-  --container-max: 80rem;
+  --space-container-gutter: clamp(1.5rem, 4vw, 5rem);
+  --space-section-top: clamp(4rem, 10vw, 6rem);
+  --space-content-block: var(--space-20);
+  --space-card-padding: var(--space-10);
+  --container-max: 90rem;
+  --container-max-wide: 90rem;
+  --container-max-narrow: 64rem;
   --container-padding: clamp(1.5rem, 4vw, 5rem);
+  --hero-min-height: 820px;
+  --process-gallery-height: 20rem;
+
+  --type-size-xxs: 0.7rem;
+  --type-size-xs: 0.75rem;
+  --type-size-sm: 0.8125rem;
+  --type-size-md: 0.875rem;
+  --type-size-base: 1rem;
+  --type-size-lg: 1.1rem;
+  --type-size-xl: 1.2rem;
+  --type-size-2xl: 1.35rem;
+  --type-size-3xl: 1.5rem;
+  --type-size-4xl: 1.85rem;
+  --type-size-5xl: 2rem;
+  --type-size-6xl: 2.2rem;
+  --type-size-7xl: 2.8rem;
+  --type-size-8xl: 3rem;
+  --type-size-9xl: 3.5rem;
+  --type-size-display: clamp(3.25rem, 8vw, 5.5rem);
+  --type-size-section: clamp(2.75rem, 6vw, 4.7rem);
+  --type-size-card-title: clamp(2rem, 4vw, 2.8rem);
+  --type-size-body-large: clamp(1.1rem, 3vw, 1.35rem);
+  --type-size-badge-title: clamp(2.2rem, 6vw, 3rem);
+  --type-size-footer-brand: clamp(2.2rem, 5vw, 3rem);
+  --type-size-final-cta-title: clamp(4rem, 7vw, 5.5rem);
+  --type-size-hero-note: var(--type-size-base);
+  --type-size-list-item: var(--type-size-sm);
+
+  --tracking-tight: 0.02em;
+  --tracking-heading: 0.03em;
+  --tracking-tagline: 0.05em;
+  --tracking-badge: 0.06em;
+  --tracking-wide: 0.1em;
+  --tracking-superwide: 0.12em;
+  --tracking-ultrawide: 0.14em;
+  --tracking-button: 0.18em;
+  --tracking-max: 0.2em;
+
+  --leading-tight: 0.85;
+  --leading-body: 1.65;
+  --leading-relaxed: 1.7;
+  --leading-copy: 1.6;
+  --leading-step: 1.2;
 
   --radius-none: 0;
   --radius-pill: 9999px;
   --border-width-heavy: 3px;
   --border-width: 2px;
-  --focus-outline-width: 3px;
+  --border-width-accent: 4px;
+  --border-width-thin: 1px;
+
+  --z-header: 40;
+  --z-overlay: 30;
+  --z-floating: 50;
 }

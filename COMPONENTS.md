@@ -16,9 +16,9 @@ These are the page-level building blocks in `src/pages/index.astro` used by the 
   - `ctaLabel: string`
   - `menuItems: { label, href }[]`
 
-## 2) `HomeHero`
+## 2) `HeroSection`
 
-- Selector family: `.home-hero`, `.home-hero__inner`, `.home-hero__content`, `.home-hero__headline`, `.home-hero__copy`, `.home-hero__actions`, `.home-hero__media`, `.home-hero__media-frame`, `.home-hero__media-inner`, `.home-hero__media-overlay`, `.home-hero__badge`, `.home-hero__badge-copy`, `.home-hero__badge-title`
+- Selector family: `.hero`, `.hero__inner`, `.hero__content`, `.hero__headline`, `.hero__headline-accent`, `.hero__copy`, `.hero__actions`, `.hero__media`, `.hero__media-frame`, `.hero__media-inner`, `.hero__media-image`, `.hero__media-overlay`, `.hero__badge`, `.hero__badge-copy`, `.hero__badge-title`
 - Purpose: firstfold conversion and CTA section
 - Props:
   - `headline: string`
