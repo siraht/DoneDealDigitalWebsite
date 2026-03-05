@@ -100,16 +100,36 @@ Required prompt skeleton:
   - `qa/visual/baseline/` and `qa/visual/baseline/sections/`
   - `qa/visual/baseline-static/` and `qa/visual/baseline-static/sections/`
   - `qa/visual/baseline-static-http/` and `qa/visual/baseline-static-http/sections/` (if compared against HTTP-rendered static source)
-- Ephemeral outputs (do not commit):
-  - `qa/visual/current/`
-  - `qa/visual/diff/`
-  - `qa/visual/full-diff/`
-  - `qa/visual/full-cropdiff/`
-- Capture commands and targets:
-  - `npm run qa:visual:baseline` saves to `qa/visual/baseline`
-  - `QA_BASELINE_DIR=qa/visual/baseline-static` before your first approved static baseline capture
-  - `npm run qa:visual:diff` compares current captures to the chosen baseline directory
-  - `npm run qa:visual:drift` runs section-level strict checks for regression risk before merge
+ - Ephemeral outputs (do not commit):
+   - `qa/visual/current/`
+   - `qa/visual/diff/`
+   - `qa/visual/full-diff/`
+   - `qa/visual/full-cropdiff/`
+   - `qa/visual/compare/`
+ - Capture commands and targets:
+   - `npm run qa:visual:baseline` saves to `qa/visual/baseline`
+   - `QA_BASELINE_DIR=qa/visual/baseline-static` before your first approved static baseline capture
+   - `npm run qa:visual:diff` compares current captures to the chosen baseline directory
+   - `npm run qa:visual:drift` runs section-level strict checks for regression risk before merge
+
+### QA artifact workflow (required)
+- Baseline updates must be reviewed in one commit containing only visual-tracking changes.
+- Do not update baselines during exploratory style work unless explicitly approved in checkpoint notes.
+- Required cadence:
+  - Milestone closeout: compare full and section captures against the current baseline.
+  - Major visual change approved: capture new baseline in the intended family (`baseline`, `baseline-static`, or `baseline-static-http`) and update `docs/qa-visual-regression-policy.md` run summary.
+  - Any baseline refresh must include:
+    - command used
+    - viewport set
+    - route(s)
+    - rationale
+    - person/date
+- Runbook for committed artifacts:
+  - `qa/visual/baseline/` = Astro baseline used for continuous regression
+  - `qa/visual/baseline-static/` = local static file served baseline
+  - `qa/visual/baseline-static-http/` = remote HTTP static baseline
+- Commit naming convention for baseline refresh:
+  - `qa: refresh visual baseline (<source>)`
 
 ## Repo structure required for this workflow
 - src/styles/tokens.css

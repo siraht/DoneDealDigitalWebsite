@@ -136,7 +136,7 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [x] Header/copy/button scales verified by computed style checks
   - [x] Baseline capture policy recorded for retained vs transient artifacts
 
-- [x] Visual regression pipeline added
+  - [x] Visual regression pipeline added
   - [x] Add `scripts/visual-regression.mjs`
   - [x] Add npm scripts for capture / baseline / diff:
     - [x] `qa:visual`
@@ -149,11 +149,15 @@ Use this checklist to track the single-page conversion from static mockup to liv
     - [x] `pngjs`
     - [x] `pixelmatch`
   - [x] Documented verification process in `CONTRACT.md`
-- [x] Add responsive implementation policy check before next conversion milestone:
-  - [x] Confirm component responsiveness uses `@container`
-  - [x] Confirm viewport `@media` usage is limited to global/system exceptions only
-  - [x] Implemented container-first migration in `src/styles/global.css`
-  - [x] Added container query tokens in `src/styles/tokens.css`
+  - [x] Add responsive implementation policy check before next conversion milestone:
+    - [x] Confirm component responsiveness uses `@container`
+    - [x] Confirm viewport `@media` usage is limited to global/system exceptions only
+    - [x] Implemented container-first migration in `src/styles/global.css`
+    - [x] Added container query tokens in `src/styles/tokens.css`
+  - [x] Add visual artifact retention policy tracking
+    - [x] Tracked baselines: `qa/visual/baseline`, `qa/visual/baseline-static`, `qa/visual/baseline-static-http`
+    - [x] Ignored ephemeral outputs: `qa/visual/current`, `qa/visual/diff`, `qa/visual/full-diff`, `qa/visual/full-cropdiff`, `qa/visual/compare`, `qa-snapshots`
+    - [x] Runbook and commit convention documented in `docs/qa-visual-regression-policy.md`
 
 ## Phase 2 — Convert to Bookshop (editable component system)
 
