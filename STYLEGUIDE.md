@@ -36,7 +36,8 @@ This style guide is the second source of style truth after `src/styles/tokens.cs
 
 - Keep components adaptive using container queries:
   - Set `container-type: inline-size` on component roots that control their own layout at different widths.
-  - Use `@container` breakpoints for two-column switches, spacing compression, and typography scaling.
+  - Set `container-name` when multiple components in the same ancestor chain can respond at different breakpoints.
+  - Use `@container` queries with tokenized breakpoints (`--container-query-*`) for layout, spacing, and typography switching.
 - Avoid viewport-level `@media` switches for component-specific behavior.
 - Exception-only `@media` usage:
   - Global/system preference rules (for example `prefers-reduced-motion`),

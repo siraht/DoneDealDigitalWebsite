@@ -148,9 +148,11 @@ Use this checklist to track the single-page conversion from static mockup to liv
     - [x] `pngjs`
     - [x] `pixelmatch`
   - [x] Documented verification process in `CONTRACT.md`
-- [ ] Add responsive implementation policy check before next conversion milestone:
-  - [ ] Confirm component responsiveness uses `@container`
-  - [ ] Confirm viewport `@media` usage is limited to global/system exceptions only
+- [x] Add responsive implementation policy check before next conversion milestone:
+  - [x] Confirm component responsiveness uses `@container`
+  - [x] Confirm viewport `@media` usage is limited to global/system exceptions only
+  - [x] Implemented container-first migration in `src/styles/global.css`
+  - [x] Added container query tokens in `src/styles/tokens.css`
 
 ## Phase 2 — Convert to Bookshop (editable component system)
 

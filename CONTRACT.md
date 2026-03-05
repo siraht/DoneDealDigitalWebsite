@@ -91,6 +91,7 @@ Required prompt skeleton:
 5. Do not hand-edit generated files.
 6. Responsive regression gate:
    - No new component-level `@media` rules should be added without a justified global exception.
+   - Record completion of container-query migration in the active conversion checklist before marking a conversion phase complete.
    - Prefer `@container` in component CSS and document exceptions in the relevant conversion checklist.
 7. Before moving from Astro to Bookshop, complete the "design-system coherence" checklist in `docs/astro-bookshop-mockup-conversion-checklist.md`.
 
