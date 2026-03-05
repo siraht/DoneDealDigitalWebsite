@@ -140,6 +140,8 @@ Use this checklist to track the single-page conversion from static mockup to liv
     - [x] `qa:visual`
     - [x] `qa:visual:baseline`
     - [x] `qa:visual:diff`
+  - [x] Add strict section-level drift command:
+    - [x] `qa:visual:drift` (full-page + section diff for `site-header`, `hero`, `cred-strip`, `services`, `process`, `final-cta`, `site-footer`)
   - [x] Add pipeline dependencies:
     - [x] `playwright`
     - [x] `pngjs`

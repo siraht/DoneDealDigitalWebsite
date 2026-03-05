@@ -25,6 +25,7 @@ This repository uses **Astro + CloudCannon Bookshop** to implement the mockup in
    - `qa:visual`: `node ./scripts/visual-regression.mjs` (capture current screenshots)
    - `qa:visual:baseline`: `node ./scripts/visual-regression.mjs --baseline`
    - `qa:visual:diff`: `node ./scripts/visual-regression.mjs --compare`
+   - `qa:visual:drift`: `node ./scripts/visual-regression.mjs --compare --sections --strict`
 4. Bookshop integration:
    - `src/bookshop/bookshop.config.cjs` with `@bookshop/astro-engine`
    - `astro.config.mjs` registers `@bookshop/astro-bookshop`
@@ -81,6 +82,7 @@ Required prompt skeleton:
    - `npm run qa:visual` for baseline capture review
    - `npm run qa:visual:baseline` after approved design intent changes
    - `npm run qa:visual:diff` before milestone merges
+   - `npm run qa:visual:drift` for section-level strict threshold checks
 4. Re-run Bookshop generation after any `.bookshop.yml` change.
 5. Do not hand-edit generated files.
 6. Before moving from Astro to Bookshop, complete the "design-system coherence" checklist in `docs/astro-bookshop-mockup-conversion-checklist.md`.

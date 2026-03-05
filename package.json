@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "qa:visual": "node ./scripts/visual-regression.mjs",
     "qa:visual:baseline": "node ./scripts/visual-regression.mjs --baseline",
-    "qa:visual:diff": "node ./scripts/visual-regression.mjs --compare"
+    "qa:visual:diff": "node ./scripts/visual-regression.mjs --compare",
+    "qa:visual:drift": "node ./scripts/visual-regression.mjs --compare --sections --strict"
   },
   "dependencies": {
     "astro": "5.18.0"
