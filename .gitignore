@@ -3,3 +3,5 @@ node_modules/
 dist/
 qa/visual/current/
 qa/visual/diff/
+qa/visual/full-diff/
+qa/visual/full-cropdiff/

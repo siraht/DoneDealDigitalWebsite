@@ -134,6 +134,7 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [x] `process__overlay` and `hero` backgrounds render at expected full bleed
   - [x] Navigation border behavior verified (`last-of-type` suppression confirmed)
   - [x] Header/copy/button scales verified by computed style checks
+  - [x] Baseline capture policy recorded for retained vs transient artifacts
 
 - [x] Visual regression pipeline added
   - [x] Add `scripts/visual-regression.mjs`

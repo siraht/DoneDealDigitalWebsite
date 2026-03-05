@@ -95,6 +95,22 @@ Required prompt skeleton:
    - Prefer `@container` in component CSS and document exceptions in the relevant conversion checklist.
 7. Before moving from Astro to Bookshop, complete the "design-system coherence" checklist in `docs/astro-bookshop-mockup-conversion-checklist.md`.
 
+### Visual QA output retention policy
+- Tracked references (source-of-truth for regressions):
+  - `qa/visual/baseline/` and `qa/visual/baseline/sections/`
+  - `qa/visual/baseline-static/` and `qa/visual/baseline-static/sections/`
+  - `qa/visual/baseline-static-http/` and `qa/visual/baseline-static-http/sections/` (if compared against HTTP-rendered static source)
+- Ephemeral outputs (do not commit):
+  - `qa/visual/current/`
+  - `qa/visual/diff/`
+  - `qa/visual/full-diff/`
+  - `qa/visual/full-cropdiff/`
+- Capture commands and targets:
+  - `npm run qa:visual:baseline` saves to `qa/visual/baseline`
+  - `QA_BASELINE_DIR=qa/visual/baseline-static` before your first approved static baseline capture
+  - `npm run qa:visual:diff` compares current captures to the chosen baseline directory
+  - `npm run qa:visual:drift` runs section-level strict checks for regression risk before merge
+
 ## Repo structure required for this workflow
 - src/styles/tokens.css
 - src/styles/global.css
