@@ -28,10 +28,24 @@ This style guide is the second source of style truth after `src/styles/tokens.cs
   - Block: `component`
   - Element: `component__part`
   - Modifier: `component--variant`
+
 - `id` usage should be reserved for anchor and accessibility targets, not styling.
 - Third-party classes (for example `material-symbols-outlined`) are exempt but all custom utility behavior should be tokenized.
 
-## 3) Core scales
+## 4) Responsive behavior (container-first)
+
+- Keep components adaptive using container queries:
+  - Set `container-type: inline-size` on component roots that control their own layout at different widths.
+  - Use `@container` breakpoints for two-column switches, spacing compression, and typography scaling.
+- Avoid viewport-level `@media` switches for component-specific behavior.
+- Exception-only `@media` usage:
+  - Global/system preference rules (for example `prefers-reduced-motion`),
+  - Browser/platform-level safety behaviors that cannot be expressed with container queries.
+- Example pattern:
+  - `html { container-type: inline-size; }` where appropriate for root containers
+  - component root rules use `@container (min-width: ...)`.
+
+## 5) Core scales
 
 ### Color
 - Primary brand: `--color-primary`
@@ -60,16 +74,20 @@ This style guide is the second source of style truth after `src/styles/tokens.cs
 - Shadow tokens: `--shadow-primary`, `--shadow-accent`
 - Surface border tokens are based on brand and accent tokens.
 
-## 4) Interaction standards
+## 6) Interaction standards
 
 - Focus ring: rely on `:focus-visible`, using `--focus-outline` + `--focus-outline-offset`.
 - Hover/focus transitions: short utility transition for button/link interactions.
 - Keep hover states perceptible and accessible.
 
-## 5) Review gates (pre-build)
+## 7) Review gates (pre-build)
 
 - No new hardcoded color values outside tokens.
 - No inline style attributes for global layout or branding.
 - No utility classes for reusable typography, spacing, or border values (`text-*`, `leading-*`, `gap-*`, `p-*`, `m-*`, `w-*`, `h-*`, `space-*`, `border-*`).
 - Reused sections remain in component classes or existing utility patterns.
 - Any new section-level override gets a short comment or a component-level token mapping.
+- Responsive gate:
+  - New components should use `@container` for responsive rules.
+  - Add `container-type: inline-size` in component roots when component-local adaptation is required.
+  - If a viewport `@media` is introduced, capture and document the exception in the conversion checklist.

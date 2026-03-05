@@ -118,6 +118,7 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [x] `STYLEGUIDE.md` updated with anti-drift token rules
   - [x] `CONTRACT.md` updated with anti-legacy, no-inline-scale requirements
   - [x] `COMPONENTS.md` selector family mappings updated for canonical hero naming
+  - [x] Responsive strategy documented as container-query-first for future passes
 
 - [x] BEM and utility audit (now in place)
   - [x] Confirm each component family has one active selector namespace
@@ -147,6 +148,9 @@ Use this checklist to track the single-page conversion from static mockup to liv
     - [x] `pngjs`
     - [x] `pixelmatch`
   - [x] Documented verification process in `CONTRACT.md`
+- [ ] Add responsive implementation policy check before next conversion milestone:
+  - [ ] Confirm component responsiveness uses `@container`
+  - [ ] Confirm viewport `@media` usage is limited to global/system exceptions only
 
 ## Phase 2 — Convert to Bookshop (editable component system)
 

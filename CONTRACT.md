@@ -45,6 +45,10 @@ This repository uses **Astro + CloudCannon Bookshop** to implement the mockup in
 3. Every page work must reuse this contract and the component inventory; do not invent new visual patterns without adding to the inventory first.
 4. Do not keep legacy selector aliases for the same component family. Migrate to one canonical class namespace and remove duplicates during each conversion phase.
 5. Add utility namespace rules under `@layer utilities` as `u-*` when a style is intentionally shared and not component-scoped.
+6. Use container query driven responsiveness:
+   - Set `container-type: inline-size` for component wrappers that need responsive behavior.
+   - Use `@container` queries for adaptive layout, spacing, and typography decisions.
+   - Limit viewport `@media` queries to true global/system concerns (for example prefers-reduced-motion).
 
 ## Gemini 3 Pro conversion protocol
 For each mockup pass, explicitly require this output:
@@ -85,7 +89,10 @@ Required prompt skeleton:
    - `npm run qa:visual:drift` for section-level strict threshold checks
 4. Re-run Bookshop generation after any `.bookshop.yml` change.
 5. Do not hand-edit generated files.
-6. Before moving from Astro to Bookshop, complete the "design-system coherence" checklist in `docs/astro-bookshop-mockup-conversion-checklist.md`.
+6. Responsive regression gate:
+   - No new component-level `@media` rules should be added without a justified global exception.
+   - Prefer `@container` in component CSS and document exceptions in the relevant conversion checklist.
+7. Before moving from Astro to Bookshop, complete the "design-system coherence" checklist in `docs/astro-bookshop-mockup-conversion-checklist.md`.
 
 ## Repo structure required for this workflow
 - src/styles/tokens.css
