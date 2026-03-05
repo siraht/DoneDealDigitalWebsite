@@ -10,12 +10,26 @@ This style guide is the second source of style truth after `src/styles/tokens.cs
 - Avoid legacy alias classes for component families.
 - Prefer semantic components over page-specific ad hoc styles.
 - Keep contrast and focus behavior visible for all interactive elements.
+- Keep utility styles explicit under `@layer utilities` and namespaced with `u-` when they are shared cross-component effects.
 
 ## 2) Token usage
 
 - Import order: `tokens.css` is the source for design values.
 - `global.css` must consume token variables for all reusable decisions on spacing, typography, borders, shadows, radii, and motion.
 - Tailwind utility classes should only be used for temporary prototypes and layout primitives, not for reusable typography/spacing rules.
+- Utility-only visual effects are only permitted as:
+  - shared helpers (for example grayscale overlays or paper/grid textures),
+  - `u-*` namespaced classes in `@layer utilities`,
+  - component usage that is documented and stable.
+
+## 3) Class naming conventions
+
+- Prefer strict BEM naming for components:
+  - Block: `component`
+  - Element: `component__part`
+  - Modifier: `component--variant`
+- `id` usage should be reserved for anchor and accessibility targets, not styling.
+- Third-party classes (for example `material-symbols-outlined`) are exempt but all custom utility behavior should be tokenized.
 
 ## 3) Core scales
 

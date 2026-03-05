@@ -835,22 +835,22 @@ button {
 }
 
 @layer utilities {
-.graph-paper {
+  .u-graph-paper {
     background-size: var(--space-grid) var(--space-grid);
     background-image:
       linear-gradient(to right, var(--color-white-5) var(--border-width-thin), transparent var(--border-width-thin)),
       linear-gradient(to bottom, var(--color-white-5) var(--border-width-thin), transparent var(--border-width-thin));
   }
 
-  .block-shadow {
+  .u-block-shadow {
     box-shadow: var(--shadow-primary);
   }
 
-  .block-shadow-orange {
+  .u-block-shadow--accent {
     box-shadow: var(--shadow-accent);
   }
 
-  .diagonal-stripes {
+  .u-diagonal-stripes {
     background-image: repeating-linear-gradient(
       45deg,
       var(--color-primary-5) 0,
@@ -860,7 +860,7 @@ button {
     );
   }
 
-  .bw-overlay {
+  .u-bw {
     filter: grayscale(1) contrast(1.2);
   }
 }

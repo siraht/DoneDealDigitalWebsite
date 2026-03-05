@@ -119,6 +119,33 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [x] `CONTRACT.md` updated with anti-legacy, no-inline-scale requirements
   - [x] `COMPONENTS.md` selector family mappings updated for canonical hero naming
 
+- [x] BEM and utility audit (now in place)
+  - [x] Confirm each component family has one active selector namespace
+  - [x] Confirm all shared visual helpers are under utility namespace `u-*`
+  - [x] Confirm no new component aliases were introduced in this conversion pass
+
+- [x] Visual QA pass completed before checkpointing
+  - [x] Desktop and mobile screenshots captured for regression baseline
+    - [x] 360×2400
+    - [x] 768×2200
+    - [x] 1280×2600
+    - [x] 1920×2600
+  - [x] `process__overlay` and `hero` backgrounds render at expected full bleed
+  - [x] Navigation border behavior verified (`last-of-type` suppression confirmed)
+  - [x] Header/copy/button scales verified by computed style checks
+
+- [x] Visual regression pipeline added
+  - [x] Add `scripts/visual-regression.mjs`
+  - [x] Add npm scripts for capture / baseline / diff:
+    - [x] `qa:visual`
+    - [x] `qa:visual:baseline`
+    - [x] `qa:visual:diff`
+  - [x] Add pipeline dependencies:
+    - [x] `playwright`
+    - [x] `pngjs`
+    - [x] `pixelmatch`
+  - [x] Documented verification process in `CONTRACT.md`
+
 ## Phase 2 — Convert to Bookshop (editable component system)
 
 - [ ] Install/configure Bookshop

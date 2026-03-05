@@ -22,6 +22,9 @@ This repository uses **Astro + CloudCannon Bookshop** to implement the mockup in
    - `dev`: `astro dev`
    - `build`: `astro build`
    - `preview`: `astro preview`
+   - `qa:visual`: `node ./scripts/visual-regression.mjs` (capture current screenshots)
+   - `qa:visual:baseline`: `node ./scripts/visual-regression.mjs --baseline`
+   - `qa:visual:diff`: `node ./scripts/visual-regression.mjs --compare`
 4. Bookshop integration:
    - `src/bookshop/bookshop.config.cjs` with `@bookshop/astro-engine`
    - `astro.config.mjs` registers `@bookshop/astro-bookshop`
@@ -40,6 +43,7 @@ This repository uses **Astro + CloudCannon Bookshop** to implement the mockup in
    - `COMPONENTS.md` (component inventory + prop signatures)
 3. Every page work must reuse this contract and the component inventory; do not invent new visual patterns without adding to the inventory first.
 4. Do not keep legacy selector aliases for the same component family. Migrate to one canonical class namespace and remove duplicates during each conversion phase.
+5. Add utility namespace rules under `@layer utilities` as `u-*` when a style is intentionally shared and not component-scoped.
 
 ## Gemini 3 Pro conversion protocol
 For each mockup pass, explicitly require this output:
@@ -74,6 +78,9 @@ Required prompt skeleton:
 1. `npm run build` passes.
 2. A11y check for focus states, semantic structure, contrast.
 3. Run screenshot/visual regression checks where practical.
+   - `npm run qa:visual` for baseline capture review
+   - `npm run qa:visual:baseline` after approved design intent changes
+   - `npm run qa:visual:diff` before milestone merges
 4. Re-run Bookshop generation after any `.bookshop.yml` change.
 5. Do not hand-edit generated files.
 6. Before moving from Astro to Bookshop, complete the "design-system coherence" checklist in `docs/astro-bookshop-mockup-conversion-checklist.md`.
