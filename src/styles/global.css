@@ -94,8 +94,6 @@ button {
 
 .site-header__nav {
   display: none;
-  align-items: stretch;
-  margin-inline-start: auto;
 }
 
 @media (min-width: 768px) {
@@ -133,7 +131,6 @@ button {
   padding: var(--space-3) var(--space-8);
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.8rem;
   letter-spacing: 0.18em;
   box-shadow: var(--shadow-primary);
   transition: background-color 120ms ease, color 120ms ease;
@@ -320,7 +317,6 @@ button {
   align-items: center;
   gap: var(--space-3);
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 5vw, 2.2rem);
   white-space: nowrap;
 }
 
@@ -574,7 +570,6 @@ button {
   text-align: center;
   font-family: var(--font-heading);
   text-transform: uppercase;
-  font-size: clamp(3.5rem, 10vw, 6rem);
   margin-bottom: var(--space-6);
 }
 
@@ -582,7 +577,6 @@ button {
   margin: 0 auto var(--space-12);
   text-align: center;
   color: var(--color-slate);
-  font-size: clamp(1.2rem, 3vw, 2rem);
   max-width: 36ch;
 }
 
