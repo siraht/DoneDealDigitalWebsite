@@ -106,7 +106,6 @@ button {
   display: inline-flex;
   align-items: center;
   padding-inline: var(--space-8);
-  border-right: 1px solid rgb(11 29 51 / 20%);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -875,5 +874,4 @@ button {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 1.5rem;
 }
