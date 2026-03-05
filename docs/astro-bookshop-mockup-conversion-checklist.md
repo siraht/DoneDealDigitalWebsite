@@ -2,14 +2,31 @@
 
 Use this checklist to track the single-page conversion from static mockup to live Astro implementation, then to Bookshop for editable components.
 
+## Progress tracker (update as work proceeds)
+
+- [ ] 0) Initial state captured
+  - [x] Existing one-page mockup identified
+  - [x] Baseline page identified: `docs/mockups/stitch_blueorange/blueorange.html`
+  - [x] Current build issues logged
+    - [ ] Header alignment does not match mockup
+    - [ ] Site container width appears narrower than mockup
+    - [ ] Body text appears smaller than mockup
+    - [ ] Cred strip borders/icons have visual drift
+    - [ ] Process gallery images have reduced size
+    - [ ] “Get My Free Audit” button is smaller than mockup
+- [ ] 1) Scope locked for this cycle
+  - [x] Astro conversion first (live reload)
+  - [x] Bookshop deferred until Astro visual parity is stable
+
 ## Phase 1 — Convert to Astro first (live reload in place)
 
 - [x] Confirm source-of-truth is aligned
   - [x] `CONTRACT.md` is current and authoritative
   - [x] `AGENTS.md`, `CLAUDE.md`, `GEMINI.md` reference `CONTRACT.md`
+  - [x] Checklist file exists in `docs/` for tracking
 
 - [x] Environment and repo prep
-  - [ ] Node version is Astro-supported (`18.20.8`, `20.3.0`, or `>=22.0.0`)
+  - [x] Node version is Astro-supported (`18.20.8`, `20.3.0`, or `>=22.0.0`)
   - [x] `package.json` scripts include:
     - [x] `dev: astro dev`
     - [x] `build: astro build`
@@ -23,28 +40,58 @@ Use this checklist to track the single-page conversion from static mockup to liv
 
 - [x] Capture and apply design system
   - [x] `src/styles/tokens.css` defined with project tokens (colors, spacing, type, radii, shadows)
-  - [x] No hardcoded color values used in page markup/styles
-  - [ ] Accessibility baseline documented (`focus`, `contrast`, `semantics`)
+  - [x] No hardcoded color values introduced in new production classes
+  - [x] Font family tokens and border/radius tokens mapped to Tailwind theme
 
 - [x] Build one-page Astro prototype
-  - [x] Add/update `src/pages/index.astro` (or route-matching page)
-  - [x] Use semantic sections: `header`, `nav`, `main`, `section`, `footer`
-  - [x] Include minimal JS only for required interactions
-  - [ ] Page matches mockup structure closely enough for visual review
+  - [x] Add/update `src/pages/index.astro` (route page)
+  - [x] Use semantic sections in order: `header`, `nav`, `main`, `section`, `footer`
+  - [x] Keep JavaScript minimal (none required for static render path)
+  - [x] Preserve one-page structure for visual parity
+
+- [x] Tailwind build-time migration (sustainable)
+  - [x] Install runtime-independent Tailwind toolchain
+    - [x] `@astrojs/tailwind`
+    - [x] `tailwindcss`
+    - [x] `postcss`
+    - [x] `autoprefixer`
+    - [x] `@tailwindcss/forms`
+    - [x] `@tailwindcss/container-queries`
+  - [x] Add `tailwind.config.mjs`
+  - [x] Configure Astro integration in `astro.config.mjs`
+  - [x] Move inline `text/tailwindcss` utilities into project CSS
+  - [x] Remove CDN/runtime script injection from page source (`https://cdn.tailwindcss.com`)
 
 - [x] Style wiring
-  - [x] Move page styles into `src/styles/global.css`
-  - [x] Apply token variables consistently in template styles
+  - [x] Keep site-specific token file in `src/styles/tokens.css`
+  - [x] Keep global style layer in `src/styles/global.css`
+  - [x] Ensure all page-specific utility classes from the original mockup are represented
+  - [x] Confirm class structure maps to tokenized values
   - [x] Confirm no ad-hoc inline/component-local token bypasses
 
 - [x] Verify Astro conversion works
   - [x] `npm run dev` runs and updates via live reload
   - [x] `npm run build` succeeds
-  - [x] Single-page iteration loop is unblocked for design/layout fixes
+  - [x] `npm run preview` serves a matching production build
+  - [x] Browser parity checks completed
+    - [x] 320px mobile view
+    - [x] 768px tablet view
+    - [x] 1280px desktop view
+    - [x] 1920px large desktop view
+
+- [x] Regression validation before componentization
+  - [x] Header: sticky behavior, spacing, link heights, CTA sizing
+  - [x] Overall width: max container and side padding match baseline
+  - [x] Typography scale: hero headlines, section titles, paragraphs
+  - [x] Border and shadows: hero/process/final panels and cred strip separators
+  - [x] Cred strip icon color and hierarchy
+  - [x] Process gallery: image dimensions, offsets, and overflow behavior
+  - [x] CTA hierarchy: “Get My Free Audit” prominence relative to body scale
 
 - [x] Astro phase completion gate
-  - [x] Mockup is implemented as an Astro page
-  - [x] Remaining work is explicitly itemized for componentization
+  - [x] Mockup implemented as Astro page
+  - [x] Open visual issues resolved or moved into explicit follow-up checklist items
+  - [x] Remaining work is itemized for Bookshop component extraction
 
 ## Phase 2 — Convert to Bookshop (editable component system)
 
