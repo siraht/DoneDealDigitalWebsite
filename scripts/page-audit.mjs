@@ -1460,6 +1460,20 @@ function getNodeLabel(node) {
   return getFirstHeadingText(node) || normalizeWhitespace(node.ownText || node.textPreview || "").slice(0, 80);
 }
 
+function isContentlessNodeStats(stats) {
+  return (
+    stats.wordCount === 0 &&
+    stats.headingCount === 0 &&
+    stats.iconCount === 0 &&
+    stats.imageCount === 0 &&
+    stats.linkCount === 0 &&
+    stats.buttonCount === 0 &&
+    stats.inputCount === 0 &&
+    stats.textareaCount === 0 &&
+    stats.selectCount === 0
+  );
+}
+
 function buildRepeatedPatternGroups(sectionNode) {
   const groups = [];
   const seen = new Set();
@@ -1601,6 +1615,42 @@ function classifyComponentKind(node, stats, context = {}) {
     return "FormField";
   }
 
+  if (parentSectionType === "FormSection" && formControlCount >= 2) {
+    return "FormFieldRow";
+  }
+
+  if (parentSectionType === "CredibilityStrip" && wordCount > 0) {
+    return "CredibilityItem";
+  }
+
+  if (parentSectionType === "HeroSection" && stats.iconCount >= 1 && !hasHeading && wordCount <= 12) {
+    return "HeroChecklistItem";
+  }
+
+  if (parentSectionType === "HeroSection" && !hasHeading && wordCount <= 6) {
+    return "HeroEyebrow";
+  }
+
+  if (parentSectionType === "SiteFooter" && hasHeading) {
+    return "FooterColumnHeading";
+  }
+
+  if (parentSectionType === "SiteFooter" && wordCount > 0) {
+    return "FooterMeta";
+  }
+
+  if (parentSectionType === "LegalContent" && stats.iconCount >= 1 && borderWidth > 0) {
+    return "LegalInfoRow";
+  }
+
+  if (parentSectionType === "LegalContent" && node.tag === "li" && wordCount > 0) {
+    return "LegalBulletItem";
+  }
+
+  if (parentSectionType === "LegalContent" && (hasHeading || wordCount >= 10)) {
+    return "LegalTextBlock";
+  }
+
   if (
     node.tag === "details" ||
     stats.detailCount >= 1 ||
@@ -1637,6 +1687,10 @@ function classifyComponentKind(node, stats, context = {}) {
 
   if (hasHeading && node.rect.height >= 72) {
     return "ContentCard";
+  }
+
+  if (parentSectionType === "ContentSection" && borderWidth > 0 && wordCount > 0) {
+    return "FeatureItem";
   }
 
   return "RepeatableBlock";
@@ -1680,6 +1734,12 @@ function deriveComponentTraits(componentKind, node, stats) {
     return traits;
   }
 
+  if (componentKind === "FormFieldRow") {
+    traits.push(`controls-${stats.inputCount + stats.textareaCount + stats.selectCount}`);
+    traits.push(node.decisionStyle.display === "grid" ? "grid" : "stack");
+    return traits;
+  }
+
   if (
     [
       "IconCard",
@@ -1688,6 +1748,15 @@ function deriveComponentTraits(componentKind, node, stats) {
       "ProcessStep",
       "ContentCard",
       "RepeatableBlock",
+      "CredibilityItem",
+      "HeroEyebrow",
+      "HeroChecklistItem",
+      "FooterMeta",
+      "FooterColumnHeading",
+      "LegalInfoRow",
+      "LegalBulletItem",
+      "LegalTextBlock",
+      "FeatureItem",
     ].includes(componentKind)
   ) {
     traits.push(borderWidth > 0 ? "bordered" : "borderless");
@@ -1711,6 +1780,10 @@ function shouldIncludeRepeatedComponentCandidate(node, stats, componentKind) {
     return false;
   }
 
+  if (isContentlessNodeStats(stats)) {
+    return false;
+  }
+
   if (
     [
       "HeaderNavLink",
@@ -1727,6 +1800,16 @@ function shouldIncludeRepeatedComponentCandidate(node, stats, componentKind) {
       "ContentCard",
       "ListItem",
       "FormField",
+      "FormFieldRow",
+      "CredibilityItem",
+      "HeroEyebrow",
+      "HeroChecklistItem",
+      "FooterMeta",
+      "FooterColumnHeading",
+      "LegalInfoRow",
+      "LegalBulletItem",
+      "LegalTextBlock",
+      "FeatureItem",
     ].includes(componentKind)
   ) {
     return true;
@@ -2522,6 +2605,14 @@ function getComponentContextGroup(component) {
     return "action";
   }
 
+  if (["HeroEyebrow", "HeroChecklistItem"].includes(component.componentKind)) {
+    return "hero";
+  }
+
+  if (component.componentKind === "CredibilityItem") {
+    return "credibility-strip";
+  }
+
   if (component.componentKind === "HeaderNavLink") {
     return "site-header";
   }
@@ -2534,8 +2625,28 @@ function getComponentContextGroup(component) {
     return "site-footer";
   }
 
+  if (component.componentKind === "FooterMeta") {
+    return "site-footer";
+  }
+
+  if (component.componentKind === "FooterColumnHeading") {
+    return "site-footer";
+  }
+
   if (component.componentKind === "FormField") {
     return "form";
+  }
+
+  if (component.componentKind === "FormFieldRow") {
+    return "form";
+  }
+
+  if (["LegalInfoRow", "LegalTextBlock"].includes(component.componentKind)) {
+    return "legal-content";
+  }
+
+  if (component.componentKind === "LegalBulletItem") {
+    return "legal-content";
   }
 
   if (component.componentKind === "IconCard" && ["ServicesSection", "IconCardGrid"].includes(component.sectionType)) {
@@ -2693,8 +2804,24 @@ function buildComponentValidationDataset(componentLookup) {
       test: (component) => component.componentKind === "FooterLinkItem",
     },
     {
+      name: "FooterMeta",
+      test: (component) => component.componentKind === "FooterMeta",
+    },
+    {
+      name: "LegalBulletItem",
+      test: (component) => component.componentKind === "LegalBulletItem",
+    },
+    {
       name: "FormField",
       test: (component) => component.componentKind === "FormField",
+    },
+    {
+      name: "CredibilityItem",
+      test: (component) => component.componentKind === "CredibilityItem",
+    },
+    {
+      name: "LegalInfoRow",
+      test: (component) => component.componentKind === "LegalInfoRow",
     },
     {
       name: "IconCard",
@@ -2874,7 +3001,22 @@ function getComponentPairScore(componentPairScores, left, right) {
 
 function getComponentDisplayName(component) {
   if (
-    ["RepeatableBlock", "ContentCard", "ListItem", "FooterLinkItem", "FormField"].includes(
+    [
+      "RepeatableBlock",
+      "ContentCard",
+      "ListItem",
+      "FooterLinkItem",
+      "FooterMeta",
+      "FooterColumnHeading",
+      "FormField",
+      "LegalInfoRow",
+      "LegalBulletItem",
+      "LegalTextBlock",
+      "FeatureItem",
+      "HeroEyebrow",
+      "HeroChecklistItem",
+      "CredibilityItem",
+    ].includes(
       component.componentKind,
     ) &&
     component.label
@@ -3499,6 +3641,323 @@ function buildComponentNearestNeighbors(components, componentPairScores, count =
       };
     })
     .sort((left, right) => left.auditId.localeCompare(right.auditId));
+}
+
+function chooseCanonicalComponent(componentClusters, componentLookup) {
+  const canonicalChoices = new Map();
+
+  for (const cluster of componentClusters) {
+    const components = cluster.items.map((item) => componentLookup.get(item.auditId)).filter(Boolean);
+    const indexComponent = components.find((component) => component.pageName === "index");
+    const indexOriginalComponent = components.find((component) => component.pageName === "index_original");
+    canonicalChoices.set(
+      cluster.id,
+      indexComponent || indexOriginalComponent || components[0] || null,
+    );
+  }
+
+  return canonicalChoices;
+}
+
+function renderComponentStyleDeltas(componentClusters, componentLookup) {
+  const lines = ["# Component Style Deltas", ""];
+
+  for (const cluster of componentClusters.filter((entry) => entry.items.length > 1)) {
+    const components = cluster.items.map((item) => componentLookup.get(item.auditId)).filter(Boolean);
+    const deltas = getStyleDeltaSummary(components, (item) => item.rootDecisionStyle);
+    lines.push(`## ${cluster.displayName}`);
+    lines.push("");
+
+    if (deltas.length === 0) {
+      lines.push("- No root-level style deltas detected in the tracked decision properties.");
+      lines.push("");
+      continue;
+    }
+
+    for (const delta of deltas) {
+      lines.push(`- \`${delta.property}\`: ${delta.values.join(" | ")}`);
+    }
+
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function summarizeComponentAlignment(components) {
+  const counts = new Map();
+
+  for (const component of components) {
+    const key = `${component.pageName} / ${component.sectionType}`;
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+
+  return [...counts.entries()]
+    .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+    .map(([key, count]) => `${key} x${count}`)
+    .join("; ");
+}
+
+function renderCanonicalAlignment(sectionClusters, componentClusters, sectionLookup, componentLookup) {
+  const lines = ["# Canonical Alignment", ""];
+  const canonicalPages = new Set(["index", "index_original"]);
+  const canonicalSections = chooseCanonicalSection(sectionClusters, sectionLookup);
+  const canonicalComponents = chooseCanonicalComponent(componentClusters, componentLookup);
+
+  const sectionRows = sectionClusters.map((cluster) => {
+    const sections = cluster.items.map((item) => sectionLookup.get(item.auditId)).filter(Boolean);
+    const target = sections.find((section) => section.pageName === "index") || null;
+    const stitchPrecedent = sections.find((section) => section.pageName === "index_original") || null;
+
+    return {
+      cluster,
+      target,
+      stitchPrecedent,
+      canonical: canonicalSections.get(cluster.id),
+      aligned: sections.filter((section) => !canonicalPages.has(section.pageName)),
+    };
+  });
+
+  const componentRows = componentClusters
+    .filter((cluster) => cluster.items.length > 1)
+    .map((cluster) => {
+      const components = cluster.items.map((item) => componentLookup.get(item.auditId)).filter(Boolean);
+      const target = components.find((component) => component.pageName === "index") || null;
+      const stitchPrecedent =
+        components.find((component) => component.pageName === "index_original") || null;
+
+      return {
+        cluster,
+        target,
+        stitchPrecedent,
+        canonical: canonicalComponents.get(cluster.id),
+        aligned: components.filter((component) => !canonicalPages.has(component.pageName)),
+      };
+    });
+
+  lines.push("## Section Families With Home Precedent");
+  lines.push("");
+
+  for (const row of sectionRows.filter((entry) => entry.target || entry.stitchPrecedent)) {
+    const canonical = row.target || row.stitchPrecedent;
+    lines.push(`### ${row.cluster.displayName}`);
+    lines.push("");
+    lines.push(
+      `- Canonical target: \`${canonical.pageName}\` section ${canonical.index}${canonical.firstHeading ? ` (${canonical.firstHeading})` : ""}.`,
+    );
+    if (row.target && row.stitchPrecedent) {
+      lines.push(
+        `- Stitch precedent available: \`${row.stitchPrecedent.pageName}\` section ${row.stitchPrecedent.index}.`,
+      );
+    }
+    if (row.aligned.length > 0) {
+      lines.push(
+        `- Already aligns on other pages: ${row.aligned
+          .map((section) => `\`${section.pageName}\` section ${section.index}`)
+          .join(", ")}.`,
+      );
+    } else {
+      lines.push("- No non-home sections align yet; this remains a home-only family.");
+    }
+    lines.push("");
+  }
+
+  lines.push("## Section Families Still New");
+  lines.push("");
+
+  for (const row of sectionRows.filter((entry) => !entry.target && !entry.stitchPrecedent)) {
+    const canonical = row.canonical;
+    lines.push(`### ${row.cluster.displayName}`);
+    lines.push("");
+    lines.push(
+      `- No \`index\` precedent detected. Current source of truth: \`${canonical.pageName}\` section ${canonical.index}.`,
+    );
+    if (row.aligned.length > 1) {
+      lines.push(
+        `- Shared across: ${row.aligned
+          .map((section) => `\`${section.pageName}\` section ${section.index}`)
+          .join(", ")}.`,
+      );
+    } else {
+      lines.push("- This is currently page-specific or family-specific and needs a fresh component definition.");
+    }
+    lines.push("");
+  }
+
+  lines.push("## Component Families With Home Precedent");
+  lines.push("");
+
+  for (const row of componentRows.filter((entry) => entry.target || entry.stitchPrecedent)) {
+    const canonical = row.target || row.stitchPrecedent;
+    lines.push(`### ${row.cluster.displayName}`);
+    lines.push("");
+    lines.push(
+      `- Canonical target: \`${canonical.pageName}\` section ${canonical.sectionIndex} \`${canonical.componentKind}\`${canonical.label ? ` - ${canonical.label}` : ""}.`,
+    );
+    if (row.target && row.stitchPrecedent) {
+      lines.push(
+        `- Stitch precedent available: \`${row.stitchPrecedent.pageName}\` section ${row.stitchPrecedent.sectionIndex} \`${row.stitchPrecedent.componentKind}\`.`,
+      );
+    }
+    if (row.aligned.length > 0) {
+      lines.push(`- Already aligns on other pages: ${summarizeComponentAlignment(row.aligned)}.`);
+    } else {
+      lines.push("- No non-home components align yet; this remains a home-only primitive.");
+    }
+    lines.push("");
+  }
+
+  lines.push("## Component Families Still New");
+  lines.push("");
+
+  for (const row of componentRows.filter((entry) => !entry.target && !entry.stitchPrecedent)) {
+    const canonical = row.canonical;
+    lines.push(`### ${row.cluster.displayName}`);
+    lines.push("");
+    lines.push(
+      `- No \`index\` precedent detected. Current source of truth: \`${canonical.pageName}\` section ${canonical.sectionIndex} \`${canonical.componentKind}\`${canonical.label ? ` - ${canonical.label}` : ""}.`,
+    );
+    lines.push(`- Current spread: ${summarizeComponentAlignment(row.aligned)}.`);
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function classifyColorFamily(value) {
+  const normalized = normalizeWhitespace(value || "");
+  if (!normalized || normalized === "transparent" || normalized === "rgba(0, 0, 0, 0)") {
+    return "transparent";
+  }
+
+  const numbers = normalized.match(/[\d.]+/g)?.slice(0, 3).map(Number) || [];
+  if (numbers.length < 3) {
+    return normalized;
+  }
+
+  const [r, g, b] = numbers;
+  const brightness = r * 0.299 + g * 0.587 + b * 0.114;
+  if (brightness < 90) {
+    return "dark";
+  }
+  if (brightness > 215) {
+    return "light";
+  }
+  return "mid";
+}
+
+function buildComponentStyleArchetypes(components) {
+  const groups = new Map();
+
+  for (const component of components) {
+    const style = component.rootDecisionStyle;
+    const borderWidth =
+      getNumericStyleValue(style, "border-top-width") +
+      getNumericStyleValue(style, "border-right-width") +
+      getNumericStyleValue(style, "border-bottom-width") +
+      getNumericStyleValue(style, "border-left-width");
+    const signatureTokens = [
+      `fill:${isTransparentBackground(style) ? "transparent" : "filled"}`,
+      `bg:${classifyColorFamily(style["background-color"])}`,
+      `border:${bucketByThreshold(borderWidth, [
+        { max: 0.1, label: "none" },
+        { max: 2.1, label: "thin" },
+        { max: Number.POSITIVE_INFINITY, label: "heavy" },
+      ])}`,
+      `radius:${bucketByThreshold(getNumericStyleValue(style, "border-radius"), [
+        { max: 0.1, label: "none" },
+        { max: 10.1, label: "sm" },
+        { max: 20.1, label: "md" },
+        { max: Number.POSITIVE_INFINITY, label: "lg" },
+      ])}`,
+      `shadow:${normalizeWhitespace(style["box-shadow"] || "") !== "none" ? "on" : "off"}`,
+      `align:${style["text-align"] === "center" ? "center" : "left"}`,
+      `case:${normalizeWhitespace(style["text-transform"] || "") || "none"}`,
+      `display:${style.display || "block"}`,
+      `fs:${bucketByThreshold(getNumericStyleValue(style, "font-size"), [
+        { max: 14.1, label: "sm" },
+        { max: 18.1, label: "md" },
+        { max: Number.POSITIVE_INFINITY, label: "lg" },
+      ])}`,
+      `fw:${bucketByThreshold(getNumericStyleValue(style, "font-weight"), [
+        { max: 500, label: "regular" },
+        { max: 650, label: "medium" },
+        { max: Number.POSITIVE_INFINITY, label: "bold" },
+      ])}`,
+      `px:${bucketByThreshold(
+        getNumericStyleValue(style, "padding-left") + getNumericStyleValue(style, "padding-right"),
+        [
+          { max: 0.1, label: "none" },
+          { max: 24.1, label: "sm" },
+          { max: 56.1, label: "md" },
+          { max: Number.POSITIVE_INFINITY, label: "lg" },
+        ],
+      )}`,
+      `py:${bucketByThreshold(
+        getNumericStyleValue(style, "padding-top") + getNumericStyleValue(style, "padding-bottom"),
+        [
+          { max: 0.1, label: "none" },
+          { max: 16.1, label: "sm" },
+          { max: 32.1, label: "md" },
+          { max: Number.POSITIVE_INFINITY, label: "lg" },
+        ],
+      )}`,
+    ];
+    const signature = signatureTokens.join(" | ");
+    const group = groups.get(signature) || {
+      signature,
+      items: [],
+      componentKinds: new Map(),
+      sectionTypes: new Map(),
+    };
+    group.items.push(component);
+    addCount(group.componentKinds, component.componentKind);
+    addCount(group.sectionTypes, component.sectionType);
+    groups.set(signature, group);
+  }
+
+  return [...groups.values()]
+    .sort((left, right) => right.items.length - left.items.length || left.signature.localeCompare(right.signature))
+    .map((group, index) => ({
+      id: `style-archetype-${index + 1}`,
+      signature: group.signature,
+      items: group.items,
+      componentKinds: sortObjectEntries(Object.fromEntries(group.componentKinds)),
+      sectionTypes: sortObjectEntries(Object.fromEntries(group.sectionTypes)),
+    }));
+}
+
+function renderComponentStyleArchetypes(components) {
+  const lines = ["# Component Style Archetypes", ""];
+  const archetypes = buildComponentStyleArchetypes(components).filter((entry) => entry.items.length >= 3);
+
+  for (const archetype of archetypes) {
+    lines.push(`## ${archetype.id} (${archetype.items.length} instances)`);
+    lines.push("");
+    lines.push(`- Signature: ${archetype.signature}.`);
+    lines.push(
+      `- Component kinds: ${Object.entries(archetype.componentKinds)
+        .map(([kind, count]) => `\`${kind}\` x${count}`)
+        .join(", ")}.`,
+    );
+    lines.push(
+      `- Section types: ${Object.entries(archetype.sectionTypes)
+        .map(([kind, count]) => `\`${kind}\` x${count}`)
+        .join(", ")}.`,
+    );
+    lines.push(
+      `- Sample instances: ${archetype.items
+        .slice(0, 8)
+        .map(
+          (component) =>
+            `\`${component.pageName}\` section ${component.sectionIndex} \`${component.componentKind}\`${component.label ? ` - ${component.label}` : ""}`,
+        )
+        .join(", ")}.`,
+    );
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
 }
 
 function renderComponentMatrix(componentClusters, componentLookup) {
@@ -4207,6 +4666,18 @@ async function main() {
     writeFileSync(
       join(outputDir, "12-component-neighbors.md"),
       renderComponentNeighbors(componentLookup, componentNearestNeighbors),
+    );
+    writeFileSync(
+      join(outputDir, "14-component-style-deltas.md"),
+      renderComponentStyleDeltas(componentClusters, componentLookup),
+    );
+    writeFileSync(
+      join(outputDir, "15-canonical-alignment.md"),
+      renderCanonicalAlignment(sectionClusters, componentClusters, sectionLookup, componentLookup),
+    );
+    writeFileSync(
+      join(outputDir, "16-style-archetypes.md"),
+      renderComponentStyleArchetypes(allComponents),
     );
 
     console.log(`Audit complete. Reports written to ${relative(rootDir, outputDir)}`);

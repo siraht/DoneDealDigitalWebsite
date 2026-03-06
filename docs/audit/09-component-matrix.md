@@ -80,12 +80,22 @@
 - [ ] `web-design` section 2 `Button` in `HeroSection` - Call (555) 123-4567; variants: filled, height-lg, without-icon, uppercase; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
 - [ ] `web-design` section 9 `Button` in `CallToAction` - GET A FREE QUOTE; variants: filled, height-lg, without-icon, uppercase; ensemble: 0.67; signals: layout 1.00, typeHint 1.00, visual 0.85
 
-## RepeatableBlock: trending_up LEADS, NOT LIKES (Exact Match)
+## HeroEyebrow: Consider it... (Variant of Same Component)
 
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; variants: borderless, flat, left-aligned, without-heading
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - dashboard ALL IN ONE; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Consider it...; variants: borderless, flat, left-aligned, without-heading
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Done.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - EST. 2018; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.71; signals: layout 1.00, typeHint 1.00, rootStyle 0.84
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - Digital Blue Collar; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.75; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `lead-generation` section 2 `HeroEyebrow` in `HeroSection` - BLUE-COLLAR LEAD GENERATION; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.58; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - PROVEN ROI; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, rootStyle 0.84
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.70; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89
+
+## CredibilityItem: trending_up LEADS, NOT LIKES (Exact Match)
+
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; variants: borderless, flat, left-aligned, without-heading
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - dashboard ALL IN ONE; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
 
 ## IconCard (Variant of Same Component)
 
@@ -235,34 +245,37 @@
 - [ ] `web-design` section 10 `FooterLinkItem` in `SiteFooter` - TERMS OF SERVICE; variants: without-icon, left-aligned; ensemble: 0.60; signals: typeHint 1.00, subtreeStyle 0.87, rootStyle 0.82
 - [ ] `web-design` section 10 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; variants: without-icon, left-aligned; ensemble: 0.60; signals: typeHint 1.00, visual 0.87, subtreeStyle 0.87
 
-## RepeatableBlock: © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED. (Variant of Same Component)
+## FooterMeta: © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED. (Variant of Same Component)
 
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `case-studies` section 7 `RepeatableBlock` in `SiteFooter` - hello@donedeal.com; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89
-- [ ] `case-studies` section 7 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.68; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `index` section 7 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading
-- [ ] `index` section 7 `RepeatableBlock` in `SiteFooter` - Built for the bold.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84
-- [ ] `index_original` section 7 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `index_original` section 7 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `lead-generation` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.66; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89
-- [ ] `lead-generation` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `web-design` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
-- [ ] `web-design` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - Dallas, TX; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.80; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - (555) 123-4567; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - hello@donedeal.com; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.68; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - STAY BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - Built for the bold.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `lead-generation` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.66; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89
+- [ ] `lead-generation` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `web-design` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92
+- [ ] `web-design` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
 
 ## RepeatableBlock: Page not found (Exact Match)
 
@@ -300,19 +313,25 @@
 - [ ] `case-studies` section 4 `ImageCard` in `ImageCardGrid` - DOMINATING LOCAL SEARCH FOR A/C REPAIR; variants: bordered, shadowed, left-aligned, with-heading; ensemble: 0.58; signals: typeHint 1.00, rootStyle 0.94, subtreeStyle 0.88
 - [ ] `case-studies` section 4 `ImageCard` in `ImageCardGrid` - FROM ZERO TO 50 ORGANIC LEADS PER MONTH; variants: bordered, shadowed, left-aligned, with-heading; ensemble: 0.59; signals: typeHint 1.00, rootStyle 0.94, subtreeStyle 0.88
 
-## RepeatableBlock: COMMUNICATION Direct access to the founders. No ticketing systems or entry-level (Exact Match)
+## FeatureItem: COMMUNICATION Direct access to the founders. No ticketing systems or entry-level (Variant of Same Component)
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; variants: bordered, flat, left-aligned, without-heading
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.95; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.83; signals: classes 1.00, patterns 1.00, structure 1.00
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; variants: bordered, flat, left-aligned, without-heading
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.95; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.83; signals: classes 1.00, patterns 1.00, structure 1.00
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); variants: bordered, flat, left-aligned, without-heading; ensemble: 0.48; signals: typeHint 1.00, rootStyle 0.82, subtreeStyle 0.75
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.48; signals: typeHint 1.00, rootStyle 0.82, subtreeStyle 0.75
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.48; signals: typeHint 1.00, rootStyle 0.82, subtreeStyle 0.75
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.48; signals: typeHint 1.00, rootStyle 0.82, subtreeStyle 0.75
 
-## RepeatableBlock: Direct access to the founders. No ticketing systems or entry-level account manag (Variant of Same Component)
+## FeatureItem: Direct access to the founders. No ticketing systems or entry-level account manag (Variant of Same Component)
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - Direct access to the founders. No ticketing systems or entry-level account manag; variants: bordered, flat, left-aligned, without-heading
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - Emergency issues handled same-day. General inquiries within 24 business hours.; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; variants: borderless, flat, centered, without-heading; ensemble: 0.59; signals: layout 1.00, typeHint 1.00, rootStyle 0.68
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; variants: borderless, flat, centered, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.68
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - Direct access to the founders. No ticketing systems or entry-level account manag; variants: bordered, flat, left-aligned, without-heading
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - Emergency issues handled same-day. General inquiries within 24 business hours.; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 0-30 FOUNDATION; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.47; signals: layout 1.00, typeHint 1.00, rootStyle 0.56
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 30-60 INDEXING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.47; signals: layout 1.00, typeHint 1.00, rootStyle 0.56
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 60-120 VELOCITY; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.47; signals: layout 1.00, typeHint 1.00, rootStyle 0.56
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - SCALING MARKET LEADER; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.48; signals: layout 1.00, typeHint 1.00, rootStyle 0.56
 
 ## NavLink (Exact Match)
 
@@ -329,11 +348,11 @@
 - [ ] `case-studies` section 5 `ContentCard` in `ContentSection` - WHAT WE CHANGED; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.86; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.98
 - [ ] `case-studies` section 5 `ContentCard` in `ContentSection` - THE RESULTS; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.70; signals: typeHint 1.00, subtreeStyle 0.92, rootStyle 0.82
 
-## RepeatableBlock: FULL NAME BUSINESS NAME (Exact Match)
+## FormFieldRow (Exact Match)
 
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - FULL NAME BUSINESS NAME; variants: borderless, flat, left-aligned, without-heading
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - PHONE NUMBER EMAIL ADDRESS; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.90; signals: classes 1.00, patterns 1.00, structure 1.00
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - FULL NAME BUSINESS NAME; variants: controls-2, grid
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - PHONE NUMBER EMAIL ADDRESS; variants: controls-2, grid; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; variants: controls-2, grid; ensemble: 0.90; signals: classes 1.00, patterns 1.00, structure 1.00
 
 ## FormField: FULL NAME (Exact Match)
 
@@ -354,77 +373,77 @@
 - [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; variants: borderless, flat, left-aligned, without-heading
 - [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - hello@donedealdigital.com; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.78; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
 
-## ListItem: square Contact Info: Name, business name, email, and phone number for project in (Exact Match)
+## LegalBulletItem: square Contact Info: Name, business name, email, and phone number for project in (Exact Match)
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; variants: with-icon, left-aligned
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; variants: with-icon, left-aligned; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; variants: with-icon, left-aligned; ensemble: 0.80; signals: classes 1.00, structure 1.00, typeHint 1.00
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; variants: with-icon, left-aligned; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; variants: with-icon, left-aligned; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; variants: with-icon, left-aligned; ensemble: 0.80; signals: classes 1.00, structure 1.00, typeHint 1.00
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; variants: with-icon, left-aligned; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; variants: with-icon, left-aligned; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; variants: with-icon, left-aligned; ensemble: 0.80; signals: classes 1.00, structure 1.00, typeHint 1.00
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; variants: borderless, flat, left-aligned, without-heading
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.80; signals: classes 1.00, structure 1.00, typeHint 1.00
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.80; signals: classes 1.00, structure 1.00, typeHint 1.00
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.80; signals: classes 1.00, structure 1.00, typeHint 1.00
 
-## RepeatableBlock: INFORMATION WE COLLECT (Variant of Same Component)
+## LegalTextBlock: INFORMATION WE COLLECT (Variant of Same Component)
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.88
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.62; signals: layout 1.00, typeHint 1.00, rootStyle 0.90
 
-## ListItem: Google Analytics ANALYTICS (Exact Match)
+## LegalBulletItem: Google Analytics ANALYTICS (Exact Match)
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; variants: without-icon, left-aligned
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; variants: without-icon, left-aligned; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; variants: without-icon, left-aligned; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; variants: without-icon, left-aligned; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; variants: without-icon, left-aligned; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; variants: without-icon, left-aligned; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; variants: without-icon, left-aligned; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; variants: without-icon, left-aligned; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; variants: without-icon, left-aligned; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; variants: bordered, flat, left-aligned, without-heading
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.96; signals: classes 1.00, layout 1.00, patterns 1.00
 
-## ContentCard: USER LICENSE (Exact Match)
+## LegalTextBlock: USER LICENSE (Exact Match)
 
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading; ensemble: 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96
 
-## RepeatableBlock: mail legal@donedealdigital.com (Exact Match)
+## LegalInfoRow: mail legal@donedealdigital.com (Exact Match)
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00
 
 ## AccordionItem (Variant of Same Component)
 
@@ -437,19 +456,13 @@
 - [ ] `faq` section 6 `AccordionItem` in `FaqSection` - HOW SOON WILL I SEE MORE LEADS? add_box; variants: with-icon, left-aligned; ensemble: 0.76; signals: typeHint 1.00, rootStyle 0.98, classes 0.94
 - [ ] `faq` section 7 `AccordionItem` in `FaqSection` - WILL MY SITE WORK ON MOBILE? add_box; variants: with-icon, left-aligned; ensemble: 0.77; signals: rootStyle 1.00, typeHint 1.00, classes 0.94
 
-## RepeatableBlock: Digital Blue Collar (Variant of Same Component)
+## CredibilityItem: ACCREDITED (Exact Match)
 
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; variants: borderless, flat, left-aligned, without-heading
-- [ ] `lead-generation` section 2 `RepeatableBlock` in `HeroSection` - BLUE-COLLAR LEAD GENERATION; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.68; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - Designed for conversion; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00
-
-## RepeatableBlock: ACCREDITED (Exact Match)
-
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ACCREDITED; variants: borderless, flat, left-aligned, without-heading
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - GOOGLE PARTNER; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.93; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - TRADES ALLIANCE; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.92; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ROOFING ASSOC; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.93; signals: classes 1.00, layout 1.00, structure 1.00
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - MASTER BUILDERS; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.93; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ACCREDITED; variants: borderless, flat, left-aligned, without-heading
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - GOOGLE PARTNER; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.93; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - TRADES ALLIANCE; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.92; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ROOFING ASSOC; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.93; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - MASTER BUILDERS; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.93; signals: classes 1.00, layout 1.00, structure 1.00
 
 ## ComparisonPanel (Variant of Same Component)
 
@@ -519,38 +532,23 @@
 - [ ] `lead-generation` section 6 `ContentCard` in `ContentSection` - RAW LEAD; variants: borderless, flat, centered, with-heading
 - [ ] `lead-generation` section 6 `ContentCard` in `ContentSection` - COST PER LEAD; variants: bordered, flat, centered, with-heading; ensemble: 0.78; signals: classes 1.00, patterns 1.00, structure 1.00
 
-## RepeatableBlock: 03. THE BOTTOM LINE (Exact Match)
+## RepeatableBlock: Every phone call and form fill tracked directly to an ad source. No guessing. (Exact Match)
 
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - 03. THE BOTTOM LINE; variants: borderless, flat, centered, without-heading
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; variants: borderless, flat, centered, without-heading; ensemble: 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - Small budgets can fail.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.71; signals: layout 1.00, typeHint 1.00, structure 0.80
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - If you aren't willing to spend enough to get meaningful data, the search engines; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - The first few weeks are for learning.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.70; signals: layout 1.00, typeHint 1.00, structure 0.80
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - No campaign is perfect on day one. We spend the first 30 days aggressively pruni; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - We need your feedback on lead quality. If we're sending you tire-kickers, tell u; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; variants: borderless, flat, centered, without-heading
+- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; variants: borderless, flat, centered, without-heading; ensemble: 0.86; signals: layout 1.00, structure 1.00, typeHint 1.00
+- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - 03. THE BOTTOM LINE; variants: borderless, flat, centered, without-heading; ensemble: 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.80
+- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; variants: borderless, flat, centered, without-heading; ensemble: 0.92; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - Small budgets can fail.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - If you aren't willing to spend enough to get meaningful data, the search engines; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - The first few weeks are for learning.; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - No campaign is perfect on day one. We spend the first 30 days aggressively pruni; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - We need your feedback on lead quality. If we're sending you tire-kickers, tell u; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.74; signals: layout 1.00, typeHint 1.00, rootStyle 0.82
 
 ## RepeatableBlock: warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea (Exact Match)
 
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; variants: borderless, flat, left-aligned, without-heading
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.89; signals: classes 1.00, patterns 1.00, structure 1.00
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.85; signals: classes 1.00, patterns 1.00, structure 1.00
-
-## RepeatableBlock: block NO VANITY METRICS (CLICKS/IMPRESSIONS) (Exact Match)
-
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); variants: bordered, flat, left-aligned, without-heading
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 0-30 FOUNDATION; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.53; signals: typeHint 1.00, structure 0.80, subtreeStyle 0.77
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 30-60 INDEXING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.52; signals: typeHint 1.00, structure 0.80, subtreeStyle 0.77
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 60-120 VELOCITY; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.49; signals: typeHint 1.00, structure 0.80, subtreeStyle 0.73
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - SCALING MARKET LEADER; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.50; signals: typeHint 1.00, structure 0.80, subtreeStyle 0.75
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - description 5 CORE SERVICE PAGES; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.64; signals: typeHint 1.00, subtreeStyle 0.82, structure 0.80
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.60; signals: typeHint 1.00, subtreeStyle 0.82, structure 0.80
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - dynamic_form LEAD FORM SETUP; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.64; signals: typeHint 1.00, subtreeStyle 0.82, structure 0.80
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - search_check ON-PAGE SEO SETUP; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.64; signals: typeHint 1.00, subtreeStyle 0.82, structure 0.80
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82
 
 ## ContentCard: DUPLICATE LISTINGS (Exact Match)
 
@@ -567,16 +565,25 @@
 - [ ] `local-seo` section 7 `ListItem` in `ContentSection` - block WE WILL NOT USE BLACK-HAT BOTS THAT GET YOU BANNED.; variants: with-icon, left-aligned; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
 - [ ] `local-seo` section 7 `ListItem` in `ContentSection` - block WE WILL NOT CHARGE FOR REPORTS YOU DON'T UNDERSTAND.; variants: with-icon, left-aligned; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
 
-## ContentCard: SERVICES (Exact Match)
+## FooterColumnHeading: SERVICES (Exact Match)
 
-- [ ] `local-seo` section 10 `ContentCard` in `SiteFooter` - SERVICES; variants: borderless, flat, left-aligned, with-heading
-- [ ] `local-seo` section 10 `ContentCard` in `SiteFooter` - CONNECT; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.89; signals: classes 1.00, patterns 1.00, rootStyle 1.00
+- [ ] `local-seo` section 10 `FooterColumnHeading` in `SiteFooter` - SERVICES; variants: borderless, flat, left-aligned, with-heading
+- [ ] `local-seo` section 10 `FooterColumnHeading` in `SiteFooter` - CONNECT; variants: borderless, flat, left-aligned, with-heading; ensemble: 0.89; signals: classes 1.00, patterns 1.00, rootStyle 1.00
 
-## RepeatableBlock: check_box MOBILE-FIRST (Exact Match)
+## HeroChecklistItem: check_box MOBILE-FIRST (Exact Match)
 
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; variants: borderless, flat, left-aligned, without-heading
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box 2-3 WEEK LAUNCH; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box MOBILE-FIRST; variants: borderless, flat, left-aligned, without-heading
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box COPY GUIDANCE; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box 2-3 WEEK LAUNCH; variants: borderless, flat, left-aligned, without-heading; ensemble: 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00
+
+## FeatureItem: description 5 CORE SERVICE PAGES (Exact Match)
+
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - description 5 CORE SERVICE PAGES; variants: bordered, flat, left-aligned, without-heading
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - dynamic_form LEAD FORM SETUP; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - search_check ON-PAGE SEO SETUP; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.94; signals: classes 1.00, layout 1.00, structure 1.00
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; variants: bordered, flat, left-aligned, without-heading; ensemble: 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00
 
 ## ListItem: No Logo Design (Exact Match)
 

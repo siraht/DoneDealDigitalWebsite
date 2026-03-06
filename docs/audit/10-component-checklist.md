@@ -100,17 +100,37 @@
 - [ ] Consolidate `web-design` section 2 `Button` - Call (555) 123-4567; variants: filled, height-lg, without-icon, uppercase.
 - [ ] Consolidate `web-design` section 9 `Button` - GET A FREE QUOTE; variants: filled, height-lg, without-icon, uppercase.
 
-## RepeatableBlock: trending_up LEADS, NOT LIKES
+## HeroEyebrow: Consider it...
 
-- [ ] Define the canonical `RepeatableBlock: trending_up LEADS, NOT LIKES` using `index` section 3.
+- [ ] Define the canonical `HeroEyebrow: Consider it...` using `index` section 2.
+- [ ] Decide whether this becomes one shared child component or a variant family.
+- [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
+- [ ] Resolve these root-level style decisions:
+- [ ] height: 16px vs 19.5px vs 32px vs 40px vs 58.5px
+- [ ] line-height: 16px vs 19.5px vs 32px vs 40px vs 58.5px
+- [ ] letter-spacing: 0.72px vs 1.2px vs 3.6px vs 6.48px vs normal
+- [ ] width: 152.812px vs 193.609px vs 330.203px vs 96.4062px
+- [ ] color: rgb(11, 29, 51) vs rgb(255, 255, 255) vs rgba(11, 29, 51, 0.6) vs rgba(11, 29, 51, 0.8)
+- [ ] font-family: "Bebas Neue", cursive vs "Bebas Neue", cursive, "Arial Black", sans-serif vs "DM Sans", Inter, system-ui, sans-serif vs "DM Sans", sans-serif
+- [ ] Consolidate `index` section 2 `HeroEyebrow` - Consider it... (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index` section 2 `HeroEyebrow` - Done.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 2 `HeroEyebrow` - EST. 2018; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 2 `HeroEyebrow` - Digital Blue Collar; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `lead-generation` section 2 `HeroEyebrow` - BLUE-COLLAR LEAD GENERATION; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 2 `HeroEyebrow` - PROVEN ROI; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 2 `HeroEyebrow` - Designed for conversion; variants: borderless, flat, left-aligned, without-heading.
+
+## CredibilityItem: trending_up LEADS, NOT LIKES
+
+- [ ] Define the canonical `CredibilityItem: trending_up LEADS, NOT LIKES` using `index` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
 - [ ] Resolve these root-level style decisions:
 - [ ] width: 126px vs 177.812px vs 184.203px vs 202.203px
-- [ ] Consolidate `index` section 3 `RepeatableBlock` - trending_up LEADS, NOT LIKES (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index` section 3 `RepeatableBlock` - calendar_month WEEKLY UPDATES; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index` section 3 `RepeatableBlock` - dashboard ALL IN ONE; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index` section 3 `RepeatableBlock` - bolt FAST TURNAROUNDS; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index` section 3 `CredibilityItem` - trending_up LEADS, NOT LIKES (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index` section 3 `CredibilityItem` - calendar_month WEEKLY UPDATES; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index` section 3 `CredibilityItem` - dashboard ALL IN ONE; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index` section 3 `CredibilityItem` - bolt FAST TURNAROUNDS; variants: borderless, flat, left-aligned, without-heading.
 
 ## IconCard
 
@@ -310,44 +330,47 @@
 - [ ] Consolidate `web-design` section 10 `FooterLinkItem` - TERMS OF SERVICE; variants: without-icon, left-aligned.
 - [ ] Consolidate `web-design` section 10 `FooterLinkItem` - COOKIE POLICY; variants: without-icon, left-aligned.
 
-## RepeatableBlock: © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## FooterMeta: © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] Define the canonical `RepeatableBlock: © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.` using `index` section 7.
+- [ ] Define the canonical `FooterMeta: © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.` using `index` section 7.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
 - [ ] Resolve these root-level style decisions:
-- [ ] width: 159px vs 242.203px vs 244px vs 354.203px vs 356.203px vs 515.609px
+- [ ] width: 159px vs 242.203px vs 244px vs 354.203px vs 356.203px vs 515.609px vs 86px
 - [ ] height: 16px vs 19.5px vs 20px vs 28px vs 32px
 - [ ] line-height: 16px vs 19.5px vs 20px vs 28px vs 32px
 - [ ] letter-spacing: 0.7px vs 1.2px vs 2px vs 3.6px vs 4.8px
 - [ ] color: rgb(255, 123, 0) vs rgba(226, 232, 240, 0.3) vs rgba(226, 232, 240, 0.6) vs rgba(255, 255, 255, 0.3)
 - [ ] font-family: "Bebas Neue", cursive vs "Bebas Neue", cursive, "Arial Black", sans-serif vs "DM Sans", Inter, system-ui, sans-serif vs "DM Sans", sans-serif
-- [ ] Consolidate `about` section 9 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `about` section 9 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `case-studies` section 7 `RepeatableBlock` - hello@donedeal.com; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `case-studies` section 7 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `contact` section 4 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `contact` section 4 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 4 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 4 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `faq` section 9 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `faq` section 9 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index` section 7 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED. (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index` section 7 `RepeatableBlock` - Built for the bold.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index_original` section 7 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index_original` section 7 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `lead-generation` section 10 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `lead-generation` section 10 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `local-seo` section 10 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `local-seo` section 10 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 4 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 4 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 4 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 4 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `thank-you` section 4 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `thank-you` section 4 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 10 `RepeatableBlock` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 10 `RepeatableBlock` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `about` section 9 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `about` section 9 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `case-studies` section 7 `FooterMeta` - Dallas, TX; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `case-studies` section 7 `FooterMeta` - (555) 123-4567; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `case-studies` section 7 `FooterMeta` - hello@donedeal.com; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `case-studies` section 7 `FooterMeta` - © 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `case-studies` section 7 `FooterMeta` - STAY BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `contact` section 4 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `contact` section 4 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 4 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 4 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `faq` section 9 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `faq` section 9 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index` section 7 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED. (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index` section 7 `FooterMeta` - Built for the bold.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 7 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 7 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `lead-generation` section 10 `FooterMeta` - © 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `lead-generation` section 10 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `local-seo` section 10 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `local-seo` section 10 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 4 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 4 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 4 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 4 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `thank-you` section 4 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `thank-you` section 4 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 10 `FooterMeta` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 10 `FooterMeta` - BUILT FOR THE BOLD.; variants: borderless, flat, left-aligned, without-heading.
 
 ## RepeatableBlock: Page not found
 
@@ -418,35 +441,45 @@
 - [ ] Consolidate `case-studies` section 4 `ImageCard` - DOMINATING LOCAL SEARCH FOR A/C REPAIR; variants: bordered, shadowed, left-aligned, with-heading.
 - [ ] Consolidate `case-studies` section 4 `ImageCard` - FROM ZERO TO 50 ORGANIC LEADS PER MONTH; variants: bordered, shadowed, left-aligned, with-heading.
 
-## RepeatableBlock: COMMUNICATION Direct access to the founders. No ticketing systems or entry-level
+## FeatureItem: COMMUNICATION Direct access to the founders. No ticketing systems or entry-level
 
-- [ ] Define the canonical `RepeatableBlock: COMMUNICATION Direct access to the founders. No ticketing systems or entry-level` using `about` section 7.
+- [ ] Define the canonical `FeatureItem: COMMUNICATION Direct access to the founders. No ticketing systems or entry-level` using `about` section 7.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: bordered, flat, left-aligned, without-heading.
 - [ ] Resolve these root-level style decisions:
-- [ ] height: 124px vs 148px
-- [ ] margin-top: 0px vs 16px
-- [ ] Consolidate `about` section 7 `RepeatableBlock` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `about` section 7 `RepeatableBlock` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `about` section 7 `RepeatableBlock` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; variants: bordered, flat, left-aligned, without-heading.
-
-## RepeatableBlock: Direct access to the founders. No ticketing systems or entry-level account manag
-
-- [ ] Define the canonical `RepeatableBlock: Direct access to the founders. No ticketing systems or entry-level account manag` using `about` section 7.
-- [ ] Decide whether this becomes one shared child component or a variant family.
-- [ ] Canonical variant traits: bordered, flat, left-aligned, without-heading.
-- [ ] Resolve these root-level style decisions:
-- [ ] width: 242px vs 244px vs 571px vs 599.969px vs 637px
-- [ ] height: 56px vs 58.5px vs 78px
-- [ ] color: rgb(226, 232, 240) vs rgb(71, 85, 105) vs rgba(226, 232, 240, 0.6)
+- [ ] height: 124px vs 132px vs 148px
+- [ ] width: 544px vs 848px
 - [ ] min-height: 0px vs auto
-- [ ] padding-left: 0px vs 32px
-- [ ] font-size: 12px vs 18px
-- [ ] Consolidate `about` section 7 `RepeatableBlock` - Direct access to the founders. No ticketing systems or entry-level account manag (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `about` section 7 `RepeatableBlock` - Emergency issues handled same-day. General inquiries within 24 business hours.; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `about` section 7 `RepeatableBlock` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `lead-generation` section 6 `RepeatableBlock` - Every phone call and form fill tracked directly to an ad source. No guessing.; variants: borderless, flat, centered, without-heading.
-- [ ] Consolidate `lead-generation` section 6 `RepeatableBlock` - A lead that actually lives in your service area and needs the high-margin work y; variants: borderless, flat, centered, without-heading.
+- [ ] margin-top: 0px vs 16px
+- [ ] background-color: rgb(255, 255, 255) vs rgba(255, 255, 255, 0.05)
+- [ ] color: rgb(11, 29, 51) vs rgb(255, 255, 255)
+- [ ] Consolidate `about` section 7 `FeatureItem` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `about` section 7 `FeatureItem` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `about` section 7 `FeatureItem` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `lead-generation` section 8 `FeatureItem` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `lead-generation` section 8 `FeatureItem` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `lead-generation` section 8 `FeatureItem` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `lead-generation` section 8 `FeatureItem` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; variants: bordered, flat, left-aligned, without-heading.
+
+## FeatureItem: Direct access to the founders. No ticketing systems or entry-level account manag
+
+- [ ] Define the canonical `FeatureItem: Direct access to the founders. No ticketing systems or entry-level account manag` using `about` section 7.
+- [ ] Decide whether this becomes one shared child component or a variant family.
+- [ ] Canonical variant traits: bordered, flat, left-aligned, without-heading.
+- [ ] Resolve these root-level style decisions:
+- [ ] height: 142.188px vs 237px vs 316px vs 56px vs 63.1875px
+- [ ] background-color: rgb(255, 123, 0) vs rgba(0, 0, 0, 0) vs rgba(11, 29, 51, 0.1) vs rgba(11, 29, 51, 0.2) vs rgba(255, 123, 0, 0.4)
+- [ ] width: 307px vs 571px vs 599.969px vs 637px
+- [ ] border-top-width: 0px vs 2px vs 4px
+- [ ] border-top-color: rgb(11, 29, 51) vs rgb(255, 123, 0) vs rgba(255, 123, 0, 0.3)
+- [ ] border-right-color: rgb(11, 29, 51) vs rgb(255, 123, 0) vs rgba(255, 123, 0, 0.3)
+- [ ] Consolidate `about` section 7 `FeatureItem` - Direct access to the founders. No ticketing systems or entry-level account manag (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `about` section 7 `FeatureItem` - Emergency issues handled same-day. General inquiries within 24 business hours.; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `about` section 7 `FeatureItem` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `local-seo` section 8 `FeatureItem` - DAYS 0-30 FOUNDATION; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `local-seo` section 8 `FeatureItem` - DAYS 30-60 INDEXING; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `local-seo` section 8 `FeatureItem` - DAYS 60-120 VELOCITY; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `local-seo` section 8 `FeatureItem` - SCALING MARKET LEADER; variants: bordered, flat, left-aligned, without-heading.
 
 ## NavLink
 
@@ -480,16 +513,16 @@
 - [ ] Consolidate `case-studies` section 5 `ContentCard` - WHAT WE CHANGED; variants: bordered, flat, left-aligned, with-heading.
 - [ ] Consolidate `case-studies` section 5 `ContentCard` - THE RESULTS; variants: borderless, flat, left-aligned, with-heading.
 
-## RepeatableBlock: FULL NAME BUSINESS NAME
+## FormFieldRow
 
-- [ ] Define the canonical `RepeatableBlock: FULL NAME BUSINESS NAME` using `contact` section 3.
+- [ ] Define the canonical `FormFieldRow` using `contact` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
-- [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
+- [ ] Canonical variant traits: controls-2, grid.
 - [ ] Resolve these root-level style decisions:
 - [ ] margin-top: 0px vs 32px
-- [ ] Consolidate `contact` section 3 `RepeatableBlock` - FULL NAME BUSINESS NAME (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `contact` section 3 `RepeatableBlock` - PHONE NUMBER EMAIL ADDRESS; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `contact` section 3 `RepeatableBlock` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `contact` section 3 `FormFieldRow` - FULL NAME BUSINESS NAME (canonical candidate); variants: controls-2, grid.
+- [ ] Consolidate `contact` section 3 `FormFieldRow` - PHONE NUMBER EMAIL ADDRESS; variants: controls-2, grid.
+- [ ] Consolidate `contact` section 3 `FormFieldRow` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; variants: controls-2, grid.
 
 ## FormField: FULL NAME
 
@@ -528,26 +561,26 @@
 - [ ] Consolidate `contact` section 3 `RepeatableBlock` - Email Our Team (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
 - [ ] Consolidate `contact` section 3 `RepeatableBlock` - hello@donedealdigital.com; variants: borderless, flat, left-aligned, without-heading.
 
-## ListItem: square Contact Info: Name, business name, email, and phone number for project in
+## LegalBulletItem: square Contact Info: Name, business name, email, and phone number for project in
 
-- [ ] Define the canonical `ListItem: square Contact Info: Name, business name, email, and phone number for project in` using `cookie-policy` section 3.
+- [ ] Define the canonical `LegalBulletItem: square Contact Info: Name, business name, email, and phone number for project in` using `cookie-policy` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
-- [ ] Canonical variant traits: with-icon, left-aligned.
+- [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
 - [ ] Resolve these root-level style decisions:
 - [ ] margin-top: 0px vs 12px
-- [ ] Consolidate `cookie-policy` section 3 `ListItem` - square Contact Info: Name, business name, email, and phone number for project in (canonical candidate); variants: with-icon, left-aligned.
-- [ ] Consolidate `cookie-policy` section 3 `ListItem` - square Technical Data: Browser type, operating system, and IP address for site s; variants: with-icon, left-aligned.
-- [ ] Consolidate `cookie-policy` section 3 `ListItem` - square Usage Data: How you navigate our blueprints and service pages.; variants: with-icon, left-aligned.
-- [ ] Consolidate `privacy` section 3 `ListItem` - square Contact Info: Name, business name, email, and phone number for project in; variants: with-icon, left-aligned.
-- [ ] Consolidate `privacy` section 3 `ListItem` - square Technical Data: Browser type, operating system, and IP address for site s; variants: with-icon, left-aligned.
-- [ ] Consolidate `privacy` section 3 `ListItem` - square Usage Data: How you navigate our blueprints and service pages.; variants: with-icon, left-aligned.
-- [ ] Consolidate `terms` section 3 `ListItem` - square Contact Info: Name, business name, email, and phone number for project in; variants: with-icon, left-aligned.
-- [ ] Consolidate `terms` section 3 `ListItem` - square Technical Data: Browser type, operating system, and IP address for site s; variants: with-icon, left-aligned.
-- [ ] Consolidate `terms` section 3 `ListItem` - square Usage Data: How you navigate our blueprints and service pages.; variants: with-icon, left-aligned.
+- [ ] Consolidate `cookie-policy` section 3 `LegalBulletItem` - square Contact Info: Name, business name, email, and phone number for project in (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalBulletItem` - square Technical Data: Browser type, operating system, and IP address for site s; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalBulletItem` - square Usage Data: How you navigate our blueprints and service pages.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalBulletItem` - square Contact Info: Name, business name, email, and phone number for project in; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalBulletItem` - square Technical Data: Browser type, operating system, and IP address for site s; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalBulletItem` - square Usage Data: How you navigate our blueprints and service pages.; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalBulletItem` - square Contact Info: Name, business name, email, and phone number for project in; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalBulletItem` - square Technical Data: Browser type, operating system, and IP address for site s; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalBulletItem` - square Usage Data: How you navigate our blueprints and service pages.; variants: borderless, flat, left-aligned, without-heading.
 
-## RepeatableBlock: INFORMATION WE COLLECT
+## LegalTextBlock: INFORMATION WE COLLECT
 
-- [ ] Define the canonical `RepeatableBlock: INFORMATION WE COLLECT` using `cookie-policy` section 3.
+- [ ] Define the canonical `LegalTextBlock: INFORMATION WE COLLECT` using `cookie-policy` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
 - [ ] Resolve these root-level style decisions:
@@ -557,77 +590,77 @@
 - [ ] font-family: "Bebas Neue", cursive vs "DM Sans", sans-serif
 - [ ] font-size: 16px vs 30px
 - [ ] line-height: 26px vs 36px
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - Cookies are small pieces of text sent by your web browser by a website you visit (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - Cookies are small pieces of text sent by your web browser by a website you visit (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - Cookies are small pieces of text sent by your web browser by a website you visit; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - We use cookies to understand site usage and to improve the content and offerings; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - When you visit the site, we automatically collect certain information about your; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - We share your Personal Information with third parties to help us use your Person; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - INFORMATION WE COLLECT; variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - THIRD-PARTY PROCESSORS; variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - By accessing this website, you are agreeing to be bound by these website Terms a; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - Our digital marketing services are specifically designed for trade professionals; variants: borderless, flat, left-aligned, without-heading.
 
-## ListItem: Google Analytics ANALYTICS
+## LegalBulletItem: Google Analytics ANALYTICS
 
-- [ ] Define the canonical `ListItem: Google Analytics ANALYTICS` using `cookie-policy` section 3.
+- [ ] Define the canonical `LegalBulletItem: Google Analytics ANALYTICS` using `cookie-policy` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
-- [ ] Canonical variant traits: without-icon, left-aligned.
+- [ ] Canonical variant traits: bordered, flat, left-aligned, without-heading.
 - [ ] Resolve these root-level style decisions:
 - [ ] margin-top: 0px vs 16px
-- [ ] Consolidate `cookie-policy` section 3 `ListItem` - Google Analytics ANALYTICS (canonical candidate); variants: without-icon, left-aligned.
-- [ ] Consolidate `cookie-policy` section 3 `ListItem` - Meta Pixel MARKETING; variants: without-icon, left-aligned.
-- [ ] Consolidate `cookie-policy` section 3 `ListItem` - Mailchimp COMMUNICATIONS; variants: without-icon, left-aligned.
-- [ ] Consolidate `privacy` section 3 `ListItem` - Google Analytics ANALYTICS; variants: without-icon, left-aligned.
-- [ ] Consolidate `privacy` section 3 `ListItem` - Meta Pixel MARKETING; variants: without-icon, left-aligned.
-- [ ] Consolidate `privacy` section 3 `ListItem` - Mailchimp COMMUNICATIONS; variants: without-icon, left-aligned.
-- [ ] Consolidate `terms` section 3 `ListItem` - Google Analytics ANALYTICS; variants: without-icon, left-aligned.
-- [ ] Consolidate `terms` section 3 `ListItem` - Meta Pixel MARKETING; variants: without-icon, left-aligned.
-- [ ] Consolidate `terms` section 3 `ListItem` - Mailchimp COMMUNICATIONS; variants: without-icon, left-aligned.
+- [ ] Consolidate `cookie-policy` section 3 `LegalBulletItem` - Google Analytics ANALYTICS (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalBulletItem` - Meta Pixel MARKETING; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalBulletItem` - Mailchimp COMMUNICATIONS; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalBulletItem` - Google Analytics ANALYTICS; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalBulletItem` - Meta Pixel MARKETING; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalBulletItem` - Mailchimp COMMUNICATIONS; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalBulletItem` - Google Analytics ANALYTICS; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalBulletItem` - Meta Pixel MARKETING; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalBulletItem` - Mailchimp COMMUNICATIONS; variants: bordered, flat, left-aligned, without-heading.
 
-## ContentCard: USER LICENSE
+## LegalTextBlock: USER LICENSE
 
-- [ ] Define the canonical `ContentCard: USER LICENSE` using `cookie-policy` section 3.
+- [ ] Define the canonical `LegalTextBlock: USER LICENSE` using `cookie-policy` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: bordered, flat, left-aligned, with-heading.
 - [ ] Resolve these root-level style decisions:
 - [ ] background-color: rgb(11, 29, 51) vs rgba(0, 0, 0, 0)
 - [ ] color: rgb(255, 255, 255) vs rgb(51, 65, 85)
-- [ ] Consolidate `cookie-policy` section 3 `ContentCard` - USER LICENSE (canonical candidate); variants: bordered, flat, left-aligned, with-heading.
-- [ ] Consolidate `cookie-policy` section 3 `ContentCard` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading.
-- [ ] Consolidate `privacy` section 3 `ContentCard` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading.
-- [ ] Consolidate `privacy` section 3 `ContentCard` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading.
-- [ ] Consolidate `terms` section 3 `ContentCard` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading.
-- [ ] Consolidate `terms` section 3 `ContentCard` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - USER LICENSE (canonical candidate); variants: bordered, flat, left-aligned, with-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalTextBlock` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading.
+- [ ] Consolidate `privacy` section 3 `LegalTextBlock` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - USER LICENSE; variants: bordered, flat, left-aligned, with-heading.
+- [ ] Consolidate `terms` section 3 `LegalTextBlock` - LIMITATIONS; variants: bordered, flat, left-aligned, with-heading.
 
-## RepeatableBlock: mail legal@donedealdigital.com
+## LegalInfoRow: mail legal@donedealdigital.com
 
-- [ ] Define the canonical `RepeatableBlock: mail legal@donedealdigital.com` using `cookie-policy` section 3.
+- [ ] Define the canonical `LegalInfoRow: mail legal@donedealdigital.com` using `cookie-policy` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - mail legal@donedealdigital.com (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `cookie-policy` section 3 `RepeatableBlock` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `privacy` section 3 `RepeatableBlock` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `terms` section 3 `RepeatableBlock` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalInfoRow` - mail legal@donedealdigital.com (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `cookie-policy` section 3 `LegalInfoRow` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalInfoRow` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `privacy` section 3 `LegalInfoRow` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalInfoRow` - mail legal@donedealdigital.com; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `terms` section 3 `LegalInfoRow` - location_on 123 INDUSTRIAL WAY, SUITE 400; variants: bordered, flat, left-aligned, without-heading.
 
 ## AccordionItem
 
@@ -645,34 +678,18 @@
 - [ ] Consolidate `faq` section 6 `AccordionItem` - HOW SOON WILL I SEE MORE LEADS? add_box; variants: with-icon, left-aligned.
 - [ ] Consolidate `faq` section 7 `AccordionItem` - WILL MY SITE WORK ON MOBILE? add_box; variants: with-icon, left-aligned.
 
-## RepeatableBlock: Digital Blue Collar
+## CredibilityItem: ACCREDITED
 
-- [ ] Define the canonical `RepeatableBlock: Digital Blue Collar` using `index_original` section 2.
-- [ ] Decide whether this becomes one shared child component or a variant family.
-- [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
-- [ ] Resolve these root-level style decisions:
-- [ ] width: 152.812px vs 193.609px vs 330.203px
-- [ ] color: rgb(255, 255, 255) vs rgba(11, 29, 51, 0.6) vs rgba(11, 29, 51, 0.8)
-- [ ] min-height: 0px vs auto
-- [ ] height: 16px vs 32px
-- [ ] font-family: "Bebas Neue", cursive vs "DM Sans", sans-serif
-- [ ] font-size: 12px vs 24px
-- [ ] Consolidate `index_original` section 2 `RepeatableBlock` - Digital Blue Collar (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `lead-generation` section 2 `RepeatableBlock` - BLUE-COLLAR LEAD GENERATION; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 2 `RepeatableBlock` - Designed for conversion; variants: borderless, flat, left-aligned, without-heading.
-
-## RepeatableBlock: ACCREDITED
-
-- [ ] Define the canonical `RepeatableBlock: ACCREDITED` using `index_original` section 3.
+- [ ] Define the canonical `CredibilityItem: ACCREDITED` using `index_original` section 3.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
 - [ ] Resolve these root-level style decisions:
 - [ ] width: 130.812px vs 155.25px vs 167.734px vs 173.203px vs 178.203px
-- [ ] Consolidate `index_original` section 3 `RepeatableBlock` - ACCREDITED (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index_original` section 3 `RepeatableBlock` - GOOGLE PARTNER; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index_original` section 3 `RepeatableBlock` - TRADES ALLIANCE; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index_original` section 3 `RepeatableBlock` - ROOFING ASSOC; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `index_original` section 3 `RepeatableBlock` - MASTER BUILDERS; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 3 `CredibilityItem` - ACCREDITED (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 3 `CredibilityItem` - GOOGLE PARTNER; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 3 `CredibilityItem` - TRADES ALLIANCE; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 3 `CredibilityItem` - ROOFING ASSOC; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `index_original` section 3 `CredibilityItem` - MASTER BUILDERS; variants: borderless, flat, left-aligned, without-heading.
 
 ## ComparisonPanel
 
@@ -788,19 +805,21 @@
 - [ ] Consolidate `lead-generation` section 6 `ContentCard` - RAW LEAD (canonical candidate); variants: borderless, flat, centered, with-heading.
 - [ ] Consolidate `lead-generation` section 6 `ContentCard` - COST PER LEAD; variants: bordered, flat, centered, with-heading.
 
-## RepeatableBlock: 03. THE BOTTOM LINE
+## RepeatableBlock: Every phone call and form fill tracked directly to an ad source. No guessing.
 
-- [ ] Define the canonical `RepeatableBlock: 03. THE BOTTOM LINE` using `lead-generation` section 6.
+- [ ] Define the canonical `RepeatableBlock: Every phone call and form fill tracked directly to an ad source. No guessing.` using `lead-generation` section 6.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: borderless, flat, centered, without-heading.
 - [ ] Resolve these root-level style decisions:
-- [ ] height: 130px vs 32px vs 36px vs 78px vs 97.5px
-- [ ] color: rgb(11, 29, 51) vs rgb(255, 123, 0) vs rgb(51, 65, 85) vs rgb(71, 85, 105)
+- [ ] height: 130px vs 32px vs 36px vs 58.5px vs 78px vs 97.5px
+- [ ] color: rgb(11, 29, 51) vs rgb(255, 123, 0) vs rgb(51, 65, 85) vs rgb(71, 85, 105) vs rgba(226, 232, 240, 0.6)
 - [ ] font-size: 12px vs 20px vs 24px vs 30px
 - [ ] line-height: 19.5px vs 32.5px vs 32px vs 36px
+- [ ] width: 242px vs 244px vs 606px
 - [ ] margin-bottom: 0px vs 16px vs 8px
-- [ ] font-weight: 400 vs 500 vs 700
-- [ ] Consolidate `lead-generation` section 6 `RepeatableBlock` - 03. THE BOTTOM LINE (canonical candidate); variants: borderless, flat, centered, without-heading.
+- [ ] Consolidate `lead-generation` section 6 `RepeatableBlock` - Every phone call and form fill tracked directly to an ad source. No guessing. (canonical candidate); variants: borderless, flat, centered, without-heading.
+- [ ] Consolidate `lead-generation` section 6 `RepeatableBlock` - A lead that actually lives in your service area and needs the high-margin work y; variants: borderless, flat, centered, without-heading.
+- [ ] Consolidate `lead-generation` section 6 `RepeatableBlock` - 03. THE BOTTOM LINE; variants: borderless, flat, centered, without-heading.
 - [ ] Consolidate `lead-generation` section 6 `RepeatableBlock` - Total spend divided by qualified leads. This is the only number that dictates yo; variants: borderless, flat, centered, without-heading.
 - [ ] Consolidate `lead-generation` section 7 `RepeatableBlock` - Small budgets can fail.; variants: borderless, flat, left-aligned, without-heading.
 - [ ] Consolidate `lead-generation` section 7 `RepeatableBlock` - If you aren't willing to spend enough to get meaningful data, the search engines; variants: borderless, flat, left-aligned, without-heading.
@@ -819,33 +838,6 @@
 - [ ] Consolidate `lead-generation` section 7 `RepeatableBlock` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
 - [ ] Consolidate `lead-generation` section 7 `RepeatableBlock` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; variants: borderless, flat, left-aligned, without-heading.
 - [ ] Consolidate `lead-generation` section 7 `RepeatableBlock` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; variants: borderless, flat, left-aligned, without-heading.
-
-## RepeatableBlock: block NO VANITY METRICS (CLICKS/IMPRESSIONS)
-
-- [ ] Define the canonical `RepeatableBlock: block NO VANITY METRICS (CLICKS/IMPRESSIONS)` using `lead-generation` section 8.
-- [ ] Decide whether this becomes one shared child component or a variant family.
-- [ ] Canonical variant traits: bordered, flat, left-aligned, without-heading.
-- [ ] Resolve these root-level style decisions:
-- [ ] height: 132px vs 142.188px vs 237px vs 316px vs 60px vs 63.1875px
-- [ ] background-color: rgb(255, 123, 0) vs rgb(255, 255, 255) vs rgba(0, 0, 0, 0) vs rgba(11, 29, 51, 0.1) vs rgba(11, 29, 51, 0.2) vs rgba(255, 123, 0, 0.4)
-- [ ] width: 304.656px vs 304.672px vs 307px vs 544px
-- [ ] padding-top: 0px vs 16px vs 32px
-- [ ] padding-right: 0px vs 16px vs 32px
-- [ ] padding-bottom: 0px vs 16px vs 32px
-- [ ] Consolidate `lead-generation` section 8 `RepeatableBlock` - block NO VANITY METRICS (CLICKS/IMPRESSIONS) (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `lead-generation` section 8 `RepeatableBlock` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `lead-generation` section 8 `RepeatableBlock` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `lead-generation` section 8 `RepeatableBlock` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `local-seo` section 8 `RepeatableBlock` - DAYS 0-30 FOUNDATION; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `local-seo` section 8 `RepeatableBlock` - DAYS 30-60 INDEXING; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `local-seo` section 8 `RepeatableBlock` - DAYS 60-120 VELOCITY; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `local-seo` section 8 `RepeatableBlock` - SCALING MARKET LEADER; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 6 `RepeatableBlock` - description 5 CORE SERVICE PAGES; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 6 `RepeatableBlock` - devices MOBILE-FIRST DESIGN; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 6 `RepeatableBlock` - dynamic_form LEAD FORM SETUP; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 6 `RepeatableBlock` - search_check ON-PAGE SEO SETUP; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 6 `RepeatableBlock` - bolt LIGHTNING FAST HOSTING; variants: bordered, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 6 `RepeatableBlock` - security SSL SECURITY CERTIFICATE; variants: bordered, flat, left-aligned, without-heading.
 
 ## ContentCard: DUPLICATE LISTINGS
 
@@ -874,22 +866,36 @@
 - [ ] Consolidate `local-seo` section 7 `ListItem` - block WE WILL NOT USE BLACK-HAT BOTS THAT GET YOU BANNED.; variants: with-icon, left-aligned.
 - [ ] Consolidate `local-seo` section 7 `ListItem` - block WE WILL NOT CHARGE FOR REPORTS YOU DON'T UNDERSTAND.; variants: with-icon, left-aligned.
 
-## ContentCard: SERVICES
+## FooterColumnHeading: SERVICES
 
-- [ ] Define the canonical `ContentCard: SERVICES` using `local-seo` section 10.
+- [ ] Define the canonical `FooterColumnHeading: SERVICES` using `local-seo` section 10.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `local-seo` section 10 `ContentCard` - SERVICES (canonical candidate); variants: borderless, flat, left-aligned, with-heading.
-- [ ] Consolidate `local-seo` section 10 `ContentCard` - CONNECT; variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `local-seo` section 10 `FooterColumnHeading` - SERVICES (canonical candidate); variants: borderless, flat, left-aligned, with-heading.
+- [ ] Consolidate `local-seo` section 10 `FooterColumnHeading` - CONNECT; variants: borderless, flat, left-aligned, with-heading.
 
-## RepeatableBlock: check_box MOBILE-FIRST
+## HeroChecklistItem: check_box MOBILE-FIRST
 
-- [ ] Define the canonical `RepeatableBlock: check_box MOBILE-FIRST` using `web-design` section 2.
+- [ ] Define the canonical `HeroChecklistItem: check_box MOBILE-FIRST` using `web-design` section 2.
 - [ ] Decide whether this becomes one shared child component or a variant family.
 - [ ] Canonical variant traits: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 2 `RepeatableBlock` - check_box MOBILE-FIRST (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 2 `RepeatableBlock` - check_box COPY GUIDANCE; variants: borderless, flat, left-aligned, without-heading.
-- [ ] Consolidate `web-design` section 2 `RepeatableBlock` - check_box 2-3 WEEK LAUNCH; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 2 `HeroChecklistItem` - check_box MOBILE-FIRST (canonical candidate); variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 2 `HeroChecklistItem` - check_box COPY GUIDANCE; variants: borderless, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 2 `HeroChecklistItem` - check_box 2-3 WEEK LAUNCH; variants: borderless, flat, left-aligned, without-heading.
+
+## FeatureItem: description 5 CORE SERVICE PAGES
+
+- [ ] Define the canonical `FeatureItem: description 5 CORE SERVICE PAGES` using `web-design` section 6.
+- [ ] Decide whether this becomes one shared child component or a variant family.
+- [ ] Canonical variant traits: bordered, flat, left-aligned, without-heading.
+- [ ] Resolve these root-level style decisions:
+- [ ] width: 304.656px vs 304.672px
+- [ ] Consolidate `web-design` section 6 `FeatureItem` - description 5 CORE SERVICE PAGES (canonical candidate); variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 6 `FeatureItem` - devices MOBILE-FIRST DESIGN; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 6 `FeatureItem` - dynamic_form LEAD FORM SETUP; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 6 `FeatureItem` - search_check ON-PAGE SEO SETUP; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 6 `FeatureItem` - bolt LIGHTNING FAST HOSTING; variants: bordered, flat, left-aligned, without-heading.
+- [ ] Consolidate `web-design` section 6 `FeatureItem` - security SSL SECURITY CERTIFICATE; variants: bordered, flat, left-aligned, without-heading.
 
 ## ListItem: No Logo Design
 

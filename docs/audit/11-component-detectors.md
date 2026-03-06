@@ -1,22 +1,22 @@
 # Component Detector Analysis
 
-Validation set: 11408 labeled pairs (5704 positive, 5704 negative).
-Cluster gates suppress 82 high-scoring negative pairs before they ever reach the primary component matrix.
+Validation set: 12628 labeled pairs (6314 positive, 6314 negative).
+Cluster gates suppress 375 high-scoring negative pairs before they ever reach the primary component matrix.
 
 ## Detector Calibration
 
 | Detector | Threshold | Avg + | Avg - | Precision | Recall | F1 | FP | FN |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `typeHint` | 1.00 | 1.00 | 0.00 | 1.00 | 1.00 | 1.00 | 0 | 0 |
-| `structure` | 0.24 | 0.86 | 0.12 | 0.97 | 0.97 | 0.97 | 149 | 143 |
-| `layout` | 0.07 | 0.71 | 0.04 | 0.93 | 0.93 | 0.93 | 404 | 375 |
-| `rootStyle` | 0.78 | 0.93 | 0.65 | 0.92 | 0.96 | 0.94 | 457 | 249 |
-| `subtreeStyle` | 0.73 | 0.91 | 0.37 | 0.99 | 0.94 | 0.96 | 71 | 349 |
-| `classes` | 0.48 | 0.72 | 0.18 | 1.00 | 0.76 | 0.86 | 7 | 1353 |
-| `semantics` | 0.01 | 0.39 | 0.21 | 0.62 | 0.96 | 0.76 | 3308 | 227 |
-| `patterns` | 0.35 | 0.35 | 0.32 | 0.52 | 0.98 | 0.67 | 5238 | 135 |
-| `visual` | 0.79 | 0.86 | 0.47 | 0.99 | 0.88 | 0.93 | 42 | 667 |
-| `combined` | 0.46 | 0.80 | 0.24 | 0.99 | 0.98 | 0.98 | 82 | 141 |
+| `structure` | 0.24 | 0.84 | 0.12 | 0.98 | 0.96 | 0.97 | 148 | 263 |
+| `layout` | 0.17 | 0.72 | 0.11 | 0.88 | 0.91 | 0.90 | 763 | 581 |
+| `rootStyle` | 0.78 | 0.92 | 0.64 | 0.91 | 0.95 | 0.93 | 594 | 330 |
+| `subtreeStyle` | 0.73 | 0.90 | 0.38 | 0.99 | 0.93 | 0.96 | 69 | 450 |
+| `classes` | 0.48 | 0.70 | 0.17 | 0.99 | 0.75 | 0.85 | 32 | 1581 |
+| `semantics` | 0.01 | 0.40 | 0.21 | 0.63 | 0.96 | 0.76 | 3642 | 227 |
+| `patterns` | 0.35 | 0.35 | 0.32 | 0.52 | 0.97 | 0.67 | 5692 | 216 |
+| `visual` | 0.79 | 0.86 | 0.48 | 0.98 | 0.84 | 0.90 | 108 | 1030 |
+| `combined` | 0.46 | 0.80 | 0.26 | 0.94 | 0.96 | 0.95 | 375 | 226 |
 
 ## Family Coverage
 
@@ -29,7 +29,11 @@ Cluster gates suppress 82 high-scoring negative pairs before they ever reach the
 | `ProcessStep` | 36 | 0.67 | 36/36 | 100.0% |
 | `AccordionItem` | 28 | 0.81 | 28/28 | 100.0% |
 | `FooterLinkItem` | 3741 | 0.82 | 3740/3741 | 100.0% |
+| `FooterMeta` | 406 | 0.80 | 406/406 | 100.0% |
+| `LegalBulletItem` | 153 | 0.65 | 72/153 | 47.1% |
 | `FormField` | 15 | 0.90 | 15/15 | 100.0% |
+| `CredibilityItem` | 36 | 0.72 | 32/36 | 88.9% |
+| `LegalInfoRow` | 15 | 0.93 | 15/15 | 100.0% |
 | `IconCard` | 276 | 0.50 | 136/276 | 49.3% |
 
 ## Misses To Review

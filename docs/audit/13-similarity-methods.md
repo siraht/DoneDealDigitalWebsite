@@ -14,29 +14,33 @@
 
 - Section families are now reliable enough for consolidation planning.
 - Child-component families now catch buttons, header links, section-nav chips, footer links, comparison panels/items, process steps, image cards, icon cards, form fields, and accordion items.
+- Generic child blocks are now split into more useful families such as `CredibilityItem`, `HeroEyebrow`, `HeroChecklistItem`, `FooterMeta`, `FooterColumnHeading`, `LegalBulletItem`, `LegalInfoRow`, `LegalTextBlock`, `FormFieldRow`, and `FeatureItem`.
 - Raw page captures remain the source of truth for every instance, while markdown reports stay readable.
 - Context-aware clustering is the main reason the component matrix is now usable.
+- Canonical alignment is now explicit, so it is clear which families already have an `index` or `index_original` precedent and which ones need a fresh definition.
+- Style archetype clustering now gives a cross-family view of repeated visual primitives like footer links, nav pills, CTA buttons, elevated cards, and bordered info rows.
 
 ## What Is Weak
 
-- Generic `RepeatableBlock` remains a catch-all for content rows, hero bullets, legal prose chunks, and footer meta.
+- Some `ContentSection` clusters are still broader than a human reviewer would want, especially when different sections reuse very similar wrapper markup.
 - `IconCard` still spans multiple visual subfamilies inside `ServicesSection` and `IconCardGrid`.
+- `LegalTextBlock` still combines legal headings and legal body paragraphs because they are intentionally using nearly identical structures.
 - Semantic text similarity is helpful for naming, but weak for deciding component boundaries.
-- Full pairwise raw dumps are expensive and create repo bloat without adding much review value.
+- Style archetypes are useful for identifying shared primitives, but they are not the source of truth for extraction decisions.
 
 ## Next Worthwhile Methods
 
-- `Generic-block subtyping`
-  Goal: split `RepeatableBlock` into clearer families such as `FeatureItem`, `FooterMeta`, `LegalInfoRow`, `StatRow`, and `HeroChecklistItem`.
-  Why: this would reduce the largest remaining source of matrix noise.
+- `Content-section role alignment`
+  Goal: split broad `ContentSection` families into clearer internal roles such as media column, heading block, stat card rail, and explanatory copy stack.
+  Why: this is the main remaining source of over-broad section clustering.
 
-- `Canonical DOM alignment`
-  Goal: align each stitch page section against the converted `index` and `index_original` section trees to detect equivalent wrapper/content roles even when classes differ.
-  Why: this would help map stitch markup to the token/BEM implementation model more directly.
+- `Conversion blueprint extraction`
+  Goal: compare `index_original` and `index` family by family to document exactly how stitch markup was normalized into tokens, BEM, and reusable components.
+  Why: this would turn the existing precedent into a direct migration playbook for the remaining stitch pages.
 
-- `Style vector clustering`
-  Goal: cluster components using normalized vectors of spacing, border, radius, shadow, text treatment, and alignment.
-  Why: this would make visual variant families easier to name and compare without relying on raw class text.
+- `Cluster-specific style baselines`
+  Goal: emit one canonical style baseline per section/component family instead of only delta summaries.
+  Why: this would make implementation checklists more prescriptive.
 
 - `Crop-level visual embeddings`
   Goal: replace the current lightweight screenshot fingerprint with a stronger embedding-based visual similarity score.
@@ -58,6 +62,7 @@
 
 1. Keep the current multi-signal section audit.
 2. Keep the new child-component audit tier.
-3. Improve `RepeatableBlock` subtyping next.
-4. Add canonical DOM alignment against `index` / `index_original`.
-5. Only then test stronger visual embeddings if the remaining misses are still mostly visual.
+3. Use canonical alignment and component style deltas to start real consolidation work.
+4. Refine broad `ContentSection` families next.
+5. Extract an explicit `index_original` to `index` conversion blueprint.
+6. Only then test stronger visual embeddings if the remaining misses are still mostly visual.

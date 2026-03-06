@@ -152,53 +152,53 @@
 - [ ] `about` section 6 `IconCard` in `IconCardGrid` - 4. BUILT FOR USE; ensemble 0.83; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
 - [ ] `web-design` section 4 `IconCard` in `IconCardGrid` - LOST TRUST; ensemble 0.65; signals: typeHint 1.00, subtreeStyle 0.89, rootStyle 0.86.
 
-## `about` section 7 (RepeatableBlock in ContentSection) - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level
+## `about` section 7 (FeatureItem in ContentSection) - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; ensemble 0.95; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; ensemble 0.83; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.49; signals: typeHint 1.00, subtreeStyle 0.73, rootStyle 0.72.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.49; signals: typeHint 1.00, subtreeStyle 0.73, rootStyle 0.72.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.49; signals: typeHint 1.00, subtreeStyle 0.73, rootStyle 0.72.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; ensemble 0.95; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; ensemble 0.83; signals: classes 1.00, patterns 1.00, structure 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.48; signals: typeHint 1.00, rootStyle 0.82, subtreeStyle 0.75.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.48; signals: typeHint 1.00, rootStyle 0.82, subtreeStyle 0.75.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.48; signals: typeHint 1.00, rootStyle 0.82, subtreeStyle 0.75.
 
-## `about` section 7 (RepeatableBlock in ContentSection) - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu
+## `about` section 7 (FeatureItem in ContentSection) - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; ensemble 0.95; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; ensemble 0.82; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.49; signals: typeHint 1.00, subtreeStyle 0.72, visual 0.71.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.49; signals: typeHint 1.00, subtreeStyle 0.72, visual 0.71.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.49; signals: typeHint 1.00, subtreeStyle 0.72, visual 0.71.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; ensemble 0.95; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; ensemble 0.82; signals: classes 1.00, patterns 1.00, structure 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.47; signals: typeHint 1.00, rootStyle 0.80, subtreeStyle 0.74.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.47; signals: typeHint 1.00, rootStyle 0.80, subtreeStyle 0.74.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.47; signals: typeHint 1.00, rootStyle 0.80, subtreeStyle 0.74.
 
-## `about` section 7 (RepeatableBlock in ContentSection) - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju
+## `about` section 7 (FeatureItem in ContentSection) - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; ensemble 0.83; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; ensemble 0.82; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.62; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.72.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.62; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.72.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.62; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.72.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; ensemble 0.83; signals: classes 1.00, patterns 1.00, structure 1.00.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu; ensemble 0.82; signals: classes 1.00, patterns 1.00, structure 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.61; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
 
-## `about` section 7 (RepeatableBlock in ContentSection) - Direct access to the founders. No ticketing systems or entry-level account manag
+## `about` section 7 (FeatureItem in ContentSection) - Direct access to the founders. No ticketing systems or entry-level account manag
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - Emergency issues handled same-day. General inquiries within 24 business hours.; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - Emergency issues handled same-day. General inquiries within 24 business hours.; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.61; signals: layout 1.00, structure 0.80, rootStyle 0.74.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.61; signals: layout 1.00, structure 0.80, rootStyle 0.74.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.61; signals: layout 1.00, structure 0.80, rootStyle 0.74.
 
-## `about` section 7 (RepeatableBlock in ContentSection) - Emergency issues handled same-day. General inquiries within 24 business hours.
+## `about` section 7 (FeatureItem in ContentSection) - Emergency issues handled same-day. General inquiries within 24 business hours.
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - Direct access to the founders. No ticketing systems or entry-level account manag; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.72; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.72; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.72; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - Direct access to the founders. No ticketing systems or entry-level account manag; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - We iterate until it's right. No "scope creep" penalties for minor adjustments th; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.62; signals: layout 1.00, structure 0.80, rootStyle 0.74.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.62; signals: layout 1.00, structure 0.80, rootStyle 0.74.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.62; signals: layout 1.00, structure 0.80, rootStyle 0.74.
 
-## `about` section 7 (RepeatableBlock in ContentSection) - We iterate until it's right. No "scope creep" penalties for minor adjustments th
+## `about` section 7 (FeatureItem in ContentSection) - We iterate until it's right. No "scope creep" penalties for minor adjustments th
 
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - Emergency issues handled same-day. General inquiries within 24 business hours.; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - Direct access to the founders. No ticketing systems or entry-level account manag; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - Emergency issues handled same-day. General inquiries within 24 business hours.; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `about` section 7 `FeatureItem` in `ContentSection` - Direct access to the founders. No ticketing systems or entry-level account manag; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.61; signals: layout 1.00, structure 0.80, rootStyle 0.74.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.61; signals: layout 1.00, structure 0.80, rootStyle 0.74.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.61; signals: layout 1.00, structure 0.80, rootStyle 0.74.
 
 ## `about` section 8 (Button in CallToAction) - LET'S TALK
 
@@ -264,21 +264,21 @@
 - [ ] `case-studies` section 7 `FooterLinkItem` in `SiteFooter` - PRIVACY; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `case-studies` section 7 `FooterLinkItem` in `SiteFooter` - SERVICES; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `about` section 9 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `about` section 9 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `about` section 9 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `about` section 9 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `case-studies` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -472,21 +472,45 @@
 - [ ] `about` section 9 `FooterLinkItem` in `SiteFooter` - INSTAGRAM; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `case-studies` section 7 `FooterLinkItem` in `SiteFooter` - SERVICES; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `case-studies` section 7 (RepeatableBlock in SiteFooter) - hello@donedeal.com
+## `case-studies` section 7 (FooterMeta in SiteFooter) - Dallas, TX
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.83; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.83; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.83; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.83; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.83; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - (555) 123-4567; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - hello@donedeal.com; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.80; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - Built for the bold.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.74; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `case-studies` section 7 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.
+## `case-studies` section 7 (FooterMeta in SiteFooter) - (555) 123-4567
 
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - hello@donedeal.com; ensemble 0.93; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - Dallas, TX; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - Built for the bold.; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.73; signals: classes 1.00, layout 1.00, structure 1.00.
+
+## `case-studies` section 7 (FooterMeta in SiteFooter) - hello@donedeal.com
+
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - (555) 123-4567; ensemble 0.93; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - Dallas, TX; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - Built for the bold.; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.73; signals: classes 1.00, layout 1.00, structure 1.00.
+
+## `case-studies` section 7 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.
+
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+
+## `case-studies` section 7 (FooterMeta in SiteFooter) - STAY BOLD.
+
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
 
 ## `contact` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -520,29 +544,29 @@
 - [ ] `about` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 - [ ] `thank-you` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 
-## `contact` section 3 (RepeatableBlock in FormSection) - FULL NAME BUSINESS NAME
+## `contact` section 3 (FormFieldRow in FormSection) - FULL NAME BUSINESS NAME
 
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - PHONE NUMBER EMAIL ADDRESS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; ensemble 0.90; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.50; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.50; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.50; signals: patterns 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - PHONE NUMBER EMAIL ADDRESS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; ensemble 0.90; signals: classes 1.00, patterns 1.00, structure 1.00.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.40; signals: patterns 1.00, rootStyle 0.80, visual 0.76.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.40; signals: patterns 1.00, rootStyle 0.80, visual 0.76.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.40; signals: patterns 1.00, rootStyle 0.82, subtreeStyle 0.72.
 
-## `contact` section 3 (RepeatableBlock in FormSection) - PHONE NUMBER EMAIL ADDRESS
+## `contact` section 3 (FormFieldRow in FormSection) - PHONE NUMBER EMAIL ADDRESS
 
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - FULL NAME BUSINESS NAME; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; ensemble 0.90; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.50; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.50; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.49; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - FULL NAME BUSINESS NAME; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; ensemble 0.90; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.40; signals: patterns 1.00, rootStyle 0.80, visual 0.76.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.40; signals: patterns 1.00, rootStyle 0.80, visual 0.76.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.39; signals: patterns 1.00, rootStyle 0.80, subtreeStyle 0.72.
 
-## `contact` section 3 (RepeatableBlock in FormSection) - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA
+## `contact` section 3 (FormFieldRow in FormSection) - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA
 
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - PHONE NUMBER EMAIL ADDRESS; ensemble 0.90; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - FULL NAME BUSINESS NAME; ensemble 0.90; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.52; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.51; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.51; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - PHONE NUMBER EMAIL ADDRESS; ensemble 0.90; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
+- [ ] `contact` section 3 `FormFieldRow` in `FormSection` - FULL NAME BUSINESS NAME; ensemble 0.90; signals: classes 1.00, patterns 1.00, structure 1.00.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.42; signals: patterns 1.00, rootStyle 0.80, visual 0.75.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.41; signals: patterns 1.00, rootStyle 0.80, subtreeStyle 0.72.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.41; signals: patterns 1.00, rootStyle 0.80, visual 0.75.
 
 ## `contact` section 3 (FormField in FormSection) - FULL NAME
 
@@ -610,11 +634,11 @@
 
 ## `contact` section 3 (RepeatableBlock in FormSection) - Email Our Team
 
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - Designed for conversion; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.86; signals: layout 1.00, structure 1.00, typeHint 1.00.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; ensemble 0.84; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - hello@donedealdigital.com; ensemble 0.78; signals: layout 1.00, typeHint 1.00, rootStyle 0.88.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; ensemble 0.77; signals: layout 1.00, structure 1.00, subtreeStyle 0.96.
 
 ## `contact` section 3 (RepeatableBlock in FormSection) - hello@donedealdigital.com
 
@@ -688,21 +712,21 @@
 - [ ] `terms` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `thank-you` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `contact` section 4 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `contact` section 4 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `contact` section 4 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `contact` section 4 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `cookie-policy` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -736,157 +760,157 @@
 - [ ] `terms` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `web-design` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (ListItem in LegalContent) - square Contact Info: Name, business name, email, and phone number for project in
+## `cookie-policy` section 3 (LegalBulletItem in LegalContent) - square Contact Info: Name, business name, email, and phone number for project in
 
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `cookie-policy` section 3 (ListItem in LegalContent) - square Technical Data: Browser type, operating system, and IP address for site s
+## `cookie-policy` section 3 (LegalBulletItem in LegalContent) - square Technical Data: Browser type, operating system, and IP address for site s
 
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `cookie-policy` section 3 (ListItem in LegalContent) - square Usage Data: How you navigate our blueprints and service pages.
+## `cookie-policy` section 3 (LegalBulletItem in LegalContent) - square Usage Data: How you navigate our blueprints and service pages.
 
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - Cookies are small pieces of text sent by your web browser by a website you visit
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - Cookies are small pieces of text sent by your web browser by a website you visit
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - We use cookies to understand site usage and to improve the content and offerings
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - We use cookies to understand site usage and to improve the content and offerings
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - mail legal@donedealdigital.com
+## `cookie-policy` section 3 (LegalInfoRow in LegalContent) - mail legal@donedealdigital.com
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - location_on 123 INDUSTRIAL WAY, SUITE 400
+## `cookie-policy` section 3 (LegalInfoRow in LegalContent) - location_on 123 INDUSTRIAL WAY, SUITE 400
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - When you visit the site, we automatically collect certain information about your
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - When you visit the site, we automatically collect certain information about your
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - We share your Personal Information with third parties to help us use your Person
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - We share your Personal Information with third parties to help us use your Person
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (ListItem in LegalContent) - Google Analytics ANALYTICS
+## `cookie-policy` section 3 (LegalBulletItem in LegalContent) - Google Analytics ANALYTICS
 
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `cookie-policy` section 3 (ListItem in LegalContent) - Meta Pixel MARKETING
+## `cookie-policy` section 3 (LegalBulletItem in LegalContent) - Meta Pixel MARKETING
 
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `cookie-policy` section 3 (ListItem in LegalContent) - Mailchimp COMMUNICATIONS
+## `cookie-policy` section 3 (LegalBulletItem in LegalContent) - Mailchimp COMMUNICATIONS
 
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - INFORMATION WE COLLECT
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - INFORMATION WE COLLECT
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - THIRD-PARTY PROCESSORS
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - THIRD-PARTY PROCESSORS
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (ContentCard in LegalContent) - USER LICENSE
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - USER LICENSE
 
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 
-## `cookie-policy` section 3 (ContentCard in LegalContent) - LIMITATIONS
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - LIMITATIONS
 
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - By accessing this website, you are agreeing to be bound by these website Terms a
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - By accessing this website, you are agreeing to be bound by these website Terms a
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 3 (RepeatableBlock in LegalContent) - Our digital marketing services are specifically designed for trade professionals
+## `cookie-policy` section 3 (LegalTextBlock in LegalContent) - Our digital marketing services are specifically designed for trade professionals
 
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `cookie-policy` section 4 (FooterLinkItem in SiteFooter) - WEB DESIGN
 
@@ -944,21 +968,21 @@
 - [ ] `terms` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `thank-you` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 4 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `cookie-policy` section 4 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `cookie-policy` section 4 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `cookie-policy` section 4 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `faq` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -1120,21 +1144,21 @@
 - [ ] `terms` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `thank-you` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `faq` section 9 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `faq` section 9 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `faq` section 9 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `faq` section 9 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `index_original` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -1184,53 +1208,61 @@
 - [ ] `local-seo` section 2 `Button` in `HeroSection` - GET A FREE SEO REVIEW; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.92.
 - [ ] `index` section 2 `Button` in `HeroSection` - View Our Work; ensemble 0.78; signals: layout 1.00, typeHint 1.00, visual 0.99.
 
-## `index_original` section 2 (RepeatableBlock in HeroSection) - Digital Blue Collar
+## `index_original` section 2 (HeroEyebrow in HeroSection) - EST. 2018
 
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - Designed for conversion; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.86; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; ensemble 0.79; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - PROVEN ROI; ensemble 0.90; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - Digital Blue Collar; ensemble 0.74; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Done.; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; ensemble 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Consider it...; ensemble 0.71; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
 
-## `index_original` section 3 (RepeatableBlock in CredibilityStrip) - ACCREDITED
+## `index_original` section 2 (HeroEyebrow in HeroSection) - Digital Blue Collar
 
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.76; signals: layout 1.00, structure 1.00, subtreeStyle 0.96.
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Consider it...; ensemble 0.75; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - EST. 2018; ensemble 0.74; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
+- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.72; signals: layout 1.00, rootStyle 0.90, subtreeStyle 0.89.
 
-## `index_original` section 3 (RepeatableBlock in CredibilityStrip) - GOOGLE PARTNER
+## `index_original` section 3 (CredibilityItem in CredibilityStrip) - ACCREDITED
 
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ACCREDITED; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 
-## `index_original` section 3 (RepeatableBlock in CredibilityStrip) - TRADES ALLIANCE
+## `index_original` section 3 (CredibilityItem in CredibilityStrip) - GOOGLE PARTNER
 
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ACCREDITED; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ACCREDITED; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 
-## `index_original` section 3 (RepeatableBlock in CredibilityStrip) - ROOFING ASSOC
+## `index_original` section 3 (CredibilityItem in CredibilityStrip) - TRADES ALLIANCE
 
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ACCREDITED; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ACCREDITED; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 
-## `index_original` section 3 (RepeatableBlock in CredibilityStrip) - MASTER BUILDERS
+## `index_original` section 3 (CredibilityItem in CredibilityStrip) - ROOFING ASSOC
 
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index_original` section 3 `RepeatableBlock` in `CredibilityStrip` - ACCREDITED; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ACCREDITED; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+
+## `index_original` section 3 (CredibilityItem in CredibilityStrip) - MASTER BUILDERS
+
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ROOFING ASSOC; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ACCREDITED; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 
 ## `index_original` section 4 (IconCard in ServicesSection) - WEB DESIGN
 
@@ -1357,16 +1389,16 @@
 - [ ] `index_original` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.87; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.99.
 - [ ] `index` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.75; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.91.
 - [ ] `index` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.90.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; ensemble 0.38; signals: typeHint 1.00, rootStyle 0.66, subtreeStyle 0.54.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; ensemble 0.38; signals: typeHint 1.00, rootStyle 0.64, subtreeStyle 0.53.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.34; signals: typeHint 1.00, rootStyle 0.56, subtreeStyle 0.55.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.34; signals: typeHint 1.00, subtreeStyle 0.55, rootStyle 0.54.
 
 ## `index_original` section 5 (RepeatableBlock in ProcessSection)
 
 - [ ] `index_original` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.87; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.99.
 - [ ] `index` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 - [ ] `index` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.72; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.90.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - COMMUNICATION Direct access to the founders. No ticketing systems or entry-level; ensemble 0.39; signals: typeHint 1.00, rootStyle 0.64, visual 0.60.
-- [ ] `about` section 7 `RepeatableBlock` in `ContentSection` - REVISIONS We iterate until it's right. No "scope creep" penalties for minor adju; ensemble 0.39; signals: typeHint 1.00, rootStyle 0.64, visual 0.61.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.34; signals: typeHint 1.00, subtreeStyle 0.55, rootStyle 0.54.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.33; signals: typeHint 1.00, subtreeStyle 0.55, rootStyle 0.54.
 
 ## `index_original` section 6 (Button in CallToAction) - Get My Free Audit
 
@@ -1432,21 +1464,21 @@
 - [ ] `faq` section 9 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `privacy` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `index_original` section 7 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `index_original` section 7 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `web-design` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `index_original` section 7 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `index_original` section 7 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `web-design` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `index` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -1496,37 +1528,53 @@
 - [ ] `index` section 6 `Button` in `FinalCtaSection` - Get My Free Audit; ensemble 0.74; signals: layout 1.00, typeHint 1.00, structure 0.80.
 - [ ] `index_original` section 2 `Button` in `HeroSection` - Start Your Project; ensemble 0.69; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
 
-## `index` section 3 (RepeatableBlock in CredibilityStrip) - trending_up LEADS, NOT LIKES
+## `index` section 2 (HeroEyebrow in HeroSection) - Consider it...
 
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - dashboard ALL IN ONE; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box 2-3 WEEK LAUNCH; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.68; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Done.; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - Digital Blue Collar; ensemble 0.75; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - EST. 2018; ensemble 0.71; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; ensemble 0.70; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - PROVEN ROI; ensemble 0.69; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
 
-## `index` section 3 (RepeatableBlock in CredibilityStrip) - calendar_month WEEKLY UPDATES
+## `index` section 2 (HeroEyebrow in HeroSection) - Done.
 
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - dashboard ALL IN ONE; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Consider it...; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - EST. 2018; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - PROVEN ROI; ensemble 0.70; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - Digital Blue Collar; ensemble 0.69; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; ensemble 0.67; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
 
-## `index` section 3 (RepeatableBlock in CredibilityStrip) - dashboard ALL IN ONE
+## `index` section 3 (CredibilityItem in CredibilityStrip) - trending_up LEADS, NOT LIKES
 
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - dashboard ALL IN ONE; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box 2-3 WEEK LAUNCH; ensemble 0.61; signals: layout 1.00, subtreeStyle 0.89, rootStyle 0.84.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.58; signals: layout 1.00, structure 0.80, subtreeStyle 0.77.
 
-## `index` section 3 (RepeatableBlock in CredibilityStrip) - bolt FAST TURNAROUNDS
+## `index` section 3 (CredibilityItem in CredibilityStrip) - calendar_month WEEKLY UPDATES
 
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - dashboard ALL IN ONE; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - dashboard ALL IN ONE; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - TRADES ALLIANCE; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+
+## `index` section 3 (CredibilityItem in CredibilityStrip) - dashboard ALL IN ONE
+
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - ACCREDITED; ensemble 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+
+## `index` section 3 (CredibilityItem in CredibilityStrip) - bolt FAST TURNAROUNDS
+
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - dashboard ALL IN ONE; ensemble 0.91; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - trending_up LEADS, NOT LIKES; ensemble 0.74; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - MASTER BUILDERS; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `index_original` section 3 `CredibilityItem` in `CredibilityStrip` - GOOGLE PARTNER; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 
 ## `index` section 4 (IconCard in ServicesSection) - WEB DESIGN
 
@@ -1653,16 +1701,16 @@
 - [ ] `index` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.87; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.99.
 - [ ] `index_original` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.75; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.91.
 - [ ] `index_original` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.72; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.90.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - dashboard ALL IN ONE; ensemble 0.41; signals: typeHint 1.00, subtreeStyle 0.58, rootStyle 0.52.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.41; signals: typeHint 1.00, subtreeStyle 0.58, rootStyle 0.52.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.34; signals: typeHint 1.00, subtreeStyle 0.54, rootStyle 0.48.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.34; signals: typeHint 1.00, subtreeStyle 0.54, rootStyle 0.50.
 
 ## `index` section 5 (RepeatableBlock in ProcessSection)
 
 - [ ] `index` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.87; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.99.
 - [ ] `index_original` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 - [ ] `index_original` section 5 `RepeatableBlock` in `ProcessSection`; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.90.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.40; signals: typeHint 1.00, subtreeStyle 0.58, rootStyle 0.50.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.40; signals: typeHint 1.00, subtreeStyle 0.58, rootStyle 0.50.
+- [ ] `index` section 5 `ProcessStep` in `ProcessSection` - GROWTH; ensemble 0.35; signals: subtreeStyle 0.70, visual 0.62, rootStyle 0.60.
+- [ ] `index` section 5 `ProcessStep` in `ProcessSection` - BUILD; ensemble 0.34; signals: subtreeStyle 0.70, rootStyle 0.60, visual 0.55.
 
 ## `index` section 6 (Button in FinalCtaSection) - Get My Free Audit
 
@@ -1728,21 +1776,21 @@
 - [ ] `index` section 7 `FooterLinkItem` in `SiteFooter` - LEAD GENERATION; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `index` section 7 `FooterLinkItem` in `SiteFooter` - TERMS OF SERVICE; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `index` section 7 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `index` section 7 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `case-studies` section 7 `RepeatableBlock` in `SiteFooter` - hello@donedeal.com; ensemble 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
-- [ ] `index` section 7 `RepeatableBlock` in `SiteFooter` - Built for the bold.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.74; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.73; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - Dallas, TX; ensemble 0.80; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - (555) 123-4567; ensemble 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - hello@donedeal.com; ensemble 0.79; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - Built for the bold.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
 
-## `index` section 7 (RepeatableBlock in SiteFooter) - Built for the bold.
+## `index` section 7 (FooterMeta in SiteFooter) - Built for the bold.
 
-- [ ] `index` section 7 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
-- [ ] `case-studies` section 7 `RepeatableBlock` in `SiteFooter` - hello@donedeal.com; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `index` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - Dallas, TX; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - hello@donedeal.com; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `case-studies` section 7 `FooterMeta` in `SiteFooter` - (555) 123-4567; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, visual 0.98.
 
 ## `lead-generation` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -1832,29 +1880,29 @@
 - [ ] `web-design` section 6 `ListItem` in `ContentSection` - No Unlimited Revisions; ensemble 0.68; signals: layout 1.00, rootStyle 0.90, subtreeStyle 0.89.
 - [ ] `web-design` section 6 `ListItem` in `ContentSection` - No Custom Photography; ensemble 0.68; signals: layout 1.00, rootStyle 0.90, subtreeStyle 0.89.
 
-## `lead-generation` section 10 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.
+## `lead-generation` section 10 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.
 
-- [ ] `index_original` section 7 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `web-design` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `web-design` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.92; signals: layout 1.00, structure 1.00, typeHint 1.00.
 
-## `lead-generation` section 10 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `lead-generation` section 10 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `index_original` section 7 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `web-design` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `about` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `web-design` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.90; signals: layout 1.00, structure 1.00, typeHint 1.00.
 
-## `lead-generation` section 2 (RepeatableBlock in HeroSection) - BLUE-COLLAR LEAD GENERATION
+## `lead-generation` section 2 (HeroEyebrow in HeroSection) - BLUE-COLLAR LEAD GENERATION
 
-- [ ] `lead-generation` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.73; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
-- [ ] `lead-generation` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.; ensemble 0.71; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.70; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
-- [ ] `case-studies` section 7 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.; ensemble 0.70; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
-- [ ] `about` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.70; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; ensemble 0.68; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - Digital Blue Collar; ensemble 0.68; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - PROVEN ROI; ensemble 0.64; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `lead-generation` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.63; signals: layout 1.00, subtreeStyle 0.92, rootStyle 0.92.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - EST. 2018; ensemble 0.63; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
 
 ## `lead-generation` section 2 (Button in HeroSection) - GET A FREE AD REVIEW
 
@@ -2108,17 +2156,17 @@
 
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; ensemble 0.86; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - Designed for conversion; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 - [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `about` section 3 `RepeatableBlock` in `IconCardGrid` - We founded Done Deal Digital because we saw contractors getting burned. We bring; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - Small budgets can fail.; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
 
 ## `lead-generation` section 6 (RepeatableBlock in ContentSection) - A lead that actually lives in your service area and needs the high-margin work y
 
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; ensemble 0.86; signals: layout 1.00, structure 1.00, typeHint 1.00.
 - [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.84; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.92.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - Designed for conversion; ensemble 0.81; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.79; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - hello@donedealdigital.com; ensemble 0.75; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `about` section 3 `RepeatableBlock` in `IconCardGrid` - We founded Done Deal Digital because we saw contractors getting burned. We bring; ensemble 0.74; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
 
 ## `lead-generation` section 6 (RepeatableBlock in ContentSection) - 03. THE BOTTOM LINE
 
@@ -2132,25 +2180,25 @@
 
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; ensemble 0.92; signals: classes 1.00, layout 1.00, structure 1.00.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - Designed for conversion; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
 - [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `about` section 3 `RepeatableBlock` in `IconCardGrid` - We founded Done Deal Digital because we saw contractors getting burned. We bring; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.82.
+- [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - Small budgets can fail.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
 
 ## `lead-generation` section 7 (RepeatableBlock in ContentSection) - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea
 
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one; ensemble 0.89; signals: classes 1.00, patterns 1.00, structure 1.00.
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.85; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; ensemble 0.51; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - FULL NAME BUSINESS NAME; ensemble 0.50; signals: patterns 1.00, typeHint 1.00, rootStyle 0.82.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - PHONE NUMBER EMAIL ADDRESS; ensemble 0.49; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `web-design` section 5 `ProcessStep` in `ProcessSection` - WORK CLEANLY ON A PHONE; ensemble 0.47; signals: rootStyle 0.84, subtreeStyle 0.80, visual 0.71.
+- [ ] `contact` section 3 `TextLink` in `FormSection` - mail EMAIL OUR TEAM hello@donedealdigital.com; ensemble 0.47; signals: patterns 1.00, subtreeStyle 0.84, rootStyle 0.80.
+- [ ] `web-design` section 5 `ProcessStep` in `ProcessSection` - SURFACE YOUR REVIEWS; ensemble 0.46; signals: rootStyle 0.82, subtreeStyle 0.80, visual 0.71.
 
 ## `lead-generation` section 7 (RepeatableBlock in ContentSection) - schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one
 
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send; ensemble 0.91; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.89; signals: classes 1.00, patterns 1.00, structure 1.00.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; ensemble 0.52; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
 - [ ] `web-design` section 5 `ProcessStep` in `ProcessSection` - WORK CLEANLY ON A PHONE; ensemble 0.50; signals: rootStyle 0.82, subtreeStyle 0.80, visual 0.73.
 - [ ] `web-design` section 5 `ProcessStep` in `ProcessSection` - SURFACE YOUR REVIEWS; ensemble 0.50; signals: rootStyle 0.82, subtreeStyle 0.80, visual 0.73.
+- [ ] `contact` section 3 `TextLink` in `FormSection` - mail EMAIL OUR TEAM hello@donedealdigital.com; ensemble 0.47; signals: patterns 1.00, subtreeStyle 0.84, rootStyle 0.80.
 
 ## `lead-generation` section 7 (RepeatableBlock in ContentSection) - forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send
 
@@ -2158,15 +2206,15 @@
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea; ensemble 0.85; signals: classes 1.00, patterns 1.00, structure 1.00.
 - [ ] `web-design` section 5 `ProcessStep` in `ProcessSection` - SURFACE YOUR REVIEWS; ensemble 0.53; signals: rootStyle 0.82, subtreeStyle 0.80, layout 0.75.
 - [ ] `web-design` section 5 `ProcessStep` in `ProcessSection` - WORK CLEANLY ON A PHONE; ensemble 0.53; signals: rootStyle 0.82, subtreeStyle 0.80, layout 0.75.
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - WEBSITE URL (OPTIONAL) CITY / SERVICE AREA; ensemble 0.51; signals: patterns 1.00, typeHint 1.00, rootStyle 0.80.
+- [ ] `web-design` section 5 `ProcessStep` in `ProcessSection` - ONE-TAP COMMUNICATION; ensemble 0.47; signals: rootStyle 0.82, subtreeStyle 0.80, visual 0.66.
 
 ## `lead-generation` section 7 (RepeatableBlock in ContentSection) - Small budgets can fail.
 
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - The first few weeks are for learning.; ensemble 0.93; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `web-design` section 8 `RepeatableBlock` in `FeatureSection` - Template sites focus on "Pretty". We focus on "Conversions".; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.88.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
 
 ## `lead-generation` section 7 (RepeatableBlock in ContentSection) - If you aren't willing to spend enough to get meaningful data, the search engines
 
@@ -2180,9 +2228,9 @@
 
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - Small budgets can fail.; ensemble 0.93; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `web-design` section 8 `RepeatableBlock` in `FeatureSection` - Template sites focus on "Pretty". We focus on "Conversions".; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.88.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
 - [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
 
 ## `lead-generation` section 7 (RepeatableBlock in ContentSection) - No campaign is perfect on day one. We spend the first 30 days aggressively pruni
 
@@ -2190,7 +2238,7 @@
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - If you aren't willing to spend enough to get meaningful data, the search engines; ensemble 0.93; signals: classes 1.00, layout 1.00, structure 1.00.
 - [ ] `about` section 3 `RepeatableBlock` in `IconCardGrid` - We founded Done Deal Digital because we saw contractors getting burned. We bring; ensemble 0.81; signals: layout 1.00, subtreeStyle 1.00, typeHint 1.00.
 - [ ] `about` section 3 `RepeatableBlock` in `IconCardGrid` - Most agencies speak a different language. They hide behind "impressions," "reach; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.96.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `web-design` section 8 `RepeatableBlock` in `FeatureSection` - Anyone can buy a $50 template. But a template doesn't know how a homeowner think; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
 
 ## `lead-generation` section 7 (RepeatableBlock in ContentSection) - We need your feedback on lead quality. If we're sending you tire-kickers, tell u
 
@@ -2200,37 +2248,37 @@
 - [ ] `about` section 3 `RepeatableBlock` in `IconCardGrid` - Most agencies speak a different language. They hide behind "impressions," "reach; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.96.
 - [ ] `web-design` section 8 `RepeatableBlock` in `FeatureSection` - Anyone can buy a $50 template. But a template doesn't know how a homeowner think; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
 
-## `lead-generation` section 8 (RepeatableBlock in ContentSection) - block NO VANITY METRICS (CLICKS/IMPRESSIONS)
+## `lead-generation` section 8 (FeatureItem in ContentSection) - block NO VANITY METRICS (CLICKS/IMPRESSIONS)
 
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
 
-## `lead-generation` section 8 (RepeatableBlock in ContentSection) - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING
+## `lead-generation` section 8 (FeatureItem in ContentSection) - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING
 
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
 
-## `lead-generation` section 8 (RepeatableBlock in ContentSection) - block NO LONG-TERM CONTRACTS WITHOUT RESULTS
+## `lead-generation` section 8 (FeatureItem in ContentSection) - block NO LONG-TERM CONTRACTS WITHOUT RESULTS
 
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO OUTSOURCING TO OVERSEAS CALL CENTERS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
 
-## `lead-generation` section 8 (RepeatableBlock in ContentSection) - block NO OUTSOURCING TO OVERSEAS CALL CENTERS
+## `lead-generation` section 8 (FeatureItem in ContentSection) - block NO OUTSOURCING TO OVERSEAS CALL CENTERS
 
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO LONG-TERM CONTRACTS WITHOUT RESULTS; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.77; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
 
 ## `lead-generation` section 9 (Button in CallToAction) - GET A FREE AD REVIEW
 
@@ -2320,37 +2368,37 @@
 - [ ] `index_original` section 7 `FooterLinkItem` in `SiteFooter` - SEO FOR TRADES; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `web-design` section 10 `FooterLinkItem` in `SiteFooter` - SEO FOR TRADES; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `local-seo` section 10 (ContentCard in SiteFooter) - SERVICES
+## `local-seo` section 10 (FooterColumnHeading in SiteFooter) - SERVICES
 
-- [ ] `local-seo` section 10 `ContentCard` in `SiteFooter` - CONNECT; ensemble 0.89; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
-- [ ] `case-studies` section 5 `ContentCard` in `ContentSection` - THE RESULTS; ensemble 0.39; signals: typeHint 1.00, rootStyle 0.84, visual 0.79.
-- [ ] `local-seo` section 5 `ContentCard` in `ContentSection` - DUPLICATE LISTINGS; ensemble 0.36; signals: typeHint 1.00, rootStyle 0.72, visual 0.67.
-- [ ] `local-seo` section 5 `ContentCard` in `ContentSection` - IMAGE METADATA; ensemble 0.36; signals: typeHint 1.00, rootStyle 0.70, visual 0.67.
-- [ ] `local-seo` section 5 `ContentCard` in `ContentSection` - RESPONSE TIME; ensemble 0.36; signals: typeHint 1.00, rootStyle 0.70, visual 0.68.
+- [ ] `local-seo` section 10 `FooterColumnHeading` in `SiteFooter` - CONNECT; ensemble 0.89; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
+- [ ] `local-seo` section 3 `ComparisonPanel` in `ComparisonSplitSection` - cancel POOR FIT; ensemble 0.35; signals: rootStyle 0.86, subtreeStyle 0.70, visual 0.35.
+- [ ] `local-seo` section 3 `ComparisonPanel` in `ComparisonSplitSection` - check_circle BEST FIT; ensemble 0.35; signals: rootStyle 0.78, subtreeStyle 0.71, visual 0.37.
+- [ ] `lead-generation` section 5 `IconCard` in `ServicesSection` - LOCAL SERVICES ADS (LSA); ensemble 0.31; signals: rootStyle 0.68, subtreeStyle 0.64, visual 0.33.
+- [ ] `index_original` section 5 `ProcessStep` in `ProcessSection` - CONSULTATION; ensemble 0.31; signals: rootStyle 0.86, visual 0.74, subtreeStyle 0.45.
 
-## `local-seo` section 10 (ContentCard in SiteFooter) - CONNECT
+## `local-seo` section 10 (FooterColumnHeading in SiteFooter) - CONNECT
 
-- [ ] `local-seo` section 10 `ContentCard` in `SiteFooter` - SERVICES; ensemble 0.89; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
-- [ ] `case-studies` section 5 `ContentCard` in `ContentSection` - THE RESULTS; ensemble 0.38; signals: typeHint 1.00, rootStyle 0.84, visual 0.78.
-- [ ] `local-seo` section 5 `ContentCard` in `ContentSection` - DUPLICATE LISTINGS; ensemble 0.36; signals: typeHint 1.00, rootStyle 0.72, visual 0.67.
-- [ ] `local-seo` section 5 `ContentCard` in `ContentSection` - KEYWORD STUFFING; ensemble 0.36; signals: typeHint 1.00, rootStyle 0.70, visual 0.67.
-- [ ] `local-seo` section 5 `ContentCard` in `ContentSection` - IMAGE METADATA; ensemble 0.36; signals: typeHint 1.00, rootStyle 0.70, visual 0.66.
+- [ ] `local-seo` section 10 `FooterColumnHeading` in `SiteFooter` - SERVICES; ensemble 0.89; signals: classes 1.00, patterns 1.00, rootStyle 1.00.
+- [ ] `local-seo` section 3 `ComparisonPanel` in `ComparisonSplitSection` - cancel POOR FIT; ensemble 0.35; signals: rootStyle 0.86, subtreeStyle 0.70, visual 0.33.
+- [ ] `local-seo` section 3 `ComparisonPanel` in `ComparisonSplitSection` - check_circle BEST FIT; ensemble 0.35; signals: rootStyle 0.78, subtreeStyle 0.71, visual 0.35.
+- [ ] `index_original` section 5 `ProcessStep` in `ProcessSection` - CONSULTATION; ensemble 0.30; signals: rootStyle 0.86, visual 0.74, subtreeStyle 0.45.
+- [ ] `index_original` section 5 `ProcessStep` in `ProcessSection` - STRUCTURED BUILD; ensemble 0.30; signals: rootStyle 0.84, visual 0.74, subtreeStyle 0.45.
 
-## `local-seo` section 10 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `local-seo` section 10 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `local-seo` section 10 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `local-seo` section 10 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `local-seo` section 2 (Button in HeroSection) - GET A FREE SEO REVIEW
 
@@ -2568,37 +2616,37 @@
 - [ ] `lead-generation` section 3 `ComparisonListItem` in `ComparisonSplitSection` - check_circle CAN HANDLE 10+ NEW LEADS PER WEEK; ensemble 0.55; signals: subtreeStyle 0.84, rootStyle 0.80, structure 0.80.
 - [ ] `lead-generation` section 3 `ComparisonListItem` in `ComparisonSplitSection` - check_circle STRONG LOCAL REPUTATION & REVIEWS; ensemble 0.55; signals: subtreeStyle 0.84, rootStyle 0.80, structure 0.80.
 
-## `local-seo` section 8 (RepeatableBlock in ContentSection) - DAYS 0-30 FOUNDATION
+## `local-seo` section 8 (FeatureItem in ContentSection) - DAYS 0-30 FOUNDATION
 
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 30-60 INDEXING; ensemble 0.93; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 60-120 VELOCITY; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - SCALING MARKET LEADER; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.70; signals: layout 1.00, typeHint 1.00, visual 0.89.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.68; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 30-60 INDEXING; ensemble 0.93; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 60-120 VELOCITY; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - SCALING MARKET LEADER; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.70; signals: layout 1.00, typeHint 1.00, visual 0.89.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.58; signals: layout 1.00, structure 0.80, subtreeStyle 0.78.
 
-## `local-seo` section 8 (RepeatableBlock in ContentSection) - DAYS 30-60 INDEXING
+## `local-seo` section 8 (FeatureItem in ContentSection) - DAYS 30-60 INDEXING
 
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 0-30 FOUNDATION; ensemble 0.93; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 60-120 VELOCITY; ensemble 0.90; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - SCALING MARKET LEADER; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.68; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.68; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 0-30 FOUNDATION; ensemble 0.93; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 60-120 VELOCITY; ensemble 0.90; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - SCALING MARKET LEADER; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.68; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.58; signals: layout 1.00, structure 0.80, subtreeStyle 0.78.
 
-## `local-seo` section 8 (RepeatableBlock in ContentSection) - DAYS 60-120 VELOCITY
+## `local-seo` section 8 (FeatureItem in ContentSection) - DAYS 60-120 VELOCITY
 
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 30-60 INDEXING; ensemble 0.90; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 0-30 FOUNDATION; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - SCALING MARKET LEADER; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.68; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.68; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 30-60 INDEXING; ensemble 0.90; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 0-30 FOUNDATION; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - SCALING MARKET LEADER; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.67; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.58; signals: layout 1.00, structure 0.80, subtreeStyle 0.79.
 
-## `local-seo` section 8 (RepeatableBlock in ContentSection) - SCALING MARKET LEADER
+## `local-seo` section 8 (FeatureItem in ContentSection) - SCALING MARKET LEADER
 
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 30-60 INDEXING; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 60-120 VELOCITY; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `local-seo` section 8 `RepeatableBlock` in `ContentSection` - DAYS 0-30 FOUNDATION; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.81.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.69; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.81.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 30-60 INDEXING; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 60-120 VELOCITY; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `local-seo` section 8 `FeatureItem` in `ContentSection` - DAYS 0-30 FOUNDATION; ensemble 0.88; signals: layout 1.00, patterns 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.66; signals: layout 1.00, typeHint 1.00, structure 0.80.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.59; signals: layout 1.00, subtreeStyle 0.81, structure 0.80.
 
 ## `local-seo` section 9 (Button in CallToAction) - GET MY FREE SEO AUDIT
 
@@ -2640,157 +2688,157 @@
 - [ ] `terms` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `web-design` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (ListItem in LegalContent) - square Contact Info: Name, business name, email, and phone number for project in
+## `privacy` section 3 (LegalBulletItem in LegalContent) - square Contact Info: Name, business name, email, and phone number for project in
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `privacy` section 3 (ListItem in LegalContent) - square Technical Data: Browser type, operating system, and IP address for site s
+## `privacy` section 3 (LegalBulletItem in LegalContent) - square Technical Data: Browser type, operating system, and IP address for site s
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `privacy` section 3 (ListItem in LegalContent) - square Usage Data: How you navigate our blueprints and service pages.
+## `privacy` section 3 (LegalBulletItem in LegalContent) - square Usage Data: How you navigate our blueprints and service pages.
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - Cookies are small pieces of text sent by your web browser by a website you visit
+## `privacy` section 3 (LegalTextBlock in LegalContent) - Cookies are small pieces of text sent by your web browser by a website you visit
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - We use cookies to understand site usage and to improve the content and offerings
+## `privacy` section 3 (LegalTextBlock in LegalContent) - We use cookies to understand site usage and to improve the content and offerings
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - mail legal@donedealdigital.com
+## `privacy` section 3 (LegalInfoRow in LegalContent) - mail legal@donedealdigital.com
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - location_on 123 INDUSTRIAL WAY, SUITE 400
+## `privacy` section 3 (LegalInfoRow in LegalContent) - location_on 123 INDUSTRIAL WAY, SUITE 400
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle
+## `privacy` section 3 (LegalTextBlock in LegalContent) - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - When you visit the site, we automatically collect certain information about your
+## `privacy` section 3 (LegalTextBlock in LegalContent) - When you visit the site, we automatically collect certain information about your
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - We share your Personal Information with third parties to help us use your Person
+## `privacy` section 3 (LegalTextBlock in LegalContent) - We share your Personal Information with third parties to help us use your Person
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (ListItem in LegalContent) - Google Analytics ANALYTICS
+## `privacy` section 3 (LegalBulletItem in LegalContent) - Google Analytics ANALYTICS
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `privacy` section 3 (ListItem in LegalContent) - Meta Pixel MARKETING
+## `privacy` section 3 (LegalBulletItem in LegalContent) - Meta Pixel MARKETING
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `privacy` section 3 (ListItem in LegalContent) - Mailchimp COMMUNICATIONS
+## `privacy` section 3 (LegalBulletItem in LegalContent) - Mailchimp COMMUNICATIONS
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - INFORMATION WE COLLECT
+## `privacy` section 3 (LegalTextBlock in LegalContent) - INFORMATION WE COLLECT
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - THIRD-PARTY PROCESSORS
+## `privacy` section 3 (LegalTextBlock in LegalContent) - THIRD-PARTY PROCESSORS
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (ContentCard in LegalContent) - USER LICENSE
+## `privacy` section 3 (LegalTextBlock in LegalContent) - USER LICENSE
 
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 
-## `privacy` section 3 (ContentCard in LegalContent) - LIMITATIONS
+## `privacy` section 3 (LegalTextBlock in LegalContent) - LIMITATIONS
 
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - By accessing this website, you are agreeing to be bound by these website Terms a
+## `privacy` section 3 (LegalTextBlock in LegalContent) - By accessing this website, you are agreeing to be bound by these website Terms a
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 3 (RepeatableBlock in LegalContent) - Our digital marketing services are specifically designed for trade professionals
+## `privacy` section 3 (LegalTextBlock in LegalContent) - Our digital marketing services are specifically designed for trade professionals
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `privacy` section 4 (FooterLinkItem in SiteFooter) - WEB DESIGN
 
@@ -2848,21 +2896,21 @@
 - [ ] `terms` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `thank-you` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 4 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `privacy` section 4 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `privacy` section 4 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `privacy` section 4 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `terms` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -2896,157 +2944,157 @@
 - [ ] `privacy` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `web-design` section 1 `HeaderNavLink` in `SiteHeader` - Contact; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (ListItem in LegalContent) - square Contact Info: Name, business name, email, and phone number for project in
+## `terms` section 3 (LegalBulletItem in LegalContent) - square Contact Info: Name, business name, email, and phone number for project in
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `terms` section 3 (ListItem in LegalContent) - square Technical Data: Browser type, operating system, and IP address for site s
+## `terms` section 3 (LegalBulletItem in LegalContent) - square Technical Data: Browser type, operating system, and IP address for site s
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Contact Info: Name, business name, email, and phone number for project in; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
 
-## `terms` section 3 (ListItem in LegalContent) - square Usage Data: How you navigate our blueprints and service pages.
+## `terms` section 3 (LegalBulletItem in LegalContent) - square Usage Data: How you navigate our blueprints and service pages.
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Usage Data: How you navigate our blueprints and service pages.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - square Technical Data: Browser type, operating system, and IP address for site s; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - Cookies are small pieces of text sent by your web browser by a website you visit
+## `terms` section 3 (LegalTextBlock in LegalContent) - Cookies are small pieces of text sent by your web browser by a website you visit
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - We use cookies to understand site usage and to improve the content and offerings
+## `terms` section 3 (LegalTextBlock in LegalContent) - We use cookies to understand site usage and to improve the content and offerings
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - mail legal@donedealdigital.com
+## `terms` section 3 (LegalInfoRow in LegalContent) - mail legal@donedealdigital.com
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - location_on 123 INDUSTRIAL WAY, SUITE 400
+## `terms` section 3 (LegalInfoRow in LegalContent) - location_on 123 INDUSTRIAL WAY, SUITE 400
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - mail legal@donedealdigital.com; ensemble 0.89; signals: layout 1.00, rootStyle 1.00, typeHint 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle
+## `terms` section 3 (LegalTextBlock in LegalContent) - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - This Privacy Policy describes how Done Deal Digital ("we", "us", or "our") colle; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - When you visit the site, we automatically collect certain information about your
+## `terms` section 3 (LegalTextBlock in LegalContent) - When you visit the site, we automatically collect certain information about your
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - When you visit the site, we automatically collect certain information about your; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We use cookies to understand site usage and to improve the content and offerings; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - We share your Personal Information with third parties to help us use your Person
+## `terms` section 3 (LegalTextBlock in LegalContent) - We share your Personal Information with third parties to help us use your Person
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (ListItem in LegalContent) - Google Analytics ANALYTICS
+## `terms` section 3 (LegalBulletItem in LegalContent) - Google Analytics ANALYTICS
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Google Analytics ANALYTICS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `terms` section 3 (ListItem in LegalContent) - Meta Pixel MARKETING
+## `terms` section 3 (LegalBulletItem in LegalContent) - Meta Pixel MARKETING
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `terms` section 3 (ListItem in LegalContent) - Mailchimp COMMUNICATIONS
+## `terms` section 3 (LegalBulletItem in LegalContent) - Mailchimp COMMUNICATIONS
 
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `cookie-policy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `privacy` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `terms` section 3 `ListItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Mailchimp COMMUNICATIONS; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `cookie-policy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `privacy` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
+- [ ] `terms` section 3 `LegalBulletItem` in `LegalContent` - Meta Pixel MARKETING; ensemble 0.96; signals: classes 1.00, layout 1.00, patterns 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - INFORMATION WE COLLECT
+## `terms` section 3 (LegalTextBlock in LegalContent) - INFORMATION WE COLLECT
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - THIRD-PARTY PROCESSORS
+## `terms` section 3 (LegalTextBlock in LegalContent) - THIRD-PARTY PROCESSORS
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - THIRD-PARTY PROCESSORS; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - INFORMATION WE COLLECT; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (ContentCard in LegalContent) - USER LICENSE
+## `terms` section 3 (LegalTextBlock in LegalContent) - USER LICENSE
 
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 
-## `terms` section 3 (ContentCard in LegalContent) - LIMITATIONS
+## `terms` section 3 (LegalTextBlock in LegalContent) - LIMITATIONS
 
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `privacy` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
-- [ ] `terms` section 3 `ContentCard` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - LIMITATIONS; ensemble 0.98; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - USER LICENSE; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.96.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - By accessing this website, you are agreeing to be bound by these website Terms a
+## `terms` section 3 (LegalTextBlock in LegalContent) - By accessing this website, you are agreeing to be bound by these website Terms a
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - By accessing this website, you are agreeing to be bound by these website Terms a; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - Cookies are small pieces of text sent by your web browser by a website you visit; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 3 (RepeatableBlock in LegalContent) - Our digital marketing services are specifically designed for trade professionals
+## `terms` section 3 (LegalTextBlock in LegalContent) - Our digital marketing services are specifically designed for trade professionals
 
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - Our digital marketing services are specifically designed for trade professionals; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 3 `LegalTextBlock` in `LegalContent` - We share your Personal Information with third parties to help us use your Person; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `terms` section 4 (FooterLinkItem in SiteFooter) - WEB DESIGN
 
@@ -3104,21 +3152,21 @@
 - [ ] `privacy` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `thank-you` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 4 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `terms` section 4 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `terms` section 4 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `terms` section 4 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `thank-you` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `thank-you` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `thank-you` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -3240,21 +3288,21 @@
 - [ ] `privacy` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `terms` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `thank-you` section 4 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `thank-you` section 4 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `thank-you` section 4 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `thank-you` section 4 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `privacy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `terms` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `privacy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `terms` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
 ## `web-design` section 1 (HeaderNavLink in SiteHeader) - Services
 
@@ -3344,45 +3392,45 @@
 - [ ] `faq` section 9 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 - [ ] `privacy` section 4 `FooterLinkItem` in `SiteFooter` - COOKIE POLICY; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `web-design` section 10 (RepeatableBlock in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+## `web-design` section 10 (FooterMeta in SiteFooter) - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
 
-- [ ] `index_original` section 7 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.; ensemble 0.96; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `web-design` section 10 (RepeatableBlock in SiteFooter) - BUILT FOR THE BOLD.
+## `web-design` section 10 (FooterMeta in SiteFooter) - BUILT FOR THE BOLD.
 
-- [ ] `index_original` section 7 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `local-seo` section 10 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `contact` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `cookie-policy` section 4 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `faq` section 9 `RepeatableBlock` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `index_original` section 7 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `local-seo` section 10 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `contact` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `cookie-policy` section 4 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `faq` section 9 `FooterMeta` in `SiteFooter` - BUILT FOR THE BOLD.; ensemble 0.97; signals: classes 1.00, layout 1.00, rootStyle 1.00.
 
-## `web-design` section 2 (RepeatableBlock in HeroSection) - check_box MOBILE-FIRST
+## `web-design` section 2 (HeroChecklistItem in HeroSection) - check_box MOBILE-FIRST
 
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box 2-3 WEEK LAUNCH; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.74; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box 2-3 WEEK LAUNCH; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.64; signals: layout 1.00, structure 0.80, subtreeStyle 0.78.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.61; signals: layout 1.00, subtreeStyle 0.89, rootStyle 0.84.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.61; signals: layout 1.00, subtreeStyle 0.89, rootStyle 0.84.
 
-## `web-design` section 2 (RepeatableBlock in HeroSection) - check_box COPY GUIDANCE
+## `web-design` section 2 (HeroChecklistItem in HeroSection) - check_box COPY GUIDANCE
 
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box 2-3 WEEK LAUNCH; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.73; signals: layout 1.00, typeHint 1.00, structure 0.80.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
-- [ ] `index` section 3 `RepeatableBlock` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.71; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.95; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box 2-3 WEEK LAUNCH; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.63; signals: layout 1.00, structure 0.80, subtreeStyle 0.78.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - bolt FAST TURNAROUNDS; ensemble 0.61; signals: layout 1.00, subtreeStyle 0.89, rootStyle 0.84.
+- [ ] `index` section 3 `CredibilityItem` in `CredibilityStrip` - calendar_month WEEKLY UPDATES; ensemble 0.61; signals: layout 1.00, subtreeStyle 0.89, rootStyle 0.84.
 
-## `web-design` section 2 (RepeatableBlock in HeroSection) - check_box 2-3 WEEK LAUNCH
+## `web-design` section 2 (HeroChecklistItem in HeroSection) - check_box 2-3 WEEK LAUNCH
 
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 2 `RepeatableBlock` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `cookie-policy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.74; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.81.
-- [ ] `privacy` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.74; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.81.
-- [ ] `terms` section 3 `RepeatableBlock` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.74; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.81.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box COPY GUIDANCE; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 2 `HeroChecklistItem` in `HeroSection` - check_box MOBILE-FIRST; ensemble 0.77; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `cookie-policy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.64; signals: layout 1.00, subtreeStyle 0.81, structure 0.80.
+- [ ] `privacy` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.64; signals: layout 1.00, subtreeStyle 0.81, structure 0.80.
+- [ ] `terms` section 3 `LegalInfoRow` in `LegalContent` - location_on 123 INDUSTRIAL WAY, SUITE 400; ensemble 0.64; signals: layout 1.00, subtreeStyle 0.81, structure 0.80.
 
 ## `web-design` section 2 (Button in HeroSection) - GET A FREE QUOTE
 
@@ -3400,13 +3448,21 @@
 - [ ] `local-seo` section 2 `Button` in `HeroSection` - GET A FREE SEO REVIEW; ensemble 0.82; signals: layout 1.00, typeHint 1.00, rootStyle 0.92.
 - [ ] `lead-generation` section 2 `Button` in `HeroSection` - GET A FREE AD REVIEW; ensemble 0.77; signals: layout 1.00, structure 1.00, typeHint 1.00.
 
-## `web-design` section 2 (RepeatableBlock in HeroSection) - Designed for conversion
+## `web-design` section 2 (HeroEyebrow in HeroSection) - PROVEN ROI
 
-- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; ensemble 0.81; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Every phone call and form fill tracked directly to an ad source. No guessing.; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
-- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.80; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - EST. 2018; ensemble 0.90; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - Designed for conversion; ensemble 0.75; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - Digital Blue Collar; ensemble 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Done.; ensemble 0.70; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.89.
+- [ ] `index` section 2 `HeroEyebrow` in `HeroSection` - Consider it...; ensemble 0.69; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+
+## `web-design` section 2 (HeroEyebrow in HeroSection) - Designed for conversion
+
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - Digital Blue Collar; ensemble 0.87; signals: layout 1.00, structure 1.00, typeHint 1.00.
+- [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - Email Our Team; ensemble 0.77; signals: layout 1.00, structure 1.00, subtreeStyle 0.96.
+- [ ] `web-design` section 2 `HeroEyebrow` in `HeroSection` - PROVEN ROI; ensemble 0.75; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
+- [ ] `index_original` section 2 `HeroEyebrow` in `HeroSection` - EST. 2018; ensemble 0.72; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
+- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - A lead that actually lives in your service area and needs the high-margin work y; ensemble 0.71; signals: layout 1.00, rootStyle 0.90, subtreeStyle 0.89.
 
 ## `web-design` section 3 (ComparisonListItem in ComparisonSplitSection) - PLUMBERS, ROOFERS, & ELECTRICIANS
 
@@ -3544,53 +3600,53 @@
 - [ ] `index_original` section 5 `ProcessStep` in `ProcessSection` - STRUCTURED BUILD; ensemble 0.55; signals: typeHint 1.00, rootStyle 0.88, subtreeStyle 0.71.
 - [ ] `index_original` section 5 `ProcessStep` in `ProcessSection` - CONSULTATION; ensemble 0.55; signals: typeHint 1.00, rootStyle 0.88, subtreeStyle 0.71.
 
-## `web-design` section 6 (RepeatableBlock in ContentSection) - description 5 CORE SERVICE PAGES
+## `web-design` section 6 (FeatureItem in ContentSection) - description 5 CORE SERVICE PAGES
 
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
 
-## `web-design` section 6 (RepeatableBlock in ContentSection) - devices MOBILE-FIRST DESIGN
+## `web-design` section 6 (FeatureItem in ContentSection) - devices MOBILE-FIRST DESIGN
 
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.76; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.76; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.76; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.76; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
 
-## `web-design` section 6 (RepeatableBlock in ContentSection) - dynamic_form LEAD FORM SETUP
+## `web-design` section 6 (FeatureItem in ContentSection) - dynamic_form LEAD FORM SETUP
 
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.94; signals: classes 1.00, layout 1.00, rootStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.76; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
 
-## `web-design` section 6 (RepeatableBlock in ContentSection) - search_check ON-PAGE SEO SETUP
+## `web-design` section 6 (FeatureItem in ContentSection) - search_check ON-PAGE SEO SETUP
 
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.80; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.76; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.95; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.80; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - devices MOBILE-FIRST DESIGN; ensemble 0.76; signals: classes 1.00, rootStyle 1.00, structure 1.00.
 
-## `web-design` section 6 (RepeatableBlock in ContentSection) - bolt LIGHTNING FAST HOSTING
+## `web-design` section 6 (FeatureItem in ContentSection) - bolt LIGHTNING FAST HOSTING
 
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.80; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - security SSL SECURITY CERTIFICATE; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.80; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO CAMPAIGN LAUNCHES WITHOUT TRACKING; ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
 
-## `web-design` section 6 (RepeatableBlock in ContentSection) - security SSL SECURITY CERTIFICATE
+## `web-design` section 6 (FeatureItem in ContentSection) - security SSL SECURITY CERTIFICATE
 
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `web-design` section 6 `RepeatableBlock` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
-- [ ] `lead-generation` section 8 `RepeatableBlock` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - bolt LIGHTNING FAST HOSTING; ensemble 0.94; signals: classes 1.00, layout 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - search_check ON-PAGE SEO SETUP; ensemble 0.81; signals: classes 1.00, rootStyle 1.00, structure 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - description 5 CORE SERVICE PAGES; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `web-design` section 6 `FeatureItem` in `ContentSection` - dynamic_form LEAD FORM SETUP; ensemble 0.81; signals: classes 1.00, structure 1.00, subtreeStyle 1.00.
+- [ ] `lead-generation` section 8 `FeatureItem` in `ContentSection` - block NO VANITY METRICS (CLICKS/IMPRESSIONS); ensemble 0.78; signals: layout 1.00, typeHint 1.00, subtreeStyle 0.82.
 
 ## `web-design` section 6 (ListItem in ContentSection) - No Logo Design
 
@@ -3676,9 +3732,9 @@
 
 - [ ] `about` section 3 `RepeatableBlock` in `IconCardGrid` - Most agencies speak a different language. They hide behind "impressions," "reach; ensemble 0.79; signals: layout 1.00, typeHint 1.00, rootStyle 0.88.
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - Small budgets can fail.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.88.
-- [ ] `index_original` section 2 `RepeatableBlock` in `HeroSection` - Digital Blue Collar; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.86.
 - [ ] `lead-generation` section 7 `RepeatableBlock` in `ContentSection` - The first few weeks are for learning.; ensemble 0.77; signals: layout 1.00, typeHint 1.00, rootStyle 0.88.
 - [ ] `contact` section 3 `RepeatableBlock` in `FormSection` - hello@donedealdigital.com; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.90.
+- [ ] `lead-generation` section 6 `RepeatableBlock` in `ContentSection` - Total spend divided by qualified leads. This is the only number that dictates yo; ensemble 0.76; signals: layout 1.00, typeHint 1.00, rootStyle 0.84.
 
 ## `web-design` section 8 (RepeatableBlock in FeatureSection) - Anyone can buy a $50 template. But a template doesn't know how a homeowner think
 
