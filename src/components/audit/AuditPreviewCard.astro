@@ -26,9 +26,11 @@ const {
 
 const scoreLabel =
   typeof instance.score === "number" ? `${Math.round(instance.score * 100)}% similarity to canonical` : null;
-const previewScale = mode === "component" ? "0.62" : "0.43";
-const frameHeight = mode === "component" ? "19rem" : "22rem";
-const topTraits = (instance.variantTraits || []).slice(0, 4);
+const previewScale = mode === "component" ? "0.305" : "0.325";
+const frameHeight = mode === "component" ? "24rem" : "28rem";
+const sourceWidth = "1440px";
+const sourceHeight = mode === "component" ? "1900px" : "2600px";
+const topTraits = instance.variantTraits || [];
 ---
 
 <article class:list={["audit-preview-card", `audit-preview-card--${mode}`]}>
@@ -36,7 +38,7 @@ const topTraits = (instance.variantTraits || []).slice(0, 4);
     <div class="audit-preview-card__label">{label}</div>
     <div
       class="audit-preview-card__viewport"
-      style={`--audit-preview-scale:${previewScale}; --audit-preview-height:${frameHeight};`}
+      style={`--audit-preview-scale:${previewScale}; --audit-preview-height:${frameHeight}; --audit-preview-source-width:${sourceWidth}; --audit-preview-source-height:${sourceHeight};`}
     >
       <iframe
         class="audit-preview-card__frame"

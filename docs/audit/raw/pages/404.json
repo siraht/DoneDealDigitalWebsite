@@ -8088,7 +8088,12 @@
         }
       },
       "sectionType": "SystemMessage",
-      "variantTraits": [],
+      "variantTraits": [
+        "bg-transparent",
+        "borderless",
+        "shadow-none",
+        "radius-none"
+      ],
       "visualSignature": {
         "width": 896,
         "height": 420,
@@ -9042,6 +9047,9 @@
       },
       "variantTraits": [
         "filled",
+        "button-solid",
+        "bg-accent",
+        "shadow-none",
         "height-md",
         "without-icon",
         "uppercase"
@@ -9872,8 +9880,10 @@
         }
       },
       "variantTraits": [
+        "bg-transparent",
         "borderless",
-        "flat",
+        "shadow-none",
+        "radius-none",
         "centered",
         "without-heading"
       ],
@@ -10720,8 +10730,10 @@
         }
       },
       "variantTraits": [
+        "bg-transparent",
         "borderless",
-        "flat",
+        "shadow-none",
+        "radius-none",
         "centered",
         "without-heading"
       ],

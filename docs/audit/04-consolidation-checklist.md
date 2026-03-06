@@ -4,6 +4,7 @@
 
 - [ ] Define the canonical `SiteHeader` boundary using `index` section 1.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] z-index: 40 vs 50
 - [ ] height: 78px vs 82px
@@ -12,25 +13,25 @@
 - [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
 - [ ] border-right-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
 - [ ] border-left-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
-- [ ] Consolidate `about` section 1 at `/about`.
-- [ ] Consolidate `case-studies` section 1 at `/case-studies`.
-- [ ] Consolidate `contact` section 1 at `/contact`.
-- [ ] Consolidate `cookie-policy` section 1 at `/cookie-policy`.
-- [ ] Consolidate `faq` section 1 at `/faq`.
-- [ ] Consolidate `index` section 1 at `/` (canonical candidate).
-- [ ] Consolidate `index_original` section 1 at `/index_original`.
-- [ ] Consolidate `lead-generation` section 1 at `/lead-generation`.
-- [ ] Consolidate `local-seo` section 1 at `/local-seo`.
-- [ ] Consolidate `privacy` section 1 at `/privacy`.
-- [ ] Consolidate `terms` section 1 at `/terms`.
-- [ ] Consolidate `thank-you` section 1 at `/thank-you`.
-- [ ] Consolidate `web-design` section 1 at `/web-design`.
+- [ ] Consolidate `about` section 1 at `/about`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `case-studies` section 1 at `/case-studies`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `contact` section 1 at `/contact`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `cookie-policy` section 1 at `/cookie-policy`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `faq` section 1 at `/faq`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `index` section 1 at `/` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `index_original` section 1 at `/index_original`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `lead-generation` section 1 at `/lead-generation`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 1 at `/local-seo`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `privacy` section 1 at `/privacy`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `terms` section 1 at `/terms`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `thank-you` section 1 at `/thank-you`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 1 at `/web-design`; variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## HeroSection
 
 - [ ] Define the canonical `HeroSection` boundary using `index` section 2.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Canonical variant traits: with-media, left-aligned, without-eyebrow, height-tall, heading-width-medium.
+- [ ] Canonical variant traits: bg-dark, border-thin, shadow-none, radius-none, with-media, left-aligned, without-eyebrow, height-tall, heading-width-medium, button-solid.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 1098px vs 1115px vs 1218px vs 346px vs 366px vs 392px vs 546px vs 722px vs 985.953px vs 994px vs 998px
 - [ ] padding-top: 0px vs 128px vs 64px vs 96px
@@ -40,37 +41,39 @@
 - [ ] font-family: "DM Sans", Inter, system-ui, sans-serif vs "DM Sans", sans-serif
 - [ ] line-height: 24px vs 26px
 - [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
-- [ ] Consolidate `about` section 2 at `/about`; variants: without-media, centered, with-eyebrow, height-medium, heading-width-wide.
-- [ ] Consolidate `case-studies` section 2 at `/case-studies`; variants: without-media, left-aligned, without-eyebrow, height-short, heading-width-wide.
-- [ ] Consolidate `contact` section 2 at `/contact`; variants: without-media, left-aligned, without-eyebrow, height-short, heading-width-wide.
-- [ ] Consolidate `cookie-policy` section 2 at `/cookie-policy`; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
-- [ ] Consolidate `faq` section 2 at `/faq`; variants: without-media, left-aligned, with-eyebrow, height-medium, heading-width-wide.
-- [ ] Consolidate `index` section 2 at `/` (canonical candidate); variants: with-media, left-aligned, without-eyebrow, height-tall, heading-width-medium.
-- [ ] Consolidate `index_original` section 2 at `/index_original`; variants: with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium.
-- [ ] Consolidate `lead-generation` section 2 at `/lead-generation`; variants: without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide.
-- [ ] Consolidate `local-seo` section 2 at `/local-seo`; variants: without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide.
-- [ ] Consolidate `privacy` section 2 at `/privacy`; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
-- [ ] Consolidate `terms` section 2 at `/terms`; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
-- [ ] Consolidate `thank-you` section 2 at `/thank-you`; variants: without-media, centered, without-eyebrow, height-tall, heading-width-wide.
-- [ ] Consolidate `web-design` section 2 at `/web-design`; variants: with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium.
+- [ ] Consolidate `about` section 2 at `/about`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, centered, with-eyebrow, height-medium, heading-width-wide.
+- [ ] Consolidate `case-studies` section 2 at `/case-studies`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, without-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `contact` section 2 at `/contact`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, without-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `cookie-policy` section 2 at `/cookie-policy`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `faq` section 2 at `/faq`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, with-eyebrow, height-medium, heading-width-wide.
+- [ ] Consolidate `index` section 2 at `/` (canonical candidate); variants: bg-dark, border-thin, shadow-none, radius-none, with-media, left-aligned, without-eyebrow, height-tall, heading-width-medium, button-solid.
+- [ ] Consolidate `index_original` section 2 at `/index_original`; variants: bg-dark, border-thin, shadow-none, radius-none, with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium, button-stepped.
+- [ ] Consolidate `lead-generation` section 2 at `/lead-generation`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide, button-stepped.
+- [ ] Consolidate `local-seo` section 2 at `/local-seo`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide, button-stepped.
+- [ ] Consolidate `privacy` section 2 at `/privacy`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `terms` section 2 at `/terms`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `thank-you` section 2 at `/thank-you`; variants: bg-dark, border-thin, shadow-none, radius-none, without-media, centered, without-eyebrow, height-tall, heading-width-wide, button-stepped.
+- [ ] Consolidate `web-design` section 2 at `/web-design`; variants: bg-dark, border-thin, shadow-none, radius-none, with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium, button-stepped.
 
 ## CredibilityStrip
 
 - [ ] Define the canonical `CredibilityStrip` boundary using `index` section 3.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] font-family: "DM Sans", Inter, system-ui, sans-serif vs "DM Sans", sans-serif
 - [ ] line-height: 24px vs 26px
 - [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
 - [ ] border-right-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
 - [ ] border-left-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
-- [ ] Consolidate `index` section 3 at `/` (canonical candidate).
-- [ ] Consolidate `index_original` section 3 at `/index_original`.
+- [ ] Consolidate `index` section 3 at `/` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `index_original` section 3 at `/index_original`; variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## ServicesSection
 
 - [ ] Define the canonical `ServicesSection` boundary using `index` section 4.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-transparent, borderless, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 1118px vs 814px vs 829.984px
 - [ ] max-width: 1280px vs none
@@ -80,14 +83,15 @@
 - [ ] padding-left: 0px vs 80px
 - [ ] background-color: rgb(246, 246, 248) vs rgba(0, 0, 0, 0)
 - [ ] font-family: "DM Sans", Inter, system-ui, sans-serif vs "DM Sans", sans-serif
-- [ ] Consolidate `index` section 4 at `/` (canonical candidate).
-- [ ] Consolidate `index_original` section 4 at `/index_original`.
-- [ ] Consolidate `lead-generation` section 5 at `/lead-generation`.
+- [ ] Consolidate `index` section 4 at `/` (canonical candidate); variants: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `index_original` section 4 at `/index_original`; variants: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `lead-generation` section 5 at `/lead-generation`; variants: bg-light, borderless, shadow-none, radius-none.
 
 ## ProcessSection
 
 - [ ] Define the canonical `ProcessSection` boundary using `index` section 5.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-dark, border-thin, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 720.75px vs 723.188px vs 749.953px
 - [ ] background-color: rgb(11, 29, 51) vs rgb(13, 26, 43) vs rgb(255, 255, 255)
@@ -97,14 +101,15 @@
 - [ ] bottom: 0px vs auto
 - [ ] left: 0px vs auto
 - [ ] color: rgb(11, 29, 51) vs rgb(255, 255, 255)
-- [ ] Consolidate `index` section 5 at `/` (canonical candidate).
-- [ ] Consolidate `index_original` section 5 at `/index_original`.
-- [ ] Consolidate `web-design` section 5 at `/web-design`.
+- [ ] Consolidate `index` section 5 at `/` (canonical candidate); variants: bg-dark, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `index_original` section 5 at `/index_original`; variants: bg-dark, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 5 at `/web-design`; variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## FinalCtaSection
 
 - [ ] Define the canonical `FinalCtaSection` boundary using `index` section 6.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 588px vs 590px vs 660px vs 688px vs 694px vs 704px vs 940px
 - [ ] background-color: rgb(226, 232, 240) vs rgb(246, 246, 248) vs rgb(255, 255, 255)
@@ -114,19 +119,20 @@
 - [ ] line-height: 24px vs 26px
 - [ ] border-top-width: 0px vs 2px
 - [ ] border-bottom-width: 0px vs 2px
-- [ ] Consolidate `about` section 8 at `/about`; variants: with-badge, framed-panel, button-primary.
-- [ ] Consolidate `case-studies` section 6 at `/case-studies`; variants: with-badge, framed-panel, button-primary.
-- [ ] Consolidate `faq` section 8 at `/faq`; variants: without-badge, framed-panel, button-primary.
-- [ ] Consolidate `index` section 6 at `/` (canonical candidate).
-- [ ] Consolidate `index_original` section 6 at `/index_original`; variants: with-badge, framed-panel, button-primary.
-- [ ] Consolidate `lead-generation` section 9 at `/lead-generation`; variants: without-badge, framed-panel, button-primary.
-- [ ] Consolidate `local-seo` section 9 at `/local-seo`; variants: without-badge, framed-panel, button-primary.
-- [ ] Consolidate `web-design` section 9 at `/web-design`; variants: without-badge, framed-panel, button-primary.
+- [ ] Consolidate `about` section 8 at `/about`; variants: bg-light, borderless, shadow-none, radius-none, with-badge, framed-panel, button-stepped.
+- [ ] Consolidate `case-studies` section 6 at `/case-studies`; variants: bg-light, borderless, shadow-none, radius-none, with-badge, framed-panel, button-stepped.
+- [ ] Consolidate `faq` section 8 at `/faq`; variants: bg-light, borderless, shadow-none, radius-none, without-badge, framed-panel, button-stepped.
+- [ ] Consolidate `index` section 6 at `/` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `index_original` section 6 at `/index_original`; variants: bg-light, border-thin, shadow-none, radius-none, with-badge, framed-panel, button-stepped.
+- [ ] Consolidate `lead-generation` section 9 at `/lead-generation`; variants: bg-light, borderless, shadow-none, radius-none, without-badge, framed-panel, button-stepped.
+- [ ] Consolidate `local-seo` section 9 at `/local-seo`; variants: bg-light, borderless, shadow-none, radius-none, without-badge, framed-panel, button-stepped.
+- [ ] Consolidate `web-design` section 9 at `/web-design`; variants: bg-light, border-thin, shadow-none, radius-none, without-badge, framed-panel, button-stepped.
 
 ## SiteFooter
 
 - [ ] Define the canonical `SiteFooter` boundary using `index` section 7.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-dark, borderless, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 437.75px vs 462px vs 464px vs 466px vs 486px vs 583px
 - [ ] border-top-width: 0px vs 2px vs 4px vs 8px
@@ -136,30 +142,32 @@
 - [ ] border-left-color: rgb(11, 29, 51) vs rgb(229, 231, 235) vs rgb(255, 123, 0)
 - [ ] padding-top: 64px vs 96px
 - [ ] padding-bottom: 64px vs 96px
-- [ ] Consolidate `about` section 9 at `/about`.
-- [ ] Consolidate `case-studies` section 7 at `/case-studies`.
-- [ ] Consolidate `contact` section 4 at `/contact`.
-- [ ] Consolidate `cookie-policy` section 4 at `/cookie-policy`.
-- [ ] Consolidate `faq` section 9 at `/faq`.
-- [ ] Consolidate `index` section 7 at `/` (canonical candidate).
-- [ ] Consolidate `index_original` section 7 at `/index_original`.
-- [ ] Consolidate `lead-generation` section 10 at `/lead-generation`.
-- [ ] Consolidate `local-seo` section 10 at `/local-seo`.
-- [ ] Consolidate `privacy` section 4 at `/privacy`.
-- [ ] Consolidate `terms` section 4 at `/terms`.
-- [ ] Consolidate `thank-you` section 4 at `/thank-you`.
-- [ ] Consolidate `web-design` section 10 at `/web-design`.
+- [ ] Consolidate `about` section 9 at `/about`; variants: bg-dark, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `case-studies` section 7 at `/case-studies`; variants: bg-dark, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `contact` section 4 at `/contact`; variants: bg-dark, border-medium, shadow-none, radius-none.
+- [ ] Consolidate `cookie-policy` section 4 at `/cookie-policy`; variants: bg-dark, borderless, shadow-none, radius-none.
+- [ ] Consolidate `faq` section 9 at `/faq`; variants: bg-dark, borderless, shadow-none, radius-none.
+- [ ] Consolidate `index` section 7 at `/` (canonical candidate); variants: bg-dark, borderless, shadow-none, radius-none.
+- [ ] Consolidate `index_original` section 7 at `/index_original`; variants: bg-dark, borderless, shadow-none, radius-none.
+- [ ] Consolidate `lead-generation` section 10 at `/lead-generation`; variants: bg-dark, border-medium, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 10 at `/local-seo`; variants: bg-dark, border-heavy, shadow-none, radius-none.
+- [ ] Consolidate `privacy` section 4 at `/privacy`; variants: bg-dark, borderless, shadow-none, radius-none.
+- [ ] Consolidate `terms` section 4 at `/terms`; variants: bg-dark, borderless, shadow-none, radius-none.
+- [ ] Consolidate `thank-you` section 4 at `/thank-you`; variants: bg-dark, borderless, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 10 at `/web-design`; variants: bg-dark, borderless, shadow-none, radius-none.
 
 ## SystemMessage
 
 - [ ] Define the canonical `SystemMessage` boundary using `404` section 1.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `404` section 1 at `/404` (canonical candidate).
+- [ ] Canonical variant traits: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `404` section 1 at `/404` (canonical candidate); variants: bg-transparent, borderless, shadow-none, radius-none.
 
 ## IconCardGrid
 
 - [ ] Define the canonical `IconCardGrid` boundary using `about` section 3.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 453.5px vs 512px vs 544px vs 706.5px
 - [ ] position: relative vs static
@@ -169,15 +177,16 @@
 - [ ] left: 0px vs auto
 - [ ] background-color: rgb(11, 29, 51) vs rgb(255, 255, 255)
 - [ ] border-top-width: 0px vs 2px
-- [ ] Consolidate `about` section 3 at `/about` (canonical candidate).
-- [ ] Consolidate `about` section 6 at `/about`.
-- [ ] Consolidate `local-seo` section 6 at `/local-seo`.
-- [ ] Consolidate `web-design` section 4 at `/web-design`.
+- [ ] Consolidate `about` section 3 at `/about` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `about` section 6 at `/about`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 6 at `/local-seo`; variants: bg-light, borderless, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 4 at `/web-design`; variants: bg-dark, border-thin, shadow-none, radius-none.
 
 ## ImageCardGrid
 
 - [ ] Define the canonical `ImageCardGrid` boundary using `about` section 4.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] max-width: 1280px vs none
 - [ ] height: 778.188px vs 972px
@@ -187,31 +196,35 @@
 - [ ] border-bottom-width: 0px vs 2px
 - [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
 - [ ] border-right-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
-- [ ] Consolidate `about` section 4 at `/about` (canonical candidate).
-- [ ] Consolidate `case-studies` section 4 at `/case-studies`.
+- [ ] Consolidate `about` section 4 at `/about` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `case-studies` section 4 at `/case-studies`; variants: bg-transparent, borderless, shadow-none, radius-none.
 
 ## ContentSection: WHY THE TRADES?
 
 - [ ] Define the canonical `ContentSection: WHY THE TRADES?` boundary using `about` section 5.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `about` section 5 at `/about` (canonical candidate).
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `about` section 5 at `/about` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## ContentSection: THE PARTNERSHIP EXPERIENCE
 
 - [ ] Define the canonical `ContentSection: THE PARTNERSHIP EXPERIENCE` boundary using `about` section 7.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `about` section 7 at `/about` (canonical candidate).
+- [ ] Canonical variant traits: bg-dark, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `about` section 7 at `/about` (canonical candidate); variants: bg-dark, border-thin, shadow-none, radius-none.
 
 ## SectionNav
 
 - [ ] Define the canonical `SectionNav` boundary using `case-studies` section 3.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `case-studies` section 3 at `/case-studies` (canonical candidate).
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `case-studies` section 3 at `/case-studies` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## ContentSection: OUR REPORTING DEPTH
 
 - [ ] Define the canonical `ContentSection: OUR REPORTING DEPTH` boundary using `case-studies` section 5.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 406px vs 480px vs 604px vs 692px vs 714px
 - [ ] background-color: rgb(226, 232, 240) vs rgb(246, 246, 248) vs rgb(255, 255, 255)
@@ -221,43 +234,47 @@
 - [ ] border-bottom-width: 0px vs 2px
 - [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
 - [ ] border-right-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
-- [ ] Consolidate `case-studies` section 5 at `/case-studies` (canonical candidate).
-- [ ] Consolidate `lead-generation` section 4 at `/lead-generation`.
-- [ ] Consolidate `lead-generation` section 8 at `/lead-generation`.
-- [ ] Consolidate `thank-you` section 3 at `/thank-you`.
-- [ ] Consolidate `web-design` section 7 at `/web-design`.
+- [ ] Consolidate `case-studies` section 5 at `/case-studies` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `lead-generation` section 4 at `/lead-generation`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `lead-generation` section 8 at `/lead-generation`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `thank-you` section 3 at `/thank-you`; variants: bg-light, borderless, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 7 at `/web-design`; variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## FormSection
 
 - [ ] Define the canonical `FormSection` boundary using `contact` section 3.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `contact` section 3 at `/contact` (canonical candidate).
+- [ ] Canonical variant traits: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `contact` section 3 at `/contact` (canonical candidate); variants: bg-transparent, borderless, shadow-none, radius-none.
 
 ## LegalContent: 1. PRIVACY POLICY
 
 - [ ] Define the canonical `LegalContent: 1. PRIVACY POLICY` boundary using `cookie-policy` section 3.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `cookie-policy` section 3 at `/cookie-policy` (canonical candidate).
-- [ ] Consolidate `privacy` section 3 at `/privacy`.
-- [ ] Consolidate `terms` section 3 at `/terms`.
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `cookie-policy` section 3 at `/cookie-policy` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `privacy` section 3 at `/privacy`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `terms` section 3 at `/terms`; variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## FaqSection: GETTING STARTED
 
 - [ ] Define the canonical `FaqSection: GETTING STARTED` boundary using `faq` section 3.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-transparent, borderless, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 168px vs 272px
 - [ ] margin-top: 0px vs 80px
-- [ ] Consolidate `faq` section 3 at `/faq` (canonical candidate).
-- [ ] Consolidate `faq` section 4 at `/faq`.
-- [ ] Consolidate `faq` section 5 at `/faq`.
-- [ ] Consolidate `faq` section 6 at `/faq`.
-- [ ] Consolidate `faq` section 7 at `/faq`.
+- [ ] Consolidate `faq` section 3 at `/faq` (canonical candidate); variants: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `faq` section 4 at `/faq`; variants: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `faq` section 5 at `/faq`; variants: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `faq` section 6 at `/faq`; variants: bg-transparent, borderless, shadow-none, radius-none.
+- [ ] Consolidate `faq` section 7 at `/faq`; variants: bg-transparent, borderless, shadow-none, radius-none.
 
 ## ComparisonSplitSection
 
 - [ ] Define the canonical `ComparisonSplitSection` boundary using `lead-generation` section 3.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, borderless, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 534px vs 560px vs 951px
 - [ ] max-width: 1280px vs none
@@ -267,57 +284,64 @@
 - [ ] padding-left: 0px vs 80px
 - [ ] background-color: rgb(255, 255, 255) vs rgba(0, 0, 0, 0)
 - [ ] border-bottom-width: 0px vs 2px
-- [ ] Consolidate `lead-generation` section 3 at `/lead-generation` (canonical candidate).
-- [ ] Consolidate `local-seo` section 3 at `/local-seo`.
-- [ ] Consolidate `web-design` section 3 at `/web-design`.
+- [ ] Consolidate `lead-generation` section 3 at `/lead-generation` (canonical candidate); variants: bg-light, borderless, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 3 at `/local-seo`; variants: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 3 at `/web-design`; variants: bg-transparent, borderless, shadow-none, radius-none.
 
 ## ContentSection: HOW WE MEASURE SUCCESS
 
 - [ ] Define the canonical `ContentSection: HOW WE MEASURE SUCCESS` boundary using `lead-generation` section 6.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `lead-generation` section 6 at `/lead-generation` (canonical candidate).
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `lead-generation` section 6 at `/lead-generation` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## ContentSection: BUDGET & EXPECTATIONS
 
 - [ ] Define the canonical `ContentSection: BUDGET & EXPECTATIONS` boundary using `lead-generation` section 7.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: bg-light, borderless, shadow-none, radius-none.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 1073px vs 668px
 - [ ] padding-top: 128px vs 96px
 - [ ] padding-bottom: 128px vs 96px
 - [ ] background-color: rgb(246, 246, 248) vs rgb(255, 255, 255)
-- [ ] Consolidate `lead-generation` section 7 at `/lead-generation` (canonical candidate).
-- [ ] Consolidate `local-seo` section 4 at `/local-seo`.
+- [ ] Consolidate `lead-generation` section 7 at `/lead-generation` (canonical candidate); variants: bg-light, borderless, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 4 at `/local-seo`; variants: bg-light, borderless, shadow-none, radius-none.
 
 ## ContentSection: WHAT WE FIX FIRST
 
 - [ ] Define the canonical `ContentSection: WHAT WE FIX FIRST` boundary using `local-seo` section 5.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `local-seo` section 5 at `/local-seo` (canonical candidate).
+- [ ] Canonical variant traits: bg-dark, border-medium, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 5 at `/local-seo` (canonical candidate); variants: bg-dark, border-medium, shadow-none, radius-none.
 
 ## ContentSection: WHAT WE WILL NOT DO
 
 - [ ] Define the canonical `ContentSection: WHAT WE WILL NOT DO` boundary using `local-seo` section 7.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `local-seo` section 7 at `/local-seo` (canonical candidate).
+- [ ] Canonical variant traits: bg-light, borderless, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 7 at `/local-seo` (canonical candidate); variants: bg-light, borderless, shadow-none, radius-none.
 
 ## ContentSection: COMPOUNDING GROWTH
 
 - [ ] Define the canonical `ContentSection: COMPOUNDING GROWTH` boundary using `local-seo` section 8.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `local-seo` section 8 at `/local-seo` (canonical candidate).
+- [ ] Canonical variant traits: bg-light, border-thin, shadow-none, radius-none.
+- [ ] Consolidate `local-seo` section 8 at `/local-seo` (canonical candidate); variants: bg-light, border-thin, shadow-none, radius-none.
 
 ## ContentSection: THE DELIVERABLES
 
 - [ ] Define the canonical `ContentSection: THE DELIVERABLES` boundary using `web-design` section 6.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `web-design` section 6 at `/web-design` (canonical candidate).
+- [ ] Canonical variant traits: bg-light, borderless, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 6 at `/web-design` (canonical candidate); variants: bg-light, borderless, shadow-none, radius-none.
 
 ## FeatureSection: RESULTS DON'T COME FROM TEMPLATES.
 
 - [ ] Define the canonical `FeatureSection: RESULTS DON'T COME FROM TEMPLATES.` boundary using `web-design` section 8.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `web-design` section 8 at `/web-design` (canonical candidate).
+- [ ] Canonical variant traits: bg-light, borderless, shadow-none, radius-none.
+- [ ] Consolidate `web-design` section 8 at `/web-design` (canonical candidate); variants: bg-light, borderless, shadow-none, radius-none.
 
 # Repeatable Patterns
 

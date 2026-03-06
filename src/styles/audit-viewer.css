@@ -369,7 +369,7 @@ body.audit-shell {
 
 .audit-family__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   gap: 1rem;
   padding: 0 1.1rem 1.1rem;
 }
@@ -531,7 +531,7 @@ body.audit-shell {
 
 .audit-workbench__targets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   gap: 1rem;
 }
 
@@ -550,7 +550,7 @@ body.audit-shell {
 
 .audit-compare-board__variants {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   gap: 1rem;
 }
 
@@ -588,8 +588,8 @@ body.audit-shell {
 }
 
 .audit-preview-card__frame {
-  width: calc(100% / var(--audit-preview-scale));
-  height: calc(100% / var(--audit-preview-scale));
+  width: var(--audit-preview-source-width);
+  height: var(--audit-preview-source-height);
   border: 0;
   transform: scale(var(--audit-preview-scale));
   transform-origin: top left;
@@ -655,6 +655,12 @@ body.audit-shell {
 
   .audit-workbench-board,
   .audit-workbench-board--new {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-family__grid,
+  .audit-compare-board__variants,
+  .audit-workbench__targets {
     grid-template-columns: 1fr;
   }
 

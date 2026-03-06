@@ -111,8 +111,6 @@ const rawPagesUrl = new URL("../../docs/audit/raw/pages/", import.meta.url);
 const styleArchetypesUrl = new URL("../../docs/audit/raw/style-archetypes.json", import.meta.url);
 const canonicalPages = ["index", "index_original"];
 
-let cachedData: AuditViewerData | null = null;
-
 function readJson<T>(url: URL): T {
   return JSON.parse(readFileSync(url, "utf8")) as T;
 }
@@ -333,10 +331,6 @@ export function getVisualMethods(): ViewerMethod[] {
 }
 
 export function getAuditViewerData() {
-  if (cachedData) {
-    return cachedData;
-  }
-
   const { manifest, sectionLookup, componentLookup } = loadRawPages();
   const rawArchetypes = readJson<{
     archetypes: {
@@ -359,7 +353,7 @@ export function getAuditViewerData() {
     ),
   }));
 
-  cachedData = {
+  return {
     sectionFamilies,
     componentFamilies,
     styleArchetypes,
@@ -372,6 +366,4 @@ export function getAuditViewerData() {
       componentInstanceCount: componentFamilies.reduce((sum, family) => sum + family.totalCount, 0),
     },
   };
-
-  return cachedData;
 }

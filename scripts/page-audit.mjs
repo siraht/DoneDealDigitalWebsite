@@ -1367,7 +1367,7 @@ function bucketByThreshold(value, thresholds) {
 }
 
 function deriveHeroTraits(sectionNode, stats) {
-  const traits = [];
+  const traits = [...deriveSurfaceTraits(sectionNode.decisionStyle)];
   const firstHeadingNode = findFirstNode(sectionNode, (node) => /^h[1-6]$/.test(node.tag));
   const nodesBeforeHeading = collectNodesUntil(
     sectionNode,
@@ -1402,12 +1402,16 @@ function deriveHeroTraits(sectionNode, stats) {
   }
 
   traits.push(mediaTrait, alignment, eyebrowTrait, heightTrait, headingWidthTrait);
+  const primaryAction = findFirstNode(sectionNode, (node) => ["a", "button"].includes(node.tag));
+  if (primaryAction) {
+    traits.push(deriveButtonFinishTrait(primaryAction.decisionStyle));
+  }
 
   return traits;
 }
 
 function deriveCallToActionTraits(sectionNode, stats) {
-  const traits = [];
+  const traits = [...deriveSurfaceTraits(sectionNode.decisionStyle)];
   const hasAbsoluteBadge = Boolean(
     findFirstNode(
       sectionNode,
@@ -1430,7 +1434,12 @@ function deriveCallToActionTraits(sectionNode, stats) {
 
   traits.push(hasAbsoluteBadge ? "with-badge" : "without-badge");
   traits.push(framedPanel ? "framed-panel" : "standard-panel");
-  traits.push(stats.linkCount > 0 ? "with-link-action" : "button-primary");
+  const primaryAction = findFirstNode(sectionNode, (node) => ["a", "button"].includes(node.tag));
+  if (primaryAction) {
+    traits.push(deriveButtonFinishTrait(primaryAction.decisionStyle));
+  } else {
+    traits.push(stats.linkCount > 0 ? "with-link-action" : "without-primary-action");
+  }
 
   return traits;
 }
@@ -1444,11 +1453,158 @@ function deriveSectionTraits(sectionType, sectionNode, stats) {
     return deriveCallToActionTraits(sectionNode, stats);
   }
 
-  return [];
+  return deriveSurfaceTraits(sectionNode.decisionStyle);
 }
 
 function getNumericStyleValue(style, property) {
   return Number.parseFloat(style?.[property] || "0") || 0;
+}
+
+function parseColorChannels(value) {
+  const normalized = normalizeWhitespace(value || "");
+  if (!normalized || normalized === "transparent" || normalized === "rgba(0, 0, 0, 0)") {
+    return null;
+  }
+
+  const rgbMatch = normalized.match(/rgba?\(([^)]+)\)/i);
+  if (rgbMatch) {
+    const [r = 0, g = 0, b = 0] = rgbMatch[1]
+      .split(",")
+      .slice(0, 3)
+      .map((part) => Number.parseFloat(part.trim()) || 0);
+    return { r, g, b };
+  }
+
+  const srgbMatch = normalized.match(
+    /color\(srgb\s+([0-9.]+)\s+([0-9.]+)\s+([0-9.]+)(?:\s*\/\s*([0-9.]+))?\)/i,
+  );
+  if (srgbMatch) {
+    return {
+      r: (Number.parseFloat(srgbMatch[1]) || 0) * 255,
+      g: (Number.parseFloat(srgbMatch[2]) || 0) * 255,
+      b: (Number.parseFloat(srgbMatch[3]) || 0) * 255,
+    };
+  }
+
+  return null;
+}
+
+function getColorBrightness(channels) {
+  if (!channels) {
+    return 255;
+  }
+
+  return (channels.r * 299 + channels.g * 587 + channels.b * 114) / 1000;
+}
+
+function deriveBackgroundTone(style) {
+  if (isTransparentBackground(style)) {
+    return "bg-transparent";
+  }
+
+  const channels = parseColorChannels(style?.["background-color"]);
+  if (!channels) {
+    return "bg-filled";
+  }
+
+  const brightness = getColorBrightness(channels);
+  const spread = Math.max(channels.r, channels.g, channels.b) - Math.min(channels.r, channels.g, channels.b);
+
+  if (channels.r > 180 && channels.g > 70 && channels.g < 180 && channels.b < 110) {
+    return "bg-accent";
+  }
+
+  if (brightness <= 78) {
+    return "bg-dark";
+  }
+
+  if (brightness >= 220) {
+    return spread <= 22 ? "bg-light" : "bg-light-tint";
+  }
+
+  if (spread <= 22) {
+    return "bg-muted";
+  }
+
+  return "bg-mid";
+}
+
+function deriveBorderTrait(style) {
+  const maxBorderWidth = Math.max(
+    getNumericStyleValue(style, "border-top-width"),
+    getNumericStyleValue(style, "border-right-width"),
+    getNumericStyleValue(style, "border-bottom-width"),
+    getNumericStyleValue(style, "border-left-width"),
+  );
+
+  if (maxBorderWidth < 0.5) {
+    return "borderless";
+  }
+
+  if (maxBorderWidth < 2.5) {
+    return "border-thin";
+  }
+
+  if (maxBorderWidth < 4.5) {
+    return "border-medium";
+  }
+
+  return "border-heavy";
+}
+
+function deriveShadowTrait(style) {
+  const shadow = normalizeWhitespace(style?.["box-shadow"] || "");
+  if (!shadow || shadow === "none") {
+    return "shadow-none";
+  }
+
+  const pxValues = [...shadow.matchAll(/(-?\d+(?:\.\d+)?)px/g)].map((match) => Number.parseFloat(match[1]) || 0);
+  const offsetX = pxValues[0] || 0;
+  const offsetY = pxValues[1] || 0;
+
+  if (Math.abs(offsetX) >= 3 || Math.abs(offsetY) >= 3) {
+    return "shadow-offset";
+  }
+
+  return "shadow-soft";
+}
+
+function deriveRadiusTrait(style) {
+  const radius = getNumericStyleValue(style, "border-radius");
+
+  if (radius < 1) {
+    return "radius-none";
+  }
+
+  if (radius < 12) {
+    return "radius-sm";
+  }
+
+  return "radius-lg";
+}
+
+function deriveButtonFinishTrait(style) {
+  const backgroundFilled = !isTransparentBackground(style);
+  const borderTrait = deriveBorderTrait(style);
+  const shadowTrait = deriveShadowTrait(style);
+
+  if (backgroundFilled && shadowTrait === "shadow-offset") {
+    return "button-stepped";
+  }
+
+  if (backgroundFilled) {
+    return "button-solid";
+  }
+
+  if (borderTrait !== "borderless") {
+    return "button-outline";
+  }
+
+  return "button-text";
+}
+
+function deriveSurfaceTraits(style) {
+  return [deriveBackgroundTone(style), deriveBorderTrait(style), deriveShadowTrait(style), deriveRadiusTrait(style)];
 }
 
 function isTransparentBackground(style) {
@@ -1713,6 +1869,9 @@ function deriveComponentTraits(componentKind, node, stats) {
 
   if (["Button", "HeaderNavLink", "NavLink", "TextLink"].includes(componentKind)) {
     traits.push(backgroundFilled ? "filled" : borderWidth > 0 ? "outlined" : "text-only");
+    traits.push(deriveButtonFinishTrait(node.decisionStyle));
+    traits.push(deriveBackgroundTone(node.decisionStyle));
+    traits.push(deriveShadowTrait(node.decisionStyle));
     traits.push(
       `height-${bucketByThreshold(node.rect.height, [
         { max: 28, label: "xs" },
@@ -1759,8 +1918,7 @@ function deriveComponentTraits(componentKind, node, stats) {
       "FeatureItem",
     ].includes(componentKind)
   ) {
-    traits.push(borderWidth > 0 ? "bordered" : "borderless");
-    traits.push(hasBoxShadow ? "shadowed" : "flat");
+    traits.push(...deriveSurfaceTraits(node.decisionStyle));
     traits.push(textAlign);
     traits.push(stats.headingCount > 0 ? "with-heading" : "without-heading");
     return traits;
@@ -1768,6 +1926,8 @@ function deriveComponentTraits(componentKind, node, stats) {
 
   if (["ComparisonListItem", "ListItem", "AccordionItem", "FooterLinkItem"].includes(componentKind)) {
     traits.push(stats.iconCount > 0 ? "with-icon" : "without-icon");
+    traits.push(deriveBackgroundTone(node.decisionStyle));
+    traits.push(deriveShadowTrait(node.decisionStyle));
     traits.push(textAlign);
     return traits;
   }

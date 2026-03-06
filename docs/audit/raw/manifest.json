@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T08:31:26.720Z",
+  "generatedAt": "2026-03-06T16:12:15.866Z",
   "baseURL": "http://127.0.0.1:4322",
   "serverCommand": "npm run dev -- --host 127.0.0.1 --port 4322",
   "viewports": [
@@ -9413,7 +9413,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": null
         },
@@ -9424,7 +9429,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9452,7 +9462,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9480,7 +9495,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9508,7 +9528,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9536,7 +9561,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9564,7 +9594,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9592,7 +9627,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "47fdb2b6",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9620,7 +9660,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9648,7 +9693,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9676,7 +9726,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9704,7 +9759,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9732,7 +9792,12 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7cb727cd",
           "representativeScores": {
             "leftAuditId": "index::section-1",
@@ -9770,11 +9835,16 @@
           "sectionType": "HeroSection",
           "firstHeading": "WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "with-media",
             "left-aligned",
             "without-eyebrow",
             "height-tall",
-            "heading-width-medium"
+            "heading-width-medium",
+            "button-solid"
           ],
           "structureFingerprint": "2307e253",
           "representativeScores": null
@@ -9787,6 +9857,10 @@
           "sectionType": "HeroSection",
           "firstHeading": "YOU'RE NOT HIRING A MYSTERY AGENCY.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "centered",
             "with-eyebrow",
@@ -9821,6 +9895,10 @@
           "sectionType": "HeroSection",
           "firstHeading": "PROOF, NOT PROMISES.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "without-eyebrow",
@@ -9855,6 +9933,10 @@
           "sectionType": "HeroSection",
           "firstHeading": "TELL US WHAT YOU NEED.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "without-eyebrow",
@@ -9889,6 +9971,10 @@
           "sectionType": "HeroSection",
           "firstHeading": "TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "with-eyebrow",
@@ -9923,6 +10009,10 @@
           "sectionType": "HeroSection",
           "firstHeading": "STRAIGHT ANSWERS FOR BUSY OWNERS.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "with-eyebrow",
@@ -9957,11 +10047,16 @@
           "sectionType": "HeroSection",
           "firstHeading": "WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "with-media",
             "left-aligned",
             "with-eyebrow",
             "height-tall",
-            "heading-width-medium"
+            "heading-width-medium",
+            "button-stepped"
           ],
           "structureFingerprint": "ed0c3fd4",
           "representativeScores": {
@@ -9991,11 +10086,16 @@
           "sectionType": "HeroSection",
           "firstHeading": "PAID ADS BUILT TO BRING IN REAL CALLS.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "with-eyebrow",
             "height-tall",
-            "heading-width-wide"
+            "heading-width-wide",
+            "button-stepped"
           ],
           "structureFingerprint": "eb8b2075",
           "representativeScores": {
@@ -10025,11 +10125,16 @@
           "sectionType": "HeroSection",
           "firstHeading": "GET FOUND BY LOCAL CUSTOMERS WHO NEED YOU.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "with-eyebrow",
             "height-tall",
-            "heading-width-wide"
+            "heading-width-wide",
+            "button-stepped"
           ],
           "structureFingerprint": "dd8dab56",
           "representativeScores": {
@@ -10059,6 +10164,10 @@
           "sectionType": "HeroSection",
           "firstHeading": "TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "with-eyebrow",
@@ -10093,6 +10202,10 @@
           "sectionType": "HeroSection",
           "firstHeading": "TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "left-aligned",
             "with-eyebrow",
@@ -10127,11 +10240,16 @@
           "sectionType": "HeroSection",
           "firstHeading": "WE GOT IT. HERE'S WHAT HAPPENS NEXT.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-media",
             "centered",
             "without-eyebrow",
             "height-tall",
-            "heading-width-wide"
+            "heading-width-wide",
+            "button-stepped"
           ],
           "structureFingerprint": "245f92bb",
           "representativeScores": {
@@ -10161,11 +10279,16 @@
           "sectionType": "HeroSection",
           "firstHeading": "WE BUILD CONTRACTOR WEBSITES THAT TURN VISITS INTO CALLS.",
           "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "with-media",
             "left-aligned",
             "with-eyebrow",
             "height-tall",
-            "heading-width-medium"
+            "heading-width-medium",
+            "button-stepped"
           ],
           "structureFingerprint": "3bf367cc",
           "representativeScores": {
@@ -10203,7 +10326,12 @@
           "index": 3,
           "sectionType": "CredibilityStrip",
           "firstHeading": "",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "a684aeac",
           "representativeScores": null
         },
@@ -10214,7 +10342,12 @@
           "index": 3,
           "sectionType": "CredibilityStrip",
           "firstHeading": "",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "9a1a3842",
           "representativeScores": {
             "leftAuditId": "index::section-3",
@@ -10251,7 +10384,12 @@
           "index": 4,
           "sectionType": "ServicesSection",
           "firstHeading": "NO FLUFF. JUST RESULTS.",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "84e207d4",
           "representativeScores": null
         },
@@ -10262,7 +10400,12 @@
           "index": 4,
           "sectionType": "ServicesSection",
           "firstHeading": "NO FLUFF. JUST RESULTS.",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "92945834",
           "representativeScores": {
             "leftAuditId": "index::section-4",
@@ -10290,7 +10433,12 @@
           "index": 5,
           "sectionType": "ServicesSection",
           "firstHeading": "WHAT WE MANAGE",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "dc65822c",
           "representativeScores": {
             "leftAuditId": "index::section-4",
@@ -10327,7 +10475,12 @@
           "index": 5,
           "sectionType": "ProcessSection",
           "firstHeading": "THE DONE DEAL PROCESS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "8d2bcd55",
           "representativeScores": null
         },
@@ -10338,7 +10491,12 @@
           "index": 5,
           "sectionType": "ProcessSection",
           "firstHeading": "THE DONE DEAL PROCESS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "14554ed3",
           "representativeScores": {
             "leftAuditId": "index::section-5",
@@ -10366,7 +10524,12 @@
           "index": 5,
           "sectionType": "ProcessSection",
           "firstHeading": "BUILT FOR UTILITY, NOT JUST DECORATION.",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "584daa6b",
           "representativeScores": {
             "leftAuditId": "index::section-5",
@@ -10403,7 +10566,12 @@
           "index": 6,
           "sectionType": "FinalCtaSection",
           "firstHeading": "READY TO GROW?",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "4fa2ecf6",
           "representativeScores": null
         },
@@ -10415,9 +10583,13 @@
           "sectionType": "CallToAction",
           "firstHeading": "READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?",
           "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none",
             "with-badge",
             "framed-panel",
-            "button-primary"
+            "button-stepped"
           ],
           "structureFingerprint": "dce571df",
           "representativeScores": {
@@ -10447,9 +10619,13 @@
           "sectionType": "CallToAction",
           "firstHeading": "READY TO BE OUR NEXT SUCCESS STORY?",
           "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none",
             "with-badge",
             "framed-panel",
-            "button-primary"
+            "button-stepped"
           ],
           "structureFingerprint": "0c3a0795",
           "representativeScores": {
@@ -10479,9 +10655,13 @@
           "sectionType": "CallToAction",
           "firstHeading": "STILL HAVE QUESTIONS? LET'S TALK.",
           "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none",
             "without-badge",
             "framed-panel",
-            "button-primary"
+            "button-stepped"
           ],
           "structureFingerprint": "4932f4f6",
           "representativeScores": {
@@ -10511,9 +10691,13 @@
           "sectionType": "CallToAction",
           "firstHeading": "READY TO SCALE YOUR CREW?",
           "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "with-badge",
             "framed-panel",
-            "button-primary"
+            "button-stepped"
           ],
           "structureFingerprint": "20ddf752",
           "representativeScores": {
@@ -10543,9 +10727,13 @@
           "sectionType": "CallToAction",
           "firstHeading": "READY TO SEE IF PAID ADS MAKE SENSE?",
           "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none",
             "without-badge",
             "framed-panel",
-            "button-primary"
+            "button-stepped"
           ],
           "structureFingerprint": "ceb1f944",
           "representativeScores": {
@@ -10575,9 +10763,13 @@
           "sectionType": "CallToAction",
           "firstHeading": "READY TO BE EASIER TO FIND?",
           "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none",
             "without-badge",
             "framed-panel",
-            "button-primary"
+            "button-stepped"
           ],
           "structureFingerprint": "97d071c5",
           "representativeScores": {
@@ -10607,9 +10799,13 @@
           "sectionType": "CallToAction",
           "firstHeading": "READY FOR A SITE THAT EARNS ITS KEEP?",
           "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "without-badge",
             "framed-panel",
-            "button-primary"
+            "button-stepped"
           ],
           "structureFingerprint": "a2d96082",
           "representativeScores": {
@@ -10647,7 +10843,12 @@
           "index": 7,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7840e060",
           "representativeScores": null
         },
@@ -10658,7 +10859,12 @@
           "index": 9,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10686,7 +10892,12 @@
           "index": 7,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "9ca40926",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10714,7 +10925,12 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-medium",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10742,7 +10958,12 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10770,7 +10991,12 @@
           "index": 9,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10798,7 +11024,12 @@
           "index": 7,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10826,7 +11057,12 @@
           "index": 10,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-medium",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "f5be488b",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10854,7 +11090,12 @@
           "index": 10,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-heavy",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "6887a476",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10882,7 +11123,12 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10910,7 +11156,12 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10938,7 +11189,12 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -10966,7 +11222,12 @@
           "index": 10,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d48f82d4",
           "representativeScores": {
             "leftAuditId": "index::section-7",
@@ -11003,7 +11264,12 @@
           "index": 1,
           "sectionType": "SystemMessage",
           "firstHeading": "404",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7f19b198",
           "representativeScores": null
         }
@@ -11023,7 +11289,12 @@
           "index": 3,
           "sectionType": "IconCardGrid",
           "firstHeading": "WHY WE EXIST",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "f3486082",
           "representativeScores": null
         },
@@ -11034,7 +11305,12 @@
           "index": 6,
           "sectionType": "IconCardGrid",
           "firstHeading": "OUR WORK ETHIC",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d90098bd",
           "representativeScores": {
             "leftAuditId": "about::section-3",
@@ -11062,7 +11338,12 @@
           "index": 6,
           "sectionType": "IconCardGrid",
           "firstHeading": "GBP FOUNDATION",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "15203542",
           "representativeScores": {
             "leftAuditId": "about::section-3",
@@ -11090,7 +11371,12 @@
           "index": 4,
           "sectionType": "IconCardGrid",
           "firstHeading": "A WEAK SITE COSTS MORE THAN YOU THINK.",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "ddefe569",
           "representativeScores": {
             "leftAuditId": "about::section-3",
@@ -11127,7 +11413,12 @@
           "index": 4,
           "sectionType": "ImageCardGrid",
           "firstHeading": "THE OPERATORS BEHIND THE SCREENS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "56d153e0",
           "representativeScores": null
         },
@@ -11138,7 +11429,12 @@
           "index": 4,
           "sectionType": "ImageCardGrid",
           "firstHeading": "200% INCREASE IN CALLS IN 90 DAYS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "13f981ed",
           "representativeScores": {
             "leftAuditId": "about::section-4",
@@ -11175,7 +11471,12 @@
           "index": 5,
           "sectionType": "ContentSection",
           "firstHeading": "WHY THE TRADES?",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "a620a5fa",
           "representativeScores": null
         }
@@ -11195,7 +11496,12 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "THE PARTNERSHIP EXPERIENCE",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "0b63a97b",
           "representativeScores": null
         }
@@ -11215,7 +11521,12 @@
           "index": 3,
           "sectionType": "SectionNav",
           "firstHeading": "",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "160d01f4",
           "representativeScores": null
         }
@@ -11235,7 +11546,12 @@
           "index": 5,
           "sectionType": "ContentSection",
           "firstHeading": "OUR REPORTING DEPTH",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7a9f1f3a",
           "representativeScores": null
         },
@@ -11246,7 +11562,12 @@
           "index": 4,
           "sectionType": "ContentSection",
           "firstHeading": "THE PROBLEM WITH MOST ADVERTISING",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "10410e0f",
           "representativeScores": {
             "leftAuditId": "case-studies::section-5",
@@ -11274,7 +11595,12 @@
           "index": 8,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE WILL NOT DO",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "c40be86d",
           "representativeScores": {
             "leftAuditId": "case-studies::section-5",
@@ -11302,7 +11628,12 @@
           "index": 3,
           "sectionType": "ContentSection",
           "firstHeading": "REVIEW",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "c6bad00f",
           "representativeScores": {
             "leftAuditId": "case-studies::section-5",
@@ -11330,7 +11661,12 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "THE 5-STEP BLUEPRINT",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "e41f19d2",
           "representativeScores": {
             "leftAuditId": "case-studies::section-5",
@@ -11367,7 +11703,12 @@
           "index": 3,
           "sectionType": "FormSection",
           "firstHeading": "QUICK CONTACT",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d35167c7",
           "representativeScores": null
         }
@@ -11387,7 +11728,12 @@
           "index": 3,
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "839d9f90",
           "representativeScores": null
         },
@@ -11398,7 +11744,12 @@
           "index": 3,
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "839d9f90",
           "representativeScores": {
             "leftAuditId": "cookie-policy::section-3",
@@ -11426,7 +11777,12 @@
           "index": 3,
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "839d9f90",
           "representativeScores": {
             "leftAuditId": "cookie-policy::section-3",
@@ -11463,7 +11819,12 @@
           "index": 3,
           "sectionType": "FaqSection",
           "firstHeading": "GETTING STARTED",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "8c4f2f11",
           "representativeScores": null
         },
@@ -11474,7 +11835,12 @@
           "index": 4,
           "sectionType": "FaqSection",
           "firstHeading": "PRICING & SCOPE",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "8c4f2f11",
           "representativeScores": {
             "leftAuditId": "faq::section-3",
@@ -11502,7 +11868,12 @@
           "index": 5,
           "sectionType": "FaqSection",
           "firstHeading": "WORKING WITH US",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "61c61336",
           "representativeScores": {
             "leftAuditId": "faq::section-3",
@@ -11530,7 +11901,12 @@
           "index": 6,
           "sectionType": "FaqSection",
           "firstHeading": "SEO & ADS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "ef60894b",
           "representativeScores": {
             "leftAuditId": "faq::section-3",
@@ -11558,7 +11934,12 @@
           "index": 7,
           "sectionType": "FaqSection",
           "firstHeading": "TECHNICAL",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "61c61336",
           "representativeScores": {
             "leftAuditId": "faq::section-3",
@@ -11595,7 +11976,12 @@
           "index": 3,
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "WHEN PAID ADS MAKE SENSE",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "7c117ebe",
           "representativeScores": null
         },
@@ -11606,7 +11992,12 @@
           "index": 3,
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "check_circle BEST FIT",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "41d91778",
           "representativeScores": {
             "leftAuditId": "lead-generation::section-3",
@@ -11634,7 +12025,12 @@
           "index": 3,
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "check_circle BEST FIT",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-transparent",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "a94a0783",
           "representativeScores": {
             "leftAuditId": "lead-generation::section-3",
@@ -11671,7 +12067,12 @@
           "index": 6,
           "sectionType": "ContentSection",
           "firstHeading": "HOW WE MEASURE SUCCESS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "a0c9c06d",
           "representativeScores": null
         }
@@ -11691,7 +12092,12 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "BUDGET & EXPECTATIONS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "a6432743",
           "representativeScores": null
         },
@@ -11702,7 +12108,12 @@
           "index": 4,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT LOCAL SEO ACTUALLY IS",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "8ae1b556",
           "representativeScores": {
             "leftAuditId": "lead-generation::section-7",
@@ -11739,7 +12150,12 @@
           "index": 5,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE FIX FIRST",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-dark",
+            "border-medium",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "fbdb4d1a",
           "representativeScores": null
         }
@@ -11759,7 +12175,12 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE WILL NOT DO",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "4f9c61b3",
           "representativeScores": null
         }
@@ -11779,7 +12200,12 @@
           "index": 8,
           "sectionType": "ContentSection",
           "firstHeading": "COMPOUNDING GROWTH",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "41a66f82",
           "representativeScores": null
         }
@@ -11799,7 +12225,12 @@
           "index": 6,
           "sectionType": "ContentSection",
           "firstHeading": "THE DELIVERABLES",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d6ff160a",
           "representativeScores": null
         }
@@ -11819,7 +12250,12 @@
           "index": 8,
           "sectionType": "FeatureSection",
           "firstHeading": "RESULTS DON'T COME FROM TEMPLATES.",
-          "variantTraits": [],
+          "variantTraits": [
+            "bg-light",
+            "borderless",
+            "shadow-none",
+            "radius-none"
+          ],
           "structureFingerprint": "d780d0eb",
           "representativeScores": null
         }
@@ -11845,6 +12281,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -11862,6 +12301,9 @@
           "label": "Process",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -11896,6 +12338,9 @@
           "label": "Proof",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -11930,6 +12375,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -11964,6 +12412,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -11998,6 +12449,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12032,6 +12486,9 @@
           "label": "About",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-dark",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12066,6 +12523,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12100,6 +12560,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -12134,6 +12597,9 @@
           "label": "Case Studies",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-dark",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -12168,6 +12634,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -12202,6 +12671,9 @@
           "label": "Contact",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -12236,6 +12708,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12270,6 +12745,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12304,6 +12782,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12338,6 +12819,9 @@
           "label": "Contact",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-dark",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12372,6 +12856,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12406,6 +12893,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12440,6 +12930,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12474,6 +12967,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12508,6 +13004,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12542,6 +13041,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12576,6 +13078,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12610,6 +13115,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12644,6 +13152,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12678,6 +13189,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12712,6 +13226,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12746,6 +13263,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12780,6 +13300,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12814,6 +13337,9 @@
           "label": "How it Works",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12848,6 +13374,9 @@
           "label": "Case Studies",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12882,6 +13411,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12916,6 +13448,9 @@
           "label": "Web Design",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12950,6 +13485,9 @@
           "label": "Local SEO",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-dark",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -12984,6 +13522,9 @@
           "label": "Lead Gen",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13018,6 +13559,9 @@
           "label": "Reviews",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13052,6 +13596,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13086,6 +13633,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13120,6 +13670,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13154,6 +13707,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13188,6 +13744,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13222,6 +13781,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13256,6 +13818,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13290,6 +13855,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13324,6 +13892,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13358,6 +13929,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13392,6 +13966,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13426,6 +14003,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13460,6 +14040,9 @@
           "label": "Services",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13494,6 +14077,9 @@
           "label": "Portfolio",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13528,6 +14114,9 @@
           "label": "Reviews",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13562,6 +14151,9 @@
           "label": "Contact",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-xs",
             "without-icon",
             "uppercase"
@@ -13605,6 +14197,9 @@
           "label": "Start Your Project",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-accent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13622,6 +14217,9 @@
           "label": "View Our Work",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-light",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13656,6 +14254,9 @@
           "label": "Get My Free Audit",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-accent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13690,6 +14291,9 @@
           "label": "Back to Home",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-accent",
+            "shadow-none",
             "height-md",
             "without-icon",
             "uppercase"
@@ -13724,6 +14328,9 @@
           "label": "LET'S TALK",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13758,6 +14365,9 @@
           "label": "Read the Case Study",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-accent",
+            "shadow-none",
             "height-md",
             "without-icon",
             "uppercase"
@@ -13792,6 +14402,9 @@
           "label": "Read the Case Study",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-accent",
+            "shadow-none",
             "height-md",
             "without-icon",
             "uppercase"
@@ -13826,6 +14439,9 @@
           "label": "Read the Case Study",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-accent",
+            "shadow-none",
             "height-md",
             "without-icon",
             "uppercase"
@@ -13860,6 +14476,9 @@
           "label": "LET'S TALK",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13894,6 +14513,9 @@
           "label": "GET MY QUOTE",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13928,6 +14550,9 @@
           "label": "CONTACT US",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13962,6 +14587,9 @@
           "label": "Start Your Project",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -13996,6 +14624,9 @@
           "label": "View Our Work",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-light",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14030,6 +14661,9 @@
           "label": "Get My Free Audit",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14064,6 +14698,9 @@
           "label": "GET A FREE AD REVIEW",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14098,6 +14735,9 @@
           "label": "GET A FREE AD REVIEW",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14132,6 +14772,9 @@
           "label": "GET A FREE SEO REVIEW",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14166,6 +14809,9 @@
           "label": "GET MY FREE SEO AUDIT",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14200,6 +14846,9 @@
           "label": "CALL US: (555) 123-4567",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "with-icon",
             "uppercase"
@@ -14234,6 +14883,9 @@
           "label": "GET A FREE QUOTE",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14268,6 +14920,9 @@
           "label": "Call (555) 123-4567",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-light",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14302,6 +14957,9 @@
           "label": "GET A FREE QUOTE",
           "variantTraits": [
             "filled",
+            "button-stepped",
+            "bg-accent",
+            "shadow-offset",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -14344,8 +15002,10 @@
           "componentKind": "HeroEyebrow",
           "label": "Consider it...",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14361,8 +15021,10 @@
           "componentKind": "HeroEyebrow",
           "label": "Done.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14395,8 +15057,10 @@
           "componentKind": "HeroEyebrow",
           "label": "EST. 2018",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14429,8 +15093,10 @@
           "componentKind": "HeroEyebrow",
           "label": "Digital Blue Collar",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14463,8 +15129,10 @@
           "componentKind": "HeroEyebrow",
           "label": "BLUE-COLLAR LEAD GENERATION",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14497,8 +15165,10 @@
           "componentKind": "HeroEyebrow",
           "label": "PROVEN ROI",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14531,8 +15201,10 @@
           "componentKind": "HeroEyebrow",
           "label": "Designed for conversion",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14574,8 +15246,10 @@
           "componentKind": "CredibilityItem",
           "label": "trending_up LEADS, NOT LIKES",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14591,8 +15265,10 @@
           "componentKind": "CredibilityItem",
           "label": "calendar_month WEEKLY UPDATES",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14625,8 +15301,10 @@
           "componentKind": "CredibilityItem",
           "label": "dashboard ALL IN ONE",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14659,8 +15337,10 @@
           "componentKind": "CredibilityItem",
           "label": "bolt FAST TURNAROUNDS",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -14702,8 +15382,10 @@
           "componentKind": "IconCard",
           "label": "WEB DESIGN",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14719,8 +15401,10 @@
           "componentKind": "IconCard",
           "label": "LOCAL SEO",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14753,8 +15437,10 @@
           "componentKind": "IconCard",
           "label": "LEAD GEN",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14787,8 +15473,10 @@
           "componentKind": "IconCard",
           "label": "WEB DESIGN",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14821,8 +15509,10 @@
           "componentKind": "IconCard",
           "label": "LOCAL SEO",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14855,8 +15545,10 @@
           "componentKind": "IconCard",
           "label": "LEAD GEN",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14889,8 +15581,10 @@
           "componentKind": "IconCard",
           "label": "GOOGLE SEARCH ADS",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14923,8 +15617,10 @@
           "componentKind": "IconCard",
           "label": "LOCAL SERVICES ADS (LSA)",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -14957,8 +15653,10 @@
           "componentKind": "IconCard",
           "label": "LANDING PAGES & TRACKING",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15001,6 +15699,8 @@
           "label": "Fast Loading",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": null
@@ -15016,6 +15716,8 @@
           "label": "Mobile First",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15048,6 +15750,8 @@
           "label": "Lead Capture",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15080,6 +15784,8 @@
           "label": "GMB Optimization",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15112,6 +15818,8 @@
           "label": "Local Keywords",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15144,6 +15852,8 @@
           "label": "Citation Building",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15176,6 +15886,8 @@
           "label": "Google Ads",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15208,6 +15920,8 @@
           "label": "LSA Management",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15240,6 +15954,8 @@
           "label": "ROI Reporting",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15272,6 +15988,8 @@
           "label": "Fast Loading",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15304,6 +16022,8 @@
           "label": "Mobile First",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15336,6 +16056,8 @@
           "label": "Lead Capture",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15368,6 +16090,8 @@
           "label": "GMB Optimization",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15400,6 +16124,8 @@
           "label": "Local Keywords",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15432,6 +16158,8 @@
           "label": "Citation Building",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15464,6 +16192,8 @@
           "label": "Google Ads",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15496,6 +16226,8 @@
           "label": "LSA Management",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15528,6 +16260,8 @@
           "label": "ROI Reporting",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15560,6 +16294,8 @@
           "label": "Negative Keyword Lists",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15592,6 +16328,8 @@
           "label": "Bidding Optimization",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15624,6 +16362,8 @@
           "label": "Competitor Targeting",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15656,6 +16396,8 @@
           "label": "Ad Copy Split-Testing",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15688,6 +16430,8 @@
           "label": "Google Screened Setup",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15720,6 +16464,8 @@
           "label": "Dispute Bad Leads",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -15760,8 +16506,10 @@
           "componentKind": "ProcessStep",
           "label": "CONSULTATION",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15777,8 +16525,10 @@
           "componentKind": "ProcessStep",
           "label": "BUILD",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15811,8 +16561,10 @@
           "componentKind": "ProcessStep",
           "label": "GROWTH",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15845,8 +16597,10 @@
           "componentKind": "ProcessStep",
           "label": "CONSULTATION",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15879,8 +16633,10 @@
           "componentKind": "ProcessStep",
           "label": "STRUCTURED BUILD",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15913,8 +16669,10 @@
           "componentKind": "ProcessStep",
           "label": "SCALED GROWTH",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15947,8 +16705,10 @@
           "componentKind": "ProcessStep",
           "label": "WORK CLEANLY ON A PHONE",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -15981,8 +16741,10 @@
           "componentKind": "ProcessStep",
           "label": "SURFACE YOUR REVIEWS",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -16015,8 +16777,10 @@
           "componentKind": "ProcessStep",
           "label": "ONE-TAP COMMUNICATION",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -16058,8 +16822,10 @@
           "componentKind": "RepeatableBlock",
           "label": "",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -16075,8 +16841,10 @@
           "componentKind": "RepeatableBlock",
           "label": "",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -16109,8 +16877,10 @@
           "componentKind": "RepeatableBlock",
           "label": "",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -16143,8 +16913,10 @@
           "componentKind": "RepeatableBlock",
           "label": "",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -16187,6 +16959,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": null
@@ -16202,6 +16976,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16234,6 +17010,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16266,6 +17044,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16298,6 +17078,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16330,6 +17112,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16362,6 +17146,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16394,6 +17180,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16426,6 +17214,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16458,6 +17248,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16490,6 +17282,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16522,6 +17316,8 @@
           "label": "CONTACT US",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16554,6 +17350,8 @@
           "label": "LINKEDIN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16586,6 +17384,8 @@
           "label": "INSTAGRAM",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16618,6 +17418,8 @@
           "label": "SERVICES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16650,6 +17452,8 @@
           "label": "CASE STUDIES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16682,6 +17486,8 @@
           "label": "REVIEWS",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16714,6 +17520,8 @@
           "label": "PRIVACY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16746,6 +17554,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16778,6 +17588,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16810,6 +17622,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16842,6 +17656,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16874,6 +17690,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16906,6 +17724,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16938,6 +17758,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -16970,6 +17792,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17002,6 +17826,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17034,6 +17860,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17066,6 +17894,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17098,6 +17928,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17130,6 +17962,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17162,6 +17996,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17194,6 +18030,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17226,6 +18064,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17258,6 +18098,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17290,6 +18132,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17322,6 +18166,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17354,6 +18200,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17386,6 +18234,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17418,6 +18268,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17450,6 +18302,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17482,6 +18336,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17514,6 +18370,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17546,6 +18404,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17578,6 +18438,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17610,6 +18472,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17642,6 +18506,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17674,6 +18540,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17706,6 +18574,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17738,6 +18608,8 @@
           "label": "LSA MANAGEMENT",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17770,6 +18642,8 @@
           "label": "555-GET-LEADS",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17802,6 +18676,8 @@
           "label": "hello@donedeal.digital",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17834,6 +18710,8 @@
           "label": "Austin, Texas",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17866,6 +18744,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17898,6 +18778,8 @@
           "label": "LOCAL SEO",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17930,6 +18812,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17962,6 +18846,8 @@
           "label": "(555) 123-4567",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -17994,6 +18880,8 @@
           "label": "STRATEGY SESSION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18026,6 +18914,8 @@
           "label": "CASE STUDIES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18058,6 +18948,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18090,6 +18982,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18122,6 +19016,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18154,6 +19050,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18186,6 +19084,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18218,6 +19118,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18250,6 +19152,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18282,6 +19186,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18314,6 +19220,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18346,6 +19254,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18378,6 +19288,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18410,6 +19322,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18442,6 +19356,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18474,6 +19390,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18506,6 +19424,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18538,6 +19458,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18570,6 +19492,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18602,6 +19526,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18634,6 +19560,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18666,6 +19594,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18698,6 +19628,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18730,6 +19662,8 @@
           "label": "WEB DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18762,6 +19696,8 @@
           "label": "SEO FOR TRADES",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18794,6 +19730,8 @@
           "label": "LEAD GENERATION",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18826,6 +19764,8 @@
           "label": "LOGO DESIGN",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18858,6 +19798,8 @@
           "label": "PRIVACY POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18890,6 +19832,8 @@
           "label": "TERMS OF SERVICE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18922,6 +19866,8 @@
           "label": "COOKIE POLICY",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -18962,8 +19908,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -18979,8 +19927,10 @@
           "componentKind": "FooterMeta",
           "label": "Built for the bold.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19013,8 +19963,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19047,8 +19999,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19081,8 +20035,10 @@
           "componentKind": "FooterMeta",
           "label": "Dallas, TX",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19115,8 +20071,10 @@
           "componentKind": "FooterMeta",
           "label": "(555) 123-4567",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19149,8 +20107,10 @@
           "componentKind": "FooterMeta",
           "label": "hello@donedeal.com",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19183,8 +20143,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. NO FLUFF. JUST WORK.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19217,8 +20179,10 @@
           "componentKind": "FooterMeta",
           "label": "STAY BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19251,8 +20215,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19285,8 +20251,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19319,8 +20287,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19353,8 +20323,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19387,8 +20359,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19421,8 +20395,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19455,8 +20431,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19489,8 +20467,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19523,8 +20503,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. REPUTATION IS EVERYTHING.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19557,8 +20539,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19591,8 +20575,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19625,8 +20611,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19659,8 +20647,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19693,8 +20683,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19727,8 +20719,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19761,8 +20755,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19795,8 +20791,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19829,8 +20827,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19863,8 +20863,10 @@
           "componentKind": "FooterMeta",
           "label": "© 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19897,8 +20899,10 @@
           "componentKind": "FooterMeta",
           "label": "BUILT FOR THE BOLD.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -19940,8 +20944,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Page not found",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "without-heading"
           ],
@@ -19957,8 +20963,10 @@
           "componentKind": "RepeatableBlock",
           "label": "The page you are looking for doesn’t exist.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "without-heading"
           ],
@@ -20000,8 +21008,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Most agencies speak a different language. They hide behind \"impressions,\" \"reach",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20017,8 +21027,10 @@
           "componentKind": "RepeatableBlock",
           "label": "We founded Done Deal Digital because we saw contractors getting burned. We bring",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20060,8 +21072,10 @@
           "componentKind": "IconCard",
           "label": "TOTAL ACCOUNTABILITY",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-heavy",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20077,8 +21091,10 @@
           "componentKind": "IconCard",
           "label": "RADICAL CLARITY",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-heavy",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20111,8 +21127,10 @@
           "componentKind": "IconCard",
           "label": "NO MARKETING THEATER",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-heavy",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20145,8 +21163,10 @@
           "componentKind": "IconCard",
           "label": "1. WE SHOW UP",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -20179,8 +21199,10 @@
           "componentKind": "IconCard",
           "label": "2. CLEAR SCOPE",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -20213,8 +21235,10 @@
           "componentKind": "IconCard",
           "label": "3. HARD TRUTHS",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -20247,8 +21271,10 @@
           "componentKind": "IconCard",
           "label": "4. BUILT FOR USE",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -20281,8 +21307,10 @@
           "componentKind": "IconCard",
           "label": "5. POST-LAUNCH",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -20315,8 +21343,10 @@
           "componentKind": "IconCard",
           "label": "GBP FOUNDATION",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-transparent",
+            "border-medium",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20349,8 +21379,10 @@
           "componentKind": "IconCard",
           "label": "ON-PAGE SEO",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-transparent",
+            "border-medium",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20383,8 +21415,10 @@
           "componentKind": "IconCard",
           "label": "CITATIONS",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-transparent",
+            "border-medium",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20417,8 +21451,10 @@
           "componentKind": "IconCard",
           "label": "LOST TRUST",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20451,8 +21487,10 @@
           "componentKind": "IconCard",
           "label": "LOST PATIENCE",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20485,8 +21523,10 @@
           "componentKind": "IconCard",
           "label": "LOST RANKINGS",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20519,8 +21559,10 @@
           "componentKind": "IconCard",
           "label": "LOST REVENUE",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20562,8 +21604,10 @@
           "componentKind": "ImageCard",
           "label": "THE STRATEGIST",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20579,8 +21623,10 @@
           "componentKind": "ImageCard",
           "label": "THE ARCHITECT",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20613,8 +21659,10 @@
           "componentKind": "ImageCard",
           "label": "200% INCREASE IN CALLS IN 90 DAYS",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20647,8 +21695,10 @@
           "componentKind": "ImageCard",
           "label": "DOMINATING LOCAL SEARCH FOR A/C REPAIR",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20681,8 +21731,10 @@
           "componentKind": "ImageCard",
           "label": "FROM ZERO TO 50 ORGANIC LEADS PER MONTH",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -20724,8 +21776,10 @@
           "componentKind": "FeatureItem",
           "label": "COMMUNICATION Direct access to the founders. No ticketing systems or entry-level",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20741,8 +21795,10 @@
           "componentKind": "FeatureItem",
           "label": "RESPONSE TIMES Emergency issues handled same-day. General inquiries within 24 bu",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20775,8 +21831,10 @@
           "componentKind": "FeatureItem",
           "label": "REVISIONS We iterate until it's right. No \"scope creep\" penalties for minor adju",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20809,8 +21867,10 @@
           "componentKind": "FeatureItem",
           "label": "block NO VANITY METRICS (CLICKS/IMPRESSIONS)",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20843,8 +21903,10 @@
           "componentKind": "FeatureItem",
           "label": "block NO CAMPAIGN LAUNCHES WITHOUT TRACKING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20877,8 +21939,10 @@
           "componentKind": "FeatureItem",
           "label": "block NO LONG-TERM CONTRACTS WITHOUT RESULTS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20911,8 +21975,10 @@
           "componentKind": "FeatureItem",
           "label": "block NO OUTSOURCING TO OVERSEAS CALL CENTERS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20954,8 +22020,10 @@
           "componentKind": "FeatureItem",
           "label": "Direct access to the founders. No ticketing systems or entry-level account manag",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -20971,8 +22039,10 @@
           "componentKind": "FeatureItem",
           "label": "Emergency issues handled same-day. General inquiries within 24 business hours.",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21005,8 +22075,10 @@
           "componentKind": "FeatureItem",
           "label": "We iterate until it's right. No \"scope creep\" penalties for minor adjustments th",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21039,8 +22111,10 @@
           "componentKind": "FeatureItem",
           "label": "DAYS 0-30 FOUNDATION",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21073,8 +22147,10 @@
           "componentKind": "FeatureItem",
           "label": "DAYS 30-60 INDEXING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21107,8 +22183,10 @@
           "componentKind": "FeatureItem",
           "label": "DAYS 60-120 VELOCITY",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-accent",
+            "border-medium",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21141,8 +22219,10 @@
           "componentKind": "FeatureItem",
           "label": "SCALING MARKET LEADER",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-accent",
+            "border-medium",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21185,6 +22265,9 @@
           "label": "All Work",
           "variantTraits": [
             "filled",
+            "button-solid",
+            "bg-dark",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -21202,6 +22285,9 @@
           "label": "HVAC",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -21236,6 +22322,9 @@
           "label": "Roofing",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -21270,6 +22359,9 @@
           "label": "Plumbing",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -21304,6 +22396,9 @@
           "label": "Electricians",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -21338,6 +22433,9 @@
           "label": "Solar",
           "variantTraits": [
             "outlined",
+            "button-outline",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "without-icon",
             "uppercase"
@@ -21380,8 +22478,10 @@
           "componentKind": "ContentCard",
           "label": "STARTING POINT",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -21397,8 +22497,10 @@
           "componentKind": "ContentCard",
           "label": "WHAT WE CHANGED",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -21431,8 +22533,10 @@
           "componentKind": "ContentCard",
           "label": "THE RESULTS",
           "variantTraits": [
+            "bg-dark",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -21753,6 +22857,9 @@
           "label": "phone_in_talk CALL US DIRECTLY (555) 123-4567",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "with-icon",
             "sentence-case"
@@ -21770,6 +22877,9 @@
           "label": "mail EMAIL OUR TEAM hello@donedealdigital.com",
           "variantTraits": [
             "text-only",
+            "button-text",
+            "bg-transparent",
+            "shadow-none",
             "height-lg",
             "with-icon",
             "sentence-case"
@@ -21812,8 +22922,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Email Our Team",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21829,8 +22941,10 @@
           "componentKind": "RepeatableBlock",
           "label": "hello@donedealdigital.com",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21872,8 +22986,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Contact Info: Name, business name, email, and phone number for project in",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21889,8 +23005,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Technical Data: Browser type, operating system, and IP address for site s",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21923,8 +23041,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Usage Data: How you navigate our blueprints and service pages.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21957,8 +23077,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Contact Info: Name, business name, email, and phone number for project in",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -21991,8 +23113,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Technical Data: Browser type, operating system, and IP address for site s",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22025,8 +23149,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Usage Data: How you navigate our blueprints and service pages.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22059,8 +23185,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Contact Info: Name, business name, email, and phone number for project in",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22093,8 +23221,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Technical Data: Browser type, operating system, and IP address for site s",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22127,8 +23257,10 @@
           "componentKind": "LegalBulletItem",
           "label": "square Usage Data: How you navigate our blueprints and service pages.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22170,8 +23302,10 @@
           "componentKind": "LegalTextBlock",
           "label": "INFORMATION WE COLLECT",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -22187,8 +23321,10 @@
           "componentKind": "LegalTextBlock",
           "label": "THIRD-PARTY PROCESSORS",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -22221,8 +23357,10 @@
           "componentKind": "LegalTextBlock",
           "label": "This Privacy Policy describes how Done Deal Digital (\"we\", \"us\", or \"our\") colle",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22255,8 +23393,10 @@
           "componentKind": "LegalTextBlock",
           "label": "When you visit the site, we automatically collect certain information about your",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22289,8 +23429,10 @@
           "componentKind": "LegalTextBlock",
           "label": "We share your Personal Information with third parties to help us use your Person",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22323,8 +23465,10 @@
           "componentKind": "LegalTextBlock",
           "label": "By accessing this website, you are agreeing to be bound by these website Terms a",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22357,8 +23501,10 @@
           "componentKind": "LegalTextBlock",
           "label": "Our digital marketing services are specifically designed for trade professionals",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22391,8 +23537,10 @@
           "componentKind": "LegalTextBlock",
           "label": "Cookies are small pieces of text sent by your web browser by a website you visit",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22425,8 +23573,10 @@
           "componentKind": "LegalTextBlock",
           "label": "We use cookies to understand site usage and to improve the content and offerings",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22459,8 +23609,10 @@
           "componentKind": "LegalTextBlock",
           "label": "INFORMATION WE COLLECT",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -22493,8 +23645,10 @@
           "componentKind": "LegalTextBlock",
           "label": "THIRD-PARTY PROCESSORS",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -22527,8 +23681,10 @@
           "componentKind": "LegalTextBlock",
           "label": "This Privacy Policy describes how Done Deal Digital (\"we\", \"us\", or \"our\") colle",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22561,8 +23717,10 @@
           "componentKind": "LegalTextBlock",
           "label": "When you visit the site, we automatically collect certain information about your",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22595,8 +23753,10 @@
           "componentKind": "LegalTextBlock",
           "label": "We share your Personal Information with third parties to help us use your Person",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22629,8 +23789,10 @@
           "componentKind": "LegalTextBlock",
           "label": "By accessing this website, you are agreeing to be bound by these website Terms a",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22663,8 +23825,10 @@
           "componentKind": "LegalTextBlock",
           "label": "Our digital marketing services are specifically designed for trade professionals",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22697,8 +23861,10 @@
           "componentKind": "LegalTextBlock",
           "label": "Cookies are small pieces of text sent by your web browser by a website you visit",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22731,8 +23897,10 @@
           "componentKind": "LegalTextBlock",
           "label": "We use cookies to understand site usage and to improve the content and offerings",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22765,8 +23933,10 @@
           "componentKind": "LegalTextBlock",
           "label": "INFORMATION WE COLLECT",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -22799,8 +23969,10 @@
           "componentKind": "LegalTextBlock",
           "label": "THIRD-PARTY PROCESSORS",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -22833,8 +24005,10 @@
           "componentKind": "LegalTextBlock",
           "label": "This Privacy Policy describes how Done Deal Digital (\"we\", \"us\", or \"our\") colle",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22867,8 +24041,10 @@
           "componentKind": "LegalTextBlock",
           "label": "When you visit the site, we automatically collect certain information about your",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22901,8 +24077,10 @@
           "componentKind": "LegalTextBlock",
           "label": "We share your Personal Information with third parties to help us use your Person",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22935,8 +24113,10 @@
           "componentKind": "LegalTextBlock",
           "label": "By accessing this website, you are agreeing to be bound by these website Terms a",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -22969,8 +24149,10 @@
           "componentKind": "LegalTextBlock",
           "label": "Our digital marketing services are specifically designed for trade professionals",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23003,8 +24185,10 @@
           "componentKind": "LegalTextBlock",
           "label": "Cookies are small pieces of text sent by your web browser by a website you visit",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23037,8 +24221,10 @@
           "componentKind": "LegalTextBlock",
           "label": "We use cookies to understand site usage and to improve the content and offerings",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23080,8 +24266,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Google Analytics ANALYTICS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23097,8 +24285,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Meta Pixel MARKETING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23131,8 +24321,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Mailchimp COMMUNICATIONS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23165,8 +24357,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Google Analytics ANALYTICS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23199,8 +24393,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Meta Pixel MARKETING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23233,8 +24429,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Mailchimp COMMUNICATIONS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23267,8 +24465,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Google Analytics ANALYTICS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23301,8 +24501,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Meta Pixel MARKETING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23335,8 +24537,10 @@
           "componentKind": "LegalBulletItem",
           "label": "Mailchimp COMMUNICATIONS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23378,8 +24582,10 @@
           "componentKind": "LegalTextBlock",
           "label": "USER LICENSE",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -23395,8 +24601,10 @@
           "componentKind": "LegalTextBlock",
           "label": "LIMITATIONS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -23429,8 +24637,10 @@
           "componentKind": "LegalTextBlock",
           "label": "USER LICENSE",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -23463,8 +24673,10 @@
           "componentKind": "LegalTextBlock",
           "label": "LIMITATIONS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -23497,8 +24709,10 @@
           "componentKind": "LegalTextBlock",
           "label": "USER LICENSE",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -23531,8 +24745,10 @@
           "componentKind": "LegalTextBlock",
           "label": "LIMITATIONS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-dark",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -23574,8 +24790,10 @@
           "componentKind": "LegalInfoRow",
           "label": "mail legal@donedealdigital.com",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23591,8 +24809,10 @@
           "componentKind": "LegalInfoRow",
           "label": "location_on 123 INDUSTRIAL WAY, SUITE 400",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23625,8 +24845,10 @@
           "componentKind": "LegalInfoRow",
           "label": "mail legal@donedealdigital.com",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23659,8 +24881,10 @@
           "componentKind": "LegalInfoRow",
           "label": "location_on 123 INDUSTRIAL WAY, SUITE 400",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23693,8 +24917,10 @@
           "componentKind": "LegalInfoRow",
           "label": "mail legal@donedealdigital.com",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23727,8 +24953,10 @@
           "componentKind": "LegalInfoRow",
           "label": "location_on 123 INDUSTRIAL WAY, SUITE 400",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -23771,6 +24999,8 @@
           "label": "HOW LONG DOES A TYPICAL BUILD TAKE? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": null
@@ -23786,6 +25016,8 @@
           "label": "WHAT DO I NEED TO PROVIDE? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": {
@@ -23818,6 +25050,8 @@
           "label": "DO I OWN MY WEBSITE AND ASSETS? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": {
@@ -23850,6 +25084,8 @@
           "label": "IS THERE A LONG-TERM CONTRACT? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": {
@@ -23882,6 +25118,8 @@
           "label": "HOW DO WE COMMUNICATE? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": {
@@ -23914,6 +25152,8 @@
           "label": "CAN YOU GUARANTEE A #1 RANKING ON GOOGLE? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": {
@@ -23946,6 +25186,8 @@
           "label": "HOW SOON WILL I SEE MORE LEADS? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": {
@@ -23978,6 +25220,8 @@
           "label": "WILL MY SITE WORK ON MOBILE? add_box",
           "variantTraits": [
             "with-icon",
+            "bg-light",
+            "shadow-offset",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24018,8 +25262,10 @@
           "componentKind": "CredibilityItem",
           "label": "ACCREDITED",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -24035,8 +25281,10 @@
           "componentKind": "CredibilityItem",
           "label": "GOOGLE PARTNER",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -24069,8 +25317,10 @@
           "componentKind": "CredibilityItem",
           "label": "TRADES ALLIANCE",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -24103,8 +25353,10 @@
           "componentKind": "CredibilityItem",
           "label": "ROOFING ASSOC",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -24137,8 +25389,10 @@
           "componentKind": "CredibilityItem",
           "label": "MASTER BUILDERS",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -24180,8 +25434,10 @@
           "componentKind": "ComparisonPanel",
           "label": "BEST FIT",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -24197,8 +25453,10 @@
           "componentKind": "ComparisonPanel",
           "label": "POOR FIT",
           "variantTraits": [
+            "bg-light",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -24231,8 +25489,10 @@
           "componentKind": "ComparisonPanel",
           "label": "check_circle BEST FIT",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -24265,8 +25525,10 @@
           "componentKind": "ComparisonPanel",
           "label": "cancel POOR FIT",
           "variantTraits": [
+            "bg-light",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -24299,8 +25561,10 @@
           "componentKind": "ComparisonPanel",
           "label": "check_circle BEST FIT",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-medium",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -24333,8 +25597,10 @@
           "componentKind": "ComparisonPanel",
           "label": "cancel NOT THE RIGHT FIT",
           "variantTraits": [
+            "bg-light",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -24377,6 +25643,8 @@
           "label": "check_circle ANSWERS PHONE QUICKLY & PROFESSIONALLY",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": null
@@ -24392,6 +25660,8 @@
           "label": "check_circle CAN HANDLE 10+ NEW LEADS PER WEEK",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24424,6 +25694,8 @@
           "label": "check_circle STRONG LOCAL REPUTATION & REVIEWS",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24456,6 +25728,8 @@
           "label": "check_circle WANTS HIGH-VALUE INSTALL JOBS",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24488,6 +25762,8 @@
           "label": "cancel WEAK OFFER OR BAD ONLINE REPUTATION",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24520,6 +25796,8 @@
           "label": "cancel LETS CALLS GO TO VOICEMAIL CONSTANTLY",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24552,6 +25830,8 @@
           "label": "cancel UNWILLING TO TRACK ROI OR LEAD SOURCES",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24584,6 +25864,8 @@
           "label": "cancel LOOKING FOR A \"MAGIC BULLET\"",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24616,6 +25898,8 @@
           "label": "Established Trades (Plumbing, Roofing, HVAC)",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24648,6 +25932,8 @@
           "label": "Physical Office or Service Area Businesses",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24680,6 +25966,8 @@
           "label": "Ready to handle 5-10 new calls per week",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24712,6 +26000,8 @@
           "label": "E-commerce or National-only brands",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24744,6 +26034,8 @@
           "label": "Side-hustlers without a business license",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24776,6 +26068,8 @@
           "label": "Businesses that don't answer the phone",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24808,6 +26102,8 @@
           "label": "PLUMBERS, ROOFERS, & ELECTRICIANS",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24840,6 +26136,8 @@
           "label": "BUSINESSES WITH AN OUTDATED WEBSITE",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24872,6 +26170,8 @@
           "label": "OWNERS WANTING MORE PHONE CALLS",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24904,6 +26204,8 @@
           "label": "SERVICE PROS READY TO SCALE STAFF",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24936,6 +26238,8 @@
           "label": "ECOMMERCE STORES & DROPSHIPPING",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -24968,6 +26272,8 @@
           "label": "NATIONAL SAAS OR TECH STARTUPS",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25000,6 +26306,8 @@
           "label": "PERSONAL LIFESTYLE BLOGGERS",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25032,6 +26340,8 @@
           "label": "COMPANIES LOOKING FOR \"CHEAP AS POSSIBLE\"",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25072,8 +26382,10 @@
           "componentKind": "ContentCard",
           "label": "\"BOOSTED\" POSTS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25089,8 +26401,10 @@
           "componentKind": "ContentCard",
           "label": "LAZY LANDING PAGES",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25123,8 +26437,10 @@
           "componentKind": "ContentCard",
           "label": "ZERO TRACKING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-light",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25157,8 +26473,10 @@
           "componentKind": "ContentCard",
           "label": "BUSINESS INFO",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25191,8 +26509,10 @@
           "componentKind": "ContentCard",
           "label": "GBP SIGNALS",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25225,8 +26545,10 @@
           "componentKind": "ContentCard",
           "label": "SERVICE PAGES",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25259,8 +26581,10 @@
           "componentKind": "ContentCard",
           "label": "REVIEW QUALITY",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25293,8 +26617,10 @@
           "componentKind": "ContentCard",
           "label": "TRUST SIGNALS",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25327,8 +26653,10 @@
           "componentKind": "ContentCard",
           "label": "MEASUREMENT",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25361,8 +26689,10 @@
           "componentKind": "ContentCard",
           "label": "REVIEW",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25395,8 +26725,10 @@
           "componentKind": "ContentCard",
           "label": "DISCOVERY CALL",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25429,8 +26761,10 @@
           "componentKind": "ContentCard",
           "label": "ACTION PLAN",
           "variantTraits": [
-            "bordered",
-            "shadowed",
+            "bg-light",
+            "border-thin",
+            "shadow-offset",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -25463,8 +26797,10 @@
           "componentKind": "ContentCard",
           "label": "FIT CALL",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -25497,8 +26833,10 @@
           "componentKind": "ContentCard",
           "label": "KICKOFF",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -25531,8 +26869,10 @@
           "componentKind": "ContentCard",
           "label": "DESIGN/BUILD",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -25565,8 +26905,10 @@
           "componentKind": "ContentCard",
           "label": "REVIEW",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -25599,8 +26941,10 @@
           "componentKind": "ContentCard",
           "label": "LAUNCH",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -25643,6 +26987,8 @@
           "label": "Review Profile Optimization",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": null
@@ -25658,6 +27004,8 @@
           "label": "Weekly Ranking Audits",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25690,6 +27038,8 @@
           "label": "Call Tracking Integration",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25722,6 +27072,8 @@
           "label": "A/B Split Testing",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25754,6 +27106,8 @@
           "label": "Lightning-Fast Mobile Loads",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25786,6 +27140,8 @@
           "label": "Dynamic Text Replacement",
           "variantTraits": [
             "without-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -25826,8 +27182,10 @@
           "componentKind": "ContentCard",
           "label": "RAW LEAD",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -25843,8 +27201,10 @@
           "componentKind": "ContentCard",
           "label": "COST PER LEAD",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "centered",
             "with-heading"
           ],
@@ -25886,8 +27246,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Every phone call and form fill tracked directly to an ad source. No guessing.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "without-heading"
           ],
@@ -25903,8 +27265,10 @@
           "componentKind": "RepeatableBlock",
           "label": "A lead that actually lives in your service area and needs the high-margin work y",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "without-heading"
           ],
@@ -25937,8 +27301,10 @@
           "componentKind": "RepeatableBlock",
           "label": "03. THE BOTTOM LINE",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "without-heading"
           ],
@@ -25971,8 +27337,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Total spend divided by qualified leads. This is the only number that dictates yo",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "centered",
             "without-heading"
           ],
@@ -26005,8 +27373,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Small budgets can fail.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26039,8 +27409,10 @@
           "componentKind": "RepeatableBlock",
           "label": "If you aren't willing to spend enough to get meaningful data, the search engines",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26073,8 +27445,10 @@
           "componentKind": "RepeatableBlock",
           "label": "The first few weeks are for learning.",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26107,8 +27481,10 @@
           "componentKind": "RepeatableBlock",
           "label": "No campaign is perfect on day one. We spend the first 30 days aggressively pruni",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26141,8 +27517,10 @@
           "componentKind": "RepeatableBlock",
           "label": "We need your feedback on lead quality. If we're sending you tire-kickers, tell u",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26184,8 +27562,10 @@
           "componentKind": "RepeatableBlock",
           "label": "warning SMALL BUDGETS CAN FAIL. If you aren't willing to spend enough to get mea",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26201,8 +27581,10 @@
           "componentKind": "RepeatableBlock",
           "label": "schedule THE FIRST FEW WEEKS ARE FOR LEARNING. No campaign is perfect on day one",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26235,8 +27617,10 @@
           "componentKind": "RepeatableBlock",
           "label": "forum COMMUNICATION IS KEY. We need your feedback on lead quality. If we're send",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26278,8 +27662,10 @@
           "componentKind": "ContentCard",
           "label": "DUPLICATE LISTINGS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -26295,8 +27681,10 @@
           "componentKind": "ContentCard",
           "label": "KEYWORD STUFFING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -26329,8 +27717,10 @@
           "componentKind": "ContentCard",
           "label": "BROKEN LINKS",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -26363,8 +27753,10 @@
           "componentKind": "ContentCard",
           "label": "IMAGE METADATA",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -26397,8 +27789,10 @@
           "componentKind": "ContentCard",
           "label": "RESPONSE TIME",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -26441,6 +27835,8 @@
           "label": "block WE WILL NOT SELL YOU \"GUARANTEED #1\" OVERNIGHT RANKINGS.",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": null
@@ -26456,6 +27852,8 @@
           "label": "block WE WILL NOT HIDE OUR WORK BEHIND LOCKED DASHBOARDS.",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -26488,6 +27886,8 @@
           "label": "block WE WILL NOT USE BLACK-HAT BOTS THAT GET YOU BANNED.",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -26520,6 +27920,8 @@
           "label": "block WE WILL NOT CHARGE FOR REPORTS YOU DON'T UNDERSTAND.",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -26560,8 +27962,10 @@
           "componentKind": "FooterColumnHeading",
           "label": "SERVICES",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -26577,8 +27981,10 @@
           "componentKind": "FooterColumnHeading",
           "label": "CONNECT",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "with-heading"
           ],
@@ -26620,8 +28026,10 @@
           "componentKind": "HeroChecklistItem",
           "label": "check_box MOBILE-FIRST",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26637,8 +28045,10 @@
           "componentKind": "HeroChecklistItem",
           "label": "check_box COPY GUIDANCE",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26671,8 +28081,10 @@
           "componentKind": "HeroChecklistItem",
           "label": "check_box 2-3 WEEK LAUNCH",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26714,8 +28126,10 @@
           "componentKind": "FeatureItem",
           "label": "description 5 CORE SERVICE PAGES",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26731,8 +28145,10 @@
           "componentKind": "FeatureItem",
           "label": "devices MOBILE-FIRST DESIGN",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26765,8 +28181,10 @@
           "componentKind": "FeatureItem",
           "label": "dynamic_form LEAD FORM SETUP",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26799,8 +28217,10 @@
           "componentKind": "FeatureItem",
           "label": "search_check ON-PAGE SEO SETUP",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26833,8 +28253,10 @@
           "componentKind": "FeatureItem",
           "label": "bolt LIGHTNING FAST HOSTING",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26867,8 +28289,10 @@
           "componentKind": "FeatureItem",
           "label": "security SSL SECURITY CERTIFICATE",
           "variantTraits": [
-            "bordered",
-            "flat",
+            "bg-transparent",
+            "border-thin",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -26911,6 +28335,8 @@
           "label": "No Logo Design",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": null
@@ -26926,6 +28352,8 @@
           "label": "No Unlimited Revisions",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -26958,6 +28386,8 @@
           "label": "No Social Media Mgmt",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -26990,6 +28420,8 @@
           "label": "No Custom Photography",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -27022,6 +28454,8 @@
           "label": "No Video Production",
           "variantTraits": [
             "with-icon",
+            "bg-transparent",
+            "shadow-none",
             "left-aligned"
           ],
           "representativeScores": {
@@ -27062,8 +28496,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Template sites focus on \"Pretty\". We focus on \"Conversions\".",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
@@ -27079,8 +28515,10 @@
           "componentKind": "RepeatableBlock",
           "label": "Anyone can buy a $50 template. But a template doesn't know how a homeowner think",
           "variantTraits": [
+            "bg-transparent",
             "borderless",
-            "flat",
+            "shadow-none",
+            "radius-none",
             "left-aligned",
             "without-heading"
           ],
