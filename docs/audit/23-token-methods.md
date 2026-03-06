@@ -8,6 +8,6 @@
 - Existing tokens with no observed matches are still reported so dead or overly-specific tokens are visible.
 
 Summary:
-- Atlas properties: **589**
+- Atlas properties: **94**
 - Tokens parsed: **118**
-- Decision items: **210**
+- Decision items: **306**

@@ -15,12 +15,12 @@ const tokenGroupWeights = {
 };
 const valueKindOrder = ["color", "shadow", "length", "number", "font-family", "image", "keyword"];
 const actionablePropertyPatterns = [
-  /^background-/,
+  /^background-(color|image|position|repeat|size)$/,
   /^color$/,
   /^border-/,
   /^box-shadow$/,
   /^text-shadow$/,
-  /^font-/,
+  /^font-(family|size|style|weight)$/,
   /^line-height$/,
   /^letter-spacing$/,
   /^text-(align|transform|wrap|indent|underline-offset|decoration-thickness)$/,
@@ -140,6 +140,17 @@ function inferSemanticGroup(property) {
   const normalizedProperty = normalizeWhitespace(property).toLowerCase();
 
   if (
+    normalizedProperty.startsWith("font") ||
+    normalizedProperty.startsWith("line-") ||
+    normalizedProperty.startsWith("letter-") ||
+    normalizedProperty.startsWith("text-") ||
+    normalizedProperty.startsWith("word-") ||
+    normalizedProperty === "white-space"
+  ) {
+    return "type";
+  }
+
+  if (
     normalizedProperty.includes("color") ||
     ["fill", "stroke", "caret-color", "accent-color"].includes(normalizedProperty)
   ) {
@@ -164,6 +175,14 @@ function inferSemanticGroup(property) {
   }
 
   if (
+    normalizedProperty.includes("border") ||
+    normalizedProperty.includes("outline") ||
+    normalizedProperty.includes("column-rule")
+  ) {
+    return "border";
+  }
+
+  if (
     normalizedProperty.includes("width") ||
     normalizedProperty.includes("height") ||
     normalizedProperty.includes("size") ||
@@ -174,25 +193,6 @@ function inferSemanticGroup(property) {
 
   if (normalizedProperty.includes("radius")) {
     return "radius";
-  }
-
-  if (
-    normalizedProperty.includes("border") ||
-    normalizedProperty.includes("outline") ||
-    normalizedProperty.includes("column-rule")
-  ) {
-    return "border";
-  }
-
-  if (
-    normalizedProperty.startsWith("font") ||
-    normalizedProperty.startsWith("line-") ||
-    normalizedProperty.startsWith("letter-") ||
-    normalizedProperty.startsWith("text-") ||
-    normalizedProperty.startsWith("word-") ||
-    normalizedProperty === "white-space"
-  ) {
-    return "type";
   }
 
   if (
@@ -242,7 +242,329 @@ function isActionablePropertyName(property) {
     return false;
   }
 
+  if (
+    normalizedProperty.startsWith("border-image-") ||
+    [
+      "background-attachment",
+      "background-blend-mode",
+      "background-clip",
+      "background-origin",
+      "border-collapse",
+      "font-stretch",
+      "overflow-anchor",
+      "overflow-clip-margin",
+      "overflow-wrap",
+      "transform-origin",
+    ].includes(normalizedProperty)
+  ) {
+    return false;
+  }
+
   return actionablePropertyPatterns.some((pattern) => pattern.test(normalizedProperty));
+}
+
+function isGridDisplay(profile) {
+  const display = normalizeWhitespace(profile?.display || "").toLowerCase();
+  return display === "grid" || display === "inline-grid";
+}
+
+function isFlexDisplay(profile) {
+  const display = normalizeWhitespace(profile?.display || "").toLowerCase();
+  return display === "flex" || display === "inline-flex";
+}
+
+function isPositioned(profile) {
+  const position = normalizeWhitespace(profile?.position || "").toLowerCase();
+  return ["relative", "absolute", "fixed", "sticky"].includes(position);
+}
+
+function hasBackgroundImage(profile) {
+  const backgroundImage = normalizeWhitespace(profile?.["background-image"] || "").toLowerCase();
+  return Boolean(backgroundImage) && backgroundImage !== "none";
+}
+
+function hasVisibleOutline(profile) {
+  const outlineWidth = normalizeWhitespace(profile?.["outline-width"] || "").toLowerCase();
+  const outlineStyle = normalizeWhitespace(profile?.["outline-style"] || "").toLowerCase();
+  return !["", "0", "0px"].includes(outlineWidth) && outlineStyle !== "none";
+}
+
+function isTransparentColorValue(value) {
+  const normalized = normalizeWhitespace(value).toLowerCase();
+  return !normalized || normalized === "transparent" || normalized === "rgba(0, 0, 0, 0)";
+}
+
+function splitLayers(value) {
+  return normalizeWhitespace(value)
+    .split(/\s*,\s*/)
+    .map((layer) => layer.trim().toLowerCase())
+    .filter(Boolean);
+}
+
+function layersMatch(value, predicate) {
+  const layers = splitLayers(value);
+  return layers.length > 0 && layers.every(predicate);
+}
+
+function getRelatedBorderWidth(property, profile) {
+  if (property.includes("top")) {
+    return normalizeWhitespace(profile?.["border-top-width"] || "");
+  }
+
+  if (property.includes("right") || property.includes("inline-end")) {
+    return normalizeWhitespace(profile?.["border-right-width"] || "");
+  }
+
+  if (property.includes("bottom") || property.includes("block-end")) {
+    return normalizeWhitespace(profile?.["border-bottom-width"] || "");
+  }
+
+  if (property.includes("left") || property.includes("inline-start")) {
+    return normalizeWhitespace(profile?.["border-left-width"] || "");
+  }
+
+  return "";
+}
+
+function isMaterialPropertyValue(property, rawValue, profile) {
+  const normalizedProperty = normalizeWhitespace(property).toLowerCase();
+  const normalizedValue = normalizeWhitespace(rawValue).toLowerCase();
+
+  if (!normalizedValue) {
+    return false;
+  }
+
+  if (normalizedProperty === "display") {
+    return !["block", "inline", "inline-block", "table", "table-row", "table-cell", "list-item"].includes(
+      normalizedValue,
+    );
+  }
+
+  if (normalizedProperty === "position") {
+    return normalizedValue !== "static";
+  }
+
+  if (["top", "right", "bottom", "left"].includes(normalizedProperty)) {
+    return isPositioned(profile) && normalizedValue !== "auto";
+  }
+
+  if (normalizedProperty === "z-index") {
+    return normalizedValue !== "auto";
+  }
+
+  if (normalizedProperty.startsWith("grid-")) {
+    if (!isGridDisplay(profile)) {
+      return false;
+    }
+
+    if (
+      ["grid-template-columns", "grid-template-rows", "grid-auto-columns", "grid-auto-rows"].includes(
+        normalizedProperty,
+      )
+    ) {
+      return !["none", "auto"].includes(normalizedValue);
+    }
+
+    if (["grid-auto-flow"].includes(normalizedProperty)) {
+      return normalizedValue !== "row";
+    }
+
+    return normalizedValue !== "auto";
+  }
+
+  if (["gap", "row-gap", "column-gap"].includes(normalizedProperty)) {
+    return (isGridDisplay(profile) || isFlexDisplay(profile)) && !["normal", "0px", "0"].includes(normalizedValue);
+  }
+
+  if (normalizedProperty.startsWith("flex-")) {
+    if (!isFlexDisplay(profile)) {
+      return false;
+    }
+
+    if (normalizedProperty === "flex-direction") {
+      return normalizedValue !== "row";
+    }
+
+    if (normalizedProperty === "flex-wrap") {
+      return normalizedValue !== "nowrap";
+    }
+
+    if (normalizedProperty === "flex-grow") {
+      return normalizedValue !== "0";
+    }
+
+    if (normalizedProperty === "flex-shrink") {
+      return normalizedValue !== "1";
+    }
+
+    if (normalizedProperty === "flex-basis") {
+      return normalizedValue !== "auto";
+    }
+  }
+
+  if (
+    normalizedProperty.startsWith("justify-") ||
+    normalizedProperty.startsWith("align-") ||
+    normalizedProperty.startsWith("place-")
+  ) {
+    if (!(isGridDisplay(profile) || isFlexDisplay(profile))) {
+      return false;
+    }
+
+    return !["normal", "stretch", "start", "auto"].includes(normalizedValue);
+  }
+
+  if (normalizedProperty === "background-color") {
+    return !isTransparentColorValue(normalizedValue);
+  }
+
+  if (normalizedProperty === "background-image") {
+    return normalizedValue !== "none";
+  }
+
+  if (normalizedProperty === "background-position") {
+    return (
+      hasBackgroundImage(profile) &&
+      !layersMatch(normalizedValue, (layer) => ["0% 0%", "0px 0px", "left top"].includes(layer))
+    );
+  }
+
+  if (normalizedProperty === "background-repeat") {
+    return hasBackgroundImage(profile) && !layersMatch(normalizedValue, (layer) => layer === "repeat");
+  }
+
+  if (normalizedProperty === "background-size") {
+    return hasBackgroundImage(profile) && !layersMatch(normalizedValue, (layer) => ["auto", "auto auto"].includes(layer));
+  }
+
+  if (normalizedProperty === "box-shadow" || normalizedProperty === "text-shadow") {
+    return normalizedValue !== "none" && normalizedValue !== "0px 0px 0px 0px rgba(0, 0, 0, 0)";
+  }
+
+  if (normalizedProperty.startsWith("border-") && normalizedProperty.endsWith("-width")) {
+    return normalizedValue !== "0px" && normalizedValue !== "0";
+  }
+
+  if (normalizedProperty.startsWith("border-") && normalizedProperty.endsWith("-style")) {
+    const width = getRelatedBorderWidth(normalizedProperty, profile);
+    return !["", "0", "0px"].includes(width) && normalizedValue !== "none";
+  }
+
+  if (normalizedProperty.startsWith("border-") && normalizedProperty.endsWith("-color")) {
+    const width = getRelatedBorderWidth(normalizedProperty, profile);
+    return !["", "0", "0px"].includes(width) && !isTransparentColorValue(normalizedValue);
+  }
+
+  if (normalizedProperty.includes("radius")) {
+    return !["0", "0px"].includes(normalizedValue);
+  }
+
+  if (
+    [
+      "width",
+      "height",
+      "min-width",
+      "min-height",
+      "max-width",
+      "max-height",
+      "block-size",
+      "inline-size",
+      "min-block-size",
+      "min-inline-size",
+      "max-block-size",
+      "max-inline-size",
+    ].includes(normalizedProperty)
+  ) {
+    return !["auto", "none", "normal", "0", "0px"].includes(normalizedValue);
+  }
+
+  if (normalizedProperty === "aspect-ratio") {
+    return normalizedValue !== "auto";
+  }
+
+  if (normalizedProperty.startsWith("margin-")) {
+    return normalizedValue !== "0px" && normalizedValue !== "0";
+  }
+
+  if (normalizedProperty.startsWith("padding-")) {
+    return normalizedValue !== "0px" && normalizedValue !== "0";
+  }
+
+  if (normalizedProperty === "font-weight") {
+    return !["400", "normal"].includes(normalizedValue);
+  }
+
+  if (normalizedProperty === "font-style") {
+    return normalizedValue !== "normal";
+  }
+
+  if (normalizedProperty === "line-height") {
+    return normalizedValue !== "normal";
+  }
+
+  if (normalizedProperty === "letter-spacing") {
+    return normalizedValue !== "normal" && normalizedValue !== "0px" && normalizedValue !== "0";
+  }
+
+  if (normalizedProperty === "text-align") {
+    return !["start", "left"].includes(normalizedValue);
+  }
+
+  if (normalizedProperty === "text-transform") {
+    return normalizedValue !== "none";
+  }
+
+  if (normalizedProperty === "text-indent") {
+    return normalizedValue !== "0px" && normalizedValue !== "0";
+  }
+
+  if (normalizedProperty.startsWith("overflow")) {
+    return !["visible", "clip"].includes(normalizedValue);
+  }
+
+  if (normalizedProperty === "object-fit") {
+    return normalizedValue !== "fill";
+  }
+
+  if (normalizedProperty === "opacity") {
+    return normalizedValue !== "1";
+  }
+
+  if (normalizedProperty === "transform" || normalizedProperty === "filter" || normalizedProperty === "backdrop-filter") {
+    return normalizedValue !== "none";
+  }
+
+  if (normalizedProperty === "grid-template-areas") {
+    return normalizedValue !== "none";
+  }
+
+  if (normalizedProperty.startsWith("transition-")) {
+    return !["0s", "all", "ease", "normal"].includes(normalizedValue);
+  }
+
+  if (normalizedProperty.startsWith("outline-")) {
+    if (!hasVisibleOutline(profile)) {
+      return false;
+    }
+
+    if (normalizedProperty.endsWith("-width")) {
+      return normalizedValue !== "0px" && normalizedValue !== "0";
+    }
+
+    if (normalizedProperty.endsWith("-style")) {
+      return normalizedValue !== "none";
+    }
+
+    if (normalizedProperty.endsWith("-color")) {
+      return !isTransparentColorValue(normalizedValue);
+    }
+
+    if (normalizedProperty.endsWith("-offset")) {
+      return normalizedValue !== "0px" && normalizedValue !== "0";
+    }
+  }
+
+  return true;
 }
 
 function parseLengthValue(value) {
@@ -1081,6 +1403,10 @@ function buildPropertyAtlas(pageAudits, familyIndex, tokens, primaryViewportName
     }
 
     for (const [property, rawValue] of Object.entries(profile)) {
+      if (!isActionablePropertyName(property) || !isMaterialPropertyValue(property, rawValue, profile)) {
+        continue;
+      }
+
       const analysis = analyzeValue(property, rawValue);
       const propertyBucket =
         propertyBuckets.get(property) ||
@@ -1502,6 +1828,10 @@ function buildFamilyStyleDeltas(pageAudits, sectionClusters, componentClusters, 
 
     for (const record of records) {
       for (const [property, rawValue] of Object.entries(record.profile)) {
+        if (!isActionablePropertyName(property) || !isMaterialPropertyValue(property, rawValue, record.profile)) {
+          continue;
+        }
+
         const analysis = analyzeValue(property, rawValue);
         const bucket =
           propertyMap.get(property) ||
