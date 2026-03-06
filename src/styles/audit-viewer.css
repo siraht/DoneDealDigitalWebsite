@@ -379,6 +379,107 @@ body.audit-shell {
   gap: 1rem;
 }
 
+.audit-matrix-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.audit-matrix-wrap {
+  overflow: auto;
+  border: 1px solid var(--audit-line);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--audit-shadow);
+}
+
+.audit-matrix {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.audit-matrix th,
+.audit-matrix td {
+  padding: 0.7rem;
+  border-right: 1px solid var(--audit-line);
+  border-bottom: 1px solid var(--audit-line);
+  text-align: center;
+  min-width: 6.25rem;
+}
+
+.audit-matrix thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgba(11, 29, 51, 0.96);
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+}
+
+.audit-matrix th:first-child,
+.audit-matrix td:first-child,
+.audit-matrix tbody th[scope="row"] {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: rgba(255, 248, 239, 0.96);
+  text-align: left;
+  min-width: 16rem;
+  max-width: 16rem;
+  font-size: 0.82rem;
+}
+
+.audit-matrix thead th:first-child {
+  z-index: 4;
+  background: rgba(11, 29, 51, 0.98);
+}
+
+.audit-matrix__cell-button,
+.audit-matrix__cell-empty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 2.6rem;
+  border: 1px solid var(--audit-line-strong);
+  font-weight: 700;
+}
+
+.audit-matrix__cell-button {
+  cursor: pointer;
+  background: rgba(255, 123, 0, 0.12);
+  color: var(--audit-ink);
+}
+
+.audit-matrix__cell-button--multi {
+  background: rgba(255, 123, 0, 0.24);
+  color: var(--audit-accent);
+}
+
+.audit-matrix__cell-button--active {
+  background: var(--audit-accent);
+  color: var(--color-white);
+  border-color: var(--audit-accent);
+}
+
+.audit-matrix__cell-empty {
+  color: rgba(11, 29, 51, 0.4);
+  background: rgba(11, 29, 51, 0.03);
+}
+
+.audit-matrix-dock {
+  border: 1px solid var(--audit-line);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--audit-shadow);
+  padding: 1rem;
+}
+
+.audit-matrix-panel[hidden] {
+  display: none;
+}
+
 .audit-compare-board {
   display: grid;
   grid-template-columns: minmax(18rem, 1fr) minmax(0, 1.7fr);

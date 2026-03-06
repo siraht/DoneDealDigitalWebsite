@@ -1,0 +1,314 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getAuditViewerData } from "../../lib/audit-viewer";
+
+type FamilyCard = ReturnType<typeof getAuditViewerData>["sectionFamilies"][number];
+
+const audit = getAuditViewerData();
+
+function getPageRank(pageName: string) {
+  if (pageName === "index") {
+    return 0;
+  }
+
+  if (pageName === "index_original") {
+    return 1;
+  }
+
+  return 10;
+}
+
+function uniquePages(families: FamilyCard[]) {
+  const pageSet = new Set<string>();
+  for (const family of families) {
+    for (const instance of family.instances) {
+      pageSet.add(instance.pageName);
+    }
+  }
+
+  return [...pageSet].sort((left, right) => {
+    const rankDiff = getPageRank(left) - getPageRank(right);
+    if (rankDiff !== 0) {
+      return rankDiff;
+    }
+
+    return left.localeCompare(right);
+  });
+}
+
+function panelId(scope: string, familyId: string, pageName: string) {
+  return `${scope}-${familyId}-${pageName}`.replace(/[^a-z0-9-]/gi, "-").toLowerCase();
+}
+
+function buildMatrix(scope: "sections" | "components", families: FamilyCard[]) {
+  const pages = uniquePages(families);
+  const panels: {
+    id: string;
+    familyName: string;
+    pageName: string;
+    instances: FamilyCard["instances"];
+    mode: "section" | "component";
+  }[] = [];
+  let defaultPanelId = "";
+
+  const rows = families.map((family) => {
+    const cells = pages.map((pageName) => {
+      const instances = family.instances.filter((instance) => instance.pageName === pageName);
+      const id = panelId(scope, family.id, pageName);
+      if (instances.length > 0) {
+        panels.push({
+          id,
+          familyName: family.displayName,
+          pageName,
+          instances,
+          mode: scope === "sections" ? "section" : "component",
+        });
+        if (!defaultPanelId) {
+          defaultPanelId = id;
+        }
+      }
+
+      return {
+        id,
+        pageName,
+        count: instances.length,
+        instances,
+      };
+    });
+
+    return {
+      family,
+      cells,
+    };
+  });
+
+  return {
+    pages,
+    rows,
+    panels,
+    defaultPanelId,
+  };
+}
+
+const sectionMatrix = buildMatrix("sections", audit.sectionFamilies);
+const componentMatrix = buildMatrix("components", audit.componentFamilies);
+---
+
+<AuditShell
+  currentMethod="matrix"
+  kicker="Method 3 of 5"
+  methods={audit.methods}
+  stats={audit.stats}
+  title="Coverage Heatmap"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Map third</p>
+      <h2 class="audit-hero__title">See the whole site as page-to-family coverage, then open the live evidence.</h2>
+      <p class="audit-hero__copy">
+        This view is for breadth rather than depth. Each cell answers whether a page participates in a family. Clicking
+        a populated cell opens a live preview dock below the table so coverage questions and consolidation priorities
+        stay grounded in the real rendered element.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Best for spotting isolated one-offs and over-repeated families.</li>
+        <li>Best for deciding rollout order across pages instead of family-by-family alone.</li>
+        <li>Best for checking whether a proposed component truly has site-wide reuse.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>How to use it</strong>
+      <p>
+        Scan one family row to see where it appears. Scan one page column to see what makes that page unique. Then
+        click a populated cell to inspect the exact mapped instances in the preview dock.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Section coverage</p>
+        <h2 class="audit-section-header__title">Pages × section families</h2>
+      </div>
+      <p class="audit-note">Sticky row labels keep family names visible while you scan horizontally across pages.</p>
+    </div>
+    <div class="audit-matrix-shell" data-default-panel={sectionMatrix.defaultPanelId} data-matrix-root>
+      <div class="audit-matrix-wrap">
+        <table class="audit-matrix">
+          <thead>
+            <tr>
+              <th scope="col">Section family</th>
+              {sectionMatrix.pages.map((pageName) => (
+                <th scope="col">{pageName}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {sectionMatrix.rows.map((row) => (
+              <tr>
+                <th scope="row">{row.family.displayName}</th>
+                {row.cells.map((cell) => (
+                  <td>
+                    {cell.count > 0 ? (
+                      <button
+                        class:list={[
+                          "audit-matrix__cell-button",
+                          cell.count > 1 && "audit-matrix__cell-button--multi",
+                        ]}
+                        data-matrix-button
+                        data-panel={cell.id}
+                        type="button"
+                      >
+                        {cell.count}
+                      </button>
+                    ) : (
+                      <span class="audit-matrix__cell-empty">0</span>
+                    )}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="audit-matrix-dock">
+        {sectionMatrix.panels.map((panel) => (
+          <section class="audit-matrix-panel" data-matrix-panel id={panel.id}>
+            <div class="audit-section-header">
+              <div>
+                <p class="audit-section-header__eyebrow">Selected intersection</p>
+                <h3 class="audit-family__title">{panel.familyName} on {panel.pageName}</h3>
+              </div>
+              <p class="audit-note">{panel.instances.length} mapped instance(s) in this page/family intersection.</p>
+            </div>
+            <div class="audit-family__grid">
+              {panel.instances.map((instance, index) => (
+                <AuditPreviewCard
+                  familyName={panel.familyName}
+                  instance={instance}
+                  label={index === 0 ? "Intersection preview" : "Additional instance"}
+                  mode="section"
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Component coverage</p>
+        <h2 class="audit-section-header__title">Pages × component families</h2>
+      </div>
+      <p class="audit-note">Counts above one flag repeated primitives from the same page inside a shared family.</p>
+    </div>
+    <div class="audit-matrix-shell" data-default-panel={componentMatrix.defaultPanelId} data-matrix-root>
+      <div class="audit-matrix-wrap">
+        <table class="audit-matrix">
+          <thead>
+            <tr>
+              <th scope="col">Component family</th>
+              {componentMatrix.pages.map((pageName) => (
+                <th scope="col">{pageName}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {componentMatrix.rows.map((row) => (
+              <tr>
+                <th scope="row">{row.family.displayName}</th>
+                {row.cells.map((cell) => (
+                  <td>
+                    {cell.count > 0 ? (
+                      <button
+                        class:list={[
+                          "audit-matrix__cell-button",
+                          cell.count > 1 && "audit-matrix__cell-button--multi",
+                        ]}
+                        data-matrix-button
+                        data-panel={cell.id}
+                        type="button"
+                      >
+                        {cell.count}
+                      </button>
+                    ) : (
+                      <span class="audit-matrix__cell-empty">0</span>
+                    )}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="audit-matrix-dock">
+        {componentMatrix.panels.map((panel) => (
+          <section class="audit-matrix-panel" data-matrix-panel id={panel.id}>
+            <div class="audit-section-header">
+              <div>
+                <p class="audit-section-header__eyebrow">Selected intersection</p>
+                <h3 class="audit-family__title">{panel.familyName} on {panel.pageName}</h3>
+              </div>
+              <p class="audit-note">{panel.instances.length} mapped instance(s) in this page/family intersection.</p>
+            </div>
+            <div class="audit-family__grid">
+              {panel.instances.map((instance, index) => (
+                <AuditPreviewCard
+                  familyName={panel.familyName}
+                  instance={instance}
+                  label={index === 0 ? "Intersection preview" : "Additional instance"}
+                  mode="component"
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    function activateMatrixPanel(root, panelId) {
+      root.querySelectorAll("[data-matrix-panel]").forEach((panel) => {
+        panel.hidden = panel.id !== panelId;
+      });
+
+      root.querySelectorAll("[data-matrix-button]").forEach((button) => {
+        button.classList.toggle("audit-matrix__cell-button--active", button.dataset.panel === panelId);
+      });
+    }
+
+    function initMatrix(root) {
+      if (!(root instanceof HTMLElement)) {
+        return;
+      }
+
+      if (root.dataset.matrixReady === "true") {
+        return;
+      }
+
+      root.dataset.matrixReady = "true";
+
+      const defaultPanel = root.dataset.defaultPanel;
+      if (defaultPanel) {
+        activateMatrixPanel(root, defaultPanel);
+      }
+
+      root.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-matrix-button]");
+        if (!(button instanceof HTMLButtonElement)) {
+          return;
+        }
+
+        activateMatrixPanel(root, button.dataset.panel);
+      });
+    }
+
+    document.querySelectorAll("[data-matrix-root]").forEach((root) => initMatrix(root));
+  </script>
+</AuditShell>

@@ -304,7 +304,7 @@ export function getVisualMethods(): ViewerMethod[] {
       id: "matrix",
       route: "/audit/matrix",
       name: "Coverage Heatmap",
-      status: "Planned",
+      status: "Live",
       summary: "Map pages against family clusters and open each intersection into a preview tray, making gaps, outliers, and duplication visible.",
     },
     {
