@@ -1,0 +1,138 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getPropertyAtlasViewerData } from "../../lib/audit-style-viewer";
+
+const data = getPropertyAtlasViewerData();
+---
+
+<AuditShell
+  currentMethod="properties"
+  kicker="Property system"
+  methods={data.audit.methods}
+  stats={data.audit.stats}
+  title="Property Atlas"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Property-first consolidation</p>
+      <h2 class="audit-hero__title">See which values repeat, drift, and already map to tokens.</h2>
+      <p class="audit-hero__copy">
+        This view keeps the raw tracking exhaustive but only surfaces the most design-relevant properties in browser.
+        Each board stays tied to real audited elements so a value cluster is never detached from where it actually
+        appears.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Groups properties by semantic lane instead of alphabetical CSS noise.</li>
+        <li>Shows the strongest value clusters, token matches, and live examples together.</li>
+        <li>Keeps the full source of truth in the raw audit JSON for deeper inspection later.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>Decision viewport</strong>
+      <p>
+        The atlas is currently centered on <code>{data.summary.primaryViewport}</code>, which matches the current
+        desktop-first consolidation pass.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-summary-grid audit-summary-grid--compact">
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Tracked</p>
+        <strong>{data.summary.totalPropertyCount}</strong>
+        <span>computed properties retained in the audit capture</span>
+      </article>
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Surfaced</p>
+        <strong>{data.summary.actionablePropertyCount}</strong>
+        <span>actionable properties elevated into this browser view</span>
+      </article>
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Groups</p>
+        <strong>{data.summary.semanticGroupCount}</strong>
+        <span>semantic lanes used to organize the atlas</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Atlas lanes</p>
+        <h2 class="audit-section-header__title">Actionable properties by semantic group</h2>
+      </div>
+      <p class="audit-note">
+        Each lane shows the most variant-heavy or high-usage properties first. Raw files retain the full property list.
+      </p>
+    </div>
+    <div class="audit-family-list">
+      {data.semanticGroups.map((group, groupIndex) => (
+        <details class="audit-family" open={groupIndex < 2}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{group.label}</h3>
+              <p class="audit-family__summary-copy">
+                Top properties shown: {group.properties.length} of {group.propertyCount} tracked in this semantic lane
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{group.label}</span>
+              <span class="audit-family__count">{group.propertyCount} properties</span>
+            </div>
+          </summary>
+          <div class="audit-inspector-grid">
+            {group.properties.map((property) => (
+              <article class="audit-inspector-card">
+                <div class="audit-inspector-card__header">
+                  <div>
+                    <p class="audit-inspector-card__eyebrow">{property.kind}</p>
+                    <h4 class="audit-inspector-card__title">{property.property}</h4>
+                  </div>
+                  <div class="audit-inspector-card__meta">
+                    <span>{property.usageCount} uses</span>
+                    <span>{property.clusterCount} clusters</span>
+                  </div>
+                </div>
+                <div class="audit-cluster-list">
+                  {property.clusters.slice(0, 2).map((cluster) => (
+                    <section class="audit-cluster">
+                      <div class="audit-cluster__summary">
+                        <div>
+                          <h5 class="audit-cluster__title">{cluster.displayValue}</h5>
+                          <p class="audit-cluster__meta">
+                            {cluster.count} uses • {cluster.pages.length} pages • {cluster.sectionFamilies.length + cluster.componentFamilies.length} mapped families
+                          </p>
+                        </div>
+                        <div class="audit-cluster__tokens">
+                          {cluster.tokenMatches.length > 0 ? (
+                            cluster.tokenMatches.slice(0, 3).map((match) => (
+                              <span class="audit-inline-pill">{match.token} ({match.matchType})</span>
+                            ))
+                          ) : (
+                            <span class="audit-inline-pill audit-inline-pill--muted">No token match</span>
+                          )}
+                        </div>
+                      </div>
+                      {cluster.examples[0] && (
+                        <div class="audit-cluster__preview">
+                          <AuditPreviewCard
+                            familyName={`${property.property} ${cluster.displayValue}`}
+                            instance={cluster.examples[0]}
+                            label="Example"
+                            mode="component"
+                          />
+                        </div>
+                      )}
+                    </section>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</AuditShell>

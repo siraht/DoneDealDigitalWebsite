@@ -327,6 +327,34 @@ export function getVisualMethods(): ViewerMethod[] {
       status: "Live",
       summary: "Show stitch source, tokenized precedent, and target variants together so the consolidation path is visible as an actionable blueprint.",
     },
+    {
+      id: "properties",
+      route: "/audit/properties",
+      name: "Property Atlas",
+      status: "Live",
+      summary: "Group the most important computed properties by semantic lane and show the strongest value clusters with real element previews.",
+    },
+    {
+      id: "tokens",
+      route: "/audit/tokens",
+      name: "Token Coverage",
+      status: "Live",
+      summary: "Map existing tokens against observed values, surface uncovered shared values, and keep the evidence attached to actual page instances.",
+    },
+    {
+      id: "deltas",
+      route: "/audit/deltas",
+      name: "Family Deltas",
+      status: "Live",
+      summary: "Show each family’s varying root properties beside a canonical preview so variant props and consolidation cuts are easier to choose.",
+    },
+    {
+      id: "decisions",
+      route: "/audit/decisions",
+      name: "Decision Queue",
+      status: "Live",
+      summary: "Rank the most actionable token and variable decisions by reuse, family spread, and match confidence, with previews of the actual elements involved.",
+    },
   ];
 }
 

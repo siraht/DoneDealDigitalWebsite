@@ -1,0 +1,116 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getDecisionQueueViewerData, formatTokenMatches } from "../../lib/audit-style-viewer";
+
+const data = getDecisionQueueViewerData();
+---
+
+<AuditShell
+  currentMethod="decisions"
+  kicker="Decision-first queue"
+  methods={data.audit.methods}
+  stats={data.audit.stats}
+  title="Decision Queue"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Action queue</p>
+      <h2 class="audit-hero__title">Turn the audit into an ordered list of token and variable decisions.</h2>
+      <p class="audit-hero__copy">
+        This is the execution surface. It ranks the most reusable values first, keeps the best token hints attached,
+        and shows the exact elements those decisions would touch.
+      </p>
+      <ul class="audit-hero__list">
+        <li><strong>Adopt existing token</strong> means the value already matches the system and should be reused.</li>
+        <li><strong>Unify to nearby token</strong> means the value likely represents drift rather than intent.</li>
+        <li><strong>Create shared token</strong> means the value repeats enough to deserve explicit system treatment.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>Reading order</strong>
+      <p>
+        Start with the adoption group, then near-token cleanup, then new shared tokens. Each card shows the strongest
+        property lanes and live examples that would be affected.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-summary-grid audit-summary-grid--compact">
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Decisions</p>
+        <strong>{data.summary.decisionCount}</strong>
+        <span>ranked items in the full queue</span>
+      </article>
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Groups</p>
+        <strong>{data.summary.actionGroupCount}</strong>
+        <span>action buckets surfaced in browser</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-family-list">
+      {data.groups.map((group, groupIndex) => (
+        <details class="audit-family" open={groupIndex === 0}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{group.label}</h3>
+              <p class="audit-family__summary-copy">{group.items.length} highest-priority items shown in this action bucket</p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{group.label}</span>
+              <span class="audit-family__count">{group.items.length} items</span>
+            </div>
+          </summary>
+          <div class="audit-inspector-grid">
+            {group.items.map((item) => (
+              <article class="audit-inspector-card">
+                <div class="audit-inspector-card__header">
+                  <div>
+                    <p class="audit-inspector-card__eyebrow">{item.kind} • {item.semanticGroup}</p>
+                    <h4 class="audit-inspector-card__title">{item.displayValue}</h4>
+                  </div>
+                  <div class="audit-inspector-card__meta">
+                    <span>{item.count} uses</span>
+                    <span>{item.familySpread} families</span>
+                  </div>
+                </div>
+                <p class="audit-inspector-card__lede">{item.rationale}</p>
+                <div class="audit-inline-pill-row">
+                  {formatTokenMatches(item.tokenMatches).length > 0 ? (
+                    formatTokenMatches(item.tokenMatches).map((match) => (
+                      <span class="audit-inline-pill">{match}</span>
+                    ))
+                  ) : (
+                    <span class="audit-inline-pill audit-inline-pill--muted">No token match</span>
+                  )}
+                </div>
+                <div class="audit-micro-list">
+                  {item.propertyUsage.slice(0, 4).map((usage) => (
+                    <div class="audit-micro-list__item">
+                      <strong>{usage.property}</strong>
+                      <span>{usage.count} uses</span>
+                    </div>
+                  ))}
+                </div>
+                <div class="audit-preview-stack">
+                  {item.examples.slice(0, 1).map((example) => (
+                    <AuditPreviewCard
+                      familyName={item.displayValue}
+                      instance={example}
+                      label="Affected element"
+                      mode="component"
+                    />
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</AuditShell>

@@ -1,0 +1,135 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getFamilyDeltasViewerData, formatTokenMatches } from "../../lib/audit-style-viewer";
+
+const data = getFamilyDeltasViewerData();
+---
+
+<AuditShell
+  currentMethod="deltas"
+  kicker="Family-first deltas"
+  methods={data.audit.methods}
+  stats={data.audit.stats}
+  title="Family Deltas"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Variant boundaries</p>
+      <h2 class="audit-hero__title">See what actually varies inside each family before you split or consolidate it.</h2>
+      <p class="audit-hero__copy">
+        This view is family-centered rather than property-centered. It shows the meaningful root-level deltas on each
+        section or component family beside a real preview, so you can decide what becomes a variant prop, what should
+        collapse to a token, and what means the family is too broad.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Every family keeps its canonical preview in view.</li>
+        <li>Only varying properties are surfaced first, because those drive the consolidation decisions.</li>
+        <li>Token hints are attached directly to the candidate values.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>Viewport</strong>
+      <p>
+        These deltas are calculated from <code>{data.summary.primaryViewport}</code> root styles for each family
+        instance.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-summary-grid audit-summary-grid--compact">
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Families</p>
+        <strong>{data.summary.familyCount}</strong>
+        <span>section and component families in the delta pass</span>
+      </article>
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Sections</p>
+        <strong>{data.summary.sectionFamilyCount}</strong>
+        <span>section families included</span>
+      </article>
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Components</p>
+        <strong>{data.summary.componentFamilyCount}</strong>
+        <span>component families included</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Family boards</p>
+        <h2 class="audit-section-header__title">Varying properties by family</h2>
+      </div>
+      <p class="audit-note">Families with the broadest variation appear first.</p>
+    </div>
+    <div class="audit-family-list">
+      {data.families.map((family, index) => (
+        <details class="audit-family" open={index < 4}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{family.displayName}</h3>
+              <p class="audit-family__summary-copy">
+                {family.familyKind} family • {family.instanceCount} instances • {family.varyingPropertyCount} varying properties
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{family.status}</span>
+              <span class="audit-family__count">{family.stablePropertyCount} stable properties</span>
+            </div>
+          </summary>
+          <div class="audit-delta-board">
+            <div class="audit-delta-board__preview">
+              {family.preview ? (
+                <AuditPreviewCard
+                  familyName={family.displayName}
+                  instance={family.preview}
+                  label="Canonical preview"
+                  mode={family.familyKind === "section" ? "section" : "component"}
+                />
+              ) : (
+                <article class="audit-note">
+                  <strong>No preview mapped</strong>
+                  <p>The family delta exists, but no canonical preview card was available from the family viewer data.</p>
+                </article>
+              )}
+            </div>
+            <div class="audit-delta-board__content">
+              {family.varyingProperties.map((property) => (
+                <article class="audit-delta-row">
+                  <div class="audit-delta-row__header">
+                    <div>
+                      <p class="audit-inspector-card__eyebrow">{property.kind}</p>
+                      <h4 class="audit-delta-row__title">{property.property}</h4>
+                    </div>
+                    <span class="audit-inline-pill">{property.values.length} values</span>
+                  </div>
+                  <div class="audit-delta-value-list">
+                    {property.values.slice(0, 4).map((value) => (
+                      <div class="audit-delta-value">
+                        <strong>{value.displayValue}</strong>
+                        <span>{value.count} instances</span>
+                        <small>{value.pages.join(", ")}</small>
+                        <div class="audit-inline-pill-row">
+                          {formatTokenMatches(value.tokenMatches).length > 0 ? (
+                            formatTokenMatches(value.tokenMatches).map((match) => (
+                              <span class="audit-inline-pill">{match}</span>
+                            ))
+                          ) : (
+                            <span class="audit-inline-pill audit-inline-pill--muted">No token match</span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</AuditShell>

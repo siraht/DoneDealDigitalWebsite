@@ -1,0 +1,148 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getTokenCoverageViewerData } from "../../lib/audit-style-viewer";
+
+const data = getTokenCoverageViewerData();
+---
+
+<AuditShell
+  currentMethod="tokens"
+  kicker="Token system"
+  methods={data.audit.methods}
+  stats={data.audit.stats}
+  title="Token Coverage"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Coverage first</p>
+      <h2 class="audit-hero__title">See which existing tokens already cover the live site, and which shared values are still orphaned.</h2>
+      <p class="audit-hero__copy">
+        This is the bridge between the family graph and the token file. It shows where existing tokens can be reused
+        immediately, where near-matches reveal drift, and which recurring values still need a variable decision.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Matched tokens stay connected to the concrete values and properties they already cover.</li>
+        <li>Uncovered values are ranked because they recur across actual pages and families.</li>
+        <li>Live previews keep each token conversation attached to the elements that would change.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>How to use it</strong>
+      <p>
+        Work top-down: first adopt existing tokens, then decide whether uncovered shared values deserve a new global
+        token or a family-local variable.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-summary-grid audit-summary-grid--compact">
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Tokens</p>
+        <strong>{data.summary.tokenCount}</strong>
+        <span>variables parsed from <code>src/styles/tokens.css</code></span>
+      </article>
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Matched</p>
+        <strong>{data.summary.matchedTokenCount}</strong>
+        <span>high-signal tokens surfaced in this view</span>
+      </article>
+      <article class="audit-summary-card">
+        <p class="audit-section-header__eyebrow">Orphans</p>
+        <strong>{data.summary.uncoveredValueCount}</strong>
+        <span>shared values with no existing token match</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Matched tokens</p>
+        <h2 class="audit-section-header__title">Existing tokens with live coverage</h2>
+      </div>
+      <p class="audit-note">The best-matched value groups for each token are shown below.</p>
+    </div>
+    <div class="audit-inspector-grid">
+      {data.matchedTokens.map((token) => (
+        <article class="audit-inspector-card">
+          <div class="audit-inspector-card__header">
+            <div>
+              <p class="audit-inspector-card__eyebrow">{token.tokenGroup}</p>
+              <h3 class="audit-inspector-card__title">{token.name}</h3>
+            </div>
+            <div class="audit-inspector-card__meta">
+              <span>{token.exactMatchCount} exact</span>
+              <span>{token.nearMatchCount} near</span>
+            </div>
+          </div>
+          <p class="audit-inspector-card__lede">{token.displayValue}</p>
+          <div class="audit-cluster-list">
+            {token.bestMatches.map((match) => (
+              <section class="audit-cluster">
+                <div class="audit-cluster__summary">
+                  <div>
+                    <h4 class="audit-cluster__title">{match.displayValue}</h4>
+                    <p class="audit-cluster__meta">
+                      {match.count} uses • {match.properties.length} properties
+                    </p>
+                  </div>
+                </div>
+                {match.examples[0] && (
+                  <div class="audit-cluster__preview">
+                    <AuditPreviewCard
+                      familyName={token.name}
+                      instance={match.examples[0]}
+                      label="Coverage example"
+                      mode="component"
+                    />
+                  </div>
+                )}
+              </section>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Uncovered values</p>
+        <h2 class="audit-section-header__title">Shared values that still need a token or variable decision</h2>
+      </div>
+      <p class="audit-note">These are the most repeated values with no current token match.</p>
+    </div>
+    <div class="audit-inspector-grid">
+      {data.uncoveredValues.map((value) => (
+        <article class="audit-inspector-card">
+          <div class="audit-inspector-card__header">
+            <div>
+              <p class="audit-inspector-card__eyebrow">{value.kind}</p>
+              <h3 class="audit-inspector-card__title">{value.displayValue}</h3>
+            </div>
+            <div class="audit-inspector-card__meta">
+              <span>{value.count} uses</span>
+              <span>{value.propertyCount} properties</span>
+            </div>
+          </div>
+          <p class="audit-inspector-card__lede">
+            {value.semanticGroup} lane • {value.pages.length} pages • {value.sectionFamilies.length + value.componentFamilies.length} mapped families
+          </p>
+          {value.examples[0] && (
+            <div class="audit-cluster__preview">
+              <AuditPreviewCard
+                familyName={`Uncovered ${value.displayValue}`}
+                instance={value.examples[0]}
+                label="Example"
+                mode="component"
+              />
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+</AuditShell>

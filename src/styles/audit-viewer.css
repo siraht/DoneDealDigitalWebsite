@@ -143,7 +143,7 @@ body.audit-shell {
 
 .audit-method-nav {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   gap: 0.7rem;
   margin-top: 1rem;
 }
@@ -633,6 +633,196 @@ body.audit-shell {
   padding-inline: 0.6rem;
 }
 
+.audit-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.audit-summary-card,
+.audit-inspector-card,
+.audit-cluster,
+.audit-delta-row {
+  border: 1px solid var(--audit-line);
+  background: var(--audit-surface);
+  box-shadow: var(--audit-shadow);
+}
+
+.audit-summary-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+}
+
+.audit-summary-card strong {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.audit-summary-card span {
+  color: var(--audit-muted);
+}
+
+.audit-inspector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1rem;
+}
+
+.audit-inspector-card {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem;
+}
+
+.audit-inspector-card__header,
+.audit-cluster__summary,
+.audit-delta-row__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+.audit-inspector-card__eyebrow {
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  color: var(--audit-accent);
+  font-weight: 700;
+}
+
+.audit-inspector-card__title,
+.audit-cluster__title,
+.audit-delta-row__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.audit-inspector-card__title {
+  font-size: 1.6rem;
+}
+
+.audit-inspector-card__meta {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: end;
+}
+
+.audit-inspector-card__meta span,
+.audit-cluster__meta,
+.audit-inspector-card__lede,
+.audit-delta-value span,
+.audit-delta-value small,
+.audit-micro-list__item span {
+  color: var(--audit-muted);
+}
+
+.audit-inspector-card__meta span,
+.audit-inline-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.8rem;
+  padding-inline: 0.7rem;
+  border: 1px solid var(--audit-line-strong);
+  background: rgba(255, 255, 255, 0.72);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.audit-inline-pill--muted {
+  color: var(--audit-muted);
+}
+
+.audit-inspector-card__lede {
+  margin: 0;
+}
+
+.audit-cluster-list,
+.audit-preview-stack,
+.audit-delta-board__content,
+.audit-delta-value-list,
+.audit-micro-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.audit-cluster {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0.9rem;
+}
+
+.audit-cluster__title {
+  font-size: 1.25rem;
+}
+
+.audit-cluster__meta {
+  margin: 0.3rem 0 0;
+}
+
+.audit-cluster__tokens,
+.audit-inline-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.audit-delta-board {
+  display: grid;
+  grid-template-columns: minmax(18rem, 1fr) minmax(0, 1.4fr);
+  gap: 1rem;
+  padding: 0 1.1rem 1.1rem;
+}
+
+.audit-delta-board__preview {
+  position: sticky;
+  top: 14rem;
+  align-self: start;
+}
+
+.audit-delta-row {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0.9rem;
+}
+
+.audit-delta-row__title {
+  font-size: 1.2rem;
+}
+
+.audit-delta-value-list {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.audit-delta-value {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.75rem;
+  border: 1px solid var(--audit-line);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.audit-micro-list {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.audit-micro-list__item {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--audit-line);
+  background: rgba(255, 255, 255, 0.7);
+}
+
 @media (max-width: 64rem) {
   .audit-hero,
   .audit-section-header,
@@ -651,6 +841,14 @@ body.audit-shell {
 
   .audit-archetype__meta {
     grid-template-columns: 1fr;
+  }
+
+  .audit-delta-board {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-delta-board__preview {
+    position: static;
   }
 
   .audit-workbench-board,

@@ -7,7 +7,7 @@ const audit = getAuditViewerData();
 
 <AuditShell
   currentMethod=""
-  kicker="Five visual methods"
+  kicker="Visual audit modes"
   methods={audit.methods}
   stats={audit.stats}
   title="Similarity Viewer"
@@ -15,22 +15,23 @@ const audit = getAuditViewerData();
   <section class="audit-hero">
     <div class="audit-hero__panel">
       <p class="audit-topbar__eyebrow">Visual roadmap</p>
-      <h2 class="audit-hero__title">Five ways to make the audit visible with the real elements.</h2>
+      <h2 class="audit-hero__title">{audit.methods.length} ways to make the audit visible with the real elements.</h2>
       <p class="audit-hero__copy">
         The goal is not another text report. Each method turns the existing section and component mapping into a
-        browser-native surface that helps consolidation decisions happen faster.
+        browser-native surface that helps consolidation decisions happen faster, from family matching through token and
+        variable cleanup.
       </p>
       <ul class="audit-hero__list">
         <li>See canonical references and variants as live page previews, not abstract labels.</li>
         <li>Keep one data source: the existing audit outputs in <code>docs/audit/raw</code>.</li>
-        <li>Use different visual organizations for different questions: scan, compare, coverage, archetypes, migration.</li>
+        <li>Use different visual organizations for different questions: scan, compare, coverage, archetypes, migration, properties, tokens, deltas, decisions.</li>
       </ul>
     </div>
     <aside class="audit-note">
       <strong>Current status</strong>
       <p>
-        The first method is live now. The remaining four are listed here as the implementation roadmap and will move
-        from planned to live as they are added and verified.
+        All listed methods are live and fed by the same audit datasets. The new property and token views sit on top of
+        the existing family graph rather than creating a separate reporting path.
       </p>
     </aside>
   </section>
