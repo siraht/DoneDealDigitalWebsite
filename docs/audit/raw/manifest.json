@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T08:11:37.039Z",
+  "generatedAt": "2026-03-06T08:31:26.720Z",
   "baseURL": "http://127.0.0.1:4322",
   "serverCommand": "npm run dev -- --host 127.0.0.1 --port 4322",
   "viewports": [

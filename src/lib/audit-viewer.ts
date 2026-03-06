@@ -89,6 +89,13 @@ type ViewerMethod = {
 type AuditViewerData = {
   sectionFamilies: FamilyCard[];
   componentFamilies: FamilyCard[];
+  styleArchetypes: {
+    id: string;
+    signature: string;
+    componentKinds: Record<string, number>;
+    sectionTypes: Record<string, number>;
+    items: FamilyInstance[];
+  }[];
   methods: ViewerMethod[];
   stats: {
     pageCount: number;
@@ -101,6 +108,7 @@ type AuditViewerData = {
 
 const manifestUrl = new URL("../../docs/audit/raw/manifest.json", import.meta.url);
 const rawPagesUrl = new URL("../../docs/audit/raw/pages/", import.meta.url);
+const styleArchetypesUrl = new URL("../../docs/audit/raw/style-archetypes.json", import.meta.url);
 const canonicalPages = ["index", "index_original"];
 
 let cachedData: AuditViewerData | null = null;
@@ -311,7 +319,7 @@ export function getVisualMethods(): ViewerMethod[] {
       id: "archetypes",
       route: "/audit/archetypes",
       name: "Style Archetype Atlas",
-      status: "Planned",
+      status: "Live",
       summary: "Group visually similar primitives across different component families so shared design-system surfaces emerge beyond section names.",
     },
     {
@@ -330,12 +338,31 @@ export function getAuditViewerData() {
   }
 
   const { manifest, sectionLookup, componentLookup } = loadRawPages();
+  const rawArchetypes = readJson<{
+    archetypes: {
+      id: string;
+      signature: string;
+      componentKinds: Record<string, number>;
+      sectionTypes: Record<string, number>;
+      items: ClusterItem[];
+    }[];
+  }>(styleArchetypesUrl);
   const sectionFamilies = buildFamilyCards(manifest.sectionClusters, sectionLookup, "section");
   const componentFamilies = buildFamilyCards(manifest.componentClusters, componentLookup, "component");
+  const styleArchetypes = rawArchetypes.archetypes.map((archetype) => ({
+    id: archetype.id,
+    signature: archetype.signature,
+    componentKinds: archetype.componentKinds,
+    sectionTypes: archetype.sectionTypes,
+    items: archetype.items.map((item) =>
+      normalizeComponentInstance(item, componentLookup.get(item.auditId) as ComponentDetail | undefined),
+    ),
+  }));
 
   cachedData = {
     sectionFamilies,
     componentFamilies,
+    styleArchetypes,
     methods: getVisualMethods(),
     stats: {
       pageCount: manifest.pages.length,

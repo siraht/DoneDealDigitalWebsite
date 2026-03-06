@@ -4622,6 +4622,9 @@ async function main() {
       allComponents,
       componentPairScores,
     );
+    const componentStyleArchetypes = buildComponentStyleArchetypes(allComponents).filter(
+      (entry) => entry.items.length >= 3,
+    );
     const componentCombinedThreshold = componentDetectorEvaluation.detectors.combined.threshold;
     const retainedComponentPairs = componentPairScores.rows
       .filter((pair) => {
@@ -4742,6 +4745,35 @@ async function main() {
           retainedPairCount: retainedComponentPairs.length,
           retainedPairThreshold: Math.max(componentCombinedThreshold - 0.08, 0.38),
           pairs: retainedComponentPairs,
+        },
+        null,
+        2,
+      ),
+    );
+    writeFileSync(
+      join(rawDir, "style-archetypes.json"),
+      JSON.stringify(
+        {
+          generatedAt: manifest.generatedAt,
+          archetypes: componentStyleArchetypes.map((archetype) => ({
+            id: archetype.id,
+            signature: archetype.signature,
+            componentKinds: archetype.componentKinds,
+            sectionTypes: archetype.sectionTypes,
+            items: archetype.items.map((component) => ({
+              auditId: component.auditId,
+              pageName: component.pageName,
+              route: component.route,
+              sectionAuditId: component.sectionAuditId,
+              sectionIndex: component.sectionIndex,
+              sectionType: component.sectionType,
+              componentKind: component.componentKind,
+              label: component.label,
+              path: component.path,
+              variantTraits: component.variantTraits,
+              rootClasses: component.rootClasses,
+            })),
+          })),
         },
         null,
         2,

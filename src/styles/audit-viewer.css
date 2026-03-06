@@ -480,6 +480,29 @@ body.audit-shell {
   display: none;
 }
 
+.audit-archetype-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.audit-archetype {
+  display: grid;
+  gap: 1rem;
+  padding: 0 1.1rem 1.1rem;
+}
+
+.audit-archetype__meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.audit-archetype__group {
+  padding: 1rem;
+  border: 1px solid var(--audit-line);
+  background: rgba(255, 255, 255, 0.66);
+}
+
 .audit-compare-board {
   display: grid;
   grid-template-columns: minmax(18rem, 1fr) minmax(0, 1.7fr);
@@ -592,6 +615,10 @@ body.audit-shell {
 
   .audit-compare-board__canonical {
     position: static;
+  }
+
+  .audit-archetype__meta {
+    grid-template-columns: 1fr;
   }
 
   .audit-statbar,

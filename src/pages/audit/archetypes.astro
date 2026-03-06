@@ -1,0 +1,95 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getAuditViewerData } from "../../lib/audit-viewer";
+
+const audit = getAuditViewerData();
+const archetypes = audit.styleArchetypes;
+---
+
+<AuditShell
+  currentMethod="archetypes"
+  kicker="Method 4 of 5"
+  methods={audit.methods}
+  stats={audit.stats}
+  title="Style Archetype Atlas"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Abstract fourth</p>
+      <h2 class="audit-hero__title">Look past family names and group what is visually built from the same surface.</h2>
+      <p class="audit-hero__copy">
+        This is the design-system lens. Instead of asking whether two elements belong to the same semantic family, it
+        asks whether they are visually built from the same primitive treatment: the same border weight, spacing, fill,
+        display mode, casing, or emphasis pattern.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Best for discovering shared primitives hiding across different component families.</li>
+        <li>Best for token and utility extraction decisions.</li>
+        <li>Best for finding when several different “components” are actually one visual surface with different content.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>How to use it</strong>
+      <p>
+        Start with the signature row, then scan the mixed samples. If several semantic families still read as the same
+        treatment, that is a strong signal for a shared primitive or style variant beneath them.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Archetype atlas</p>
+        <h2 class="audit-section-header__title">Cross-family visual primitives</h2>
+      </div>
+      <p class="audit-note">The atlas is generated from the same component style archetype logic already used by the audit.</p>
+    </div>
+    <div class="audit-archetype-list">
+      {archetypes.map((archetype, index) => (
+        <details class="audit-family" open={index < 5}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{archetype.id}</h3>
+              <p class="audit-family__summary-copy">{archetype.signature}</p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__count">{archetype.items.length} instances</span>
+            </div>
+          </summary>
+          <div class="audit-archetype">
+            <div class="audit-archetype__meta">
+              <div class="audit-archetype__group">
+                <p class="audit-section-header__eyebrow">Component kinds</p>
+                <ul class="audit-chip-list">
+                  {Object.entries(archetype.componentKinds).map(([kind, count]) => (
+                    <li class="audit-chip-list__item">{kind} × {count}</li>
+                  ))}
+                </ul>
+              </div>
+              <div class="audit-archetype__group">
+                <p class="audit-section-header__eyebrow">Section types</p>
+                <ul class="audit-chip-list">
+                  {Object.entries(archetype.sectionTypes).map(([kind, count]) => (
+                    <li class="audit-chip-list__item">{kind} × {count}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div class="audit-family__grid">
+              {archetype.items.slice(0, 8).map((instance, instanceIndex) => (
+                <AuditPreviewCard
+                  familyName={archetype.id}
+                  instance={instance}
+                  label={instanceIndex === 0 ? "Atlas sample" : "Shared surface sample"}
+                  mode="component"
+                />
+              ))}
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</AuditShell>
