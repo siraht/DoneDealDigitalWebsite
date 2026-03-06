@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "qa:audit": "node ./scripts/page-audit.mjs",
     "qa:visual": "node ./scripts/visual-regression.mjs",
     "qa:visual:baseline": "node ./scripts/visual-regression.mjs --baseline",
     "qa:visual:diff": "node ./scripts/visual-regression.mjs --compare",
