@@ -10,6 +10,7 @@ import {
 import { basename, join, relative } from "node:path";
 import net from "node:net";
 import { chromium } from "playwright";
+import { PNG } from "pngjs";
 
 const rootDir = process.cwd();
 const pagesDir = join(rootDir, "src/pages");
@@ -199,6 +200,181 @@ const utilityValueFamilies = [
   "z",
   "w",
   "h",
+];
+const subtreeStyleKeys = [
+  "display",
+  "position",
+  "padding-top",
+  "padding-right",
+  "padding-bottom",
+  "padding-left",
+  "margin-top",
+  "margin-right",
+  "margin-bottom",
+  "margin-left",
+  "gap",
+  "row-gap",
+  "column-gap",
+  "grid-template-columns",
+  "grid-template-rows",
+  "flex-direction",
+  "justify-content",
+  "align-items",
+  "background-color",
+  "background-image",
+  "color",
+  "font-family",
+  "font-size",
+  "font-weight",
+  "line-height",
+  "letter-spacing",
+  "text-align",
+  "text-transform",
+  "border-top-width",
+  "border-right-width",
+  "border-bottom-width",
+  "border-left-width",
+  "border-top-color",
+  "border-right-color",
+  "border-bottom-color",
+  "border-left-color",
+  "border-radius",
+  "box-shadow",
+  "opacity",
+  "overflow",
+];
+const semanticStopWords = new Set([
+  "about",
+  "after",
+  "all",
+  "and",
+  "are",
+  "but",
+  "for",
+  "from",
+  "here",
+  "into",
+  "just",
+  "more",
+  "most",
+  "not",
+  "our",
+  "out",
+  "that",
+  "the",
+  "their",
+  "them",
+  "they",
+  "this",
+  "what",
+  "when",
+  "with",
+  "your",
+  "you",
+]);
+const similarityDetectorWeights = {
+  typeHint: 0.07,
+  structure: 0.15,
+  layout: 0.18,
+  rootStyle: 0.07,
+  subtreeStyle: 0.17,
+  classes: 0.08,
+  semantics: 0.06,
+  patterns: 0.04,
+  visual: 0.18,
+};
+const validationPageNames = [
+  "about",
+  "case-studies",
+  "contact",
+  "cookie-policy",
+  "faq",
+  "index",
+  "index_original",
+  "lead-generation",
+  "local-seo",
+  "privacy",
+  "terms",
+  "thank-you",
+  "web-design",
+];
+const validationFamilies = [
+  {
+    name: "SiteHeader",
+    members: validationPageNames.map((pageName) => `${pageName}::section-1`),
+  },
+  {
+    name: "HeroSection",
+    members: validationPageNames.map((pageName) => `${pageName}::section-2`),
+  },
+  {
+    name: "SiteFooter",
+    members: [
+      ["about", 9],
+      ["case-studies", 7],
+      ["contact", 4],
+      ["cookie-policy", 4],
+      ["faq", 9],
+      ["index", 7],
+      ["index_original", 7],
+      ["lead-generation", 10],
+      ["local-seo", 10],
+      ["privacy", 4],
+      ["terms", 4],
+      ["thank-you", 4],
+      ["web-design", 10],
+    ].map(([pageName, index]) => `${pageName}::section-${index}`),
+  },
+  {
+    name: "CredibilityStrip",
+    members: ["index::section-3", "index_original::section-3"],
+  },
+  {
+    name: "ServicesSection",
+    members: ["index::section-4", "index_original::section-4", "lead-generation::section-5"],
+  },
+  {
+    name: "ProcessSection",
+    members: ["index::section-5", "index_original::section-5", "web-design::section-5"],
+  },
+  {
+    name: "ComparisonSplitSection",
+    members: [
+      "lead-generation::section-3",
+      "local-seo::section-3",
+      "web-design::section-3",
+    ],
+  },
+  {
+    name: "CallToAction",
+    members: [
+      "about::section-8",
+      "case-studies::section-6",
+      "faq::section-8",
+      "index_original::section-6",
+      "lead-generation::section-9",
+      "local-seo::section-9",
+      "web-design::section-9",
+    ],
+  },
+  {
+    name: "LegalContent",
+    members: [
+      "cookie-policy::section-3",
+      "privacy::section-3",
+      "terms::section-3",
+    ],
+  },
+  {
+    name: "FaqSection",
+    members: [
+      "faq::section-3",
+      "faq::section-4",
+      "faq::section-5",
+      "faq::section-6",
+      "faq::section-7",
+    ],
+  },
 ];
 
 function parseViewports(spec) {
@@ -397,6 +573,509 @@ function getUtilityFamily(token) {
 
 function cloneObject(value) {
   return JSON.parse(JSON.stringify(value));
+}
+
+function sortObjectEntries(value) {
+  return Object.fromEntries(
+    Object.entries(value).sort((left, right) => {
+      if (right[1] !== left[1]) {
+        return right[1] - left[1];
+      }
+
+      return left[0].localeCompare(right[0]);
+    }),
+  );
+}
+
+function addCount(store, key, amount = 1) {
+  if (!key || amount <= 0) {
+    return;
+  }
+
+  store.set(key, (store.get(key) || 0) + amount);
+}
+
+function roundToStep(value, step = 4) {
+  if (!Number.isFinite(value)) {
+    return value;
+  }
+
+  return Math.round(value / step) * step;
+}
+
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
+
+function ratioSimilarity(left, right) {
+  if (!Number.isFinite(left) || !Number.isFinite(right)) {
+    return 0;
+  }
+
+  const high = Math.max(left, right, 1);
+  const low = Math.max(0, Math.min(left, right));
+  return low / high;
+}
+
+function normalizeStyleValue(property, value) {
+  const normalized = normalizeWhitespace(value);
+  if (!normalized) {
+    return "";
+  }
+
+  if (property === "font-family") {
+    return normalized
+      .split(",")[0]
+      .replace(/["']/g, "")
+      .trim()
+      .toLowerCase();
+  }
+
+  if (/^-?\d+(\.\d+)?px$/.test(normalized)) {
+    return `${roundToStep(Number.parseFloat(normalized))}px`;
+  }
+
+  if (normalized.startsWith("rgb")) {
+    return normalized.replace(/\s+/g, "");
+  }
+
+  return normalized.toLowerCase();
+}
+
+function tokenizeSemanticText(value) {
+  return tokenizeText(value).filter((token) => !semanticStopWords.has(token));
+}
+
+function objectValuesSum(value) {
+  return Object.values(value || {}).reduce((sum, entry) => sum + Number(entry || 0), 0);
+}
+
+function weightedJaccard(mapA, mapB) {
+  const keys = new Set([...Object.keys(mapA || {}), ...Object.keys(mapB || {})]);
+  let minSum = 0;
+  let maxSum = 0;
+
+  for (const key of keys) {
+    const left = Number(mapA?.[key] || 0);
+    const right = Number(mapB?.[key] || 0);
+    minSum += Math.min(left, right);
+    maxSum += Math.max(left, right);
+  }
+
+  return maxSum === 0 ? 1 : minSum / maxSum;
+}
+
+function cosineSimilarity(mapA, mapB) {
+  const keys = new Set([...Object.keys(mapA || {}), ...Object.keys(mapB || {})]);
+  let dot = 0;
+  let normA = 0;
+  let normB = 0;
+
+  for (const key of keys) {
+    const left = Number(mapA?.[key] || 0);
+    const right = Number(mapB?.[key] || 0);
+    dot += left * right;
+    normA += left * left;
+    normB += right * right;
+  }
+
+  if (normA === 0 || normB === 0) {
+    return 0;
+  }
+
+  return dot / (Math.sqrt(normA) * Math.sqrt(normB));
+}
+
+function bucketRatio(value, thresholds) {
+  return bucketByThreshold(clamp(value, 0, 1), thresholds);
+}
+
+function classifyNodeRole(node) {
+  if (/^h[1-6]$/.test(node.tag)) {
+    return "heading";
+  }
+
+  if (["img", "picture", "svg", "video", "canvas"].includes(node.tag)) {
+    return "media";
+  }
+
+  if (["a", "button"].includes(node.tag)) {
+    return "action";
+  }
+
+  if (["form", "input", "textarea", "select"].includes(node.tag)) {
+    return "form";
+  }
+
+  if (["ul", "ol", "li", "dl", "dt", "dd"].includes(node.tag)) {
+    return "list";
+  }
+
+  if (["details", "summary"].includes(node.tag)) {
+    return "accordion";
+  }
+
+  if (node.classes.includes("material-symbols-outlined")) {
+    return "icon";
+  }
+
+  if (tokenizeText(node.textPreview).length > 0) {
+    return "text";
+  }
+
+  return "container";
+}
+
+function shouldTrackLayoutNode(sectionNode, node) {
+  if (node === sectionNode || !node.visible) {
+    return false;
+  }
+
+  const sectionArea = Math.max(sectionNode.rect.width * sectionNode.rect.height, 1);
+  const nodeArea = Math.max(node.rect.width * node.rect.height, 0);
+  const role = classifyNodeRole(node);
+
+  if (["heading", "media", "action", "form", "accordion"].includes(role)) {
+    return true;
+  }
+
+  if (role === "text" && tokenizeText(node.ownText || node.textPreview).length >= 3) {
+    return true;
+  }
+
+  if (role === "list" && node.children.length > 0) {
+    return true;
+  }
+
+  return nodeArea / sectionArea >= 0.025 && node.children.length > 0;
+}
+
+function buildLayoutSignature(sectionNode) {
+  const tokens = new Map();
+  const roleCounts = new Map();
+  const candidates = [];
+  const sectionWidth = Math.max(sectionNode.rect.width, 1);
+  const sectionHeight = Math.max(sectionNode.rect.height, 1);
+
+  collectNodes(sectionNode, (node) => {
+    if (!shouldTrackLayoutNode(sectionNode, node)) {
+      return;
+    }
+
+    const nodeArea = node.rect.width * node.rect.height;
+    candidates.push({
+      node,
+      role: classifyNodeRole(node),
+      nodeArea,
+    });
+  });
+
+  for (const entry of candidates
+    .sort((left, right) => right.nodeArea - left.nodeArea || left.node.path.localeCompare(right.node.path))
+    .slice(0, 40)) {
+    const { node, role } = entry;
+    const centerX = ((node.rect.x - sectionNode.rect.x) + node.rect.width / 2) / sectionWidth;
+    const centerY = ((node.rect.y - sectionNode.rect.y) + node.rect.height / 2) / sectionHeight;
+    const widthRatio = node.rect.width / sectionWidth;
+    const heightRatio = node.rect.height / sectionHeight;
+    const token = [
+      role,
+      `x-${bucketRatio(centerX, [
+        { max: 0.2, label: "far-start" },
+        { max: 0.4, label: "start" },
+        { max: 0.6, label: "mid" },
+        { max: 0.8, label: "end" },
+        { max: Number.POSITIVE_INFINITY, label: "far-end" },
+      ])}`,
+      `y-${bucketRatio(centerY, [
+        { max: 0.18, label: "top" },
+        { max: 0.38, label: "upper" },
+        { max: 0.62, label: "middle" },
+        { max: 0.82, label: "lower" },
+        { max: Number.POSITIVE_INFINITY, label: "bottom" },
+      ])}`,
+      `w-${bucketRatio(widthRatio, [
+        { max: 0.18, label: "xs" },
+        { max: 0.36, label: "sm" },
+        { max: 0.64, label: "md" },
+        { max: Number.POSITIVE_INFINITY, label: "lg" },
+      ])}`,
+      `h-${bucketRatio(heightRatio, [
+        { max: 0.08, label: "xs" },
+        { max: 0.18, label: "sm" },
+        { max: 0.34, label: "md" },
+        { max: Number.POSITIVE_INFINITY, label: "lg" },
+      ])}`,
+      node.decisionStyle["text-align"] === "center" ? "ta-center" : "ta-normal",
+    ].join("::");
+
+    addCount(tokens, token);
+    addCount(roleCounts, role);
+  }
+
+  return {
+    layoutTokens: sortObjectEntries(Object.fromEntries(tokens)),
+    roleCounts: sortObjectEntries(Object.fromEntries(roleCounts)),
+  };
+}
+
+function buildSemanticSignature(sectionNode) {
+  const headingTokens = new Map();
+  const bodyTokens = new Map();
+
+  collectNodes(sectionNode, (node) => {
+    const sourceText = node.ownText || node.textPreview;
+    if (!sourceText) {
+      return;
+    }
+
+    const tokens = tokenizeSemanticText(sourceText);
+    if (tokens.length === 0) {
+      return;
+    }
+
+    const target = /^h[1-6]$/.test(node.tag) ? headingTokens : bodyTokens;
+    const multiplier = /^h[1-6]$/.test(node.tag) ? 2 : 1;
+
+    for (const token of tokens) {
+      addCount(target, token, multiplier);
+    }
+  });
+
+  return {
+    headingTokens: sortObjectEntries(Object.fromEntries(headingTokens)),
+    bodyTokens: sortObjectEntries(Object.fromEntries(bodyTokens)),
+  };
+}
+
+function buildClassSignature(sectionNode) {
+  const classTokens = new Map();
+  const utilityFamilies = new Map();
+  const customClasses = new Map();
+
+  collectNodes(sectionNode, (node) => {
+    for (const token of node.classes) {
+      addCount(classTokens, token);
+      if (looksLikeTailwindClass(token)) {
+        addCount(utilityFamilies, getUtilityFamily(token));
+      } else {
+        addCount(customClasses, token);
+      }
+    }
+  });
+
+  return {
+    classTokens: sortObjectEntries(Object.fromEntries(classTokens)),
+    utilityFamilies: sortObjectEntries(Object.fromEntries(utilityFamilies)),
+    customClasses: sortObjectEntries(Object.fromEntries(customClasses)),
+  };
+}
+
+function buildStyleSignature(sectionNode) {
+  const styleValues = new Map();
+  const propertyCounts = new Map();
+
+  collectNodes(sectionNode, (node) => {
+    for (const property of subtreeStyleKeys) {
+      const normalized = normalizeStyleValue(property, node.decisionStyle[property] || "");
+      if (!normalized) {
+        continue;
+      }
+
+      addCount(styleValues, `${property}:${normalized}`);
+      addCount(propertyCounts, property);
+    }
+  });
+
+  return {
+    styleValues: sortObjectEntries(Object.fromEntries(styleValues)),
+    propertyCounts: sortObjectEntries(Object.fromEntries(propertyCounts)),
+  };
+}
+
+function buildPatternSignature(patterns) {
+  const kindCounts = new Map();
+  for (const pattern of patterns) {
+    addCount(kindCounts, pattern.kind, pattern.count);
+  }
+
+  return sortObjectEntries(Object.fromEntries(kindCounts));
+}
+
+function getSectionCompatibleGroup(sectionType) {
+  if (["CallToAction", "FinalCtaSection"].includes(sectionType)) {
+    return "cta";
+  }
+
+  return sectionType;
+}
+
+function computeSectionSignatures(sectionNode, stats, patterns) {
+  const layout = buildLayoutSignature(sectionNode);
+  const semantics = buildSemanticSignature(sectionNode);
+  const classes = buildClassSignature(sectionNode);
+  const styles = buildStyleSignature(sectionNode);
+
+  return {
+    layoutTokens: layout.layoutTokens,
+    roleCounts: layout.roleCounts,
+    headingTokens: semantics.headingTokens,
+    bodyTokens: semantics.bodyTokens,
+    classTokens: classes.classTokens,
+    utilityFamilies: classes.utilityFamilies,
+    customClasses: classes.customClasses,
+    styleValues: styles.styleValues,
+    stylePropertyCounts: styles.propertyCounts,
+    patternKinds: buildPatternSignature(patterns),
+    summary: {
+      layoutTokenCount: objectValuesSum(layout.layoutTokens),
+      uniqueSemanticTokens:
+        Object.keys(semantics.headingTokens).length + Object.keys(semantics.bodyTokens).length,
+      styleValueCount: objectValuesSum(styles.styleValues),
+      classTokenCount: objectValuesSum(classes.classTokens),
+      utilityFamilyCount: objectValuesSum(classes.utilityFamilies),
+      patternCount: objectValuesSum(buildPatternSignature(patterns)),
+      textWordCount: stats.wordCount,
+    },
+  };
+}
+
+function decodePng(buffer) {
+  return PNG.sync.read(buffer);
+}
+
+function samplePixel(png, sampleX, sampleY, sampleWidth, sampleHeight) {
+  const srcX = Math.min(
+    png.width - 1,
+    Math.max(0, Math.floor(((sampleX + 0.5) / sampleWidth) * png.width)),
+  );
+  const srcY = Math.min(
+    png.height - 1,
+    Math.max(0, Math.floor(((sampleY + 0.5) / sampleHeight) * png.height)),
+  );
+  const offset = (srcY * png.width + srcX) * 4;
+  const alpha = png.data[offset + 3] / 255;
+  const r = 255 + (png.data[offset] - 255) * alpha;
+  const g = 255 + (png.data[offset + 1] - 255) * alpha;
+  const b = 255 + (png.data[offset + 2] - 255) * alpha;
+
+  return { r, g, b };
+}
+
+function buildGrayscaleGrid(png, width, height) {
+  const values = [];
+
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width; x += 1) {
+      const { r, g, b } = samplePixel(png, x, y, width, height);
+      values.push(Math.round(r * 0.299 + g * 0.587 + b * 0.114));
+    }
+  }
+
+  return values;
+}
+
+function buildDHash(grid, width, height) {
+  let hash = "";
+
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width - 1; x += 1) {
+      const left = grid[y * width + x];
+      const right = grid[y * width + x + 1];
+      hash += left > right ? "1" : "0";
+    }
+  }
+
+  return hash;
+}
+
+function buildColorHistogram(png, binsPerChannel = 4) {
+  const histogram = new Map();
+
+  for (let index = 0; index < png.data.length; index += 4) {
+    const alpha = png.data[index + 3] / 255;
+    const r = Math.round(255 + (png.data[index] - 255) * alpha);
+    const g = Math.round(255 + (png.data[index + 1] - 255) * alpha);
+    const b = Math.round(255 + (png.data[index + 2] - 255) * alpha);
+    const rBucket = Math.min(binsPerChannel - 1, Math.floor((r / 256) * binsPerChannel));
+    const gBucket = Math.min(binsPerChannel - 1, Math.floor((g / 256) * binsPerChannel));
+    const bBucket = Math.min(binsPerChannel - 1, Math.floor((b / 256) * binsPerChannel));
+    addCount(histogram, `${rBucket}-${gBucket}-${bBucket}`);
+  }
+
+  return sortObjectEntries(Object.fromEntries(histogram));
+}
+
+function buildBrightnessHistogram(grid, bins = 8) {
+  const histogram = new Map();
+
+  for (const value of grid) {
+    const bucket = Math.min(bins - 1, Math.floor((value / 256) * bins));
+    addCount(histogram, `b-${bucket}`);
+  }
+
+  return sortObjectEntries(Object.fromEntries(histogram));
+}
+
+function buildVisualSignature(buffer) {
+  const png = decodePng(buffer);
+  const thumbnailGrid = buildGrayscaleGrid(png, 24, 24);
+  const hashGrid = buildGrayscaleGrid(png, 9, 8);
+  const averageBrightness =
+    thumbnailGrid.reduce((sum, value) => sum + value, 0) / Math.max(thumbnailGrid.length, 1);
+
+  return {
+    width: png.width,
+    height: png.height,
+    aspectRatio: Number((png.width / Math.max(png.height, 1)).toFixed(4)),
+    dHash: buildDHash(hashGrid, 9, 8),
+    thumbnailGrid,
+    averageBrightness: Number(averageBrightness.toFixed(2)),
+    brightnessHistogram: buildBrightnessHistogram(thumbnailGrid),
+    colorHistogram: buildColorHistogram(png),
+  };
+}
+
+function compareGrayscaleGrids(gridA, gridB) {
+  if (!gridA?.length || !gridB?.length || gridA.length !== gridB.length) {
+    return 0;
+  }
+
+  let totalDelta = 0;
+  for (let index = 0; index < gridA.length; index += 1) {
+    totalDelta += Math.abs(gridA[index] - gridB[index]);
+  }
+
+  return 1 - totalDelta / (gridA.length * 255);
+}
+
+function compareHashes(hashA, hashB) {
+  if (!hashA || !hashB || hashA.length !== hashB.length) {
+    return 0;
+  }
+
+  let mismatches = 0;
+  for (let index = 0; index < hashA.length; index += 1) {
+    if (hashA[index] !== hashB[index]) {
+      mismatches += 1;
+    }
+  }
+
+  return 1 - mismatches / hashA.length;
+}
+
+function compareVisualSignatures(left, right) {
+  if (!left || !right) {
+    return 0;
+  }
+
+  const gridScore = compareGrayscaleGrids(left.thumbnailGrid, right.thumbnailGrid);
+  const hashScore = compareHashes(left.dHash, right.dHash);
+  const colorScore = weightedJaccard(left.colorHistogram, right.colorHistogram);
+  const brightnessScore = weightedJaccard(left.brightnessHistogram, right.brightnessHistogram);
+  const aspectScore = ratioSimilarity(left.aspectRatio, right.aspectRatio);
+
+  return gridScore * 0.35 + hashScore * 0.25 + colorScore * 0.2 + brightnessScore * 0.1 + aspectScore * 0.1;
 }
 
 function getPageFamily(pageName) {
@@ -984,17 +1663,17 @@ function classifySection(section, pageMeta) {
 
 function compareMaps(mapA, mapB) {
   const keys = new Set([...Object.keys(mapA), ...Object.keys(mapB)]);
-  let matches = 0;
+  let overlap = 0;
   let total = 0;
 
   for (const key of keys) {
-    total += 1;
-    if ((mapA[key] || 0) === (mapB[key] || 0)) {
-      matches += 1;
-    }
+    const left = Number(mapA[key] || 0);
+    const right = Number(mapB[key] || 0);
+    overlap += Math.min(left, right);
+    total += Math.max(left, right);
   }
 
-  return total === 0 ? 1 : matches / total;
+  return total === 0 ? 1 : overlap / total;
 }
 
 function similarityFromSets(listA, listB) {
@@ -1027,23 +1706,101 @@ function compareDecisionStyles(styleA, styleB) {
   return total === 0 ? 1 : matches / total;
 }
 
-function scoreSectionSimilarity(left, right) {
-  let score = 0;
+function compareSemanticSignatures(left, right) {
+  const headingScore =
+    weightedJaccard(left.signatures.headingTokens, right.signatures.headingTokens) * 0.65 +
+    cosineSimilarity(left.signatures.headingTokens, right.signatures.headingTokens) * 0.35;
+  const bodyScore =
+    weightedJaccard(left.signatures.bodyTokens, right.signatures.bodyTokens) * 0.55 +
+    cosineSimilarity(left.signatures.bodyTokens, right.signatures.bodyTokens) * 0.45;
 
-  if (left.sectionType === right.sectionType) {
-    score += 0.35;
+  return headingScore * 0.55 + bodyScore * 0.45;
+}
+
+function compareClassSignatures(left, right) {
+  return (
+    weightedJaccard(left.signatures.utilityFamilies, right.signatures.utilityFamilies) * 0.45 +
+    weightedJaccard(left.signatures.classTokens, right.signatures.classTokens) * 0.35 +
+    weightedJaccard(left.signatures.customClasses, right.signatures.customClasses) * 0.2
+  );
+}
+
+function compareLayoutSignatures(left, right) {
+  return (
+    weightedJaccard(left.signatures.layoutTokens, right.signatures.layoutTokens) * 0.75 +
+    weightedJaccard(left.signatures.roleCounts, right.signatures.roleCounts) * 0.25
+  );
+}
+
+function compareSubtreeStyles(left, right) {
+  return (
+    weightedJaccard(left.signatures.styleValues, right.signatures.styleValues) * 0.75 +
+    weightedJaccard(left.signatures.stylePropertyCounts, right.signatures.stylePropertyCounts) * 0.25
+  );
+}
+
+function comparePatternSignatures(left, right) {
+  const leftTotal = objectValuesSum(left.signatures.patternKinds);
+  const rightTotal = objectValuesSum(right.signatures.patternKinds);
+
+  if (leftTotal === 0 && rightTotal === 0) {
+    return 0.35;
   }
 
-  score += compareDecisionStyles(left.rootDecisionStyle, right.rootDecisionStyle) * 0.2;
-  score += compareMaps(left.stats.tagCounts, right.stats.tagCounts) * 0.2;
-  score += similarityFromSets(left.stats.utilityFamilies, right.stats.utilityFamilies) * 0.1;
-  score += similarityFromSets(left.stats.customClasses, right.stats.customClasses) * 0.05;
+  if (leftTotal === 0 || rightTotal === 0) {
+    return 0;
+  }
 
-  const leftPatternKinds = left.patterns.map((pattern) => pattern.kind);
-  const rightPatternKinds = right.patterns.map((pattern) => pattern.kind);
-  score += similarityFromSets(leftPatternKinds, rightPatternKinds) * 0.1;
+  return weightedJaccard(left.signatures.patternKinds, right.signatures.patternKinds);
+}
 
-  return score;
+function compareStructure(left, right) {
+  const exactScore = left.structureFingerprint === right.structureFingerprint ? 1 : 0;
+  const looseScore = left.looseFingerprint === right.looseFingerprint ? 1 : 0;
+  const tagScore = compareMaps(left.stats.tagCounts, right.stats.tagCounts);
+  const sizeScore = ratioSimilarity(left.stats.elementCount, right.stats.elementCount);
+
+  return exactScore * 0.35 + looseScore * 0.2 + tagScore * 0.3 + sizeScore * 0.15;
+}
+
+function scoreSectionSimilarityDetailed(left, right) {
+  const typeHint =
+    left.sectionType === right.sectionType
+      ? 1
+      : getSectionCompatibleGroup(left.sectionType) === getSectionCompatibleGroup(right.sectionType)
+        ? 0.55
+        : 0;
+  const structure = compareStructure(left, right);
+  const layout = compareLayoutSignatures(left, right);
+  const rootStyle = compareDecisionStyles(left.rootDecisionStyle, right.rootDecisionStyle);
+  const subtreeStyle = compareSubtreeStyles(left, right);
+  const classes = compareClassSignatures(left, right);
+  const semantics = compareSemanticSignatures(left, right);
+  const patterns = comparePatternSignatures(left, right);
+  const visual = compareVisualSignatures(left.visualSignature, right.visualSignature);
+  const combined =
+    typeHint * similarityDetectorWeights.typeHint +
+    structure * similarityDetectorWeights.structure +
+    layout * similarityDetectorWeights.layout +
+    rootStyle * similarityDetectorWeights.rootStyle +
+    subtreeStyle * similarityDetectorWeights.subtreeStyle +
+    classes * similarityDetectorWeights.classes +
+    semantics * similarityDetectorWeights.semantics +
+    patterns * similarityDetectorWeights.patterns +
+    visual * similarityDetectorWeights.visual;
+
+  return {
+    typeHint: Number(typeHint.toFixed(4)),
+    structure: Number(structure.toFixed(4)),
+    layout: Number(layout.toFixed(4)),
+    rootStyle: Number(rootStyle.toFixed(4)),
+    subtreeStyle: Number(subtreeStyle.toFixed(4)),
+    classes: Number(classes.toFixed(4)),
+    semantics: Number(semantics.toFixed(4)),
+    patterns: Number(patterns.toFixed(4)),
+    visual: Number(visual.toFixed(4)),
+    combined: Number(combined.toFixed(4)),
+  };
 }
 
 function clusterBySimilarity(items, scoreFn, thresholdFn, exactKeyFn) {
@@ -1080,13 +1837,286 @@ function clusterBySimilarity(items, scoreFn, thresholdFn, exactKeyFn) {
   return clusters;
 }
 
-function buildSectionClusters(sections) {
+function getPairKey(leftId, rightId) {
+  return [leftId, rightId].sort().join("::");
+}
+
+function buildSectionPairScores(sections) {
+  const rows = [];
+  const lookup = new Map();
+
+  for (let leftIndex = 0; leftIndex < sections.length; leftIndex += 1) {
+    for (let rightIndex = leftIndex + 1; rightIndex < sections.length; rightIndex += 1) {
+      const left = sections[leftIndex];
+      const right = sections[rightIndex];
+      const scores = scoreSectionSimilarityDetailed(left, right);
+      const row = {
+        leftAuditId: left.auditId,
+        rightAuditId: right.auditId,
+        leftPageName: left.pageName,
+        rightPageName: right.pageName,
+        leftSectionType: left.sectionType,
+        rightSectionType: right.sectionType,
+        ...scores,
+      };
+      rows.push(row);
+      lookup.set(getPairKey(left.auditId, right.auditId), row);
+    }
+  }
+
+  return { rows, lookup };
+}
+
+function buildValidationDataset(sectionLookup) {
+  const positives = [];
+  const seenPositive = new Set();
+  const membership = new Map();
+
+  for (const family of validationFamilies) {
+    for (const member of family.members) {
+      if (sectionLookup.has(member)) {
+        membership.set(member, family.name);
+      }
+    }
+  }
+
+  for (const family of validationFamilies) {
+    const members = family.members.filter((member) => sectionLookup.has(member));
+    for (let leftIndex = 0; leftIndex < members.length; leftIndex += 1) {
+      for (let rightIndex = leftIndex + 1; rightIndex < members.length; rightIndex += 1) {
+        const key = getPairKey(members[leftIndex], members[rightIndex]);
+        if (seenPositive.has(key)) {
+          continue;
+        }
+
+        positives.push({
+          label: "positive",
+          family: family.name,
+          leftAuditId: members[leftIndex],
+          rightAuditId: members[rightIndex],
+        });
+        seenPositive.add(key);
+      }
+    }
+  }
+
+  const negatives = [];
+  const sections = [...sectionLookup.values()].sort((left, right) => left.auditId.localeCompare(right.auditId));
+  for (let leftIndex = 0; leftIndex < sections.length; leftIndex += 1) {
+    for (let rightIndex = leftIndex + 1; rightIndex < sections.length; rightIndex += 1) {
+      const left = sections[leftIndex];
+      const right = sections[rightIndex];
+      const leftFamily = membership.get(left.auditId);
+      const rightFamily = membership.get(right.auditId);
+      if (!leftFamily || !rightFamily || leftFamily === rightFamily) {
+        continue;
+      }
+
+      if (left.sectionType === right.sectionType && left.sectionType !== "ContentSection") {
+        continue;
+      }
+
+      negatives.push({
+        label: "negative",
+        family: `${leftFamily} vs ${rightFamily}`,
+        leftAuditId: left.auditId,
+        rightAuditId: right.auditId,
+      });
+    }
+  }
+
+  negatives.sort((left, right) => {
+    const leftKey = `${left.leftAuditId}::${left.rightAuditId}`;
+    const rightKey = `${right.leftAuditId}::${right.rightAuditId}`;
+    return leftKey.localeCompare(rightKey);
+  });
+
+  return positives.concat(negatives.slice(0, positives.length));
+}
+
+function findBestThreshold(samples, accessor) {
+  const values = [...new Set(samples.map((sample) => accessor(sample)).sort((left, right) => right - left))];
+  let best = {
+    threshold: 0.5,
+    f1: -1,
+    precision: 0,
+    recall: 0,
+    truePositive: 0,
+    falsePositive: 0,
+    falseNegative: 0,
+    trueNegative: 0,
+  };
+
+  for (const threshold of values) {
+    let truePositive = 0;
+    let falsePositive = 0;
+    let falseNegative = 0;
+    let trueNegative = 0;
+
+    for (const sample of samples) {
+      const predictedPositive = accessor(sample) >= threshold;
+      const actualPositive = sample.label === "positive";
+
+      if (predictedPositive && actualPositive) truePositive += 1;
+      if (predictedPositive && !actualPositive) falsePositive += 1;
+      if (!predictedPositive && actualPositive) falseNegative += 1;
+      if (!predictedPositive && !actualPositive) trueNegative += 1;
+    }
+
+    const precision =
+      truePositive + falsePositive === 0 ? 0 : truePositive / (truePositive + falsePositive);
+    const recall =
+      truePositive + falseNegative === 0 ? 0 : truePositive / (truePositive + falseNegative);
+    const f1 =
+      precision + recall === 0 ? 0 : (2 * precision * recall) / (precision + recall);
+
+    if (f1 > best.f1 || (f1 === best.f1 && threshold > best.threshold)) {
+      best = {
+        threshold,
+        f1,
+        precision,
+        recall,
+        truePositive,
+        falsePositive,
+        falseNegative,
+        trueNegative,
+      };
+    }
+  }
+
+  return {
+    threshold: Number(best.threshold.toFixed(4)),
+    f1: Number(best.f1.toFixed(4)),
+    precision: Number(best.precision.toFixed(4)),
+    recall: Number(best.recall.toFixed(4)),
+    truePositive: best.truePositive,
+    falsePositive: best.falsePositive,
+    falseNegative: best.falseNegative,
+    trueNegative: best.trueNegative,
+  };
+}
+
+function evaluateDetectors(sectionPairScores, sectionLookup) {
+  const dataset = buildValidationDataset(sectionLookup)
+    .map((sample) => {
+      const pair = sectionPairScores.lookup.get(getPairKey(sample.leftAuditId, sample.rightAuditId));
+      return pair ? { ...sample, scores: pair } : null;
+    })
+    .filter(Boolean);
+  const detectorKeys = [
+    "typeHint",
+    "structure",
+    "layout",
+    "rootStyle",
+    "subtreeStyle",
+    "classes",
+    "semantics",
+    "patterns",
+    "visual",
+    "combined",
+  ];
+  const detectors = {};
+
+  for (const key of detectorKeys) {
+    const positiveScores = dataset
+      .filter((sample) => sample.label === "positive")
+      .map((sample) => sample.scores[key]);
+    const negativeScores = dataset
+      .filter((sample) => sample.label === "negative")
+      .map((sample) => sample.scores[key]);
+    const summary = findBestThreshold(dataset, (sample) => sample.scores[key]);
+    detectors[key] = {
+      ...summary,
+      averagePositive: Number(
+        (
+          positiveScores.reduce((sum, value) => sum + value, 0) / Math.max(positiveScores.length, 1)
+        ).toFixed(4),
+      ),
+      averageNegative: Number(
+        (
+          negativeScores.reduce((sum, value) => sum + value, 0) / Math.max(negativeScores.length, 1)
+        ).toFixed(4),
+      ),
+    };
+  }
+
+  const familyCoverage = validationFamilies
+    .map((family) => {
+      const members = family.members.filter((member) => sectionLookup.has(member));
+      const familyPairs = [];
+      for (let leftIndex = 0; leftIndex < members.length; leftIndex += 1) {
+        for (let rightIndex = leftIndex + 1; rightIndex < members.length; rightIndex += 1) {
+          const pair = sectionPairScores.lookup.get(getPairKey(members[leftIndex], members[rightIndex]));
+          if (pair) {
+            familyPairs.push(pair);
+          }
+        }
+      }
+
+      const combinedThreshold = detectors.combined.threshold;
+      const matchedCount = familyPairs.filter((pair) => pair.combined >= combinedThreshold).length;
+
+      return {
+        family: family.name,
+        pairCount: familyPairs.length,
+        averageCombined: Number(
+          (
+            familyPairs.reduce((sum, pair) => sum + pair.combined, 0) / Math.max(familyPairs.length, 1)
+          ).toFixed(4),
+        ),
+        matchedCount,
+        matchedPct: Number(
+          ((matchedCount / Math.max(familyPairs.length, 1)) * 100).toFixed(1),
+        ),
+      };
+    })
+    .filter((entry) => entry.pairCount > 0);
+
+  return {
+    datasetSize: dataset.length,
+    positives: dataset.filter((sample) => sample.label === "positive").length,
+    negatives: dataset.filter((sample) => sample.label === "negative").length,
+    detectors,
+    familyCoverage,
+    samples: dataset.map((sample) => ({
+      label: sample.label,
+      family: sample.family,
+      leftAuditId: sample.leftAuditId,
+      rightAuditId: sample.rightAuditId,
+      scores: sample.scores,
+    })),
+  };
+}
+
+function getSectionPairScore(sectionPairScores, left, right) {
+  if (left.auditId === right.auditId) {
+    return null;
+  }
+
+  return sectionPairScores.lookup.get(getPairKey(left.auditId, right.auditId)) || null;
+}
+
+function buildSectionClusters(sections, sectionPairScores, detectorEvaluation) {
+  const combinedThreshold = detectorEvaluation.detectors.combined.threshold;
   const clusters = clusterBySimilarity(
     sections,
-    scoreSectionSimilarity,
+    (left, right) => getSectionPairScore(sectionPairScores, left, right)?.combined || 0,
     (left, right) => {
+      const compatibleGroupMatch =
+        getSectionCompatibleGroup(left.sectionType) === getSectionCompatibleGroup(right.sectionType);
+
+      if (left.sectionType !== right.sectionType && !compatibleGroupMatch) {
+        return 1.01;
+      }
+
+      let threshold = combinedThreshold;
+
       if (left.sectionType === right.sectionType && left.sectionType === "HeroSection") {
-        return 0.42;
+        threshold -= 0.08;
+      }
+
+      if (left.sectionType === right.sectionType && left.sectionType === "ContentSection") {
+        threshold += 0.16;
       }
 
       if (
@@ -1095,14 +2125,18 @@ function buildSectionClusters(sections) {
           left.sectionType,
         )
       ) {
-        return left.sectionType === "CallToAction" ? 0.44 : 0.5;
+        threshold -= left.sectionType === "CallToAction" ? 0.04 : 0.03;
       }
 
       if (left.sectionType === right.sectionType && left.sectionType !== "ContentSection") {
-        return 0.58;
+        threshold -= 0.02;
       }
 
-      return 0.74;
+      if (compatibleGroupMatch) {
+        threshold -= 0.01;
+      }
+
+      return Number(clamp(threshold, 0.36, 0.82).toFixed(4));
     },
     (item) => `${item.sectionType}::${item.structureFingerprint}`,
   );
@@ -1133,6 +2167,10 @@ function buildSectionClusters(sections) {
         firstHeading: item.firstHeading,
         variantTraits: item.variantTraits,
         structureFingerprint: item.structureFingerprint,
+        representativeScores:
+          item.auditId === cluster.representative.auditId
+            ? null
+            : getSectionPairScore(sectionPairScores, cluster.representative, item),
       })),
     };
   });
@@ -1261,6 +2299,30 @@ function buildClassInventory(pageAudits) {
     }));
 }
 
+function summarizeSignalEvidence(scores) {
+  if (!scores) {
+    return "";
+  }
+
+  const strongest = [
+    "typeHint",
+    "structure",
+    "layout",
+    "rootStyle",
+    "subtreeStyle",
+    "classes",
+    "semantics",
+    "patterns",
+    "visual",
+  ]
+    .map((key) => [key, Number(scores[key] || 0)])
+    .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+    .slice(0, 3)
+    .map(([key, value]) => `${key} ${value.toFixed(2)}`);
+
+  return strongest.join(", ");
+}
+
 function renderPageMap(pageAudits) {
   const lines = [
     "# Page Map",
@@ -1314,8 +2376,11 @@ function renderSectionMatrix(sectionClusters, pageAudits) {
       const variantSummary = section.variantTraits.length
         ? `; variants: ${section.variantTraits.join(", ")}`
         : "";
+      const evidenceSummary = item.representativeScores
+        ? `; ensemble: ${item.representativeScores.combined.toFixed(2)}; signals: ${summarizeSignalEvidence(item.representativeScores)}`
+        : "";
       lines.push(
-        `- [ ] \`${item.pageName}\` section ${item.index} at \`${item.route}\`${heading}${variantSummary}${patternSummary}`,
+        `- [ ] \`${item.pageName}\` section ${item.index} at \`${item.route}\`${heading}${variantSummary}${patternSummary}${evidenceSummary}`,
       );
     }
 
@@ -1502,6 +2567,144 @@ function renderChecklist(sectionClusters, patternClusters, pageAudits) {
   return `${lines.join("\n")}\n`;
 }
 
+function buildNearestNeighbors(sections, sectionPairScores, count = 4) {
+  return sections
+    .map((section) => {
+      const neighbors = sections
+        .filter((candidate) => candidate.auditId !== section.auditId)
+        .map((candidate) => ({
+          section,
+          candidate,
+          scores: getSectionPairScore(sectionPairScores, section, candidate),
+        }))
+        .filter((entry) => entry.scores)
+        .sort((left, right) => {
+          if (right.scores.combined !== left.scores.combined) {
+            return right.scores.combined - left.scores.combined;
+          }
+
+          return left.candidate.auditId.localeCompare(right.candidate.auditId);
+        })
+        .slice(0, count);
+
+      return {
+        auditId: section.auditId,
+        pageName: section.pageName,
+        index: section.index,
+        sectionType: section.sectionType,
+        firstHeading: section.firstHeading,
+        route: section.route,
+        neighbors: neighbors.map((entry) => ({
+          auditId: entry.candidate.auditId,
+          pageName: entry.candidate.pageName,
+          index: entry.candidate.index,
+          route: entry.candidate.route,
+          sectionType: entry.candidate.sectionType,
+          firstHeading: entry.candidate.firstHeading,
+          scores: entry.scores,
+        })),
+      };
+    })
+    .sort((left, right) => left.auditId.localeCompare(right.auditId));
+}
+
+function renderSimilarityAnalysis(detectorEvaluation) {
+  const lines = [
+    "# Similarity Detector Analysis",
+    "",
+    `Validation set: ${detectorEvaluation.datasetSize} labeled pairs (${detectorEvaluation.positives} positive, ${detectorEvaluation.negatives} negative).`,
+    "",
+    "## Detector Calibration",
+    "",
+    "| Detector | Threshold | Avg + | Avg - | Precision | Recall | F1 | FP | FN |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+  ];
+
+  for (const [key, summary] of Object.entries(detectorEvaluation.detectors)) {
+    lines.push(
+      `| \`${key}\` | ${summary.threshold.toFixed(2)} | ${summary.averagePositive.toFixed(2)} | ${summary.averageNegative.toFixed(2)} | ${summary.precision.toFixed(2)} | ${summary.recall.toFixed(2)} | ${summary.f1.toFixed(2)} | ${summary.falsePositive} | ${summary.falseNegative} |`,
+    );
+  }
+
+  lines.push("");
+  lines.push("## Family Coverage");
+  lines.push("");
+  lines.push("| Family | Pair count | Avg combined | Above threshold | Coverage |");
+  lines.push("| --- | --- | --- | --- | --- |");
+
+  for (const family of detectorEvaluation.familyCoverage) {
+    lines.push(
+      `| \`${family.family}\` | ${family.pairCount} | ${family.averageCombined.toFixed(2)} | ${family.matchedCount}/${family.pairCount} | ${family.matchedPct.toFixed(1)}% |`,
+    );
+  }
+
+  const combinedThreshold = detectorEvaluation.detectors.combined.threshold;
+  const falseNegatives = detectorEvaluation.samples
+    .filter((sample) => sample.label === "positive" && sample.scores.combined < combinedThreshold)
+    .sort((left, right) => left.scores.combined - right.scores.combined)
+    .slice(0, 12);
+  const falsePositives = detectorEvaluation.samples
+    .filter((sample) => sample.label === "negative" && sample.scores.combined >= combinedThreshold)
+    .sort((left, right) => right.scores.combined - left.scores.combined)
+    .slice(0, 12);
+
+  lines.push("");
+  lines.push("## Misses To Review");
+  lines.push("");
+
+  if (falseNegatives.length === 0 && falsePositives.length === 0) {
+    lines.push("- No labeled misses at the current combined threshold.");
+    lines.push("");
+    return `${lines.join("\n")}\n`;
+  }
+
+  if (falseNegatives.length > 0) {
+    lines.push("### False Negatives");
+    lines.push("");
+    for (const sample of falseNegatives) {
+      lines.push(
+        `- [ ] \`${sample.leftAuditId}\` vs \`${sample.rightAuditId}\` in \`${sample.family}\` fell below threshold at ${sample.scores.combined.toFixed(2)}; strongest signals: ${summarizeSignalEvidence(sample.scores)}.`,
+      );
+    }
+    lines.push("");
+  }
+
+  if (falsePositives.length > 0) {
+    lines.push("### False Positives");
+    lines.push("");
+    for (const sample of falsePositives) {
+      lines.push(
+        `- [ ] \`${sample.leftAuditId}\` vs \`${sample.rightAuditId}\` crossed threshold at ${sample.scores.combined.toFixed(2)}; strongest signals: ${summarizeSignalEvidence(sample.scores)}.`,
+      );
+    }
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function renderNearestNeighbors(sectionLookup, nearestNeighbors) {
+  const lines = ["# Section Nearest Neighbors", ""];
+
+  for (const entry of nearestNeighbors) {
+    const section = sectionLookup.get(entry.auditId);
+    const heading = section?.firstHeading ? ` - ${section.firstHeading}` : "";
+    lines.push(`## \`${entry.pageName}\` section ${entry.index} (${entry.sectionType})${heading}`);
+    lines.push("");
+
+    for (const neighbor of entry.neighbors) {
+      const neighborHeading = neighbor.firstHeading ? ` - ${neighbor.firstHeading}` : "";
+      lines.push(
+        `- [ ] \`${neighbor.pageName}\` section ${neighbor.index} at \`${neighbor.route}\`${neighborHeading}; ensemble ${neighbor.scores.combined.toFixed(2)}; signals: ${summarizeSignalEvidence(neighbor.scores)}.`,
+      );
+    }
+
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
 async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL) {
   const audit = {
     pageName: page.pageName,
@@ -1511,6 +2714,7 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
     sourceSummary,
     viewports: [],
   };
+  const primarySectionVisuals = new Map();
 
   for (const viewport of viewports) {
     const browserPage = await browser.newPage({
@@ -1548,6 +2752,7 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
         const styleCache = new Map();
         const styleProfiles = {};
         let profileCount = 0;
+        let nodeIdCount = 0;
 
         function normalizeText(value) {
           return (value || "").replace(/\s+/g, " ").trim();
@@ -1615,6 +2820,11 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
         }
 
         function collect(element, parentPath = "", depth = 0) {
+          const existingNodeId = element.getAttribute("data-audit-node-id");
+          const auditNodeId = existingNodeId || `audit-node-${++nodeIdCount}`;
+          if (!existingNodeId) {
+            element.setAttribute("data-audit-node-id", auditNodeId);
+          }
           const { profileId, decisionStyle } = getStyleProfile(element);
           const path = getPath(element, parentPath);
           const rect = element.getBoundingClientRect();
@@ -1630,6 +2840,7 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
             Number(decisionStyle.opacity || "1") > 0;
 
           return {
+            auditNodeId,
             path,
             tag: element.tagName.toLowerCase(),
             depth,
@@ -1665,6 +2876,23 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
       },
       { trackedKeys: [...decisionStyleKeys, "visibility"] },
     );
+
+    if (viewport.name === primaryViewport.name) {
+      const primarySectionNodes = findTopLevelSections(snapshot.body);
+      for (const sectionNode of primarySectionNodes) {
+        try {
+          const screenshotBuffer = await browserPage
+            .locator(`[data-audit-node-id="${sectionNode.auditNodeId}"]`)
+            .first()
+            .screenshot({
+              animations: "disabled",
+            });
+          primarySectionVisuals.set(sectionNode.auditNodeId, buildVisualSignature(screenshotBuffer));
+        } catch {
+          primarySectionVisuals.set(sectionNode.auditNodeId, null);
+        }
+      }
+    }
 
     await browserPage.close();
     audit.viewports.push({
@@ -1703,8 +2931,10 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
       structureFingerprint: buildStructureFingerprint(sectionNode),
       looseFingerprint: buildLooseFingerprint(stats),
       nodeSnapshot: sectionNode,
+      visualSignature: primarySectionVisuals.get(sectionNode.auditNodeId) || null,
       stats,
       patterns,
+      signatures: computeSectionSignatures(sectionNode, stats, patterns),
     };
   });
 
@@ -1764,10 +2994,13 @@ async function main() {
     await browser.close();
 
     const globalClassInventory = buildClassInventory(pageAudits);
-    const sectionClusters = buildSectionClusters(
-      pageAudits.flatMap((page) => page.primarySections),
-    );
+    const allSections = pageAudits.flatMap((page) => page.primarySections);
+    const sectionLookup = new Map(allSections.map((section) => [section.auditId, section]));
+    const sectionPairScores = buildSectionPairScores(allSections);
+    const detectorEvaluation = evaluateDetectors(sectionPairScores, sectionLookup);
+    const sectionClusters = buildSectionClusters(allSections, sectionPairScores, detectorEvaluation);
     const patternClusters = buildPatternClusters(pageAudits.flatMap((page) => page.patterns));
+    const nearestNeighbors = buildNearestNeighbors(allSections, sectionPairScores);
 
     const manifest = {
       generatedAt: new Date().toISOString(),
@@ -1795,6 +3028,13 @@ async function main() {
       })),
       sectionClusters,
       patternClusters,
+      detectorEvaluation: {
+        datasetSize: detectorEvaluation.datasetSize,
+        positives: detectorEvaluation.positives,
+        negatives: detectorEvaluation.negatives,
+        detectors: detectorEvaluation.detectors,
+        familyCoverage: detectorEvaluation.familyCoverage,
+      },
       globalClassInventory,
     };
 
@@ -1815,12 +3055,34 @@ async function main() {
         2,
       ),
     );
+    writeFileSync(
+      join(rawDir, "section-similarity.json"),
+      JSON.stringify(
+        {
+          generatedAt: manifest.generatedAt,
+          detectorWeights: similarityDetectorWeights,
+          detectorEvaluation,
+          nearestNeighbors,
+          pairs: sectionPairScores.rows,
+        },
+        null,
+        2,
+      ),
+    );
     writeFileSync(join(outputDir, "01-page-map.md"), renderPageMap(pageAudits));
     writeFileSync(join(outputDir, "02-section-matrix.md"), renderSectionMatrix(sectionClusters, pageAudits));
     writeFileSync(join(outputDir, "03-style-deltas.md"), renderStyleDeltas(sectionClusters, pageAudits, patternClusters));
     writeFileSync(
       join(outputDir, "04-consolidation-checklist.md"),
       renderChecklist(sectionClusters, patternClusters, pageAudits),
+    );
+    writeFileSync(
+      join(outputDir, "06-similarity-detectors.md"),
+      renderSimilarityAnalysis(detectorEvaluation),
+    );
+    writeFileSync(
+      join(outputDir, "07-section-neighbors.md"),
+      renderNearestNeighbors(sectionLookup, nearestNeighbors),
     );
 
     console.log(`Audit complete. Reports written to ${relative(rootDir, outputDir)}`);

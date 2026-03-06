@@ -105,7 +105,23 @@
 
 - [ ] Define the canonical `FinalCtaSection` boundary using `index` section 6.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Resolve these root-level style decisions before extraction:
+- [ ] height: 588px vs 590px vs 660px vs 688px vs 694px vs 704px vs 940px
+- [ ] background-color: rgb(226, 232, 240) vs rgb(246, 246, 248) vs rgb(255, 255, 255)
+- [ ] padding-top: 128px vs 96px
+- [ ] padding-bottom: 128px vs 96px
+- [ ] font-family: "DM Sans", Inter, system-ui, sans-serif vs "DM Sans", sans-serif
+- [ ] line-height: 24px vs 26px
+- [ ] border-top-width: 0px vs 2px
+- [ ] border-bottom-width: 0px vs 2px
+- [ ] Consolidate `about` section 8 at `/about`; variants: with-badge, framed-panel, button-primary.
+- [ ] Consolidate `case-studies` section 6 at `/case-studies`; variants: with-badge, framed-panel, button-primary.
+- [ ] Consolidate `faq` section 8 at `/faq`; variants: without-badge, framed-panel, button-primary.
 - [ ] Consolidate `index` section 6 at `/` (canonical candidate).
+- [ ] Consolidate `index_original` section 6 at `/index_original`; variants: with-badge, framed-panel, button-primary.
+- [ ] Consolidate `lead-generation` section 9 at `/lead-generation`; variants: without-badge, framed-panel, button-primary.
+- [ ] Consolidate `local-seo` section 9 at `/local-seo`; variants: without-badge, framed-panel, button-primary.
+- [ ] Consolidate `web-design` section 9 at `/web-design`; variants: without-badge, framed-panel, button-primary.
 
 ## SiteFooter
 
@@ -178,31 +194,26 @@
 
 - [ ] Define the canonical `ContentSection: WHY THE TRADES?` boundary using `about` section 5.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Resolve these root-level style decisions before extraction:
-- [ ] height: 466.5px vs 480px vs 604px vs 692px vs 694px vs 714px vs 730px vs 858px
-- [ ] background-color: rgb(11, 29, 51) vs rgb(226, 232, 240) vs rgb(255, 255, 255)
-- [ ] position: relative vs static
-- [ ] top: 0px vs auto
-- [ ] right: 0px vs auto
-- [ ] bottom: 0px vs auto
-- [ ] left: 0px vs auto
-- [ ] padding-top: 128px vs 96px
 - [ ] Consolidate `about` section 5 at `/about` (canonical candidate).
-- [ ] Consolidate `about` section 7 at `/about`.
-- [ ] Consolidate `case-studies` section 5 at `/case-studies`.
-- [ ] Consolidate `lead-generation` section 4 at `/lead-generation`.
-- [ ] Consolidate `lead-generation` section 6 at `/lead-generation`.
-- [ ] Consolidate `lead-generation` section 8 at `/lead-generation`.
-- [ ] Consolidate `local-seo` section 8 at `/local-seo`.
-- [ ] Consolidate `web-design` section 7 at `/web-design`.
 
-## CallToAction
+## ContentSection: THE PARTNERSHIP EXPERIENCE
 
-- [ ] Define the canonical `CallToAction` boundary using `index_original` section 6.
+- [ ] Define the canonical `ContentSection: THE PARTNERSHIP EXPERIENCE` boundary using `about` section 7.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Canonical variant traits: with-badge, framed-panel, button-primary.
+- [ ] Consolidate `about` section 7 at `/about` (canonical candidate).
+
+## SectionNav
+
+- [ ] Define the canonical `SectionNav` boundary using `case-studies` section 3.
+- [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Consolidate `case-studies` section 3 at `/case-studies` (canonical candidate).
+
+## ContentSection: OUR REPORTING DEPTH
+
+- [ ] Define the canonical `ContentSection: OUR REPORTING DEPTH` boundary using `case-studies` section 5.
+- [ ] Decide whether this becomes one shared component or a component with variants.
 - [ ] Resolve these root-level style decisions before extraction:
-- [ ] height: 588px vs 590px vs 660px vs 688px vs 694px vs 704px vs 940px
+- [ ] height: 406px vs 480px vs 604px vs 692px vs 714px
 - [ ] background-color: rgb(226, 232, 240) vs rgb(246, 246, 248) vs rgb(255, 255, 255)
 - [ ] padding-top: 128px vs 96px
 - [ ] padding-bottom: 128px vs 96px
@@ -210,19 +221,11 @@
 - [ ] border-bottom-width: 0px vs 2px
 - [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
 - [ ] border-right-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
-- [ ] Consolidate `about` section 8 at `/about`; variants: with-badge, framed-panel, button-primary.
-- [ ] Consolidate `case-studies` section 6 at `/case-studies`; variants: with-badge, framed-panel, button-primary.
-- [ ] Consolidate `faq` section 8 at `/faq`; variants: without-badge, framed-panel, button-primary.
-- [ ] Consolidate `index_original` section 6 at `/index_original` (canonical candidate); variants: with-badge, framed-panel, button-primary.
-- [ ] Consolidate `lead-generation` section 9 at `/lead-generation`; variants: without-badge, framed-panel, button-primary.
-- [ ] Consolidate `local-seo` section 9 at `/local-seo`; variants: without-badge, framed-panel, button-primary.
-- [ ] Consolidate `web-design` section 9 at `/web-design`; variants: without-badge, framed-panel, button-primary.
-
-## SectionNav
-
-- [ ] Define the canonical `SectionNav` boundary using `case-studies` section 3.
-- [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `case-studies` section 3 at `/case-studies` (canonical candidate).
+- [ ] Consolidate `case-studies` section 5 at `/case-studies` (canonical candidate).
+- [ ] Consolidate `lead-generation` section 4 at `/lead-generation`.
+- [ ] Consolidate `lead-generation` section 8 at `/lead-generation`.
+- [ ] Consolidate `thank-you` section 3 at `/thank-you`.
+- [ ] Consolidate `web-design` section 7 at `/web-design`.
 
 ## FormSection
 
@@ -268,29 +271,41 @@
 - [ ] Consolidate `local-seo` section 3 at `/local-seo`.
 - [ ] Consolidate `web-design` section 3 at `/web-design`.
 
+## ContentSection: HOW WE MEASURE SUCCESS
+
+- [ ] Define the canonical `ContentSection: HOW WE MEASURE SUCCESS` boundary using `lead-generation` section 6.
+- [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Consolidate `lead-generation` section 6 at `/lead-generation` (canonical candidate).
+
 ## ContentSection: BUDGET & EXPECTATIONS
 
 - [ ] Define the canonical `ContentSection: BUDGET & EXPECTATIONS` boundary using `lead-generation` section 7.
 - [ ] Decide whether this becomes one shared component or a component with variants.
 - [ ] Resolve these root-level style decisions before extraction:
-- [ ] height: 1073px vs 1080px vs 668px vs 835px
-- [ ] background-color: rgb(11, 29, 51) vs rgb(226, 232, 240) vs rgb(246, 246, 248) vs rgb(255, 255, 255)
-- [ ] position: relative vs static
-- [ ] top: 0px vs auto
-- [ ] right: 0px vs auto
-- [ ] bottom: 0px vs auto
-- [ ] left: 0px vs auto
+- [ ] height: 1073px vs 668px
 - [ ] padding-top: 128px vs 96px
+- [ ] padding-bottom: 128px vs 96px
+- [ ] background-color: rgb(246, 246, 248) vs rgb(255, 255, 255)
 - [ ] Consolidate `lead-generation` section 7 at `/lead-generation` (canonical candidate).
 - [ ] Consolidate `local-seo` section 4 at `/local-seo`.
-- [ ] Consolidate `local-seo` section 5 at `/local-seo`.
-- [ ] Consolidate `local-seo` section 7 at `/local-seo`.
 
-## ContentSection: REVIEW
+## ContentSection: WHAT WE FIX FIRST
 
-- [ ] Define the canonical `ContentSection: REVIEW` boundary using `thank-you` section 3.
+- [ ] Define the canonical `ContentSection: WHAT WE FIX FIRST` boundary using `local-seo` section 5.
 - [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Consolidate `thank-you` section 3 at `/thank-you` (canonical candidate).
+- [ ] Consolidate `local-seo` section 5 at `/local-seo` (canonical candidate).
+
+## ContentSection: WHAT WE WILL NOT DO
+
+- [ ] Define the canonical `ContentSection: WHAT WE WILL NOT DO` boundary using `local-seo` section 7.
+- [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Consolidate `local-seo` section 7 at `/local-seo` (canonical candidate).
+
+## ContentSection: COMPOUNDING GROWTH
+
+- [ ] Define the canonical `ContentSection: COMPOUNDING GROWTH` boundary using `local-seo` section 8.
+- [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Consolidate `local-seo` section 8 at `/local-seo` (canonical candidate).
 
 ## ContentSection: THE DELIVERABLES
 

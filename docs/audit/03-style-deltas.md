@@ -59,6 +59,21 @@
 - `border-right-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
 - `border-left-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
 
+## FinalCtaSection
+
+- `height`: 588px | 590px | 660px | 688px | 694px | 704px | 940px
+- `background-color`: rgb(226, 232, 240) | rgb(246, 246, 248) | rgb(255, 255, 255)
+- `padding-top`: 128px | 96px
+- `padding-bottom`: 128px | 96px
+- `font-family`: "DM Sans", Inter, system-ui, sans-serif | "DM Sans", sans-serif
+- `line-height`: 24px | 26px
+- `border-top-width`: 0px | 2px
+- `border-bottom-width`: 0px | 2px
+- `border-top-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
+- `border-right-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
+- `border-bottom-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
+- `border-left-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
+
 ## SiteFooter
 
 - `height`: 437.75px | 462px | 464px | 466px | 486px | 583px
@@ -104,23 +119,9 @@
 - `border-bottom-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
 - `border-left-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
 
-## ContentSection: WHY THE TRADES?
+## ContentSection: OUR REPORTING DEPTH
 
-- `height`: 466.5px | 480px | 604px | 692px | 694px | 714px | 730px | 858px
-- `background-color`: rgb(11, 29, 51) | rgb(226, 232, 240) | rgb(255, 255, 255)
-- `position`: relative | static
-- `top`: 0px | auto
-- `right`: 0px | auto
-- `bottom`: 0px | auto
-- `left`: 0px | auto
-- `padding-top`: 128px | 96px
-- `padding-bottom`: 128px | 96px
-- `color`: rgb(11, 29, 51) | rgb(255, 255, 255)
-- `border-top-width`: 0px | 2px
-
-## CallToAction
-
-- `height`: 588px | 590px | 660px | 688px | 694px | 704px | 940px
+- `height`: 406px | 480px | 604px | 692px | 714px
 - `background-color`: rgb(226, 232, 240) | rgb(246, 246, 248) | rgb(255, 255, 255)
 - `padding-top`: 128px | 96px
 - `padding-bottom`: 128px | 96px
@@ -157,22 +158,10 @@
 
 ## ContentSection: BUDGET & EXPECTATIONS
 
-- `height`: 1073px | 1080px | 668px | 835px
-- `background-color`: rgb(11, 29, 51) | rgb(226, 232, 240) | rgb(246, 246, 248) | rgb(255, 255, 255)
-- `position`: relative | static
-- `top`: 0px | auto
-- `right`: 0px | auto
-- `bottom`: 0px | auto
-- `left`: 0px | auto
+- `height`: 1073px | 668px
 - `padding-top`: 128px | 96px
 - `padding-bottom`: 128px | 96px
-- `color`: rgb(11, 29, 51) | rgb(255, 255, 255)
-- `border-top-width`: 0px | 4px
-- `border-bottom-width`: 0px | 4px
-- `border-top-color`: rgb(229, 231, 235) | rgb(255, 123, 0)
-- `border-right-color`: rgb(229, 231, 235) | rgb(255, 123, 0)
-- `border-bottom-color`: rgb(229, 231, 235) | rgb(255, 123, 0)
-- `border-left-color`: rgb(229, 231, 235) | rgb(255, 123, 0)
+- `background-color`: rgb(246, 246, 248) | rgb(255, 255, 255)
 
 # Pattern Deltas
 

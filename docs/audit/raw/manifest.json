@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T06:11:29.734Z",
+  "generatedAt": "2026-03-06T06:49:17.068Z",
   "baseURL": "http://127.0.0.1:4322",
   "serverCommand": "npm run dev -- --host 127.0.0.1 --port 4322",
   "viewports": [
@@ -4212,7 +4212,8 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": null
         },
         {
           "auditId": "about::section-1",
@@ -4222,7 +4223,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "about::section-1",
+            "leftPageName": "index",
+            "rightPageName": "about",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.5,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.8933,
+            "classes": 0.0143,
+            "semantics": 0.9012,
+            "patterns": 1,
+            "visual": 0.9335,
+            "combined": 0.7567
+          }
         },
         {
           "auditId": "case-studies::section-1",
@@ -4232,7 +4251,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "case-studies::section-1",
+            "leftPageName": "index",
+            "rightPageName": "case-studies",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.4375,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.8875,
+            "classes": 0.015,
+            "semantics": 0.8252,
+            "patterns": 1,
+            "visual": 0.7891,
+            "combined": 0.714
+          }
         },
         {
           "auditId": "contact::section-1",
@@ -4242,7 +4279,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "contact::section-1",
+            "leftPageName": "index",
+            "rightPageName": "contact",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.5,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.911,
+            "classes": 0.0142,
+            "semantics": 0.7447,
+            "patterns": 1,
+            "visual": 0.923,
+            "combined": 0.7484
+          }
         },
         {
           "auditId": "cookie-policy::section-1",
@@ -4252,7 +4307,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "cookie-policy::section-1",
+            "leftPageName": "index",
+            "rightPageName": "cookie-policy",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.5,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.917,
+            "classes": 0.0143,
+            "semantics": 0.8774,
+            "patterns": 1,
+            "visual": 0.9672,
+            "combined": 0.7654
+          }
         },
         {
           "auditId": "faq::section-1",
@@ -4262,7 +4335,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "faq::section-1",
+            "leftPageName": "index",
+            "rightPageName": "faq",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 1,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.917,
+            "classes": 0.0143,
+            "semantics": 0.8774,
+            "patterns": 1,
+            "visual": 0.9707,
+            "combined": 0.856
+          }
         },
         {
           "auditId": "index_original::section-1",
@@ -4272,7 +4363,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "index_original::section-1",
+            "leftPageName": "index",
+            "rightPageName": "index_original",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 1,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.917,
+            "classes": 0.0143,
+            "semantics": 0.8774,
+            "patterns": 1,
+            "visual": 0.9707,
+            "combined": 0.856
+          }
         },
         {
           "auditId": "lead-generation::section-1",
@@ -4282,7 +4391,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "47fdb2b6"
+          "structureFingerprint": "47fdb2b6",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "lead-generation::section-1",
+            "leftPageName": "index",
+            "rightPageName": "lead-generation",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.3857,
+            "layout": 0.4037,
+            "rootStyle": 0.86,
+            "subtreeStyle": 0.7596,
+            "classes": 0.0142,
+            "semantics": 0.5989,
+            "patterns": 1,
+            "visual": 0.9098,
+            "combined": 0.6307
+          }
         },
         {
           "auditId": "local-seo::section-1",
@@ -4292,7 +4419,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "local-seo::section-1",
+            "leftPageName": "index",
+            "rightPageName": "local-seo",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.4375,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.8992,
+            "classes": 0.0143,
+            "semantics": 0.7145,
+            "patterns": 1,
+            "visual": 0.8782,
+            "combined": 0.7253
+          }
         },
         {
           "auditId": "privacy::section-1",
@@ -4302,7 +4447,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "privacy::section-1",
+            "leftPageName": "index",
+            "rightPageName": "privacy",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.5,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.917,
+            "classes": 0.0143,
+            "semantics": 0.8774,
+            "patterns": 1,
+            "visual": 0.9672,
+            "combined": 0.7654
+          }
         },
         {
           "auditId": "terms::section-1",
@@ -4312,7 +4475,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "terms::section-1",
+            "leftPageName": "index",
+            "rightPageName": "terms",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.5,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.917,
+            "classes": 0.0143,
+            "semantics": 0.8774,
+            "patterns": 1,
+            "visual": 0.9672,
+            "combined": 0.7654
+          }
         },
         {
           "auditId": "thank-you::section-1",
@@ -4322,7 +4503,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "thank-you::section-1",
+            "leftPageName": "index",
+            "rightPageName": "thank-you",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 0.4375,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.917,
+            "classes": 0.0143,
+            "semantics": 0.7447,
+            "patterns": 1,
+            "visual": 0.904,
+            "combined": 0.7348
+          }
         },
         {
           "auditId": "web-design::section-1",
@@ -4332,7 +4531,25 @@
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7cb727cd"
+          "structureFingerprint": "7cb727cd",
+          "representativeScores": {
+            "leftAuditId": "index::section-1",
+            "rightAuditId": "web-design::section-1",
+            "leftPageName": "index",
+            "rightPageName": "web-design",
+            "leftSectionType": "SiteHeader",
+            "rightSectionType": "SiteHeader",
+            "typeHint": 1,
+            "structure": 0.8,
+            "layout": 1,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.917,
+            "classes": 0.0143,
+            "semantics": 0.8774,
+            "patterns": 1,
+            "visual": 0.9707,
+            "combined": 0.856
+          }
         }
       ]
     },
@@ -4357,7 +4574,8 @@
             "height-tall",
             "heading-width-medium"
           ],
-          "structureFingerprint": "2307e253"
+          "structureFingerprint": "2307e253",
+          "representativeScores": null
         },
         {
           "auditId": "about::section-2",
@@ -4373,7 +4591,25 @@
             "height-medium",
             "heading-width-wide"
           ],
-          "structureFingerprint": "db132018"
+          "structureFingerprint": "db132018",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "about::section-2",
+            "leftPageName": "index",
+            "rightPageName": "about",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.18,
+            "layout": 0.0682,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.4333,
+            "classes": 0,
+            "semantics": 0.0166,
+            "patterns": 0,
+            "visual": 0.7758,
+            "combined": 0.3824
+          }
         },
         {
           "auditId": "case-studies::section-2",
@@ -4389,7 +4625,25 @@
             "height-short",
             "heading-width-wide"
           ],
-          "structureFingerprint": "66c60a16"
+          "structureFingerprint": "66c60a16",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "case-studies::section-2",
+            "leftPageName": "index",
+            "rightPageName": "case-studies",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.175,
+            "layout": 0.2063,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.3689,
+            "classes": 0,
+            "semantics": 0.0289,
+            "patterns": 0,
+            "visual": 0.6705,
+            "combined": 0.3745
+          }
         },
         {
           "auditId": "contact::section-2",
@@ -4405,7 +4659,25 @@
             "height-short",
             "heading-width-wide"
           ],
-          "structureFingerprint": "1e257e14"
+          "structureFingerprint": "1e257e14",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "contact::section-2",
+            "leftPageName": "index",
+            "rightPageName": "contact",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.1772,
+            "layout": 0.2063,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.419,
+            "classes": 0,
+            "semantics": 0,
+            "patterns": 0,
+            "visual": 0.6722,
+            "combined": 0.3847
+          }
         },
         {
           "auditId": "cookie-policy::section-2",
@@ -4421,7 +4693,25 @@
             "height-short",
             "heading-width-wide"
           ],
-          "structureFingerprint": "e60eb506"
+          "structureFingerprint": "e60eb506",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "cookie-policy::section-2",
+            "leftPageName": "index",
+            "rightPageName": "cookie-policy",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.1772,
+            "layout": 0.1259,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.4022,
+            "classes": 0,
+            "semantics": 0,
+            "patterns": 0,
+            "visual": 0.6643,
+            "combined": 0.3632
+          }
         },
         {
           "auditId": "faq::section-2",
@@ -4437,7 +4727,25 @@
             "height-medium",
             "heading-width-wide"
           ],
-          "structureFingerprint": "ffd85db5"
+          "structureFingerprint": "ffd85db5",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "faq::section-2",
+            "leftPageName": "index",
+            "rightPageName": "faq",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.2013,
+            "layout": 0.2971,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.4593,
+            "classes": 0,
+            "semantics": 0.0314,
+            "patterns": 0,
+            "visual": 0.7243,
+            "combined": 0.4228
+          }
         },
         {
           "auditId": "index_original::section-2",
@@ -4453,7 +4761,25 @@
             "height-tall",
             "heading-width-medium"
           ],
-          "structureFingerprint": "ed0c3fd4"
+          "structureFingerprint": "ed0c3fd4",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "index_original::section-2",
+            "leftPageName": "index",
+            "rightPageName": "index_original",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.405,
+            "layout": 0.5804,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.8304,
+            "classes": 0,
+            "semantics": 0.8703,
+            "patterns": 1,
+            "visual": 0.8524,
+            "combined": 0.6808
+          }
         },
         {
           "auditId": "lead-generation::section-2",
@@ -4469,7 +4795,25 @@
             "height-tall",
             "heading-width-wide"
           ],
-          "structureFingerprint": "eb8b2075"
+          "structureFingerprint": "eb8b2075",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "lead-generation::section-2",
+            "leftPageName": "index",
+            "rightPageName": "lead-generation",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.2738,
+            "layout": 0.2341,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.6559,
+            "classes": 0,
+            "semantics": 0.0087,
+            "patterns": 0.5,
+            "visual": 0.767,
+            "combined": 0.4821
+          }
         },
         {
           "auditId": "local-seo::section-2",
@@ -4485,7 +4829,25 @@
             "height-tall",
             "heading-width-wide"
           ],
-          "structureFingerprint": "dd8dab56"
+          "structureFingerprint": "dd8dab56",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "local-seo::section-2",
+            "leftPageName": "index",
+            "rightPageName": "local-seo",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.2496,
+            "layout": 0.267,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.5508,
+            "classes": 0,
+            "semantics": 0,
+            "patterns": 0,
+            "visual": 0.804,
+            "combined": 0.4526
+          }
         },
         {
           "auditId": "privacy::section-2",
@@ -4501,7 +4863,25 @@
             "height-short",
             "heading-width-wide"
           ],
-          "structureFingerprint": "e60eb506"
+          "structureFingerprint": "e60eb506",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "privacy::section-2",
+            "leftPageName": "index",
+            "rightPageName": "privacy",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.1772,
+            "layout": 0.1259,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.4022,
+            "classes": 0,
+            "semantics": 0,
+            "patterns": 0,
+            "visual": 0.6643,
+            "combined": 0.3632
+          }
         },
         {
           "auditId": "terms::section-2",
@@ -4517,7 +4897,25 @@
             "height-short",
             "heading-width-wide"
           ],
-          "structureFingerprint": "e60eb506"
+          "structureFingerprint": "e60eb506",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "terms::section-2",
+            "leftPageName": "index",
+            "rightPageName": "terms",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.1772,
+            "layout": 0.1259,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.4022,
+            "classes": 0,
+            "semantics": 0,
+            "patterns": 0,
+            "visual": 0.6643,
+            "combined": 0.3632
+          }
         },
         {
           "auditId": "thank-you::section-2",
@@ -4533,7 +4931,25 @@
             "height-tall",
             "heading-width-wide"
           ],
-          "structureFingerprint": "245f92bb"
+          "structureFingerprint": "245f92bb",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "thank-you::section-2",
+            "leftPageName": "index",
+            "rightPageName": "thank-you",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.2341,
+            "layout": 0.1458,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.6744,
+            "classes": 0,
+            "semantics": 0,
+            "patterns": 0.5,
+            "visual": 0.7589,
+            "combined": 0.4586
+          }
         },
         {
           "auditId": "web-design::section-2",
@@ -4549,7 +4965,25 @@
             "height-tall",
             "heading-width-medium"
           ],
-          "structureFingerprint": "3bf367cc"
+          "structureFingerprint": "3bf367cc",
+          "representativeScores": {
+            "leftAuditId": "index::section-2",
+            "rightAuditId": "web-design::section-2",
+            "leftPageName": "index",
+            "rightPageName": "web-design",
+            "leftSectionType": "HeroSection",
+            "rightSectionType": "HeroSection",
+            "typeHint": 1,
+            "structure": 0.2893,
+            "layout": 0.3977,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.6037,
+            "classes": 0,
+            "semantics": 0.2988,
+            "patterns": 0.5714,
+            "visual": 0.7999,
+            "combined": 0.5312
+          }
         }
       ]
     },
@@ -4568,7 +5002,8 @@
           "sectionType": "CredibilityStrip",
           "firstHeading": "",
           "variantTraits": [],
-          "structureFingerprint": "a684aeac"
+          "structureFingerprint": "a684aeac",
+          "representativeScores": null
         },
         {
           "auditId": "index_original::section-3",
@@ -4578,7 +5013,25 @@
           "sectionType": "CredibilityStrip",
           "firstHeading": "",
           "variantTraits": [],
-          "structureFingerprint": "9a1a3842"
+          "structureFingerprint": "9a1a3842",
+          "representativeScores": {
+            "leftAuditId": "index::section-3",
+            "rightAuditId": "index_original::section-3",
+            "leftPageName": "index",
+            "rightPageName": "index_original",
+            "leftSectionType": "CredibilityStrip",
+            "rightSectionType": "CredibilityStrip",
+            "typeHint": 1,
+            "structure": 0.3622,
+            "layout": 0.625,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.8877,
+            "classes": 0.0433,
+            "semantics": 0.3575,
+            "patterns": 0.7778,
+            "visual": 0.9615,
+            "combined": 0.6798
+          }
         }
       ]
     },
@@ -4597,7 +5050,8 @@
           "sectionType": "ServicesSection",
           "firstHeading": "NO FLUFF. JUST RESULTS.",
           "variantTraits": [],
-          "structureFingerprint": "84e207d4"
+          "structureFingerprint": "84e207d4",
+          "representativeScores": null
         },
         {
           "auditId": "index_original::section-4",
@@ -4607,7 +5061,25 @@
           "sectionType": "ServicesSection",
           "firstHeading": "NO FLUFF. JUST RESULTS.",
           "variantTraits": [],
-          "structureFingerprint": "92945834"
+          "structureFingerprint": "92945834",
+          "representativeScores": {
+            "leftAuditId": "index::section-4",
+            "rightAuditId": "index_original::section-4",
+            "leftPageName": "index",
+            "rightPageName": "index_original",
+            "leftSectionType": "ServicesSection",
+            "rightSectionType": "ServicesSection",
+            "typeHint": 1,
+            "structure": 0.3253,
+            "layout": 0.6,
+            "rootStyle": 0.94,
+            "subtreeStyle": 0.7583,
+            "classes": 0.0163,
+            "semantics": 0.9678,
+            "patterns": 1,
+            "visual": 0.9364,
+            "combined": 0.6894
+          }
         },
         {
           "auditId": "lead-generation::section-5",
@@ -4617,7 +5089,25 @@
           "sectionType": "ServicesSection",
           "firstHeading": "WHAT WE MANAGE",
           "variantTraits": [],
-          "structureFingerprint": "dc65822c"
+          "structureFingerprint": "dc65822c",
+          "representativeScores": {
+            "leftAuditId": "index::section-4",
+            "rightAuditId": "lead-generation::section-5",
+            "leftPageName": "index",
+            "rightPageName": "lead-generation",
+            "leftSectionType": "ServicesSection",
+            "rightSectionType": "ServicesSection",
+            "typeHint": 1,
+            "structure": 0.2581,
+            "layout": 0.2202,
+            "rootStyle": 0.82,
+            "subtreeStyle": 0.6223,
+            "classes": 0.0173,
+            "semantics": 0.0933,
+            "patterns": 0.8,
+            "visual": 0.884,
+            "combined": 0.5097
+          }
         }
       ]
     },
@@ -4636,7 +5126,8 @@
           "sectionType": "ProcessSection",
           "firstHeading": "THE DONE DEAL PROCESS",
           "variantTraits": [],
-          "structureFingerprint": "8d2bcd55"
+          "structureFingerprint": "8d2bcd55",
+          "representativeScores": null
         },
         {
           "auditId": "index_original::section-5",
@@ -4646,7 +5137,25 @@
           "sectionType": "ProcessSection",
           "firstHeading": "THE DONE DEAL PROCESS",
           "variantTraits": [],
-          "structureFingerprint": "14554ed3"
+          "structureFingerprint": "14554ed3",
+          "representativeScores": {
+            "leftAuditId": "index::section-5",
+            "rightAuditId": "index_original::section-5",
+            "leftPageName": "index",
+            "rightPageName": "index_original",
+            "leftSectionType": "ProcessSection",
+            "rightSectionType": "ProcessSection",
+            "typeHint": 1,
+            "structure": 0.4359,
+            "layout": 0.8511,
+            "rootStyle": 0.86,
+            "subtreeStyle": 0.8819,
+            "classes": 0,
+            "semantics": 0.7732,
+            "patterns": 1,
+            "visual": 0.8515,
+            "combined": 0.7384
+          }
         },
         {
           "auditId": "web-design::section-5",
@@ -4656,7 +5165,25 @@
           "sectionType": "ProcessSection",
           "firstHeading": "BUILT FOR UTILITY, NOT JUST DECORATION.",
           "variantTraits": [],
-          "structureFingerprint": "584daa6b"
+          "structureFingerprint": "584daa6b",
+          "representativeScores": {
+            "leftAuditId": "index::section-5",
+            "rightAuditId": "web-design::section-5",
+            "leftPageName": "index",
+            "rightPageName": "web-design",
+            "leftSectionType": "ProcessSection",
+            "rightSectionType": "ProcessSection",
+            "typeHint": 1,
+            "structure": 0.3336,
+            "layout": 0.3319,
+            "rootStyle": 0.74,
+            "subtreeStyle": 0.7295,
+            "classes": 0,
+            "semantics": 0.0033,
+            "patterns": 0,
+            "visual": 0.4154,
+            "combined": 0.4306
+          }
         }
       ]
     },
@@ -4664,7 +5191,7 @@
       "id": "section-6",
       "sectionType": "FinalCtaSection",
       "displayName": "FinalCtaSection",
-      "status": "Unique",
+      "status": "Variant of Same Component",
       "representativeId": "index::section-6",
       "items": [
         {
@@ -4675,7 +5202,232 @@
           "sectionType": "FinalCtaSection",
           "firstHeading": "READY TO GROW?",
           "variantTraits": [],
-          "structureFingerprint": "4fa2ecf6"
+          "structureFingerprint": "4fa2ecf6",
+          "representativeScores": null
+        },
+        {
+          "auditId": "about::section-8",
+          "pageName": "about",
+          "route": "/about",
+          "index": 8,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?",
+          "variantTraits": [
+            "with-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "dce571df",
+          "representativeScores": {
+            "leftAuditId": "index::section-6",
+            "rightAuditId": "about::section-8",
+            "leftPageName": "index",
+            "rightPageName": "about",
+            "leftSectionType": "FinalCtaSection",
+            "rightSectionType": "CallToAction",
+            "typeHint": 0.55,
+            "structure": 0.36,
+            "layout": 0.8125,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.7374,
+            "classes": 0,
+            "semantics": 0.1329,
+            "patterns": 0.35,
+            "visual": 0.8855,
+            "combined": 0.6085
+          }
+        },
+        {
+          "auditId": "case-studies::section-6",
+          "pageName": "case-studies",
+          "route": "/case-studies",
+          "index": 6,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY TO BE OUR NEXT SUCCESS STORY?",
+          "variantTraits": [
+            "with-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "0c3a0795",
+          "representativeScores": {
+            "leftAuditId": "index::section-6",
+            "rightAuditId": "case-studies::section-6",
+            "leftPageName": "index",
+            "rightPageName": "case-studies",
+            "leftSectionType": "FinalCtaSection",
+            "rightSectionType": "CallToAction",
+            "typeHint": 0.55,
+            "structure": 0.3833,
+            "layout": 0.5536,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.8333,
+            "classes": 0,
+            "semantics": 0.1783,
+            "patterns": 0.35,
+            "visual": 0.8936,
+            "combined": 0.5859
+          }
+        },
+        {
+          "auditId": "faq::section-8",
+          "pageName": "faq",
+          "route": "/faq",
+          "index": 8,
+          "sectionType": "CallToAction",
+          "firstHeading": "STILL HAVE QUESTIONS? LET'S TALK.",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "4932f4f6",
+          "representativeScores": {
+            "leftAuditId": "index::section-6",
+            "rightAuditId": "faq::section-8",
+            "leftPageName": "index",
+            "rightPageName": "faq",
+            "leftSectionType": "FinalCtaSection",
+            "rightSectionType": "CallToAction",
+            "typeHint": 0.55,
+            "structure": 0.3,
+            "layout": 0.4915,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.6338,
+            "classes": 0,
+            "semantics": 0.0168,
+            "patterns": 0.35,
+            "visual": 0.8449,
+            "combined": 0.5084
+          }
+        },
+        {
+          "auditId": "index_original::section-6",
+          "pageName": "index_original",
+          "route": "/index_original",
+          "index": 6,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY TO SCALE YOUR CREW?",
+          "variantTraits": [
+            "with-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "20ddf752",
+          "representativeScores": {
+            "leftAuditId": "index::section-6",
+            "rightAuditId": "index_original::section-6",
+            "leftPageName": "index",
+            "rightPageName": "index_original",
+            "leftSectionType": "FinalCtaSection",
+            "rightSectionType": "CallToAction",
+            "typeHint": 0.55,
+            "structure": 0.2769,
+            "layout": 0.6444,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.6029,
+            "classes": 0,
+            "semantics": 0.3598,
+            "patterns": 0.35,
+            "visual": 0.935,
+            "combined": 0.5654
+          }
+        },
+        {
+          "auditId": "lead-generation::section-9",
+          "pageName": "lead-generation",
+          "route": "/lead-generation",
+          "index": 9,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY TO SEE IF PAID ADS MAKE SENSE?",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "ceb1f944",
+          "representativeScores": {
+            "leftAuditId": "index::section-6",
+            "rightAuditId": "lead-generation::section-9",
+            "leftPageName": "index",
+            "rightPageName": "lead-generation",
+            "leftSectionType": "FinalCtaSection",
+            "rightSectionType": "CallToAction",
+            "typeHint": 0.55,
+            "structure": 0.45,
+            "layout": 0.5476,
+            "rootStyle": 0.86,
+            "subtreeStyle": 0.7945,
+            "classes": 0,
+            "semantics": 0.1718,
+            "patterns": 0.35,
+            "visual": 0.5905,
+            "combined": 0.5304
+          }
+        },
+        {
+          "auditId": "local-seo::section-9",
+          "pageName": "local-seo",
+          "route": "/local-seo",
+          "index": 9,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY TO BE EASIER TO FIND?",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "97d071c5",
+          "representativeScores": {
+            "leftAuditId": "index::section-6",
+            "rightAuditId": "local-seo::section-9",
+            "leftPageName": "index",
+            "rightPageName": "local-seo",
+            "leftSectionType": "FinalCtaSection",
+            "rightSectionType": "CallToAction",
+            "typeHint": 0.55,
+            "structure": 0.3938,
+            "layout": 0.8571,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.7736,
+            "classes": 0,
+            "semantics": 0.2691,
+            "patterns": 0.35,
+            "visual": 0.6367,
+            "combined": 0.5897
+          }
+        },
+        {
+          "auditId": "web-design::section-9",
+          "pageName": "web-design",
+          "route": "/web-design",
+          "index": 9,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY FOR A SITE THAT EARNS ITS KEEP?",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "a2d96082",
+          "representativeScores": {
+            "leftAuditId": "index::section-6",
+            "rightAuditId": "web-design::section-9",
+            "leftPageName": "index",
+            "rightPageName": "web-design",
+            "leftSectionType": "FinalCtaSection",
+            "rightSectionType": "CallToAction",
+            "typeHint": 0.55,
+            "structure": 0.3,
+            "layout": 0.5938,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.6258,
+            "classes": 0,
+            "semantics": 0.1842,
+            "patterns": 0.35,
+            "visual": 0.5854,
+            "combined": 0.486
+          }
         }
       ]
     },
@@ -4694,7 +5446,8 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "7840e060"
+          "structureFingerprint": "7840e060",
+          "representativeScores": null
         },
         {
           "auditId": "about::section-9",
@@ -4704,7 +5457,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "about::section-9",
+            "leftPageName": "index",
+            "rightPageName": "about",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.8851,
+            "classes": 0,
+            "semantics": 0.7238,
+            "patterns": 1,
+            "visual": 0.9706,
+            "combined": 0.7583
+          }
         },
         {
           "auditId": "case-studies::section-7",
@@ -4714,7 +5485,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "9ca40926"
+          "structureFingerprint": "9ca40926",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "case-studies::section-7",
+            "leftPageName": "index",
+            "rightPageName": "case-studies",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.3345,
+            "layout": 0.6407,
+            "rootStyle": 0.82,
+            "subtreeStyle": 0.82,
+            "classes": 0,
+            "semantics": 0.4125,
+            "patterns": 0.5,
+            "visual": 0.9728,
+            "combined": 0.6522
+          }
         },
         {
           "auditId": "contact::section-4",
@@ -4724,7 +5513,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "contact::section-4",
+            "leftPageName": "index",
+            "rightPageName": "contact",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.6667,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.8851,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.965,
+            "combined": 0.7319
+          }
         },
         {
           "auditId": "cookie-policy::section-4",
@@ -4734,7 +5541,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "cookie-policy::section-4",
+            "leftPageName": "index",
+            "rightPageName": "cookie-policy",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9483,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.8899,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9688,
+            "combined": 0.7897
+          }
         },
         {
           "auditId": "faq::section-9",
@@ -4744,7 +5569,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "faq::section-9",
+            "leftPageName": "index",
+            "rightPageName": "faq",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9483,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.8911,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9689,
+            "combined": 0.7913
+          }
         },
         {
           "auditId": "index_original::section-7",
@@ -4754,7 +5597,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "index_original::section-7",
+            "leftPageName": "index",
+            "rightPageName": "index_original",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9483,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.8911,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9717,
+            "combined": 0.7918
+          }
         },
         {
           "auditId": "lead-generation::section-10",
@@ -4764,7 +5625,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "f5be488b"
+          "structureFingerprint": "f5be488b",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "lead-generation::section-10",
+            "leftPageName": "index",
+            "rightPageName": "lead-generation",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.3507,
+            "layout": 0.3565,
+            "rootStyle": 0.76,
+            "subtreeStyle": 0.8381,
+            "classes": 0,
+            "semantics": 0.5731,
+            "patterns": 0.5,
+            "visual": 0.8994,
+            "combined": 0.5987
+          }
         },
         {
           "auditId": "local-seo::section-10",
@@ -4774,7 +5653,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "6887a476"
+          "structureFingerprint": "6887a476",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "local-seo::section-10",
+            "leftPageName": "index",
+            "rightPageName": "local-seo",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.3816,
+            "layout": 0.6733,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.8341,
+            "classes": 0,
+            "semantics": 0.5815,
+            "patterns": 0.7273,
+            "visual": 0.9404,
+            "combined": 0.6795
+          }
         },
         {
           "auditId": "privacy::section-4",
@@ -4784,7 +5681,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "privacy::section-4",
+            "leftPageName": "index",
+            "rightPageName": "privacy",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9483,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.8899,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9688,
+            "combined": 0.7897
+          }
         },
         {
           "auditId": "terms::section-4",
@@ -4794,7 +5709,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "terms::section-4",
+            "leftPageName": "index",
+            "rightPageName": "terms",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9483,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.8899,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9688,
+            "combined": 0.7897
+          }
         },
         {
           "auditId": "thank-you::section-4",
@@ -4804,7 +5737,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "thank-you::section-4",
+            "leftPageName": "index",
+            "rightPageName": "thank-you",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9483,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.8911,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.969,
+            "combined": 0.7913
+          }
         },
         {
           "auditId": "web-design::section-10",
@@ -4814,7 +5765,25 @@
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
           "variantTraits": [],
-          "structureFingerprint": "d48f82d4"
+          "structureFingerprint": "d48f82d4",
+          "representativeScores": {
+            "leftAuditId": "index::section-7",
+            "rightAuditId": "web-design::section-10",
+            "leftPageName": "index",
+            "rightPageName": "web-design",
+            "leftSectionType": "SiteFooter",
+            "rightSectionType": "SiteFooter",
+            "typeHint": 1,
+            "structure": 0.4113,
+            "layout": 0.9,
+            "rootStyle": 0.9,
+            "subtreeStyle": 0.8851,
+            "classes": 0,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9612,
+            "combined": 0.7802
+          }
         }
       ]
     },
@@ -4833,7 +5802,8 @@
           "sectionType": "SystemMessage",
           "firstHeading": "404",
           "variantTraits": [],
-          "structureFingerprint": "7f19b198"
+          "structureFingerprint": "7f19b198",
+          "representativeScores": null
         }
       ]
     },
@@ -4852,7 +5822,8 @@
           "sectionType": "IconCardGrid",
           "firstHeading": "WHY WE EXIST",
           "variantTraits": [],
-          "structureFingerprint": "f3486082"
+          "structureFingerprint": "f3486082",
+          "representativeScores": null
         },
         {
           "auditId": "about::section-6",
@@ -4862,7 +5833,25 @@
           "sectionType": "IconCardGrid",
           "firstHeading": "OUR WORK ETHIC",
           "variantTraits": [],
-          "structureFingerprint": "d90098bd"
+          "structureFingerprint": "d90098bd",
+          "representativeScores": {
+            "leftAuditId": "about::section-3",
+            "rightAuditId": "about::section-6",
+            "leftPageName": "about",
+            "rightPageName": "about",
+            "leftSectionType": "IconCardGrid",
+            "rightSectionType": "IconCardGrid",
+            "typeHint": 1,
+            "structure": 0.366,
+            "layout": 0.2016,
+            "rootStyle": 0.98,
+            "subtreeStyle": 0.772,
+            "classes": 0.3432,
+            "semantics": 0.0081,
+            "patterns": 0.4286,
+            "visual": 0.8608,
+            "combined": 0.5611
+          }
         },
         {
           "auditId": "local-seo::section-6",
@@ -4872,7 +5861,25 @@
           "sectionType": "IconCardGrid",
           "firstHeading": "GBP FOUNDATION",
           "variantTraits": [],
-          "structureFingerprint": "15203542"
+          "structureFingerprint": "15203542",
+          "representativeScores": {
+            "leftAuditId": "about::section-3",
+            "rightAuditId": "local-seo::section-6",
+            "leftPageName": "about",
+            "rightPageName": "local-seo",
+            "leftSectionType": "IconCardGrid",
+            "rightSectionType": "IconCardGrid",
+            "typeHint": 1,
+            "structure": 0.2363,
+            "layout": 0.1983,
+            "rootStyle": 0.88,
+            "subtreeStyle": 0.5834,
+            "classes": 0.3804,
+            "semantics": 0.0057,
+            "patterns": 0.6,
+            "visual": 0.8353,
+            "combined": 0.5071
+          }
         },
         {
           "auditId": "web-design::section-4",
@@ -4882,7 +5889,25 @@
           "sectionType": "IconCardGrid",
           "firstHeading": "A WEAK SITE COSTS MORE THAN YOU THINK.",
           "variantTraits": [],
-          "structureFingerprint": "ddefe569"
+          "structureFingerprint": "ddefe569",
+          "representativeScores": {
+            "leftAuditId": "about::section-3",
+            "rightAuditId": "web-design::section-4",
+            "leftPageName": "about",
+            "rightPageName": "web-design",
+            "leftSectionType": "IconCardGrid",
+            "rightSectionType": "IconCardGrid",
+            "typeHint": 1,
+            "structure": 0.365,
+            "layout": 0.2219,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.7676,
+            "classes": 0.353,
+            "semantics": 0.0195,
+            "patterns": 0.5,
+            "visual": 0.4638,
+            "combined": 0.4869
+          }
         }
       ]
     },
@@ -4901,7 +5926,8 @@
           "sectionType": "ImageCardGrid",
           "firstHeading": "THE OPERATORS BEHIND THE SCREENS",
           "variantTraits": [],
-          "structureFingerprint": "56d153e0"
+          "structureFingerprint": "56d153e0",
+          "representativeScores": null
         },
         {
           "auditId": "case-studies::section-4",
@@ -4911,7 +5937,25 @@
           "sectionType": "ImageCardGrid",
           "firstHeading": "200% INCREASE IN CALLS IN 90 DAYS",
           "variantTraits": [],
-          "structureFingerprint": "13f981ed"
+          "structureFingerprint": "13f981ed",
+          "representativeScores": {
+            "leftAuditId": "about::section-4",
+            "rightAuditId": "case-studies::section-4",
+            "leftPageName": "about",
+            "rightPageName": "case-studies",
+            "leftSectionType": "ImageCardGrid",
+            "rightSectionType": "ImageCardGrid",
+            "typeHint": 1,
+            "structure": 0.293,
+            "layout": 0.1464,
+            "rootStyle": 0.8,
+            "subtreeStyle": 0.685,
+            "classes": 0.3723,
+            "semantics": 0,
+            "patterns": 0.6667,
+            "visual": 0.7542,
+            "combined": 0.505
+          }
         }
       ]
     },
@@ -4919,7 +5963,7 @@
       "id": "section-11",
       "sectionType": "ContentSection",
       "displayName": "ContentSection: WHY THE TRADES?",
-      "status": "Variant of Same Component",
+      "status": "Unique",
       "representativeId": "about::section-5",
       "items": [
         {
@@ -4930,8 +5974,18 @@
           "sectionType": "ContentSection",
           "firstHeading": "WHY THE TRADES?",
           "variantTraits": [],
-          "structureFingerprint": "a620a5fa"
-        },
+          "structureFingerprint": "a620a5fa",
+          "representativeScores": null
+        }
+      ]
+    },
+    {
+      "id": "section-12",
+      "sectionType": "ContentSection",
+      "displayName": "ContentSection: THE PARTNERSHIP EXPERIENCE",
+      "status": "Unique",
+      "representativeId": "about::section-7",
+      "items": [
         {
           "auditId": "about::section-7",
           "pageName": "about",
@@ -4940,174 +5994,8 @@
           "sectionType": "ContentSection",
           "firstHeading": "THE PARTNERSHIP EXPERIENCE",
           "variantTraits": [],
-          "structureFingerprint": "0b63a97b"
-        },
-        {
-          "auditId": "case-studies::section-5",
-          "pageName": "case-studies",
-          "route": "/case-studies",
-          "index": 5,
-          "sectionType": "ContentSection",
-          "firstHeading": "OUR REPORTING DEPTH",
-          "variantTraits": [],
-          "structureFingerprint": "7a9f1f3a"
-        },
-        {
-          "auditId": "lead-generation::section-4",
-          "pageName": "lead-generation",
-          "route": "/lead-generation",
-          "index": 4,
-          "sectionType": "ContentSection",
-          "firstHeading": "THE PROBLEM WITH MOST ADVERTISING",
-          "variantTraits": [],
-          "structureFingerprint": "10410e0f"
-        },
-        {
-          "auditId": "lead-generation::section-6",
-          "pageName": "lead-generation",
-          "route": "/lead-generation",
-          "index": 6,
-          "sectionType": "ContentSection",
-          "firstHeading": "HOW WE MEASURE SUCCESS",
-          "variantTraits": [],
-          "structureFingerprint": "a0c9c06d"
-        },
-        {
-          "auditId": "lead-generation::section-8",
-          "pageName": "lead-generation",
-          "route": "/lead-generation",
-          "index": 8,
-          "sectionType": "ContentSection",
-          "firstHeading": "WHAT WE WILL NOT DO",
-          "variantTraits": [],
-          "structureFingerprint": "c40be86d"
-        },
-        {
-          "auditId": "local-seo::section-8",
-          "pageName": "local-seo",
-          "route": "/local-seo",
-          "index": 8,
-          "sectionType": "ContentSection",
-          "firstHeading": "COMPOUNDING GROWTH",
-          "variantTraits": [],
-          "structureFingerprint": "41a66f82"
-        },
-        {
-          "auditId": "web-design::section-7",
-          "pageName": "web-design",
-          "route": "/web-design",
-          "index": 7,
-          "sectionType": "ContentSection",
-          "firstHeading": "THE 5-STEP BLUEPRINT",
-          "variantTraits": [],
-          "structureFingerprint": "e41f19d2"
-        }
-      ]
-    },
-    {
-      "id": "section-12",
-      "sectionType": "CallToAction",
-      "displayName": "CallToAction",
-      "status": "Variant of Same Component",
-      "representativeId": "about::section-8",
-      "items": [
-        {
-          "auditId": "about::section-8",
-          "pageName": "about",
-          "route": "/about",
-          "index": 8,
-          "sectionType": "CallToAction",
-          "firstHeading": "READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?",
-          "variantTraits": [
-            "with-badge",
-            "framed-panel",
-            "button-primary"
-          ],
-          "structureFingerprint": "dce571df"
-        },
-        {
-          "auditId": "case-studies::section-6",
-          "pageName": "case-studies",
-          "route": "/case-studies",
-          "index": 6,
-          "sectionType": "CallToAction",
-          "firstHeading": "READY TO BE OUR NEXT SUCCESS STORY?",
-          "variantTraits": [
-            "with-badge",
-            "framed-panel",
-            "button-primary"
-          ],
-          "structureFingerprint": "0c3a0795"
-        },
-        {
-          "auditId": "faq::section-8",
-          "pageName": "faq",
-          "route": "/faq",
-          "index": 8,
-          "sectionType": "CallToAction",
-          "firstHeading": "STILL HAVE QUESTIONS? LET'S TALK.",
-          "variantTraits": [
-            "without-badge",
-            "framed-panel",
-            "button-primary"
-          ],
-          "structureFingerprint": "4932f4f6"
-        },
-        {
-          "auditId": "index_original::section-6",
-          "pageName": "index_original",
-          "route": "/index_original",
-          "index": 6,
-          "sectionType": "CallToAction",
-          "firstHeading": "READY TO SCALE YOUR CREW?",
-          "variantTraits": [
-            "with-badge",
-            "framed-panel",
-            "button-primary"
-          ],
-          "structureFingerprint": "20ddf752"
-        },
-        {
-          "auditId": "lead-generation::section-9",
-          "pageName": "lead-generation",
-          "route": "/lead-generation",
-          "index": 9,
-          "sectionType": "CallToAction",
-          "firstHeading": "READY TO SEE IF PAID ADS MAKE SENSE?",
-          "variantTraits": [
-            "without-badge",
-            "framed-panel",
-            "button-primary"
-          ],
-          "structureFingerprint": "ceb1f944"
-        },
-        {
-          "auditId": "local-seo::section-9",
-          "pageName": "local-seo",
-          "route": "/local-seo",
-          "index": 9,
-          "sectionType": "CallToAction",
-          "firstHeading": "READY TO BE EASIER TO FIND?",
-          "variantTraits": [
-            "without-badge",
-            "framed-panel",
-            "button-primary"
-          ],
-          "structureFingerprint": "97d071c5"
-        },
-        {
-          "auditId": "web-design::section-9",
-          "pageName": "web-design",
-          "route": "/web-design",
-          "index": 9,
-          "sectionType": "CallToAction",
-          "firstHeading": "READY FOR A SITE THAT EARNS ITS KEEP?",
-          "variantTraits": [
-            "without-badge",
-            "framed-panel",
-            "button-primary"
-          ],
-          "structureFingerprint": "a2d96082"
+          "structureFingerprint": "0b63a97b",
+          "representativeScores": null
         }
       ]
     },
@@ -5126,12 +6014,145 @@
           "sectionType": "SectionNav",
           "firstHeading": "",
           "variantTraits": [],
-          "structureFingerprint": "160d01f4"
+          "structureFingerprint": "160d01f4",
+          "representativeScores": null
         }
       ]
     },
     {
       "id": "section-14",
+      "sectionType": "ContentSection",
+      "displayName": "ContentSection: OUR REPORTING DEPTH",
+      "status": "Variant of Same Component",
+      "representativeId": "case-studies::section-5",
+      "items": [
+        {
+          "auditId": "case-studies::section-5",
+          "pageName": "case-studies",
+          "route": "/case-studies",
+          "index": 5,
+          "sectionType": "ContentSection",
+          "firstHeading": "OUR REPORTING DEPTH",
+          "variantTraits": [],
+          "structureFingerprint": "7a9f1f3a",
+          "representativeScores": null
+        },
+        {
+          "auditId": "lead-generation::section-4",
+          "pageName": "lead-generation",
+          "route": "/lead-generation",
+          "index": 4,
+          "sectionType": "ContentSection",
+          "firstHeading": "THE PROBLEM WITH MOST ADVERTISING",
+          "variantTraits": [],
+          "structureFingerprint": "10410e0f",
+          "representativeScores": {
+            "leftAuditId": "case-studies::section-5",
+            "rightAuditId": "lead-generation::section-4",
+            "leftPageName": "case-studies",
+            "rightPageName": "lead-generation",
+            "leftSectionType": "ContentSection",
+            "rightSectionType": "ContentSection",
+            "typeHint": 1,
+            "structure": 0.3812,
+            "layout": 0.3797,
+            "rootStyle": 0.94,
+            "subtreeStyle": 0.715,
+            "classes": 0.3518,
+            "semantics": 0.0143,
+            "patterns": 1,
+            "visual": 0.788,
+            "combined": 0.5937
+          }
+        },
+        {
+          "auditId": "lead-generation::section-8",
+          "pageName": "lead-generation",
+          "route": "/lead-generation",
+          "index": 8,
+          "sectionType": "ContentSection",
+          "firstHeading": "WHAT WE WILL NOT DO",
+          "variantTraits": [],
+          "structureFingerprint": "c40be86d",
+          "representativeScores": {
+            "leftAuditId": "case-studies::section-5",
+            "rightAuditId": "lead-generation::section-8",
+            "leftPageName": "case-studies",
+            "rightPageName": "lead-generation",
+            "leftSectionType": "ContentSection",
+            "rightSectionType": "ContentSection",
+            "typeHint": 1,
+            "structure": 0.2802,
+            "layout": 0.2689,
+            "rootStyle": 0.94,
+            "subtreeStyle": 0.7579,
+            "classes": 0.3355,
+            "semantics": 0.0393,
+            "patterns": 0.75,
+            "visual": 0.7899,
+            "combined": 0.5565
+          }
+        },
+        {
+          "auditId": "thank-you::section-3",
+          "pageName": "thank-you",
+          "route": "/thank-you",
+          "index": 3,
+          "sectionType": "ContentSection",
+          "firstHeading": "REVIEW",
+          "variantTraits": [],
+          "structureFingerprint": "c6bad00f",
+          "representativeScores": {
+            "leftAuditId": "case-studies::section-5",
+            "rightAuditId": "thank-you::section-3",
+            "leftPageName": "case-studies",
+            "rightPageName": "thank-you",
+            "leftSectionType": "ContentSection",
+            "rightSectionType": "ContentSection",
+            "typeHint": 1,
+            "structure": 0.2571,
+            "layout": 0.4089,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.6052,
+            "classes": 0.38,
+            "semantics": 0.046,
+            "patterns": 1,
+            "visual": 0.7606,
+            "combined": 0.5539
+          }
+        },
+        {
+          "auditId": "web-design::section-7",
+          "pageName": "web-design",
+          "route": "/web-design",
+          "index": 7,
+          "sectionType": "ContentSection",
+          "firstHeading": "THE 5-STEP BLUEPRINT",
+          "variantTraits": [],
+          "structureFingerprint": "e41f19d2",
+          "representativeScores": {
+            "leftAuditId": "case-studies::section-5",
+            "rightAuditId": "web-design::section-7",
+            "leftPageName": "case-studies",
+            "rightPageName": "web-design",
+            "leftSectionType": "ContentSection",
+            "rightSectionType": "ContentSection",
+            "typeHint": 1,
+            "structure": 0.3074,
+            "layout": 0.1952,
+            "rootStyle": 0.96,
+            "subtreeStyle": 0.7096,
+            "classes": 0.332,
+            "semantics": 0.0331,
+            "patterns": 0.6,
+            "visual": 0.7891,
+            "combined": 0.5337
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-15",
       "sectionType": "FormSection",
       "displayName": "FormSection",
       "status": "Unique",
@@ -5145,12 +6166,13 @@
           "sectionType": "FormSection",
           "firstHeading": "QUICK CONTACT",
           "variantTraits": [],
-          "structureFingerprint": "d35167c7"
+          "structureFingerprint": "d35167c7",
+          "representativeScores": null
         }
       ]
     },
     {
-      "id": "section-15",
+      "id": "section-16",
       "sectionType": "LegalContent",
       "displayName": "LegalContent: 1. PRIVACY POLICY",
       "status": "Exact Match",
@@ -5164,7 +6186,8 @@
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
           "variantTraits": [],
-          "structureFingerprint": "839d9f90"
+          "structureFingerprint": "839d9f90",
+          "representativeScores": null
         },
         {
           "auditId": "privacy::section-3",
@@ -5174,7 +6197,25 @@
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
           "variantTraits": [],
-          "structureFingerprint": "839d9f90"
+          "structureFingerprint": "839d9f90",
+          "representativeScores": {
+            "leftAuditId": "cookie-policy::section-3",
+            "rightAuditId": "privacy::section-3",
+            "leftPageName": "cookie-policy",
+            "rightPageName": "privacy",
+            "leftSectionType": "LegalContent",
+            "rightSectionType": "LegalContent",
+            "typeHint": 1,
+            "structure": 1,
+            "layout": 1,
+            "rootStyle": 1,
+            "subtreeStyle": 1,
+            "classes": 1,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9337,
+            "combined": 0.9881
+          }
         },
         {
           "auditId": "terms::section-3",
@@ -5184,12 +6225,30 @@
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
           "variantTraits": [],
-          "structureFingerprint": "839d9f90"
+          "structureFingerprint": "839d9f90",
+          "representativeScores": {
+            "leftAuditId": "cookie-policy::section-3",
+            "rightAuditId": "terms::section-3",
+            "leftPageName": "cookie-policy",
+            "rightPageName": "terms",
+            "leftSectionType": "LegalContent",
+            "rightSectionType": "LegalContent",
+            "typeHint": 1,
+            "structure": 1,
+            "layout": 1,
+            "rootStyle": 1,
+            "subtreeStyle": 1,
+            "classes": 1,
+            "semantics": 1,
+            "patterns": 1,
+            "visual": 0.9337,
+            "combined": 0.9881
+          }
         }
       ]
     },
     {
-      "id": "section-16",
+      "id": "section-17",
       "sectionType": "FaqSection",
       "displayName": "FaqSection: GETTING STARTED",
       "status": "Variant of Same Component",
@@ -5203,7 +6262,8 @@
           "sectionType": "FaqSection",
           "firstHeading": "GETTING STARTED",
           "variantTraits": [],
-          "structureFingerprint": "8c4f2f11"
+          "structureFingerprint": "8c4f2f11",
+          "representativeScores": null
         },
         {
           "auditId": "faq::section-4",
@@ -5213,7 +6273,25 @@
           "sectionType": "FaqSection",
           "firstHeading": "PRICING & SCOPE",
           "variantTraits": [],
-          "structureFingerprint": "8c4f2f11"
+          "structureFingerprint": "8c4f2f11",
+          "representativeScores": {
+            "leftAuditId": "faq::section-3",
+            "rightAuditId": "faq::section-4",
+            "leftPageName": "faq",
+            "rightPageName": "faq",
+            "leftSectionType": "FaqSection",
+            "rightSectionType": "FaqSection",
+            "typeHint": 1,
+            "structure": 1,
+            "layout": 0.7,
+            "rootStyle": 0.98,
+            "subtreeStyle": 0.9976,
+            "classes": 1,
+            "semantics": 0.1169,
+            "patterns": 0.35,
+            "visual": 0.9436,
+            "combined": 0.8551
+          }
         },
         {
           "auditId": "faq::section-5",
@@ -5223,7 +6301,25 @@
           "sectionType": "FaqSection",
           "firstHeading": "WORKING WITH US",
           "variantTraits": [],
-          "structureFingerprint": "61c61336"
+          "structureFingerprint": "61c61336",
+          "representativeScores": {
+            "leftAuditId": "faq::section-3",
+            "rightAuditId": "faq::section-5",
+            "leftPageName": "faq",
+            "rightPageName": "faq",
+            "leftSectionType": "FaqSection",
+            "rightSectionType": "FaqSection",
+            "typeHint": 1,
+            "structure": 0.2647,
+            "layout": 0.1691,
+            "rootStyle": 0.96,
+            "subtreeStyle": 0.5863,
+            "classes": 0.5693,
+            "semantics": 0.1177,
+            "patterns": 0.35,
+            "visual": 0.7896,
+            "combined": 0.5158
+          }
         },
         {
           "auditId": "faq::section-6",
@@ -5233,7 +6329,25 @@
           "sectionType": "FaqSection",
           "firstHeading": "SEO & ADS",
           "variantTraits": [],
-          "structureFingerprint": "ef60894b"
+          "structureFingerprint": "ef60894b",
+          "representativeScores": {
+            "leftAuditId": "faq::section-3",
+            "rightAuditId": "faq::section-6",
+            "leftPageName": "faq",
+            "rightPageName": "faq",
+            "leftSectionType": "FaqSection",
+            "rightSectionType": "FaqSection",
+            "typeHint": 1,
+            "structure": 0.425,
+            "layout": 0.6526,
+            "rootStyle": 0.98,
+            "subtreeStyle": 0.9444,
+            "classes": 0.8976,
+            "semantics": 0.0872,
+            "patterns": 0.35,
+            "visual": 0.9557,
+            "combined": 0.7434
+          }
         },
         {
           "auditId": "faq::section-7",
@@ -5243,12 +6357,30 @@
           "sectionType": "FaqSection",
           "firstHeading": "TECHNICAL",
           "variantTraits": [],
-          "structureFingerprint": "61c61336"
+          "structureFingerprint": "61c61336",
+          "representativeScores": {
+            "leftAuditId": "faq::section-3",
+            "rightAuditId": "faq::section-7",
+            "leftPageName": "faq",
+            "rightPageName": "faq",
+            "leftSectionType": "FaqSection",
+            "rightSectionType": "FaqSection",
+            "typeHint": 1,
+            "structure": 0.2647,
+            "layout": 0.1875,
+            "rootStyle": 0.96,
+            "subtreeStyle": 0.5863,
+            "classes": 0.5693,
+            "semantics": 0.0845,
+            "patterns": 0.35,
+            "visual": 0.7923,
+            "combined": 0.5176
+          }
         }
       ]
     },
     {
-      "id": "section-17",
+      "id": "section-18",
       "sectionType": "ComparisonSplitSection",
       "displayName": "ComparisonSplitSection",
       "status": "Variant of Same Component",
@@ -5262,7 +6394,8 @@
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "WHEN PAID ADS MAKE SENSE",
           "variantTraits": [],
-          "structureFingerprint": "7c117ebe"
+          "structureFingerprint": "7c117ebe",
+          "representativeScores": null
         },
         {
           "auditId": "local-seo::section-3",
@@ -5272,7 +6405,25 @@
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "check_circle BEST FIT",
           "variantTraits": [],
-          "structureFingerprint": "41d91778"
+          "structureFingerprint": "41d91778",
+          "representativeScores": {
+            "leftAuditId": "lead-generation::section-3",
+            "rightAuditId": "local-seo::section-3",
+            "leftPageName": "lead-generation",
+            "rightPageName": "local-seo",
+            "leftSectionType": "ComparisonSplitSection",
+            "rightSectionType": "ComparisonSplitSection",
+            "typeHint": 1,
+            "structure": 0.2464,
+            "layout": 0.2039,
+            "rootStyle": 0.84,
+            "subtreeStyle": 0.5038,
+            "classes": 0.4976,
+            "semantics": 0.4283,
+            "patterns": 0.8,
+            "visual": 0.7855,
+            "combined": 0.527
+          }
         },
         {
           "auditId": "web-design::section-3",
@@ -5282,12 +6433,50 @@
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "check_circle BEST FIT",
           "variantTraits": [],
-          "structureFingerprint": "a94a0783"
+          "structureFingerprint": "a94a0783",
+          "representativeScores": {
+            "leftAuditId": "lead-generation::section-3",
+            "rightAuditId": "web-design::section-3",
+            "leftPageName": "lead-generation",
+            "rightPageName": "web-design",
+            "leftSectionType": "ComparisonSplitSection",
+            "rightSectionType": "ComparisonSplitSection",
+            "typeHint": 1,
+            "structure": 0.2774,
+            "layout": 0.4619,
+            "rootStyle": 0.86,
+            "subtreeStyle": 0.7407,
+            "classes": 0.3895,
+            "semantics": 0.3112,
+            "patterns": 1,
+            "visual": 0.7956,
+            "combined": 0.6139
+          }
         }
       ]
     },
     {
-      "id": "section-18",
+      "id": "section-19",
+      "sectionType": "ContentSection",
+      "displayName": "ContentSection: HOW WE MEASURE SUCCESS",
+      "status": "Unique",
+      "representativeId": "lead-generation::section-6",
+      "items": [
+        {
+          "auditId": "lead-generation::section-6",
+          "pageName": "lead-generation",
+          "route": "/lead-generation",
+          "index": 6,
+          "sectionType": "ContentSection",
+          "firstHeading": "HOW WE MEASURE SUCCESS",
+          "variantTraits": [],
+          "structureFingerprint": "a0c9c06d",
+          "representativeScores": null
+        }
+      ]
+    },
+    {
+      "id": "section-20",
       "sectionType": "ContentSection",
       "displayName": "ContentSection: BUDGET & EXPECTATIONS",
       "status": "Variant of Same Component",
@@ -5301,7 +6490,8 @@
           "sectionType": "ContentSection",
           "firstHeading": "BUDGET & EXPECTATIONS",
           "variantTraits": [],
-          "structureFingerprint": "a6432743"
+          "structureFingerprint": "a6432743",
+          "representativeScores": null
         },
         {
           "auditId": "local-seo::section-4",
@@ -5311,8 +6501,35 @@
           "sectionType": "ContentSection",
           "firstHeading": "WHAT LOCAL SEO ACTUALLY IS",
           "variantTraits": [],
-          "structureFingerprint": "8ae1b556"
-        },
+          "structureFingerprint": "8ae1b556",
+          "representativeScores": {
+            "leftAuditId": "lead-generation::section-7",
+            "rightAuditId": "local-seo::section-4",
+            "leftPageName": "lead-generation",
+            "rightPageName": "local-seo",
+            "leftSectionType": "ContentSection",
+            "rightSectionType": "ContentSection",
+            "typeHint": 1,
+            "structure": 0.3356,
+            "layout": 0.2133,
+            "rootStyle": 0.92,
+            "subtreeStyle": 0.7132,
+            "classes": 0.2102,
+            "semantics": 0.0204,
+            "patterns": 0.6667,
+            "visual": 0.7989,
+            "combined": 0.5329
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-21",
+      "sectionType": "ContentSection",
+      "displayName": "ContentSection: WHAT WE FIX FIRST",
+      "status": "Unique",
+      "representativeId": "local-seo::section-5",
+      "items": [
         {
           "auditId": "local-seo::section-5",
           "pageName": "local-seo",
@@ -5321,8 +6538,18 @@
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE FIX FIRST",
           "variantTraits": [],
-          "structureFingerprint": "fbdb4d1a"
-        },
+          "structureFingerprint": "fbdb4d1a",
+          "representativeScores": null
+        }
+      ]
+    },
+    {
+      "id": "section-22",
+      "sectionType": "ContentSection",
+      "displayName": "ContentSection: WHAT WE WILL NOT DO",
+      "status": "Unique",
+      "representativeId": "local-seo::section-7",
+      "items": [
         {
           "auditId": "local-seo::section-7",
           "pageName": "local-seo",
@@ -5331,31 +6558,33 @@
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE WILL NOT DO",
           "variantTraits": [],
-          "structureFingerprint": "4f9c61b3"
+          "structureFingerprint": "4f9c61b3",
+          "representativeScores": null
         }
       ]
     },
     {
-      "id": "section-19",
+      "id": "section-23",
       "sectionType": "ContentSection",
-      "displayName": "ContentSection: REVIEW",
+      "displayName": "ContentSection: COMPOUNDING GROWTH",
       "status": "Unique",
-      "representativeId": "thank-you::section-3",
+      "representativeId": "local-seo::section-8",
       "items": [
         {
-          "auditId": "thank-you::section-3",
-          "pageName": "thank-you",
-          "route": "/thank-you",
-          "index": 3,
+          "auditId": "local-seo::section-8",
+          "pageName": "local-seo",
+          "route": "/local-seo",
+          "index": 8,
           "sectionType": "ContentSection",
-          "firstHeading": "REVIEW",
+          "firstHeading": "COMPOUNDING GROWTH",
           "variantTraits": [],
-          "structureFingerprint": "c6bad00f"
+          "structureFingerprint": "41a66f82",
+          "representativeScores": null
         }
       ]
     },
     {
-      "id": "section-20",
+      "id": "section-24",
       "sectionType": "ContentSection",
       "displayName": "ContentSection: THE DELIVERABLES",
       "status": "Unique",
@@ -5369,12 +6598,13 @@
           "sectionType": "ContentSection",
           "firstHeading": "THE DELIVERABLES",
           "variantTraits": [],
-          "structureFingerprint": "d6ff160a"
+          "structureFingerprint": "d6ff160a",
+          "representativeScores": null
         }
       ]
     },
     {
-      "id": "section-21",
+      "id": "section-25",
       "sectionType": "FeatureSection",
       "displayName": "FeatureSection: RESULTS DON'T COME FROM TEMPLATES.",
       "status": "Unique",
@@ -5388,7 +6618,8 @@
           "sectionType": "FeatureSection",
           "firstHeading": "RESULTS DON'T COME FROM TEMPLATES.",
           "variantTraits": [],
-          "structureFingerprint": "d780d0eb"
+          "structureFingerprint": "d780d0eb",
+          "representativeScores": null
         }
       ]
     }
@@ -7034,6 +8265,205 @@
       ]
     }
   ],
+  "detectorEvaluation": {
+    "datasetSize": 556,
+    "positives": 278,
+    "negatives": 278,
+    "detectors": {
+      "typeHint": {
+        "threshold": 1,
+        "f1": 1,
+        "precision": 1,
+        "recall": 1,
+        "truePositive": 278,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "trueNegative": 278,
+        "averagePositive": 1,
+        "averageNegative": 0
+      },
+      "structure": {
+        "threshold": 0.2464,
+        "f1": 0.9068,
+        "precision": 0.9219,
+        "recall": 0.8921,
+        "truePositive": 248,
+        "falsePositive": 21,
+        "falseNegative": 30,
+        "trueNegative": 257,
+        "averagePositive": 0.5537,
+        "averageNegative": 0.1532
+      },
+      "layout": {
+        "threshold": 0.2036,
+        "f1": 0.9011,
+        "precision": 0.9556,
+        "recall": 0.8525,
+        "truePositive": 237,
+        "falsePositive": 11,
+        "falseNegative": 41,
+        "trueNegative": 267,
+        "averagePositive": 0.5507,
+        "averageNegative": 0.1036
+      },
+      "rootStyle": {
+        "threshold": 0.84,
+        "f1": 0.86,
+        "precision": 0.7933,
+        "recall": 0.9388,
+        "truePositive": 261,
+        "falsePositive": 68,
+        "falseNegative": 17,
+        "trueNegative": 210,
+        "averagePositive": 0.9338,
+        "averageNegative": 0.7829
+      },
+      "subtreeStyle": {
+        "threshold": 0.7545,
+        "f1": 0.8274,
+        "precision": 0.9803,
+        "recall": 0.7158,
+        "truePositive": 199,
+        "falsePositive": 4,
+        "falseNegative": 79,
+        "trueNegative": 274,
+        "averagePositive": 0.8084,
+        "averageNegative": 0.4442
+      },
+      "classes": {
+        "threshold": 0.3178,
+        "f1": 0.8599,
+        "precision": 0.9364,
+        "recall": 0.795,
+        "truePositive": 221,
+        "falsePositive": 15,
+        "falseNegative": 57,
+        "trueNegative": 263,
+        "averagePositive": 0.6102,
+        "averageNegative": 0.2091
+      },
+      "semantics": {
+        "threshold": 0.0631,
+        "f1": 0.7721,
+        "precision": 0.8103,
+        "recall": 0.7374,
+        "truePositive": 205,
+        "falsePositive": 48,
+        "falseNegative": 73,
+        "trueNegative": 230,
+        "averagePositive": 0.5047,
+        "averageNegative": 0.0736
+      },
+      "patterns": {
+        "threshold": 0.35,
+        "f1": 0.8603,
+        "precision": 0.8797,
+        "recall": 0.8417,
+        "truePositive": 234,
+        "falsePositive": 32,
+        "falseNegative": 44,
+        "trueNegative": 246,
+        "averagePositive": 0.6441,
+        "averageNegative": 0.0554
+      },
+      "visual": {
+        "threshold": 0.614,
+        "f1": 0.8863,
+        "precision": 0.8176,
+        "recall": 0.9676,
+        "truePositive": 269,
+        "falsePositive": 60,
+        "falseNegative": 9,
+        "trueNegative": 218,
+        "averagePositive": 0.8697,
+        "averageNegative": 0.4817
+      },
+      "combined": {
+        "threshold": 0.3824,
+        "f1": 0.971,
+        "precision": 0.9781,
+        "recall": 0.964,
+        "truePositive": 268,
+        "falsePositive": 6,
+        "falseNegative": 10,
+        "trueNegative": 272,
+        "averagePositive": 0.7164,
+        "averageNegative": 0.282
+      }
+    },
+    "familyCoverage": [
+      {
+        "family": "SiteHeader",
+        "pairCount": 78,
+        "averageCombined": 0.8572,
+        "matchedCount": 78,
+        "matchedPct": 100
+      },
+      {
+        "family": "HeroSection",
+        "pairCount": 78,
+        "averageCombined": 0.5072,
+        "matchedCount": 68,
+        "matchedPct": 87.2
+      },
+      {
+        "family": "SiteFooter",
+        "pairCount": 78,
+        "averageCombined": 0.8345,
+        "matchedCount": 78,
+        "matchedPct": 100
+      },
+      {
+        "family": "CredibilityStrip",
+        "pairCount": 1,
+        "averageCombined": 0.6798,
+        "matchedCount": 1,
+        "matchedPct": 100
+      },
+      {
+        "family": "ServicesSection",
+        "pairCount": 3,
+        "averageCombined": 0.6168,
+        "matchedCount": 3,
+        "matchedPct": 100
+      },
+      {
+        "family": "ProcessSection",
+        "pairCount": 3,
+        "averageCombined": 0.5484,
+        "matchedCount": 3,
+        "matchedPct": 100
+      },
+      {
+        "family": "ComparisonSplitSection",
+        "pairCount": 3,
+        "averageCombined": 0.5724,
+        "matchedCount": 3,
+        "matchedPct": 100
+      },
+      {
+        "family": "CallToAction",
+        "pairCount": 21,
+        "averageCombined": 0.5925,
+        "matchedCount": 21,
+        "matchedPct": 100
+      },
+      {
+        "family": "LegalContent",
+        "pairCount": 3,
+        "averageCombined": 0.9881,
+        "matchedCount": 3,
+        "matchedPct": 100
+      },
+      {
+        "family": "FaqSection",
+        "pairCount": 10,
+        "averageCombined": 0.6344,
+        "matchedCount": 10,
+        "matchedPct": 100
+      }
+    ]
+  },
   "globalClassInventory": [
     {
       "token": "uppercase",
