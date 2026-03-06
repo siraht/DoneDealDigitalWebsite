@@ -503,6 +503,38 @@ body.audit-shell {
   background: rgba(255, 255, 255, 0.66);
 }
 
+.audit-workbench-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.audit-workbench-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0 1.1rem 1.1rem;
+}
+
+.audit-workbench-board--new {
+  grid-template-columns: minmax(18rem, 1fr) minmax(0, 2fr);
+}
+
+.audit-workbench__lane {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+}
+
+.audit-workbench__lane--targets {
+  min-width: 0;
+}
+
+.audit-workbench__targets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
 .audit-compare-board {
   display: grid;
   grid-template-columns: minmax(18rem, 1fr) minmax(0, 1.7fr);
@@ -618,6 +650,11 @@ body.audit-shell {
   }
 
   .audit-archetype__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-workbench-board,
+  .audit-workbench-board--new {
     grid-template-columns: 1fr;
   }
 

@@ -326,7 +326,7 @@ export function getVisualMethods(): ViewerMethod[] {
       id: "workbench",
       route: "/audit/workbench",
       name: "Conversion Workbench",
-      status: "Planned",
+      status: "Live",
       summary: "Show stitch source, tokenized precedent, and target variants together so the consolidation path is visible as an actionable blueprint.",
     },
   ];

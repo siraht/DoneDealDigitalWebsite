@@ -1,0 +1,310 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getAuditViewerData } from "../../lib/audit-viewer";
+
+type FamilyCard = ReturnType<typeof getAuditViewerData>["sectionFamilies"][number];
+
+const audit = getAuditViewerData();
+
+function buildWorkbenchBoards(families: FamilyCard[]) {
+  return families
+    .map((family) => {
+      const stitch = family.instances.find((instance) => instance.pageName === "index_original") || null;
+      const tokenized = family.instances.find((instance) => instance.pageName === "index") || family.canonical;
+      const rolloutTargets = family.instances
+        .filter((instance) => !["index", "index_original"].includes(instance.pageName))
+        .sort((left, right) => {
+          const leftScore = typeof left.score === "number" ? left.score : 1;
+          const rightScore = typeof right.score === "number" ? right.score : 1;
+          if (leftScore !== rightScore) {
+            return leftScore - rightScore;
+          }
+
+          return left.pageName.localeCompare(right.pageName);
+        });
+
+      return {
+        ...family,
+        stitch,
+        tokenized,
+        rolloutTargets,
+        hasHomePrecedent: Boolean(stitch || tokenized.pageName === "index"),
+      };
+    })
+    .sort((left, right) => {
+      if (Number(right.hasHomePrecedent) !== Number(left.hasHomePrecedent)) {
+        return Number(right.hasHomePrecedent) - Number(left.hasHomePrecedent);
+      }
+
+      return right.totalCount - left.totalCount || left.displayName.localeCompare(right.displayName);
+    });
+}
+
+const sectionBoards = buildWorkbenchBoards(audit.sectionFamilies);
+const componentBoards = buildWorkbenchBoards(audit.componentFamilies);
+const homeSectionBoards = sectionBoards.filter((board) => board.hasHomePrecedent);
+const newSectionBoards = sectionBoards.filter((board) => !board.hasHomePrecedent);
+const homeComponentBoards = componentBoards.filter((board) => board.hasHomePrecedent);
+const newComponentBoards = componentBoards.filter((board) => !board.hasHomePrecedent);
+---
+
+<AuditShell
+  currentMethod="workbench"
+  kicker="Method 5 of 5"
+  methods={audit.methods}
+  stats={audit.stats}
+  title="Conversion Workbench"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Migrate fifth</p>
+      <h2 class="audit-hero__title">Turn the audit into an actual stitch-to-token conversion surface.</h2>
+      <p class="audit-hero__copy">
+        This is the execution view. Instead of clustering or comparing in the abstract, it organizes families by the
+        exact migration pattern available in this repo: original stitch precedent, converted tokenized reference, and
+        rollout targets that still need consolidation work.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Best for planning actual implementation order, not just analysis.</li>
+        <li>Best for reusing the `index_original` → `index` precedent instead of inventing conversion rules per page.</li>
+        <li>Best for separating true home-derived families from families that still need a fresh source of truth.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>How to use it</strong>
+      <p>
+        Start with the families that already have both stitch and tokenized references. Those are the easiest wins.
+        Then drop to the “new source of truth” boards to see what still lacks a home precedent and needs an initial
+        component definition before rollout.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Home-derived section families</p>
+        <h2 class="audit-section-header__title">Stitch precedent → tokenized reference → rollout targets</h2>
+      </div>
+      <p class="audit-note">These section families already have a usable homepage conversion precedent.</p>
+    </div>
+    <div class="audit-workbench-list">
+      {homeSectionBoards.map((board, index) => (
+        <details class="audit-family" open={index < 4}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{board.displayName}</h3>
+              <p class="audit-family__summary-copy">
+                Rollout targets: {board.rolloutTargets.length} • tokenized reference: {board.tokenized.pageName}
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{board.status}</span>
+              <span class="audit-family__count">{board.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-workbench-board">
+            <div class="audit-workbench__lane">
+              <p class="audit-section-header__eyebrow">Stitch precedent</p>
+              {board.stitch ? (
+                <AuditPreviewCard
+                  familyName={board.displayName}
+                  instance={board.stitch}
+                  label="Original stitch source"
+                  mode="section"
+                />
+              ) : (
+                <div class="audit-note">No `index_original` precedent in this family.</div>
+              )}
+            </div>
+            <div class="audit-workbench__lane">
+              <p class="audit-section-header__eyebrow">Tokenized reference</p>
+              <AuditPreviewCard
+                familyName={board.displayName}
+                instance={board.tokenized}
+                label="Canonical converted target"
+                mode="section"
+              />
+            </div>
+            <div class="audit-workbench__lane audit-workbench__lane--targets">
+              <p class="audit-section-header__eyebrow">Rollout targets</p>
+              <div class="audit-workbench__targets">
+                {board.rolloutTargets.slice(0, 6).map((instance, instanceIndex) => (
+                  <AuditPreviewCard
+                    familyName={board.displayName}
+                    instance={instance}
+                    label={instanceIndex === 0 ? "Next conversion target" : "Remaining variant"}
+                    mode="section"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">New section sources of truth</p>
+        <h2 class="audit-section-header__title">Families that still need their first canonical definition</h2>
+      </div>
+      <p class="audit-note">These boards are the ones that cannot simply inherit the homepage precedent yet.</p>
+    </div>
+    <div class="audit-workbench-list">
+      {newSectionBoards.map((board) => (
+        <details class="audit-family">
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{board.displayName}</h3>
+              <p class="audit-family__summary-copy">Proposed working reference: {board.tokenized.pageName}</p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__count">{board.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-workbench-board audit-workbench-board--new">
+            <div class="audit-workbench__lane">
+              <p class="audit-section-header__eyebrow">Working reference</p>
+              <AuditPreviewCard
+                familyName={board.displayName}
+                instance={board.tokenized}
+                label="Define first canonical source"
+                mode="section"
+              />
+            </div>
+            <div class="audit-workbench__lane audit-workbench__lane--targets">
+              <p class="audit-section-header__eyebrow">Current family spread</p>
+              <div class="audit-workbench__targets">
+                {board.rolloutTargets.slice(0, 6).map((instance, instanceIndex) => (
+                  <AuditPreviewCard
+                    familyName={board.displayName}
+                    instance={instance}
+                    label={instanceIndex === 0 ? "Next target after canonicalization" : "Additional family member"}
+                    mode="section"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Home-derived component families</p>
+        <h2 class="audit-section-header__title">Primitive rollout boards</h2>
+      </div>
+      <p class="audit-note">The same migration surface is applied to reusable lower-level components.</p>
+    </div>
+    <div class="audit-workbench-list">
+      {homeComponentBoards.map((board, index) => (
+        <details class="audit-family" open={index < 3}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{board.displayName}</h3>
+              <p class="audit-family__summary-copy">
+                Rollout targets: {board.rolloutTargets.length} • tokenized reference: {board.tokenized.pageName}
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__count">{board.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-workbench-board">
+            <div class="audit-workbench__lane">
+              <p class="audit-section-header__eyebrow">Stitch precedent</p>
+              {board.stitch ? (
+                <AuditPreviewCard
+                  familyName={board.displayName}
+                  instance={board.stitch}
+                  label="Original stitch source"
+                  mode="component"
+                />
+              ) : (
+                <div class="audit-note">No `index_original` precedent in this family.</div>
+              )}
+            </div>
+            <div class="audit-workbench__lane">
+              <p class="audit-section-header__eyebrow">Tokenized reference</p>
+              <AuditPreviewCard
+                familyName={board.displayName}
+                instance={board.tokenized}
+                label="Canonical converted target"
+                mode="component"
+              />
+            </div>
+            <div class="audit-workbench__lane audit-workbench__lane--targets">
+              <p class="audit-section-header__eyebrow">Rollout targets</p>
+              <div class="audit-workbench__targets">
+                {board.rolloutTargets.slice(0, 6).map((instance, instanceIndex) => (
+                  <AuditPreviewCard
+                    familyName={board.displayName}
+                    instance={instance}
+                    label={instanceIndex === 0 ? "Next conversion target" : "Remaining variant"}
+                    mode="component"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">New component sources of truth</p>
+        <h2 class="audit-section-header__title">Component families still waiting on their first definition</h2>
+      </div>
+      <p class="audit-note">These are the lower-level families with no homepage precedent yet.</p>
+    </div>
+    <div class="audit-workbench-list">
+      {newComponentBoards.map((board) => (
+        <details class="audit-family">
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{board.displayName}</h3>
+              <p class="audit-family__summary-copy">Proposed working reference: {board.tokenized.pageName}</p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__count">{board.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-workbench-board audit-workbench-board--new">
+            <div class="audit-workbench__lane">
+              <p class="audit-section-header__eyebrow">Working reference</p>
+              <AuditPreviewCard
+                familyName={board.displayName}
+                instance={board.tokenized}
+                label="Define first canonical source"
+                mode="component"
+              />
+            </div>
+            <div class="audit-workbench__lane audit-workbench__lane--targets">
+              <p class="audit-section-header__eyebrow">Current family spread</p>
+              <div class="audit-workbench__targets">
+                {board.rolloutTargets.slice(0, 6).map((instance, instanceIndex) => (
+                  <AuditPreviewCard
+                    familyName={board.displayName}
+                    instance={instance}
+                    label={instanceIndex === 0 ? "Next target after canonicalization" : "Additional family member"}
+                    mode="component"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</AuditShell>
