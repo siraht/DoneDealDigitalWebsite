@@ -1,0 +1,120 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getAuditViewerData } from "../../lib/audit-viewer";
+
+const audit = getAuditViewerData();
+const featuredSectionFamilies = audit.sectionFamilies;
+const featuredComponentFamilies = audit.componentFamilies;
+---
+
+<AuditShell
+  currentMethod="gallery"
+  kicker="Method 1 of 5"
+  methods={audit.methods}
+  stats={audit.stats}
+  title="Family Gallery Wall"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Scan first</p>
+      <h2 class="audit-hero__title">Group every family into a wall of focused live previews.</h2>
+      <p class="audit-hero__copy">
+        This is the fastest way to visually answer, “Are these really the same thing?” Every family opens into a set
+        of real page previews centered on the mapped section or component instance. The canonical candidate is always
+        first, and the most different variants are surfaced next.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Best for broad scanning across all families.</li>
+        <li>Best when you want to spot visual drift before comparing exact deltas.</li>
+        <li>Best when deciding whether a family should stay unified or split into named variants.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>How to use it</strong>
+      <p>
+        Open a family. Start with the canonical tile. Then compare the next few tiles, which are intentionally the
+        least similar retained matches. If the family still reads as one component, it is a strong consolidation
+        candidate.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Section families</p>
+        <h2 class="audit-section-header__title">Shared sections as live strips</h2>
+      </div>
+      <p class="audit-note">All 25 detected section families are available below.</p>
+    </div>
+    <div class="audit-family-list">
+      {featuredSectionFamilies.map((family, index) => (
+        <details class="audit-family" open={index < 3}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{family.displayName}</h3>
+              <p class="audit-family__summary-copy">
+                Canonical: {family.canonical.pageName} • {family.canonical.meta} • surfaced variants:{" "}
+                {family.gallery.length}
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{family.status}</span>
+              <span class="audit-family__count">{family.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-family__grid">
+            {family.gallery.map((instance, instanceIndex) => (
+              <AuditPreviewCard
+                familyName={family.displayName}
+                instance={instance}
+                label={instanceIndex === 0 ? "Canonical candidate" : "Variant surfaced"}
+                mode="section"
+              />
+            ))}
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Component families</p>
+        <h2 class="audit-section-header__title">Repeated primitives as live tiles</h2>
+      </div>
+      <p class="audit-note">All 43 detected component families are available below.</p>
+    </div>
+    <div class="audit-family-list">
+      {featuredComponentFamilies.map((family, index) => (
+        <details class="audit-family" open={index < 2}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{family.displayName}</h3>
+              <p class="audit-family__summary-copy">
+                Canonical: {family.canonical.pageName} • {family.canonical.meta} • surfaced variants:{" "}
+                {family.gallery.length}
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{family.status}</span>
+              <span class="audit-family__count">{family.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-family__grid">
+            {family.gallery.map((instance, instanceIndex) => (
+              <AuditPreviewCard
+                familyName={family.displayName}
+                instance={instance}
+                label={instanceIndex === 0 ? "Canonical candidate" : "Variant surfaced"}
+                mode="component"
+              />
+            ))}
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</AuditShell>

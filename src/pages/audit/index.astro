@@ -1,0 +1,66 @@
+---
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getAuditViewerData } from "../../lib/audit-viewer";
+
+const audit = getAuditViewerData();
+---
+
+<AuditShell
+  currentMethod=""
+  kicker="Five visual methods"
+  methods={audit.methods}
+  stats={audit.stats}
+  title="Similarity Viewer"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Visual roadmap</p>
+      <h2 class="audit-hero__title">Five ways to make the audit visible with the real elements.</h2>
+      <p class="audit-hero__copy">
+        The goal is not another text report. Each method turns the existing section and component mapping into a
+        browser-native surface that helps consolidation decisions happen faster.
+      </p>
+      <ul class="audit-hero__list">
+        <li>See canonical references and variants as live page previews, not abstract labels.</li>
+        <li>Keep one data source: the existing audit outputs in <code>docs/audit/raw</code>.</li>
+        <li>Use different visual organizations for different questions: scan, compare, coverage, archetypes, migration.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>Current status</strong>
+      <p>
+        The first method is live now. The remaining four are listed here as the implementation roadmap and will move
+        from planned to live as they are added and verified.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Method inventory</p>
+        <h2 class="audit-section-header__title">Viewer modes</h2>
+      </div>
+    </div>
+    <div class="audit-method-grid">
+      {audit.methods.map((method) => (
+        <article class="audit-method-card">
+          <p class="audit-method-card__eyebrow">Method</p>
+          <h3 class="audit-method-card__title">{method.name}</h3>
+          <p class="audit-method-card__summary">{method.summary}</p>
+          <div class="audit-method-card__meta">
+            <span
+              class:list={[
+                "audit-method-card__status",
+                method.status === "Live" && "audit-method-card__status--live",
+              ]}
+            >
+              {method.status}
+            </span>
+            <a href={method.route}>{method.status === "Live" ? "Open viewer" : "Coming next"}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</AuditShell>

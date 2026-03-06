@@ -1,0 +1,203 @@
+---
+import "../../styles/audit-viewer.css";
+
+const {
+  title,
+  kicker,
+  currentMethod = "",
+  methods = [],
+  stats,
+} = Astro.props as {
+  title: string;
+  kicker?: string;
+  currentMethod?: string;
+  methods?: { id: string; route: string; name: string; status: string; summary: string }[];
+  stats?: {
+    pageCount: number;
+    sectionFamilyCount: number;
+    componentFamilyCount: number;
+    sectionInstanceCount: number;
+    componentInstanceCount: number;
+  };
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{title} | Audit Viewer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="audit-shell">
+    <div class="audit-shell__noise" aria-hidden="true"></div>
+    <header class="audit-topbar">
+      <div class="audit-topbar__inner">
+        <div class="audit-topbar__brand">
+          <p class="audit-topbar__eyebrow">{kicker || "Visual consolidation viewer"}</p>
+          <h1 class="audit-topbar__title">{title}</h1>
+        </div>
+        <a class="audit-topbar__back" href="/audit">All methods</a>
+      </div>
+      {stats && (
+        <div class="audit-statbar">
+          <div class="audit-statbar__item">
+            <strong>{stats.pageCount}</strong>
+            <span>pages</span>
+          </div>
+          <div class="audit-statbar__item">
+            <strong>{stats.sectionFamilyCount}</strong>
+            <span>section families</span>
+          </div>
+          <div class="audit-statbar__item">
+            <strong>{stats.componentFamilyCount}</strong>
+            <span>component families</span>
+          </div>
+          <div class="audit-statbar__item">
+            <strong>{stats.sectionInstanceCount + stats.componentInstanceCount}</strong>
+            <span>mapped instances</span>
+          </div>
+        </div>
+      )}
+      <nav class="audit-method-nav" aria-label="Audit visual methods">
+        {methods.map((method) => (
+          <a
+            class:list={[
+              "audit-method-nav__link",
+              method.id === currentMethod && "audit-method-nav__link--current",
+              method.status !== "Live" && "audit-method-nav__link--planned",
+            ]}
+            href={method.route}
+          >
+            <span>{method.name}</span>
+            <small>{method.status}</small>
+          </a>
+        ))}
+      </nav>
+    </header>
+    <main class="audit-main">
+      <slot />
+    </main>
+    <script is:inline>
+      const initializedFrames = new WeakSet();
+
+      function resolveAuditPath(doc, auditPath) {
+        if (!auditPath || !doc?.body) {
+          return null;
+        }
+
+        const segments = auditPath
+          .split(">")
+          .map((segment) => segment.trim())
+          .filter(Boolean);
+
+        if (segments.length === 0) {
+          return null;
+        }
+
+        let current = doc.body;
+        const queue = segments[0].startsWith("body[") ? segments.slice(1) : segments;
+
+        for (const segment of queue) {
+          const match = segment.match(/^([a-z0-9-]+)\[(\d+)\]$/i);
+          if (!match) {
+            return null;
+          }
+
+          const tag = match[1].toLowerCase();
+          const index = Number(match[2]) - 1;
+          const candidates = Array.from(current.children).filter(
+            (child) => child.tagName.toLowerCase() === tag,
+          );
+          current = candidates[index];
+
+          if (!current) {
+            return null;
+          }
+        }
+
+        return current;
+      }
+
+      function ensurePreviewStyles(doc) {
+        if (doc.getElementById("audit-preview-style")) {
+          return;
+        }
+
+        const style = doc.createElement("style");
+        style.id = "audit-preview-style";
+        style.textContent = `
+          [data-audit-preview-target] {
+            outline: 4px solid #ff7b00 !important;
+            outline-offset: 4px !important;
+            position: relative !important;
+            z-index: 2147483000 !important;
+            scroll-margin-block: 64px !important;
+          }
+
+          html {
+            scroll-behavior: auto !important;
+          }
+        `;
+        doc.head.appendChild(style);
+      }
+
+      function mountPreview(iframe) {
+        if (initializedFrames.has(iframe)) {
+          return;
+        }
+
+        initializedFrames.add(iframe);
+        iframe.addEventListener("load", () => {
+          try {
+            const doc = iframe.contentDocument;
+            const win = iframe.contentWindow;
+            const auditPath = iframe.dataset.auditPath;
+            const mode = iframe.dataset.auditMode || "section";
+            if (!doc || !win) {
+              return;
+            }
+
+            ensurePreviewStyles(doc);
+            const prior = doc.querySelector("[data-audit-preview-target]");
+            if (prior) {
+              prior.removeAttribute("data-audit-preview-target");
+            }
+
+            const target = resolveAuditPath(doc, auditPath);
+            if (!target) {
+              return;
+            }
+
+            target.setAttribute("data-audit-preview-target", "true");
+            const rect = target.getBoundingClientRect();
+            const scrollTop = Math.max(
+              rect.top + win.scrollY - (mode === "component" ? win.innerHeight * 0.24 : 48),
+              0,
+            );
+            win.scrollTo({ top: scrollTop, behavior: "instant" });
+          } catch (error) {
+            console.warn("Audit preview mount failed", error);
+          }
+        });
+      }
+
+      function initAuditPreviews(root = document) {
+        root.querySelectorAll("iframe[data-audit-path]").forEach((iframe) => mountPreview(iframe));
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => initAuditPreviews());
+      } else {
+        initAuditPreviews();
+      }
+
+      const observer = new MutationObserver(() => initAuditPreviews());
+      observer.observe(document.body, { childList: true, subtree: true });
+    </script>
+  </body>
+</html>

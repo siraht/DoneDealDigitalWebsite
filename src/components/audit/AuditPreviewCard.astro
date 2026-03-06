@@ -1,0 +1,70 @@
+---
+type PreviewInstance = {
+  auditId: string;
+  route: string;
+  path: string;
+  title: string;
+  subtitle: string;
+  meta: string;
+  variantTraits?: string[];
+  score?: number | null;
+  topSignals?: string[];
+  rootClasses?: string[];
+};
+
+const {
+  instance,
+  mode = "section",
+  label = "Preview",
+  familyName = "",
+} = Astro.props as {
+  instance: PreviewInstance;
+  mode?: "section" | "component";
+  label?: string;
+  familyName?: string;
+};
+
+const scoreLabel =
+  typeof instance.score === "number" ? `${Math.round(instance.score * 100)}% similarity to canonical` : null;
+const previewScale = mode === "component" ? "0.62" : "0.43";
+const frameHeight = mode === "component" ? "19rem" : "22rem";
+const topTraits = (instance.variantTraits || []).slice(0, 4);
+---
+
+<article class:list={["audit-preview-card", `audit-preview-card--${mode}`]}>
+  <div class="audit-preview-card__media">
+    <div class="audit-preview-card__label">{label}</div>
+    <div
+      class="audit-preview-card__viewport"
+      style={`--audit-preview-scale:${previewScale}; --audit-preview-height:${frameHeight};`}
+    >
+      <iframe
+        class="audit-preview-card__frame"
+        data-audit-family={familyName}
+        data-audit-mode={mode}
+        data-audit-path={instance.path}
+        loading="lazy"
+        src={instance.route}
+        title={`${familyName} ${instance.title} preview`}
+      ></iframe>
+    </div>
+  </div>
+  <div class="audit-preview-card__body">
+    <p class="audit-preview-card__meta">{instance.meta}</p>
+    <h3 class="audit-preview-card__title">{instance.title}</h3>
+    <p class="audit-preview-card__subtitle">{instance.subtitle}</p>
+    {scoreLabel && <p class="audit-preview-card__score">{scoreLabel}</p>}
+    {topTraits.length > 0 && (
+      <ul class="audit-chip-list" aria-label="Variant traits">
+        {topTraits.map((trait) => (
+          <li class="audit-chip-list__item">{trait}</li>
+        ))}
+      </ul>
+    )}
+    {instance.topSignals && instance.topSignals.length > 0 && (
+      <p class="audit-preview-card__signals">
+        Strongest signals: {instance.topSignals.join(" • ")}
+      </p>
+    )}
+  </div>
+</article>
