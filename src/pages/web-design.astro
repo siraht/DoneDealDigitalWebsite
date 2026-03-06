@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Design Services | Done Deal Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@400;500;700&amp;family=Work+Sans:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF7B00", // Construction Orange
+                        "navy": "#0B1D33",
+                        "concrete": "#E2E8F0",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0B1D33",
+                        "grid-gray": "rgba(255, 255, 255, 0.05)"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "bebas": ["Bebas Neue", "cursive"],
+                        "dmsans": ["DM Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "none": "0",
+                        "DEFAULT": "0",
+                        "lg": "0",
+                        "xl": "0",
+                        "full": "9999px"
+                    },
+                    borderWidth: {
+                        "3": "3px"
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .graph-paper {
+                background-size: 40px 40px;
+                background-image: 
+                    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            }
+            .block-shadow {
+                box-shadow: 6px 6px 0px 0px rgba(11, 29, 51, 1);
+            }
+            .block-shadow-orange {
+                box-shadow: 6px 6px 0px 0px #FF7B00;
+            }
+            .diagonal-stripes {
+                background-image: repeating-linear-gradient(45deg, rgba(255, 123, 0, 0.05) 0, rgba(255, 123, 0, 0.05) 10px, transparent 10px, transparent 20px);
+            }
+            .bw-overlay {
+                filter: grayscale(1) contrast(1.2);
+            }
+            .bebas-heavy {
+                font-weight: 700;
+                letter-spacing: 0.02em;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light font-dmsans text-navy">
+<header class="sticky top-0 z-50 bg-white border-b-2 border-navy">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2 px-6 py-5 border-r-2 border-navy">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+<h1 class="font-bebas bebas-heavy text-3xl tracking-wide text-navy">DONE DEAL DIGITAL</h1>
+</div>
+<nav class="hidden md:flex items-center h-full">
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Services</a>
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Portfolio</a>
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Reviews</a>
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="px-6">
+<button class="bg-primary hover:bg-orange-600 text-white px-8 py-3 font-bold text-sm uppercase tracking-widest transition-all border-2 border-navy block-shadow">
+                Get a Free Quote
+            </button>
+</div>
+</div>
+</header>
+<section class="relative bg-navy overflow-hidden border-b-2 border-navy">
+<div class="absolute inset-0 graph-paper opacity-40"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-20 py-24 lg:py-32 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col items-start gap-8">
+<div class="inline-block border-2 border-primary p-2">
+<span class="text-white font-bebas bebas-heavy text-xl tracking-[.2em] uppercase">Web Design Services</span>
+</div>
+<h1 class="font-bebas bebas-heavy text-7xl md:text-8xl text-white leading-[0.85] uppercase">
+                WE BUILD <span class="text-primary">CONTRACTOR</span> WEBSITES THAT TURN VISITS INTO CALLS.
+            </h1>
+<p class="text-concrete text-xl md:text-2xl max-w-lg leading-relaxed font-medium">
+                Fast, mobile-first websites for service businesses. We don't just make them look good—we make them sell.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-bold">check_box</span>
+<span class="text-white font-bold uppercase text-xs tracking-widest">Mobile-first</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-bold">check_box</span>
+<span class="text-white font-bold uppercase text-xs tracking-widest">Copy guidance</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-bold">check_box</span>
+<span class="text-white font-bold uppercase text-xs tracking-widest">2-3 Week Launch</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-6 mt-4">
+<button class="bg-primary hover:bg-orange-600 text-white px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow-orange">
+                    GET A FREE QUOTE
+                </button>
+<button class="bg-white hover:bg-concrete text-navy px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow">
+                    Call (555) 123-4567
+                </button>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="border-2 border-white bg-navy p-4">
+<img alt="Contractor website display" class="w-full grayscale contrast-125 border border-white/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQuKBUbvbDTfbjUT2ZSf2ttnd_NQ_Bnzh4GTmGjrQ_vjNFFmWfjNqvpxdtIgurxkO41Ms1uAIYKk90rC1Vg8wZ-Vk7hJTuy_n0KNBrtOgyEGvaCHAftAD4GLhzK1_HprKZVjxGAs73lhzWP46pgIY5G0_fjckrc2j0hnSSd5f0RQGEqnmrRgVcT8EL_i1raG-Su5xOM4HCjjToRVmSBmG5gyxxSZRXcQqCYz5g6HM7x8rl8InYWQDLRfxBG6B-cQN9rC6HFJfyeBo"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary border-2 border-navy p-6 block-shadow-orange">
+<p class="text-navy font-bebas bebas-heavy text-4xl">PROVEN ROI</p>
+<p class="text-navy/80 text-xs font-bold uppercase tracking-widest">Designed for conversion</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 lg:px-20 py-24">
+<div class="grid md:grid-cols-2 gap-0 border-4 border-navy">
+<div class="p-12 border-b-4 md:border-b-0 md:border-r-4 border-navy bg-white">
+<h3 class="font-bebas bebas-heavy text-5xl text-navy mb-8 flex items-center gap-4">
+<span class="material-symbols-outlined text-green-600 text-5xl">check_circle</span>
+                BEST FIT
+            </h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">Plumbers, Roofers, &amp; Electricians</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">Businesses with an outdated website</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">Owners wanting more phone calls</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">Service pros ready to scale staff</p>
+</li>
+</ul>
+</div>
+<div class="p-12 bg-concrete/30">
+<h3 class="font-bebas bebas-heavy text-5xl text-navy/40 mb-8 flex items-center gap-4">
+<span class="material-symbols-outlined text-red-600 text-5xl opacity-40">cancel</span>
+                NOT THE RIGHT FIT
+            </h3>
+<ul class="space-y-6 opacity-60">
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-navy/40 flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">Ecommerce Stores &amp; Dropshipping</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-navy/40 flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">National SaaS or Tech Startups</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-navy/40 flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">Personal Lifestyle Bloggers</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-navy/40 flex-shrink-0"></span>
+<p class="text-lg font-bold text-navy uppercase">Companies looking for "Cheap as possible"</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="bg-navy py-24 border-y-2 border-navy relative">
+<div class="absolute inset-0 graph-paper opacity-10"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
+<h2 class="font-bebas bebas-heavy text-6xl text-white mb-16 text-center">A WEAK SITE COSTS MORE THAN YOU THINK.</h2>
+<div class="grid md:grid-cols-4 gap-6">
+<div class="bg-white p-8 border-2 border-navy block-shadow-orange">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">sentiment_dissatisfied</span>
+<h4 class="font-bebas bebas-heavy text-2xl text-navy mb-2 uppercase">LOST TRUST</h4>
+<p class="text-sm font-medium text-slate-600">If your site looks like it's from 2005, customers think your work is too.</p>
+</div>
+<div class="bg-white p-8 border-2 border-navy block-shadow-orange">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">timer_off</span>
+<h4 class="font-bebas bebas-heavy text-2xl text-navy mb-2 uppercase">LOST PATIENCE</h4>
+<p class="text-sm font-medium text-slate-600">A slow site makes users leave before they even see your phone number.</p>
+</div>
+<div class="bg-white p-8 border-2 border-navy block-shadow-orange">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">search_off</span>
+<h4 class="font-bebas bebas-heavy text-2xl text-navy mb-2 uppercase">LOST RANKINGS</h4>
+<p class="text-sm font-medium text-slate-600">Google won't show your site if it's not optimized for modern mobile devices.</p>
+</div>
+<div class="bg-white p-8 border-2 border-navy block-shadow-orange">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">request_quote</span>
+<h4 class="font-bebas bebas-heavy text-2xl text-navy mb-2 uppercase">LOST REVENUE</h4>
+<p class="text-sm font-medium text-slate-600">Every bounce is a lead going straight to your competitor down the road.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white border-b-2 border-navy">
+<div class="max-w-7xl mx-auto px-6 lg:px-20">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/2">
+<h2 class="font-bebas bebas-heavy text-6xl text-navy mb-8">BUILT FOR UTILITY, NOT JUST DECORATION.</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white">smartphone</span>
+</div>
+<div>
+<h4 class="font-bold text-navy uppercase text-xl">Work cleanly on a phone</h4>
+<p class="text-slate-600">Most of your customers are searching for you while standing in a flooded kitchen.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white">reviews</span>
+</div>
+<div>
+<h4 class="font-bold text-navy uppercase text-xl">Surface your reviews</h4>
+<p class="text-slate-600">Social proof is your strongest selling tool. We make it impossible to miss.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white">contact_phone</span>
+</div>
+<div>
+<h4 class="font-bold text-navy uppercase text-xl">One-tap communication</h4>
+<p class="text-slate-600">Make it effortless for people to click and call you instantly.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 border-4 border-navy p-4 bg-concrete">
+<img alt="Mobile service site mockup" class="w-full grayscale brightness-90 border-2 border-navy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp_gOZtrpGI8YFT12b7cezFByoLUrfqkjMp1MqjubNpzt7Fj_47ZKM-ju99RBfjdjSM83wzjvky4mRDEXxX9OXadl1ubIQLe9tFoI-fLMq5PhWpT7XYHhaKhsSqdaxhOpPDH7zZAsijxv_HiVqZRThBpChlmSSAX-Ge947hOrtz5U7AsVpkRToDvF-cNxE6kgpY88ZPP99ygXjrccU6zkhUF7NdPUF1Q-_M-fCsoLr5P1BUAH76YtsqX5XqtcKeUJSA0wT28J9iqo"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light">
+<div class="max-w-7xl mx-auto px-6 lg:px-20">
+<div class="grid lg:grid-cols-3 gap-0 border-4 border-navy">
+<div class="lg:col-span-2 bg-white p-12 border-b-4 lg:border-b-0 lg:border-r-4 border-navy">
+<h2 class="font-bebas bebas-heavy text-5xl text-navy mb-10">THE DELIVERABLES</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="flex items-center gap-4 p-4 border-2 border-navy/10">
+<span class="material-symbols-outlined text-primary">description</span>
+<span class="font-bold uppercase tracking-tight">5 Core Service Pages</span>
+</div>
+<div class="flex items-center gap-4 p-4 border-2 border-navy/10">
+<span class="material-symbols-outlined text-primary">devices</span>
+<span class="font-bold uppercase tracking-tight">Mobile-First Design</span>
+</div>
+<div class="flex items-center gap-4 p-4 border-2 border-navy/10">
+<span class="material-symbols-outlined text-primary">dynamic_form</span>
+<span class="font-bold uppercase tracking-tight">Lead Form Setup</span>
+</div>
+<div class="flex items-center gap-4 p-4 border-2 border-navy/10">
+<span class="material-symbols-outlined text-primary">search_check</span>
+<span class="font-bold uppercase tracking-tight">On-Page SEO Setup</span>
+</div>
+<div class="flex items-center gap-4 p-4 border-2 border-navy/10">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<span class="font-bold uppercase tracking-tight">Lightning Fast Hosting</span>
+</div>
+<div class="flex items-center gap-4 p-4 border-2 border-navy/10">
+<span class="material-symbols-outlined text-primary">security</span>
+<span class="font-bold uppercase tracking-tight">SSL Security Certificate</span>
+</div>
+</div>
+</div>
+<div class="bg-concrete p-12">
+<h2 class="font-bebas bebas-heavy text-4xl text-navy mb-10 opacity-60">OUT OF SCOPE</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-3 text-sm font-bold text-navy/60 uppercase">
+<span class="material-symbols-outlined text-red-600">close</span> No Logo Design
+                    </li>
+<li class="flex items-center gap-3 text-sm font-bold text-navy/60 uppercase">
+<span class="material-symbols-outlined text-red-600">close</span> No Unlimited Revisions
+                    </li>
+<li class="flex items-center gap-3 text-sm font-bold text-navy/60 uppercase">
+<span class="material-symbols-outlined text-red-600">close</span> No Social Media Mgmt
+                    </li>
+<li class="flex items-center gap-3 text-sm font-bold text-navy/60 uppercase">
+<span class="material-symbols-outlined text-red-600">close</span> No Custom Photography
+                    </li>
+<li class="flex items-center gap-3 text-sm font-bold text-navy/60 uppercase">
+<span class="material-symbols-outlined text-red-600">close</span> No Video Production
+                    </li>
+</ul>
+<div class="mt-12 pt-8 border-t border-navy/20">
+<p class="text-xs font-bold text-navy/40 uppercase leading-relaxed">We focus on what works. Adding fluff increases cost without increasing your phone calls.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white border-y-2 border-navy">
+<div class="max-w-7xl mx-auto px-6 lg:px-20">
+<h2 class="font-bebas bebas-heavy text-6xl text-navy mb-16 text-center">THE 5-STEP BLUEPRINT</h2>
+<div class="relative">
+<div class="absolute top-8 left-0 w-full h-1 bg-navy/10 hidden lg:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 relative z-10">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-white border-4 border-navy flex items-center justify-center font-bebas bebas-heavy text-3xl mb-6 relative">01</div>
+<h4 class="font-bold uppercase text-navy mb-2">FIT CALL</h4>
+<p class="text-sm text-slate-600">15 mins to see if we can actually help you.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-white border-4 border-navy flex items-center justify-center font-bebas bebas-heavy text-3xl mb-6 relative">02</div>
+<h4 class="font-bold uppercase text-navy mb-2">KICKOFF</h4>
+<p class="text-sm text-slate-600">Strategy session and asset collection.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary border-4 border-navy flex items-center justify-center font-bebas bebas-heavy text-3xl text-white mb-6 relative">03</div>
+<h4 class="font-bold uppercase text-navy mb-2">DESIGN/BUILD</h4>
+<p class="text-sm text-slate-600">Our team builds your high-converting machine.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-white border-4 border-navy flex items-center justify-center font-bebas bebas-heavy text-3xl mb-6 relative">04</div>
+<h4 class="font-bold uppercase text-navy mb-2">REVIEW</h4>
+<p class="text-sm text-slate-600">You check the work and we polish the edges.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-white border-4 border-navy flex items-center justify-center font-bebas bebas-heavy text-3xl mb-6 relative">05</div>
+<h4 class="font-bold uppercase text-navy mb-2">LAUNCH</h4>
+<p class="text-sm text-slate-600">Site goes live and the leads start flowing.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-concrete overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 lg:px-20">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 border-2 border-navy block-shadow relative">
+<img alt="Quality control inspection" class="w-full grayscale brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvzbGD4sfP-zVtaAOH-CYdMZw-j3js9me1pbdgFIVI5f4O4DC4mGrI3X4GGHAMuW4b3LsuHCKwIEn2Rciq-TMeqw6sG1dk1mrmEdzlzsHdPNWoVRHl_PV9Ayju-tyw9dext6rBFzQsZh-7lQKkk1N2M0xkmXtQPsMxx7aEep86JE811korQYvfpuMMsEJ2HVZWR0cLedUs9gYKWAUYVrFHSneMljDH8IrCTIpcyUKr8oX1tOSRLWDQCc_GNyHIt0DksyOKUlN2B9Y"/>
+<div class="absolute inset-0 diagonal-stripes pointer-events-none"></div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-bebas bebas-heavy text-6xl text-navy mb-8 leading-none">RESULTS DON'T COME FROM TEMPLATES.</h2>
+<p class="text-xl text-navy font-bold uppercase mb-6">Template sites focus on "Pretty". We focus on "Conversions".</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-8">
+                    Anyone can buy a $50 template. But a template doesn't know how a homeowner thinks when their roof is leaking at 2 AM. We build your site based on real service-industry data and conversion thinking.
+                </p>
+<div class="inline-block border-l-4 border-primary pl-6 py-2">
+<p class="italic text-navy font-medium">"If your website doesn't make your phone ring, it's just an expensive business card."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white border-t-2 border-navy">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-navy p-16 border-4 border-navy block-shadow-orange text-center relative overflow-hidden">
+<div class="absolute inset-0 graph-paper opacity-10"></div>
+<div class="relative z-10">
+<h2 class="font-bebas bebas-heavy text-7xl text-white mb-6">READY FOR A SITE THAT EARNS ITS KEEP?</h2>
+<p class="text-2xl text-concrete/80 mb-12 max-w-2xl mx-auto">Quit playing around with generic DIY builders. Get a professional contractor website built for the trades.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8">
+<button class="bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-white block-shadow-orange w-full md:w-auto transition-transform active:translate-x-1 active:translate-y-1">
+                        GET A FREE QUOTE
+                    </button>
+<div class="flex items-center gap-4 text-white font-bold text-xl uppercase tracking-widest">
+<span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
+<span>(555) 123-4567</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-navy py-16">
+<div class="max-w-7xl mx-auto px-6 lg:px-20 grid md:grid-cols-4 gap-12">
+<div class="col-span-2">
+<div class="flex items-center gap-3 mb-8 border-l-4 border-primary pl-6">
+<h2 class="font-bebas bebas-heavy text-4xl tracking-wide text-white">DONE DEAL DIGITAL</h2>
+</div>
+<p class="text-concrete/60 max-w-sm text-lg leading-relaxed uppercase font-bold text-xs tracking-widest">
+                The #1 choice for tradesmen who want a digital partner that understands the grit and grind of the service industry.
+            </p>
+</div>
+<div>
+<h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Services</h4>
+<ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
+<li><a class="hover:text-white transition-colors" href="#">Web Design</a></li>
+<li><a class="hover:text-white transition-colors" href="#">SEO for Trades</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Lead Generation</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Logo Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Legal</h4>
+<ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 lg:px-20 mt-16 pt-12 border-t-2 border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-concrete/30 font-bold text-xs tracking-widest uppercase">
+            © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+        </div>
+<div class="text-primary font-bebas text-xl tracking-widest">
+            BUILT FOR THE BOLD.
+        </div>
+</div>
+</footer>
+
+</body></html>
