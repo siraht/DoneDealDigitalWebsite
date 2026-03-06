@@ -2549,6 +2549,49 @@ function getComponentContextGroup(component) {
   return getSectionCompatibleGroup(component.sectionType);
 }
 
+function canComponentsShareCluster(left, right) {
+  const sameKind = getComponentCompatibleGroup(left.componentKind) === getComponentCompatibleGroup(right.componentKind);
+  const sameContext = getComponentContextGroup(left) === getComponentContextGroup(right);
+
+  if (!sameKind) {
+    return false;
+  }
+
+  if (
+    !sameContext &&
+    ["RepeatableBlock", "ContentCard", "ListItem", "NavLink", "FooterLinkItem", "TextLink", "FormField"].includes(
+      left.componentKind,
+    )
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
+function getComponentClusterThreshold(left, right, combinedThreshold) {
+  if (!canComponentsShareCluster(left, right)) {
+    return 1.01;
+  }
+
+  const sameContext = getComponentContextGroup(left) === getComponentContextGroup(right);
+  let threshold = combinedThreshold;
+
+  if (["Button", "HeaderNavLink", "NavLink", "FooterLinkItem"].includes(left.componentKind)) {
+    threshold -= 0.04;
+  }
+
+  if (["IconCard", "ImageCard", "ComparisonPanel", "ProcessStep", "AccordionItem"].includes(left.componentKind)) {
+    threshold -= sameContext ? 0.02 : 0;
+  }
+
+  if (["RepeatableBlock", "ContentCard", "ListItem", "TextLink", "FormField"].includes(left.componentKind)) {
+    threshold += 0.12;
+  }
+
+  return Number(clamp(threshold, 0.36, 0.88).toFixed(4));
+}
+
 function scoreComponentSimilarityDetailed(left, right) {
   const typeHint =
     left.componentKind === right.componentKind
@@ -2729,7 +2772,15 @@ function evaluateComponentDetectors(componentPairScores, componentLookup) {
   const dataset = validation.samples
     .map((sample) => {
       const pair = componentPairScores.lookup.get(getPairKey(sample.leftAuditId, sample.rightAuditId));
-      return pair ? { ...sample, scores: pair } : null;
+      const left = componentLookup.get(sample.leftAuditId);
+      const right = componentLookup.get(sample.rightAuditId);
+      return pair && left && right
+        ? {
+            ...sample,
+            clusterCompatible: canComponentsShareCluster(left, right),
+            scores: pair,
+          }
+        : null;
     })
     .filter(Boolean);
   const detectorKeys = [
@@ -2807,6 +2858,7 @@ function evaluateComponentDetectors(componentPairScores, componentLookup) {
       family: sample.family,
       leftAuditId: sample.leftAuditId,
       rightAuditId: sample.rightAuditId,
+      clusterCompatible: sample.clusterCompatible,
       scores: sample.scores,
     })),
   };
@@ -2838,39 +2890,7 @@ function buildComponentClusters(components, componentPairScores, detectorEvaluat
   const clusters = clusterBySimilarity(
     components,
     (left, right) => getComponentPairScore(componentPairScores, left, right)?.combined || 0,
-    (left, right) => {
-      const sameKind = getComponentCompatibleGroup(left.componentKind) === getComponentCompatibleGroup(right.componentKind);
-      const sameContext = getComponentContextGroup(left) === getComponentContextGroup(right);
-
-      if (!sameKind) {
-        return 1.01;
-      }
-
-      let threshold = combinedThreshold;
-
-      if (["Button", "HeaderNavLink", "NavLink", "FooterLinkItem"].includes(left.componentKind)) {
-        threshold -= 0.04;
-      }
-
-      if (["IconCard", "ImageCard", "ComparisonPanel", "ProcessStep", "AccordionItem"].includes(left.componentKind)) {
-        threshold -= sameContext ? 0.02 : 0;
-      }
-
-      if (["RepeatableBlock", "ContentCard", "ListItem", "TextLink", "FormField"].includes(left.componentKind)) {
-        threshold += 0.12;
-      }
-
-      if (
-        !sameContext &&
-        ["RepeatableBlock", "ContentCard", "ListItem", "NavLink", "FooterLinkItem", "TextLink", "FormField"].includes(
-          left.componentKind,
-        )
-      ) {
-        return 1.01;
-      }
-
-      return Number(clamp(threshold, 0.36, 0.88).toFixed(4));
-    },
+    (left, right) => getComponentClusterThreshold(left, right, combinedThreshold),
     (item) =>
       `${getComponentContextGroup(item)}::${item.componentKind}::${item.structureFingerprint}`,
   );
@@ -3568,10 +3588,18 @@ function renderComponentChecklist(componentClusters, componentLookup) {
 }
 
 function renderComponentAnalysis(detectorEvaluation) {
+  const combinedThreshold = detectorEvaluation.detectors.combined.threshold;
+  const suppressedFalsePositives = detectorEvaluation.samples.filter(
+    (sample) =>
+      sample.label === "negative" &&
+      !sample.clusterCompatible &&
+      sample.scores.combined >= combinedThreshold,
+  ).length;
   const lines = [
     "# Component Detector Analysis",
     "",
     `Validation set: ${detectorEvaluation.datasetSize} labeled pairs (${detectorEvaluation.positives} positive, ${detectorEvaluation.negatives} negative).`,
+    `Cluster gates suppress ${suppressedFalsePositives} high-scoring negative pairs before they ever reach the primary component matrix.`,
     "",
     "## Detector Calibration",
     "",
@@ -3597,13 +3625,17 @@ function renderComponentAnalysis(detectorEvaluation) {
     );
   }
 
-  const combinedThreshold = detectorEvaluation.detectors.combined.threshold;
   const falseNegatives = detectorEvaluation.samples
     .filter((sample) => sample.label === "positive" && sample.scores.combined < combinedThreshold)
     .sort((left, right) => left.scores.combined - right.scores.combined)
     .slice(0, 15);
   const falsePositives = detectorEvaluation.samples
-    .filter((sample) => sample.label === "negative" && sample.scores.combined >= combinedThreshold)
+    .filter(
+      (sample) =>
+        sample.label === "negative" &&
+        sample.clusterCompatible &&
+        sample.scores.combined >= combinedThreshold,
+    )
     .sort((left, right) => right.scores.combined - left.scores.combined)
     .slice(0, 15);
 
@@ -4020,6 +4052,27 @@ async function main() {
       allComponents,
       componentPairScores,
     );
+    const componentCombinedThreshold = componentDetectorEvaluation.detectors.combined.threshold;
+    const retainedComponentPairs = componentPairScores.rows
+      .filter((pair) => {
+        const left = componentLookup.get(pair.leftAuditId);
+        const right = componentLookup.get(pair.rightAuditId);
+        return (
+          left &&
+          right &&
+          canComponentsShareCluster(left, right) &&
+          pair.combined >= Math.max(componentCombinedThreshold - 0.08, 0.38)
+        );
+      })
+      .sort((left, right) => {
+        if (right.combined !== left.combined) {
+          return right.combined - left.combined;
+        }
+
+        return getPairKey(left.leftAuditId, left.rightAuditId).localeCompare(
+          getPairKey(right.leftAuditId, right.rightAuditId),
+        );
+      });
 
     const manifest = {
       generatedAt: new Date().toISOString(),
@@ -4115,7 +4168,10 @@ async function main() {
           detectorWeights: componentSimilarityWeights,
           detectorEvaluation: componentDetectorEvaluation,
           nearestNeighbors: componentNearestNeighbors,
-          pairs: componentPairScores.rows,
+          pairCount: componentPairScores.rows.length,
+          retainedPairCount: retainedComponentPairs.length,
+          retainedPairThreshold: Math.max(componentCombinedThreshold - 0.08, 0.38),
+          pairs: retainedComponentPairs,
         },
         null,
         2,

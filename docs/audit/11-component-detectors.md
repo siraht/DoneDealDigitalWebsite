@@ -1,6 +1,7 @@
 # Component Detector Analysis
 
 Validation set: 11408 labeled pairs (5704 positive, 5704 negative).
+Cluster gates suppress 82 high-scoring negative pairs before they ever reach the primary component matrix.
 
 ## Detector Calibration
 
@@ -50,22 +51,4 @@ Validation set: 11408 labeled pairs (5704 positive, 5704 negative).
 - [ ] `about::section-3::component-g1-i2` vs `lead-generation::section-5::component-g4-i3` in `IconCard` fell below threshold at 0.35; strongest signals: typeHint 1.00, visual 0.69, rootStyle 0.64.
 - [ ] `about::section-6::component-g1-i1` vs `lead-generation::section-5::component-g4-i1` in `IconCard` fell below threshold at 0.35; strongest signals: typeHint 1.00, rootStyle 0.80, visual 0.72.
 - [ ] `about::section-6::component-g1-i1` vs `lead-generation::section-5::component-g4-i3` in `IconCard` fell below threshold at 0.35; strongest signals: typeHint 1.00, rootStyle 0.80, visual 0.72.
-
-### False Positives
-
-- [ ] `case-studies::section-1::component-g1-i4` vs `index_original::section-2::component-g1-i2` crossed threshold at 0.53; strongest signals: layout 1.00, visual 0.79, rootStyle 0.64.
-- [ ] `case-studies::section-1::component-g1-i1` vs `index_original::section-2::component-g1-i2` crossed threshold at 0.53; strongest signals: layout 1.00, visual 0.77, rootStyle 0.64.
-- [ ] `case-studies::section-1::component-g1-i3` vs `index_original::section-2::component-g1-i2` crossed threshold at 0.53; strongest signals: layout 1.00, visual 0.77, rootStyle 0.64.
-- [ ] `case-studies::section-1::component-g1-i1` vs `web-design::section-2::component-g2-i2` crossed threshold at 0.52; strongest signals: layout 1.00, visual 0.74, rootStyle 0.64.
-- [ ] `case-studies::section-1::component-g1-i4` vs `web-design::section-2::component-g2-i2` crossed threshold at 0.52; strongest signals: layout 1.00, visual 0.74, rootStyle 0.64.
-- [ ] `case-studies::section-1::component-g1-i3` vs `web-design::section-2::component-g2-i2` crossed threshold at 0.52; strongest signals: layout 1.00, visual 0.73, rootStyle 0.64.
-- [ ] `about::section-1::component-g1-i2` vs `web-design::section-2::component-g2-i2` crossed threshold at 0.52; strongest signals: layout 1.00, visual 0.66, rootStyle 0.66.
-- [ ] `about::section-1::component-g1-i2` vs `index_original::section-2::component-g1-i2` crossed threshold at 0.52; strongest signals: layout 1.00, rootStyle 0.66, visual 0.65.
-- [ ] `about::section-1::component-g1-i1` vs `index_original::section-2::component-g1-i2` crossed threshold at 0.52; strongest signals: layout 1.00, rootStyle 0.66, visual 0.62.
-- [ ] `about::section-1::component-g1-i1` vs `web-design::section-2::component-g2-i2` crossed threshold at 0.52; strongest signals: layout 1.00, rootStyle 0.66, visual 0.62.
-- [ ] `about::section-1::component-g1-i3` vs `local-seo::section-2::component-standalone-1` crossed threshold at 0.52; strongest signals: layout 1.00, rootStyle 0.66, subtreeStyle 0.59.
-- [ ] `about::section-1::component-g1-i3` vs `index_original::section-2::component-g1-i1` crossed threshold at 0.51; strongest signals: layout 1.00, rootStyle 0.66, subtreeStyle 0.59.
-- [ ] `case-studies::section-1::component-g1-i2` vs `local-seo::section-2::component-standalone-1` crossed threshold at 0.51; strongest signals: layout 1.00, rootStyle 0.64, subtreeStyle 0.57.
-- [ ] `about::section-1::component-g1-i3` vs `web-design::section-2::component-g2-i1` crossed threshold at 0.51; strongest signals: layout 1.00, rootStyle 0.66, subtreeStyle 0.59.
-- [ ] `case-studies::section-1::component-g1-i2` vs `index_original::section-2::component-g1-i1` crossed threshold at 0.50; strongest signals: layout 1.00, rootStyle 0.64, subtreeStyle 0.57.
 
