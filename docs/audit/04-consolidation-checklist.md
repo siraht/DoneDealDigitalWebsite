@@ -30,6 +30,7 @@
 
 - [ ] Define the canonical `HeroSection` boundary using `index` section 2.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: with-media, left-aligned, without-eyebrow, height-tall, heading-width-medium.
 - [ ] Resolve these root-level style decisions before extraction:
 - [ ] height: 1098px vs 1115px vs 1218px vs 346px vs 366px vs 392px vs 546px vs 722px vs 985.953px vs 994px vs 998px
 - [ ] padding-top: 0px vs 128px vs 64px vs 96px
@@ -39,19 +40,19 @@
 - [ ] font-family: "DM Sans", Inter, system-ui, sans-serif vs "DM Sans", sans-serif
 - [ ] line-height: 24px vs 26px
 - [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
-- [ ] Consolidate `about` section 2 at `/about`.
-- [ ] Consolidate `case-studies` section 2 at `/case-studies`.
-- [ ] Consolidate `contact` section 2 at `/contact`.
-- [ ] Consolidate `cookie-policy` section 2 at `/cookie-policy`.
-- [ ] Consolidate `faq` section 2 at `/faq`.
-- [ ] Consolidate `index` section 2 at `/` (canonical candidate).
-- [ ] Consolidate `index_original` section 2 at `/index_original`.
-- [ ] Consolidate `lead-generation` section 2 at `/lead-generation`.
-- [ ] Consolidate `local-seo` section 2 at `/local-seo`.
-- [ ] Consolidate `privacy` section 2 at `/privacy`.
-- [ ] Consolidate `terms` section 2 at `/terms`.
-- [ ] Consolidate `thank-you` section 2 at `/thank-you`.
-- [ ] Consolidate `web-design` section 2 at `/web-design`.
+- [ ] Consolidate `about` section 2 at `/about`; variants: without-media, centered, with-eyebrow, height-medium, heading-width-wide.
+- [ ] Consolidate `case-studies` section 2 at `/case-studies`; variants: without-media, left-aligned, without-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `contact` section 2 at `/contact`; variants: without-media, left-aligned, without-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `cookie-policy` section 2 at `/cookie-policy`; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `faq` section 2 at `/faq`; variants: without-media, left-aligned, with-eyebrow, height-medium, heading-width-wide.
+- [ ] Consolidate `index` section 2 at `/` (canonical candidate); variants: with-media, left-aligned, without-eyebrow, height-tall, heading-width-medium.
+- [ ] Consolidate `index_original` section 2 at `/index_original`; variants: with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium.
+- [ ] Consolidate `lead-generation` section 2 at `/lead-generation`; variants: without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide.
+- [ ] Consolidate `local-seo` section 2 at `/local-seo`; variants: without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide.
+- [ ] Consolidate `privacy` section 2 at `/privacy`; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `terms` section 2 at `/terms`; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide.
+- [ ] Consolidate `thank-you` section 2 at `/thank-you`; variants: without-media, centered, without-eyebrow, height-tall, heading-width-wide.
+- [ ] Consolidate `web-design` section 2 at `/web-design`; variants: with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium.
 
 ## CredibilityStrip
 
@@ -197,18 +198,25 @@
 
 ## CallToAction
 
-- [ ] Define the canonical `CallToAction` boundary using `about` section 8.
+- [ ] Define the canonical `CallToAction` boundary using `index_original` section 6.
 - [ ] Decide whether this becomes one shared component or a component with variants.
+- [ ] Canonical variant traits: with-badge, framed-panel, button-primary.
 - [ ] Resolve these root-level style decisions before extraction:
-- [ ] height: 588px vs 660px vs 688px vs 704px vs 940px
+- [ ] height: 588px vs 590px vs 660px vs 688px vs 694px vs 704px vs 940px
 - [ ] background-color: rgb(226, 232, 240) vs rgb(246, 246, 248) vs rgb(255, 255, 255)
 - [ ] padding-top: 128px vs 96px
 - [ ] padding-bottom: 128px vs 96px
-- [ ] Consolidate `about` section 8 at `/about` (canonical candidate).
-- [ ] Consolidate `case-studies` section 6 at `/case-studies`.
-- [ ] Consolidate `faq` section 8 at `/faq`.
-- [ ] Consolidate `lead-generation` section 9 at `/lead-generation`.
-- [ ] Consolidate `local-seo` section 9 at `/local-seo`.
+- [ ] border-top-width: 0px vs 2px
+- [ ] border-bottom-width: 0px vs 2px
+- [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
+- [ ] border-right-color: rgb(11, 29, 51) vs rgb(229, 231, 235)
+- [ ] Consolidate `about` section 8 at `/about`; variants: with-badge, framed-panel, button-primary.
+- [ ] Consolidate `case-studies` section 6 at `/case-studies`; variants: with-badge, framed-panel, button-primary.
+- [ ] Consolidate `faq` section 8 at `/faq`; variants: without-badge, framed-panel, button-primary.
+- [ ] Consolidate `index_original` section 6 at `/index_original` (canonical candidate); variants: with-badge, framed-panel, button-primary.
+- [ ] Consolidate `lead-generation` section 9 at `/lead-generation`; variants: without-badge, framed-panel, button-primary.
+- [ ] Consolidate `local-seo` section 9 at `/local-seo`; variants: without-badge, framed-panel, button-primary.
+- [ ] Consolidate `web-design` section 9 at `/web-design`; variants: without-badge, framed-panel, button-primary.
 
 ## SectionNav
 
@@ -242,17 +250,6 @@
 - [ ] Consolidate `faq` section 5 at `/faq`.
 - [ ] Consolidate `faq` section 6 at `/faq`.
 - [ ] Consolidate `faq` section 7 at `/faq`.
-
-## ContentSection: READY TO SCALE YOUR CREW?
-
-- [ ] Define the canonical `ContentSection: READY TO SCALE YOUR CREW?` boundary using `index_original` section 6.
-- [ ] Decide whether this becomes one shared component or a component with variants.
-- [ ] Resolve these root-level style decisions before extraction:
-- [ ] height: 590px vs 694px
-- [ ] border-top-width: 0px vs 2px
-- [ ] border-bottom-width: 0px vs 2px
-- [ ] Consolidate `index_original` section 6 at `/index_original` (canonical candidate).
-- [ ] Consolidate `web-design` section 9 at `/web-design`.
 
 ## ComparisonSplitSection
 
@@ -523,7 +520,7 @@
 - [ ] height: 194px vs 224px
 - [ ] flex-direction: column vs row
 - [ ] align-items: center vs normal
-- [ ] box-shadow: rgb(11, 29, 51) 8px 8px 0px 0px vs rgb(255, 123, 0) 6px 6px 0px 0px
+- [ ] text-align: center vs start
 - [ ] Review `about` section 6 pattern `icon-card` x5.
 - [ ] Review `web-design` section 4 pattern `icon-card` x4.
 

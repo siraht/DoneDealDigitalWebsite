@@ -18,19 +18,19 @@
 
 ## HeroSection (Variant of Same Component)
 
-- [ ] `about` section 2 at `/about` - YOU'RE NOT HIRING A MYSTERY AGENCY.
-- [ ] `case-studies` section 2 at `/case-studies` - PROOF, NOT PROMISES.
-- [ ] `contact` section 2 at `/contact` - TELL US WHAT YOU NEED.
-- [ ] `cookie-policy` section 2 at `/cookie-policy` - TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.
-- [ ] `faq` section 2 at `/faq` - STRAIGHT ANSWERS FOR BUSY OWNERS.
-- [ ] `index` section 2 at `/` - WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.; patterns: action-item x2, repeatable-block x2
-- [ ] `index_original` section 2 at `/index_original` - WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.; patterns: action-item x2, repeatable-block x2
-- [ ] `lead-generation` section 2 at `/lead-generation` - PAID ADS BUILT TO BRING IN REAL CALLS.; patterns: repeatable-block x2
-- [ ] `local-seo` section 2 at `/local-seo` - GET FOUND BY LOCAL CUSTOMERS WHO NEED YOU.
-- [ ] `privacy` section 2 at `/privacy` - TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.
-- [ ] `terms` section 2 at `/terms` - TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.
-- [ ] `thank-you` section 2 at `/thank-you` - WE GOT IT. HERE'S WHAT HAPPENS NEXT.; patterns: repeatable-block x2
-- [ ] `web-design` section 2 at `/web-design` - WE BUILD CONTRACTOR WEBSITES THAT TURN VISITS INTO CALLS.; patterns: repeatable-block x3, action-item x2, repeatable-block x2
+- [ ] `about` section 2 at `/about` - YOU'RE NOT HIRING A MYSTERY AGENCY.; variants: without-media, centered, with-eyebrow, height-medium, heading-width-wide
+- [ ] `case-studies` section 2 at `/case-studies` - PROOF, NOT PROMISES.; variants: without-media, left-aligned, without-eyebrow, height-short, heading-width-wide
+- [ ] `contact` section 2 at `/contact` - TELL US WHAT YOU NEED.; variants: without-media, left-aligned, without-eyebrow, height-short, heading-width-wide
+- [ ] `cookie-policy` section 2 at `/cookie-policy` - TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide
+- [ ] `faq` section 2 at `/faq` - STRAIGHT ANSWERS FOR BUSY OWNERS.; variants: without-media, left-aligned, with-eyebrow, height-medium, heading-width-wide
+- [ ] `index` section 2 at `/` - WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.; variants: with-media, left-aligned, without-eyebrow, height-tall, heading-width-medium; patterns: action-item x2, repeatable-block x2
+- [ ] `index_original` section 2 at `/index_original` - WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.; variants: with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium; patterns: action-item x2, repeatable-block x2
+- [ ] `lead-generation` section 2 at `/lead-generation` - PAID ADS BUILT TO BRING IN REAL CALLS.; variants: without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide; patterns: repeatable-block x2
+- [ ] `local-seo` section 2 at `/local-seo` - GET FOUND BY LOCAL CUSTOMERS WHO NEED YOU.; variants: without-media, left-aligned, with-eyebrow, height-tall, heading-width-wide
+- [ ] `privacy` section 2 at `/privacy` - TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide
+- [ ] `terms` section 2 at `/terms` - TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.; variants: without-media, left-aligned, with-eyebrow, height-short, heading-width-wide
+- [ ] `thank-you` section 2 at `/thank-you` - WE GOT IT. HERE'S WHAT HAPPENS NEXT.; variants: without-media, centered, without-eyebrow, height-tall, heading-width-wide; patterns: repeatable-block x2
+- [ ] `web-design` section 2 at `/web-design` - WE BUILD CONTRACTOR WEBSITES THAT TURN VISITS INTO CALLS.; variants: with-media, left-aligned, with-eyebrow, height-tall, heading-width-medium; patterns: repeatable-block x3, action-item x2, repeatable-block x2
 
 ## CredibilityStrip (Variant of Same Component)
 
@@ -98,11 +98,13 @@
 
 ## CallToAction (Variant of Same Component)
 
-- [ ] `about` section 8 at `/about` - READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?
-- [ ] `case-studies` section 6 at `/case-studies` - READY TO BE OUR NEXT SUCCESS STORY?
-- [ ] `faq` section 8 at `/faq` - STILL HAVE QUESTIONS? LET'S TALK.
-- [ ] `lead-generation` section 9 at `/lead-generation` - READY TO SEE IF PAID ADS MAKE SENSE?
-- [ ] `local-seo` section 9 at `/local-seo` - READY TO BE EASIER TO FIND?
+- [ ] `about` section 8 at `/about` - READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?; variants: with-badge, framed-panel, button-primary
+- [ ] `case-studies` section 6 at `/case-studies` - READY TO BE OUR NEXT SUCCESS STORY?; variants: with-badge, framed-panel, button-primary
+- [ ] `faq` section 8 at `/faq` - STILL HAVE QUESTIONS? LET'S TALK.; variants: without-badge, framed-panel, button-primary
+- [ ] `index_original` section 6 at `/index_original` - READY TO SCALE YOUR CREW?; variants: with-badge, framed-panel, button-primary
+- [ ] `lead-generation` section 9 at `/lead-generation` - READY TO SEE IF PAID ADS MAKE SENSE?; variants: without-badge, framed-panel, button-primary
+- [ ] `local-seo` section 9 at `/local-seo` - READY TO BE EASIER TO FIND?; variants: without-badge, framed-panel, button-primary
+- [ ] `web-design` section 9 at `/web-design` - READY FOR A SITE THAT EARNS ITS KEEP?; variants: without-badge, framed-panel, button-primary
 
 ## SectionNav (Unique)
 
@@ -125,11 +127,6 @@
 - [ ] `faq` section 5 at `/faq` - WORKING WITH US
 - [ ] `faq` section 6 at `/faq` - SEO & ADS
 - [ ] `faq` section 7 at `/faq` - TECHNICAL
-
-## ContentSection: READY TO SCALE YOUR CREW? (Variant of Same Component)
-
-- [ ] `index_original` section 6 at `/index_original` - READY TO SCALE YOUR CREW?
-- [ ] `web-design` section 9 at `/web-design` - READY FOR A SITE THAT EARNS ITS KEEP?
 
 ## ComparisonSplitSection (Variant of Same Component)
 

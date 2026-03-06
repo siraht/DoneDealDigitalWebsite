@@ -120,10 +120,16 @@
 
 ## CallToAction
 
-- `height`: 588px | 660px | 688px | 704px | 940px
+- `height`: 588px | 590px | 660px | 688px | 694px | 704px | 940px
 - `background-color`: rgb(226, 232, 240) | rgb(246, 246, 248) | rgb(255, 255, 255)
 - `padding-top`: 128px | 96px
 - `padding-bottom`: 128px | 96px
+- `border-top-width`: 0px | 2px
+- `border-bottom-width`: 0px | 2px
+- `border-top-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
+- `border-right-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
+- `border-bottom-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
+- `border-left-color`: rgb(11, 29, 51) | rgb(229, 231, 235)
 
 ## LegalContent: 1. PRIVACY POLICY
 
@@ -133,12 +139,6 @@
 
 - `height`: 168px | 272px
 - `margin-top`: 0px | 80px
-
-## ContentSection: READY TO SCALE YOUR CREW?
-
-- `height`: 590px | 694px
-- `border-top-width`: 0px | 2px
-- `border-bottom-width`: 0px | 2px
 
 ## ComparisonSplitSection
 
@@ -226,6 +226,7 @@
 - `font-weight`: 400 | 500 | 700
 - `min-height`: 0px | auto
 - `margin-top`: 0px | 16px
+- `text-align`: center | start
 - `text-transform`: none | uppercase
 
 ## repeatable-block
@@ -267,8 +268,8 @@
 - `min-height`: 0px | auto
 - `background-image`: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(rgba(255, 255, 255, 0.05) 1px, rgba(0, 0, 0, 0) 1px) | none
 - `font-weight`: 400 | 700
+- `text-align`: center | start
 - `text-transform`: none | uppercase
-- `opacity`: 0.4 | 1
 
 ## repeatable-block
 
@@ -311,6 +312,7 @@
 - `height`: 194px | 224px
 - `flex-direction`: column | row
 - `align-items`: center | normal
+- `text-align`: center | start
 - `box-shadow`: rgb(11, 29, 51) 8px 8px 0px 0px | rgb(255, 123, 0) 6px 6px 0px 0px
 
 ## repeatable-block
@@ -397,9 +399,9 @@
 - `flex-direction`: column | row
 - `align-items`: center | normal
 - `background-color`: rgb(255, 255, 255) | rgba(0, 0, 0, 0)
+- `text-align`: center | start
 - `border-top-width`: 0px | 2px
 - `border-right-width`: 0px | 2px
-- `border-bottom-width`: 0px | 2px
 
 ## repeatable-block
 

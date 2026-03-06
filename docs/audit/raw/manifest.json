@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T06:06:11.324Z",
+  "generatedAt": "2026-03-06T06:11:29.734Z",
   "baseURL": "http://127.0.0.1:4322",
   "serverCommand": "npm run dev -- --host 127.0.0.1 --port 4322",
   "viewports": [
@@ -2134,7 +2134,7 @@
         {
           "auditId": "index_original::section-6",
           "index": 6,
-          "sectionType": "ContentSection",
+          "sectionType": "CallToAction",
           "firstHeading": "READY TO SCALE YOUR CREW?",
           "path": "body[1] > section[5]",
           "patterns": []
@@ -4164,7 +4164,7 @@
         {
           "auditId": "web-design::section-9",
           "index": 9,
-          "sectionType": "ContentSection",
+          "sectionType": "CallToAction",
           "firstHeading": "READY FOR A SITE THAT EARNS ITS KEEP?",
           "path": "body[1] > section[8]",
           "patterns": []
@@ -4211,6 +4211,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4220,6 +4221,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4229,6 +4231,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4238,6 +4241,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4247,6 +4251,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4256,6 +4261,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4265,6 +4271,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4274,6 +4281,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "47fdb2b6"
         },
         {
@@ -4283,6 +4291,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4292,6 +4301,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4301,6 +4311,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4310,6 +4321,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         },
         {
@@ -4319,6 +4331,7 @@
           "index": 1,
           "sectionType": "SiteHeader",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7cb727cd"
         }
       ]
@@ -4337,6 +4350,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.",
+          "variantTraits": [
+            "with-media",
+            "left-aligned",
+            "without-eyebrow",
+            "height-tall",
+            "heading-width-medium"
+          ],
           "structureFingerprint": "2307e253"
         },
         {
@@ -4346,6 +4366,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "YOU'RE NOT HIRING A MYSTERY AGENCY.",
+          "variantTraits": [
+            "without-media",
+            "centered",
+            "with-eyebrow",
+            "height-medium",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "db132018"
         },
         {
@@ -4355,6 +4382,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "PROOF, NOT PROMISES.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "without-eyebrow",
+            "height-short",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "66c60a16"
         },
         {
@@ -4364,6 +4398,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "TELL US WHAT YOU NEED.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "without-eyebrow",
+            "height-short",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "1e257e14"
         },
         {
@@ -4373,6 +4414,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-short",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "e60eb506"
         },
         {
@@ -4382,6 +4430,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "STRAIGHT ANSWERS FOR BUSY OWNERS.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-medium",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "ffd85db5"
         },
         {
@@ -4391,6 +4446,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "WE BUILD WEBSITES THAT WORK AS HARD AS YOU DO.",
+          "variantTraits": [
+            "with-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-tall",
+            "heading-width-medium"
+          ],
           "structureFingerprint": "ed0c3fd4"
         },
         {
@@ -4400,6 +4462,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "PAID ADS BUILT TO BRING IN REAL CALLS.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-tall",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "eb8b2075"
         },
         {
@@ -4409,6 +4478,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "GET FOUND BY LOCAL CUSTOMERS WHO NEED YOU.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-tall",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "dd8dab56"
         },
         {
@@ -4418,6 +4494,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-short",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "e60eb506"
         },
         {
@@ -4427,6 +4510,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "TRANSPARENT TERMS FOR A STRAIGHT-TALK BUSINESS.",
+          "variantTraits": [
+            "without-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-short",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "e60eb506"
         },
         {
@@ -4436,6 +4526,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "WE GOT IT. HERE'S WHAT HAPPENS NEXT.",
+          "variantTraits": [
+            "without-media",
+            "centered",
+            "without-eyebrow",
+            "height-tall",
+            "heading-width-wide"
+          ],
           "structureFingerprint": "245f92bb"
         },
         {
@@ -4445,6 +4542,13 @@
           "index": 2,
           "sectionType": "HeroSection",
           "firstHeading": "WE BUILD CONTRACTOR WEBSITES THAT TURN VISITS INTO CALLS.",
+          "variantTraits": [
+            "with-media",
+            "left-aligned",
+            "with-eyebrow",
+            "height-tall",
+            "heading-width-medium"
+          ],
           "structureFingerprint": "3bf367cc"
         }
       ]
@@ -4463,6 +4567,7 @@
           "index": 3,
           "sectionType": "CredibilityStrip",
           "firstHeading": "",
+          "variantTraits": [],
           "structureFingerprint": "a684aeac"
         },
         {
@@ -4472,6 +4577,7 @@
           "index": 3,
           "sectionType": "CredibilityStrip",
           "firstHeading": "",
+          "variantTraits": [],
           "structureFingerprint": "9a1a3842"
         }
       ]
@@ -4490,6 +4596,7 @@
           "index": 4,
           "sectionType": "ServicesSection",
           "firstHeading": "NO FLUFF. JUST RESULTS.",
+          "variantTraits": [],
           "structureFingerprint": "84e207d4"
         },
         {
@@ -4499,6 +4606,7 @@
           "index": 4,
           "sectionType": "ServicesSection",
           "firstHeading": "NO FLUFF. JUST RESULTS.",
+          "variantTraits": [],
           "structureFingerprint": "92945834"
         },
         {
@@ -4508,6 +4616,7 @@
           "index": 5,
           "sectionType": "ServicesSection",
           "firstHeading": "WHAT WE MANAGE",
+          "variantTraits": [],
           "structureFingerprint": "dc65822c"
         }
       ]
@@ -4526,6 +4635,7 @@
           "index": 5,
           "sectionType": "ProcessSection",
           "firstHeading": "THE DONE DEAL PROCESS",
+          "variantTraits": [],
           "structureFingerprint": "8d2bcd55"
         },
         {
@@ -4535,6 +4645,7 @@
           "index": 5,
           "sectionType": "ProcessSection",
           "firstHeading": "THE DONE DEAL PROCESS",
+          "variantTraits": [],
           "structureFingerprint": "14554ed3"
         },
         {
@@ -4544,6 +4655,7 @@
           "index": 5,
           "sectionType": "ProcessSection",
           "firstHeading": "BUILT FOR UTILITY, NOT JUST DECORATION.",
+          "variantTraits": [],
           "structureFingerprint": "584daa6b"
         }
       ]
@@ -4562,6 +4674,7 @@
           "index": 6,
           "sectionType": "FinalCtaSection",
           "firstHeading": "READY TO GROW?",
+          "variantTraits": [],
           "structureFingerprint": "4fa2ecf6"
         }
       ]
@@ -4580,6 +4693,7 @@
           "index": 7,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "7840e060"
         },
         {
@@ -4589,6 +4703,7 @@
           "index": 9,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4598,6 +4713,7 @@
           "index": 7,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "9ca40926"
         },
         {
@@ -4607,6 +4723,7 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4616,6 +4733,7 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4625,6 +4743,7 @@
           "index": 9,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4634,6 +4753,7 @@
           "index": 7,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4643,6 +4763,7 @@
           "index": 10,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "f5be488b"
         },
         {
@@ -4652,6 +4773,7 @@
           "index": 10,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "6887a476"
         },
         {
@@ -4661,6 +4783,7 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4670,6 +4793,7 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4679,6 +4803,7 @@
           "index": 4,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         },
         {
@@ -4688,6 +4813,7 @@
           "index": 10,
           "sectionType": "SiteFooter",
           "firstHeading": "DONE DEAL DIGITAL",
+          "variantTraits": [],
           "structureFingerprint": "d48f82d4"
         }
       ]
@@ -4706,6 +4832,7 @@
           "index": 1,
           "sectionType": "SystemMessage",
           "firstHeading": "404",
+          "variantTraits": [],
           "structureFingerprint": "7f19b198"
         }
       ]
@@ -4724,6 +4851,7 @@
           "index": 3,
           "sectionType": "IconCardGrid",
           "firstHeading": "WHY WE EXIST",
+          "variantTraits": [],
           "structureFingerprint": "f3486082"
         },
         {
@@ -4733,6 +4861,7 @@
           "index": 6,
           "sectionType": "IconCardGrid",
           "firstHeading": "OUR WORK ETHIC",
+          "variantTraits": [],
           "structureFingerprint": "d90098bd"
         },
         {
@@ -4742,6 +4871,7 @@
           "index": 6,
           "sectionType": "IconCardGrid",
           "firstHeading": "GBP FOUNDATION",
+          "variantTraits": [],
           "structureFingerprint": "15203542"
         },
         {
@@ -4751,6 +4881,7 @@
           "index": 4,
           "sectionType": "IconCardGrid",
           "firstHeading": "A WEAK SITE COSTS MORE THAN YOU THINK.",
+          "variantTraits": [],
           "structureFingerprint": "ddefe569"
         }
       ]
@@ -4769,6 +4900,7 @@
           "index": 4,
           "sectionType": "ImageCardGrid",
           "firstHeading": "THE OPERATORS BEHIND THE SCREENS",
+          "variantTraits": [],
           "structureFingerprint": "56d153e0"
         },
         {
@@ -4778,6 +4910,7 @@
           "index": 4,
           "sectionType": "ImageCardGrid",
           "firstHeading": "200% INCREASE IN CALLS IN 90 DAYS",
+          "variantTraits": [],
           "structureFingerprint": "13f981ed"
         }
       ]
@@ -4796,6 +4929,7 @@
           "index": 5,
           "sectionType": "ContentSection",
           "firstHeading": "WHY THE TRADES?",
+          "variantTraits": [],
           "structureFingerprint": "a620a5fa"
         },
         {
@@ -4805,6 +4939,7 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "THE PARTNERSHIP EXPERIENCE",
+          "variantTraits": [],
           "structureFingerprint": "0b63a97b"
         },
         {
@@ -4814,6 +4949,7 @@
           "index": 5,
           "sectionType": "ContentSection",
           "firstHeading": "OUR REPORTING DEPTH",
+          "variantTraits": [],
           "structureFingerprint": "7a9f1f3a"
         },
         {
@@ -4823,6 +4959,7 @@
           "index": 4,
           "sectionType": "ContentSection",
           "firstHeading": "THE PROBLEM WITH MOST ADVERTISING",
+          "variantTraits": [],
           "structureFingerprint": "10410e0f"
         },
         {
@@ -4832,6 +4969,7 @@
           "index": 6,
           "sectionType": "ContentSection",
           "firstHeading": "HOW WE MEASURE SUCCESS",
+          "variantTraits": [],
           "structureFingerprint": "a0c9c06d"
         },
         {
@@ -4841,6 +4979,7 @@
           "index": 8,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE WILL NOT DO",
+          "variantTraits": [],
           "structureFingerprint": "c40be86d"
         },
         {
@@ -4850,6 +4989,7 @@
           "index": 8,
           "sectionType": "ContentSection",
           "firstHeading": "COMPOUNDING GROWTH",
+          "variantTraits": [],
           "structureFingerprint": "41a66f82"
         },
         {
@@ -4859,6 +4999,7 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "THE 5-STEP BLUEPRINT",
+          "variantTraits": [],
           "structureFingerprint": "e41f19d2"
         }
       ]
@@ -4877,6 +5018,11 @@
           "index": 8,
           "sectionType": "CallToAction",
           "firstHeading": "READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?",
+          "variantTraits": [
+            "with-badge",
+            "framed-panel",
+            "button-primary"
+          ],
           "structureFingerprint": "dce571df"
         },
         {
@@ -4886,6 +5032,11 @@
           "index": 6,
           "sectionType": "CallToAction",
           "firstHeading": "READY TO BE OUR NEXT SUCCESS STORY?",
+          "variantTraits": [
+            "with-badge",
+            "framed-panel",
+            "button-primary"
+          ],
           "structureFingerprint": "0c3a0795"
         },
         {
@@ -4895,7 +5046,26 @@
           "index": 8,
           "sectionType": "CallToAction",
           "firstHeading": "STILL HAVE QUESTIONS? LET'S TALK.",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
           "structureFingerprint": "4932f4f6"
+        },
+        {
+          "auditId": "index_original::section-6",
+          "pageName": "index_original",
+          "route": "/index_original",
+          "index": 6,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY TO SCALE YOUR CREW?",
+          "variantTraits": [
+            "with-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "20ddf752"
         },
         {
           "auditId": "lead-generation::section-9",
@@ -4904,6 +5074,11 @@
           "index": 9,
           "sectionType": "CallToAction",
           "firstHeading": "READY TO SEE IF PAID ADS MAKE SENSE?",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
           "structureFingerprint": "ceb1f944"
         },
         {
@@ -4913,7 +5088,26 @@
           "index": 9,
           "sectionType": "CallToAction",
           "firstHeading": "READY TO BE EASIER TO FIND?",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
           "structureFingerprint": "97d071c5"
+        },
+        {
+          "auditId": "web-design::section-9",
+          "pageName": "web-design",
+          "route": "/web-design",
+          "index": 9,
+          "sectionType": "CallToAction",
+          "firstHeading": "READY FOR A SITE THAT EARNS ITS KEEP?",
+          "variantTraits": [
+            "without-badge",
+            "framed-panel",
+            "button-primary"
+          ],
+          "structureFingerprint": "a2d96082"
         }
       ]
     },
@@ -4931,6 +5125,7 @@
           "index": 3,
           "sectionType": "SectionNav",
           "firstHeading": "",
+          "variantTraits": [],
           "structureFingerprint": "160d01f4"
         }
       ]
@@ -4949,6 +5144,7 @@
           "index": 3,
           "sectionType": "FormSection",
           "firstHeading": "QUICK CONTACT",
+          "variantTraits": [],
           "structureFingerprint": "d35167c7"
         }
       ]
@@ -4967,6 +5163,7 @@
           "index": 3,
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
+          "variantTraits": [],
           "structureFingerprint": "839d9f90"
         },
         {
@@ -4976,6 +5173,7 @@
           "index": 3,
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
+          "variantTraits": [],
           "structureFingerprint": "839d9f90"
         },
         {
@@ -4985,6 +5183,7 @@
           "index": 3,
           "sectionType": "LegalContent",
           "firstHeading": "1. PRIVACY POLICY",
+          "variantTraits": [],
           "structureFingerprint": "839d9f90"
         }
       ]
@@ -5003,6 +5202,7 @@
           "index": 3,
           "sectionType": "FaqSection",
           "firstHeading": "GETTING STARTED",
+          "variantTraits": [],
           "structureFingerprint": "8c4f2f11"
         },
         {
@@ -5012,6 +5212,7 @@
           "index": 4,
           "sectionType": "FaqSection",
           "firstHeading": "PRICING & SCOPE",
+          "variantTraits": [],
           "structureFingerprint": "8c4f2f11"
         },
         {
@@ -5021,6 +5222,7 @@
           "index": 5,
           "sectionType": "FaqSection",
           "firstHeading": "WORKING WITH US",
+          "variantTraits": [],
           "structureFingerprint": "61c61336"
         },
         {
@@ -5030,6 +5232,7 @@
           "index": 6,
           "sectionType": "FaqSection",
           "firstHeading": "SEO & ADS",
+          "variantTraits": [],
           "structureFingerprint": "ef60894b"
         },
         {
@@ -5039,39 +5242,13 @@
           "index": 7,
           "sectionType": "FaqSection",
           "firstHeading": "TECHNICAL",
+          "variantTraits": [],
           "structureFingerprint": "61c61336"
         }
       ]
     },
     {
       "id": "section-17",
-      "sectionType": "ContentSection",
-      "displayName": "ContentSection: READY TO SCALE YOUR CREW?",
-      "status": "Variant of Same Component",
-      "representativeId": "index_original::section-6",
-      "items": [
-        {
-          "auditId": "index_original::section-6",
-          "pageName": "index_original",
-          "route": "/index_original",
-          "index": 6,
-          "sectionType": "ContentSection",
-          "firstHeading": "READY TO SCALE YOUR CREW?",
-          "structureFingerprint": "20ddf752"
-        },
-        {
-          "auditId": "web-design::section-9",
-          "pageName": "web-design",
-          "route": "/web-design",
-          "index": 9,
-          "sectionType": "ContentSection",
-          "firstHeading": "READY FOR A SITE THAT EARNS ITS KEEP?",
-          "structureFingerprint": "a2d96082"
-        }
-      ]
-    },
-    {
-      "id": "section-18",
       "sectionType": "ComparisonSplitSection",
       "displayName": "ComparisonSplitSection",
       "status": "Variant of Same Component",
@@ -5084,6 +5261,7 @@
           "index": 3,
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "WHEN PAID ADS MAKE SENSE",
+          "variantTraits": [],
           "structureFingerprint": "7c117ebe"
         },
         {
@@ -5093,6 +5271,7 @@
           "index": 3,
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "check_circle BEST FIT",
+          "variantTraits": [],
           "structureFingerprint": "41d91778"
         },
         {
@@ -5102,12 +5281,13 @@
           "index": 3,
           "sectionType": "ComparisonSplitSection",
           "firstHeading": "check_circle BEST FIT",
+          "variantTraits": [],
           "structureFingerprint": "a94a0783"
         }
       ]
     },
     {
-      "id": "section-19",
+      "id": "section-18",
       "sectionType": "ContentSection",
       "displayName": "ContentSection: BUDGET & EXPECTATIONS",
       "status": "Variant of Same Component",
@@ -5120,6 +5300,7 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "BUDGET & EXPECTATIONS",
+          "variantTraits": [],
           "structureFingerprint": "a6432743"
         },
         {
@@ -5129,6 +5310,7 @@
           "index": 4,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT LOCAL SEO ACTUALLY IS",
+          "variantTraits": [],
           "structureFingerprint": "8ae1b556"
         },
         {
@@ -5138,6 +5320,7 @@
           "index": 5,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE FIX FIRST",
+          "variantTraits": [],
           "structureFingerprint": "fbdb4d1a"
         },
         {
@@ -5147,12 +5330,13 @@
           "index": 7,
           "sectionType": "ContentSection",
           "firstHeading": "WHAT WE WILL NOT DO",
+          "variantTraits": [],
           "structureFingerprint": "4f9c61b3"
         }
       ]
     },
     {
-      "id": "section-20",
+      "id": "section-19",
       "sectionType": "ContentSection",
       "displayName": "ContentSection: REVIEW",
       "status": "Unique",
@@ -5165,12 +5349,13 @@
           "index": 3,
           "sectionType": "ContentSection",
           "firstHeading": "REVIEW",
+          "variantTraits": [],
           "structureFingerprint": "c6bad00f"
         }
       ]
     },
     {
-      "id": "section-21",
+      "id": "section-20",
       "sectionType": "ContentSection",
       "displayName": "ContentSection: THE DELIVERABLES",
       "status": "Unique",
@@ -5183,12 +5368,13 @@
           "index": 6,
           "sectionType": "ContentSection",
           "firstHeading": "THE DELIVERABLES",
+          "variantTraits": [],
           "structureFingerprint": "d6ff160a"
         }
       ]
     },
     {
-      "id": "section-22",
+      "id": "section-21",
       "sectionType": "FeatureSection",
       "displayName": "FeatureSection: RESULTS DON'T COME FROM TEMPLATES.",
       "status": "Unique",
@@ -5201,6 +5387,7 @@
           "index": 8,
           "sectionType": "FeatureSection",
           "firstHeading": "RESULTS DON'T COME FROM TEMPLATES.",
+          "variantTraits": [],
           "structureFingerprint": "d780d0eb"
         }
       ]

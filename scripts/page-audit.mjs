@@ -63,6 +63,7 @@ const decisionStyleKeys = [
   "font-weight",
   "line-height",
   "letter-spacing",
+  "text-align",
   "text-transform",
   "border-top-width",
   "border-right-width",
@@ -633,6 +634,129 @@ function getFirstHeadingText(node) {
   return firstHeading;
 }
 
+function findFirstNode(node, predicate) {
+  if (predicate(node)) {
+    return node;
+  }
+
+  for (const child of node.children || []) {
+    const match = findFirstNode(child, predicate);
+    if (match) {
+      return match;
+    }
+  }
+
+  return null;
+}
+
+function collectNodesUntil(node, stopPredicate, bucket = []) {
+  if (stopPredicate(node)) {
+    return { bucket, stopped: true };
+  }
+
+  bucket.push(node);
+
+  for (const child of node.children || []) {
+    const result = collectNodesUntil(child, stopPredicate, bucket);
+    if (result.stopped) {
+      return result;
+    }
+  }
+
+  return { bucket, stopped: false };
+}
+
+function bucketByThreshold(value, thresholds) {
+  for (const threshold of thresholds) {
+    if (value <= threshold.max) {
+      return threshold.label;
+    }
+  }
+
+  return thresholds.at(-1)?.label || "unknown";
+}
+
+function deriveHeroTraits(sectionNode, stats) {
+  const traits = [];
+  const firstHeadingNode = findFirstNode(sectionNode, (node) => /^h[1-6]$/.test(node.tag));
+  const nodesBeforeHeading = collectNodesUntil(
+    sectionNode,
+    (node) => node !== sectionNode && /^h[1-6]$/.test(node.tag),
+  ).bucket;
+  const eyebrowTextNode = nodesBeforeHeading.find(
+    (node) =>
+      node !== sectionNode &&
+      !/^h[1-6]$/.test(node.tag) &&
+      node.textPreview &&
+      tokenizeText(node.textPreview).length > 0 &&
+      tokenizeText(node.textPreview).length <= 8,
+  );
+  const alignment =
+    firstHeadingNode?.decisionStyle["text-align"] === "center" ? "centered" : "left-aligned";
+  const mediaTrait = stats.imageCount > 0 ? "with-media" : "without-media";
+  const eyebrowTrait = eyebrowTextNode ? "with-eyebrow" : "without-eyebrow";
+  const heightTrait = `height-${bucketByThreshold(sectionNode.rect.height, [
+    { max: 500, label: "short" },
+    { max: 900, label: "medium" },
+    { max: Number.POSITIVE_INFINITY, label: "tall" },
+  ])}`;
+
+  let headingWidthTrait = "heading-width-unknown";
+  if (firstHeadingNode && sectionNode.rect.width > 0) {
+    const ratio = firstHeadingNode.rect.width / sectionNode.rect.width;
+    headingWidthTrait = `heading-width-${bucketByThreshold(ratio, [
+      { max: 0.32, label: "narrow" },
+      { max: 0.52, label: "medium" },
+      { max: Number.POSITIVE_INFINITY, label: "wide" },
+    ])}`;
+  }
+
+  traits.push(mediaTrait, alignment, eyebrowTrait, heightTrait, headingWidthTrait);
+
+  return traits;
+}
+
+function deriveCallToActionTraits(sectionNode, stats) {
+  const traits = [];
+  const hasAbsoluteBadge = Boolean(
+    findFirstNode(
+      sectionNode,
+      (node) =>
+        node !== sectionNode &&
+        node.decisionStyle.position === "absolute" &&
+        tokenizeText(node.textPreview).length > 0 &&
+        tokenizeText(node.textPreview).length <= 6,
+    ),
+  );
+  const framedPanel = Boolean(
+    findFirstNode(
+      sectionNode,
+      (node) =>
+        node !== sectionNode &&
+        Number.parseFloat(node.decisionStyle["border-top-width"] || "0") >= 4 &&
+        Number.parseFloat(node.rect.width || 0) >= sectionNode.rect.width * 0.45,
+    ),
+  );
+
+  traits.push(hasAbsoluteBadge ? "with-badge" : "without-badge");
+  traits.push(framedPanel ? "framed-panel" : "standard-panel");
+  traits.push(stats.linkCount > 0 ? "with-link-action" : "button-primary");
+
+  return traits;
+}
+
+function deriveSectionTraits(sectionType, sectionNode, stats) {
+  if (sectionType === "HeroSection") {
+    return deriveHeroTraits(sectionNode, stats);
+  }
+
+  if (sectionType === "CallToAction") {
+    return deriveCallToActionTraits(sectionNode, stats);
+  }
+
+  return [];
+}
+
 function detectRepeatedPatterns(sectionNode) {
   const patterns = [];
   const seen = new Set();
@@ -831,7 +955,7 @@ function classifySection(section, pageMeta) {
     section.stats.headingCount >= 1 &&
     heading.startsWith("ready") &&
     section.contentIndex >= 3 &&
-    section.stats.wordCount <= 140 &&
+    section.stats.wordCount <= 190 &&
     section.stats.inputCount === 0
   ) {
     return "CallToAction";
@@ -971,7 +1095,7 @@ function buildSectionClusters(sections) {
           left.sectionType,
         )
       ) {
-        return 0.5;
+        return left.sectionType === "CallToAction" ? 0.44 : 0.5;
       }
 
       if (left.sectionType === right.sectionType && left.sectionType !== "ContentSection") {
@@ -1007,6 +1131,7 @@ function buildSectionClusters(sections) {
         index: item.index,
         sectionType: item.sectionType,
         firstHeading: item.firstHeading,
+        variantTraits: item.variantTraits,
         structureFingerprint: item.structureFingerprint,
       })),
     };
@@ -1186,8 +1311,11 @@ function renderSectionMatrix(sectionClusters, pageAudits) {
       const patternSummary = section.patterns.length
         ? `; patterns: ${section.patterns.map((pattern) => `${pattern.kind} x${pattern.count}`).join(", ")}`
         : "";
+      const variantSummary = section.variantTraits.length
+        ? `; variants: ${section.variantTraits.join(", ")}`
+        : "";
       lines.push(
-        `- [ ] \`${item.pageName}\` section ${item.index} at \`${item.route}\`${heading}${patternSummary}`,
+        `- [ ] \`${item.pageName}\` section ${item.index} at \`${item.route}\`${heading}${variantSummary}${patternSummary}`,
       );
     }
 
@@ -1300,6 +1428,9 @@ function renderChecklist(sectionClusters, patternClusters, pageAudits) {
       `- [ ] Define the canonical \`${cluster.displayName}\` boundary using \`${canonical?.pageName || "unknown"}\` section ${canonical?.index || "?"}.`,
     );
     lines.push("- [ ] Decide whether this becomes one shared component or a component with variants.");
+    if (canonical?.variantTraits?.length) {
+      lines.push(`- [ ] Canonical variant traits: ${canonical.variantTraits.join(", ")}.`);
+    }
 
     if (rootStyleDeltas.length > 0) {
       lines.push("- [ ] Resolve these root-level style decisions before extraction:");
@@ -1317,8 +1448,11 @@ function renderChecklist(sectionClusters, patternClusters, pageAudits) {
     })) {
       const canonicalLabel =
         canonical && canonical.auditId === section.auditId ? " (canonical candidate)" : "";
+      const variantSummary = section.variantTraits.length
+        ? `; variants: ${section.variantTraits.join(", ")}`
+        : "";
       lines.push(
-        `- [ ] Consolidate \`${section.pageName}\` section ${section.index} at \`${section.route}\`${canonicalLabel}.`,
+        `- [ ] Consolidate \`${section.pageName}\` section ${section.index} at \`${section.route}\`${canonicalLabel}${variantSummary}.`,
       );
     }
 
@@ -1568,15 +1702,21 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
       rootDecisionStyle: cloneObject(sectionNode.decisionStyle),
       structureFingerprint: buildStructureFingerprint(sectionNode),
       looseFingerprint: buildLooseFingerprint(stats),
+      nodeSnapshot: sectionNode,
       stats,
       patterns,
     };
   });
 
-  audit.primarySections = sections.map((section) => ({
-    ...section,
-    sectionType: classifySection(section, audit),
-  }));
+  audit.primarySections = sections.map((section) => {
+    const sectionType = classifySection(section, audit);
+    const { nodeSnapshot, ...serializableSection } = section;
+    return {
+      ...serializableSection,
+      sectionType,
+      variantTraits: deriveSectionTraits(sectionType, nodeSnapshot, section.stats),
+    };
+  });
   audit.patterns = audit.primarySections.flatMap((section) =>
     section.patterns.map((pattern, index) => ({
       auditId: `${section.auditId}::pattern-${index + 1}`,
