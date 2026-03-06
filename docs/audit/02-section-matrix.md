@@ -118,9 +118,9 @@
 
 ## LegalContent: 1. PRIVACY POLICY (Exact Match)
 
-- [ ] `cookie-policy` section 3 at `/cookie-policy` - 1. PRIVACY POLICY; patterns: repeatable-block x3, repeatable-block x3, repeatable-block x3, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2
-- [ ] `privacy` section 3 at `/privacy` - 1. PRIVACY POLICY; patterns: repeatable-block x3, repeatable-block x3, repeatable-block x3, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
-- [ ] `terms` section 3 at `/terms` - 1. PRIVACY POLICY; patterns: repeatable-block x3, repeatable-block x3, repeatable-block x3, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `cookie-policy` section 3 at `/cookie-policy` - 1. PRIVACY POLICY; patterns: repeatable-block x3, repeatable-block x3, repeatable-block x3, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2
+- [ ] `privacy` section 3 at `/privacy` - 1. PRIVACY POLICY; patterns: repeatable-block x3, repeatable-block x3, repeatable-block x3, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
+- [ ] `terms` section 3 at `/terms` - 1. PRIVACY POLICY; patterns: repeatable-block x3, repeatable-block x3, repeatable-block x3, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2, repeatable-block x2; ensemble: 0.99; signals: classes 1.00, layout 1.00, patterns 1.00
 
 ## FaqSection: GETTING STARTED (Variant of Same Component)
 

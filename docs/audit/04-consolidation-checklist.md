@@ -400,15 +400,18 @@
 
 - [ ] Decide whether `repeatable-block` should become a reusable child component.
 - [ ] Resolve sample-item style deltas:
-- [ ] width: 165.328px vs 184.203px vs 304.656px vs 307px vs 544px
+- [ ] width: 165.328px vs 184.203px vs 288px vs 304.656px vs 307px vs 544px
+- [ ] height: 132px vs 24px vs 58px vs 60px vs 63.1875px
 - [ ] row-gap: 12px vs 16px vs 32px vs 8px vs normal
 - [ ] column-gap: 12px vs 16px vs 32px vs 8px vs normal
-- [ ] height: 132px vs 24px vs 60px vs 63.1875px
-- [ ] padding-top: 0px vs 16px vs 32px
-- [ ] padding-right: 0px vs 16px vs 32px
+- [ ] background-color: rgb(255, 255, 255) vs rgba(0, 0, 0, 0) vs rgba(11, 29, 51, 0.1) vs rgba(255, 255, 255, 0.1)
+- [ ] border-top-color: rgb(11, 29, 51) vs rgb(229, 231, 235) vs rgba(11, 29, 51, 0.1) vs rgba(255, 255, 255, 0.2)
+- [ ] Review `cookie-policy` section 3 pattern `repeatable-block` x2.
 - [ ] Review `index` section 3 pattern `repeatable-block` x4.
 - [ ] Review `lead-generation` section 8 pattern `repeatable-block` x4.
 - [ ] Review `local-seo` section 8 pattern `repeatable-block` x4.
+- [ ] Review `privacy` section 3 pattern `repeatable-block` x2.
+- [ ] Review `terms` section 3 pattern `repeatable-block` x2.
 - [ ] Review `web-design` section 2 pattern `repeatable-block` x3.
 - [ ] Review `web-design` section 6 pattern `repeatable-block` x6.
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T06:49:17.068Z",
+  "generatedAt": "2026-03-06T07:51:16.049Z",
   "detectorWeights": {
     "typeHint": 0.07,
     "structure": 0.15,
@@ -110,7 +110,7 @@
         "falseNegative": 44,
         "trueNegative": 246,
         "averagePositive": 0.6441,
-        "averageNegative": 0.0554
+        "averageNegative": 0.0553
       },
       "visual": {
         "threshold": 0.614,
@@ -10885,9 +10885,9 @@
           "subtreeStyle": 0.42,
           "classes": 0.233,
           "semantics": 0.0564,
-          "patterns": 0.0667,
+          "patterns": 0.0625,
           "visual": 0.3451,
-          "combined": 0.2565
+          "combined": 0.2563
         }
       },
       {
@@ -11629,9 +11629,9 @@
           "subtreeStyle": 0.42,
           "classes": 0.233,
           "semantics": 0.0564,
-          "patterns": 0.0667,
+          "patterns": 0.0625,
           "visual": 0.3451,
-          "combined": 0.2565
+          "combined": 0.2563
         }
       },
       {
@@ -11701,9 +11701,9 @@
           "subtreeStyle": 0.42,
           "classes": 0.233,
           "semantics": 0.0564,
-          "patterns": 0.0667,
+          "patterns": 0.0625,
           "visual": 0.3451,
-          "combined": 0.2565
+          "combined": 0.2563
         }
       },
       {
@@ -15752,9 +15752,9 @@
             "subtreeStyle": 0.8053,
             "classes": 0.3945,
             "semantics": 0.067,
-            "patterns": 0.72,
+            "patterns": 0.6667,
             "visual": 0.6487,
-            "combined": 0.4145
+            "combined": 0.4124
           }
         },
         {
@@ -15778,9 +15778,9 @@
             "subtreeStyle": 0.8053,
             "classes": 0.3945,
             "semantics": 0.067,
-            "patterns": 0.72,
+            "patterns": 0.6667,
             "visual": 0.6487,
-            "combined": 0.4145
+            "combined": 0.4124
           }
         },
         {
@@ -15804,9 +15804,9 @@
             "subtreeStyle": 0.8053,
             "classes": 0.3945,
             "semantics": 0.067,
-            "patterns": 0.72,
+            "patterns": 0.6667,
             "visual": 0.6487,
-            "combined": 0.4145
+            "combined": 0.4124
           }
         },
         {
@@ -16260,9 +16260,9 @@
             "subtreeStyle": 0.8053,
             "classes": 0.3945,
             "semantics": 0.067,
-            "patterns": 0.72,
+            "patterns": 0.6667,
             "visual": 0.6487,
-            "combined": 0.4145
+            "combined": 0.4124
           }
         },
         {
@@ -16286,9 +16286,9 @@
             "subtreeStyle": 0.585,
             "classes": 0.3833,
             "semantics": 0.0064,
-            "patterns": 0.32,
+            "patterns": 0.2963,
             "visual": 0.6814,
-            "combined": 0.3874
+            "combined": 0.3865
           }
         }
       ]
@@ -21618,9 +21618,9 @@
             "subtreeStyle": 0.8053,
             "classes": 0.3945,
             "semantics": 0.067,
-            "patterns": 0.72,
+            "patterns": 0.6667,
             "visual": 0.6487,
-            "combined": 0.4145
+            "combined": 0.4124
           }
         },
         {
@@ -21644,9 +21644,9 @@
             "subtreeStyle": 0.585,
             "classes": 0.3833,
             "semantics": 0.0064,
-            "patterns": 0.32,
+            "patterns": 0.2963,
             "visual": 0.6814,
-            "combined": 0.3874
+            "combined": 0.3865
           }
         }
       ]
@@ -22074,9 +22074,9 @@
             "subtreeStyle": 0.8053,
             "classes": 0.3945,
             "semantics": 0.067,
-            "patterns": 0.72,
+            "patterns": 0.6667,
             "visual": 0.6487,
-            "combined": 0.4145
+            "combined": 0.4124
           }
         },
         {
@@ -22100,9 +22100,9 @@
             "subtreeStyle": 0.585,
             "classes": 0.3833,
             "semantics": 0.0064,
-            "patterns": 0.32,
+            "patterns": 0.2963,
             "visual": 0.6814,
-            "combined": 0.3874
+            "combined": 0.3865
           }
         }
       ]
@@ -25939,9 +25939,9 @@
       "subtreeStyle": 0.2607,
       "classes": 0,
       "semantics": 0.053,
-      "patterns": 0.08,
+      "patterns": 0.0741,
       "visual": 0.3593,
-      "combined": 0.1736
+      "combined": 0.1734
     },
     {
       "leftAuditId": "index::section-2",
@@ -26659,9 +26659,9 @@
       "subtreeStyle": 0.2607,
       "classes": 0,
       "semantics": 0.053,
-      "patterns": 0.08,
+      "patterns": 0.0741,
       "visual": 0.3593,
-      "combined": 0.1736
+      "combined": 0.1734
     },
     {
       "leftAuditId": "index::section-2",
@@ -26731,9 +26731,9 @@
       "subtreeStyle": 0.2607,
       "classes": 0,
       "semantics": 0.053,
-      "patterns": 0.08,
+      "patterns": 0.0741,
       "visual": 0.3593,
-      "combined": 0.1736
+      "combined": 0.1734
     },
     {
       "leftAuditId": "index::section-2",
@@ -27505,9 +27505,9 @@
       "subtreeStyle": 0.2601,
       "classes": 0.0224,
       "semantics": 0.0039,
-      "patterns": 0.3043,
+      "patterns": 0.28,
       "visual": 0.5795,
-      "combined": 0.2369
+      "combined": 0.2359
     },
     {
       "leftAuditId": "index::section-3",
@@ -28225,9 +28225,9 @@
       "subtreeStyle": 0.2601,
       "classes": 0.0224,
       "semantics": 0.0039,
-      "patterns": 0.3043,
+      "patterns": 0.28,
       "visual": 0.5795,
-      "combined": 0.2369
+      "combined": 0.2359
     },
     {
       "leftAuditId": "index::section-3",
@@ -28297,9 +28297,9 @@
       "subtreeStyle": 0.2601,
       "classes": 0.0224,
       "semantics": 0.0039,
-      "patterns": 0.3043,
+      "patterns": 0.28,
       "visual": 0.5795,
-      "combined": 0.2369
+      "combined": 0.2359
     },
     {
       "leftAuditId": "index::section-3",
@@ -29053,9 +29053,9 @@
       "subtreeStyle": 0.4687,
       "classes": 0.0137,
       "semantics": 0.0237,
-      "patterns": 0.3462,
+      "patterns": 0.3214,
       "visual": 0.6626,
-      "combined": 0.3086
+      "combined": 0.3076
     },
     {
       "leftAuditId": "index::section-4",
@@ -29773,9 +29773,9 @@
       "subtreeStyle": 0.4687,
       "classes": 0.0137,
       "semantics": 0.0237,
-      "patterns": 0.3462,
+      "patterns": 0.3214,
       "visual": 0.6626,
-      "combined": 0.3086
+      "combined": 0.3076
     },
     {
       "leftAuditId": "index::section-4",
@@ -29845,9 +29845,9 @@
       "subtreeStyle": 0.4687,
       "classes": 0.0137,
       "semantics": 0.0237,
-      "patterns": 0.3462,
+      "patterns": 0.3214,
       "visual": 0.6626,
-      "combined": 0.3086
+      "combined": 0.3076
     },
     {
       "leftAuditId": "index::section-4",
@@ -30583,9 +30583,9 @@
       "subtreeStyle": 0.4592,
       "classes": 0,
       "semantics": 0.028,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3742,
-      "combined": 0.2342
+      "combined": 0.2335
     },
     {
       "leftAuditId": "index::section-5",
@@ -31303,9 +31303,9 @@
       "subtreeStyle": 0.4592,
       "classes": 0,
       "semantics": 0.028,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3742,
-      "combined": 0.2342
+      "combined": 0.2335
     },
     {
       "leftAuditId": "index::section-5",
@@ -31375,9 +31375,9 @@
       "subtreeStyle": 0.4592,
       "classes": 0,
       "semantics": 0.028,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3742,
-      "combined": 0.2342
+      "combined": 0.2335
     },
     {
       "leftAuditId": "index::section-5",
@@ -33589,9 +33589,9 @@
       "subtreeStyle": 0.4315,
       "classes": 0,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3395,
-      "combined": 0.2358
+      "combined": 0.2356
     },
     {
       "leftAuditId": "index::section-7",
@@ -34309,9 +34309,9 @@
       "subtreeStyle": 0.4315,
       "classes": 0,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3395,
-      "combined": 0.2358
+      "combined": 0.2356
     },
     {
       "leftAuditId": "index::section-7",
@@ -34381,9 +34381,9 @@
       "subtreeStyle": 0.4315,
       "classes": 0,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3395,
-      "combined": 0.2358
+      "combined": 0.2356
     },
     {
       "leftAuditId": "index::section-7",
@@ -35065,9 +35065,9 @@
       "subtreeStyle": 0.0708,
       "classes": 0.0522,
       "semantics": 0,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3309,
-      "combined": 0.1249
+      "combined": 0.1246
     },
     {
       "leftAuditId": "404::section-1",
@@ -35785,9 +35785,9 @@
       "subtreeStyle": 0.0708,
       "classes": 0.0522,
       "semantics": 0,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3309,
-      "combined": 0.1249
+      "combined": 0.1246
     },
     {
       "leftAuditId": "404::section-1",
@@ -35857,9 +35857,9 @@
       "subtreeStyle": 0.0708,
       "classes": 0.0522,
       "semantics": 0,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3309,
-      "combined": 0.1249
+      "combined": 0.1246
     },
     {
       "leftAuditId": "404::section-1",
@@ -39385,9 +39385,9 @@
       "subtreeStyle": 0.3448,
       "classes": 0.2683,
       "semantics": 0.0298,
-      "patterns": 0.0769,
+      "patterns": 0.0714,
       "visual": 0.6604,
-      "combined": 0.3002
+      "combined": 0.3
     },
     {
       "leftAuditId": "about::section-3",
@@ -40105,9 +40105,9 @@
       "subtreeStyle": 0.3448,
       "classes": 0.2683,
       "semantics": 0.0298,
-      "patterns": 0.0769,
+      "patterns": 0.0714,
       "visual": 0.6604,
-      "combined": 0.3002
+      "combined": 0.3
     },
     {
       "leftAuditId": "about::section-3",
@@ -40177,9 +40177,9 @@
       "subtreeStyle": 0.3448,
       "classes": 0.2683,
       "semantics": 0.0298,
-      "patterns": 0.0769,
+      "patterns": 0.0714,
       "visual": 0.6604,
-      "combined": 0.3002
+      "combined": 0.3
     },
     {
       "leftAuditId": "about::section-3",
@@ -42175,9 +42175,9 @@
       "subtreeStyle": 0.1341,
       "classes": 0.0818,
       "semantics": 0.0188,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.5874,
-      "combined": 0.195
+      "combined": 0.1946
     },
     {
       "leftAuditId": "about::section-5",
@@ -42895,9 +42895,9 @@
       "subtreeStyle": 0.1341,
       "classes": 0.0818,
       "semantics": 0.0188,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.5874,
-      "combined": 0.195
+      "combined": 0.1946
     },
     {
       "leftAuditId": "about::section-5",
@@ -42967,9 +42967,9 @@
       "subtreeStyle": 0.1341,
       "classes": 0.0818,
       "semantics": 0.0188,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.5874,
-      "combined": 0.195
+      "combined": 0.1946
     },
     {
       "leftAuditId": "about::section-5",
@@ -44893,9 +44893,9 @@
       "subtreeStyle": 0.1833,
       "classes": 0.1899,
       "semantics": 0.0176,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.361,
-      "combined": 0.204
+      "combined": 0.2028
     },
     {
       "leftAuditId": "about::section-7",
@@ -45613,9 +45613,9 @@
       "subtreeStyle": 0.1833,
       "classes": 0.1899,
       "semantics": 0.0176,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.361,
-      "combined": 0.204
+      "combined": 0.2028
     },
     {
       "leftAuditId": "about::section-7",
@@ -45685,9 +45685,9 @@
       "subtreeStyle": 0.1833,
       "classes": 0.1899,
       "semantics": 0.0176,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.361,
-      "combined": 0.204
+      "combined": 0.2028
     },
     {
       "leftAuditId": "about::section-7",
@@ -47539,9 +47539,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.233,
       "semantics": 0.0564,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3451,
-      "combined": 0.2565
+      "combined": 0.2563
     },
     {
       "leftAuditId": "about::section-9",
@@ -48259,9 +48259,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.233,
       "semantics": 0.0564,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3451,
-      "combined": 0.2565
+      "combined": 0.2563
     },
     {
       "leftAuditId": "about::section-9",
@@ -48331,9 +48331,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.233,
       "semantics": 0.0564,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3451,
-      "combined": 0.2565
+      "combined": 0.2563
     },
     {
       "leftAuditId": "about::section-9",
@@ -53839,9 +53839,9 @@
       "subtreeStyle": 0.3136,
       "classes": 0.2344,
       "semantics": 0.018,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.602,
-      "combined": 0.2705
+      "combined": 0.2701
     },
     {
       "leftAuditId": "case-studies::section-5",
@@ -54559,9 +54559,9 @@
       "subtreeStyle": 0.3136,
       "classes": 0.2344,
       "semantics": 0.018,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.602,
-      "combined": 0.2705
+      "combined": 0.2701
     },
     {
       "leftAuditId": "case-studies::section-5",
@@ -54631,9 +54631,9 @@
       "subtreeStyle": 0.3136,
       "classes": 0.2344,
       "semantics": 0.018,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.602,
-      "combined": 0.2705
+      "combined": 0.2701
     },
     {
       "leftAuditId": "case-studies::section-5",
@@ -56233,9 +56233,9 @@
       "subtreeStyle": 0.3822,
       "classes": 0.2163,
       "semantics": 0.0523,
-      "patterns": 0.1852,
+      "patterns": 0.1724,
       "visual": 0.3455,
-      "combined": 0.2525
+      "combined": 0.252
     },
     {
       "leftAuditId": "case-studies::section-7",
@@ -56953,9 +56953,9 @@
       "subtreeStyle": 0.3822,
       "classes": 0.2163,
       "semantics": 0.0523,
-      "patterns": 0.1852,
+      "patterns": 0.1724,
       "visual": 0.3455,
-      "combined": 0.2525
+      "combined": 0.252
     },
     {
       "leftAuditId": "case-studies::section-7",
@@ -57025,9 +57025,9 @@
       "subtreeStyle": 0.3822,
       "classes": 0.2163,
       "semantics": 0.0523,
-      "patterns": 0.1852,
+      "patterns": 0.1724,
       "visual": 0.3455,
-      "combined": 0.2525
+      "combined": 0.252
     },
     {
       "leftAuditId": "case-studies::section-7",
@@ -59689,9 +59689,9 @@
       "subtreeStyle": 0.8053,
       "classes": 0.3945,
       "semantics": 0.067,
-      "patterns": 0.72,
+      "patterns": 0.6667,
       "visual": 0.6487,
-      "combined": 0.4145
+      "combined": 0.4124
     },
     {
       "leftAuditId": "contact::section-3",
@@ -60409,9 +60409,9 @@
       "subtreeStyle": 0.8053,
       "classes": 0.3945,
       "semantics": 0.067,
-      "patterns": 0.72,
+      "patterns": 0.6667,
       "visual": 0.6487,
-      "combined": 0.4145
+      "combined": 0.4124
     },
     {
       "leftAuditId": "contact::section-3",
@@ -60481,9 +60481,9 @@
       "subtreeStyle": 0.8053,
       "classes": 0.3945,
       "semantics": 0.067,
-      "patterns": 0.72,
+      "patterns": 0.6667,
       "visual": 0.6487,
-      "combined": 0.4145
+      "combined": 0.4124
     },
     {
       "leftAuditId": "contact::section-3",
@@ -60805,9 +60805,9 @@
       "subtreeStyle": 0.4183,
       "classes": 0.2297,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3436,
-      "combined": 0.2569
+      "combined": 0.2567
     },
     {
       "leftAuditId": "contact::section-4",
@@ -61525,9 +61525,9 @@
       "subtreeStyle": 0.4183,
       "classes": 0.2297,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3436,
-      "combined": 0.2569
+      "combined": 0.2567
     },
     {
       "leftAuditId": "contact::section-4",
@@ -61597,9 +61597,9 @@
       "subtreeStyle": 0.4183,
       "classes": 0.2297,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3436,
-      "combined": 0.2569
+      "combined": 0.2567
     },
     {
       "leftAuditId": "contact::section-4",
@@ -64063,9 +64063,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64225,9 +64225,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2574
+      "combined": 0.2572
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64261,9 +64261,9 @@
       "subtreeStyle": 0.2907,
       "classes": 0.2226,
       "semantics": 0.0484,
-      "patterns": 0.08,
+      "patterns": 0.0741,
       "visual": 0.3499,
-      "combined": 0.2048
+      "combined": 0.2046
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64279,9 +64279,9 @@
       "subtreeStyle": 0.2444,
       "classes": 0.2382,
       "semantics": 0.008,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.5787,
-      "combined": 0.2568
+      "combined": 0.2555
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64297,9 +64297,9 @@
       "subtreeStyle": 0.5653,
       "classes": 0.3624,
       "semantics": 0.0229,
-      "patterns": 0.3462,
+      "patterns": 0.3214,
       "visual": 0.6475,
-      "combined": 0.3652
+      "combined": 0.3642
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64315,9 +64315,9 @@
       "subtreeStyle": 0.4469,
       "classes": 0.2618,
       "semantics": 0.0294,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3333,
-      "combined": 0.246
+      "combined": 0.2453
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64351,9 +64351,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3454,
-      "combined": 0.2572
+      "combined": 0.257
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64387,9 +64387,9 @@
       "subtreeStyle": 0.2056,
       "classes": 0.177,
       "semantics": 0.0047,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3431,
-      "combined": 0.1791
+      "combined": 0.1788
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64405,9 +64405,9 @@
       "subtreeStyle": 0.585,
       "classes": 0.3833,
       "semantics": 0.0064,
-      "patterns": 0.32,
+      "patterns": 0.2963,
       "visual": 0.6814,
-      "combined": 0.3874
+      "combined": 0.3865
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64423,9 +64423,9 @@
       "subtreeStyle": 0.2688,
       "classes": 0.2873,
       "semantics": 0.0039,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.6441,
-      "combined": 0.274
+      "combined": 0.2736
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64441,9 +64441,9 @@
       "subtreeStyle": 0.6261,
       "classes": 0.3322,
       "semantics": 0.0127,
-      "patterns": 0.4615,
+      "patterns": 0.4286,
       "visual": 0.6967,
-      "combined": 0.384
+      "combined": 0.3827
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64459,9 +64459,9 @@
       "subtreeStyle": 0.2607,
       "classes": 0.234,
       "semantics": 0.0164,
-      "patterns": 0.3478,
+      "patterns": 0.32,
       "visual": 0.6373,
-      "combined": 0.2679
+      "combined": 0.2668
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64477,9 +64477,9 @@
       "subtreeStyle": 0.35,
       "classes": 0.2453,
       "semantics": 0.0163,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.712,
-      "combined": 0.3158
+      "combined": 0.3145
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64495,9 +64495,9 @@
       "subtreeStyle": 0.2716,
       "classes": 0.2523,
       "semantics": 0.0029,
-      "patterns": 0.1739,
+      "patterns": 0.16,
       "visual": 0.6222,
-      "combined": 0.2669
+      "combined": 0.2664
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64531,9 +64531,9 @@
       "subtreeStyle": 0.4324,
       "classes": 0.2845,
       "semantics": 0.0573,
-      "patterns": 0.1852,
+      "patterns": 0.1724,
       "visual": 0.3358,
-      "combined": 0.2658
+      "combined": 0.2653
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64585,9 +64585,9 @@
       "subtreeStyle": 0.3381,
       "classes": 0.3202,
       "semantics": 0.016,
-      "patterns": 0.24,
+      "patterns": 0.2222,
       "visual": 0.6172,
-      "combined": 0.2941
+      "combined": 0.2934
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64603,9 +64603,9 @@
       "subtreeStyle": 0.4063,
       "classes": 0.2867,
       "semantics": 0.0837,
-      "patterns": 0.2609,
+      "patterns": 0.24,
       "visual": 0.6702,
-      "combined": 0.3238
+      "combined": 0.323
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64621,9 +64621,9 @@
       "subtreeStyle": 0.4456,
       "classes": 0.2364,
       "semantics": 0.014,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3447,
-      "combined": 0.2722
+      "combined": 0.2715
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64657,9 +64657,9 @@
       "subtreeStyle": 0.3152,
       "classes": 0.2542,
       "semantics": 0.0125,
-      "patterns": 0.1739,
+      "patterns": 0.16,
       "visual": 0.6579,
-      "combined": 0.2884
+      "combined": 0.2879
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64675,9 +64675,9 @@
       "subtreeStyle": 0.3246,
       "classes": 0.2312,
       "semantics": 0,
-      "patterns": 0.6522,
+      "patterns": 0.6,
       "visual": 0.6098,
-      "combined": 0.2934
+      "combined": 0.2913
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64711,9 +64711,9 @@
       "subtreeStyle": 0.3917,
       "classes": 0.2374,
       "semantics": 0.0476,
-      "patterns": 0.1379,
+      "patterns": 0.129,
       "visual": 0.3363,
-      "combined": 0.2534
+      "combined": 0.253
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64783,9 +64783,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64855,9 +64855,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64891,9 +64891,9 @@
       "subtreeStyle": 0.2037,
       "classes": 0.1822,
       "semantics": 0.0194,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3963,
-      "combined": 0.186
+      "combined": 0.1857
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64909,9 +64909,9 @@
       "subtreeStyle": 0.2137,
       "classes": 0.2349,
       "semantics": 0.0225,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.6245,
-      "combined": 0.2501
+      "combined": 0.2497
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64927,9 +64927,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2574
+      "combined": 0.2572
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64963,9 +64963,9 @@
       "subtreeStyle": 0.4063,
       "classes": 0.3402,
       "semantics": 0.0209,
-      "patterns": 0.2,
+      "patterns": 0.1852,
       "visual": 0.3284,
-      "combined": 0.2458
+      "combined": 0.2452
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -64981,9 +64981,9 @@
       "subtreeStyle": 0.494,
       "classes": 0.2951,
       "semantics": 0.0399,
-      "patterns": 0.32,
+      "patterns": 0.2963,
       "visual": 0.6198,
-      "combined": 0.3418
+      "combined": 0.3408
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -65035,9 +65035,9 @@
       "subtreeStyle": 0.5544,
       "classes": 0.3941,
       "semantics": 0.0178,
-      "patterns": 0.4783,
+      "patterns": 0.44,
       "visual": 0.651,
-      "combined": 0.3796
+      "combined": 0.378
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -65053,9 +65053,9 @@
       "subtreeStyle": 0.3666,
       "classes": 0.3079,
       "semantics": 0.0109,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.6378,
-      "combined": 0.3038
+      "combined": 0.3031
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -65071,9 +65071,9 @@
       "subtreeStyle": 0.1825,
       "classes": 0.1132,
       "semantics": 0.0321,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.5465,
-      "combined": 0.2148
+      "combined": 0.2145
     },
     {
       "leftAuditId": "cookie-policy::section-3",
@@ -65107,9 +65107,9 @@
       "subtreeStyle": 0.4187,
       "classes": 0.2358,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3391,
-      "combined": 0.2566
+      "combined": 0.2564
     },
     {
       "leftAuditId": "cookie-policy::section-4",
@@ -65809,9 +65809,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "cookie-policy::section-4",
@@ -65881,9 +65881,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "cookie-policy::section-4",
@@ -74395,9 +74395,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2574
+      "combined": 0.2572
     },
     {
       "leftAuditId": "faq::section-9",
@@ -74467,9 +74467,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2574
+      "combined": 0.2572
     },
     {
       "leftAuditId": "faq::section-9",
@@ -76105,9 +76105,9 @@
       "subtreeStyle": 0.2907,
       "classes": 0.2226,
       "semantics": 0.0484,
-      "patterns": 0.08,
+      "patterns": 0.0741,
       "visual": 0.3499,
-      "combined": 0.2048
+      "combined": 0.2046
     },
     {
       "leftAuditId": "index_original::section-2",
@@ -76177,9 +76177,9 @@
       "subtreeStyle": 0.2907,
       "classes": 0.2226,
       "semantics": 0.0484,
-      "patterns": 0.08,
+      "patterns": 0.0741,
       "visual": 0.3499,
-      "combined": 0.2048
+      "combined": 0.2046
     },
     {
       "leftAuditId": "index_original::section-2",
@@ -76933,9 +76933,9 @@
       "subtreeStyle": 0.2444,
       "classes": 0.2382,
       "semantics": 0.008,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.5787,
-      "combined": 0.2568
+      "combined": 0.2555
     },
     {
       "leftAuditId": "index_original::section-3",
@@ -77005,9 +77005,9 @@
       "subtreeStyle": 0.2444,
       "classes": 0.2382,
       "semantics": 0.008,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.5787,
-      "combined": 0.2568
+      "combined": 0.2555
     },
     {
       "leftAuditId": "index_original::section-3",
@@ -77743,9 +77743,9 @@
       "subtreeStyle": 0.5653,
       "classes": 0.3624,
       "semantics": 0.0229,
-      "patterns": 0.3462,
+      "patterns": 0.3214,
       "visual": 0.6475,
-      "combined": 0.3652
+      "combined": 0.3642
     },
     {
       "leftAuditId": "index_original::section-4",
@@ -77815,9 +77815,9 @@
       "subtreeStyle": 0.5653,
       "classes": 0.3624,
       "semantics": 0.0229,
-      "patterns": 0.3462,
+      "patterns": 0.3214,
       "visual": 0.6475,
-      "combined": 0.3652
+      "combined": 0.3642
     },
     {
       "leftAuditId": "index_original::section-4",
@@ -78535,9 +78535,9 @@
       "subtreeStyle": 0.4469,
       "classes": 0.2618,
       "semantics": 0.0294,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3333,
-      "combined": 0.246
+      "combined": 0.2453
     },
     {
       "leftAuditId": "index_original::section-5",
@@ -78607,9 +78607,9 @@
       "subtreeStyle": 0.4469,
       "classes": 0.2618,
       "semantics": 0.0294,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3333,
-      "combined": 0.246
+      "combined": 0.2453
     },
     {
       "leftAuditId": "index_original::section-5",
@@ -80065,9 +80065,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3454,
-      "combined": 0.2572
+      "combined": 0.257
     },
     {
       "leftAuditId": "index_original::section-7",
@@ -80137,9 +80137,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3454,
-      "combined": 0.2572
+      "combined": 0.257
     },
     {
       "leftAuditId": "index_original::section-7",
@@ -81523,9 +81523,9 @@
       "subtreeStyle": 0.2056,
       "classes": 0.177,
       "semantics": 0.0047,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3431,
-      "combined": 0.1791
+      "combined": 0.1788
     },
     {
       "leftAuditId": "lead-generation::section-2",
@@ -81595,9 +81595,9 @@
       "subtreeStyle": 0.2056,
       "classes": 0.177,
       "semantics": 0.0047,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3431,
-      "combined": 0.1791
+      "combined": 0.1788
     },
     {
       "leftAuditId": "lead-generation::section-2",
@@ -82225,9 +82225,9 @@
       "subtreeStyle": 0.585,
       "classes": 0.3833,
       "semantics": 0.0064,
-      "patterns": 0.32,
+      "patterns": 0.2963,
       "visual": 0.6814,
-      "combined": 0.3874
+      "combined": 0.3865
     },
     {
       "leftAuditId": "lead-generation::section-3",
@@ -82297,9 +82297,9 @@
       "subtreeStyle": 0.585,
       "classes": 0.3833,
       "semantics": 0.0064,
-      "patterns": 0.32,
+      "patterns": 0.2963,
       "visual": 0.6814,
-      "combined": 0.3874
+      "combined": 0.3865
     },
     {
       "leftAuditId": "lead-generation::section-3",
@@ -82909,9 +82909,9 @@
       "subtreeStyle": 0.2688,
       "classes": 0.2873,
       "semantics": 0.0039,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.6441,
-      "combined": 0.274
+      "combined": 0.2736
     },
     {
       "leftAuditId": "lead-generation::section-4",
@@ -82981,9 +82981,9 @@
       "subtreeStyle": 0.2688,
       "classes": 0.2873,
       "semantics": 0.0039,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.6441,
-      "combined": 0.274
+      "combined": 0.2736
     },
     {
       "leftAuditId": "lead-generation::section-4",
@@ -83575,9 +83575,9 @@
       "subtreeStyle": 0.6261,
       "classes": 0.3322,
       "semantics": 0.0127,
-      "patterns": 0.4615,
+      "patterns": 0.4286,
       "visual": 0.6967,
-      "combined": 0.384
+      "combined": 0.3827
     },
     {
       "leftAuditId": "lead-generation::section-5",
@@ -83647,9 +83647,9 @@
       "subtreeStyle": 0.6261,
       "classes": 0.3322,
       "semantics": 0.0127,
-      "patterns": 0.4615,
+      "patterns": 0.4286,
       "visual": 0.6967,
-      "combined": 0.384
+      "combined": 0.3827
     },
     {
       "leftAuditId": "lead-generation::section-5",
@@ -84223,9 +84223,9 @@
       "subtreeStyle": 0.2607,
       "classes": 0.234,
       "semantics": 0.0164,
-      "patterns": 0.3478,
+      "patterns": 0.32,
       "visual": 0.6373,
-      "combined": 0.2679
+      "combined": 0.2668
     },
     {
       "leftAuditId": "lead-generation::section-6",
@@ -84295,9 +84295,9 @@
       "subtreeStyle": 0.2607,
       "classes": 0.234,
       "semantics": 0.0164,
-      "patterns": 0.3478,
+      "patterns": 0.32,
       "visual": 0.6373,
-      "combined": 0.2679
+      "combined": 0.2668
     },
     {
       "leftAuditId": "lead-generation::section-6",
@@ -84853,9 +84853,9 @@
       "subtreeStyle": 0.35,
       "classes": 0.2453,
       "semantics": 0.0163,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.712,
-      "combined": 0.3158
+      "combined": 0.3145
     },
     {
       "leftAuditId": "lead-generation::section-7",
@@ -84925,9 +84925,9 @@
       "subtreeStyle": 0.35,
       "classes": 0.2453,
       "semantics": 0.0163,
-      "patterns": 0.3913,
+      "patterns": 0.36,
       "visual": 0.712,
-      "combined": 0.3158
+      "combined": 0.3145
     },
     {
       "leftAuditId": "lead-generation::section-7",
@@ -85465,9 +85465,9 @@
       "subtreeStyle": 0.2716,
       "classes": 0.2523,
       "semantics": 0.0029,
-      "patterns": 0.1739,
+      "patterns": 0.16,
       "visual": 0.6222,
-      "combined": 0.2669
+      "combined": 0.2664
     },
     {
       "leftAuditId": "lead-generation::section-8",
@@ -85537,9 +85537,9 @@
       "subtreeStyle": 0.2716,
       "classes": 0.2523,
       "semantics": 0.0029,
-      "patterns": 0.1739,
+      "patterns": 0.16,
       "visual": 0.6222,
-      "combined": 0.2669
+      "combined": 0.2664
     },
     {
       "leftAuditId": "lead-generation::section-8",
@@ -86635,9 +86635,9 @@
       "subtreeStyle": 0.4324,
       "classes": 0.2845,
       "semantics": 0.0573,
-      "patterns": 0.1852,
+      "patterns": 0.1724,
       "visual": 0.3358,
-      "combined": 0.2658
+      "combined": 0.2653
     },
     {
       "leftAuditId": "lead-generation::section-10",
@@ -86707,9 +86707,9 @@
       "subtreeStyle": 0.4324,
       "classes": 0.2845,
       "semantics": 0.0573,
-      "patterns": 0.1852,
+      "patterns": 0.1724,
       "visual": 0.3358,
-      "combined": 0.2658
+      "combined": 0.2653
     },
     {
       "leftAuditId": "lead-generation::section-10",
@@ -88255,9 +88255,9 @@
       "subtreeStyle": 0.3381,
       "classes": 0.3202,
       "semantics": 0.016,
-      "patterns": 0.24,
+      "patterns": 0.2222,
       "visual": 0.6172,
-      "combined": 0.2941
+      "combined": 0.2934
     },
     {
       "leftAuditId": "local-seo::section-3",
@@ -88327,9 +88327,9 @@
       "subtreeStyle": 0.3381,
       "classes": 0.3202,
       "semantics": 0.016,
-      "patterns": 0.24,
+      "patterns": 0.2222,
       "visual": 0.6172,
-      "combined": 0.2941
+      "combined": 0.2934
     },
     {
       "leftAuditId": "local-seo::section-3",
@@ -88759,9 +88759,9 @@
       "subtreeStyle": 0.4063,
       "classes": 0.2867,
       "semantics": 0.0837,
-      "patterns": 0.2609,
+      "patterns": 0.24,
       "visual": 0.6702,
-      "combined": 0.3238
+      "combined": 0.323
     },
     {
       "leftAuditId": "local-seo::section-4",
@@ -88831,9 +88831,9 @@
       "subtreeStyle": 0.4063,
       "classes": 0.2867,
       "semantics": 0.0837,
-      "patterns": 0.2609,
+      "patterns": 0.24,
       "visual": 0.6702,
-      "combined": 0.3238
+      "combined": 0.323
     },
     {
       "leftAuditId": "local-seo::section-4",
@@ -89245,9 +89245,9 @@
       "subtreeStyle": 0.4456,
       "classes": 0.2364,
       "semantics": 0.014,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3447,
-      "combined": 0.2722
+      "combined": 0.2715
     },
     {
       "leftAuditId": "local-seo::section-5",
@@ -89317,9 +89317,9 @@
       "subtreeStyle": 0.4456,
       "classes": 0.2364,
       "semantics": 0.014,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.3447,
-      "combined": 0.2722
+      "combined": 0.2715
     },
     {
       "leftAuditId": "local-seo::section-5",
@@ -90163,9 +90163,9 @@
       "subtreeStyle": 0.3152,
       "classes": 0.2542,
       "semantics": 0.0125,
-      "patterns": 0.1739,
+      "patterns": 0.16,
       "visual": 0.6579,
-      "combined": 0.2884
+      "combined": 0.2879
     },
     {
       "leftAuditId": "local-seo::section-7",
@@ -90235,9 +90235,9 @@
       "subtreeStyle": 0.3152,
       "classes": 0.2542,
       "semantics": 0.0125,
-      "patterns": 0.1739,
+      "patterns": 0.16,
       "visual": 0.6579,
-      "combined": 0.2884
+      "combined": 0.2879
     },
     {
       "leftAuditId": "local-seo::section-7",
@@ -90595,9 +90595,9 @@
       "subtreeStyle": 0.3246,
       "classes": 0.2312,
       "semantics": 0,
-      "patterns": 0.6522,
+      "patterns": 0.6,
       "visual": 0.6098,
-      "combined": 0.2934
+      "combined": 0.2913
     },
     {
       "leftAuditId": "local-seo::section-8",
@@ -90667,9 +90667,9 @@
       "subtreeStyle": 0.3246,
       "classes": 0.2312,
       "semantics": 0,
-      "patterns": 0.6522,
+      "patterns": 0.6,
       "visual": 0.6098,
-      "combined": 0.2934
+      "combined": 0.2913
     },
     {
       "leftAuditId": "local-seo::section-8",
@@ -91405,9 +91405,9 @@
       "subtreeStyle": 0.3917,
       "classes": 0.2374,
       "semantics": 0.0476,
-      "patterns": 0.1379,
+      "patterns": 0.129,
       "visual": 0.3363,
-      "combined": 0.2534
+      "combined": 0.253
     },
     {
       "leftAuditId": "local-seo::section-10",
@@ -91477,9 +91477,9 @@
       "subtreeStyle": 0.3917,
       "classes": 0.2374,
       "semantics": 0.0476,
-      "patterns": 0.1379,
+      "patterns": 0.129,
       "visual": 0.3363,
-      "combined": 0.2534
+      "combined": 0.253
     },
     {
       "leftAuditId": "local-seo::section-10",
@@ -92503,9 +92503,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92575,9 +92575,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92611,9 +92611,9 @@
       "subtreeStyle": 0.2037,
       "classes": 0.1822,
       "semantics": 0.0194,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3963,
-      "combined": 0.186
+      "combined": 0.1857
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92629,9 +92629,9 @@
       "subtreeStyle": 0.2137,
       "classes": 0.2349,
       "semantics": 0.0225,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.6245,
-      "combined": 0.2501
+      "combined": 0.2497
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92647,9 +92647,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2574
+      "combined": 0.2572
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92683,9 +92683,9 @@
       "subtreeStyle": 0.4063,
       "classes": 0.3402,
       "semantics": 0.0209,
-      "patterns": 0.2,
+      "patterns": 0.1852,
       "visual": 0.3284,
-      "combined": 0.2458
+      "combined": 0.2452
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92701,9 +92701,9 @@
       "subtreeStyle": 0.494,
       "classes": 0.2951,
       "semantics": 0.0399,
-      "patterns": 0.32,
+      "patterns": 0.2963,
       "visual": 0.6198,
-      "combined": 0.3418
+      "combined": 0.3408
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92755,9 +92755,9 @@
       "subtreeStyle": 0.5544,
       "classes": 0.3941,
       "semantics": 0.0178,
-      "patterns": 0.4783,
+      "patterns": 0.44,
       "visual": 0.651,
-      "combined": 0.3796
+      "combined": 0.378
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92773,9 +92773,9 @@
       "subtreeStyle": 0.3666,
       "classes": 0.3079,
       "semantics": 0.0109,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.6378,
-      "combined": 0.3038
+      "combined": 0.3031
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92791,9 +92791,9 @@
       "subtreeStyle": 0.1825,
       "classes": 0.1132,
       "semantics": 0.0321,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.5465,
-      "combined": 0.2148
+      "combined": 0.2145
     },
     {
       "leftAuditId": "privacy::section-3",
@@ -92827,9 +92827,9 @@
       "subtreeStyle": 0.4187,
       "classes": 0.2358,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3391,
-      "combined": 0.2566
+      "combined": 0.2564
     },
     {
       "leftAuditId": "privacy::section-4",
@@ -92881,9 +92881,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "privacy::section-4",
@@ -93763,9 +93763,9 @@
       "subtreeStyle": 0.4196,
       "classes": 0.2216,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2556
+      "combined": 0.2554
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93799,9 +93799,9 @@
       "subtreeStyle": 0.2037,
       "classes": 0.1822,
       "semantics": 0.0194,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.3963,
-      "combined": 0.186
+      "combined": 0.1857
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93817,9 +93817,9 @@
       "subtreeStyle": 0.2137,
       "classes": 0.2349,
       "semantics": 0.0225,
-      "patterns": 0.1304,
+      "patterns": 0.12,
       "visual": 0.6245,
-      "combined": 0.2501
+      "combined": 0.2497
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93835,9 +93835,9 @@
       "subtreeStyle": 0.42,
       "classes": 0.2256,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3465,
-      "combined": 0.2574
+      "combined": 0.2572
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93871,9 +93871,9 @@
       "subtreeStyle": 0.4063,
       "classes": 0.3402,
       "semantics": 0.0209,
-      "patterns": 0.2,
+      "patterns": 0.1852,
       "visual": 0.3284,
-      "combined": 0.2458
+      "combined": 0.2452
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93889,9 +93889,9 @@
       "subtreeStyle": 0.494,
       "classes": 0.2951,
       "semantics": 0.0399,
-      "patterns": 0.32,
+      "patterns": 0.2963,
       "visual": 0.6198,
-      "combined": 0.3418
+      "combined": 0.3408
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93943,9 +93943,9 @@
       "subtreeStyle": 0.5544,
       "classes": 0.3941,
       "semantics": 0.0178,
-      "patterns": 0.4783,
+      "patterns": 0.44,
       "visual": 0.651,
-      "combined": 0.3796
+      "combined": 0.378
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93961,9 +93961,9 @@
       "subtreeStyle": 0.3666,
       "classes": 0.3079,
       "semantics": 0.0109,
-      "patterns": 0.2174,
+      "patterns": 0.2,
       "visual": 0.6378,
-      "combined": 0.3038
+      "combined": 0.3031
     },
     {
       "leftAuditId": "terms::section-3",
@@ -93979,9 +93979,9 @@
       "subtreeStyle": 0.1825,
       "classes": 0.1132,
       "semantics": 0.0321,
-      "patterns": 0.087,
+      "patterns": 0.08,
       "visual": 0.5465,
-      "combined": 0.2148
+      "combined": 0.2145
     },
     {
       "leftAuditId": "terms::section-3",
@@ -94015,9 +94015,9 @@
       "subtreeStyle": 0.4187,
       "classes": 0.2358,
       "semantics": 0.077,
-      "patterns": 0.0667,
+      "patterns": 0.0625,
       "visual": 0.3391,
-      "combined": 0.2566
+      "combined": 0.2564
     },
     {
       "leftAuditId": "terms::section-4",

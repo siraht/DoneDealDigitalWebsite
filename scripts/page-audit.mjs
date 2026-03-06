@@ -283,6 +283,17 @@ const similarityDetectorWeights = {
   patterns: 0.04,
   visual: 0.18,
 };
+const componentSimilarityWeights = {
+  typeHint: 0.1,
+  structure: 0.14,
+  layout: 0.18,
+  rootStyle: 0.1,
+  subtreeStyle: 0.17,
+  classes: 0.13,
+  semantics: 0.05,
+  patterns: 0.03,
+  visual: 0.1,
+};
 const validationPageNames = [
   "about",
   "case-studies",
@@ -1436,8 +1447,21 @@ function deriveSectionTraits(sectionType, sectionNode, stats) {
   return [];
 }
 
-function detectRepeatedPatterns(sectionNode) {
-  const patterns = [];
+function getNumericStyleValue(style, property) {
+  return Number.parseFloat(style?.[property] || "0") || 0;
+}
+
+function isTransparentBackground(style) {
+  const value = normalizeWhitespace(style?.["background-color"] || "");
+  return !value || value === "rgba(0, 0, 0, 0)" || value === "transparent";
+}
+
+function getNodeLabel(node) {
+  return getFirstHeadingText(node) || normalizeWhitespace(node.ownText || node.textPreview || "").slice(0, 80);
+}
+
+function buildRepeatedPatternGroups(sectionNode) {
+  const groups = [];
   const seen = new Set();
 
   collectNodes(sectionNode, (parent) => {
@@ -1446,7 +1470,7 @@ function detectRepeatedPatterns(sectionNode) {
       return;
     }
 
-    const groups = new Map();
+    const childGroups = new Map();
     for (const child of children) {
       const childStats = summarizeNode(child);
       const signature = JSON.stringify({
@@ -1459,12 +1483,12 @@ function detectRepeatedPatterns(sectionNode) {
         iconCount: childStats.iconCount,
         childCount: child.children.length,
       });
-      const current = groups.get(signature) || [];
+      const current = childGroups.get(signature) || [];
       current.push({ child, childStats });
-      groups.set(signature, current);
+      childGroups.set(signature, current);
     }
 
-    for (const [signature, instances] of groups.entries()) {
+    for (const [signature, instances] of childGroups.entries()) {
       if (instances.length < 2) {
         continue;
       }
@@ -1475,31 +1499,42 @@ function detectRepeatedPatterns(sectionNode) {
         continue;
       }
 
-      const kind = classifyPatternKind(sample.child, sample.childStats);
-      patterns.push({
+      groups.push({
         parentPath: parent.path,
         count: instances.length,
-        kind,
-        samplePath: sample.child.path,
-        sampleHeading: getFirstHeadingText(sample.child),
-        structureFingerprint: buildStructureFingerprint(sample.child),
-        looseFingerprint: buildLooseFingerprint(sample.childStats),
-        sampleDecisionStyle: sample.child.decisionStyle,
-        sampleCustomClasses: sample.child.classes.filter((token) => !looksLikeTailwindClass(token)),
+        kind: classifyPatternKind(sample.child, sample.childStats),
+        signature,
+        sampleNode: sample.child,
+        sampleStats: sample.childStats,
+        instances,
       });
       seen.add(key);
     }
   });
 
-  return patterns
+  return groups
     .sort((left, right) => {
       if (right.count !== left.count) {
         return right.count - left.count;
       }
 
-      return left.samplePath.localeCompare(right.samplePath);
+      return left.sampleNode.path.localeCompare(right.sampleNode.path);
     })
-    .slice(0, 10);
+    .slice(0, 16);
+}
+
+function detectRepeatedPatterns(sectionNode) {
+  return buildRepeatedPatternGroups(sectionNode).map((group) => ({
+    parentPath: group.parentPath,
+    count: group.count,
+    kind: group.kind,
+    samplePath: group.sampleNode.path,
+    sampleHeading: getFirstHeadingText(group.sampleNode),
+    structureFingerprint: buildStructureFingerprint(group.sampleNode),
+    looseFingerprint: buildLooseFingerprint(group.sampleStats),
+    sampleDecisionStyle: group.sampleNode.decisionStyle,
+    sampleCustomClasses: group.sampleNode.classes.filter((token) => !looksLikeTailwindClass(token)),
+  }));
 }
 
 function classifyPatternKind(node, stats) {
@@ -1524,6 +1559,308 @@ function classifyPatternKind(node, stats) {
   }
 
   return "repeatable-block";
+}
+
+function classifyComponentKind(node, stats, context = {}) {
+  const parentSectionType = context.parentSectionType || "";
+  const wordCount = tokenizeText(node.textPreview).length;
+  const hasHeading = stats.headingCount >= 1;
+  const formControlCount = stats.inputCount + stats.textareaCount + stats.selectCount;
+  const backgroundFilled = !isTransparentBackground(node.decisionStyle);
+  const borderWidth =
+    getNumericStyleValue(node.decisionStyle, "border-top-width") +
+    getNumericStyleValue(node.decisionStyle, "border-right-width") +
+    getNumericStyleValue(node.decisionStyle, "border-bottom-width") +
+    getNumericStyleValue(node.decisionStyle, "border-left-width");
+  const hasBoxShadow = normalizeWhitespace(node.decisionStyle["box-shadow"] || "") !== "none";
+  const paddedButton =
+    getNumericStyleValue(node.decisionStyle, "padding-top") >= 12 &&
+    getNumericStyleValue(node.decisionStyle, "padding-left") >= 20;
+
+  if (node.tag === "a" || node.tag === "button") {
+    if (parentSectionType === "SiteHeader") {
+      return "HeaderNavLink";
+    }
+
+    if (["SiteFooter", "SectionNav"].includes(parentSectionType)) {
+      return "NavLink";
+    }
+
+    if (backgroundFilled || borderWidth > 0 || hasBoxShadow || paddedButton) {
+      return "Button";
+    }
+
+    return "TextLink";
+  }
+
+  if (parentSectionType === "SiteFooter" && node.tag === "li" && wordCount <= 24) {
+    return "FooterLinkItem";
+  }
+
+  if (parentSectionType === "FormSection" && formControlCount === 1) {
+    return "FormField";
+  }
+
+  if (
+    node.tag === "details" ||
+    stats.detailCount >= 1 ||
+    (stats.buttonCount >= 1 && hasHeading && wordCount <= 45)
+  ) {
+    return "AccordionItem";
+  }
+
+  if (parentSectionType === "ComparisonSplitSection") {
+    if (node.tag === "li") {
+      return "ComparisonListItem";
+    }
+
+    if (hasHeading || stats.iconCount >= 1) {
+      return "ComparisonPanel";
+    }
+  }
+
+  if (parentSectionType === "ProcessSection" && hasHeading) {
+    return "ProcessStep";
+  }
+
+  if (stats.imageCount >= 1 && hasHeading) {
+    return "ImageCard";
+  }
+
+  if (stats.iconCount >= 1 && hasHeading) {
+    return "IconCard";
+  }
+
+  if (node.tag === "li" && wordCount <= 24) {
+    return "ListItem";
+  }
+
+  if (hasHeading && node.rect.height >= 72) {
+    return "ContentCard";
+  }
+
+  return "RepeatableBlock";
+}
+
+function deriveComponentTraits(componentKind, node, stats) {
+  const traits = [];
+  const backgroundFilled = !isTransparentBackground(node.decisionStyle);
+  const borderWidth =
+    getNumericStyleValue(node.decisionStyle, "border-top-width") +
+    getNumericStyleValue(node.decisionStyle, "border-right-width") +
+    getNumericStyleValue(node.decisionStyle, "border-bottom-width") +
+    getNumericStyleValue(node.decisionStyle, "border-left-width");
+  const hasBoxShadow = normalizeWhitespace(node.decisionStyle["box-shadow"] || "") !== "none";
+  const textAlign = node.decisionStyle["text-align"] === "center" ? "centered" : "left-aligned";
+  const uppercase =
+    normalizeWhitespace(node.decisionStyle["text-transform"] || "") === "uppercase"
+      ? "uppercase"
+      : "sentence-case";
+
+  if (["Button", "HeaderNavLink", "NavLink", "TextLink"].includes(componentKind)) {
+    traits.push(backgroundFilled ? "filled" : borderWidth > 0 ? "outlined" : "text-only");
+    traits.push(
+      `height-${bucketByThreshold(node.rect.height, [
+        { max: 28, label: "xs" },
+        { max: 44, label: "sm" },
+        { max: 64, label: "md" },
+        { max: Number.POSITIVE_INFINITY, label: "lg" },
+      ])}`,
+    );
+    traits.push(stats.iconCount > 0 ? "with-icon" : "without-icon");
+    traits.push(uppercase);
+    return traits;
+  }
+
+  if (componentKind === "FormField") {
+    const controlType = stats.textareaCount > 0 ? "textarea" : stats.selectCount > 0 ? "select" : "input";
+    traits.push(controlType);
+    traits.push(borderWidth > 0 ? "outlined" : "borderless");
+    traits.push(backgroundFilled ? "filled" : "transparent");
+    return traits;
+  }
+
+  if (
+    [
+      "IconCard",
+      "ImageCard",
+      "ComparisonPanel",
+      "ProcessStep",
+      "ContentCard",
+      "RepeatableBlock",
+    ].includes(componentKind)
+  ) {
+    traits.push(borderWidth > 0 ? "bordered" : "borderless");
+    traits.push(hasBoxShadow ? "shadowed" : "flat");
+    traits.push(textAlign);
+    traits.push(stats.headingCount > 0 ? "with-heading" : "without-heading");
+    return traits;
+  }
+
+  if (["ComparisonListItem", "ListItem", "AccordionItem", "FooterLinkItem"].includes(componentKind)) {
+    traits.push(stats.iconCount > 0 ? "with-icon" : "without-icon");
+    traits.push(textAlign);
+    return traits;
+  }
+
+  return traits;
+}
+
+function shouldIncludeRepeatedComponentCandidate(node, stats, componentKind) {
+  if (!node.visible || node.rect.width < 24 || node.rect.height < 12) {
+    return false;
+  }
+
+  if (
+    [
+      "HeaderNavLink",
+      "NavLink",
+      "Button",
+      "TextLink",
+      "FooterLinkItem",
+      "AccordionItem",
+      "ComparisonPanel",
+      "ComparisonListItem",
+      "ProcessStep",
+      "ImageCard",
+      "IconCard",
+      "ContentCard",
+      "ListItem",
+      "FormField",
+    ].includes(componentKind)
+  ) {
+    return true;
+  }
+
+  if (componentKind === "RepeatableBlock") {
+    return (
+      stats.headingCount >= 1 ||
+      stats.wordCount >= 3 ||
+      stats.linkCount + stats.buttonCount >= 1 ||
+      stats.iconCount >= 1 ||
+      stats.imageCount >= 1
+    );
+  }
+
+  return false;
+}
+
+function isStandaloneActionCandidate(node, sectionType) {
+  if (!["a", "button", "details"].includes(node.tag) || !node.visible) {
+    return false;
+  }
+
+  if (node.tag === "details") {
+    return true;
+  }
+
+  if (["SiteHeader", "SiteFooter", "SectionNav"].includes(sectionType)) {
+    return false;
+  }
+
+  const backgroundFilled = !isTransparentBackground(node.decisionStyle);
+  const borderWidth =
+    getNumericStyleValue(node.decisionStyle, "border-top-width") +
+    getNumericStyleValue(node.decisionStyle, "border-right-width") +
+    getNumericStyleValue(node.decisionStyle, "border-bottom-width") +
+    getNumericStyleValue(node.decisionStyle, "border-left-width");
+  const hasBoxShadow = normalizeWhitespace(node.decisionStyle["box-shadow"] || "") !== "none";
+  const padded =
+    getNumericStyleValue(node.decisionStyle, "padding-top") >= 10 &&
+    getNumericStyleValue(node.decisionStyle, "padding-left") >= 18;
+
+  return backgroundFilled || borderWidth > 0 || hasBoxShadow || padded;
+}
+
+function buildComponentCandidates(sectionNode, sectionMeta) {
+  const repeatedGroups = buildRepeatedPatternGroups(sectionNode);
+  const componentCandidates = [];
+  const seenNodeIds = new Set();
+
+  repeatedGroups.forEach((group, groupIndex) => {
+    group.instances.forEach(({ child, childStats }, instanceIndex) => {
+      const componentKind = classifyComponentKind(child, childStats, {
+        parentSectionType: sectionMeta.sectionType,
+      });
+
+      if (!shouldIncludeRepeatedComponentCandidate(child, childStats, componentKind)) {
+        return;
+      }
+
+      if (seenNodeIds.has(child.auditNodeId)) {
+        return;
+      }
+
+      const nestedPatterns = detectRepeatedPatterns(child);
+      componentCandidates.push({
+        auditId: `${sectionMeta.auditId}::component-g${groupIndex + 1}-i${instanceIndex + 1}`,
+        pageName: sectionMeta.pageName,
+        route: sectionMeta.route,
+        sectionAuditId: sectionMeta.auditId,
+        sectionIndex: sectionMeta.index,
+        sectionType: sectionMeta.sectionType,
+        componentKind,
+        source: "repeated-group",
+        groupKind: group.kind,
+        parentPath: group.parentPath,
+        path: child.path,
+        auditNodeId: child.auditNodeId,
+        tag: child.tag,
+        label: getNodeLabel(child),
+        rootClasses: child.classes,
+        rootDecisionStyle: cloneObject(child.decisionStyle),
+        structureFingerprint: buildStructureFingerprint(child),
+        looseFingerprint: buildLooseFingerprint(childStats),
+        stats: childStats,
+        patterns: nestedPatterns,
+        signatures: computeSectionSignatures(child, childStats, nestedPatterns),
+        variantTraits: deriveComponentTraits(componentKind, child, childStats),
+        nodeSnapshot: child,
+      });
+      seenNodeIds.add(child.auditNodeId);
+    });
+  });
+
+  collectNodes(sectionNode, (node) => {
+    if (!isStandaloneActionCandidate(node, sectionMeta.sectionType) || seenNodeIds.has(node.auditNodeId)) {
+      return;
+    }
+
+    const stats = summarizeNode(node);
+    const componentKind = classifyComponentKind(node, stats, {
+      parentSectionType: sectionMeta.sectionType,
+    });
+    const nestedPatterns = detectRepeatedPatterns(node);
+
+    componentCandidates.push({
+      auditId: `${sectionMeta.auditId}::component-standalone-${componentCandidates.length + 1}`,
+      pageName: sectionMeta.pageName,
+      route: sectionMeta.route,
+      sectionAuditId: sectionMeta.auditId,
+      sectionIndex: sectionMeta.index,
+      sectionType: sectionMeta.sectionType,
+      componentKind,
+      source: "standalone",
+      groupKind: componentKind,
+      parentPath: node.path.split(" > ").slice(0, -1).join(" > "),
+      path: node.path,
+      auditNodeId: node.auditNodeId,
+      tag: node.tag,
+      label: getNodeLabel(node),
+      rootClasses: node.classes,
+      rootDecisionStyle: cloneObject(node.decisionStyle),
+      structureFingerprint: buildStructureFingerprint(node),
+      looseFingerprint: buildLooseFingerprint(stats),
+      stats,
+      patterns: nestedPatterns,
+      signatures: computeSectionSignatures(node, stats, nestedPatterns),
+      variantTraits: deriveComponentTraits(componentKind, node, stats),
+      nodeSnapshot: node,
+    });
+    seenNodeIds.add(node.auditNodeId);
+  });
+
+  return componentCandidates.sort((left, right) => left.path.localeCompare(right.path));
 }
 
 function classifySection(section, pageMeta) {
@@ -2176,6 +2513,402 @@ function buildSectionClusters(sections, sectionPairScores, detectorEvaluation) {
   });
 }
 
+function getComponentCompatibleGroup(componentKind) {
+  return componentKind;
+}
+
+function getComponentContextGroup(component) {
+  if (component.componentKind === "Button") {
+    return "action";
+  }
+
+  if (component.componentKind === "HeaderNavLink") {
+    return "site-header";
+  }
+
+  if (component.componentKind === "NavLink") {
+    return component.sectionType;
+  }
+
+  if (component.componentKind === "FooterLinkItem") {
+    return "site-footer";
+  }
+
+  if (component.componentKind === "FormField") {
+    return "form";
+  }
+
+  if (component.componentKind === "IconCard" && ["ServicesSection", "IconCardGrid"].includes(component.sectionType)) {
+    return "icon-card-grid";
+  }
+
+  if (component.componentKind === "ImageCard" && component.sectionType === "ImageCardGrid") {
+    return "image-card-grid";
+  }
+
+  return getSectionCompatibleGroup(component.sectionType);
+}
+
+function scoreComponentSimilarityDetailed(left, right) {
+  const typeHint =
+    left.componentKind === right.componentKind
+      ? 1
+      : getComponentCompatibleGroup(left.componentKind) === getComponentCompatibleGroup(right.componentKind)
+        ? 0.55
+        : 0;
+  const structure = compareStructure(left, right);
+  const layout = compareLayoutSignatures(left, right);
+  const rootStyle = compareDecisionStyles(left.rootDecisionStyle, right.rootDecisionStyle);
+  const subtreeStyle = compareSubtreeStyles(left, right);
+  const classes = compareClassSignatures(left, right);
+  const semantics = compareSemanticSignatures(left, right);
+  const patterns = comparePatternSignatures(left, right);
+  const visual = compareVisualSignatures(left.visualSignature, right.visualSignature);
+  const combined =
+    typeHint * componentSimilarityWeights.typeHint +
+    structure * componentSimilarityWeights.structure +
+    layout * componentSimilarityWeights.layout +
+    rootStyle * componentSimilarityWeights.rootStyle +
+    subtreeStyle * componentSimilarityWeights.subtreeStyle +
+    classes * componentSimilarityWeights.classes +
+    semantics * componentSimilarityWeights.semantics +
+    patterns * componentSimilarityWeights.patterns +
+    visual * componentSimilarityWeights.visual;
+
+  return {
+    typeHint: Number(typeHint.toFixed(4)),
+    structure: Number(structure.toFixed(4)),
+    layout: Number(layout.toFixed(4)),
+    rootStyle: Number(rootStyle.toFixed(4)),
+    subtreeStyle: Number(subtreeStyle.toFixed(4)),
+    classes: Number(classes.toFixed(4)),
+    semantics: Number(semantics.toFixed(4)),
+    patterns: Number(patterns.toFixed(4)),
+    visual: Number(visual.toFixed(4)),
+    combined: Number(combined.toFixed(4)),
+  };
+}
+
+function buildComponentPairScores(components) {
+  const rows = [];
+  const lookup = new Map();
+
+  for (let leftIndex = 0; leftIndex < components.length; leftIndex += 1) {
+    for (let rightIndex = leftIndex + 1; rightIndex < components.length; rightIndex += 1) {
+      const left = components[leftIndex];
+      const right = components[rightIndex];
+      const scores = scoreComponentSimilarityDetailed(left, right);
+      const row = {
+        leftAuditId: left.auditId,
+        rightAuditId: right.auditId,
+        leftPageName: left.pageName,
+        rightPageName: right.pageName,
+        leftComponentKind: left.componentKind,
+        rightComponentKind: right.componentKind,
+        ...scores,
+      };
+      rows.push(row);
+      lookup.set(getPairKey(left.auditId, right.auditId), row);
+    }
+  }
+
+  return { rows, lookup };
+}
+
+function buildComponentValidationDataset(componentLookup) {
+  const familyDefinitions = [
+    {
+      name: "HeaderNavLink",
+      test: (component) => component.componentKind === "HeaderNavLink",
+    },
+    {
+      name: "FooterNavLink",
+      test: (component) => component.componentKind === "NavLink" && component.sectionType === "SiteFooter",
+    },
+    {
+      name: "HeroButton",
+      test: (component) => component.componentKind === "Button" && component.sectionType === "HeroSection",
+    },
+    {
+      name: "ComparisonPanel",
+      test: (component) => component.componentKind === "ComparisonPanel",
+    },
+    {
+      name: "ComparisonListItem",
+      test: (component) => component.componentKind === "ComparisonListItem",
+    },
+    {
+      name: "ProcessStep",
+      test: (component) => component.componentKind === "ProcessStep",
+    },
+    {
+      name: "AccordionItem",
+      test: (component) => component.componentKind === "AccordionItem",
+    },
+    {
+      name: "FooterLinkItem",
+      test: (component) => component.componentKind === "FooterLinkItem",
+    },
+    {
+      name: "FormField",
+      test: (component) => component.componentKind === "FormField",
+    },
+    {
+      name: "IconCard",
+      test: (component) =>
+        component.componentKind === "IconCard" &&
+        ["ServicesSection", "IconCardGrid"].includes(component.sectionType),
+    },
+  ];
+  const familyMembers = familyDefinitions
+    .map((definition) => ({
+      name: definition.name,
+      members: [...componentLookup.values()].filter(definition.test).map((component) => component.auditId),
+    }))
+    .filter((family) => family.members.length >= 2);
+  const positives = [];
+  const seenPositive = new Set();
+  const membership = new Map();
+
+  for (const family of familyMembers) {
+    family.members.forEach((member) => membership.set(member, family.name));
+
+    for (let leftIndex = 0; leftIndex < family.members.length; leftIndex += 1) {
+      for (let rightIndex = leftIndex + 1; rightIndex < family.members.length; rightIndex += 1) {
+        const key = getPairKey(family.members[leftIndex], family.members[rightIndex]);
+        if (seenPositive.has(key)) {
+          continue;
+        }
+
+        positives.push({
+          label: "positive",
+          family: family.name,
+          leftAuditId: family.members[leftIndex],
+          rightAuditId: family.members[rightIndex],
+        });
+        seenPositive.add(key);
+      }
+    }
+  }
+
+  const negatives = [];
+  const components = [...componentLookup.values()].sort((left, right) => left.auditId.localeCompare(right.auditId));
+  for (let leftIndex = 0; leftIndex < components.length; leftIndex += 1) {
+    for (let rightIndex = leftIndex + 1; rightIndex < components.length; rightIndex += 1) {
+      const left = components[leftIndex];
+      const right = components[rightIndex];
+      const leftFamily = membership.get(left.auditId);
+      const rightFamily = membership.get(right.auditId);
+      if (!leftFamily || !rightFamily || leftFamily === rightFamily) {
+        continue;
+      }
+
+      negatives.push({
+        label: "negative",
+        family: `${leftFamily} vs ${rightFamily}`,
+        leftAuditId: left.auditId,
+        rightAuditId: right.auditId,
+      });
+    }
+  }
+
+  negatives.sort((left, right) => {
+    const leftKey = `${left.leftAuditId}::${left.rightAuditId}`;
+    const rightKey = `${right.leftAuditId}::${right.rightAuditId}`;
+    return leftKey.localeCompare(rightKey);
+  });
+
+  return {
+    samples: positives.concat(negatives.slice(0, positives.length)),
+    families: familyMembers,
+  };
+}
+
+function evaluateComponentDetectors(componentPairScores, componentLookup) {
+  const validation = buildComponentValidationDataset(componentLookup);
+  const dataset = validation.samples
+    .map((sample) => {
+      const pair = componentPairScores.lookup.get(getPairKey(sample.leftAuditId, sample.rightAuditId));
+      return pair ? { ...sample, scores: pair } : null;
+    })
+    .filter(Boolean);
+  const detectorKeys = [
+    "typeHint",
+    "structure",
+    "layout",
+    "rootStyle",
+    "subtreeStyle",
+    "classes",
+    "semantics",
+    "patterns",
+    "visual",
+    "combined",
+  ];
+  const detectors = {};
+
+  for (const key of detectorKeys) {
+    const positiveScores = dataset
+      .filter((sample) => sample.label === "positive")
+      .map((sample) => sample.scores[key]);
+    const negativeScores = dataset
+      .filter((sample) => sample.label === "negative")
+      .map((sample) => sample.scores[key]);
+    const summary = findBestThreshold(dataset, (sample) => sample.scores[key]);
+    detectors[key] = {
+      ...summary,
+      averagePositive: Number(
+        (
+          positiveScores.reduce((sum, value) => sum + value, 0) / Math.max(positiveScores.length, 1)
+        ).toFixed(4),
+      ),
+      averageNegative: Number(
+        (
+          negativeScores.reduce((sum, value) => sum + value, 0) / Math.max(negativeScores.length, 1)
+        ).toFixed(4),
+      ),
+    };
+  }
+
+  const familyCoverage = validation.families.map((family) => {
+    const familyPairs = [];
+    for (let leftIndex = 0; leftIndex < family.members.length; leftIndex += 1) {
+      for (let rightIndex = leftIndex + 1; rightIndex < family.members.length; rightIndex += 1) {
+        const pair = componentPairScores.lookup.get(getPairKey(family.members[leftIndex], family.members[rightIndex]));
+        if (pair) {
+          familyPairs.push(pair);
+        }
+      }
+    }
+
+    const combinedThreshold = detectors.combined.threshold;
+    const matchedCount = familyPairs.filter((pair) => pair.combined >= combinedThreshold).length;
+
+    return {
+      family: family.name,
+      pairCount: familyPairs.length,
+      averageCombined: Number(
+        (
+          familyPairs.reduce((sum, pair) => sum + pair.combined, 0) / Math.max(familyPairs.length, 1)
+        ).toFixed(4),
+      ),
+      matchedCount,
+      matchedPct: Number(((matchedCount / Math.max(familyPairs.length, 1)) * 100).toFixed(1)),
+    };
+  });
+
+  return {
+    datasetSize: dataset.length,
+    positives: dataset.filter((sample) => sample.label === "positive").length,
+    negatives: dataset.filter((sample) => sample.label === "negative").length,
+    detectors,
+    familyCoverage,
+    samples: dataset.map((sample) => ({
+      label: sample.label,
+      family: sample.family,
+      leftAuditId: sample.leftAuditId,
+      rightAuditId: sample.rightAuditId,
+      scores: sample.scores,
+    })),
+  };
+}
+
+function getComponentPairScore(componentPairScores, left, right) {
+  if (left.auditId === right.auditId) {
+    return null;
+  }
+
+  return componentPairScores.lookup.get(getPairKey(left.auditId, right.auditId)) || null;
+}
+
+function getComponentDisplayName(component) {
+  if (
+    ["RepeatableBlock", "ContentCard", "ListItem", "FooterLinkItem", "FormField"].includes(
+      component.componentKind,
+    ) &&
+    component.label
+  ) {
+    return `${component.componentKind}: ${component.label}`;
+  }
+
+  return component.componentKind;
+}
+
+function buildComponentClusters(components, componentPairScores, detectorEvaluation) {
+  const combinedThreshold = detectorEvaluation.detectors.combined.threshold;
+  const clusters = clusterBySimilarity(
+    components,
+    (left, right) => getComponentPairScore(componentPairScores, left, right)?.combined || 0,
+    (left, right) => {
+      const sameKind = getComponentCompatibleGroup(left.componentKind) === getComponentCompatibleGroup(right.componentKind);
+      const sameContext = getComponentContextGroup(left) === getComponentContextGroup(right);
+
+      if (!sameKind) {
+        return 1.01;
+      }
+
+      let threshold = combinedThreshold;
+
+      if (["Button", "HeaderNavLink", "NavLink", "FooterLinkItem"].includes(left.componentKind)) {
+        threshold -= 0.04;
+      }
+
+      if (["IconCard", "ImageCard", "ComparisonPanel", "ProcessStep", "AccordionItem"].includes(left.componentKind)) {
+        threshold -= sameContext ? 0.02 : 0;
+      }
+
+      if (["RepeatableBlock", "ContentCard", "ListItem", "TextLink", "FormField"].includes(left.componentKind)) {
+        threshold += 0.12;
+      }
+
+      if (
+        !sameContext &&
+        ["RepeatableBlock", "ContentCard", "ListItem", "NavLink", "FooterLinkItem", "TextLink", "FormField"].includes(
+          left.componentKind,
+        )
+      ) {
+        return 1.01;
+      }
+
+      return Number(clamp(threshold, 0.36, 0.88).toFixed(4));
+    },
+    (item) =>
+      `${getComponentContextGroup(item)}::${item.componentKind}::${item.structureFingerprint}`,
+  );
+
+  return clusters.map((cluster, index) => {
+    const exactFingerprints = new Set(cluster.items.map((item) => item.structureFingerprint));
+    const status =
+      exactFingerprints.size === 1 && cluster.items.length > 1
+        ? "Exact Match"
+        : cluster.items.length > 1
+          ? "Variant of Same Component"
+          : "Unique";
+
+    return {
+      id: `component-cluster-${index + 1}`,
+      componentKind: cluster.representative.componentKind,
+      displayName: getComponentDisplayName(cluster.representative),
+      status,
+      representativeId: cluster.representative.auditId,
+      items: cluster.items.map((item) => ({
+        auditId: item.auditId,
+        pageName: item.pageName,
+        route: item.route,
+        sectionAuditId: item.sectionAuditId,
+        sectionIndex: item.sectionIndex,
+        sectionType: item.sectionType,
+        componentKind: item.componentKind,
+        label: item.label,
+        variantTraits: item.variantTraits,
+        representativeScores:
+          item.auditId === cluster.representative.auditId
+            ? null
+            : getComponentPairScore(componentPairScores, cluster.representative, item),
+      })),
+    };
+  });
+}
+
 function scorePatternSimilarity(left, right) {
   let score = 0;
 
@@ -2705,6 +3438,234 @@ function renderNearestNeighbors(sectionLookup, nearestNeighbors) {
   return `${lines.join("\n")}\n`;
 }
 
+function buildComponentNearestNeighbors(components, componentPairScores, count = 5) {
+  return components
+    .map((component) => {
+      const neighbors = components
+        .filter((candidate) => candidate.auditId !== component.auditId)
+        .map((candidate) => ({
+          component,
+          candidate,
+          scores: getComponentPairScore(componentPairScores, component, candidate),
+        }))
+        .filter((entry) => entry.scores)
+        .sort((left, right) => {
+          if (right.scores.combined !== left.scores.combined) {
+            return right.scores.combined - left.scores.combined;
+          }
+
+          return left.candidate.auditId.localeCompare(right.candidate.auditId);
+        })
+        .slice(0, count);
+
+      return {
+        auditId: component.auditId,
+        pageName: component.pageName,
+        route: component.route,
+        sectionIndex: component.sectionIndex,
+        sectionType: component.sectionType,
+        componentKind: component.componentKind,
+        label: component.label,
+        neighbors: neighbors.map((entry) => ({
+          auditId: entry.candidate.auditId,
+          pageName: entry.candidate.pageName,
+          route: entry.candidate.route,
+          sectionIndex: entry.candidate.sectionIndex,
+          sectionType: entry.candidate.sectionType,
+          componentKind: entry.candidate.componentKind,
+          label: entry.candidate.label,
+          scores: entry.scores,
+        })),
+      };
+    })
+    .sort((left, right) => left.auditId.localeCompare(right.auditId));
+}
+
+function renderComponentMatrix(componentClusters, componentLookup) {
+  const lines = ["# Component Matrix", ""];
+
+  for (const cluster of componentClusters) {
+    lines.push(`## ${cluster.displayName} (${cluster.status})`);
+    lines.push("");
+
+    for (const item of cluster.items.sort((left, right) => {
+      if (left.pageName !== right.pageName) {
+        return left.pageName.localeCompare(right.pageName);
+      }
+
+      return left.sectionIndex - right.sectionIndex || left.auditId.localeCompare(right.auditId);
+    })) {
+      const component = componentLookup.get(item.auditId);
+      const label = component?.label ? ` - ${component.label}` : "";
+      const variantSummary = component?.variantTraits?.length
+        ? `; variants: ${component.variantTraits.join(", ")}`
+        : "";
+      const evidenceSummary = item.representativeScores
+        ? `; ensemble: ${item.representativeScores.combined.toFixed(2)}; signals: ${summarizeSignalEvidence(item.representativeScores)}`
+        : "";
+      lines.push(
+        `- [ ] \`${item.pageName}\` section ${item.sectionIndex} \`${item.componentKind}\` in \`${item.sectionType}\`${label}${variantSummary}${evidenceSummary}`,
+      );
+    }
+
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function renderComponentChecklist(componentClusters, componentLookup) {
+  const lines = ["# Component Consolidation Checklist", ""];
+
+  for (const cluster of componentClusters) {
+    const components = cluster.items.map((item) => componentLookup.get(item.auditId)).filter(Boolean);
+    const canonical =
+      components.find((component) => component.pageName === "index") ||
+      components.find((component) => component.pageName === "index_original") ||
+      components[0] ||
+      null;
+    const styleDeltas = getStyleDeltaSummary(components, (item) => item.rootDecisionStyle);
+
+    lines.push(`## ${cluster.displayName}`);
+    lines.push("");
+    lines.push(
+      `- [ ] Define the canonical \`${cluster.displayName}\` using \`${canonical?.pageName || "unknown"}\` section ${canonical?.sectionIndex || "?"}.`,
+    );
+    lines.push("- [ ] Decide whether this becomes one shared child component or a variant family.");
+    if (canonical?.variantTraits?.length) {
+      lines.push(`- [ ] Canonical variant traits: ${canonical.variantTraits.join(", ")}.`);
+    }
+
+    if (styleDeltas.length > 0) {
+      lines.push("- [ ] Resolve these root-level style decisions:");
+      for (const delta of styleDeltas.slice(0, 6)) {
+        lines.push(`- [ ] ${delta.property}: ${delta.values.join(" vs ")}`);
+      }
+    }
+
+    for (const component of components.sort((left, right) => {
+      if (left.pageName !== right.pageName) {
+        return left.pageName.localeCompare(right.pageName);
+      }
+
+      return left.sectionIndex - right.sectionIndex || left.auditId.localeCompare(right.auditId);
+    })) {
+      const canonicalLabel =
+        canonical && canonical.auditId === component.auditId ? " (canonical candidate)" : "";
+      const label = component.label ? ` - ${component.label}` : "";
+      const variantSummary = component.variantTraits.length
+        ? `; variants: ${component.variantTraits.join(", ")}`
+        : "";
+      lines.push(
+        `- [ ] Consolidate \`${component.pageName}\` section ${component.sectionIndex} \`${component.componentKind}\`${label}${canonicalLabel}${variantSummary}.`,
+      );
+    }
+
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function renderComponentAnalysis(detectorEvaluation) {
+  const lines = [
+    "# Component Detector Analysis",
+    "",
+    `Validation set: ${detectorEvaluation.datasetSize} labeled pairs (${detectorEvaluation.positives} positive, ${detectorEvaluation.negatives} negative).`,
+    "",
+    "## Detector Calibration",
+    "",
+    "| Detector | Threshold | Avg + | Avg - | Precision | Recall | F1 | FP | FN |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+  ];
+
+  for (const [key, summary] of Object.entries(detectorEvaluation.detectors)) {
+    lines.push(
+      `| \`${key}\` | ${summary.threshold.toFixed(2)} | ${summary.averagePositive.toFixed(2)} | ${summary.averageNegative.toFixed(2)} | ${summary.precision.toFixed(2)} | ${summary.recall.toFixed(2)} | ${summary.f1.toFixed(2)} | ${summary.falsePositive} | ${summary.falseNegative} |`,
+    );
+  }
+
+  lines.push("");
+  lines.push("## Family Coverage");
+  lines.push("");
+  lines.push("| Family | Pair count | Avg combined | Above threshold | Coverage |");
+  lines.push("| --- | --- | --- | --- | --- |");
+
+  for (const family of detectorEvaluation.familyCoverage) {
+    lines.push(
+      `| \`${family.family}\` | ${family.pairCount} | ${family.averageCombined.toFixed(2)} | ${family.matchedCount}/${family.pairCount} | ${family.matchedPct.toFixed(1)}% |`,
+    );
+  }
+
+  const combinedThreshold = detectorEvaluation.detectors.combined.threshold;
+  const falseNegatives = detectorEvaluation.samples
+    .filter((sample) => sample.label === "positive" && sample.scores.combined < combinedThreshold)
+    .sort((left, right) => left.scores.combined - right.scores.combined)
+    .slice(0, 15);
+  const falsePositives = detectorEvaluation.samples
+    .filter((sample) => sample.label === "negative" && sample.scores.combined >= combinedThreshold)
+    .sort((left, right) => right.scores.combined - left.scores.combined)
+    .slice(0, 15);
+
+  lines.push("");
+  lines.push("## Misses To Review");
+  lines.push("");
+
+  if (falseNegatives.length === 0 && falsePositives.length === 0) {
+    lines.push("- No labeled misses at the current combined threshold.");
+    lines.push("");
+    return `${lines.join("\n")}\n`;
+  }
+
+  if (falseNegatives.length > 0) {
+    lines.push("### False Negatives");
+    lines.push("");
+    for (const sample of falseNegatives) {
+      lines.push(
+        `- [ ] \`${sample.leftAuditId}\` vs \`${sample.rightAuditId}\` in \`${sample.family}\` fell below threshold at ${sample.scores.combined.toFixed(2)}; strongest signals: ${summarizeSignalEvidence(sample.scores)}.`,
+      );
+    }
+    lines.push("");
+  }
+
+  if (falsePositives.length > 0) {
+    lines.push("### False Positives");
+    lines.push("");
+    for (const sample of falsePositives) {
+      lines.push(
+        `- [ ] \`${sample.leftAuditId}\` vs \`${sample.rightAuditId}\` crossed threshold at ${sample.scores.combined.toFixed(2)}; strongest signals: ${summarizeSignalEvidence(sample.scores)}.`,
+      );
+    }
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function renderComponentNeighbors(componentLookup, nearestNeighbors) {
+  const lines = ["# Component Nearest Neighbors", ""];
+
+  for (const entry of nearestNeighbors) {
+    const component = componentLookup.get(entry.auditId);
+    const label = component?.label ? ` - ${component.label}` : "";
+    lines.push(
+      `## \`${entry.pageName}\` section ${entry.sectionIndex} (${entry.componentKind} in ${entry.sectionType})${label}`,
+    );
+    lines.push("");
+
+    for (const neighbor of entry.neighbors) {
+      const neighborLabel = neighbor.label ? ` - ${neighbor.label}` : "";
+      lines.push(
+        `- [ ] \`${neighbor.pageName}\` section ${neighbor.sectionIndex} \`${neighbor.componentKind}\` in \`${neighbor.sectionType}\`${neighborLabel}; ensemble ${neighbor.scores.combined.toFixed(2)}; signals: ${summarizeSignalEvidence(neighbor.scores)}.`,
+      );
+    }
+
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
 async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL) {
   const audit = {
     pageName: page.pageName,
@@ -2715,6 +3676,9 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
     viewports: [],
   };
   const primarySectionVisuals = new Map();
+  const primaryComponentVisuals = new Map();
+  let capturedPrimarySections = [];
+  let capturedPrimaryComponents = [];
 
   for (const viewport of viewports) {
     const browserPage = await browser.newPage({
@@ -2879,7 +3843,52 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
 
     if (viewport.name === primaryViewport.name) {
       const primarySectionNodes = findTopLevelSections(snapshot.body);
-      for (const sectionNode of primarySectionNodes) {
+      let contentIndex = 0;
+      capturedPrimarySections = primarySectionNodes.map((sectionNode, index) => {
+        const stats = summarizeNode(sectionNode);
+        const patterns = detectRepeatedPatterns(sectionNode);
+        const isContentSection =
+          !["header", "footer"].includes(sectionNode.tag) &&
+          !["header", "footer"].includes(sectionNode.topLevelTag);
+
+        if (isContentSection) {
+          contentIndex += 1;
+        }
+
+        return {
+          auditId: `${page.pageName}::section-${index + 1}`,
+          pageName: page.pageName,
+          route: page.route,
+          index: index + 1,
+          contentIndex: isContentSection ? contentIndex : 0,
+          path: sectionNode.path,
+          tag: sectionNode.tag,
+          topLevelTag: sectionNode.topLevelTag,
+          firstHeading: getFirstHeadingText(sectionNode),
+          rootClasses: sectionNode.classes,
+          rootDecisionStyle: cloneObject(sectionNode.decisionStyle),
+          structureFingerprint: buildStructureFingerprint(sectionNode),
+          looseFingerprint: buildLooseFingerprint(stats),
+          nodeSnapshot: sectionNode,
+          stats,
+          patterns,
+          signatures: computeSectionSignatures(sectionNode, stats, patterns),
+        };
+      }).map((section) => {
+        const sectionType = classifySection(section, {
+          pageName: page.pageName,
+          family: getPageFamily(page.pageName),
+        });
+
+        return {
+          ...section,
+          sectionType,
+          variantTraits: deriveSectionTraits(sectionType, section.nodeSnapshot, section.stats),
+        };
+      });
+
+      for (const section of capturedPrimarySections) {
+        const sectionNode = section.nodeSnapshot;
         try {
           const screenshotBuffer = await browserPage
             .locator(`[data-audit-node-id="${sectionNode.auditNodeId}"]`)
@@ -2890,6 +3899,30 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
           primarySectionVisuals.set(sectionNode.auditNodeId, buildVisualSignature(screenshotBuffer));
         } catch {
           primarySectionVisuals.set(sectionNode.auditNodeId, null);
+        }
+      }
+
+      capturedPrimaryComponents = capturedPrimarySections.flatMap((section) =>
+        buildComponentCandidates(section.nodeSnapshot, {
+          auditId: section.auditId,
+          pageName: section.pageName,
+          route: section.route,
+          index: section.index,
+          sectionType: section.sectionType,
+        }),
+      );
+
+      for (const component of capturedPrimaryComponents) {
+        try {
+          const screenshotBuffer = await browserPage
+            .locator(`[data-audit-node-id="${component.auditNodeId}"]`)
+            .first()
+            .screenshot({
+              animations: "disabled",
+            });
+          primaryComponentVisuals.set(component.auditNodeId, buildVisualSignature(screenshotBuffer));
+        } catch {
+          primaryComponentVisuals.set(component.auditNodeId, null);
         }
       }
     }
@@ -2903,48 +3936,11 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
     });
   }
 
-  const primary = audit.viewports.find((entry) => entry.name === primaryViewport.name) || audit.viewports.at(-1);
-  let contentIndex = 0;
-  const sections = findTopLevelSections(primary.body).map((sectionNode, index) => {
-    const stats = summarizeNode(sectionNode);
-    const patterns = detectRepeatedPatterns(sectionNode);
-    const isContentSection =
-      !["header", "footer"].includes(sectionNode.tag) &&
-      !["header", "footer"].includes(sectionNode.topLevelTag);
-
-    if (isContentSection) {
-      contentIndex += 1;
-    }
-
-    return {
-      auditId: `${page.pageName}::section-${index + 1}`,
-      pageName: page.pageName,
-      route: page.route,
-      index: index + 1,
-      contentIndex: isContentSection ? contentIndex : 0,
-      path: sectionNode.path,
-      tag: sectionNode.tag,
-      topLevelTag: sectionNode.topLevelTag,
-      firstHeading: getFirstHeadingText(sectionNode),
-      rootClasses: sectionNode.classes,
-      rootDecisionStyle: cloneObject(sectionNode.decisionStyle),
-      structureFingerprint: buildStructureFingerprint(sectionNode),
-      looseFingerprint: buildLooseFingerprint(stats),
-      nodeSnapshot: sectionNode,
-      visualSignature: primarySectionVisuals.get(sectionNode.auditNodeId) || null,
-      stats,
-      patterns,
-      signatures: computeSectionSignatures(sectionNode, stats, patterns),
-    };
-  });
-
-  audit.primarySections = sections.map((section) => {
-    const sectionType = classifySection(section, audit);
+  audit.primarySections = capturedPrimarySections.map((section) => {
     const { nodeSnapshot, ...serializableSection } = section;
     return {
       ...serializableSection,
-      sectionType,
-      variantTraits: deriveSectionTraits(sectionType, nodeSnapshot, section.stats),
+      visualSignature: primarySectionVisuals.get(nodeSnapshot.auditNodeId) || null,
     };
   });
   audit.patterns = audit.primarySections.flatMap((section) =>
@@ -2958,6 +3954,13 @@ async function captureRenderedPage(page, browser, sourceSummary, runtimeBaseURL)
       ...pattern,
     })),
   );
+  audit.components = capturedPrimaryComponents.map((component) => {
+    const { nodeSnapshot, ...serializableComponent } = component;
+    return {
+      ...serializableComponent,
+      visualSignature: primaryComponentVisuals.get(component.auditNodeId) || null,
+    };
+  });
 
   return audit;
 }
@@ -2995,12 +3998,28 @@ async function main() {
 
     const globalClassInventory = buildClassInventory(pageAudits);
     const allSections = pageAudits.flatMap((page) => page.primarySections);
+    const allComponents = pageAudits.flatMap((page) => page.components || []);
     const sectionLookup = new Map(allSections.map((section) => [section.auditId, section]));
+    const componentLookup = new Map(allComponents.map((component) => [component.auditId, component]));
     const sectionPairScores = buildSectionPairScores(allSections);
+    const componentPairScores = buildComponentPairScores(allComponents);
     const detectorEvaluation = evaluateDetectors(sectionPairScores, sectionLookup);
+    const componentDetectorEvaluation = evaluateComponentDetectors(
+      componentPairScores,
+      componentLookup,
+    );
     const sectionClusters = buildSectionClusters(allSections, sectionPairScores, detectorEvaluation);
+    const componentClusters = buildComponentClusters(
+      allComponents,
+      componentPairScores,
+      componentDetectorEvaluation,
+    );
     const patternClusters = buildPatternClusters(pageAudits.flatMap((page) => page.patterns));
     const nearestNeighbors = buildNearestNeighbors(allSections, sectionPairScores);
+    const componentNearestNeighbors = buildComponentNearestNeighbors(
+      allComponents,
+      componentPairScores,
+    );
 
     const manifest = {
       generatedAt: new Date().toISOString(),
@@ -3025,8 +4044,20 @@ async function main() {
             samplePath: pattern.samplePath,
           })),
         })),
+        components: page.components.map((component) => ({
+          auditId: component.auditId,
+          sectionAuditId: component.sectionAuditId,
+          sectionIndex: component.sectionIndex,
+          sectionType: component.sectionType,
+          componentKind: component.componentKind,
+          label: component.label,
+          path: component.path,
+          source: component.source,
+          parentPath: component.parentPath,
+        })),
       })),
       sectionClusters,
+      componentClusters,
       patternClusters,
       detectorEvaluation: {
         datasetSize: detectorEvaluation.datasetSize,
@@ -3034,6 +4065,13 @@ async function main() {
         negatives: detectorEvaluation.negatives,
         detectors: detectorEvaluation.detectors,
         familyCoverage: detectorEvaluation.familyCoverage,
+      },
+      componentDetectorEvaluation: {
+        datasetSize: componentDetectorEvaluation.datasetSize,
+        positives: componentDetectorEvaluation.positives,
+        negatives: componentDetectorEvaluation.negatives,
+        detectors: componentDetectorEvaluation.detectors,
+        familyCoverage: componentDetectorEvaluation.familyCoverage,
       },
       globalClassInventory,
     };
@@ -3069,6 +4107,20 @@ async function main() {
         2,
       ),
     );
+    writeFileSync(
+      join(rawDir, "component-similarity.json"),
+      JSON.stringify(
+        {
+          generatedAt: manifest.generatedAt,
+          detectorWeights: componentSimilarityWeights,
+          detectorEvaluation: componentDetectorEvaluation,
+          nearestNeighbors: componentNearestNeighbors,
+          pairs: componentPairScores.rows,
+        },
+        null,
+        2,
+      ),
+    );
     writeFileSync(join(outputDir, "01-page-map.md"), renderPageMap(pageAudits));
     writeFileSync(join(outputDir, "02-section-matrix.md"), renderSectionMatrix(sectionClusters, pageAudits));
     writeFileSync(join(outputDir, "03-style-deltas.md"), renderStyleDeltas(sectionClusters, pageAudits, patternClusters));
@@ -3083,6 +4135,22 @@ async function main() {
     writeFileSync(
       join(outputDir, "07-section-neighbors.md"),
       renderNearestNeighbors(sectionLookup, nearestNeighbors),
+    );
+    writeFileSync(
+      join(outputDir, "09-component-matrix.md"),
+      renderComponentMatrix(componentClusters, componentLookup),
+    );
+    writeFileSync(
+      join(outputDir, "10-component-checklist.md"),
+      renderComponentChecklist(componentClusters, componentLookup),
+    );
+    writeFileSync(
+      join(outputDir, "11-component-detectors.md"),
+      renderComponentAnalysis(componentDetectorEvaluation),
+    );
+    writeFileSync(
+      join(outputDir, "12-component-neighbors.md"),
+      renderComponentNeighbors(componentLookup, componentNearestNeighbors),
     );
 
     console.log(`Audit complete. Reports written to ${relative(rootDir, outputDir)}`);

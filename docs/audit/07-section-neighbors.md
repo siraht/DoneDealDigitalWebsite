@@ -135,9 +135,9 @@
 
 ## `contact` section 3 (FormSection) - QUICK CONTACT
 
-- [ ] `cookie-policy` section 3 at `/cookie-policy` - 1. PRIVACY POLICY; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.72, visual 0.65.
-- [ ] `privacy` section 3 at `/privacy` - 1. PRIVACY POLICY; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.72, visual 0.65.
-- [ ] `terms` section 3 at `/terms` - 1. PRIVACY POLICY; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.72, visual 0.65.
+- [ ] `cookie-policy` section 3 at `/cookie-policy` - 1. PRIVACY POLICY; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.67, visual 0.65.
+- [ ] `privacy` section 3 at `/privacy` - 1. PRIVACY POLICY; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.67, visual 0.65.
+- [ ] `terms` section 3 at `/terms` - 1. PRIVACY POLICY; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.67, visual 0.65.
 - [ ] `web-design` section 6 at `/web-design` - THE DELIVERABLES; ensemble 0.41; signals: rootStyle 0.80, visual 0.79, subtreeStyle 0.56.
 
 ## `contact` section 4 (SiteFooter) - DONE DEAL DIGITAL
@@ -165,7 +165,7 @@
 
 - [ ] `privacy` section 3 at `/privacy` - 1. PRIVACY POLICY; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
 - [ ] `terms` section 3 at `/terms` - 1. PRIVACY POLICY; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `contact` section 3 at `/contact` - QUICK CONTACT; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.72, visual 0.65.
+- [ ] `contact` section 3 at `/contact` - QUICK CONTACT; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.67, visual 0.65.
 - [ ] `lead-generation` section 3 at `/lead-generation` - WHEN PAID ADS MAKE SENSE; ensemble 0.39; signals: rootStyle 0.70, visual 0.68, subtreeStyle 0.58.
 
 ## `cookie-policy` section 4 (SiteFooter) - DONE DEAL DIGITAL
@@ -494,7 +494,7 @@
 
 - [ ] `cookie-policy` section 3 at `/cookie-policy` - 1. PRIVACY POLICY; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
 - [ ] `terms` section 3 at `/terms` - 1. PRIVACY POLICY; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `contact` section 3 at `/contact` - QUICK CONTACT; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.72, visual 0.65.
+- [ ] `contact` section 3 at `/contact` - QUICK CONTACT; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.67, visual 0.65.
 - [ ] `lead-generation` section 3 at `/lead-generation` - WHEN PAID ADS MAKE SENSE; ensemble 0.39; signals: rootStyle 0.70, visual 0.68, subtreeStyle 0.58.
 
 ## `privacy` section 4 (SiteFooter) - DONE DEAL DIGITAL
@@ -522,7 +522,7 @@
 
 - [ ] `cookie-policy` section 3 at `/cookie-policy` - 1. PRIVACY POLICY; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
 - [ ] `privacy` section 3 at `/privacy` - 1. PRIVACY POLICY; ensemble 0.99; signals: classes 1.00, layout 1.00, patterns 1.00.
-- [ ] `contact` section 3 at `/contact` - QUICK CONTACT; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.72, visual 0.65.
+- [ ] `contact` section 3 at `/contact` - QUICK CONTACT; ensemble 0.41; signals: subtreeStyle 0.81, patterns 0.67, visual 0.65.
 - [ ] `lead-generation` section 3 at `/lead-generation` - WHEN PAID ADS MAKE SENSE; ensemble 0.39; signals: rootStyle 0.70, visual 0.68, subtreeStyle 0.58.
 
 ## `terms` section 4 (SiteFooter) - DONE DEAL DIGITAL

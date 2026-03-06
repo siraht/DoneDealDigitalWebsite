@@ -220,24 +220,24 @@
 
 ## repeatable-block
 
-- `width`: 165.328px | 184.203px | 304.656px | 307px | 544px
+- `width`: 165.328px | 184.203px | 288px | 304.656px | 307px | 544px
+- `height`: 132px | 24px | 58px | 60px | 63.1875px
 - `row-gap`: 12px | 16px | 32px | 8px | normal
 - `column-gap`: 12px | 16px | 32px | 8px | normal
-- `height`: 132px | 24px | 60px | 63.1875px
+- `background-color`: rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgba(11, 29, 51, 0.1) | rgba(255, 255, 255, 0.1)
+- `border-top-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1) | rgba(255, 255, 255, 0.2)
+- `border-right-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1) | rgba(255, 255, 255, 0.2)
+- `border-bottom-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1) | rgba(255, 255, 255, 0.2)
+- `border-left-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1) | rgba(255, 255, 255, 0.2)
 - `padding-top`: 0px | 16px | 32px
 - `padding-right`: 0px | 16px | 32px
 - `padding-bottom`: 0px | 16px | 32px
 - `padding-left`: 0px | 16px | 32px
-- `background-color`: rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgba(11, 29, 51, 0.1)
-- `border-top-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1)
-- `border-right-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1)
-- `border-bottom-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1)
-- `border-left-color`: rgb(11, 29, 51) | rgb(229, 231, 235) | rgba(11, 29, 51, 0.1)
-- `position`: relative | static
-- `top`: 0px | auto
-- `right`: 0px | auto
-- `bottom`: 0px | auto
-- `left`: 0px | auto
+- `color`: rgb(11, 29, 51) | rgb(255, 123, 0) | rgb(255, 255, 255)
+- `border-top-width`: 0px | 1px | 2px
+- `border-right-width`: 0px | 1px | 2px
+- `border-bottom-width`: 0px | 1px | 2px
+- `border-left-width`: 0px | 1px | 2px
 
 ## repeatable-block
 
