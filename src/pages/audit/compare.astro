@@ -1,0 +1,181 @@
+---
+import AuditPreviewCard from "../../components/audit/AuditPreviewCard.astro";
+import AuditShell from "../../components/audit/AuditShell.astro";
+import { getAuditViewerData } from "../../lib/audit-viewer";
+
+type FamilyInstance = ReturnType<typeof getAuditViewerData>["sectionFamilies"][number]["instances"][number];
+type FamilyCard = ReturnType<typeof getAuditViewerData>["sectionFamilies"][number];
+
+const audit = getAuditViewerData();
+
+function buildComparisonSet(family: FamilyCard) {
+  const variants = family.instances.filter((instance) => instance.auditId !== family.canonical.auditId);
+  const sortedBySimilarity = [...variants].sort((left, right) => {
+    const leftScore = typeof left.score === "number" ? left.score : -1;
+    const rightScore = typeof right.score === "number" ? right.score : -1;
+    if (rightScore !== leftScore) {
+      return rightScore - leftScore;
+    }
+
+    return left.pageName.localeCompare(right.pageName) || left.title.localeCompare(right.title);
+  });
+  const stitchPrecedent = variants.find((instance) => instance.pageName === "index_original");
+  const closest = sortedBySimilarity[0];
+  const edge = [...sortedBySimilarity].reverse()[0];
+  const midpoint = sortedBySimilarity[Math.max(0, Math.floor(sortedBySimilarity.length / 2) - 1)];
+  const picked = new Map<string, { instance: FamilyInstance; label: string }>();
+
+  for (const item of [
+    stitchPrecedent && { instance: stitchPrecedent, label: "Stitch precedent" },
+    closest && { instance: closest, label: "Closest retained match" },
+    midpoint && { instance: midpoint, label: "Middle variant" },
+    edge && { instance: edge, label: "Edge of family" },
+  ]) {
+    if (item && !picked.has(item.instance.auditId)) {
+      picked.set(item.instance.auditId, item);
+    }
+  }
+
+  return [...picked.values()];
+}
+
+const sectionBoards = audit.sectionFamilies.map((family) => ({
+  ...family,
+  comparisons: buildComparisonSet(family),
+}));
+
+const componentBoards = audit.componentFamilies.map((family) => ({
+  ...family,
+  comparisons: buildComparisonSet(family),
+}));
+---
+
+<AuditShell
+  currentMethod="compare"
+  kicker="Method 2 of 5"
+  methods={audit.methods}
+  stats={audit.stats}
+  title="Canonical Comparator"
+>
+  <section class="audit-hero">
+    <div class="audit-hero__panel">
+      <p class="audit-topbar__eyebrow">Compare second</p>
+      <h2 class="audit-hero__title">Pin one reference and make every variant argue its case.</h2>
+      <p class="audit-hero__copy">
+        The gallery answers whether a family feels related. This view answers how it varies. Each board locks one
+        canonical candidate on the left and then lines up the stitch precedent, the closest retained match, the middle
+        case, and the edge of the family on the right.
+      </p>
+      <ul class="audit-hero__list">
+        <li>Best for naming variant props and deciding what belongs in the base component.</li>
+        <li>Best for spotting whether a family split is semantic, structural, or mostly cosmetic.</li>
+        <li>Best for judging how far a family can stretch before it stops being one component.</li>
+      </ul>
+    </div>
+    <aside class="audit-note">
+      <strong>How to read a board</strong>
+      <p>
+        Start with the canonical card. Then inspect the right column in order. If the edge case still fits, keep one
+        family with variants. If it breaks, that board is a strong candidate for a family split.
+      </p>
+    </aside>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Section boards</p>
+        <h2 class="audit-section-header__title">Section family comparators</h2>
+      </div>
+      <p class="audit-note">Every section family is represented with one pinned canonical and ranked comparison set.</p>
+    </div>
+    <div class="audit-compare-list">
+      {sectionBoards.map((family, index) => (
+        <details class="audit-family" open={index < 3}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{family.displayName}</h3>
+              <p class="audit-family__summary-copy">
+                Canonical: {family.canonical.pageName} • {family.canonical.meta} • comparison cards:{" "}
+                {family.comparisons.length}
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{family.status}</span>
+              <span class="audit-family__count">{family.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-compare-board">
+            <div class="audit-compare-board__canonical">
+              <AuditPreviewCard
+                familyName={family.displayName}
+                instance={family.canonical}
+                label="Pinned canonical"
+                mode="section"
+              />
+            </div>
+            <div class="audit-compare-board__variants">
+              {family.comparisons.map((comparison) => (
+                <AuditPreviewCard
+                  familyName={family.displayName}
+                  instance={comparison.instance}
+                  label={comparison.label}
+                  mode="section"
+                />
+              ))}
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="audit-section">
+    <div class="audit-section-header">
+      <div>
+        <p class="audit-section-header__eyebrow">Component boards</p>
+        <h2 class="audit-section-header__title">Primitive family comparators</h2>
+      </div>
+      <p class="audit-note">Every component family uses the same pinned-reference comparison model.</p>
+    </div>
+    <div class="audit-compare-list">
+      {componentBoards.map((family, index) => (
+        <details class="audit-family" open={index < 2}>
+          <summary class="audit-family__summary">
+            <div>
+              <h3 class="audit-family__title">{family.displayName}</h3>
+              <p class="audit-family__summary-copy">
+                Canonical: {family.canonical.pageName} • {family.canonical.meta} • comparison cards:{" "}
+                {family.comparisons.length}
+              </p>
+            </div>
+            <div class="audit-family__summary-side">
+              <span class="audit-family__status">{family.status}</span>
+              <span class="audit-family__count">{family.totalCount} mapped instances</span>
+            </div>
+          </summary>
+          <div class="audit-compare-board">
+            <div class="audit-compare-board__canonical">
+              <AuditPreviewCard
+                familyName={family.displayName}
+                instance={family.canonical}
+                label="Pinned canonical"
+                mode="component"
+              />
+            </div>
+            <div class="audit-compare-board__variants">
+              {family.comparisons.map((comparison) => (
+                <AuditPreviewCard
+                  familyName={family.displayName}
+                  instance={comparison.instance}
+                  label={comparison.label}
+                  mode="component"
+                />
+              ))}
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</AuditShell>

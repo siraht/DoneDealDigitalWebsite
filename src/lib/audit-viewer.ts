@@ -297,7 +297,7 @@ export function getVisualMethods(): ViewerMethod[] {
       id: "compare",
       route: "/audit/compare",
       name: "Canonical Comparator",
-      status: "Planned",
+      status: "Live",
       summary: "Pin a canonical instance beside its strongest and weakest matches so consolidation decisions are made against an explicit reference.",
     },
     {

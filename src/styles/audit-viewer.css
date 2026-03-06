@@ -374,6 +374,30 @@ body.audit-shell {
   padding: 0 1.1rem 1.1rem;
 }
 
+.audit-compare-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.audit-compare-board {
+  display: grid;
+  grid-template-columns: minmax(18rem, 1fr) minmax(0, 1.7fr);
+  gap: 1rem;
+  padding: 0 1.1rem 1.1rem;
+}
+
+.audit-compare-board__canonical {
+  position: sticky;
+  top: 14rem;
+  align-self: start;
+}
+
+.audit-compare-board__variants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
 .audit-preview-card {
   display: grid;
   gap: 0.85rem;
@@ -459,6 +483,14 @@ body.audit-shell {
   .audit-family__summary {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .audit-compare-board {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-compare-board__canonical {
+    position: static;
   }
 
   .audit-statbar,
