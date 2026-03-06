@@ -11,12 +11,14 @@ import { basename, join, relative } from "node:path";
 import net from "node:net";
 import { chromium } from "playwright";
 import { PNG } from "pngjs";
+import { buildPropertySystemAnalysis } from "./audit-style-system.mjs";
 
 const rootDir = process.cwd();
 const pagesDir = join(rootDir, "src/pages");
 const outputDir = join(rootDir, "docs/audit");
 const rawDir = join(outputDir, "raw");
 const rawPagesDir = join(rawDir, "pages");
+const tokensFilePath = join(rootDir, "src/styles/tokens.css");
 const defaultPort = Number(process.env.AUDIT_PORT || 4322);
 const defaultViewportSpec = process.env.AUDIT_VIEWPORTS || "360x2400,1280x2600";
 const primaryViewportName = process.env.AUDIT_PRIMARY_VIEWPORT || "desktop";
@@ -4861,6 +4863,14 @@ async function main() {
       },
       globalClassInventory,
     };
+    const propertySystem = buildPropertySystemAnalysis({
+      generatedAt: manifest.generatedAt,
+      pageAudits,
+      sectionClusters,
+      componentClusters,
+      primaryViewportName: primaryViewport.name,
+      tokensFilePath,
+    });
 
     writeFileSync(join(rawDir, "manifest.json"), JSON.stringify(manifest, null, 2));
     writeFileSync(
@@ -4939,6 +4949,30 @@ async function main() {
         2,
       ),
     );
+    writeFileSync(
+      join(rawDir, "property-ledger.json"),
+      JSON.stringify(propertySystem.propertyLedger, null, 2),
+    );
+    writeFileSync(
+      join(rawDir, "property-atlas.json"),
+      JSON.stringify(propertySystem.propertyAtlas, null, 2),
+    );
+    writeFileSync(
+      join(rawDir, "value-graph.json"),
+      JSON.stringify(propertySystem.valueGraph, null, 2),
+    );
+    writeFileSync(
+      join(rawDir, "token-coverage.json"),
+      JSON.stringify(propertySystem.tokenCoverage, null, 2),
+    );
+    writeFileSync(
+      join(rawDir, "family-style-deltas.json"),
+      JSON.stringify(propertySystem.familyStyleDeltas, null, 2),
+    );
+    writeFileSync(
+      join(rawDir, "token-decision-queue.json"),
+      JSON.stringify(propertySystem.decisionQueue, null, 2),
+    );
     writeFileSync(join(outputDir, "01-page-map.md"), renderPageMap(pageAudits));
     writeFileSync(join(outputDir, "02-section-matrix.md"), renderSectionMatrix(sectionClusters, pageAudits));
     writeFileSync(join(outputDir, "03-style-deltas.md"), renderStyleDeltas(sectionClusters, pageAudits, patternClusters));
@@ -4986,6 +5020,17 @@ async function main() {
       join(outputDir, "17-home-conversion-blueprint.md"),
       renderHomeConversionBlueprint(sectionClusters, componentClusters, sectionLookup, componentLookup),
     );
+    writeFileSync(join(outputDir, "19-property-atlas.md"), propertySystem.reports.propertyAtlas);
+    writeFileSync(join(outputDir, "20-token-coverage.md"), propertySystem.reports.tokenCoverage);
+    writeFileSync(
+      join(outputDir, "21-family-property-deltas.md"),
+      propertySystem.reports.familyStyleDeltas,
+    );
+    writeFileSync(
+      join(outputDir, "22-token-decision-queue.md"),
+      propertySystem.reports.decisionQueue,
+    );
+    writeFileSync(join(outputDir, "23-token-methods.md"), propertySystem.reports.methods);
 
     console.log(`Audit complete. Reports written to ${relative(rootDir, outputDir)}`);
   } finally {
