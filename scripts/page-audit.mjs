@@ -3960,6 +3960,117 @@ function renderComponentStyleArchetypes(components) {
   return `${lines.join("\n")}\n`;
 }
 
+function getTopSignatureKeys(signatureMap, limit = 8) {
+  return Object.entries(signatureMap || {})
+    .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+    .slice(0, limit)
+    .map(([key]) => key);
+}
+
+function renderHomeConversionBlueprint(sectionClusters, componentClusters, sectionLookup, componentLookup) {
+  const lines = [
+    "# Home Conversion Blueprint",
+    "",
+    "This report compares the original stitch homepage against the converted homepage and treats that pair as the migration precedent for the remaining stitch pages.",
+    "",
+  ];
+
+  const pairedHomeSections = sectionClusters
+    .map((cluster) => {
+      const sections = cluster.items.map((item) => sectionLookup.get(item.auditId)).filter(Boolean);
+      const target = sections.find((section) => section.pageName === "index") || null;
+      const source = sections.find((section) => section.pageName === "index_original") || null;
+
+      return target && source ? { cluster, target, source } : null;
+    })
+    .filter(Boolean);
+
+  for (const pair of pairedHomeSections) {
+    const styleDeltas = getStyleDeltaSummary([pair.source, pair.target], (item) => item.rootDecisionStyle);
+    const sourceUtilityFamilies = getTopSignatureKeys(pair.source.signatures.utilityFamilies);
+    const targetCustomClasses = getTopSignatureKeys(pair.target.signatures.customClasses);
+    const targetUtilityFamilies = getTopSignatureKeys(pair.target.signatures.utilityFamilies);
+    const relatedComponentFamilies = componentClusters
+      .map((cluster) => {
+        const items = cluster.items.map((item) => componentLookup.get(item.auditId)).filter(Boolean);
+        const sourceItems = items.filter(
+          (component) =>
+            component.pageName === "index_original" && component.sectionAuditId === pair.source.auditId,
+        );
+        const targetItems = items.filter(
+          (component) => component.pageName === "index" && component.sectionAuditId === pair.target.auditId,
+        );
+
+        return sourceItems.length > 0 && targetItems.length > 0
+          ? {
+              displayName: cluster.displayName,
+              sourceCount: sourceItems.length,
+              targetCount: targetItems.length,
+            }
+          : null;
+      })
+      .filter(Boolean)
+      .sort(
+        (left, right) =>
+          right.targetCount + right.sourceCount - (left.targetCount + left.sourceCount) ||
+          left.displayName.localeCompare(right.displayName),
+      );
+
+    lines.push(`## ${pair.cluster.displayName}`);
+    lines.push("");
+    lines.push(
+      `- Source stitch precedent: \`index_original\` section ${pair.source.index}${pair.source.firstHeading ? ` (${pair.source.firstHeading})` : ""}.`,
+    );
+    lines.push(
+      `- Converted target: \`index\` section ${pair.target.index}${pair.target.firstHeading ? ` (${pair.target.firstHeading})` : ""}.`,
+    );
+    if (sourceUtilityFamilies.length > 0) {
+      lines.push(`- Source utility families to replace: ${sourceUtilityFamilies.join(", ")}.`);
+    }
+    if (targetCustomClasses.length > 0) {
+      lines.push(`- Target custom class namespace already exists: ${targetCustomClasses.join(", ")}.`);
+    }
+    if (targetUtilityFamilies.length > 0) {
+      lines.push(`- Target still relies on these utility families: ${targetUtilityFamilies.join(", ")}.`);
+    }
+    if (styleDeltas.length > 0) {
+      lines.push(
+        `- Root style deltas between source and target: ${styleDeltas
+          .slice(0, 6)
+          .map((delta) => `\`${delta.property}\` (${delta.values.join(" vs ")})`)
+          .join(", ")}.`,
+      );
+    }
+    if (relatedComponentFamilies.length > 0) {
+      lines.push(
+        `- Child primitives already preserved through conversion: ${relatedComponentFamilies
+          .map(
+            (componentFamily) =>
+              `\`${componentFamily.displayName}\` source x${componentFamily.sourceCount} -> target x${componentFamily.targetCount}`,
+          )
+          .join(", ")}.`,
+      );
+    }
+
+    if (targetCustomClasses.length > 0 && sourceUtilityFamilies.length > targetUtilityFamilies.length) {
+      lines.push(
+        "- Suggested migration rule: replace stitch utilities with the existing target component namespace and keep the tokenized styles as the contract.",
+      );
+    } else if (relatedComponentFamilies.length >= 3) {
+      lines.push(
+        "- Suggested migration rule: extract the section wrapper and its child primitives together, because the component boundaries already survive the conversion.",
+      );
+    } else {
+      lines.push(
+        "- Suggested migration rule: keep the section boundary intact first, then normalize internal utility usage after the outer wrapper is moved to the target pattern.",
+      );
+    }
+    lines.push("");
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
 function renderComponentMatrix(componentClusters, componentLookup) {
   const lines = ["# Component Matrix", ""];
 
@@ -4678,6 +4789,10 @@ async function main() {
     writeFileSync(
       join(outputDir, "16-style-archetypes.md"),
       renderComponentStyleArchetypes(allComponents),
+    );
+    writeFileSync(
+      join(outputDir, "17-home-conversion-blueprint.md"),
+      renderHomeConversionBlueprint(sectionClusters, componentClusters, sectionLookup, componentLookup),
     );
 
     console.log(`Audit complete. Reports written to ${relative(rootDir, outputDir)}`);

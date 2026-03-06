@@ -19,6 +19,7 @@
 - Context-aware clustering is the main reason the component matrix is now usable.
 - Canonical alignment is now explicit, so it is clear which families already have an `index` or `index_original` precedent and which ones need a fresh definition.
 - Style archetype clustering now gives a cross-family view of repeated visual primitives like footer links, nav pills, CTA buttons, elevated cards, and bordered info rows.
+- The `index_original` to `index` conversion blueprint is now explicit, so homepage families can be used as a repeatable migration precedent instead of just a visual reference.
 
 ## What Is Weak
 
@@ -33,10 +34,6 @@
 - `Content-section role alignment`
   Goal: split broad `ContentSection` families into clearer internal roles such as media column, heading block, stat card rail, and explanatory copy stack.
   Why: this is the main remaining source of over-broad section clustering.
-
-- `Conversion blueprint extraction`
-  Goal: compare `index_original` and `index` family by family to document exactly how stitch markup was normalized into tokens, BEM, and reusable components.
-  Why: this would turn the existing precedent into a direct migration playbook for the remaining stitch pages.
 
 - `Cluster-specific style baselines`
   Goal: emit one canonical style baseline per section/component family instead of only delta summaries.
@@ -64,5 +61,5 @@
 2. Keep the new child-component audit tier.
 3. Use canonical alignment and component style deltas to start real consolidation work.
 4. Refine broad `ContentSection` families next.
-5. Extract an explicit `index_original` to `index` conversion blueprint.
+5. Use the explicit `index_original` to `index` conversion blueprint when converting the remaining stitch families.
 6. Only then test stronger visual embeddings if the remaining misses are still mostly visual.
