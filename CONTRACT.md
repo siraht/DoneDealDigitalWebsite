@@ -146,15 +146,19 @@ Required prompt skeleton:
 6. Optional deployment command:
    - `bunx netlify-cli deploy --dir=dist --prod` (once site link is established)
 
-## CI/CD for push-based Netlify deploys
-1. Netlify is updated on every push to `main` and `master` via [`/.github/workflows/netlify-deploy.yml`](/home/travis/Projects/Done%20Deal%20Digital/Website/.github/workflows/netlify-deploy.yml).
-2. The workflow requires either:
-   - `NETLIFY_BUILD_HOOK_URL` (preferred)
-   - Or both `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID`
-3. The same Bun command flow is used in CI:
+## CI/CD for this repo
+1. Netlify is the deploy engine and is connected directly to this GitHub repository.
+2. Netlify deploy behavior:
+   - Production deploy on push to `main`/`master`
+   - Branch/PR preview deploys as configured in Netlify settings
+   - Netlify executes the build command from [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml).
+3. GitHub Actions remains a validation gate only:
+   - [`/.github/workflows/ci.yml`](/home/travis/Projects/Done%20Deal%20Digital/Website/.github/workflows/ci.yml)
    - `bun install --frozen-lockfile`
    - `bun run build`
-4. Netlify will run the repo-defined `bun run build` command as configured in [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml).
+4. Keep Netlify project environment variables in Netlify UI:
+   - `NODE_VERSION` / `BUN_VERSION` (as needed)
+   - `SITE_URL` (for canonical links)
 
 ## Repo structure required for this workflow
 - src/styles/tokens.css

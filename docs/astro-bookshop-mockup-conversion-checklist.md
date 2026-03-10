@@ -161,9 +161,9 @@ Use this checklist to track the single-page conversion from static mockup to liv
 
 - [x] Netlify + Bun deploy pipeline
   - [x] Netlify build command in [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml) is `bun run build`
-  - [x] GitHub Actions deploy workflow exists at [`/.github/workflows/netlify-deploy.yml`](/home/travis/Projects/Done%20Deal%20Digital/Website/.github/workflows/netlify-deploy.yml)
-  - [x] CI deploy path uses Bun install/build commands before publish
-  - [ ] Configure repository secrets and confirm first production push triggers deploy
+  - [x] GitHub Actions is validation-only at [`/.github/workflows/ci.yml`](/home/travis/Projects/Done%20Deal%20Digital/Website/.github/workflows/ci.yml)
+  - [x] Netlify handles production and branch/preview deploys directly from GitHub push/branch events
+  - [x] Deploy path does not require repo secrets for static deploy gating
 
 ## Phase 2 — Convert to Bookshop (editable component system)
 
