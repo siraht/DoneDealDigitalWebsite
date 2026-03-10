@@ -811,6 +811,22 @@ button {
     gap: var(--space-14);
     padding-inline: var(--container-padding-wide);
   }
+
+  .site-footer__brand {
+    grid-column: 1;
+  }
+
+  .site-footer__col--services {
+    grid-column: 3;
+  }
+
+  .site-footer__col--company {
+    grid-column: 4;
+  }
+
+  .site-footer__col--legal {
+    grid-column: 5;
+  }
 }
 
 .site-footer__brand {
