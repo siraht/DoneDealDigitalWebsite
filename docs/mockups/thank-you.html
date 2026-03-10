@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thank You | Done Deal Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@400;500;700&amp;family=Work+Sans:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF7B00", // Construction Orange
+                        "navy": "#0B1D33",
+                        "concrete": "#E2E8F0",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0B1D33",
+                        "grid-gray": "rgba(255, 255, 255, 0.05)"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "bebas": ["Bebas Neue", "cursive"],
+                        "dmsans": ["DM Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "none": "0",
+                        "DEFAULT": "0",
+                        "lg": "0",
+                        "xl": "0",
+                        "full": "9999px"
+                    },
+                    borderWidth: {
+                        "2": "2px",
+                        "3": "3px",
+                        "4": "4px"
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .graph-paper {
+                background-size: 40px 40px;
+                background-image: 
+                    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            }
+            .block-shadow {
+                box-shadow: 6px 6px 0px 0px rgba(11, 29, 51, 1);
+            }
+            .block-shadow-orange {
+                box-shadow: 6px 6px 0px 0px #FF7B00;
+            }
+            .diagonal-stripes {
+                background-image: repeating-linear-gradient(45deg, rgba(255, 123, 0, 0.1) 0, rgba(255, 123, 0, 0.1) 10px, transparent 10px, transparent 20px);
+            }
+        }
+        .bebas-heavy {
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body class="bg-background-light font-dmsans text-navy">
+<header class="sticky top-0 z-50 bg-white border-b-2 border-navy">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2 px-6 py-5 border-r-2 border-navy">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+<h1 class="font-bebas bebas-heavy text-3xl tracking-wide text-navy">DONE DEAL DIGITAL</h1>
+</div>
+<nav class="hidden md:flex items-center h-full self-stretch">
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Services</a>
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Portfolio</a>
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r border-navy/20" href="#">Reviews</a>
+<a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="px-6">
+<button class="bg-primary hover:bg-orange-600 text-white px-8 py-3 font-bold text-sm uppercase tracking-widest transition-all border-2 border-navy block-shadow">
+                Back to Site
+            </button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative bg-navy overflow-hidden border-b-2 border-navy py-20 lg:py-32">
+<div class="absolute inset-0 graph-paper opacity-40"></div>
+<div class="absolute top-0 right-0 w-64 h-full diagonal-stripes opacity-20 pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+<h1 class="font-bebas bebas-heavy text-6xl md:text-8xl text-white leading-[0.85] uppercase mb-12">
+                WE GOT IT. <br/> <span class="text-primary">HERE'S WHAT HAPPENS NEXT.</span>
+</h1>
+<div class="bg-white border-2 border-navy p-10 md:p-16 block-shadow-orange mx-auto max-w-2xl text-left">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">check_circle</span>
+<h2 class="font-bebas bebas-heavy text-3xl text-navy uppercase">Form Submitted Successfully</h2>
+</div>
+<p class="text-navy text-lg md:text-xl leading-relaxed font-medium mb-10">
+                    Thanks for reaching out. We’ll review your info and get back to you within 1 business day — usually sooner. If you need something right away, call us.
+                </p>
+<a class="inline-flex items-center justify-center gap-4 bg-primary hover:bg-orange-600 text-white px-10 py-6 font-bold text-xl md:text-2xl uppercase tracking-widest transition-all border-2 border-navy block-shadow w-full" href="tel:5551234567">
+<span class="material-symbols-outlined">phone_in_talk</span>
+                    CALL US: (555) 123-4567
+                </a>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white border-2 border-navy p-8 block-shadow relative group">
+<div class="absolute -top-6 left-8 bg-navy text-primary w-12 h-12 flex items-center justify-center font-bebas text-2xl border-2 border-navy">1</div>
+<h3 class="font-bebas bebas-heavy text-3xl mb-4 mt-4 uppercase">REVIEW</h3>
+<p class="text-slate-600 leading-relaxed font-medium">
+                        We look at your current site, your local competitors, and your growth goals to see exactly where we can add value.
+                    </p>
+</div>
+<div class="bg-white border-2 border-navy p-8 block-shadow relative group">
+<div class="absolute -top-6 left-8 bg-navy text-primary w-12 h-12 flex items-center justify-center font-bebas text-2xl border-2 border-navy">2</div>
+<h3 class="font-bebas bebas-heavy text-3xl mb-4 mt-4 uppercase">DISCOVERY CALL</h3>
+<p class="text-slate-600 leading-relaxed font-medium">
+                        A brief, 15-minute chat to discuss your needs and make sure we're a good fit for your specific trade and location.
+                    </p>
+</div>
+<div class="bg-white border-2 border-navy p-8 block-shadow relative group">
+<div class="absolute -top-6 left-8 bg-navy text-primary w-12 h-12 flex items-center justify-center font-bebas text-2xl border-2 border-navy">3</div>
+<h3 class="font-bebas bebas-heavy text-3xl mb-4 mt-4 uppercase">ACTION PLAN</h3>
+<p class="text-slate-600 leading-relaxed font-medium">
+                        We provide a straight-talk quote and a clear roadmap of how we'll get your crew booked solid with high-intent leads.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-navy py-16">
+<div class="max-w-7xl mx-auto px-6 lg:px-20 grid md:grid-cols-4 gap-12">
+<div class="col-span-2">
+<div class="flex items-center gap-3 mb-8 border-l-4 border-primary pl-6">
+<h2 class="font-bebas bebas-heavy text-4xl tracking-wide text-white">DONE DEAL DIGITAL</h2>
+</div>
+<p class="text-concrete/60 max-w-sm text-lg leading-relaxed">
+                The #1 choice for tradesmen who want a digital partner that understands the grit and grind of the service industry.
+            </p>
+</div>
+<div>
+<h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Services</h4>
+<ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
+<li><a class="hover:text-white transition-colors" href="#">Web Design</a></li>
+<li><a class="hover:text-white transition-colors" href="#">SEO for Trades</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Lead Generation</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Logo Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Legal</h4>
+<ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 lg:px-20 mt-16 pt-12 border-t-2 border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-concrete/30 font-bold text-xs tracking-widest uppercase">
+            © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
+        </div>
+<div class="text-primary font-bebas text-xl tracking-widest">
+            BUILT FOR THE BOLD.
+        </div>
+</div>
+</footer>
+
+</body></html>
