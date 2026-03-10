@@ -131,6 +131,21 @@ Required prompt skeleton:
 - Commit naming convention for baseline refresh:
   - `qa: refresh visual baseline (<source>)`
 
+## Netlify deployment setup
+1. This site is configured as a static Netlify output.
+2. Required Netlify config exists in [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml).
+3. Netlify defaults:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+4. Headers and fallback handling are defined in `netlify.toml`.
+5. Project creation workflow:
+   - Install/run Netlify CLI (`npm i -D netlify-cli` or `npx netlify-cli`)
+   - Run `netlify init` in the repo root and attach to a new Netlify site
+   - Point production branch and deploy settings to this repo
+   - Set optional environment variable `SITE_URL` (for canonical links)
+6. Optional deployment command:
+   - `npx netlify deploy --dir=dist --prod` (once site link is established)
+
 ## Repo structure required for this workflow
 - src/styles/tokens.css
 - src/styles/global.css
