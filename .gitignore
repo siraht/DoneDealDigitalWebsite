@@ -7,3 +7,6 @@ qa/visual/compare/
 qa/visual/full-diff/
 qa/visual/full-cropdiff/
 qa-snapshots/
+
+# Local Netlify folder
+.netlify
