@@ -78,7 +78,7 @@ button {
 .site-header__inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 .site-header__brand {
@@ -113,14 +113,16 @@ button {
 @container site-header (min-width: 48rem) {
   .site-header__nav {
     display: flex;
+    align-items: stretch;
   }
 }
 
 .site-header__nav-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding-inline: var(--space-8);
-  padding-block: 0;
+  height: 100%;
+  box-sizing: border-box;
   text-transform: uppercase;
   text-wrap: nowrap;
   font-weight: 700;
