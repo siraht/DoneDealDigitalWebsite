@@ -1,13 +1,12 @@
 ---
-import SiteHeader from "../components/SiteHeader.astro";
-import SiteFooter from "../components/SiteFooter.astro";
+import SharedPageLayout from "../components/SharedPageLayout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en"><head>
+<SharedPageLayout title="FAQ | Straight Answers | Done Deal Digital" bodyClass="bg-concrete font-dmsans text-navy">
+    <Fragment slot="head">
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>FAQ | Straight Answers | Done Deal Digital</title>
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@400;500;700&amp;family=Work+Sans:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -75,9 +74,8 @@ import SiteFooter from "../components/SiteFooter.astro";
             transform: rotate(45deg);
         }
     </style>
-</head>
-<body class="bg-concrete font-dmsans text-navy">
-<SiteHeader />
+</Fragment>
+
 <section class="relative bg-navy overflow-hidden border-b-2 border-navy">
 <div class="absolute inset-0 graph-paper opacity-40"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-20 py-24 relative z-10">
@@ -247,6 +245,5 @@ import SiteFooter from "../components/SiteFooter.astro";
 </div>
 </div>
 </section>
-<SiteFooter />
 
-</body></html>
+</SharedPageLayout>

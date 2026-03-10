@@ -1,23 +1,21 @@
 ---
 import "../styles/global.css";
 
-import SiteHeader from "../components/SiteHeader.astro";
-import SiteFooter from "../components/SiteFooter.astro";
+import SharedPageLayout from "../components/SharedPageLayout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<SharedPageLayout title="Done Deal Digital | Websites for the Trades" bodyClass="page">
+    <Fragment slot="head">
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Done Deal Digital | Websites for the Trades</title>
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body id="page-home" class="page">
-    <SiteHeader />
+  
+    </Fragment>
+
 
     <section id="hero" class="hero">
       <div class="hero__bg u-graph-paper"></div>
@@ -216,7 +214,4 @@ import SiteFooter from "../components/SiteFooter.astro";
         </div>
       </div>
     </section>
-
-    <SiteFooter />
-  </body>
-</html>
+</SharedPageLayout>

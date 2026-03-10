@@ -1,0 +1,29 @@
+---
+import SiteHeader from "./SiteHeader.astro";
+import SiteFooter from "./SiteFooter.astro";
+
+interface Props {
+  title: string;
+  bodyClass?: string;
+  lang?: string;
+}
+
+const {
+  title,
+  bodyClass = "",
+  lang = "en",
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <title>{title}</title>
+    <slot name="head" />
+  </head>
+  <body class={bodyClass}>
+    <SiteHeader />
+    <slot />
+    <SiteFooter />
+  </body>
+</html>
