@@ -71,9 +71,9 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [x] Confirm no ad-hoc inline/component-local token bypasses
 
 - [x] Verify Astro conversion works
-  - [x] `npm run dev` runs and updates via live reload
-  - [x] `npm run build` succeeds
-  - [x] `npm run preview` serves a matching production build
+  - [x] `bun run dev` runs and updates via live reload
+  - [x] `bun run build` succeeds
+  - [x] `bun run preview` serves a matching production build
   - [x] Browser parity checks completed
     - [x] 320px mobile view
     - [x] 768px tablet view
@@ -159,6 +159,12 @@ Use this checklist to track the single-page conversion from static mockup to liv
     - [x] Ignored ephemeral outputs: `qa/visual/current`, `qa/visual/diff`, `qa/visual/full-diff`, `qa/visual/full-cropdiff`, `qa/visual/compare`, `qa-snapshots`
     - [x] Runbook and commit convention documented in `docs/qa-visual-regression-policy.md`
 
+- [x] Netlify + Bun deploy pipeline
+  - [x] Netlify build command in [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml) is `bun run build`
+  - [x] GitHub Actions deploy workflow exists at [`/.github/workflows/netlify-deploy.yml`](/home/travis/Projects/Done%20Deal%20Digital/Website/.github/workflows/netlify-deploy.yml)
+  - [x] CI deploy path uses Bun install/build commands before publish
+  - [ ] Configure repository secrets and confirm first production push triggers deploy
+
 ## Phase 2 — Convert to Bookshop (editable component system)
 
 - [ ] Install/configure Bookshop
@@ -195,7 +201,7 @@ Use this checklist to track the single-page conversion from static mockup to liv
   - [ ] Remove duplicate one-off styles unless promoted to shared design tokens/components
 
 - [ ] Bookshop quality gates
-  - [ ] `npm run build` passes with Bookshop pipeline
+  - [ ] `bun run build` passes with Bookshop pipeline
   - [ ] A11y check completed (focus flow, contrast, semantics)
   - [ ] Re-run generation after each `.bookshop.yml` change
   - [ ] Do not hand-edit generated output files

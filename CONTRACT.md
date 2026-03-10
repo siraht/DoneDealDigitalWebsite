@@ -17,7 +17,7 @@ This repository uses **Astro + CloudCannon Bookshop** to implement the mockup in
 
 ## Core stack setup (non-negotiable)
 1. Node runtime must be Astro-supported (`>=18.20.8`, `20.3.0`, or `>=22.0.0`).
-2. Local dependency install only.
+2. Package manager is Bun (`bun`): use `bun install` and `bun run <script>` for all local workflows.
 3. Scripts in `package.json`:
    - `dev`: `astro dev`
    - `build`: `astro build`
@@ -80,13 +80,13 @@ Required prompt skeleton:
 4. Keep server-only behavior out of live-edit paths.
 
 ## Quality gates
-1. `npm run build` passes.
+1. `bun run build` passes.
 2. A11y check for focus states, semantic structure, contrast.
 3. Run screenshot/visual regression checks where practical.
-   - `npm run qa:visual` for baseline capture review
-   - `npm run qa:visual:baseline` after approved design intent changes
-   - `npm run qa:visual:diff` before milestone merges
-   - `npm run qa:visual:drift` for section-level strict threshold checks
+   - `bun run qa:visual` for baseline capture review
+   - `bun run qa:visual:baseline` after approved design intent changes
+   - `bun run qa:visual:diff` before milestone merges
+   - `bun run qa:visual:drift` for section-level strict threshold checks
 4. Re-run Bookshop generation after any `.bookshop.yml` change.
 5. Do not hand-edit generated files.
 6. Responsive regression gate:
@@ -107,10 +107,10 @@ Required prompt skeleton:
    - `qa/visual/full-cropdiff/`
    - `qa/visual/compare/`
  - Capture commands and targets:
-   - `npm run qa:visual:baseline` saves to `qa/visual/baseline`
+   - `bun run qa:visual:baseline` saves to `qa/visual/baseline`
    - `QA_BASELINE_DIR=qa/visual/baseline-static` before your first approved static baseline capture
-   - `npm run qa:visual:diff` compares current captures to the chosen baseline directory
-   - `npm run qa:visual:drift` runs section-level strict checks for regression risk before merge
+   - `bun run qa:visual:diff` compares current captures to the chosen baseline directory
+   - `bun run qa:visual:drift` runs section-level strict checks for regression risk before merge
 
 ### QA artifact workflow (required)
 - Baseline updates must be reviewed in one commit containing only visual-tracking changes.
@@ -135,16 +135,26 @@ Required prompt skeleton:
 1. This site is configured as a static Netlify output.
 2. Required Netlify config exists in [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml).
 3. Netlify defaults:
-   - Build command: `npm run build`
+   - Build command: `bun run build`
    - Publish directory: `dist`
 4. Headers and fallback handling are defined in `netlify.toml`.
 5. Project creation workflow:
-   - Install/run Netlify CLI (`npm i -D netlify-cli` or `npx netlify-cli`)
+   - Install/run Netlify CLI (`bun i -D netlify-cli` or `bunx netlify-cli`)
    - Run `netlify init` in the repo root and attach to a new Netlify site
    - Point production branch and deploy settings to this repo
    - Set optional environment variable `SITE_URL` (for canonical links)
 6. Optional deployment command:
-   - `npx netlify deploy --dir=dist --prod` (once site link is established)
+   - `bunx netlify-cli deploy --dir=dist --prod` (once site link is established)
+
+## CI/CD for push-based Netlify deploys
+1. Netlify is updated on every push to `main` and `master` via [`/.github/workflows/netlify-deploy.yml`](/home/travis/Projects/Done%20Deal%20Digital/Website/.github/workflows/netlify-deploy.yml).
+2. The workflow requires either:
+   - `NETLIFY_BUILD_HOOK_URL` (preferred)
+   - Or both `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID`
+3. The same Bun command flow is used in CI:
+   - `bun install --frozen-lockfile`
+   - `bun run build`
+4. Netlify will run the repo-defined `bun run build` command as configured in [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml).
 
 ## Repo structure required for this workflow
 - src/styles/tokens.css
