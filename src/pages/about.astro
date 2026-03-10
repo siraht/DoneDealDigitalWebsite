@@ -1,3 +1,8 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"/>
@@ -69,24 +74,7 @@
     </style>
 </head>
 <body class="bg-background-light font-dmsans text-navy">
-<header class="sticky top-0 z-50 bg-white border-b-2 border-navy">
-<div class="max-w-[1440px] mx-auto flex items-center justify-between">
-<div class="flex items-center gap-2 px-6 py-5 border-r-2 border-navy">
-<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
-<h1 class="font-bebas bebas-heavy text-3xl tracking-wide text-navy">DONE DEAL DIGITAL</h1>
-</div>
-<nav class="hidden md:flex items-center h-full self-stretch">
-          <a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r-2 border-navy" href="/#services">Services</a>
-          <a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r-2 border-navy" href="/about">About</a>
-          <a class="px-8 h-full flex items-center text-sm font-bold uppercase tracking-widest hover:bg-navy hover:text-white transition-colors border-r-2 border-navy" href="/contact">Contact</a>
-        </nav>
-<div class="px-6">
-<button class="bg-primary hover:bg-orange-600 text-white px-8 py-3 font-bold text-sm uppercase tracking-widest transition-all border-2 border-navy block-shadow">
-                    Get a Free Quote
-                </button>
-</div>
-</div>
-</header>
+<SiteHeader />
 <section class="relative bg-navy overflow-hidden border-b-2 border-navy">
 <div class="absolute inset-0 graph-paper opacity-40"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-20 py-32 relative z-10 text-center">
@@ -267,54 +255,6 @@
 </div>
 </div>
 </section>
-<footer class="bg-navy py-16 border-t-2 border-navy">
-  <div class="max-w-7xl mx-auto px-6 lg:px-20 grid md:grid-cols-5 gap-8">
-    <div>
-      <div class="flex items-center gap-3 mb-8 border-l-4 border-primary pl-6">
-        <h2 class="font-bebas bebas-heavy text-4xl tracking-wide text-white">DONE DEAL DIGITAL</h2>
-      </div>
-      <p class="text-concrete/60 max-w-sm text-lg leading-relaxed">
-        The #1 choice for tradesmen who want a digital partner that understands the grit and grind of the service industry.
-      </p>
-    </div>
-    <div>
-      <h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Services</h4>
-      <ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
-        <li><a class="hover:text-white transition-colors" href="/web-design">Web Design</a></li>
-        <li><a class="hover:text-white transition-colors" href="/local-seo">Local SEO</a></li>
-        <li><a class="hover:text-white transition-colors" href="/lead-generation">Lead Generation</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Company</h4>
-      <ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
-        <li><a class="hover:text-white transition-colors" href="/about">About</a></li>
-        <li><a class="hover:text-white transition-colors" href="/faq">FAQ</a></li>
-        <li><a class="hover:text-white transition-colors" href="/contact">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Legal</h4>
-      <ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
-        <li><a class="hover:text-white transition-colors" href="/privacy">Privacy Policy</a></li>
-        <li><a class="hover:text-white transition-colors" href="/terms">Terms of Service</a></li>
-        <li><a class="hover:text-white transition-colors" href="/cookie-policy">Cookie Policy</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-primary font-bebas bebas-heavy text-2xl uppercase mb-8 tracking-widest">Proof</h4>
-      <ul class="text-concrete/60 space-y-4 font-bold text-sm uppercase tracking-wider">
-        <li><a class="hover:text-white transition-colors" href="/case-studies">Case Studies</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="max-w-7xl mx-auto px-6 lg:px-20 mt-16 pt-12 border-t-2 border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-    <div class="text-concrete/30 font-bold text-xs tracking-widest uppercase">
-      © 2024 DONE DEAL DIGITAL. ALL RIGHTS RESERVED.
-    </div>
-    <div class="text-primary font-bebas text-xl tracking-widest">BUILT FOR THE BOLD.</div>
-  </div>
-
-</footer>
+<SiteFooter />
 
 </body></html>
