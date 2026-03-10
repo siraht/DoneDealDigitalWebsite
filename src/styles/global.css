@@ -807,13 +807,9 @@ button {
 
 @container site-footer (min-width: 48rem) {
   .site-footer__top {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: var(--space-14);
     padding-inline: var(--container-padding-wide);
-  }
-
-  .site-footer__brand {
-    grid-column: span 2;
   }
 }
 
