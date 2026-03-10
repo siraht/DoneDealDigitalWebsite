@@ -801,19 +801,14 @@ button {
   padding-inline: var(--container-padding);
   display: grid;
   gap: var(--space-12);
-}
-
-.site-footer__top > .site-container {
-  width: 100%;
-  max-width: none;
-  margin-inline: 0;
-  padding-inline: 0;
+  column-gap: var(--space-14);
+  row-gap: var(--space-12);
 }
 
 @container site-footer (min-width: 48rem) {
   .site-footer__top {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: var(--space-12);
+    gap: var(--space-14);
     padding-inline: var(--container-padding-wide);
   }
 
