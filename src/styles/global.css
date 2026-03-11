@@ -333,13 +333,19 @@ button {
 
 .hero__badge {
   position: absolute;
-  left: calc(var(--space-8) * -1);
+  left: var(--space-6);
   bottom: calc(var(--space-8) * -1);
   background: var(--color-white);
   border: var(--border-width) solid var(--color-navy);
   padding: var(--space-6) var(--space-6);
   box-shadow: var(--shadow-primary);
   display: block;
+}
+
+@container hero (min-width: 64rem) {
+  .hero__badge {
+    left: calc(var(--space-8) * -1);
+  }
 }
 
 .hero__badge-copy {
