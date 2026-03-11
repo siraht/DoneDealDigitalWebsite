@@ -778,7 +778,7 @@ button {
   .process-step__number {
     width: var(--space-16);
     height: var(--space-16);
-    border: var(--border-width) solid var(--color-white);
+    border: var(--border-width) solid var(--color-navy);
     background: var(--color-primary);
     flex-shrink: 0;
     display: inline-flex;
