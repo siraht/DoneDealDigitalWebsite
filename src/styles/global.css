@@ -333,7 +333,7 @@ button {
 
 .hero__badge {
   position: absolute;
-  left: var(--space-6);
+  left: calc(var(--space-2) * -1);
   bottom: calc(var(--space-8) * -1);
   background: var(--color-white);
   border: var(--border-width) solid var(--color-navy);
