@@ -628,6 +628,7 @@ button {
     text-transform: uppercase;
     font-style: normal;
     font-size: var(--type-size-6xl);
+    line-height: var(--leading-hero-title);
     letter-spacing: 0.02em;
   }
 
