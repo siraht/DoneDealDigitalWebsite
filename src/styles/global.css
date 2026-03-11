@@ -914,6 +914,8 @@ button {
   background: var(--color-white);
   border-bottom: var(--border-width) solid var(--color-navy);
   padding-block: var(--space-section-top);
+  container-type: inline-size;
+  container-name: final-cta;
 
   .final-cta__wrap {
     width: min(100%, var(--container-max-narrow));
@@ -937,7 +939,7 @@ button {
     font-family: var(--font-heading);
     text-transform: uppercase;
     margin-bottom: var(--space-6);
-    font-size: var(--type-size-8xl);
+    font-size: var(--type-size-7xl);
     line-height: 1;
     letter-spacing: var(--tracking-tight);
   }
@@ -954,6 +956,14 @@ button {
   .final-cta__actions {
     display: flex;
     justify-content: center;
+  }
+}
+
+@container final-cta (min-width: 48rem) {
+  .final-cta {
+    .final-cta__title {
+      font-size: var(--type-size-8xl);
+    }
   }
 }
 
