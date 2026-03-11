@@ -60,10 +60,9 @@ button {
 }
 
 .site-header .site-container {
-  width: calc(100vw - 10vw);
-  max-width: none;
+  width: 100%;
   margin-inline: auto;
-  padding-inline: var(--container-padding);
+  padding: 1rem;
 }
 
 .site-header {
@@ -86,8 +85,6 @@ button {
   display: flex;
   align-items: center;
   gap: var(--space-2);
-  padding-inline: var(--space-6);
-  padding-block: var(--space-5);
 }
 
 .site-header__brand-icon {
@@ -112,9 +109,31 @@ button {
 }
 
 @container site-header (min-width: 48rem) {
+  .site-header .site-container {
+    width: calc(100vw - 10vw);
+    padding: 0;
+    padding-inline: var(--container-padding);
+  }
+
+  .site-header__brand {
+    padding-inline: var(--space-6);
+    padding-block: var(--space-5);
+  }
+
   .site-header__nav {
     display: flex;
     align-items: stretch;
+  }
+
+  .site-header__actions {
+    padding-inline: var(--space-6);
+    padding-block: 0;
+    max-width: none;
+  }
+
+  #site-cta {
+    font-size: unset;
+    text-wrap: normal;
   }
 }
 
@@ -147,10 +166,14 @@ button {
 .site-header__actions {
   display: flex;
   align-items: center;
-  padding-inline: var(--space-6);
-  padding-block: 0;
   min-height: 100%;
   box-sizing: border-box;
+  max-width: 13rem;
+}
+
+#site-cta {
+  font-size: var(--type-size-body-large);
+  text-wrap: balance;
 }
 
 .cta {
