@@ -790,6 +790,7 @@ button {
     color: var(--process-title-color);
     font-size: var(--type-size-6xl);
     line-height: 1;
+    text-wrap: initial;
     margin-bottom: var(--space-12);
     text-transform: uppercase;
   }
