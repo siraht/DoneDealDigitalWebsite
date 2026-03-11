@@ -1,6 +1,7 @@
 ---
 import SiteHeader from "./SiteHeader.astro";
 import SiteFooter from "./SiteFooter.astro";
+import RetuneOverlay from "./RetuneOverlay";
 import "../styles/global.css";
 
 interface Props {
@@ -24,6 +25,7 @@ const {
   </head>
   <body class={bodyClass}>
     <SiteHeader />
+    <RetuneOverlay client:load />
     <slot />
     <SiteFooter />
   </body>
