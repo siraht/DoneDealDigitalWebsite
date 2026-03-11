@@ -1,0 +1,870 @@
+diff --git a/docs/done-deal-digital-copy-recommendations-v3-audit-v2.md b/docs/done-deal-digital-copy-recommendations-v3-audit-v2.md
+new file mode 100644
+index 0000000..5ee5976
+--- /dev/null
++++ b/docs/done-deal-digital-copy-recommendations-v3-audit-v2.md
+@@ -0,0 +1,864 @@
++# Done Deal Digital Copy Recommendations Audit v2
++
++## Task List
++
++- [x] Re-read the original audit
++- [x] Re-score recommendations against the tighter editorial rules
++- [x] Cut filler, hype, and invented specificity
++- [x] Push trust earlier in the page recommendations
++- [x] Keep Web Design as the clearest homepage entry offer
++- [x] Preserve route and CTA intent unless the plan clearly requires otherwise
++- [x] Call out unresolved business decisions instead of forcing claims
++
++## What Changed In v2
++
++This pass is tighter, safer, and more decisive than the first audit.
++
++- More cuts, fewer slogans
++- More owner-language, less agency-language
++- More emphasis on proof restraint and qualified claims
++- Earlier trust and clearer next steps
++- Cleaner distinction between what should be public now and what still depends on owner decisions
++
++## Shared Standards
++
++Every recommendation below is scored against these questions:
++
++- Does the page immediately say who it is for?
++- Does each section tie back to a business outcome?
++- Is trust visible early enough?
++- Is the CTA right for the page?
++- Are claims supportable or properly qualified?
++- Are included vs extra items defined where needed?
++- Can a busy owner understand it in 30 seconds?
++- Does it sound like a competent operator?
++
++---
++
++## Global Copy
++
++### Element group: Header nav
++
++Alternatives:
++
++1. `Services | Why Us | FAQ | Contact`
++   Analysis: best match to the plan and strongest objection-handling path.
++2. `Web Design | Local SEO | Paid Ads | Why Us | Contact`
++   Analysis: clearer service visibility, heavier nav.
++3. `Services | About | FAQ | Contact`
++   Analysis: workable, weaker than `Why Us`.
++4. `What We Do | Why Us | FAQ | Contact`
++   Analysis: plain English, less standard.
++5. `Services | Proof | FAQ | Contact`
++   Analysis: only valid once real proof exists.
++
++Recommendation: Alternative 1
++
++### Element group: Header CTA
++
++Alternatives:
++
++1. `GET A FREE QUOTE`
++   Analysis: strongest default CTA and exact plan fit.
++2. `GET MY QUOTE`
++   Analysis: stronger push, more salesy.
++3. `LET'S TALK`
++   Analysis: too soft for persistent use.
++4. `SEE WHAT MAKES SENSE`
++   Analysis: trustworthy, but weaker as a button.
++5. `TELL US WHAT YOU NEED`
++   Analysis: stronger on Contact than in the header.
++
++Recommendation: Alternative 1
++
++### Element group: Footer copy
++
++Alternatives:
++
++1. Description `Done Deal Digital helps local service businesses look credible, get found, and turn more visits into calls.` Tagline `WEBSITES AND LOCAL LEAD SYSTEMS FOR THE TRADES.`
++   Analysis: best overall fit.
++2. Description `Websites and local lead systems for service businesses that need more calls, better leads, and less agency runaround.` Tagline `BUILT FOR LOCAL SERVICE BUSINESSES.`
++   Analysis: strong service and outcome balance.
++3. Description `We build contractor websites, local SEO foundations, and paid ad systems for owner-led service businesses.` Tagline `CLEAR DIGITAL SYSTEMS FOR THE TRADES.`
++   Analysis: strongest concrete-services version.
++4. Description `Clear websites. Practical SEO. Paid ads with real tracking. Built for local service businesses.` Tagline `PRACTICAL MARKETING FOR SERVICE BUSINESSES.`
++   Analysis: easy to scan, less distinctive.
++5. Description `Built for trades and adjacent service businesses that care about lead quality, speed, and straight answers.` Tagline `MORE CALLS. LESS RUNAROUND.`
++   Analysis: strong tone, lighter on offer.
++
++Recommendation: Alternative 1
++
++### Element group: Shared trust strip
++
++Alternatives:
++
++1. `Built for service businesses | Fast turnarounds | Straight reporting`
++   Analysis: exact plan fit and strongest current-use option.
++2. `Web Design first | Clear scope | No fluff`
++   Analysis: good homepage sequencing line.
++3. `Mobile-first builds | Real communication | Clear next steps`
++   Analysis: strong and practical.
++4. `Owner-focused | Easy to understand | Fast to launch`
++   Analysis: softer, still credible.
++5. `Built for calls | Built for mobile | Built to be clear`
++   Analysis: punchy, slightly repetitive.
++
++Recommendation: Alternative 1
++
++### Element group: Shared CTA banner
++
++Alternatives:
++
++1. `READY TO SEE WHAT MAKES SENSE FOR YOUR BUSINESS?` / `Tell us what you need and we’ll point you toward the right next step.` / `GET A FREE QUOTE`
++   Analysis: strongest multi-page default.
++2. `LET'S TALK ABOUT WHAT'S NOT WORKING.` / `No pushy sales routine. Just a straight conversation.` / `GET A FREE QUOTE`
++   Analysis: strong trust version.
++3. `READY FOR A SITE THAT EARNS ITS KEEP?` / `If the website is the problem, we’ll tell you.` / `GET A FREE QUOTE`
++   Analysis: best Web Design-first banner.
++4. `NEED A BETTER WEBSITE OR BETTER LEAD FLOW?` / `We’ll help sort out the priority.` / `GET A FREE QUOTE`
++   Analysis: strong homepage close.
++5. `TELL US WHAT YOU NEED.` / `We’ll tell you what makes sense and what doesn’t.` / `GET A FREE QUOTE`
++   Analysis: good, slightly flatter.
++
++Recommendation: Alternative 1 as the default reusable banner
++
++---
++
++## Homepage (`/`)
++
++### Page read
++
++This page still needs the strongest strategic rewrite. It should feel like the clearest answer to a skeptical owner, not the loudest one.
++
++### Element group: Title tag
++
++Alternatives:
++
++1. `Done Deal Digital | Websites and Local Lead Systems for the Trades`
++   Analysis: strongest plan alignment.
++2. `Done Deal Digital | Contractor Websites, Local SEO, and Paid Ads`
++   Analysis: concrete and clear.
++3. `Done Deal Digital | Web Design and Local Marketing for Service Businesses`
++   Analysis: broader and useful.
++4. `Done Deal Digital | Websites That Help Service Businesses Win More Calls`
++   Analysis: strong benefit-led option.
++5. `Done Deal Digital | Practical Websites and Lead Generation for the Trades`
++   Analysis: good tone, less precise.
++
++Recommendation: Alternative 1
++
++### Element group: Hero headline
++
++Alternatives:
++
++1. `WEBSITES AND LOCAL LEAD SYSTEMS FOR TRADES BUSINESSES.`
++   Analysis: best 5-second answer.
++2. `WE BUILD CONTRACTOR WEBSITES THAT HELP WIN MORE CALLS.`
++   Analysis: strongest Web Design-first version.
++3. `WEB DESIGN, LOCAL SEO, AND PAID ADS FOR THE TRADES.`
++   Analysis: very clear, less sharp.
++4. `DIGITAL SYSTEMS FOR SERVICE BUSINESSES THAT RUN ON CALLS.`
++   Analysis: distinctive, more abstract.
++5. `HELPING LOCAL SERVICE BUSINESSES LOOK CREDIBLE AND BOOK MORE WORK.`
++   Analysis: strong benefit line, slightly long.
++
++Recommendation: Alternative 1
++
++### Element group: Hero subhead
++
++Alternatives:
++
++1. `Done Deal Digital builds contractor websites, local SEO foundations, and paid ad campaigns designed to help service businesses win more calls and better leads without the agency runaround.`
++   Analysis: strongest full explanation.
++2. `We help local service businesses look legit fast, get found more often, and make it easier for the next customer to call.`
++   Analysis: clean and operator-minded.
++3. `Built for owner-led service businesses that need a better website, a stronger Google presence, and clearer lead tracking.`
++   Analysis: strongest qualification version.
++4. `For local service businesses that want practical execution instead of marketing theater.`
++   Analysis: tight and useful, lighter on offer detail.
++5. `Web Design first. Local SEO next. Paid ads when the business is ready.`
++   Analysis: excellent sequencing, better as support copy than hero copy.
++
++Recommendation: Alternative 1
++
++### Element group: Hero CTA + support strip
++
++Alternatives:
++
++1. CTA `GET A FREE QUOTE` with support `Built for service businesses | Fast turnarounds | Straight reporting`
++   Analysis: strongest overall.
++2. CTA `GET A FREE QUOTE` with support `Web Design first | Clear scope | No fluff`
++   Analysis: best sequencing option.
++3. CTA `SEE WHAT MAKES SENSE` with support `Owner-focused | Easy to understand | Fast to launch`
++   Analysis: high trust, weaker action.
++4. CTA `TELL US WHAT YOU NEED` with support `Mobile-first | Practical execution | Direct communication`
++   Analysis: stronger on Contact.
++5. CTA `GET MY QUOTE` with support `Built for calls | Built for mobile | Built to be clear`
++   Analysis: workable, more sales-coded.
++
++Recommendation: Alternative 1
++
++### Element group: Services block
++
++Alternatives:
++
++1. Heading `WEBSITES FIRST. GROWTH NEXT.` Cards `Custom websites built to turn visits into calls.` / `Local SEO that helps Google better understand who you are, where you work, and what you do.` / `Paid ads for service businesses that need clearer tracking and better lead quality.`
++   Analysis: strongest homepage direction.
++2. Heading `THREE WAYS WE HELP SERVICE BUSINESSES GROW` with slightly longer card copy.
++   Analysis: clearest educational version.
++3. Heading `HOW WE HELP` with shorter cards.
++   Analysis: clean, less distinctive.
++4. Heading `START WITH THE RIGHT SERVICE` with cards framed as first step, visibility layer, and scale channel.
++   Analysis: strong sequencing, weaker standalone cards.
++5. Heading `WHAT WE DO` with short descriptions.
++   Analysis: safe, generic.
++
++Recommendation: Alternative 1
++
++### Element group: Pain bridge + proof block + FAQ snippet
++
++Alternatives:
++
++1. Pain `WHY OWNERS COME TO US` / Proof `REAL WORK. CLEAR PROCESS. NO THEATER.` / FAQ `COMMON QUESTIONS BEFORE YOU REACH OUT`
++   Analysis: closest to the plan.
++2. Pain `WHAT'S NOT WORKING RIGHT NOW` / Proof `WHY YOU CAN TRUST THE CONVERSATION` / FAQ `QUICK ANSWERS FOR BUSY OWNERS`
++   Analysis: slightly more conversational.
++3. Pain `THE PROBLEMS WE FIX FIRST` / Proof `TRUST BUILT THE PRACTICAL WAY` / FAQ `STRAIGHT ANSWERS`
++   Analysis: strong operator framing.
++4. Pain `WHY PEOPLE REACH OUT` / Proof `REAL BUILDS. REAL PEOPLE.` / FAQ `WHAT OWNERS USUALLY ASK FIRST`
++   Analysis: strong, slightly softer.
++5. Pain `WHERE THE LEADS LEAK` / Proof `NO FAKE LOGOS. NO FAKE STATS.` / FAQ `BEFORE YOU FILL OUT THE FORM`
++   Analysis: punchier, a little too self-conscious.
++
++Recommendation: Alternative 1
++
++### Element group: Final CTA
++
++Alternatives:
++
++1. `READY FOR A SITE THAT EARNS ITS KEEP?` / `If the site is the problem, we’ll tell you. If it isn’t, we’ll tell you that too.` / `GET A FREE QUOTE`
++   Analysis: strongest close if Web Design stays the homepage entry offer.
++2. `READY TO SEE WHAT MAKES SENSE FOR YOUR BUSINESS?` / `Tell us what’s not working and we’ll point you to the right first step.` / `GET A FREE QUOTE`
++   Analysis: strongest multi-service close.
++3. `LET'S TALK ABOUT WHAT'S NOT WORKING.` / `Website, local visibility, paid ads, or a mix of all three.` / `GET A FREE QUOTE`
++   Analysis: useful and direct.
++4. `NEED A BETTER WEBSITE OR BETTER LEAD FLOW?` / `We’ll help sort out the priority.` / `GET A FREE QUOTE`
++   Analysis: strong for mixed-intent traffic.
++5. `TELL US WHAT YOU NEED.` / `No pushy sales routine. Just a straight answer.` / `GET A FREE QUOTE`
++   Analysis: good, but flatter.
++
++Recommendation: Alternative 1
++
++---
++
++## Web Design (`/web-design`)
++
++### Page read
++
++This is still the strongest service page and should stay that way. The goal here is to make scope, fit, and deliverables feel concrete without sounding padded.
++
++### Element group: Title tag + eyebrow
++
++Alternatives:
++
++1. Title `Contractor Websites That Turn Visits Into Calls | Done Deal Digital` / Eyebrow `WEB DESIGN FOR THE TRADES`
++   Analysis: strongest overall fit.
++2. Title `Contractor Web Design | Done Deal Digital` / Eyebrow `CONTRACTOR WEBSITE BUILDS`
++   Analysis: concise and clear.
++3. Title `Web Design for Service Businesses | Done Deal Digital` / Eyebrow `WEBSITE BUILDS`
++   Analysis: broader accurate version.
++4. Title `Websites for Local Service Businesses | Done Deal Digital` / Eyebrow `YOUR WEBSITE, FIXED PROPERLY`
++   Analysis: good title, weaker eyebrow.
++5. Title `Trades Website Design | Done Deal Digital` / Eyebrow `WEBSITES THAT SELL`
++   Analysis: strong audience cue, slightly hypey eyebrow.
++
++Recommendation: Alternative 1
++
++### Element group: Hero headline + subhead
++
++Alternatives:
++
++1. `WE BUILD CONTRACTOR WEBSITES THAT TURN VISITS INTO CALLS.` / `Fast, mobile-first websites for service businesses that need to look legit, load fast, and make it easy for the next customer to call.`
++   Analysis: exact plan direction.
++2. Same headline / `We build websites for local service businesses that need more trust, clearer messaging, and fewer missed calls.`
++   Analysis: strong trust version.
++3. Same headline / `A good contractor website should explain the work fast, show where you serve, and make the phone number impossible to miss.`
++   Analysis: strongest educational version.
++4. `WEBSITES BUILT TO LOOK LEGIT, LOAD FAST, AND DRIVE ACTION.` / similar subhead
++   Analysis: good, but current headline is better.
++5. `BETTER WEBSITES FOR SERVICE BUSINESSES THAT LIVE ON PHONE CALLS.` / similar subhead
++   Analysis: workable, less direct.
++
++Recommendation: Alternative 1
++
++### Element group: Support bullets + CTA
++
++Alternatives:
++
++1. `Mobile-first | Copy guidance included | Typical launch target: 2-3 weeks once assets are in` / `GET A FREE QUOTE`
++   Analysis: exact plan fit.
++2. `Built for phones | Clear scope | Fast launch path` / `GET A FREE QUOTE`
++   Analysis: strong, less specific.
++3. `Clear scope | Mobile-first | Copy help included` / `GET A FREE QUOTE`
++   Analysis: good, drops timing.
++4. `Phone-first | Lead-focused layout | Launches move fast` / `GET A FREE QUOTE`
++   Analysis: punchy, less concrete.
++5. `Mobile-first | Trust-first copy | Structured launch target` / `GET A FREE QUOTE`
++   Analysis: useful, slightly awkward.
++
++Recommendation: Alternative 1
++
++### Element group: Fit + deliverables + extras
++
++Alternatives:
++
++1. Fit headings `WHO THIS IS FOR` / `NOT THE RIGHT FIT`, then `WHAT A GOOD SERVICE SITE HAS TO DO`, then `WHAT YOU GET`, then `WHAT IS NOT INCLUDED BY DEFAULT`
++   Analysis: exact plan fit.
++2. Fit headings `THIS IS BUILT FOR` / `THIS ISN'T BUILT FOR`, then `YOUR WEBSITE HAS A JOB TO DO`, then `STANDARD WEBSITE SCOPE`, then `WHAT COUNTS AS EXTRA`
++   Analysis: strongest plain-English version.
++3. Fit headings `BEST FIT` / `POOR FIT`, then `A GOOD SITE SHOULD DO SIX THINGS WELL`, then `DELIVERABLES`, then `OUT OF SCOPE`
++   Analysis: clean, slightly colder.
++4. Fit headings `WHO SHOULD REACH OUT` / `WHO SHOULD NOT`, then `THIS IS WHAT A GOOD SITE NEEDS`, then `HERE'S WHAT'S INCLUDED`, then `WHERE SCOPE STOPS`
++   Analysis: strong, slightly long.
++5. Fit headings `GOOD FIT` / `BAD FIT`, then `UTILITY FIRST`, then `WHAT COMES WITH A BUILD`, then `NOT INCLUDED IN STANDARD SCOPE`
++   Analysis: too blunt in places.
++
++Recommendation: Alternative 1
++
++### Element group: Process + custom build section + final CTA
++
++Alternatives:
++
++1. Process `Fit call / quote | Kickoff + asset collection | Design + build | Review + one structured revision round | Launch + walkthrough + 30-day bug support`, custom-build heading `THE PROBLEM ISN'T WIX OR SQUARESPACE`, CTA `READY FOR A SITE THAT EARNS ITS KEEP?`
++   Analysis: strongest overall.
++2. Process `Quote | Kickoff | Build | Review | Launch`, custom-build `A TEMPLATE ISN'T A STRATEGY`, CTA `READY FOR A BETTER WEBSITE?`
++   Analysis: strong shorter version.
++3. Process `Discovery | Assets | Build | Revisions | Go live`, custom-build `YOUR WEBSITE NEEDS MORE THAN A THEME`, CTA `TIME TO REBUILD THE SITE PROPERLY?`
++   Analysis: usable, slightly harder-edged.
++4. Process `Scope | Kickoff | Delivery | Review | Launch`, custom-build `WHY CUSTOM STRUCTURE BEATS GENERIC SETUP`, CTA `NEED A WEBSITE THAT LOOKS LEGIT AND WORKS HARD?`
++   Analysis: strong, a little more formal.
++5. Process `Talk | Gather | Build | Check | Launch`, custom-build `GENERIC SITES USUALLY FAIL IN GENERIC WAYS`, CTA `LET'S FIX THE WEBSITE FIRST`
++   Analysis: punchy, slightly stylized.
++
++Recommendation: Alternative 1
++
++---
++
++## Local SEO (`/local-seo`)
++
++### Page read
++
++This page still needs the hardest trust pass. Every recommendation here should bias toward plain explanation and away from winning-language.
++
++### Element group: Title tag + eyebrow
++
++Alternatives:
++
++1. Title `Get Found by Local Customers | Done Deal Digital` / Eyebrow `LOCAL SEO FOR SERVICE BUSINESSES`
++   Analysis: strongest overall fit.
++2. Title `Local SEO for Service Businesses | Done Deal Digital` / Eyebrow `LOCAL SEARCH VISIBILITY`
++   Analysis: safest version.
++3. Title `Local SEO for Contractors | Done Deal Digital` / Eyebrow `GOOGLE BUSINESS PROFILE + LOCAL SEO`
++   Analysis: concrete and useful.
++4. Title `Google Business Profile and Local SEO | Done Deal Digital` / Eyebrow `BE EASIER TO FIND LOCALLY`
++   Analysis: descriptive, slightly long.
++5. Title `Local Search Visibility for Service Businesses | Done Deal Digital` / Eyebrow `LOCAL PRESENCE, DONE PROPERLY`
++   Analysis: accurate, a little formal.
++
++Recommendation: Alternative 1
++
++### Element group: Hero headline + subhead + CTA
++
++Alternatives:
++
++1. `GET FOUND BY LOCAL CUSTOMERS WHO NEED YOU.` / `When someone nearby searches for the service you do, you want Google to understand who you are, where you work, and why your business belongs in the mix. That’s what local SEO is for.` / `GET A FREE SEO REVIEW`
++   Analysis: exact plan fit.
++2. Same headline / `Local SEO is about making your business easier to understand, easier to trust, and easier to find in the markets you actually serve.` / same CTA
++   Analysis: strongest plain-English version.
++3. Same headline / `This is not about hacks or magic rankings. It is about building a clearer local presence over time.` / same CTA
++   Analysis: strongest anti-scam version.
++4. `BE EASIER TO FIND WHEN LOCAL CUSTOMERS SEARCH.` / similar subhead / same CTA
++   Analysis: good, slightly softer.
++5. `BUILD A STRONGER LOCAL SEARCH PRESENCE.` / similar subhead / same CTA
++   Analysis: accurate, less vivid.
++
++Recommendation: Alternative 1
++
++### Element group: Fit + explanation + first fixes
++
++Alternatives:
++
++1. Fit `Real local service business | Verified or claimable Google Business Profile | Clear service area | Willing to request and respond to reviews | Willing to invest for months, not days`, explanation heading `WHAT LOCAL SEO ACTUALLY IS`, first-fixes heading `WHAT WE FIX FIRST`
++   Analysis: strongest fit.
++2. Fit shorter version, explanation `LOCAL SEO, IN PLAIN ENGLISH`, first-fixes `WHERE WE START`
++   Analysis: strongest owner-language version.
++3. Fit shorter version, explanation `HOW LOCAL SEO REALLY WORKS`, first-fixes `WHAT WE CLEAN UP FIRST`
++   Analysis: very good operational version.
++4. Fit shorter version, explanation `IT'S NOT MAGIC. IT'S SIGNALS.`, first-fixes `THE FIRST FIXES`
++   Analysis: memorable, slightly branded.
++5. Fit shorter version, explanation `SIX THINGS GOOGLE LOOKS FOR`, first-fixes `WHAT WE FIX FIRST`
++   Analysis: scannable, slightly riskier.
++
++Recommendation: Alternative 1 with the simpler heading from Alternative 2 if tone needs softening
++
++### Element group: Included work + exclusions + expectations + CTA
++
++Alternatives:
++
++1. Included heading `WHAT'S INCLUDED`, exclusions heading `WHAT WE WILL NOT DO`, expectations heading `WHAT YOU CAN EXPECT`, CTA `READY TO BE EASIER TO FIND?` / `GET A FREE SEO REVIEW`
++   Analysis: exact plan fit.
++2. Included `THE CORE WORK`, exclusions `NO SHORTCUTS`, expectations `LOCAL SEO TAKES TIME`, CTA `WANT A CLEARER READ ON YOUR LOCAL PRESENCE?`
++   Analysis: strongest trust version.
++3. Included `THE THREE CORE PILLARS`, exclusions `WHAT WE DON'T SELL`, expectations `THIS ISN'T OVERNIGHT WORK`, CTA `LET'S SEE WHAT'S HOLDING LOCAL VISIBILITY BACK`
++   Analysis: useful, more campaigny.
++4. Included `WHAT WE HANDLE`, exclusions `NO LOCAL SEO THEATER`, expectations `COMPOUNDING, NOT MAGIC`, CTA `READY TO CLEAN UP THE LOCAL SEARCH BASICS?`
++   Analysis: memorable, slightly branded.
++5. Included `WHAT COMES WITH THE WORK`, exclusions `THE SHORTCUTS WE SKIP`, expectations `HOW THE TIMELINE USUALLY LOOKS`, CTA `IF LOCAL SEO MIGHT HELP, WE'LL TELL YOU`
++   Analysis: strong honesty signal.
++
++Recommendation: Alternative 1
++
++---
++
++## Lead Generation (`/lead-generation`)
++
++### Page read
++
++This page should sound like someone protecting the owner from bad ad spend, not like someone selling advertising with swagger.
++
++### Element group: Title tag + eyebrow
++
++Alternatives:
++
++1. Title `Paid Ads for Service Businesses | Done Deal Digital` / Eyebrow `PAID ADS FOR SERVICE BUSINESSES`
++   Analysis: strongest overall fit.
++2. Title `Google Ads and LSAs for Contractors | Done Deal Digital` / Eyebrow `GOOGLE ADS + LSAs`
++   Analysis: most concrete.
++3. Title `Lead Generation for Local Service Businesses | Done Deal Digital` / Eyebrow `PAID LEAD GENERATION`
++   Analysis: broader, still workable.
++4. Title `Paid Lead Generation for Service Businesses | Done Deal Digital` / Eyebrow `REAL CALLS, REAL TRACKING`
++   Analysis: useful, slightly more agency-coded.
++5. Title `Google Ads for Local Service Businesses | Done Deal Digital` / Eyebrow `PAID ACQUISITION FOR LOCAL SERVICE BUSINESSES`
++   Analysis: accurate, more formal.
++
++Recommendation: Alternative 1
++
++### Element group: Hero headline + subhead + support line
++
++Alternatives:
++
++1. `PAID ADS BUILT TO BRING IN REAL CALLS.` / `We build and manage high-intent ad campaigns for service businesses that need better leads, clearer tracking, and less guesswork.` / `We’ll say if ads are the wrong move.`
++   Analysis: strongest overall.
++2. Same headline / `This is for service businesses that want paid ads tied to real calls, real forms, and real follow-up.` / `Clear tracking from day one.`
++   Analysis: strongest tracking version.
++3. Same headline / `Paid ads can work well for local service businesses when the offer is strong, the phone gets answered, and the tracking is clear.` / `Google Ads and LSAs where they make sense.`
++   Analysis: strongest qualification version.
++4. `GOOGLE ADS BUILT FOR LOCAL SERVICE DEMAND.` / similar subhead / `No vanity-metric reporting.`
++   Analysis: narrower and clear.
++5. `PAID ADS FOR BUSINESSES THAT NEED BETTER LEADS.` / similar subhead / `Built for real service demand.`
++   Analysis: workable, less sharp.
++
++Recommendation: Alternative 1
++
++### Element group: Fit + problem + what we manage
++
++Alternatives:
++
++1. Fit `Answers the phone quickly | Has enough budget to generate data | Serves a defined geographic area | Has decent reviews or a plan to improve them | Can track whether leads turn into jobs`, problem heading `THE PROBLEM WITH MOST ADVERTISING`, management heading `WHAT WE MANAGE`
++   Analysis: exact plan fit.
++2. Fit shorter version, problem `COMMON WAYS AD SPEND GETS WASTED`, management `THE CHANNELS WE MANAGE`
++   Analysis: strongest plain-English version.
++3. Fit shorter version, problem `WHY MOST CAMPAIGNS FEEL LIKE A BLACK BOX`, management `WHAT WE HANDLE`
++   Analysis: strongest trust version.
++4. Fit shorter version, problem `WHERE MOST AGENCIES LOSE THE PLOT`, management `WHAT WE RUN`
++   Analysis: useful, slightly sharper.
++5. Fit shorter version, problem `IF THE PHONE ISN'T RINGING...`, management `OUR CHANNEL MIX`
++   Analysis: memorable, more slogan-like.
++
++Recommendation: Alternative 1
++
++### Element group: Measurement + expectations + exclusions + CTA
++
++Alternatives:
++
++1. `HOW WE MEASURE SUCCESS` / `BUDGET & EXPECTATIONS` / `WHAT WE WILL NOT DO` / CTA `WANT AN HONEST READ ON PAID ADS?` / `GET A FREE AD REVIEW`
++   Analysis: strongest overall.
++2. `THE NUMBERS WE CARE ABOUT` / `WHAT TO EXPECT` / `NO SHORTCUTS` / CTA `READY TO SEE IF PAID ADS MAKE SENSE?`
++   Analysis: very strong plan-fit variant.
++3. `WHAT SUCCESS LOOKS LIKE` / `THE NUMBERS HAVE TO MAKE SENSE` / `WHAT WE DON'T SELL` / CTA `LET'S LOOK AT THE NUMBERS FIRST`
++   Analysis: strong operator version.
++4. `THE METRICS THAT MATTER` / `THIS IS NOT A ONE-WEEK FIX` / `NO ADS THEATER` / CTA `NEED CLEARER PAID-ADS ANSWERS?`
++   Analysis: useful, slightly branded.
++5. `WHAT WE TRACK` / `BUDGET REALITY` / `THE SHORTCUTS WE SKIP` / CTA `IF PAID ADS CAN HELP, WE'LL SHOW YOU HOW`
++   Analysis: good, softer.
++
++Recommendation: Alternative 1
++
++---
++
++## About (`/about`)
++
++### Page read
++
++This page should remove mystery, not try to perform personality. The strongest version is calm, founder-led, and operationally clear.
++
++### Element group: Title tag + eyebrow
++
++Alternatives:
++
++1. `Why Us | Done Deal Digital` / `REAL PEOPLE. CLEAR PROCESS.`
++   Analysis: strongest overall.
++2. `Who You're Working With | Done Deal Digital` / `FOUNDER-LED. DIRECT. PRACTICAL.`
++   Analysis: strongest trust-forward version.
++3. `About / Why Us | Done Deal Digital` / `WHY OWNERS HIRE US`
++   Analysis: useful hybrid.
++4. `About Done Deal Digital` / `WHO YOU'RE WORKING WITH`
++   Analysis: safe and clear.
++5. `Done Deal Digital | Real People, Clear Process` / `NO MYSTERY AGENCY STUFF`
++   Analysis: good title, weaker eyebrow.
++
++Recommendation: Alternative 1
++
++### Element group: Hero + core sections
++
++Alternatives:
++
++1. Hero `YOU'RE NOT HIRING A MYSTERY AGENCY.` / subhead `You’ll know who you’re working with, how we communicate, and what we’re responsible for.` / sections `WHY DONE DEAL DIGITAL EXISTS` / `MEET THE FOUNDERS` / `WHY SERVICE BUSINESSES`
++   Analysis: strongest fit.
++2. Same hero with current subhead variant / sections `WHY WE BUILT THIS` / `WHO'S BEHIND DONE DEAL DIGITAL` / `WHY TRADES`
++   Analysis: slightly warmer.
++3. Hero `YOU SHOULD KNOW WHO'S DOING THE WORK.` / similar subhead / sections `THE PROBLEM WE SAW` / `THE PEOPLE DOING THE WORK` / `WHY WE FOCUS HERE`
++   Analysis: strong operator version.
++4. Hero `WHO YOU WORK WITH MATTERS.` / similar subhead / sections `WHY THIS BUSINESS EXISTS` / `THE FOUNDERS` / `WHY THIS MARKET`
++   Analysis: good, slightly less sharp.
++5. Hero `REAL PEOPLE. REAL WORK. NO MYSTERY AGENCY.` / similar subhead / sections `OWNERS DESERVE BETTER THAN AGENCY RUNAROUND` / `FOUNDER-LED FROM START TO FINISH` / `WHY WE CARE ABOUT THIS KIND OF BUSINESS`
++   Analysis: usable, slightly louder.
++
++Recommendation: Alternative 1
++
++### Element group: How we work + what it feels like + CTA
++
++Alternatives:
++
++1. Principles `We show up | We keep scope clear | We say the hard thing early | We build for use, not applause | We care about what happens after launch`, then `WHAT WORKING WITH US FEELS LIKE`, then CTA `READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?` / `LET'S TALK`
++   Analysis: exact plan fit.
++2. Same principles shortened, then `THE PARTNERSHIP EXPERIENCE`, then CTA `WANT A MORE STRAIGHTFORWARD DIGITAL PARTNER?`
++   Analysis: strong trust version.
++3. `OUR WORK ETHIC`, then `HOW WE COMMUNICATE`, then CTA `LET'S TALK ABOUT WHAT YOU ACTUALLY NEED`
++   Analysis: useful and direct.
++4. `HOW WE WORK`, then `WHAT TO EXPECT`, then CTA `READY FOR A BETTER WORKING RELATIONSHIP?`
++   Analysis: softer version.
++5. `NO GHOSTING. NO FUZZY SCOPE.`, then `WHO YOU TALK TO AND HOW IT WORKS`, then CTA `NO MYSTERY. NO RUNAROUND. LET'S TALK.`
++   Analysis: memorable, slightly branded.
++
++Recommendation: Alternative 1
++
++---
++
++## Contact (`/contact`)
++
++### Page read
++
++This page mostly needs tightening and taxonomy cleanup, not a full strategic rewrite.
++
++### Element group: Title + hero
++
++Alternatives:
++
++1. `Contact Done Deal Digital | Get a Free Quote` / `TELL US WHAT YOU NEED.` / `Fill out the form and we’ll get back to you within 1 business day. No pushy sales routine, just a straight conversation about what makes sense for your business.`
++   Analysis: exact plan fit.
++2. `Tell Us What You Need | Done Deal Digital` with same hero copy
++   Analysis: strongest page-intent title.
++3. `Contact | Done Deal Digital` with same hero copy
++   Analysis: safe, less specific.
++4. `Get a Quote | Done Deal Digital` with same hero copy
++   Analysis: more conversion-led, less trustworthy.
++5. `Contact Done Deal Digital` with same hero copy
++   Analysis: workable, incomplete.
++
++Recommendation: Alternative 1
++
++### Element group: Form language
++
++Alternatives:
++
++1. Fields `Name | Business Name | Phone | Email | Website URL (optional) | What do you need? | City / Service Area (optional) | Anything else we should know?` with options `New Website | Local SEO | Paid Ads / Lead Generation | Multiple Services | Not Sure`
++   Analysis: exact plan fit.
++2. Same with `Website Rebuild` instead of `New Website`
++   Analysis: useful if rebuilds dominate.
++3. Same with `Google Ads / LSAs` instead of `Paid Ads / Lead Generation`
++   Analysis: more concrete.
++4. Same with `Need Help Deciding` instead of `Not Sure`
++   Analysis: softer.
++5. Same plus `Preferred contact method`
++   Analysis: useful, outside current requirement.
++
++Recommendation: Alternative 1
++
++### Element group: Quick contact + reassurance
++
++Alternatives:
++
++1. `QUICK CONTACT` with note `We typically reply within 1 business day. If it’s urgent, call us.` and reassurance `GOOD FIT OR NOT, WE'LL TELL YOU`
++   Analysis: strongest overall.
++2. `REACH US DIRECTLY` with `NO SALES GAMES`
++   Analysis: close to current.
++3. `CALL OR EMAIL` with `STRAIGHT CONVERSATION`
++   Analysis: very literal.
++4. `NEED A FAST ANSWER?` with `NO PUSHY SALES ROUTINE`
++   Analysis: strong urgency version.
++5. `QUICK OPTIONS` with `START WITH A STRAIGHT ANSWER`
++   Analysis: usable, weaker labels.
++
++Recommendation: Alternative 1
++
++---
++
++## Thank-You (`/thank-you`)
++
++### Page read
++
++This page only needs to confirm receipt and explain what happens next. Any sales pressure is a downgrade.
++
++### Element group: Hero + call CTA + next steps
++
++Alternatives:
++
++1. `WE GOT IT. HERE'S WHAT HAPPENS NEXT.` / `Thanks for reaching out. We’ll review your info and get back to you within 1 business day, usually sooner. If you need something right away, call us at [phone].` / `NEED A FAST ANSWER? CALL [PHONE]` / `Review your info | Decide if there’s a fit | Send a quote or recommendation`
++   Analysis: strongest fit.
++2. `THANKS. WE'LL REVIEW IT AND REACH OUT.` / `CALL US: [PHONE]` / `Review | Short follow-up call | Clear next step`
++   Analysis: slightly more reserved.
++3. `REQUEST RECEIVED.` / `URGENT? CALL [PHONE]` / `We review | We reach out | We outline scope`
++   Analysis: clean and functional.
++4. `THANKS FOR REACHING OUT.` / `CALL NOW` / `Look things over | Talk briefly | Recommend the next move`
++   Analysis: workable, weaker CTA.
++5. `WE GOT IT.` / `TALK TO US NOW` / `Review | Quote | Kickoff, if it makes sense`
++   Analysis: too salesy.
++
++Recommendation: Alternative 1
++
++---
++
++## FAQ (`/faq`)
++
++### Page read
++
++This page should do more heavy lifting than it does now. It should remove friction before contact and prove the business can answer plainly.
++
++### Element group: Title + hero
++
++Alternatives:
++
++1. `Straight Answers | Done Deal Digital FAQ` / `FAQ` / `STRAIGHT ANSWERS FOR BUSY OWNERS.` / `If you don’t see your question here, reach out. We’ll give you a straight answer.`
++   Analysis: exact plan fit.
++2. `FAQ | Done Deal Digital` / `COMMON QUESTIONS` / same headline and subhead
++   Analysis: clean and standard.
++3. `FAQ for Service Businesses | Done Deal Digital` / `QUESTIONS OWNERS ASK`
++   Analysis: useful and audience-forward.
++4. `FAQ | Straight Answers for Busy Owners` / `HELP CENTER`
++   Analysis: usable, slightly long.
++5. `Questions and Answers | Done Deal Digital` / `NO-FLUFF ANSWERS`
++   Analysis: weaker title.
++
++Recommendation: Alternative 1
++
++### Element group: Categories + question priorities
++
++Alternatives:
++
++1. Categories `Getting Started | Pricing & Scope | Working With Us | SEO & Ads | Technical` with the full plan-aligned question set
++   Analysis: strongest overall.
++2. `Before We Start | Cost & Scope | Process | Marketing Services | Technical`
++   Analysis: softer and usable.
++3. `Start Here | Pricing | Working Together | SEO & Ads | Technical`
++   Analysis: concise.
++4. `Getting Started | Scope | Partnership | SEO / Ads | Technical`
++   Analysis: slightly less user-friendly.
++5. `Basics | Pricing | Process | Marketing | Technical`
++   Analysis: too generic.
++
++Recommendation: Alternative 1
++
++### Element group: Final CTA
++
++Alternatives:
++
++1. `STILL HAVE QUESTIONS? LET'S TALK.` / `If you don’t see your question here, reach out. We’ll give you a straight answer.` / `CONTACT US`
++   Analysis: exact plan fit.
++2. Same headline / `We’ll tell you what makes sense and what doesn’t.` / `CONTACT US`
++   Analysis: strong trust version.
++3. Same headline / `No pushy sales routine. Just a straight answer.` / `CONTACT US`
++   Analysis: strong consistency with Contact.
++4. Same headline / `Skip the guessing and ask us directly.` / `CONTACT US`
++   Analysis: shorter and useful.
++5. Same headline / `If you’re still unsure, we can sort it out quickly.` / `CONTACT US`
++   Analysis: softer.
++
++Recommendation: Alternative 1
++
++---
++
++## Case Studies (`/case-studies`)
++
++### Page read
++
++This route should still not be public. The right copy change here is mostly removal.
++
++### Element group: Status + hero + card framework
++
++Alternatives:
++
++1. Unpublish now. Keep future hero `PROOF, NOT PROMISES.` and future card pattern `[Trade] | [Location] | Starting point, work completed, early results`.
++   Analysis: strongest fit.
++2. Keep route hidden and noindexed, strip all fake cards, and keep only internal scaffolding.
++   Analysis: acceptable fallback.
++3. Keep a public placeholder page with no metrics.
++   Analysis: still weak trust-wise.
++4. Keep filters but disable them.
++   Analysis: implies scale that does not exist.
++5. Keep the CTA and remove the cards.
++   Analysis: still the wrong signal.
++
++Recommendation: Alternative 1
++
++### Element group: Reporting framework
++
++Alternatives:
++
++1. `Starting point | What we changed | Results`
++   Analysis: exact plan structure.
++2. `Before | Work completed | Outcome`
++   Analysis: strongest plain-English version.
++3. `Baseline | Changes | Metrics`
++   Analysis: concise and analytical.
++4. `Where it started | What changed | What moved`
++   Analysis: very readable.
++5. `Problem | Solution | Outcome`
++   Analysis: useful, slightly more generic.
++
++Recommendation: Alternative 4
++
++---
++
++## Legal Pages (`/privacy`, `/terms`, `/cookie-policy`)
++
++### Page read
++
++This remains a factual rewrite project. The correct editorial move is restraint and accuracy.
++
++### Element group: Titles + route-specific framing
++
++Alternatives:
++
++1. `Privacy Policy | Done Deal Digital` / `Terms of Service | Done Deal Digital` / `Cookie Policy | Done Deal Digital`, each with route-specific hero copy
++   Analysis: required baseline.
++2. `Done Deal Digital Privacy Policy` etc.
++   Analysis: also fine.
++3. `Privacy | Done Deal Digital` etc.
++   Analysis: too abbreviated.
++4. A single shared `Legal` page.
++   Analysis: conflicts with planned routes.
++5. `Policies & Terms | Done Deal Digital`
++   Analysis: too vague.
++
++Recommendation: Alternative 1
++
++### Element group: Intro copy
++
++Alternatives:
++
++1. Privacy `This Privacy Policy explains what information Done Deal Digital collects through this website, how we use it, and how you can request updates or deletion where applicable.` Terms `These Terms of Service govern use of this website. Client project scope, pricing, deliverables, ownership, and service terms are handled in separate proposals or agreements.` Cookies `This Cookie Policy explains what cookies or similar technologies this site uses, why they are used, and how you can manage them where applicable.`
++   Analysis: strongest and safest.
++2. Shorter factual versions of the same three intros.
++   Analysis: also strong.
++3. Minimal headers only.
++   Analysis: acceptable, less helpful.
++4. Branded legal copy with `straight-talk` phrasing.
++   Analysis: unnecessary and riskier.
++5. Boilerplate generator copy.
++   Analysis: should not ship.
++
++Recommendation: Alternative 1
++
++### Element group: Processors + data requests
++
++Alternatives:
++
++1. List only processors actually in use and publish only real monitored contact details.
++   Analysis: non-negotiable.
++2. If launch uses only Netlify Forms and GA4, say only that.
++   Analysis: likely near-term correct path.
++3. Use email-only request instructions unless a real public address is confirmed.
++   Analysis: safest.
++4. Remove future-state tools from legal pages.
++   Analysis: required.
++5. State response expectations only if operationally supportable.
++   Analysis: important hygiene rule.
++
++Recommendation: Combine 1, 3, and 4
++
++---
++
++## 404 (`/404`)
++
++### Page read
++
++This page only needs to recover the user cleanly.
++
++### Element group: Title + headline + body + CTA
++
++Alternatives:
++
++1. `Page Not Found | Done Deal Digital` / `THAT PAGE DOESN'T EXIST` / `The link may be outdated or the page may have moved. Use the homepage or contact page to get back on track.` / `GO HOME`
++   Analysis: strongest overall.
++2. Same title / `PAGE NOT FOUND` / `The page you’re looking for isn’t here.` / `BACK TO HOME`
++   Analysis: clean standard version.
++3. Same title / `WRONG ADDRESS` / `Try the homepage or reach out if you need help.` / `CONTACT US`
++   Analysis: slightly cute.
++4. Same title / `404` / `The page you are looking for doesn’t exist.` / `Back to Home`
++   Analysis: functional and generic.
++5. Same title / `NOT HERE` / `Head back home or contact us if you need something specific.` / `GO HOME`
++   Analysis: short, weaker.
++
++Recommendation: Alternative 1
++
++---
++
++## Priority Order
++
++1. Rewrite homepage first.
++2. Rewrite Local SEO second.
++3. Remove or unpublish Case Studies immediately.
++4. Replace legal pages with factual route-specific versions before launch.
++5. Tighten Lead Generation next.
++6. Then refine Web Design, About, FAQ, Contact, Thank-You, and 404.
++
++## Remaining Unresolved Business Decisions
++
++- Whether website pricing stays custom-only or moves to a public `starts at` number
++- Whether hosting/maintenance is included, optional, or separate
++- Geographic scope language once the public market focus is final
++- Whether ongoing SEO and paid-ads minimums will be public
++- Exact client ownership wording for domains, analytics, ad accounts, and site files
++- When proof thresholds are met for a public Case Studies route
++- Which third-party processors and legal contact details are actually live at launch
++
++## Claims Removed Or Softened In v2
++
++- `dominate local search`
++- `first page of Google`
++- `market leader`
++- `booked solid`
++- hard implied ranking promises
++- hard implied lead-volume promises
++- unconfirmed contract or response-time promises
++- unconfirmed hosting/pricing ownership claims
++- directory-quantity framing as a proxy for SEO value
++- public proof language that relies on fake or unapproved case-study signals
++
++## Best Overall Direction
++
++- Homepage should make Web Design the clearest first step.
++- Every page should read like it was written for an owner between jobs.
++- Trust should come from clarity, scope, process, and honest limits.
++- When the business has not decided something yet, the copy should stay honest and light instead of filling the gap with invented certainty.

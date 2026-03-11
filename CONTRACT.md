@@ -168,6 +168,7 @@ Required prompt skeleton:
 - src/content/config.ts
 - src/content/
 - keystatic.config.ts
+- sitespec/workspace/
 - .agents/astrobookshop.md (tooling setup/details)
 
 ## Governance

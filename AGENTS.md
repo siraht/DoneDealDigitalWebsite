@@ -14,6 +14,7 @@ Single source-of-truth is `CONTRACT.md`.
 - `src/content/config.ts`: content schema definitions.
 - `src/content/`: content source files.
 - `keystatic.config.ts`: CMS/content tooling config.
+- `sitespec/workspace/`: SiteSpec semantic workspace covering the implemented site routes.
 - `.cloudcannon/postbuild`: runs `npx @bookshop/generate`.
 
 ## Symlinked instruction files

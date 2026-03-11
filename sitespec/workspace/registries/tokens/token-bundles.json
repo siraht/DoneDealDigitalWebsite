@@ -1,0 +1,68 @@
+[
+  {
+    "entity": "token-bundle",
+    "id": "button.primary.dark.v2",
+    "tokens": {
+      "bg": "#ff7b00",
+      "fg": "#0b1d33",
+      "bgHover": "#ea7300",
+      "focusRing": "#ff7b00"
+    }
+  },
+  {
+    "entity": "token-bundle",
+    "id": "hero.authority.right",
+    "tokens": {
+      "layout": "media-right"
+    }
+  },
+  {
+    "entity": "token-bundle",
+    "id": "hero.centered.dark",
+    "tokens": {
+      "layout": "centered",
+      "surface": "#0b1d33"
+    }
+  },
+  {
+    "entity": "token-bundle",
+    "id": "button.primary.light.outline",
+    "tokens": {
+      "bg": "#ffffff",
+      "fg": "#0b1d33",
+      "border": "#0b1d33"
+    }
+  },
+  {
+    "entity": "token-bundle",
+    "id": "theme.public.light",
+    "tokens": {
+      "surface": "#f6f6f8",
+      "text": "#0b1d33"
+    }
+  },
+  {
+    "entity": "token-bundle",
+    "id": "theme.public.dark",
+    "tokens": {
+      "surface": "#0b1d33",
+      "text": "#ffffff"
+    }
+  },
+  {
+    "entity": "token-bundle",
+    "id": "theme.audit.surface",
+    "tokens": {
+      "surface": "audit-shell",
+      "text": "audit-ink"
+    }
+  },
+  {
+    "entity": "token-bundle",
+    "id": "system.dark.message",
+    "tokens": {
+      "surface": "#020617",
+      "text": "#ffffff"
+    }
+  }
+]
