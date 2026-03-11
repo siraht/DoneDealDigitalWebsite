@@ -587,7 +587,7 @@ button {
   }
 
   .home-frustrations-card__icon {
-    font-size: var(--type-size-4xl);
+    font-size: var(--type-size-5xl);
     color: var(--color-primary);
     justify-self: center;
     margin-bottom: var(--space-2);
