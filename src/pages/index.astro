@@ -4,7 +4,7 @@ import "../styles/global.css";
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 ---
 
-<SharedPageLayout title="Done Deal Digital | Websites for the Trades" bodyClass="page">
+<SharedPageLayout title="Done Deal Digital | Websites and Local Lead Systems for the Trades" bodyClass="page">
     <Fragment slot="head">
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -13,6 +13,50 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .home-section {
+        padding: 6rem 0;
+      }
+      .home-section:nth-of-type(odd) {
+        background: #f6f7fb;
+      }
+      .section-title-wrap {
+        margin-bottom: 2rem;
+      }
+      .section-title {
+        margin: 0 0 1rem 0;
+        letter-spacing: 0.04em;
+        font-size: clamp(1.75rem, 3vw, 2.75rem);
+        font-family: var(--font-heading), Arial, sans-serif;
+        text-transform: uppercase;
+      }
+      .section-rule {
+        width: 4rem;
+        height: 2px;
+        background: currentColor;
+        margin-left: 0.25rem;
+      }
+      .home-proof-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      .home-proof-card {
+        background: #fff;
+        border: 2px solid #1d3557;
+        padding: 1.5rem;
+      }
+      .home-proof-card h3 {
+        margin: 0 0 0.75rem 0;
+        font-family: var(--font-heading), Arial, sans-serif;
+        font-size: clamp(1rem, 1.4vw, 1.25rem);
+        text-transform: uppercase;
+      }
+      .home-proof-card p {
+        margin: 0;
+        line-height: 1.6;
+      }
+    </style>
   
     </Fragment>
 
@@ -22,16 +66,15 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
       <div class="hero__inner site-container">
         <div class="hero__content">
           <h1 class="hero__headline">
-            WE BUILD WEBSITES THAT
-            <span class="hero__headline-accent">WORK AS HARD</span>
-            AS YOU DO.
+            WEBSITES AND LOCAL LEAD SYSTEMS FOR TRADES BUSINESSES.
           </h1>
           <p class="hero__copy">
-            Digital marketing and web design for the trades. No fluff, just more leads for plumbers,
-            roofers, and HVAC pros.
+            Done Deal Digital builds contractor websites, local SEO foundations, and paid ad campaigns
+            designed to help service businesses win more calls and better leads without the agency
+            runaround.
           </p>
           <div class="hero__actions">
-            <button class="hero__cta cta cta--primary cta--md">Start Your Project</button>
+            <button class="hero__cta cta cta--primary cta--md">GET A FREE QUOTE</button>
           </div>
         </div>
 
@@ -56,34 +99,34 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 
     <section id="credibility" class="cred-strip">
       <div class="cred-strip__inner site-container">
-        <div class="cred-strip__item">
-          <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">trending_up</span>
-          <span class="cred-strip__text">Leads, Not Likes</span>
-        </div>
-        <div class="cred-strip__divider"></div>
-        <div class="cred-strip__item">
-          <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">calendar_month</span>
-          <span class="cred-strip__text">Weekly Updates</span>
-        </div>
-        <div class="cred-strip__divider"></div>
-        <div class="cred-strip__item">
-          <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">dashboard</span>
-          <span class="cred-strip__text">All In One</span>
-        </div>
-        <div class="cred-strip__divider"></div>
-        <div class="cred-strip__item">
-          <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">bolt</span>
-          <span class="cred-strip__text">Fast Turnarounds</span>
-        </div>
-      </div>
+            <div class="cred-strip__item">
+              <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">storefront</span>
+              <span class="cred-strip__text">Built for service businesses</span>
+            </div>
+            <div class="cred-strip__divider"></div>
+            <div class="cred-strip__item">
+              <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">calendar_month</span>
+              <span class="cred-strip__text">Fast turnarounds</span>
+            </div>
+            <div class="cred-strip__divider"></div>
+            <div class="cred-strip__item">
+              <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">dashboard</span>
+              <span class="cred-strip__text">Built for action</span>
+            </div>
+            <div class="cred-strip__divider"></div>
+            <div class="cred-strip__item">
+              <span class="cred-strip__icon material-symbols-outlined" aria-hidden="true">bolt</span>
+              <span class="cred-strip__text">Straight reporting</span>
+            </div>
+          </div>
     </section>
 
     <section id="services" class="services">
       <div class="site-container">
-        <div class="services__heading">
-          <h2 class="services__title">NO FLUFF. JUST RESULTS.</h2>
-          <div class="services__rule"></div>
-        </div>
+          <div class="services__heading">
+            <h2 class="services__title">WEBSITES FIRST. GROWTH NEXT.</h2>
+            <div class="services__rule"></div>
+          </div>
         <div class="services__list">
           <article class="services-card">
             <div class="services-card__icon-wrap">
@@ -91,13 +134,12 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
             </div>
             <h3 class="services-card__title">WEB DESIGN</h3>
             <p class="services-card__description">
-              Custom-built websites designed to convert visitors into phone calls. Optimized for mobile so guys on
-              the job site can find you fast.
+              Custom-built contractor websites built to turn visits into calls.
             </p>
             <ul class="services-card__list">
-              <li class="services-card__list-item">Fast Loading</li>
-              <li class="services-card__list-item">Mobile First</li>
-              <li class="services-card__list-item">Lead Capture</li>
+              <li class="services-card__list-item">Call-first structure</li>
+              <li class="services-card__list-item">Fast loading</li>
+              <li class="services-card__list-item">Clear service focus</li>
             </ul>
           </article>
           <article class="services-card">
@@ -105,14 +147,13 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
               <span class="services-card__icon material-symbols-outlined">trending_up</span>
             </div>
             <h3 class="services-card__title">LOCAL SEO</h3>
-            <p class="services-card__description">
-              Dominate the "near me" searches. We get your business on the first page of Google and the top of the
-              map pack.
-            </p>
+              <p class="services-card__description">
+                Local SEO helps Google understand who you are, where you work, and what you do.
+              </p>
             <ul class="services-card__list">
-              <li class="services-card__list-item">GMB Optimization</li>
-              <li class="services-card__list-item">Local Keywords</li>
-              <li class="services-card__list-item">Citation Building</li>
+              <li class="services-card__list-item">Google Business Profile foundation</li>
+              <li class="services-card__list-item">Service area clarity</li>
+              <li class="services-card__list-item">Review and citation work</li>
             </ul>
           </article>
           <article class="services-card">
@@ -120,16 +161,84 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
               <span class="services-card__icon material-symbols-outlined">target</span>
             </div>
             <h3 class="services-card__title">LEAD GEN</h3>
-            <p class="services-card__description">
-              We manage your paid ads and lead funnels so you can focus on the job. High-intent leads that actually
-              close.
-            </p>
+              <p class="services-card__description">
+                Paid campaigns for service businesses with clearer tracking and better lead quality.
+              </p>
             <ul class="services-card__list">
-              <li class="services-card__list-item">Google Ads</li>
-              <li class="services-card__list-item">LSA Management</li>
-              <li class="services-card__list-item">ROI Reporting</li>
+              <li class="services-card__list-item">Google Ads and LSAs when they fit</li>
+              <li class="services-card__list-item">Clean handoff points</li>
+              <li class="services-card__list-item">Lead quality reporting</li>
             </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="site-container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">WHY OWNERS COME TO US</h2>
+          <div class="section-rule"></div>
+        </div>
+        <div class="home-proof-grid">
+          <div class="home-proof-card">
+            <h3>WE FIX REAL BARRIERS FIRST</h3>
+            <p>Most service businesses don't fail from a lack of effort. They fail from unclear offers, unclear paths to call, and unclear next steps.</p>
+          </div>
+          <div class="home-proof-card">
+            <h3>WE MEET YOU WHERE YOU ARE</h3>
+            <p>We answer with the same question we ask clients first: what does your lead process need to work better this month?</p>
+          </div>
+          <div class="home-proof-card">
+            <h3>WE SHOW RESULTS BEFORE GUESSWORK</h3>
+            <p>There are no magic claims on this site. You get practical next actions for your website, local visibility, and lead generation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="site-container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">REAL WORK. CLEAR PROCESS. NO THEATER.</h2>
+          <div class="section-rule"></div>
+        </div>
+        <div class="home-proof-grid">
+          <div class="home-proof-card">
+            <h3>BUILD</h3>
+            <p>Websites are launched to answer the customer question clearly and get people to call.</p>
+          </div>
+          <div class="home-proof-card">
+            <h3>VISIBILITY</h3>
+            <p>Local SEO work is focused on business details, service clarity, and trust signals that are relevant to rankings.</p>
+          </div>
+          <div class="home-proof-card">
+            <h3>MEASUREMENT</h3>
+            <p>Lead channels are tracked to source and quality so you can cut what does not move the needle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="site-container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">COMMON QUESTIONS BEFORE YOU REACH OUT</h2>
+          <div class="section-rule"></div>
+        </div>
+        <div class="home-proof-grid">
+          <div class="home-proof-card">
+            <h3>Will you tell me if this isn’t a fit?</h3>
+            <p>Yes. We’d rather say no early than spend weeks working on the wrong model.</p>
+          </div>
+          <div class="home-proof-card">
+            <h3>How quickly can it start?</h3>
+            <p>Most projects move quickly after discovery. Lead systems and SEO are staged around real-world timelines.</p>
+          </div>
+          <div class="home-proof-card">
+            <h3>Is tracking included?</h3>
+            <p>Yes. We prioritize visibility into what drove calls and what did not.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -139,34 +248,51 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
       <div class="process__overlay u-diagonal-stripes"></div>
       <div class="process__inner site-container">
         <div class="process__grid">
-          <div class="process__copy">
-            <h2 class="process__title">THE DONE DEAL PROCESS</h2>
+            <div class="process__copy">
+            <h2 class="process__title">QUOTE | KICKOFF | BUILD | REVIEW | LAUNCH</h2>
             <div class="process__steps">
               <div class="process-step">
                 <div class="process-step__number">01</div>
                 <div class="process-step__body">
-                  <h4 class="process-step__title">CONSULTATION</h4>
+                  <h4 class="process-step__title">QUOTE</h4>
                   <p class="process-step__copy">
-                    We analyze your current digital presence and your local competitors to build a custom roadmap.
+                    We confirm if your site and lead model can create a better path forward.
                   </p>
                 </div>
               </div>
               <div class="process-step">
                 <div class="process-step__number">02</div>
                 <div class="process-step__body">
-                  <h4 class="process-step__title">BUILD</h4>
+                  <h4 class="process-step__title">KICKOFF</h4>
                   <p class="process-step__copy">
-                    Our team builds your high-converting assets and launches your targeted marketing campaigns.
+                    We align goals, gather assets, and map the work in writing.
                   </p>
                 </div>
               </div>
               <div class="process-step">
                 <div class="process-step__number">03</div>
                 <div class="process-step__body">
-                  <h4 class="process-step__title">GROWTH</h4>
+                  <h4 class="process-step__title">BUILD</h4>
                   <p class="process-step__copy">
-                    We continually monitor and optimize your campaigns, sharing weekly and monthly reports so you always
-                    know what’s working, what to improve, and what to do next.
+                    Our team builds your website and setup the channels needed for real lead flow.
+                  </p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__number">04</div>
+                <div class="process-step__body">
+                  <h4 class="process-step__title">REVIEW</h4>
+                  <p class="process-step__copy">
+                    You review the finished build and we close the gap with one revision round.
+                  </p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__number">05</div>
+                <div class="process-step__body">
+                  <h4 class="process-step__title">LAUNCH</h4>
+                  <p class="process-step__copy">
+                    We launch, walk through what changed, and stay available for 30 days of support.
                   </p>
                 </div>
               </div>
@@ -198,16 +324,16 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
       </div>
     </section>
 
-    <section id="contact" class="final-cta">
+      <section id="contact" class="final-cta">
       <div class="final-cta__wrap">
         <div class="final-cta__panel">
           <div class="final-cta__text">
-            <h2 class="final-cta__title">ready to grow?</h2>
+            <h2 class="final-cta__title">READY FOR A SITE THAT EARNS ITS KEEP?</h2>
             <p class="final-cta__copy">
-              Stop wasting money on marketing that doesn't convert. Build an automated system that pays for itself.
+              If the site is the problem, we’ll tell you. If it isn’t, we’ll tell you that too.
             </p>
             <div class="final-cta__actions">
-              <button class="final-cta__button cta cta--primary cta--xl">Get My Free Audit</button>
+              <button class="final-cta__button cta cta--primary cta--xl">GET A FREE QUOTE</button>
             </div>
           </div>
         </div>
