@@ -141,7 +141,7 @@ button {
   }
 
   #site-cta {
-    font-size: unset;
+    font-size: var(--type-size-base);
     text-wrap: normal;
   }
 }
@@ -177,7 +177,7 @@ button {
   align-items: center;
   min-height: 100%;
   box-sizing: border-box;
-  max-width: 13rem;
+  max-width: none;
 }
 
 #site-cta {
