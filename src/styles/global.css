@@ -135,7 +135,7 @@ button {
   }
 
   .site-header__actions {
-    padding-inline: var(--space-6);
+    padding-inline: 0;
     padding-block: 0;
     max-width: none;
   }
