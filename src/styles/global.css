@@ -1006,7 +1006,7 @@ button {
   }
 
   .site-footer__brand {
-    grid-column: 1;
+    grid-column: 1 / span 2;
   }
 
   .site-footer__col--services {
