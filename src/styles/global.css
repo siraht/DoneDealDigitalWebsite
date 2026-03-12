@@ -140,7 +140,7 @@ button {
     max-width: none;
   }
 
-  #site-cta {
+  .site-header #site-cta {
     font-size: var(--type-size-base);
     text-wrap: normal;
   }
