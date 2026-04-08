@@ -105,9 +105,9 @@ import { siteSettings } from "../lib/siteSettings";
 <button class="bg-primary hover:bg-orange-600 text-white px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow-orange">
                     GET A FREE QUOTE
                 </button>
-<button class="bg-white hover:bg-concrete text-navy px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow">
+<a class="bg-white hover:bg-concrete text-navy px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow" href={`tel:${siteSettings.phoneDigits}`}>
                 Call {siteSettings.phoneDisplay}
-                </button>
+                </a>
 </div>
 </div>
 <div class="relative hidden lg:block">
@@ -379,10 +379,10 @@ import { siteSettings } from "../lib/siteSettings";
 <button class="bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-white block-shadow-orange w-full md:w-auto transition-transform active:translate-x-1 active:translate-y-1">
                         GET A FREE QUOTE
                     </button>
-<div class="flex items-center gap-4 text-white font-bold text-xl uppercase tracking-widest">
+<a class="flex items-center gap-4 text-white font-bold text-xl uppercase tracking-widest" href={`tel:${siteSettings.phoneDigits}`}>
 <span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
 <span>{siteSettings.phoneDisplay}</span>
-</div>
+</a>
 </div>
 </div>
 </div>

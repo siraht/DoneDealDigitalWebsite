@@ -351,10 +351,10 @@ import { siteSettings } from "../lib/siteSettings";
 <a href="/contact" class="bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-navy block-shadow w-full md:w-auto inline-block text-center transition-transform hover:-translate-y-1">
                     CONTACT US
                 </a>
-<div class="flex items-center gap-4 text-navy font-bold text-xl">
+<a class="flex items-center gap-4 text-navy font-bold text-xl" href={`tel:${siteSettings.phoneDigits}`}>
 <span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
 <span>CALL US: {siteSettings.phoneDisplay}</span>
-</div>
+</a>
 </div>
 </div>
 </div>
