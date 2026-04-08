@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import { siteSettings } from "../lib/siteSettings";
 ---
 
 <SharedPageLayout title="Privacy Policy | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -117,7 +118,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 <section>
 <h3 class="font-bebas text-2xl text-navy mb-4">DATA REQUESTS</h3>
 <p class="text-slate-700 leading-relaxed">
-            If you want access, correction, or deletion of your information, email <strong>hello@donedealdigital.com</strong>.
+            If you want access, correction, or deletion of your information, email <strong>{siteSettings.email}</strong>.
         </p>
 </section>
 </article>

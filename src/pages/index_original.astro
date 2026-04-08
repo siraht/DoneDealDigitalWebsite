@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import { siteSettings } from "../lib/siteSettings";
 ---
 
 <SharedPageLayout title="Done Deal Digital | Websites for the Trades" bodyClass="bg-background-light font-dmsans text-navy">
@@ -244,7 +245,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
                     </button>
 <div class="flex items-center gap-4 text-navy font-bold text-xl">
 <span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
-<span>CALL: (555) 123-4567</span>
+<span>CALL: {siteSettings.phoneDisplay}</span>
 </div>
 </div>
 </div>

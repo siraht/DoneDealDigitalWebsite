@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import { siteSettings } from "../lib/siteSettings";
 ---
 
 <SharedPageLayout title="Thank You | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -88,9 +89,9 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 <p class="text-navy text-lg md:text-xl leading-relaxed font-medium mb-10">
                     Thanks for reaching out. We’ll review your info and get back to you within 1 business day — usually sooner. If you need something right away, call us.
                 </p>
-<a class="inline-flex items-center justify-center gap-4 bg-primary hover:bg-orange-600 text-white px-10 py-6 font-bold text-xl md:text-2xl uppercase tracking-widest transition-all border-2 border-navy block-shadow w-full" href="tel:5551234567">
+<a class="inline-flex items-center justify-center gap-4 bg-primary hover:bg-orange-600 text-white px-10 py-6 font-bold text-xl md:text-2xl uppercase tracking-widest transition-all border-2 border-navy block-shadow w-full" href={`tel:${siteSettings.phoneDigits}`}>
 <span class="material-symbols-outlined">phone_in_talk</span>
-                    CALL US: (555) 123-4567
+                    CALL US: {siteSettings.phoneDisplay}
                 </a>
 </div>
 </div>

@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import { siteSettings } from "../lib/siteSettings";
 ---
 
 <SharedPageLayout title="Contractor Websites That Turn Visits Into Calls | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -105,7 +106,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
                     GET A FREE QUOTE
                 </button>
 <button class="bg-white hover:bg-concrete text-navy px-10 py-5 font-bold text-lg uppercase tracking-widest transition-all border-2 border-navy block-shadow">
-                    Call (555) 123-4567
+                Call {siteSettings.phoneDisplay}
                 </button>
 </div>
 </div>
@@ -380,7 +381,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
                     </button>
 <div class="flex items-center gap-4 text-white font-bold text-xl uppercase tracking-widest">
 <span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
-<span>(555) 123-4567</span>
+<span>{siteSettings.phoneDisplay}</span>
 </div>
 </div>
 </div>

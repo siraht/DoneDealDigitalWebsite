@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import { siteSettings } from "../lib/siteSettings";
 ---
 
 <SharedPageLayout title="Contact Done Deal Digital | Get a Free Quote" bodyClass="bg-concrete font-dmsans text-navy">
@@ -151,22 +152,22 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 <div class="bg-navy border-2 border-navy p-8 block-shadow-orange text-white">
 <h3 class="font-bebas bebas-heavy text-4xl mb-6 text-primary uppercase">QUICK CONTACT</h3>
 <div class="space-y-8">
-<a class="group flex items-center gap-4" href="tel:5551234567">
+<a class="group flex items-center gap-4" href={`tel:${siteSettings.phoneDigits}`}>
 <div class="bg-primary p-3 border-2 border-white group-hover:scale-105 transition-transform">
 <span class="material-symbols-outlined text-3xl leading-none">phone_in_talk</span>
 </div>
 <div>
 <p class="text-xs font-bold uppercase tracking-widest text-concrete/60">Call Us Directly</p>
-                            <p class="font-bold">(555) 123-4567</p>
+                            <p class="font-bold">{siteSettings.phoneDisplay}</p>
 </div>
 </a>
-<a class="group flex items-center gap-4" href="mailto:hello@donedealdigital.com">
+<a class="group flex items-center gap-4" href={`mailto:${siteSettings.email}`}>
 <div class="bg-white text-navy p-3 border-2 border-primary group-hover:scale-105 transition-transform">
 <span class="material-symbols-outlined text-3xl leading-none">mail</span>
 </div>
 <div>
 <p class="text-xs font-bold uppercase tracking-widest text-concrete/60">Email Our Team</p>
-                            <p class="font-bold">hello@donedealdigital.com</p>
+                            <p class="font-bold">{siteSettings.email}</p>
 </div>
 </a>
 </div>

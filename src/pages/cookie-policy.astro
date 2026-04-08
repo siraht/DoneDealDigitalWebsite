@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import { siteSettings } from "../lib/siteSettings";
 ---
 
 <SharedPageLayout title="Cookie Policy | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -109,7 +110,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
             If we add tracking technologies in the future, this page will be updated and dated.
         </p>
 <p class="text-slate-700 leading-relaxed mt-4">
-            Questions about cookies or data handling can be directed to <strong>hello@donedealdigital.com</strong>.
+            Questions about cookies or data handling can be directed to <strong>{siteSettings.email}</strong>.
         </p>
 </section>
 </article>
