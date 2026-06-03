@@ -165,6 +165,7 @@ button {
   letter-spacing: var(--tracking-ultrawide);
   font-size: var(--text-s, var(--type-size-sm));
   line-height: 1.4286;
+  color: var(--heading-color, var(--color-navy));
   transition: background-color 120ms ease, color 120ms ease;
   border-right: var(--border-width-thin) solid var(--color-navy-20);
 }
@@ -485,7 +486,6 @@ button {
 
 .cred-strip__text {
   text-transform: uppercase;
-  letter-spacing: var(--tracking-tagline);
   text-wrap: balance;
   font-size: inherit;
   line-height: 1;
