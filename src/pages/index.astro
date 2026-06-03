@@ -2,6 +2,14 @@
 import "../styles/global.css";
 
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import heroImage from "../../assets/images/contractor_in_front_of_house.png";
+
+const heroImageWidths = [480, 768, 960, 1122];
+const imageCdnSrc = (width: number) =>
+  `/.netlify/images?url=${encodeURIComponent(heroImage.src)}&w=${width}&q=82`;
+const heroImageSrcset = heroImageWidths
+  .map((width) => `${imageCdnSrc(width)} ${width}w`)
+  .join(", ");
 ---
 
 <SharedPageLayout title="Done Deal Digital | Websites and Local Lead Systems for the Trades" bodyClass="page">
@@ -21,12 +29,12 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
       <div class="hero__bg u-graph-paper"></div>
       <div class="hero__inner site-container">
         <div class="hero__content">
-          <h1 class="hero__headline">
+          <h1 class="hero__headline h1">
             WE BUILD WEBSITES THAT
             <span class="hero__headline-accent">WORK AS HARD</span>
             AS YOU DO.
           </h1>
-          <p class="hero__copy">
+          <p class="hero__copy text--l">
             We build websites first, then support local SEO and paid ads when they fit.
             The goal is simple: help the right customer trust you fast and take the next step.
           </p>
@@ -39,9 +47,13 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
           <div class="hero__media-frame u-block-shadow--accent">
             <div class="hero__media-inner">
               <img
-                alt="Professional electrician working"
+                alt="Contractor standing in front of a finished house exterior"
                 class="hero__media-image u-bw"
-                src="/images/Gemini_Generated_Image_dvy1dodvy1dodvy1.png"
+                src={imageCdnSrc(960)}
+                srcset={heroImageSrcset}
+                sizes="(min-width: 64rem) 43vw, (min-width: 48rem) 52vw, 100vw"
+                width={heroImage.width}
+                height={heroImage.height}
               />
               <div class="hero__media-overlay"></div>
             </div>
@@ -81,7 +93,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
         <section id="services" class="services">
       <div class="site-container">
           <div class="services__heading">
-            <h2 class="services__title">NO FLUFF. JUST RESULTS.</h2>
+            <h2 class="services__title h2">NO FLUFF. JUST RESULTS.</h2>
             <div class="services__rule"></div>
           </div>
         <div class="services__list">
@@ -89,7 +101,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
             <div class="services-card__icon-wrap">
               <span class="services-card__icon material-symbols-outlined">monitor</span>
             </div>
-            <h3 class="services-card__title">WEB DESIGN</h3>
+            <h3 class="services-card__title h3">WEB DESIGN</h3>
             <p class="services-card__description">
               Websites for small businesses, built to look credible fast and turn visits into calls.
             </p>
@@ -99,7 +111,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
             <div class="services-card__icon-wrap">
               <span class="services-card__icon material-symbols-outlined">trending_up</span>
             </div>
-            <h3 class="services-card__title">LOCAL SEO</h3>
+            <h3 class="services-card__title h3">LOCAL SEO</h3>
               <p class="services-card__description">
                 Local SEO for businesses that need to show up more clearly in Google Maps and local search.
               </p>
@@ -109,7 +121,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
             <div class="services-card__icon-wrap">
               <span class="services-card__icon material-symbols-outlined">target</span>
             </div>
-            <h3 class="services-card__title">LEAD GEN</h3>
+            <h3 class="services-card__title h3">LEAD GEN</h3>
               <p class="services-card__description">
                 Paid ads for operators who can answer fast, track leads, and support the spend.
               </p>
@@ -121,21 +133,21 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 
     <section class="home-frustrations">
       <div class="site-container home-frustrations__inner">
-        <h2 class="home-frustrations__title">Why Owners Come to Us</h2>
+        <h2 class="home-frustrations__title h2">Why Owners Come to Us</h2>
         <div class="home-frustrations-grid">
           <article class="home-frustrations-card">
             <span class="home-frustrations-card__icon material-symbols-outlined" aria-hidden="true">cancel</span>
-            <p class="home-frustrations-quote">"My site looks dated and I&apos;m not getting enough calls."</p>
+            <p class="home-frustrations-quote text--xxl">"My site looks dated and I&apos;m not getting enough calls."</p>
             <p class="home-frustrations-copy">We rebuild the pages, tighten the message, and give people a clearer reason to contact you.</p>
           </article>
           <article class="home-frustrations-card">
             <span class="home-frustrations-card__icon material-symbols-outlined" aria-hidden="true">visibility_off</span>
-            <p class="home-frustrations-quote">"People know my name, but I&apos;m hard to find on Google."</p>
+            <p class="home-frustrations-quote text--xxl">"People know my name, but I&apos;m hard to find on Google."</p>
             <p class="home-frustrations-copy">We fix the local basics first so your business shows up more clearly in the markets you serve.</p>
           </article>
           <article class="home-frustrations-card">
             <span class="home-frustrations-card__icon material-symbols-outlined" aria-hidden="true">monetization_on</span>
-            <p class="home-frustrations-quote">"I&apos;m spending on ads, but I can&apos;t tell what&apos;s working."</p>
+            <p class="home-frustrations-quote text--xxl">"I&apos;m spending on ads, but I can&apos;t tell what&apos;s working."</p>
             <p class="home-frustrations-copy">We track calls, forms, and lead quality so you can judge the spend like an owner.</p>
           </article>
         </div>
@@ -147,12 +159,12 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
       <div class="process__inner site-container">
         <div class="process__grid">
           <div class="process__copy">
-            <h2 class="process__title">THE DONE DEAL PROCESS</h2>
+            <h2 class="process__title h2">THE DONE DEAL PROCESS</h2>
             <div class="process__steps">
               <div class="process-step">
                 <div class="process-step__number">01</div>
                 <div class="process-step__body">
-                  <h4 class="process-step__title">CONSULTATION</h4>
+                  <h4 class="process-step__title h4">CONSULTATION</h4>
                   <p class="process-step__copy">
                     We analyze your current digital presence and your local competitors to build a custom roadmap.
                   </p>
@@ -161,7 +173,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
               <div class="process-step">
                 <div class="process-step__number">02</div>
                 <div class="process-step__body">
-                  <h4 class="process-step__title">BUILD</h4>
+                  <h4 class="process-step__title h4">BUILD</h4>
                   <p class="process-step__copy">
                     Our team builds your high-converting assets and launches your targeted marketing campaigns.
                   </p>
@@ -170,7 +182,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
               <div class="process-step">
                 <div class="process-step__number">03</div>
                 <div class="process-step__body">
-                  <h4 class="process-step__title">GROWTH</h4>
+                  <h4 class="process-step__title h4">GROWTH</h4>
                   <p class="process-step__copy">
                     We continually monitor and optimize your campaigns, sharing weekly and monthly reports so you know what&apos;s working.
                   </p>
@@ -207,7 +219,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
         <section class="home-faq">
           <div class="site-container">
             <div class="home-faq__title-wrap">
-              <h2 class="home-faq__title">
+              <h2 class="home-faq__title h2">
                 <span class="home-faq__title-accent">STRAIGHT ANSWERS</span> BEFORE YOU REACH OUT
               </h2>
             </div>
@@ -215,35 +227,35 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
           <li class="home-faq__entry">
             <span class="home-faq__number">01</span>
             <div>
-              <h3 class="home-faq__question">Do I need a new website, or can you improve the one I have?</h3>
+              <h3 class="home-faq__question text--xxl">Do I need a new website, or can you improve the one I have?</h3>
               <p class="home-faq__answer">We can do either. If your current site is worth keeping, we’ll say so. If a rebuild is the cleaner move, we’ll explain why.</p>
             </div>
           </li>
           <li class="home-faq__entry">
             <span class="home-faq__number">02</span>
             <div>
-              <h3 class="home-faq__question">How much does a website project usually cost?</h3>
+              <h3 class="home-faq__question text--xxl">How much does a website project usually cost?</h3>
               <p class="home-faq__answer">Pricing depends on scope, page count, and whether we’re rebuilding or starting fresh. We quote website projects at a fixed project fee once scope is clear.</p>
             </div>
           </li>
           <li class="home-faq__entry">
             <span class="home-faq__number">03</span>
             <div>
-              <h3 class="home-faq__question">How long does a project take?</h3>
+              <h3 class="home-faq__question text--xxl">How long does a project take?</h3>
               <p class="home-faq__answer">Most website projects launch in about 2 to 3 weeks once we have the needed photos, details, and feedback.</p>
             </div>
           </li>
           <li class="home-faq__entry">
             <span class="home-faq__number">04</span>
             <div>
-              <h3 class="home-faq__question">Do I own the website and accounts?</h3>
+              <h3 class="home-faq__question text--xxl">Do I own the website and accounts?</h3>
               <p class="home-faq__answer">Yes. You should own your website, domain, and primary accounts. We make that clear in the agreement and handoff.</p>
             </div>
           </li>
           <li class="home-faq__entry">
             <span class="home-faq__number">05</span>
             <div>
-              <h3 class="home-faq__question">Is web design the right first step, or do I need SEO or ads first?</h3>
+              <h3 class="home-faq__question text--xxl">Is web design the right first step, or do I need SEO or ads first?</h3>
               <p class="home-faq__answer">For most businesses, the website is the first move. If traffic is landing on a weak site, SEO and ads get less efficient.</p>
             </div>
           </li>
@@ -255,8 +267,8 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
       <div class="final-cta__wrap">
         <div class="final-cta__panel">
           <div class="final-cta__text">
-            <h2 class="final-cta__title">READY FOR A SITE THAT EARNS ITS KEEP?</h2>
-            <p class="final-cta__copy">
+            <h2 class="final-cta__title h1">READY FOR A SITE THAT EARNS ITS KEEP?</h2>
+            <p class="final-cta__copy text--xl">
               If the site is the problem, we’ll tell you. If it isn’t, we’ll tell you that too.
             </p>
             <div class="final-cta__actions">
