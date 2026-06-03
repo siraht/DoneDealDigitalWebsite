@@ -4,7 +4,7 @@ import FinalCTA from "../components/FinalCTA.astro";
 import Hero from "../components/Hero.astro";
 ---
 
-<SharedPageLayout title="Why Us | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
+<SharedPageLayout title="Why Us | Done Deal Digital" bodyClass="bg-background-light">
     <Fragment slot="head">
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -67,26 +67,22 @@ import Hero from "../components/Hero.astro";
             .bw-overlay {
                 filter: grayscale(1) contrast(1.2);
             }
-            .bebas-heavy {
-                font-weight: 700;
-                letter-spacing: 0.02em;
-            }
         }
     </style>
 </Fragment>
 
 <Hero eyebrow="REAL PEOPLE. CLEAR PROCESS." align="center" copy="You’ll know who you’re working with, how we communicate, and what we’re responsible for.">
-  <Fragment slot="title">YOU'RE NOT HIRING A <span class="hero__headline-accent">MYSTERY AGENCY.</span></Fragment>
+  <Fragment slot="title">YOU'RE NOT HIRING A <br /><span class="hero__headline-accent">MYSTERY AGENCY.</span></Fragment>
 </Hero>
 <section class="bg-white py-24 border-b-2 border-navy">
 <div class="max-w-7xl mx-auto px-6 lg:px-20">
 <div class="grid lg:grid-cols-2 gap-16 items-center">
 <div class="border-4 border-navy p-12 block-shadow">
-<h2 class="font-bebas bebas-heavy text-6xl text-navy mb-8">WHY DONE DEAL DIGITAL EXISTS</h2>
-<p class="text-xl text-slate-700 leading-relaxed mb-6 font-medium">
+<h2 class="about-title mb-8">WHY DONE DEAL DIGITAL EXISTS</h2>
+<p class="about-copy">
                         Most agencies speak in agency language. We built this firm so local service businesses can get practical, direct recommendations.
                     </p>
-<p class="text-xl text-slate-700 leading-relaxed font-medium">
+<p class="about-copy">
                         We focus on outcomes owners can verify: clearer contact flow, better messaging, and cleaner systems.
                     </p>
 </div>
@@ -94,22 +90,22 @@ import Hero from "../components/Hero.astro";
 <div class="flex gap-6 items-center border-l-8 border-primary pl-8 py-4">
 <span class="material-symbols-outlined text-5xl text-navy">verified_user</span>
 <div>
-<h4 class="font-bebas text-3xl text-navy">WE SHOW UP</h4>
-<p class="font-medium text-slate-600 uppercase text-sm tracking-widest">No ghosting. We keep promises and schedules.</p>
+<h4 class="about-kicker">WE SHOW UP</h4>
+<p class="about-microcopy">No ghosting. We keep promises and schedules.</p>
 </div>
 </div>
 <div class="flex gap-6 items-center border-l-8 border-navy pl-8 py-4">
 <span class="material-symbols-outlined text-5xl text-navy">visibility</span>
 <div>
-<h4 class="font-bebas text-3xl text-navy">CLEAR SCOPE</h4>
-<p class="font-medium text-slate-600 uppercase text-sm tracking-widest">No hidden work. Everything is documented.</p>
+<h4 class="about-kicker">CLEAR SCOPE</h4>
+<p class="about-microcopy">No hidden work. Everything is documented.</p>
 </div>
 </div>
 <div class="flex gap-6 items-center border-l-8 border-primary pl-8 py-4">
 <span class="material-symbols-outlined text-5xl text-navy">speed</span>
 <div>
-<h4 class="font-bebas text-3xl text-navy">SPEAK THE TRUTH EARLY</h4>
-<p class="font-medium text-slate-600 uppercase text-sm tracking-widest">We tell you if the fit is weak before we begin.</p>
+<h4 class="about-kicker">SPEAK THE TRUTH EARLY</h4>
+<p class="about-microcopy">We tell you if the fit is weak before we begin.</p>
 </div>
 </div>
 </div>
@@ -118,20 +114,20 @@ import Hero from "../components/Hero.astro";
 </section>
 <section class="bg-background-light py-24 border-b-2 border-navy">
 <div class="max-w-7xl mx-auto px-6 lg:px-20">
-<h2 class="font-bebas bebas-heavy text-6xl text-navy mb-16 text-center">MEET THE FOUNDERS</h2>
+<h2 class="about-title about-title--center mb-16">MEET THE FOUNDERS</h2>
 <div class="grid md:grid-cols-2 gap-12">
 <div class="bg-white border-2 border-navy block-shadow">
 <div class="h-[400px] border-b-2 border-navy relative overflow-hidden">
 <img alt="Travis - Founder" class="w-full h-full object-cover bw-overlay" src="/images/travis.jpg" style="object-position: 84% 39%;"/>
 <div class="absolute inset-0 bg-navy/20 mix-blend-multiply"></div>
 <div class="absolute bottom-6 left-6 bg-primary text-white px-4 py-2 border-2 border-navy">
-<span class="font-bebas text-2xl tracking-widest">TRAVIS</span>
+<span class="about-founder-name">TRAVIS</span>
 </div>
 </div>
 <div class="p-8">
-<h4 class="font-bebas text-3xl mb-2 text-navy">THE STRATEGIST</h4>
-<p class="text-slate-600 font-medium mb-6">Former field operator with direct service business experience. Travis handles offer positioning and owner-facing planning.</p>
-<div class="flex gap-2 font-bold text-xs uppercase tracking-widest text-navy bg-concrete p-3 border border-navy/10">
+<h4 class="about-kicker mb-2">THE STRATEGIST</h4>
+<p class="about-copy mb-6">Former field operator with direct service business experience. Travis handles offer positioning and owner-facing planning.</p>
+<div class="about-founder-meta flex gap-2 bg-concrete p-3 border border-navy/10">
 <span class="material-symbols-outlined text-sm">precision_manufacturing</span> FIELD EXPERIENCE + OPERATIONS
                         </div>
 </div>
@@ -141,13 +137,13 @@ import Hero from "../components/Hero.astro";
 <img alt="Jacob - Founder" class="w-full h-full object-cover bw-overlay" src="/images/jacob.jpeg" style="object-position: 50% 10%;"/>
 <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
 <div class="absolute bottom-6 left-6 bg-navy text-white px-4 py-2 border-2 border-white">
-<span class="font-bebas text-2xl tracking-widest">JACOB</span>
+<span class="about-founder-name">JACOB</span>
 </div>
 </div>
 <div class="p-8">
-<h4 class="font-bebas text-3xl mb-2 text-navy">THE ARCHITECT</h4>
-<p class="text-slate-600 font-medium mb-6">Digital execution specialist. Jacob keeps builds fast, stable, and easier for owners and teams to use.</p>
-<div class="flex gap-2 font-bold text-xs uppercase tracking-widest text-navy bg-concrete p-3 border border-navy/10">
+<h4 class="about-kicker mb-2">THE ARCHITECT</h4>
+<p class="about-copy mb-6">Digital execution specialist. Jacob keeps builds fast, stable, and easier for owners and teams to use.</p>
+<div class="about-founder-meta flex gap-2 bg-concrete p-3 border border-navy/10">
 <span class="material-symbols-outlined text-sm">code</span> WEB PERFORMANCE + DELIVERY
                         </div>
 </div>
@@ -158,8 +154,8 @@ import Hero from "../components/Hero.astro";
 <section class="bg-concrete py-24 border-b-2 border-navy relative overflow-hidden">
 <div class="absolute inset-0 diagonal-stripes"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10 text-center">
-<h2 class="font-bebas bebas-heavy text-7xl text-navy mb-8">WHY SERVICE BUSINESSES?</h2>
-<p class="text-3xl font-bold text-navy max-w-4xl mx-auto leading-tight italic">
+<h2 class="about-title about-title--large mb-8">WHY SERVICE BUSINESSES?</h2>
+<p class="about-quote">
                 "Service businesses need a partner that shows up, does what it says, and follows through."
             </p>
 <div class="mt-12 flex justify-center gap-4">
@@ -171,55 +167,55 @@ import Hero from "../components/Hero.astro";
 </section>
 <section class="py-24 bg-white border-b-2 border-navy">
 <div class="max-w-7xl mx-auto px-6 lg:px-20">
-<h2 class="font-bebas bebas-heavy text-6xl text-navy mb-16">PRINCIPLES</h2>
+<h2 class="about-title mb-16">PRINCIPLES</h2>
 <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
 <div class="border-2 border-navy p-8 bg-white block-shadow flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">event_available</span>
-<h4 class="font-bebas text-2xl text-navy mb-2">1. WE SHOW UP</h4>
-<p class="text-xs font-bold uppercase tracking-tight text-slate-500 leading-tight">No ghosting. Ever.</p>
+<span class="about-principle-icon material-symbols-outlined">event_available</span>
+<h4 class="about-kicker mb-2">1. WE SHOW UP</h4>
+<p class="about-principle-copy">No ghosting. Ever.</p>
 </div>
 <div class="border-2 border-navy p-8 bg-white block-shadow flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">assignment</span>
-<h4 class="font-bebas text-2xl text-navy mb-2">2. CLEAR SCOPE</h4>
-<p class="text-xs font-bold uppercase tracking-tight text-slate-500 leading-tight">Everything in writing.</p>
+<span class="about-principle-icon material-symbols-outlined">assignment</span>
+<h4 class="about-kicker mb-2">2. CLEAR SCOPE</h4>
+<p class="about-principle-copy">Everything in writing.</p>
 </div>
 <div class="border-2 border-navy p-8 bg-white block-shadow flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">gavel</span>
-<h4 class="font-bebas text-2xl text-navy mb-2">3. HARD TRUTHS</h4>
-<p class="text-xs font-bold uppercase tracking-tight text-slate-500 leading-tight">No sugar coating early.</p>
+<span class="about-principle-icon material-symbols-outlined">gavel</span>
+<h4 class="about-kicker mb-2">3. HARD TRUTHS</h4>
+<p class="about-principle-copy">No sugar coating early.</p>
 </div>
 <div class="border-2 border-navy p-8 bg-white block-shadow flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">settings_suggest</span>
-<h4 class="font-bebas text-2xl text-navy mb-2">4. BUILT FOR USE</h4>
-<p class="text-xs font-bold uppercase tracking-tight text-slate-500 leading-tight">Tools, not toys.</p>
+<span class="about-principle-icon material-symbols-outlined">settings_suggest</span>
+<h4 class="about-kicker mb-2">4. BUILT FOR USE</h4>
+<p class="about-principle-copy">Tools, not toys.</p>
 </div>
 <div class="border-2 border-navy p-8 bg-white block-shadow flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">support_agent</span>
-<h4 class="font-bebas text-2xl text-navy mb-2">5. POST-LAUNCH</h4>
-<p class="text-xs font-bold uppercase tracking-tight text-slate-500 leading-tight">Support after launch.</p>
+<span class="about-principle-icon material-symbols-outlined">support_agent</span>
+<h4 class="about-kicker mb-2">5. POST-LAUNCH</h4>
+<p class="about-principle-copy">Support after launch.</p>
 </div>
 </div>
 </div>
 </section>
 <section class="py-24 bg-navy text-white border-b-2 border-navy">
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="font-bebas bebas-heavy text-6xl text-white mb-12 text-center underline decoration-primary underline-offset-8">WHAT WORKING WITH US FEELS LIKE</h2>
+<h2 class="about-title about-title--light about-title--center mb-12 underline decoration-primary underline-offset-8">WHAT WORKING WITH US FEELS LIKE</h2>
 <div class="space-y-4">
 <div class="border-2 border-white/20 p-8 flex flex-col md:flex-row gap-8 items-center bg-white/5">
-<div class="text-primary font-bebas text-4xl italic">COMMUNICATION</div>
-<div class="text-lg text-concrete font-medium border-l-2 border-primary/30 pl-8">
+<div class="about-experience-title">COMMUNICATION</div>
+<div class="about-experience-copy border-l-2 border-primary/30 pl-8">
                         Direct access to the team. Clear ownership and concise updates.
                     </div>
 </div>
 <div class="border-2 border-white/20 p-8 flex flex-col md:flex-row gap-8 items-center bg-white/5">
-<div class="text-primary font-bebas text-4xl italic">RESPONSE TIMES</div>
-<div class="text-lg text-concrete font-medium border-l-2 border-primary/30 pl-8">
+<div class="about-experience-title">RESPONSE TIMES</div>
+<div class="about-experience-copy border-l-2 border-primary/30 pl-8">
                         Emergency issues handled same-day. General requests within 24 business hours.
                     </div>
 </div>
 <div class="border-2 border-white/20 p-8 flex flex-col md:flex-row gap-8 items-center bg-white/5">
-<div class="text-primary font-bebas text-4xl italic">REVISIONS</div>
-<div class="text-lg text-concrete font-medium border-l-2 border-primary/30 pl-8">
+<div class="about-experience-title">REVISIONS</div>
+<div class="about-experience-copy border-l-2 border-primary/30 pl-8">
                         One structured revision pass is included, with adjustments focused on the agreed goals.
                     </div>
 </div>
