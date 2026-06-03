@@ -1,0 +1,32 @@
+---
+interface Props {
+  type?: "button" | "submit" | "reset";
+  label?: string;
+  variant?: "accent" | "secondary";
+  size?: "sm" | "md" | "lg" | "xl";
+  full?: boolean;
+  class?: string;
+}
+
+const {
+  type = "button",
+  label,
+  variant = "accent",
+  size = "md",
+  full = false,
+  class: className = "",
+} = Astro.props;
+---
+
+<button
+  type={type}
+  class:list={[
+    "cta",
+    `cta--${variant}`,
+    `cta--${size}`,
+    full && "cta--full",
+    className,
+  ]}
+>
+  <slot>{label}</slot>
+</button>

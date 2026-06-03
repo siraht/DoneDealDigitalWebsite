@@ -1,5 +1,7 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import CtaLink from "../components/CtaLink.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 ---
 
 <SharedPageLayout title="Paid Ads for Service Businesses | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy antialiased">
@@ -94,9 +96,7 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
                 If ads are the wrong move, we’ll say that early.
             </p>
 <div class="flex flex-wrap gap-6">
-<a class="bg-primary hover:bg-orange-600 text-white px-12 py-7 font-bold text-xl uppercase tracking-widest transition-all border-2 border-white block-shadow-orange" href="/contact">
-                    GET A FREE AD REVIEW
-                </a>
+<CtaLink href="/contact" label="GET A FREE AD REVIEW" size="lg" />
 <div class="flex items-center gap-4 px-8 py-7 border-2 border-white/20 text-white font-bold uppercase tracking-widest text-sm">
 <span class="material-symbols-outlined text-primary">verified</span> No long-term contracts
                 </div>
@@ -339,24 +339,13 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 </div>
 </div>
 </section>
-<section class="py-32 bg-white">
-<div class="max-w-5xl mx-auto px-6">
-<div class="border-4 border-navy p-16 md:p-24 relative text-center bg-navy text-white block-shadow-orange">
-<div class="absolute inset-0 graph-paper opacity-20 pointer-events-none"></div>
-<div class="relative z-10">
-<h2 class="font-bebas bebas-heavy text-7xl md:text-8xl mb-10 leading-none">WANT AN HONEST READ ON PAID ADS?</h2>
-<p class="text-2xl text-concrete/80 mb-8 max-w-2xl mx-auto font-medium">
-If the numbers and follow-up process support paid ads, we’ll say so. If they don’t, we’ll say that too.
-</p>
-<p class="text-xl text-slate-300 mb-14 max-w-2xl mx-auto">
-Get a candid review before you commit budget.
-</p>
-<a class="bg-primary hover:bg-orange-600 text-white px-14 py-8 font-bold text-2xl uppercase tracking-widest border-2 border-white block-shadow-orange w-full md:w-auto" href="/contact">
-                    GET A FREE AD REVIEW
-                </a>
-</div>
-</div>
-</div>
-</section>
+<FinalCTA
+    panel="dark"
+    shadow="accent"
+    title="WANT AN HONEST READ ON PAID ADS?"
+    copy="If the numbers and follow-up process support paid ads, we’ll say so. If they don’t, we’ll say that too."
+    secondaryCopy="Get a candid review before you commit budget."
+    actionLabel="GET A FREE AD REVIEW"
+/>
 
 </SharedPageLayout>

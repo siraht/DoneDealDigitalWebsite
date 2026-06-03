@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 
+import CtaLink from "../components/CtaLink.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import heroImage from "../../assets/images/contractor_in_front_of_house.png";
 
@@ -39,7 +41,7 @@ const heroImageSrcset = heroImageWidths
             The goal is simple: help the right customer trust you fast and take the next step.
           </p>
             <div class="hero__actions">
-            <a class="hero__cta cta cta--accent cta--md" href="/contact">GET A FREE QUOTE</a>
+            <CtaLink class="hero__cta" href="/contact" label="GET A FREE QUOTE" size="md" />
           </div>
         </div>
 
@@ -263,19 +265,9 @@ const heroImageSrcset = heroImageWidths
       </div>
     </section>
 
-      <section id="contact" class="final-cta">
-      <div class="final-cta__wrap">
-        <div class="final-cta__panel">
-          <div class="final-cta__text">
-            <h2 class="final-cta__title h1">READY FOR A SITE THAT EARNS ITS KEEP?</h2>
-            <p class="final-cta__copy text--xl">
-              If the site is the problem, we’ll tell you. If it isn’t, we’ll tell you that too.
-            </p>
-            <div class="final-cta__actions">
-              <a class="final-cta__button cta cta--accent cta--xl" href="/contact">GET A FREE QUOTE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <FinalCTA
+        title="READY FOR A SITE THAT EARNS ITS KEEP?"
+        copy="If the site is the problem, we’ll tell you. If it isn’t, we’ll tell you that too."
+        actionLabel="GET A FREE QUOTE"
+      />
 </SharedPageLayout>

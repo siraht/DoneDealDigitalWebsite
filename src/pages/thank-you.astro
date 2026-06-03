@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import CtaLink from "../components/CtaLink.astro";
 import { siteSettings } from "../lib/siteSettings";
 ---
 
@@ -89,10 +90,10 @@ import { siteSettings } from "../lib/siteSettings";
 <p class="text-navy text-lg md:text-xl leading-relaxed font-medium mb-10">
                     Thanks for reaching out. We’ll review your info and get back to you within 1 business day — usually sooner. If you need something right away, call us.
                 </p>
-<a class="inline-flex items-center justify-center gap-4 bg-primary hover:bg-orange-600 text-white px-10 py-6 font-bold text-xl md:text-2xl uppercase tracking-widest transition-all border-2 border-navy block-shadow w-full" href={`tel:${siteSettings.phoneDigits}`}>
+<CtaLink href={`tel:${siteSettings.phoneDigits}`} size="xl" full={true}>
 <span class="material-symbols-outlined">phone_in_talk</span>
                     CALL US: {siteSettings.phoneDisplay}
-                </a>
+                </CtaLink>
 </div>
 </div>
 </section>

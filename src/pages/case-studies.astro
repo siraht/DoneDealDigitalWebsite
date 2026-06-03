@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 ---
 
 <SharedPageLayout title="Case Studies | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -115,18 +116,12 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 </div>
 </section>
 
-<section class="py-24 bg-background-light">
-<div class="max-w-5xl mx-auto px-6">
-<div class="border-4 border-navy p-12 text-center bg-white block-shadow">
-<h2 class="font-bebas bebas-heavy text-6xl text-navy mb-8">READY TO BE OUR NEXT PROJECT?</h2>
-<p class="text-2xl text-slate-600 mb-12 max-w-2xl mx-auto">
-                We’ll evaluate your fit and recommend the next best step for your business goals.
-            </p>
-<a href="/contact" class="inline-block bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-navy block-shadow-orange transition-transform hover:-translate-y-1">
-                LET'S TALK
-            </a>
-</div>
-</div>
-</section>
+<FinalCTA
+    surface="light"
+    title="READY TO BE OUR NEXT PROJECT?"
+    copy="We’ll evaluate your fit and recommend the next best step for your business goals."
+    actionLabel="LET'S TALK"
+    shadow="primary"
+/>
 
 </SharedPageLayout>

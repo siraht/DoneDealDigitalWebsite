@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 ---
 
 <SharedPageLayout title="Why Us | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -235,23 +236,12 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
 </div>
 </div>
 </section>
-<section class="py-24 bg-white">
-<div class="max-w-5xl mx-auto px-6">
-<div class="border-4 border-navy p-16 relative bg-white block-shadow">
-<div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-primary px-8 py-3 border-2 border-navy">
-<span class="text-white font-bebas bebas-heavy text-2xl uppercase tracking-widest">READY TO WORK?</span>
-</div>
-<div class="text-center">
-<h2 class="font-bebas bebas-heavy text-7xl text-navy mb-8">READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?</h2>
-<p class="text-2xl text-slate-600 mb-12 max-w-2xl mx-auto font-medium">If you're tired of unclear ownership and ready for a straightforward process, let's have a conversation.</p>
-<div class="flex flex-col md:flex-row items-center justify-center gap-8">
-<button class="bg-primary hover:bg-orange-600 text-white px-16 py-6 font-bold text-3xl uppercase tracking-widest border-2 border-navy block-shadow-orange w-full md:w-auto">
-                            LET'S TALK
-                        </button>
-</div>
-</div>
-</div>
-</div>
-</section>
+<FinalCTA
+    eyebrow="READY TO WORK?"
+    title="READY TO WORK WITH PEOPLE WHO FOLLOW THROUGH?"
+    copy="If you're tired of unclear ownership and ready for a straightforward process, let's have a conversation."
+    actionLabel="LET'S TALK"
+    shadow="primary"
+/>
 
 </SharedPageLayout>

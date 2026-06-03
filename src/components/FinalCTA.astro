@@ -1,0 +1,72 @@
+---
+import CtaLink from "./CtaLink.astro";
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  copy: string;
+  secondaryCopy?: string;
+  actionLabel?: string;
+  actionHref?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+  secondaryIcon?: string;
+  surface?: "white" | "light" | "concrete";
+  panel?: "light" | "dark";
+  shadow?: "none" | "primary" | "accent";
+  border?: "navy" | "primary";
+  class?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  copy,
+  secondaryCopy,
+  actionLabel = "GET A FREE QUOTE",
+  actionHref = "/contact",
+  secondaryHref,
+  secondaryLabel,
+  secondaryIcon = "phone_in_talk",
+  surface = "white",
+  panel = "light",
+  shadow = "none",
+  border = "navy",
+  class: className = "",
+} = Astro.props;
+---
+
+<section
+  class:list={[
+    "final-cta",
+    `final-cta--surface-${surface}`,
+    `final-cta--panel-${panel}`,
+    `final-cta--shadow-${shadow}`,
+    `final-cta--border-${border}`,
+    className,
+  ]}
+>
+  <div class="final-cta__wrap">
+    <div class="final-cta__panel">
+      {eyebrow && (
+        <div class="final-cta__eyebrow">
+          <span>{eyebrow}</span>
+        </div>
+      )}
+      <div class="final-cta__text">
+        <h2 class="final-cta__title h1">{title}</h2>
+        <p class="final-cta__copy text--xl">{copy}</p>
+        {secondaryCopy && <p class="final-cta__copy final-cta__copy--secondary">{secondaryCopy}</p>}
+        <div class="final-cta__actions">
+          <CtaLink href={actionHref} label={actionLabel} size="xl" class="final-cta__button" />
+          {secondaryHref && secondaryLabel && (
+            <a class="final-cta__secondary" href={secondaryHref}>
+              <span class="material-symbols-outlined">{secondaryIcon}</span>
+              <span>{secondaryLabel}</span>
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 import { siteSettings } from "../lib/siteSettings";
 ---
 
@@ -341,23 +342,14 @@ import { siteSettings } from "../lib/siteSettings";
 </div>
 </main>
 
-<section class="py-24 bg-concrete">
-<div class="max-w-5xl mx-auto px-6">
-<div class="bg-white border-4 border-navy p-12 relative block-shadow-orange text-center">
-<h2 class="font-bebas bebas-heavy text-7xl text-navy mb-6">STILL HAVE QUESTIONS? <span class="text-primary">LET'S TALK.</span></h2>
-<p class="text-2xl text-slate-600 mb-12 max-w-2xl mx-auto">If you don’t see your question here, reach out and we’ll handle it directly.</p>
-<p class="text-2xl text-slate-600 mb-12 max-w-2xl mx-auto">If you still have questions, send them over. We’ll answer directly and tell you if there’s a fit.</p>
-<div class="flex flex-col md:flex-row items-center justify-center gap-8">
-<a href="/contact" class="bg-primary hover:bg-orange-600 text-white px-12 py-6 font-bold text-2xl uppercase tracking-widest border-2 border-navy block-shadow w-full md:w-auto inline-block text-center transition-transform hover:-translate-y-1">
-                    CONTACT US
-                </a>
-<a class="flex items-center gap-4 text-navy font-bold text-xl" href={`tel:${siteSettings.phoneDigits}`}>
-<span class="material-symbols-outlined text-primary text-3xl">phone_in_talk</span>
-<span>CALL US: {siteSettings.phoneDisplay}</span>
-</a>
-</div>
-</div>
-</div>
-</section>
+<FinalCTA
+    surface="concrete"
+    shadow="accent"
+    title="STILL HAVE QUESTIONS? LET'S TALK."
+    copy="If you still have questions, send them over. We’ll answer directly and tell you if there’s a fit."
+    actionLabel="CONTACT US"
+    secondaryHref={`tel:${siteSettings.phoneDigits}`}
+    secondaryLabel={`CALL US: ${siteSettings.phoneDisplay}`}
+/>
 
 </SharedPageLayout>

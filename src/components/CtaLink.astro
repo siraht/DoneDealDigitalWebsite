@@ -1,0 +1,32 @@
+---
+interface Props {
+  href?: string;
+  label?: string;
+  variant?: "accent" | "secondary";
+  size?: "sm" | "md" | "lg" | "xl";
+  full?: boolean;
+  class?: string;
+}
+
+const {
+  href = "/contact",
+  label,
+  variant = "accent",
+  size = "md",
+  full = false,
+  class: className = "",
+} = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "cta",
+    `cta--${variant}`,
+    `cta--${size}`,
+    full && "cta--full",
+    className,
+  ]}
+>
+  <slot>{label}</slot>
+</a>
