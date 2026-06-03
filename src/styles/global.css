@@ -43,6 +43,12 @@ h6 {
   text-wrap: balance;
 }
 
+.bg-navy,
+.bg-background-dark {
+  --heading-color: var(--color-white);
+  --text-color: var(--color-concrete);
+}
+
 .p-12[data-astro-cid-cgdubsdu] {
   padding: 3rem 1rem 3rem 1rem !important;
 }
@@ -301,6 +307,44 @@ button {
 .home-faq {
   --heading-color: var(--color-white);
   --text-color: var(--color-white);
+}
+
+.not-found {
+  --heading-color: var(--color-white);
+  --text-color: var(--color-concrete);
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  background: var(--color-background-dark);
+  color: var(--color-white);
+  padding-block: var(--section-space-l);
+  padding-inline: var(--gutter);
+}
+
+.not-found__inner {
+  width: min(100%, var(--container-max-narrow));
+  margin-inline: auto;
+  text-align: center;
+}
+
+.not-found__title,
+.not-found__lead,
+.not-found__copy {
+  margin-top: 0;
+}
+
+.not-found__title {
+  margin-bottom: var(--space-4);
+}
+
+.not-found__lead {
+  margin-bottom: var(--space-2);
+  font-weight: 700;
+}
+
+.not-found__copy {
+  color: color-mix(in srgb, var(--color-white) 80%, transparent);
+  margin-bottom: var(--space-8);
 }
 
 .hero {
