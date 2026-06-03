@@ -1,6 +1,7 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import FinalCTA from "../components/FinalCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <SharedPageLayout title="Case Studies | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -65,19 +66,9 @@ import FinalCTA from "../components/FinalCTA.astro";
     </style>
 </Fragment>
 
-<section class="relative bg-navy py-24 overflow-hidden border-b-2 border-navy">
-<div class="absolute inset-0 graph-paper opacity-40"></div>
-<div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="max-w-3xl">
-<h1 class="font-bebas bebas-heavy text-7xl md:text-8xl text-white leading-none mb-6">
-                PROOF, <span class="text-primary">NOT PROMISES.</span>
-            </h1>
-<p class="text-concrete text-2xl font-medium leading-relaxed max-w-2xl">
-                This page is not public until client outcomes are approved for distribution. We prefer to publish only finished, verified results.
-            </p>
-</div>
-</div>
-</section>
+<Hero copy="This page is not public until client outcomes are approved for distribution. We prefer to publish only finished, verified results.">
+  <Fragment slot="title">PROOF, <span class="hero__headline-accent">NOT PROMISES.</span></Fragment>
+</Hero>
 
 <section class="py-24 bg-white">
 <div class="max-w-5xl mx-auto px-6">

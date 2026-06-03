@@ -2,6 +2,7 @@
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import CtaLink from "../components/CtaLink.astro";
 import FinalCTA from "../components/FinalCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <SharedPageLayout title="Get Found by Local Customers | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -69,25 +70,12 @@ import FinalCTA from "../components/FinalCTA.astro";
     </style>
 </Fragment>
 
-<section class="relative bg-navy overflow-hidden border-b-2 border-navy py-24 lg:py-32">
-<div class="absolute inset-0 graph-paper opacity-40"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
-<div class="max-w-4xl">
-<div class="inline-block border-4 border-primary p-4 mb-8">
-<span class="text-white font-bebas bebas-heavy text-2xl tracking-[.2em]">LOCAL SEO FOR SERVICE BUSINESSES</span>
-</div>
-<h1 class="font-bebas bebas-heavy text-7xl md:text-9xl text-white leading-[0.85] uppercase mb-8">
-                GET FOUND BY LOCAL CUSTOMERS <span class="text-primary">WHO NEED YOU.</span>
-            </h1>
-<p class="text-concrete text-xl md:text-2xl max-w-2xl leading-relaxed font-medium mb-12">
-                Local SEO helps Google connect your business to the towns and services you actually cover. We focus on the basics that make you easier to find, not ranking stunts.
-            </p>
-<div class="flex flex-wrap gap-6">
+<Hero eyebrow="LOCAL SEO FOR SERVICE BUSINESSES" copy="Local SEO helps Google connect your business to the towns and services you actually cover. We focus on the basics that make you easier to find, not ranking stunts.">
+<Fragment slot="title">GET FOUND BY LOCAL CUSTOMERS <span class="hero__headline-accent">WHO NEED YOU.</span></Fragment>
+<Fragment slot="actions">
 <CtaLink href="/contact" label="GET A FREE SEO REVIEW" size="md" />
-</div>
-</div>
-</div>
-</section>
+</Fragment>
+</Hero>
 <section class="py-24 bg-white border-b-2 border-navy">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid md:grid-cols-2 gap-0 border-2 border-navy">

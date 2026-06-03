@@ -1,6 +1,7 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import CtaButton from "../components/CtaButton.astro";
+import Hero from "../components/Hero.astro";
 import { siteSettings } from "../lib/siteSettings";
 ---
 
@@ -80,19 +81,9 @@ import { siteSettings } from "../lib/siteSettings";
     </style>
 </Fragment>
 
-<section class="relative bg-navy overflow-hidden border-b-2 border-navy py-20">
-<div class="absolute inset-0 graph-paper opacity-40"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
-<div class="max-w-3xl">
-<h1 class="font-bebas bebas-heavy text-7xl md:text-8xl text-white leading-[0.85] uppercase mb-6">
-                TELL US WHAT <span class="text-primary">YOU NEED.</span>
-            </h1>
-<p class="text-concrete text-xl md:text-2xl leading-relaxed font-medium">
-                Fill out the form and we’ll get back to you within 1 business day. <br class="hidden md:block"/>No pushy sales routine, just a straight conversation about what makes sense.
-            </p>
-</div>
-</div>
-</section>
+<Hero copy="Fill out the form and we’ll get back to you within 1 business day. No pushy sales routine, just a straight conversation about what makes sense.">
+  <Fragment slot="title">TELL US WHAT <span class="hero__headline-accent">YOU NEED.</span></Fragment>
+</Hero>
 <main class="relative diagonal-stripes">
 <div class="max-w-7xl mx-auto px-6 lg:px-20 py-16">
 <div class="grid lg:grid-cols-3 gap-12 items-start">

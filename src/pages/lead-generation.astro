@@ -2,6 +2,7 @@
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import CtaLink from "../components/CtaLink.astro";
 import FinalCTA from "../components/FinalCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <SharedPageLayout title="Paid Ads for Service Businesses | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy antialiased">
@@ -78,32 +79,15 @@ import FinalCTA from "../components/FinalCTA.astro";
     </style>
 </Fragment>
 
-<section class="relative bg-navy overflow-hidden border-b-2 border-navy py-28 lg:py-48">
-<div class="absolute inset-0 graph-paper opacity-30"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
-<div class="max-w-4xl">
-<div class="inline-flex items-center gap-3 border-2 border-primary px-4 py-2 mb-10 bg-navy/50 backdrop-blur-sm">
-<span class="w-3 h-3 bg-primary"></span>
-<span class="text-white font-bebas text-2xl tracking-[.15em] uppercase">PAID ADS FOR SERVICE BUSINESSES</span>
-</div>
-<h1 class="font-bebas bebas-heavy text-7xl md:text-[140px] text-white leading-[0.85] uppercase mb-10">
-                PAID ADS BUILT TO BRING IN <span class="text-primary underline decoration-8 underline-offset-8">REAL CALLS.</span>
-            </h1>
-<p class="text-concrete text-xl md:text-2xl mb-8 leading-relaxed font-normal max-w-2xl">
-                We manage paid search and Local Service Ads for service businesses that can answer fast, follow up well, and support the budget.
-            </p>
-<p class="text-concrete text-lg md:text-xl mb-8 leading-relaxed font-medium">
-                If ads are the wrong move, we’ll say that early.
-            </p>
-<div class="flex flex-wrap gap-6">
+<Hero eyebrow="PAID ADS FOR SERVICE BUSINESSES" copy="We manage paid search and Local Service Ads for service businesses that can answer fast, follow up well, and support the budget. If ads are the wrong move, we’ll say that early.">
+<Fragment slot="title">PAID ADS BUILT TO BRING IN <span class="hero__headline-accent underline decoration-8 underline-offset-8">REAL CALLS.</span></Fragment>
+<Fragment slot="actions">
 <CtaLink href="/contact" label="GET A FREE AD REVIEW" size="lg" />
 <div class="flex items-center gap-4 px-8 py-7 border-2 border-white/20 text-white font-bold uppercase tracking-widest text-sm">
 <span class="material-symbols-outlined text-primary">verified</span> No long-term contracts
                 </div>
-</div>
-</div>
-</div>
-</section>
+</Fragment>
+</Hero>
 <section class="py-32 bg-white">
 <div class="max-w-7xl mx-auto px-6 lg:px-20">
 <div class="text-center mb-20">

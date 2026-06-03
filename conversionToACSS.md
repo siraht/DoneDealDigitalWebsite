@@ -324,6 +324,28 @@ Current page usage:
 
 ## Cross-Page ACSS Lessons
 
+### Page heroes should use the shared `Hero` component
+
+The homepage hero established the site hero typography contract:
+
+- Hero title: semantic `h1` with `.hero__headline h1`, using ACSS `--h1`.
+- Hero copy: `.hero__copy text--l`, using ACSS `--text-l`.
+- Hero accent spans: `.hero__headline-accent`, color only.
+
+Several other pages had copied hero sections with page-specific Tailwind font-size utilities such as `text-5xl`, `md:text-9xl`, and `md:text-[140px]`. That created inconsistent hero sizing and bypassed the ACSS typography scale.
+
+Adjustment:
+
+- Use `Website/src/components/Hero.astro` for public page heroes.
+- Put hero title text in the `title` slot; do not add font-size utility classes to hero `h1`s.
+- Put hero body text in the `copy` prop or `copy` slot; do not add page-specific text-size utilities to hero copy.
+- Use component props for layout only:
+  - `align="start|center"`
+  - `spacing="standard|compact|large"`
+  - `width="standard|narrow|wide"`
+- Use `actions` and `media` slots for CTA rows, proof badges, and hero images while keeping the title/copy typography fixed.
+- If a page needs visual emphasis inside the hero title, use `.hero__headline-accent` or decoration classes on a nested span; do not change the hero heading size.
+
 ### Content groups inside articles and FAQ lists should not be `section`
 
 Legal pages used `<section>` inside `<article>`, and the FAQ page used `<section>` for each category inside a `<main>` wrapper. Those elements were not nested inside another section, so ACSS treated them as top-level sections and applied section padding/gutters to paragraph/list groups.

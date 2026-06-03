@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import Hero from "../components/Hero.astro";
 import { siteSettings } from "../lib/siteSettings";
 ---
 
@@ -62,17 +63,9 @@ import { siteSettings } from "../lib/siteSettings";
     </style>
 </Fragment>
 
-<section class="relative bg-navy py-16 border-b-2 border-navy overflow-hidden">
-<div class="absolute inset-0 graph-paper opacity-30"></div>
-<div class="max-w-5xl mx-auto px-6 relative z-10">
-<div class="inline-block border-2 border-primary px-4 py-1 mb-4">
-<span class="text-white font-bebas bebas-heavy text-lg tracking-[.2em]">PRIVACY POLICY</span>
-</div>
-<h1 class="font-bebas bebas-heavy text-5xl md:text-7xl text-white uppercase leading-none">
-            What we collect, how we use it, and what you control.
-        </h1>
-</div>
-</section>
+<Hero eyebrow="PRIVACY POLICY" spacing="compact" width="narrow">
+  <Fragment slot="title">What we collect, how we use it, and what you control.</Fragment>
+</Hero>
 
 <main class="max-w-5xl mx-auto px-6 py-16">
 <article class="bg-white border border-gray-300 p-8 md:p-12">

@@ -3,6 +3,7 @@ import "../styles/global.css";
 
 import CtaLink from "../components/CtaLink.astro";
 import FinalCTA from "../components/FinalCTA.astro";
+import Hero from "../components/Hero.astro";
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import heroImage from "../../assets/images/contractor_in_front_of_house.png";
 
@@ -26,26 +27,20 @@ const heroImageSrcset = heroImageWidths
 
     </Fragment>
 
-
-    <section id="hero" class="hero">
-      <div class="hero__bg u-graph-paper"></div>
-      <div class="hero__inner site-container">
-        <div class="hero__content">
-          <h1 class="hero__headline h1">
-            WE BUILD WEBSITES THAT
-            <span class="hero__headline-accent">WORK AS HARD</span>
-            AS YOU DO.
-          </h1>
-          <p class="hero__copy text--l">
-            We build websites first, then support local SEO and paid ads when they fit.
-            The goal is simple: help the right customer trust you fast and take the next step.
-          </p>
-            <div class="hero__actions">
-            <CtaLink class="hero__cta" href="/contact" label="GET A FREE QUOTE" size="md" />
-          </div>
-        </div>
-
-        <div class="hero__media">
+    <Hero id="hero">
+      <Fragment slot="title">
+        WE BUILD WEBSITES THAT
+        <span class="hero__headline-accent">WORK AS HARD</span>
+        AS YOU DO.
+      </Fragment>
+      <Fragment slot="copy">
+        We build websites first, then support local SEO and paid ads when they fit.
+        The goal is simple: help the right customer trust you fast and take the next step.
+      </Fragment>
+      <Fragment slot="actions">
+        <CtaLink class="hero__cta" href="/contact" label="GET A FREE QUOTE" size="md" />
+      </Fragment>
+      <Fragment slot="media">
           <div class="hero__media-frame u-block-shadow--accent">
             <div class="hero__media-inner">
               <img
@@ -64,9 +59,8 @@ const heroImageSrcset = heroImageWidths
             <p class="hero__badge-copy">Consider it...</p>
             <p class="hero__badge-title">Done.</p>
           </div>
-        </div>
-      </div>
-    </section>
+      </Fragment>
+    </Hero>
 
     <section id="credibility" class="cred-strip">
       <div class="cred-strip__inner">

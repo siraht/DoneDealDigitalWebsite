@@ -1,0 +1,67 @@
+---
+interface Props {
+  id?: string;
+  eyebrow?: string;
+  copy?: string;
+  align?: "start" | "center";
+  spacing?: "standard" | "compact" | "large";
+  width?: "standard" | "narrow" | "wide";
+  class?: string;
+}
+
+const {
+  id,
+  eyebrow,
+  copy,
+  align = "start",
+  spacing = "standard",
+  width = "standard",
+  class: className = "",
+} = Astro.props;
+
+const hasEyebrow = Boolean(eyebrow) || Astro.slots.has("eyebrow");
+const hasCopy = Boolean(copy) || Astro.slots.has("copy");
+const hasActions = Astro.slots.has("actions");
+const hasMedia = Astro.slots.has("media");
+---
+
+<section
+  id={id}
+  class:list={[
+    "hero",
+    `hero--align-${align}`,
+    `hero--spacing-${spacing}`,
+    `hero--width-${width}`,
+    hasMedia && "hero--split",
+    className,
+  ]}
+>
+  <div class="hero__bg u-graph-paper"></div>
+  <div class="hero__inner site-container">
+    <div class="hero__content">
+      {hasEyebrow && (
+        <div class="hero__eyebrow">
+          <slot name="eyebrow">{eyebrow}</slot>
+        </div>
+      )}
+      <h1 class="hero__headline h1">
+        <slot name="title" />
+      </h1>
+      {hasCopy && (
+        <p class="hero__copy text--l">
+          <slot name="copy">{copy}</slot>
+        </p>
+      )}
+      {hasActions && (
+        <div class="hero__actions">
+          <slot name="actions" />
+        </div>
+      )}
+    </div>
+    {hasMedia && (
+      <div class="hero__media">
+        <slot name="media" />
+      </div>
+    )}
+  </div>
+</section>

@@ -1,6 +1,7 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import CtaLink from "../components/CtaLink.astro";
+import Hero from "../components/Hero.astro";
 import { siteSettings } from "../lib/siteSettings";
 ---
 
@@ -75,24 +76,13 @@ import { siteSettings } from "../lib/siteSettings";
     </style>
 </Fragment>
 
-<section class="relative bg-navy overflow-hidden border-b-2 border-navy">
-<div class="absolute inset-0 graph-paper opacity-40"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 py-24 lg:py-32 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
-<div class="flex flex-col items-start gap-8">
-<div class="inline-block border-4 border-primary p-4 mb-2">
-<span class="text-white font-bebas bebas-heavy text-2xl tracking-[.2em]">BUILT FOR THE TRADES</span>
-</div>
-<h1 class="font-bebas bebas-heavy text-7xl md:text-8xl text-white leading-[0.85] uppercase">
-                WE BUILD WEBSITES THAT <span class="text-primary">WORK AS HARD</span> AS YOU DO.
-            </h1>
-<p class="text-concrete text-xl md:text-2xl max-w-lg leading-relaxed font-medium">
-                Digital marketing and web design for the trades. No fluff, just more leads for plumbers, roofers, and HVAC pros.
-            </p>
-<div class="flex flex-wrap gap-6 mt-4">
+<Hero eyebrow="BUILT FOR THE TRADES" copy="Digital marketing and web design for the trades. No fluff, just more leads for plumbers, roofers, and HVAC pros.">
+<Fragment slot="title">WE BUILD WEBSITES THAT <span class="hero__headline-accent">WORK AS HARD</span> AS YOU DO.</Fragment>
+<Fragment slot="actions">
 <CtaLink href="/contact" label="Start Your Project" size="md" />
 <CtaLink href="/case-studies" label="View Our Work" variant="secondary" size="md" />
-</div>
-</div>
+</Fragment>
+<Fragment slot="media">
 <div class="relative">
 <div class="border-2 border-navy bg-navy block-shadow-orange">
 <div class="relative group">
@@ -105,8 +95,8 @@ import { siteSettings } from "../lib/siteSettings";
 <p class="text-navy/60 text-xs font-bold uppercase tracking-widest">Digital Blue Collar</p>
 </div>
 </div>
-</div>
-</section>
+</Fragment>
+</Hero>
 <section class="bg-white border-b-2 border-navy py-12">
 <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-12">
 <div class="flex items-center gap-3 font-bebas bebas-heavy text-2xl text-navy">

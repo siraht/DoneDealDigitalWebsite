@@ -1,5 +1,6 @@
 ---
 import SharedPageLayout from "../components/SharedPageLayout.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <SharedPageLayout title="Terms of Service | Done Deal Digital" bodyClass="bg-background-light font-dmsans text-navy">
@@ -61,18 +62,9 @@ import SharedPageLayout from "../components/SharedPageLayout.astro";
     </style>
 </Fragment>
 
-<section class="relative bg-navy py-16 border-b-2 border-navy overflow-hidden">
-<div class="absolute inset-0 graph-paper opacity-30"></div>
-<div class="max-w-5xl mx-auto px-6 relative z-10">
-<div class="inline-block border-2 border-primary px-4 py-1 mb-4">
-<span class="text-white font-bebas text-lg tracking-[.2em]">TERMS OF SERVICE</span>
-</div>
-<h1 class="font-bebas bebas-heavy text-5xl md:text-7xl text-white uppercase leading-none">
-            Client terms and service expectations.
-        </h1>
-<p class="text-concrete/60 font-bold uppercase tracking-widest text-sm mt-4">Last Updated: March 11, 2026</p>
-</div>
-</section>
+<Hero eyebrow="TERMS OF SERVICE" copy="Last Updated: March 11, 2026" spacing="compact" width="narrow">
+  <Fragment slot="title">Client terms and service expectations.</Fragment>
+</Hero>
 
 <main class="max-w-5xl mx-auto px-6 py-16">
 <article class="bg-white border border-gray-300 p-8 md:p-12">
