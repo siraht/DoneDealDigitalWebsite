@@ -5,7 +5,7 @@ import Hero from "../components/Hero.astro";
 import { siteSettings } from "../lib/siteSettings";
 ---
 
-<SharedPageLayout title="Contact Done Deal Digital | Get a Free Quote" bodyClass="bg-concrete font-dmsans text-navy">
+<SharedPageLayout title="Contact Done Deal Digital | Get a Free Quote" bodyClass="bg-concrete">
     <Fragment slot="head">
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -66,10 +66,6 @@ import { siteSettings } from "../lib/siteSettings";
                 background-image: repeating-linear-gradient(45deg, rgba(11, 29, 51, 0.03) 0, rgba(11, 29, 51, 0.03) 10px, transparent 10px, transparent 20px);
             }
         }
-        .bebas-heavy {
-            font-weight: 700;
-            letter-spacing: 0.02em;
-        }
         input, select, textarea {
             border-radius: 0 !important;
             border: 2px solid #0B1D33 !important;
@@ -92,37 +88,37 @@ import { siteSettings } from "../lib/siteSettings";
 <form action="#" class="space-y-8">
 <div class="grid md:grid-cols-2 gap-8">
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">Full Name</label>
-<input class="w-full p-4 font-medium" placeholder="John Doe" required="" type="text"/>
+<label class="contact-form__label">Full Name</label>
+<input class="contact-form__control" placeholder="John Doe" required="" type="text"/>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">Business Name</label>
-<input class="w-full p-4 font-medium" placeholder="Doe's Plumbing Co." required="" type="text"/>
+<label class="contact-form__label">Business Name</label>
+<input class="contact-form__control" placeholder="Doe's Plumbing Co." required="" type="text"/>
 </div>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">Phone Number</label>
-<input class="w-full p-4 font-medium" placeholder="(555) 000-0000" required="" type="tel"/>
+<label class="contact-form__label">Phone Number</label>
+<input class="contact-form__control" placeholder="(555) 000-0000" required="" type="tel"/>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">Email Address</label>
-<input class="w-full p-4 font-medium" placeholder="john@example.com" required="" type="email"/>
+<label class="contact-form__label">Email Address</label>
+<input class="contact-form__control" placeholder="john@example.com" required="" type="email"/>
 </div>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">Website URL (Optional)</label>
-<input class="w-full p-4 font-medium" placeholder="www.yourbusiness.com" type="url"/>
+<label class="contact-form__label">Website URL (Optional)</label>
+<input class="contact-form__control" placeholder="www.yourbusiness.com" type="url"/>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">City / Service Area (Optional)</label>
-<input class="w-full p-4 font-medium" placeholder="e.g. Denver, CO" type="text"/>
+<label class="contact-form__label">City / Service Area (Optional)</label>
+<input class="contact-form__control" placeholder="e.g. Denver, CO" type="text"/>
 </div>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">What do you need?</label>
-<select class="w-full p-4 font-medium bg-white">
+<label class="contact-form__label">What do you need?</label>
+<select class="contact-form__control bg-white">
 <option>New Website</option>
 <option>Local SEO</option>
 <option>Paid Ads / Lead Generation</option>
@@ -131,8 +127,8 @@ import { siteSettings } from "../lib/siteSettings";
 </select>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-bold uppercase text-xs tracking-widest text-navy/60">Anything else we should know?</label>
-<textarea class="w-full p-4 font-medium" placeholder="Tell us a bit about your project goals..." rows="4"></textarea>
+<label class="contact-form__label">Anything else we should know?</label>
+<textarea class="contact-form__control" placeholder="Tell us a bit about your project goals..." rows="4"></textarea>
 </div>
 <CtaButton type="submit" label="GET MY QUOTE" size="xl" />
 </form>
@@ -140,41 +136,41 @@ import { siteSettings } from "../lib/siteSettings";
 </div>
 <div class="space-y-8">
 <div class="bg-navy border-2 border-navy p-8 block-shadow-orange text-white">
-<h3 class="font-bebas bebas-heavy text-4xl mb-6 text-primary uppercase">QUICK CONTACT</h3>
+<h3 class="quick-contact__title h3">QUICK CONTACT</h3>
 <div class="space-y-8">
-<a class="group flex items-center gap-4" href={`tel:${siteSettings.phoneDigits}`}>
-<div class="bg-primary p-3 border-2 border-white group-hover:scale-105 transition-transform">
-<span class="material-symbols-outlined text-3xl leading-none">phone_in_talk</span>
+<a class="quick-contact__link group flex items-center gap-4" href={`tel:${siteSettings.phoneDigits}`}>
+<div class="quick-contact__icon">
+<span class="quick-contact__symbol material-symbols-outlined">phone_in_talk</span>
 </div>
 <div>
-<p class="text-xs font-bold uppercase tracking-widest text-concrete/60">Call Us Directly</p>
-                            <p class="font-bold">{siteSettings.phoneDisplay}</p>
+<p class="quick-contact__label text--xs">Call Us Directly</p>
+                            <p class="quick-contact__value text--l">{siteSettings.phoneDisplay}</p>
 </div>
 </a>
-<a class="group flex items-center gap-4" href={`mailto:${siteSettings.email}`}>
-<div class="bg-white text-navy p-3 border-2 border-primary group-hover:scale-105 transition-transform">
-<span class="material-symbols-outlined text-3xl leading-none">mail</span>
+<a class="quick-contact__link group flex items-center gap-4" href={`mailto:${siteSettings.email}`}>
+<div class="quick-contact__icon quick-contact__icon--light">
+<span class="quick-contact__symbol material-symbols-outlined">mail</span>
 </div>
 <div>
-<p class="text-xs font-bold uppercase tracking-widest text-concrete/60">Email Our Team</p>
-                            <p class="font-bold">{siteSettings.email}</p>
+<p class="quick-contact__label text--xs">Email Our Team</p>
+                            <p class="quick-contact__value text--l">{siteSettings.email}</p>
 </div>
 </a>
 </div>
 <div class="mt-12 pt-8 border-t border-white/10">
 <div class="flex gap-3 items-start">
 <span class="material-symbols-outlined text-primary">schedule</span>
-<p class="text-concrete text-sm leading-relaxed">
-<span class="block font-bold text-white uppercase mb-1">Response Time</span>
+<p class="quick-contact__note text--s">
+<span class="quick-contact__note-title">Response Time</span>
                                 We typically reply within 1 business day. If it’s urgent, call us. If it’s not a fit, we’ll tell you.
                             </p>
 </div>
 </div>
 </div>
 <div class="border-2 border-navy p-6 bg-white flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-5xl text-navy mb-4">verified_user</span>
-<h4 class="font-bebas bebas-heavy text-2xl uppercase">No Sales Games</h4>
-<p class="text-sm text-slate-600">Good fit or not, we'll tell you what we can and can't do next.</p>
+<span class="contact-trust__icon material-symbols-outlined">verified_user</span>
+<h4 class="contact-trust__title h4">No Sales Games</h4>
+<p class="contact-trust__copy text--s">Good fit or not, we'll tell you what we can and can't do next.</p>
 </div>
 </div>
 </div>
