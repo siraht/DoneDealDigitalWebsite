@@ -238,3 +238,45 @@ ACSS is currently used as the responsive typography and outer section spacing so
 - Use ACSS for section gutters and vertical section rhythm through `--gutter`, `--section-space-*`, and `--space-*`.
 - Use local component CSS for inner media grids, cards, badges, FAQ rows, final CTA panel framing, and dark/light contextual color treatment.
 - Avoid putting padding on both the outer section and the inner `.site-container`; pick one owner. For this homepage, the owner is the outer section.
+
+### Header spacing needs the same single-owner rule
+
+ACSS also generates a top-level header shell rule:
+
+```css
+:where(body > header) {
+  padding-block: var(--space-xs);
+  padding-inline: var(--gutter);
+}
+```
+
+The header became too tall when this ACSS padding stacked with the old `.site-header .site-container { padding: 1rem; }` and the desktop `.site-header__brand` block padding.
+
+Adjustment:
+
+- Let `.site-header` own the ACSS shell padding with `padding-block: var(--space-xs)` and `padding-inline: var(--gutter)`.
+- Set `.site-header .site-container` to max-width/layout only with `padding: 0`.
+- Remove the desktop brand padding so the header height is driven by ACSS shell spacing and the CTA/nav contents, not multiple nested padding layers.
+
+### Compact bands should use space variables, not section-space variables
+
+The credibility strip is a compact utility band, not a full content section. Giving it full section spacing, or a large token such as `--space-xl`, made the top and bottom padding feel oversized.
+
+Adjustment:
+
+- Keep the strip on the ACSS outer gutter model.
+- Use compact ACSS spacing for the band:
+  - `.cred-strip { padding-block: var(--space-xs); }`
+  - `.cred-strip__item { padding-block: var(--space-xs); }`
+- Keep `--section-space-*` for major sections that need full editorial rhythm.
+
+### Footer internals should not be `section` elements
+
+ACSS section defaults target `section:not(section section)`. Footer child `<section>` elements are not nested inside a parent section, so ACSS treated each footer column like a top-level section and injected section padding/gutters.
+
+Adjustment:
+
+- Keep the semantic `<footer>` landmark.
+- Replace footer child `<section>` elements with `<div>` columns.
+- Keep column headings as `h2`/`h3` where useful for footer scanability.
+- Add `.site-footer__col { padding: 0; }` as a defensive guard against any utility/default padding on footer columns.

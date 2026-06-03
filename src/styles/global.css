@@ -74,9 +74,10 @@ button {
 }
 
 .site-header .site-container {
-  width: 100%;
+  width: min(100%, var(--container-max));
+  max-width: var(--container-max);
   margin-inline: auto;
-  padding: 1rem;
+  padding: 0;
 }
 
 .site-header {
@@ -87,6 +88,8 @@ button {
   border-bottom: var(--border-width) solid var(--color-navy);
   container-type: inline-size;
   container-name: site-header;
+  padding-block: var(--space-xs);
+  padding-inline: var(--gutter);
 }
 
 .site-header__inner {
@@ -103,7 +106,7 @@ button {
 
 .site-header__brand-icon {
   color: var(--color-primary);
-  font-size: var(--h3, var(--type-size-3xl));
+  font-size: var(--text-xxl, var(--type-size-2xl));
   line-height: 1.2;
 }
 
@@ -111,7 +114,7 @@ button {
   margin: 0;
   font-family: var(--heading-font-family, var(--font-heading));
   text-transform: uppercase;
-  font-size: var(--h3, var(--type-size-3xl));
+  font-size: var(--text-xxl, var(--type-size-2xl));
   letter-spacing: var(--tracking-wide);
   font-weight: 700;
   line-height: 1.2;
@@ -124,14 +127,12 @@ button {
 
 @container site-header (min-width: 48rem) {
   .site-header .site-container {
-    width: calc(100vw - 10vw);
+    width: min(100%, var(--container-max));
     padding: 0;
-    padding-inline: var(--container-padding);
   }
 
   .site-header__brand {
-    padding-inline: var(--space-6);
-    padding-block: var(--space-5);
+    padding: 0;
   }
 
   .site-header__nav {
@@ -146,7 +147,8 @@ button {
   }
 
   .site-header #site-cta {
-    font-size: var(--text-m, var(--type-size-base));
+    padding-inline: var(--space-m);
+    font-size: var(--text-s, var(--type-size-sm));
     text-wrap: normal;
   }
 }
@@ -186,8 +188,11 @@ button {
 }
 
 #site-cta {
-  font-size: var(--text-xl, var(--type-size-body-large));
-  text-wrap: balance;
+  padding: var(--space-xs) var(--space-s);
+  font-size: var(--text-xs, var(--type-size-xs));
+  line-height: 1;
+  text-wrap: normal;
+  white-space: nowrap;
 }
 
 .cta {
@@ -439,7 +444,7 @@ button {
   container-name: cred-strip;
   background: var(--color-white);
   border-bottom: var(--border-width) solid var(--color-navy);
-  padding-block: var(--space-xl);
+  padding-block: var(--space-xs);
 }
 
 .cred-strip__inner {
@@ -469,7 +474,7 @@ button {
   flex: 1 1 auto;
   min-width: 0;
   text-align: center;
-  padding-block: var(--space-5);
+  padding-block: var(--space-xs);
 }
 
 .cred-strip__icon {
@@ -1057,6 +1062,7 @@ button {
 
 .site-footer__col {
   min-width: 0;
+  padding: 0;
 }
 
 .site-footer__brand-heading {
