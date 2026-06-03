@@ -280,3 +280,69 @@ Adjustment:
 - Replace footer child `<section>` elements with `<div>` columns.
 - Keep column headings as `h2`/`h3` where useful for footer scanability.
 - Add `.site-footer__col { padding: 0; }` as a defensive guard against any utility/default padding on footer columns.
+
+## Cross-Page CTA Conversion Map
+
+Shared components:
+
+| Component | Role | Base selectors/classes | Typography | Color/surface | Notes |
+|---|---|---|---|---|---|
+| `CtaLink.astro` | Link CTA | `.cta`, `.cta--accent`/`.cta--secondary`, `.cta--sm`/`md`/`lg`/`xl`, optional `.cta--full` | `--text-xs` through `--text-xxl` by size | accent uses `--color-primary` + white text + `--shadow-accent`; secondary uses white + navy text + `--shadow-primary` | Used for navigation CTAs, hero CTAs, phone CTAs, and 404/home actions. |
+| `CtaButton.astro` | Form/action button CTA | Same `.cta` classes as `CtaLink` | Same size scale as link CTA | Same variants as link CTA | Used where semantics require `<button>`, currently the contact form submit. |
+| `FinalCTA.astro` | Full CTA panel section | `.final-cta`, `.final-cta__wrap`, `.final-cta__panel`, `.final-cta__title`, `.final-cta__copy`, `.final-cta__actions`, `.final-cta__button`, `.final-cta__secondary` | title uses `.h1` / `--h1`; copy uses `.text--xl` / `--text-xl`; button uses `.cta--xl` / `--text-xxl` | surface variants: white/light/concrete; panel variants: light/dark; shadow variants: none/primary/accent; border variants: navy/primary | Uses homepage final CTA as the base structure and consolidates page-specific panel treatments into modifiers. |
+
+Current page usage:
+
+| Page | CTA element | Component / selector | Attributes | Visual attributes preserved |
+|---|---|---|---|---|
+| Header | Site-wide quote link | `.site-header__cta cta cta--accent cta--sm` | `href="/contact"`, `id="site-cta"` | compact ACSS text size, accent fill, header-specific padding. |
+| Home hero | Primary hero CTA | `CtaLink`, `.hero__cta cta cta--accent cta--md` | `href="/contact"` | homepage accent button size and placement. |
+| Home final | Final CTA panel | `FinalCTA` | title/copy/action props | homepage `.final-cta` panel, `.h1` title, `.text--xl` copy, `.cta--xl` button. |
+| About final | Final CTA with eyebrow | `FinalCTA` | `eyebrow="READY TO WORK?"`, `actionLabel="LET'S TALK"`, `shadow="primary"` | retained floating-style label as consolidated `.final-cta__eyebrow`; kept primary block shadow. |
+| Web design hero | Primary + secondary hero CTAs | `CtaLink` accent and secondary | contact link, phone link | retained orange primary and white secondary button pair. |
+| Web design final | Dark final CTA with phone action | `FinalCTA` | `panel="dark"`, `shadow="accent"`, phone secondary action | retained navy panel, orange block shadow, white heading/copy treatment, secondary phone link. |
+| Lead generation hero | Primary hero CTA | `CtaLink` | `href="/contact"`, `label="GET A FREE AD REVIEW"`, `size="lg"` | retained larger hero CTA scale and accent shadow. |
+| Lead generation final | Dark final CTA with secondary copy | `FinalCTA` | `panel="dark"`, `shadow="accent"`, `secondaryCopy` | retained second support paragraph and dark panel treatment. |
+| Local SEO hero | Primary hero CTA | `CtaLink` | `href="/contact"`, `label="GET A FREE SEO REVIEW"` | retained accent CTA. |
+| Local SEO final | Dark final CTA on light section | `FinalCTA` | `surface="light"`, `panel="dark"`, `border="primary"`, `shadow="primary"` | retained navy panel, primary border, and block shadow. |
+| FAQ final | Final CTA with phone secondary | `FinalCTA` | `surface="concrete"`, `shadow="accent"`, phone secondary action | retained concrete section surface, white panel, orange shadow, and phone secondary CTA. |
+| Case studies final | Light final CTA | `FinalCTA` | `surface="light"`, `shadow="primary"`, `actionLabel="LET'S TALK"` | retained light section and block shadow. |
+| Contact form | Submit CTA | `CtaButton` | `type="submit"`, `label="GET MY QUOTE"`, `size="xl"` | kept button semantics while using the same `.cta` styling scale. |
+| Thank you | Phone CTA | `CtaLink` | `href={tel:...}`, `size="xl"`, `full` | retained full-width phone CTA and icon. |
+| 404 | Return-home CTA | `CtaLink` | `href="/"`, `label="GO HOME"` | moved standalone page action into shared CTA system. |
+| `index_original` | Archived visible CTAs | `CtaLink` | contact/case-study/phone paths | left the archived layout intact but replaced one-off buttons/primary link with shared CTA classes. |
+
+## Cross-Page ACSS Lessons
+
+### Content groups inside articles and FAQ lists should not be `section`
+
+Legal pages used `<section>` inside `<article>`, and the FAQ page used `<section>` for each category inside a `<main>` wrapper. Those elements were not nested inside another section, so ACSS treated them as top-level sections and applied section padding/gutters to paragraph/list groups.
+
+Adjustment:
+
+- Keep the page hero and major standalone page bands as `<section>`.
+- Use `<article>` for legal document bodies.
+- Use neutral `<div>` groups for legal clauses and FAQ categories when they are content subdivisions inside an existing article/main flow.
+- Preserve heading semantics inside those groups with `h2`/`h3`; the grouping element does not need to be a section for the heading hierarchy to remain understandable.
+
+### Cross-page hero spacing follows the same single-owner rule
+
+Several non-homepage hero sections had no vertical padding on the outer `<section>` but did have `py-*` utilities on the inner max-width wrapper. ACSS also applied top-level section padding to the outer shell, creating double vertical rhythm.
+
+Adjustment:
+
+- Move hero `py-*` utilities onto the outer hero section.
+- Remove `py-*` from the immediate max-width/grid wrapper.
+- Let the outer section own vertical rhythm and background/border treatment.
+- Let the inner wrapper own max-width, gutters, z-index, and grid/flex layout.
+
+### Dark utility surfaces should set ACSS color variables
+
+Many generated pages rely on utility classes such as `bg-navy` and `bg-background-dark`. Text color inheritance alone is not enough because ACSS heading selectors read `--heading-color`.
+
+Adjustment:
+
+- Add a contextual bridge for dark utility surfaces:
+  - `.bg-navy, .bg-background-dark { --heading-color: var(--color-white); --text-color: var(--color-concrete); }`
+- Keep explicit heading utility colors where they already exist, but prefer contextual variables for sections and reusable components.
+- Dark `FinalCTA` panels set these same variables at the component modifier level so variants remain self-contained.
