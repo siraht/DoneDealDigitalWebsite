@@ -1,4 +1,4 @@
-/* File: automatic-variables.css - Version: 4.0.0-beta-3 - Generated: 2026-06-03 19:04:31 */
+/* File: automatic-variables.css - Version: 4.0.0-beta-3 - Generated: 2026-06-03 21:33:00 */
 /* Feat: Text, Headings, & Spacing */
 :root {
   --root-font-size: 100%;
@@ -68,7 +68,7 @@
   --heading-line-height: 1;
   --heading-font-weight: 700;
   --heading-letter-spacing: 0.02em;
-  --heading-text-wrap: balance;
+  --heading-text-wrap: pretty;
   --base-heading-lh: 1;
   --h1-max-width: 100%;
   --h4-line-height: 1;

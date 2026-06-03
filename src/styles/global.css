@@ -34,15 +34,6 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
 .bg-navy,
 .bg-background-dark {
   --heading-color: var(--color-white);
@@ -535,7 +526,6 @@ button {
 
 .cred-strip__text {
   text-transform: uppercase;
-  text-wrap: balance;
   font-size: inherit;
   line-height: 1;
 }
@@ -862,7 +852,6 @@ button {
     color: var(--process-title-color);
     font-size: var(--h2, var(--type-size-6xl));
     line-height: 1;
-    text-wrap: initial;
     margin-bottom: var(--space-12);
     text-transform: uppercase;
   }
@@ -1280,7 +1269,6 @@ button {
   justify-content: space-between;
   gap: var(--space-xs);
   align-items: center;
-  text-wrap: balance;
 }
 
 .site-footer__copyright {

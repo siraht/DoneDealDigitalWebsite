@@ -52,6 +52,8 @@
   "text-font-weight": 400,
   "heading-letter-spacing": "0.02em",
   "text-letter-spacing": 0,
+  "heading-text-wrap": "pretty",
+  "text-wrap": "pretty",
 
   "custom-global-css": ""
 }
