@@ -436,6 +436,44 @@ button {
   line-height: var(--text-line-height, var(--leading-relaxed));
 }
 
+.web-design-hero-badge-title {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--heading-font-family, var(--font-heading));
+  font-size: var(--h3, var(--type-size-4xl));
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.web-design-hero-badge-copy {
+  margin: 0;
+  color: var(--color-white);
+  font-size: var(--text-xs, var(--type-size-xs));
+  font-weight: 700;
+  letter-spacing: var(--tracking-superwide);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.web-design-proof-media {
+  border: var(--surface-card-border);
+  padding: var(--surface-card-image-padding);
+  background: var(--surface-card-bg);
+  box-shadow: var(--shadow-primary);
+}
+
+.web-design-proof-media__frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.web-design-proof-media__image {
+  width: 100%;
+  border: var(--border-width) solid var(--color-navy);
+  filter: grayscale(1) brightness(0.9);
+}
+
 .cta--primary,
 .cta--accent {
   background: var(--color-primary);
