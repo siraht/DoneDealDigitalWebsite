@@ -1137,6 +1137,7 @@ button {
   justify-content: space-between;
   gap: var(--space-xs);
   align-items: center;
+  text-wrap: balance;
 }
 
 .site-footer__copyright {
