@@ -159,3 +159,82 @@ Rationale:
 | `.home-faq__question` | Keep semantic `h3`, use `font-size: var(--text-xxl)` / class `.text--xxl` because visual hierarchy is below section title and card titles. |
 | `.final-cta__title` | Use `font-size: var(--h1)`, semantic `h2` styled as display with ACSS class `.h1`. |
 | `.final-cta__copy` | Use `font-size: var(--text-xl)`. |
+
+## Migration Lessons And Adjustments
+
+### ACSS heading color defaults are not purely inherited
+
+ACSS generates this global heading rule:
+
+```css
+h1,
+:where(.h1),
+h2,
+:where(.h2),
+h3,
+:where(.h3),
+h4,
+:where(.h4),
+h5,
+:where(.h5),
+h6,
+:where(.h6) {
+  color: var(--heading-color);
+}
+```
+
+Because `--heading-color` defaults to `var(--text-dark)`, headings and heading utility classes can become dark even when their parent section has `color: var(--color-white)`. This affected the hero, dark FAQ/frustration sections, and footer.
+
+Adjustment:
+
+- Keep using ACSS heading selectors and classes.
+- Set contextual ACSS variables on dark site sections instead of fighting each individual heading:
+  - `.hero`, `.site-footer`: `--heading-color: var(--color-white)`, `--text-color: var(--color-concrete)`
+  - `.home-frustrations`, `.home-faq`: `--heading-color: var(--color-white)`, `--text-color: var(--color-white)`
+- Keep explicit component text colors where the design needs muted copy or orange accents.
+
+### ACSS section padding should live on the outer section shell
+
+ACSS generates a low-specificity section shell rule:
+
+```css
+:where(section:not(section section)) {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--section-padding-block);
+  padding-inline: var(--gutter);
+}
+```
+
+The first pass tried to protect the existing layout by removing ACSS inline padding from the outer sections and keeping the old inner `.site-container` padding. That avoided immediate double padding, but it kept the site on the old spacing model and made ACSS responsible for typography only.
+
+The final direction is better: the outer top-level section owns ACSS spacing, and the inner wrapper owns max-width/layout only.
+
+Adjustment:
+
+- Keep `display: block` on top-level sections because ACSS defaults to `display: flex`, while these components already define their own inner grid/flex layout.
+- Use ACSS inline section padding on the outer shell:
+  - `.hero`, `.cred-strip`, `.services`, `.home-frustrations`, `.process`, `.home-faq`, `.final-cta`, `.site-footer`: `padding-inline: var(--gutter)`
+- Remove inner wrapper gutters inside ACSS-managed homepage sections:
+  - `.hero > .site-container`
+  - `.services > .site-container`
+  - `.home-frustrations > .site-container`
+  - `.process > .site-container`
+  - `.home-faq > .site-container`
+  - `.final-cta__wrap`
+  - `.site-footer .site-container`
+- Move vertical rhythm to ACSS section/space variables:
+  - `.hero`: `padding-block: var(--section-space-l)`
+  - `.services`, `.home-frustrations`, `.home-faq`, `.process`, `.final-cta`: `padding-block: var(--section-space-m)`
+  - `.site-footer`: `padding-block: var(--section-space-s)`
+  - `.cred-strip`: `padding-block: var(--space-xl)` because it is a compact credibility band, not a full content section.
+- Remove old hero inner padding (`.hero__inner`) so the hero spacing comes from the outer ACSS section padding while the inner wrapper remains responsible for grid columns, max width, and alignment.
+
+### Practical boundary for this migration
+
+ACSS is currently used as the responsive typography and outer section spacing source, while local component CSS still owns the internal component layouts. That boundary keeps the migration stable:
+
+- Use ACSS for `--h*`, `--text-*`, `.h*`, and `.text--*`.
+- Use ACSS for section gutters and vertical section rhythm through `--gutter`, `--section-space-*`, and `--space-*`.
+- Use local component CSS for inner media grids, cards, badges, FAQ rows, final CTA panel framing, and dark/light contextual color treatment.
+- Avoid putting padding on both the outer section and the inner `.site-container`; pick one owner. For this homepage, the owner is the outer section.

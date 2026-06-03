@@ -259,6 +259,39 @@ button {
   width: 100%;
 }
 
+.hero,
+.cred-strip,
+.services,
+.home-frustrations,
+.process,
+.home-faq,
+.final-cta,
+.site-footer {
+  display: block;
+  padding-inline: var(--gutter);
+}
+
+.hero > .site-container,
+.services > .site-container,
+.home-frustrations > .site-container,
+.process > .site-container,
+.home-faq > .site-container,
+.site-footer .site-container {
+  padding-inline: 0;
+}
+
+.hero,
+.site-footer {
+  --heading-color: var(--color-white);
+  --text-color: var(--color-concrete);
+}
+
+.home-frustrations,
+.home-faq {
+  --heading-color: var(--color-white);
+  --text-color: var(--color-white);
+}
+
 .hero {
   position: relative;
   color: var(--color-white);
@@ -267,6 +300,7 @@ button {
   overflow: hidden;
   container-type: inline-size;
   container-name: hero;
+  padding-block: var(--section-space-l);
 }
 
 .hero__bg {
@@ -281,7 +315,7 @@ button {
   z-index: 1;
   min-height: var(--hero-min-height);
   margin-inline: auto;
-  padding-block: var(--space-24);
+  padding-block: 0;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -336,8 +370,6 @@ button {
 @container hero (min-width: 64rem) {
   .hero__inner {
     grid-template-columns: 1fr 1fr;
-    padding-block: var(--space-32);
-    padding-inline: var(--container-padding-wide);
   }
 }
 
@@ -407,16 +439,16 @@ button {
   container-name: cred-strip;
   background: var(--color-white);
   border-bottom: var(--border-width) solid var(--color-navy);
-  padding-block: var(--space-12);
+  padding-block: var(--space-xl);
 }
 
 .cred-strip__inner {
   display: flex;
   flex-direction: column;
-  width: min(100%, calc(100vw - 10vw));
-  max-width: none;
+  width: min(100%, var(--container-max));
+  max-width: var(--container-max);
   margin-inline: auto;
-  padding-inline: var(--container-padding);
+  padding-inline: 0;
   justify-content: center;
   align-items: stretch;
   gap: 0;
@@ -491,7 +523,7 @@ button {
 .services {
   container-type: inline-size;
   container-name: services;
-  padding-block: var(--space-section-top);
+  padding-block: var(--section-space-m);
 }
 
 .services__heading {
@@ -587,7 +619,7 @@ button {
 .home-faq {
   background: var(--color-navy);
   color: var(--color-white);
-  padding-block: var(--space-section-top);
+  padding-block: var(--section-space-m);
 }
 
 .home-frustrations {
@@ -729,7 +761,7 @@ button {
   color: var(--process-text-color);
   border-block: var(--process-border-block);
   overflow: hidden;
-  padding-block: var(--space-section-top);
+  padding-block: var(--section-space-m);
   container-type: inline-size;
   container-name: process;
 
@@ -911,7 +943,7 @@ button {
 .final-cta {
   background: var(--color-white);
   border-bottom: var(--border-width) solid var(--color-navy);
-  padding-block: var(--space-section-top);
+  padding-block: var(--section-space-m);
   container-type: inline-size;
   container-name: final-cta;
 
@@ -919,7 +951,7 @@ button {
     width: min(100%, var(--container-max-narrow));
     max-width: var(--container-max-narrow);
     margin-inline: auto;
-    padding-inline: var(--space-6);
+    padding-inline: 0;
   }
 
   .final-cta__panel {
@@ -977,14 +1009,14 @@ button {
 .site-footer {
   background: var(--color-background-dark);
   color: var(--color-white);
-  padding-block: var(--space-16);
+  padding-block: var(--section-space-s);
   container-type: inline-size;
   container-name: site-footer;
 }
 
 .site-footer .site-container {
-  width: calc(100vw - 10vw);
-  max-width: none;
+  width: min(100%, var(--container-max));
+  max-width: var(--container-max);
   margin-inline: auto;
 }
 
