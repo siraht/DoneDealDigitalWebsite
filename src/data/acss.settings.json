@@ -54,6 +54,7 @@
   "text-letter-spacing": 0,
   "heading-text-wrap": "pretty",
   "text-wrap": "pretty",
+  "base-radius": "0px",
 
   "custom-global-css": ""
 }

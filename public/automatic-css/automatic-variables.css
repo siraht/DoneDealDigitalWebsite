@@ -1,4 +1,4 @@
-/* File: automatic-variables.css - Version: 4.0.0-beta-3 - Generated: 2026-06-03 21:33:00 */
+/* File: automatic-variables.css - Version: 4.0.0-beta-3 - Generated: 2026-06-03 21:37:34 */
 /* Feat: Text, Headings, & Spacing */
 :root {
   --root-font-size: 100%;
@@ -333,7 +333,7 @@
 }
 /* Feat: Radius Variables */
 :root {
-  --radius: 5px;
+  --radius: 0px;
   --radius-50: 50%;
   --radius-circle: 50vw;
   --radius-none: 0;

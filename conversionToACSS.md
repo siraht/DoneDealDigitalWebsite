@@ -70,6 +70,7 @@ Relevant ACSS settings:
 | `h1-min/max` through `h6-min/max` | Per-heading overrides when a display system needs deliberate jumps. |
 | `heading-text-wrap` | Default ACSS heading wrapping. Set to `pretty` so headings use orphan prevention instead of heavier-handed balancing. |
 | `text-wrap` | Default ACSS body/text wrapping. Set to `pretty` for paragraphs, list items, blockquotes, and text utility classes. |
+| `base-radius` | Default ACSS radius token. Set to `0px` because this site uses square corners and ACSS auto-radius applies `--radius` to images/figures. |
 | `option-text-size-classes` | Generates `.text--xs`, `.text--s`, `.text--m`, `.text--l`, `.text--xl`, `.text--xxl`. |
 | `option-text-size-variables` | Generates `--text-xs` through `--text-xxl`. |
 | `option-heading-size-variables` | Generates `--h1` through `--h6` and bridge variables such as `--h2-to-h3`. |
@@ -130,7 +131,8 @@ The selected settings are stored in `Website/src/data/acss.settings.json`.
   "h6-min": 14,
   "h6-max": 14,
   "heading-text-wrap": "pretty",
-  "text-wrap": "pretty"
+  "text-wrap": "pretty",
+  "base-radius": "0px"
 }
 ```
 
@@ -142,6 +144,7 @@ Rationale:
 - Use per-token overrides for text and headings because the current art direction has deliberate jumps: 16px body, 24px loud labels, 36px card heads, 60px section heads, and 96px hero/final display.
 - Keep semantic elements intact. `h1` maps to `--h1`, major `h2` section titles map to `--h2`, card `h3` titles map to `--h3`, FAQ `h3` questions map to `--text-xxl` because they are semantically questions under an FAQ section but visually smaller than card titles.
 - Let ACSS own default wrapping with `text-wrap: pretty` for both headings and text. Avoid local `text-wrap: balance` on content unless a component has a specific short-label reason to opt out.
+- Keep ACSS radius tokens square with `base-radius: 0px`; ACSS auto-radius can stay enabled because it now resolves image/figure `border-radius: var(--radius)` to `0px`.
 
 ## Homepage Conversion Plan
 
@@ -241,6 +244,7 @@ ACSS is currently used as the responsive typography and outer section spacing so
 
 - Use ACSS for `--h*`, `--text-*`, `.h*`, and `.text--*`.
 - Use ACSS for `text-wrap: pretty` on headings, body text, list items, blockquotes, and text utility classes.
+- Use ACSS for `--radius`, but keep the base value at `0px` so auto-radius and dependent controls remain square.
 - Use ACSS for section gutters and vertical section rhythm through `--gutter`, `--section-space-*`, and `--space-*`.
 - Use local component CSS for inner media grids, cards, badges, FAQ rows, final CTA panel framing, and dark/light contextual color treatment.
 - Avoid putting padding on both the outer section and the inner `.site-container`; pick one owner. For this homepage, the owner is the outer section.
