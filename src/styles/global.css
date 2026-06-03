@@ -1189,7 +1189,6 @@ button {
   }
 
   .final-cta__secondary .material-symbols-outlined {
-    color: var(--color-primary);
     font-size: var(--h3, var(--type-size-4xl));
   }
 }
