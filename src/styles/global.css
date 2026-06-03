@@ -1015,6 +1015,7 @@ button {
   background: var(--color-background-dark);
   color: var(--color-white);
   padding-block: var(--section-space-s);
+  padding-bottom: var(--space-xs);
   container-type: inline-size;
   container-name: site-footer;
 }
@@ -1130,11 +1131,11 @@ button {
 .site-footer__bottom {
   margin: var(--space-16) auto 0;
   border-top: var(--border-width) solid var(--color-white-10);
-  padding-top: var(--space-12);
+  padding-top: var(--space-xs);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: var(--space-6);
+  gap: var(--space-xs);
   align-items: center;
 }
 
@@ -1155,6 +1156,12 @@ button {
   letter-spacing: var(--tracking-ultrawide);
   font-size: var(--text-xl, var(--type-size-xl));
   line-height: 1.4;
+}
+
+@media (max-width: 54rem) {
+  .site-footer__tagline {
+    order: -1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
