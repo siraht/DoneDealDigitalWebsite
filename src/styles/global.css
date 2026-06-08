@@ -1373,7 +1373,10 @@ button {
   .final-cta__panel {
     position: relative;
     border: var(--border-width-heavy) solid var(--color-navy);
-    padding: var(--space-12);
+    padding-top: var(--space-card-padding);
+    padding-right: var(--space-s);
+    padding-bottom: var(--space-card-padding);
+    padding-left: var(--space-s);
     background: var(--color-white);
   }
 
