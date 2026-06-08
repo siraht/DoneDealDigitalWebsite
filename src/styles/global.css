@@ -112,7 +112,7 @@ button {
 }
 
 .site-header__brand-title {
-  margin: 0;
+  margin: 4px 0 0;
   font-family: var(--heading-font-family, var(--font-heading));
   text-transform: uppercase;
   font-size: var(--text-xxl, var(--type-size-2xl));
