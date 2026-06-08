@@ -435,7 +435,7 @@ button {
   margin-inline: auto;
   max-width: 64rem;
   color: var(--color-navy);
-  font-size: var(--h3, var(--type-size-4xl));
+  font-size: var(--h4);
   font-style: italic;
   font-weight: 700;
   line-height: var(--leading-copy);
