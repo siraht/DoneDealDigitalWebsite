@@ -2,6 +2,7 @@
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import FinalCTA from "../components/FinalCTA.astro";
 import Hero from "../components/Hero.astro";
+import travisHeadshot from "../../assets/images/2021_inkedfingers_travis_114_cropped.jpg";
 ---
 
 <SharedPageLayout title="Why Us | Done Deal Digital" bodyClass="bg-background-light">
@@ -118,7 +119,7 @@ import Hero from "../components/Hero.astro";
 <div class="grid md:grid-cols-2 gap-12">
 <div class="bg-white border-2 border-navy block-shadow">
 <div class="h-[400px] border-b-2 border-navy relative overflow-hidden">
-<img alt="Travis - Founder" class="w-full h-full object-cover bw-overlay" src="/images/travis.jpg" style="object-position: 84% 39%;"/>
+<img alt="Travis - Founder" class="w-full h-full object-cover bw-overlay" src={travisHeadshot.src} style="object-position: 50% 23%;"/>
 <div class="absolute inset-0 bg-navy/20 mix-blend-multiply"></div>
 <div class="absolute bottom-6 left-6 bg-primary text-white px-4 py-2 border-2 border-navy">
 <span class="about-founder-name">TRAVIS</span>
