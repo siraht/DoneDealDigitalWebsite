@@ -458,9 +458,9 @@ button {
 
 .web-design-proof-media {
   border: var(--surface-card-border);
-  padding: var(--surface-card-image-padding);
+  padding: 0;
   background: var(--surface-card-bg);
-  box-shadow: var(--shadow-primary);
+  box-shadow: var(--surface-card-shadow);
 }
 
 .web-design-proof-media__frame {
@@ -470,8 +470,7 @@ button {
 
 .web-design-proof-media__image {
   width: 100%;
-  border: var(--border-width) solid var(--color-navy);
-  filter: grayscale(1) brightness(0.9);
+  display: block;
 }
 
 .cta--primary,
