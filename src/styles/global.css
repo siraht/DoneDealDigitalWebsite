@@ -358,6 +358,42 @@ button {
   margin-block-start: var(--space-6);
 }
 
+.about-copy--body {
+  font-size: var(--text-m, var(--type-size-base));
+  font-weight: 400;
+}
+
+.about-story {
+  border-bottom: var(--border-width) solid var(--color-navy);
+}
+
+.about-story__copy {
+  margin: 0;
+  color: var(--color-slate);
+  font-size: var(--text-l, var(--type-size-lg));
+  font-weight: 500;
+  line-height: var(--text-line-height, var(--leading-relaxed));
+  max-width: 62ch;
+}
+
+.about-story__badge {
+  position: absolute;
+  bottom: var(--space-6);
+  left: var(--space-6);
+  padding: var(--space-2) var(--space-4);
+  border: var(--border-width) solid var(--color-navy);
+  z-index: 2;
+}
+
+.about-story__badge--primary {
+  background: var(--color-primary);
+}
+
+.about-story__badge--navy {
+  background: var(--color-navy);
+  border-color: var(--color-white);
+}
+
 .about-kicker,
 .about-kicker.about-kicker {
   margin: 0;
