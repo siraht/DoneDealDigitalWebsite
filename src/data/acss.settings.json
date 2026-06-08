@@ -50,6 +50,7 @@
   "base-text-lh": 1.625,
   "heading-font-weight": 700,
   "text-font-weight": 400,
+  "btn-font-weight": 700,
   "heading-letter-spacing": "0.02em",
   "text-letter-spacing": 0,
   "heading-text-wrap": "pretty",
