@@ -244,6 +244,7 @@ button {
 }
 
 .quick-contact__icon {
+  display: flex;
   padding: var(--space-3);
   border: var(--border-width) solid var(--color-white);
   background: var(--color-primary);
