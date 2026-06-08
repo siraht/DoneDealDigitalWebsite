@@ -724,6 +724,16 @@ button {
   position: relative;
 }
 
+@media (max-width: 63.999rem) {
+  #hero.hero {
+    padding-top: var(--space-xs);
+  }
+
+  #hero .hero__media {
+    order: -1;
+  }
+}
+
 @container hero (min-width: 48rem) {
   .hero__badge {
     display: block;
