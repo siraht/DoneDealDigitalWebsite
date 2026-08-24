@@ -137,7 +137,7 @@ Required prompt skeleton:
 3. Cloudflare Pages defaults:
    - Build command: `bun run build`
    - Publish directory: `dist`
-4. Headers and fallback handling are defined in `public/_headers` and `public/_redirects`.
+4. Security headers are defined in `public/_headers`; Pages serves the generated routes and Astro 404 directly.
 5. Project creation workflow:
    - Create or connect the `done-deal` Pages project
    - Set the production branch to `master`
