@@ -7,12 +7,6 @@ import Hero from "../components/Hero.astro";
 import SharedPageLayout from "../components/SharedPageLayout.astro";
 import heroImage from "../../assets/images/contractor_in_front_of_house.png";
 
-const heroImageWidths = [480, 768, 960, 1122];
-const imageCdnSrc = (width: number) =>
-  `/.netlify/images?url=${encodeURIComponent(heroImage.src)}&w=${width}&q=82`;
-const heroImageSrcset = heroImageWidths
-  .map((width) => `${imageCdnSrc(width)} ${width}w`)
-  .join(", ");
 ---
 
 <SharedPageLayout title="Done Deal Digital | Websites and Local Lead Systems for the Trades" bodyClass="page">
@@ -46,8 +40,7 @@ const heroImageSrcset = heroImageWidths
               <img
                 alt="Contractor standing in front of a finished house exterior"
                 class="hero__media-image u-bw"
-                src={imageCdnSrc(960)}
-                srcset={heroImageSrcset}
+                src={heroImage.src}
                 sizes="(min-width: 64rem) 43vw, (min-width: 48rem) 52vw, 100vw"
                 width={heroImage.width}
                 height={heroImage.height}

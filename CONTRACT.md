@@ -131,32 +131,31 @@ Required prompt skeleton:
 - Commit naming convention for baseline refresh:
   - `qa: refresh visual baseline (<source>)`
 
-## Netlify deployment setup
-1. This site is configured as a static Netlify output.
-2. Required Netlify config exists in [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml).
-3. Netlify defaults:
+## Cloudflare Pages deployment setup
+1. This site is configured as a static Cloudflare Pages output.
+2. Required Pages config exists in `wrangler.jsonc`.
+3. Cloudflare Pages defaults:
    - Build command: `bun run build`
    - Publish directory: `dist`
-4. Headers and fallback handling are defined in `netlify.toml`.
+4. Security headers are defined in `public/_headers`; Pages serves the generated routes and Astro 404 directly.
 5. Project creation workflow:
-   - Install/run Netlify CLI (`bun i -D netlify-cli` or `bunx netlify-cli`)
-   - Run `netlify init` in the repo root and attach to a new Netlify site
-   - Point production branch and deploy settings to this repo
+   - Create or connect the `done-deal` Pages project
+   - Set the production branch to `master`
    - Set optional environment variable `SITE_URL` (for canonical links)
 6. Optional deployment command:
-   - `bunx netlify-cli deploy --dir=dist --prod` (once site link is established)
+   - `bunx wrangler pages deploy dist --project-name done-deal`
 
 ## CI/CD for this repo
-1. Netlify is the deploy engine and is connected directly to this GitHub repository.
-2. Netlify deploy behavior:
-   - Production deploy on push to `main`/`master`
-   - Branch/PR preview deploys as configured in Netlify settings
-   - Netlify executes the build command from [`netlify.toml`](/home/travis/Projects/Done%20Deal%20Digital/Website/netlify.toml).
+1. Cloudflare Pages is the deploy engine and is connected directly to this GitHub repository.
+2. Pages deploy behavior:
+   - Production deploy on push to `master`
+   - Branch/PR preview deploys as configured in Pages
+   - Pages executes the build command and output contract above.
 3. GitHub Actions remains a validation gate only:
    - [`/.github/workflows/ci.yml`](/home/travis/Projects/Done%20Deal%20Digital/Website/.github/workflows/ci.yml)
    - `bun install --frozen-lockfile`
    - `bun run build`
-4. Keep Netlify project environment variables in Netlify UI:
+4. Keep Pages build environment variables in Cloudflare:
    - `NODE_VERSION` / `BUN_VERSION` (as needed)
    - `SITE_URL` (for canonical links)
 
